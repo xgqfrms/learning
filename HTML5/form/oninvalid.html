@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oninvalid</title>
+    <!-- 
+    https://www.w3.org/TR/html51/sec-forms.html  
+    https://www.w3.org/TR/html51/sec-forms.html#sec-constraint-validation  
+    https://www.w3.org/TR/html51/sec-forms.html#validitystate-validitystate  
+    https://www.w3.org/TR/html51/sec-forms.html#statically-validating-the-constraints  
+    https://www.w3.org/TR/html51/sec-forms.html#the-constraint-validation-api  
+    http://caniuse.com/#feat=form-validation  
+    https://heycam.github.io/webidl/#invalidstateerror  
+
+    http://www.girliemac.com/blog/2012/11/21/html5-form-validation/  
+    http://www.the-art-of-web.com/html/html5-checkbox-required/  
+     -->
+</head>
+<body>
+    <form action="https://www.google.com.hk/webhp?#safe=strict&q=" method="get" formenctype="application/x-www-form-urlencoded">
+        <input id="email" type="email" placeholder="xgqfrms@email.xyz" required="" autofocus="" oninvalid="this.setCustomValidity(`${this} :This is a customlised invalid warning info!`)" valid="onvalid();">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function onvalid(){
+            input = document.getElementById('email');
+            if(input.valid){
+                alert(`${this.value} is valided!`);
+            }
+        }
+    </script>
+</body>
+</html>
