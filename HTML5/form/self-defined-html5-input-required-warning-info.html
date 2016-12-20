@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>self defined html5 input required warning info</title>
+    <!-- 
+    http://www.w3schools.com/html/html_form_elements.asp
+    http://www.w3schools.com/html/html_form_attributes.asp
+    http://www.w3schools.com/tags/ref_attributes.asp
+    http://www.w3schools.com/tags/ref_standardattributes.asp
+
+    http://www.w3schools.com/html/html5_draganddrop.asp
+    http://www.w3schools.com/tags/att_global_draggable.asp
+    http://www.w3schools.com/tags/att_global_dropzone.asp
+    http://www.w3schools.com/tags/att_global_spellcheck.asp
+    http://www.w3schools.com/tags/att_global_contenteditable.asp
+    https://www.w3.org/TR/css-ui-3/#resize
+     -->
+</head>
+<body>
+    <form action="index.php" autocomplete="on">
+        <label for="username">username: </label>
+        <input type="text" name="username" required="required" placeholder="xgqfrms" size="23" maxlength="12" autocomplete="on"><br>
+        <!-- min="18" max="32" doesn't work for string -->
+        <label for="password">password: </label>
+        <input type="password" name="password" required="required" placeholder="*******" autocomplete="on"><br>
+        <!-- date -->
+        <label for="date">date: </label>
+        <input type="date" name="date" required="required" min="2008-08-08" max="2016-12-31"><br>
+        <!-- placeholder="2016/12/12" value="2016/12/12" doesn't work for date-->
+        <!-- month -->
+        <label for="month">month: </label>
+        <input type="month" name="month" required="required" ><br>
+        <!-- week -->
+        <label for="week">week: </label>
+        <input type="week" name="week" required="required" ><br>
+        <!-- time -->
+        <label for="time">time: </label>
+        <input type="time" name="time" required="required" ><br>
+        <!-- datetime-local -->
+        <label for="datetime-local">datetime-local: </label>
+        <input type="datetime-local" name="datetime-local" required="required" ><br>
+        <!-- datetime isn't exist-->
+        <!-- color -->
+        <label for="color">color: </label>
+        <input type="color" required="required" ><br>
+        <!-- value="#0f0" doesn't work for color -->
+        <label for="age">age: </label>
+        <input type="number" name="age" required="required" placeholder="23        range[18,32]" min="18" max="32" ><br>
+        <!-- size="37" doesn't work for number -->
+        <label for="email">email: </label>
+        <input type="email" name="email" required="required" placeholder="xgqfrms@email.com" autocomplete="on"><br>
+        <label for="tel">tel: </label>
+        <input type="tel" name="tel" required="required" placeholder="+86 18123456789" maxlength="11" autocomplete="on"><br>
+        <!-- min="11" max="15" doesn't work for tel-->
+        <label for="url">url: </label>
+        <input type="url" name="url" required="required" placeholder="https://www.xgqfrms.xyz" autocomplete="on"><br>
+        <label for="search">search: </label>
+        <input type="search" name="search" required="required" placeholder="https://www.xgqfrms.xyz" autocomplete="on"><br>
+        <!-- radio -->
+        <label for="gender">gender: </label>
+        <input type="radio" name="gender" required="required" value="male" checked="checked">
+        <label for="">male</label>
+        <input type="radio" name="gender" required="required" value="male" >
+        <label for="">male</label>
+        <br>
+        <!-- checkbox -->
+        <label for="hobby">hobby/favorite: </label>
+        <input type="checkbox" name="hobby" value="programming" checked="checked">
+        <label for="">programming</label>
+        <input type="checkbox" name="hobby" value="traving" >
+        <label for="">traving</label>
+        <input type="checkbox" name="hobby" value="swimming" >
+        <label for="">swimming</label>
+        <input type="checkbox" name="hobby" value="reading & writing" >
+        <label for="">reading & writing</label><br>
+        <!-- readonly -->
+        <label for="readonly">readonly</label>
+        <input type="text" name="readonly" value="readonly" placeholder="readonly test" readonly="readonly"><br>
+        <!-- disabled -->
+        <label for="disabled">disabled</label>
+        <input type="text" name="disabled" value="disabled" placeholder="disabled test" disabled="disabled"><br>
+        <!-- readonly & disabled -->
+        <label for="readonly-disabled">readonly & disabled</label>
+        <input type="text" name="readonly-disabled" value="readonly & disabled" placeholder="readonly & disabled test" disabled="disabled" readonly="readonly"><br>
+        <!-- step -->
+        <label for="step">step</label>
+        <input type="number" name="step" min="0" max="100" step="10" value="30" placeholder="step test"><br>
+        <!-- range -->
+        <label for="range">range</label>
+        <input type="range" name="range" min="0" max="100" value="30" placeholder="range test"><br>
+        <!-- step & range -->
+        <label for="step-range">step & range</label>
+        <input type="range" name="step-range" min="0" max="90" value="30" step="30" placeholder="step & range test"><br>
+        <!-- textfield -->
+        <label for="textfield">textfield</label>
+        <input type="textfield" name="textfield" placeholder="this is a text field" width="100px" height="50px" draggable="true" contenteditable="true" spellcheck="true"><br>
+        <!-- list -->
+        <label for="list">list</label>
+        <input list="browsers" name="list" placeholder="browsers">
+        <datalist id="browsers">
+            <option value="Chrome" selected="" />
+            <option value="Internet Explorer" />
+            <option value="Firefox" />
+            <option value="Edge" />
+            <option value="Opera" />
+            <option value="Safari" />
+        </datalist><br>
+        <!-- image -->
+        <label for="image">image</label>
+        <input type="image" name="image" src="https://cdn.xgqfrms.xyz/logo/logo.png" alt="logo.png" width="100px" height="100px"><br>
+        <!-- file -->
+        <label for="file">file</label>
+        <input type="file" name="file" value="file" placeholder="select a file" required=""><br>
+        <!-- pattern -->
+        <label for="pattern">pattern</label>
+        <input type="text" name="pattern" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" placeholder="pattern@email.xyz" value="xgqfrms@email.xyz" required="required"><br>
+        <div>
+            <span>pattern === <mark></mark></span>
+        </div>
+        <!-- button -->
+        <input type="button" value="button" onclick="btn();"><br>
+        <input type="submit" value="Submit" autofocus="">
+        <input type="reset" value="Reset"><br>
+        <!-- i18n & L10n -->
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <script>
+        function btn(){
+            alert("this is a input button type!");
+        }
+
+        function ValidateEmail(mail) {  
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)) { 
+                return (true);
+            }else{
+                alert("You have entered an invalid email address!");
+                return (false);
+            }
+        }
+        /* http://www.w3resource.com/javascript/form/email-validation.php */
+    </script>
+</body>
+</html>
