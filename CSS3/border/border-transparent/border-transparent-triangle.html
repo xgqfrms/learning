@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-transparent-triangle</title>
+    <!-- http://voiceandtone.com/company-newsletter/ -->
+    <!-- 
+    CSS 顺序执行， 后定义 css, 无法影响到前面定义的css!
+    Note； 注意 CSS 顺序执行
+     -->
+    <style>
+        .col-md-4{
+            width: 33%;
+            margin-top: 10%;
+            border: 1px solid red;
+        }
+        p{
+            display: block;
+            position: relative;
+            background: black;
+            color: white;
+        }
+        .p{
+            width: 80%;
+            margin: auto 10%;
+        }
+        p::after{
+                content: " ";
+                border-color: transparent transparent #E91E63 transparent;
+                border-width: 22px;
+                border-style: solid;
+                width: 0;
+                height: 0;
+                bottom: -20px;
+                left: 138px;
+                display: block;
+                position: absolute;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-4">
+        <p class="p">
+            Leave it to a slightly weird, independent record label to transform an antiquated idea. Asthmatic Kitty's taken their street teams beyond telephone-pole flyers—they send rewarding emails that deliver exclusive content to superfans.
+        </p>
+    </div>
+</body>
+</html>
