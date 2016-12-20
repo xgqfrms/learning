@@ -9,20 +9,51 @@
     Note； 注意 CSS 顺序执行
      -->
     <style>
+        .box{
+            left:25%;
+            top: 10%;
+            position: absolute;
+            width: 50%;
+            background: #000;
+            border-radius: 23px;
+            box-shadow: 3px 7px 12px rgba(255,0,255,0.7);
+        }
+        .box:hover{
+            border-radius: 23px;
+            box-shadow: 7px 12px 23px rgba(255,0,255,0.9);
+            transform: translateY(-10px);
+            transition: all 0.3s 0s ease-out;
+        }
         .col-md-4{
-            width: 33%;
-            margin-top: 10%;
+            width: 80%;
+            margin: 10% auto;
             border: 1px solid red;
+            box-sizing: border-box;
+            background: rgba(0,255,0,0.7);
+            /*overflow: hidden;*/
+        }
+        .col-md-new{
+            background: rgba(0,0,0,0.7);
+            border: 0;
         }
         p{
             display: block;
             position: relative;
             background: black;
             color: white;
+            line-height: 1.2em;
+            padding: 0.5em;
+            border-radius: 1em;
         }
         .p{
-            width: 80%;
-            margin: auto 10%;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .new{
+            color: rgba(255,255,255,0.7);
+            background: #E91E63;
+            font-weight: bold;
         }
         p::after{
                 content: " ";
@@ -32,7 +63,7 @@
                 width: 0;
                 height: 0;
                 bottom: -20px;
-                left: 138px;
+                left: 38px;
                 display: block;
                 position: absolute;
                 -webkit-transform: rotate(45deg);
@@ -45,10 +76,18 @@
     </style>
 </head>
 <body>
-    <div class="col-md-4">
-        <p class="p">
-            Leave it to a slightly weird, independent record label to transform an antiquated idea. Asthmatic Kitty's taken their street teams beyond telephone-pole flyers—they send rewarding emails that deliver exclusive content to superfans.
-        </p>
+    <div class="box">
+        <div class="col-md-4">
+            <p class="p">
+                Leave it to a slightly weird, independent record label to transform an antiquated idea. Asthmatic Kitty's taken their street teams beyond telephone-pole flyers—they send rewarding emails that deliver exclusive content to superfans.
+            </p>
+        </div>
+        <!-- new -->
+        <div class="col-md-4 col-md-new">
+            <p class="p new">
+                Leave it to a slightly weird, independent record label to transform an antiquated idea. Asthmatic Kitty's taken their street teams beyond telephone-pole flyers—they send rewarding emails that deliver exclusive content to superfans.
+            </p>
+        </div>
     </div>
 </body>
 </html>
