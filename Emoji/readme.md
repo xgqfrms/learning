@@ -1,0 +1,8 @@
+# emoji  
+
+
+## emoji 🐶 🔥 😃 ❤ 🎅 🐱‍ 💻 🔏 🖊 💝 💬 🌀 ✔ ✖ © ® ™ 🆚 🈸 🆗 📢 🔔 🎵 🎶 👁‍🗨 🐱‍💻 
+
+http://emojipedia.org/  
+
+
