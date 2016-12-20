@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop</title>
+    <!-- http://www.w3schools.com/html/html5_draganddrop.asp -->
+    <style>
+        #div1 {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #abc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <img id="drag1" src="https://cdn.xgqfrms.xyz/logo/logo.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+    </div>
+    <!-- js -->
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</body>
+</html>
