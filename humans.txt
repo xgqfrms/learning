@@ -1,0 +1,103 @@
+/* xgqfrms.xyz, webgeeker.xyz */
+
+/* Time: 2016.01.01 */
+
+/* TEAM */
+    Chef: xgqfrms, webgeeker
+    Contact: xgqfrms@xgqfrms.xyz, webgeeker@webgeeker.xyz
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    UI developer: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    One eyed illustrator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    Standard Man: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    Web designer: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+/* THANKS */
+
+    (First) EN Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    CA Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+
+    EN Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    RU Translator: xgqfrms, webgeeker
+    Twitter: @alexey_bass
+    Location: Israel, Netanya
+    
+    RU Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    NL Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    DE Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    CZ Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    ZH Translator: Ana Villalba
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    JA Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    FR Translator: xgqfrms, webgeeker
+    Twitter: @xgqfrms
+    Facebook: @xgqfrms
+    From: ShangHai, China
+    
+    Media Queries by: xgqfrms, webgeeker (@xgqfrms) and xgqfrms, webgeeker(@xgqfrms)
+
+/* SITE */
+    Last update:2016/11/11
+    Language: Català / Czech / Deutsch / English / Castellano / Japanese / Dutch / Russian / Chinese
+    Doctype: HTML5, HTML5.2
+    IDE: Sublime Text 3, Visual Studio Code 1.7, Google Chrome, Google Chrome Canary, GitHub, Notepad++, Photoshop
+    Styles: Normalize.css, Animate.css, reset.css
+    Web Technology: CSS3, HTML5, jQuery, Modernizr, ES6, ES7, Node.js, javascript
+    Back-End: PHP, Java, Python, Ruby, C#, Go
+    Web Framewoks: React 2, Angular 2, Ionic 2
+    Web Server: Apache , Nginx, Express, socket.io
+    Sublime Text 3, Visual Studio Code 1.7, Google Chrome Canary, GitHub, React 2, Angular 2, Ionic 2
+    Standards: HTML5, CSS3, JavaScript, C#, PHP, JavaScrip, 最新, 官方, 标准参考, 教程, ECMA-262, ES 6, ES 7, xgqfrms, github, xgqfrms.xyz
+    Components: Modernizr, jQuery, Node.js, AngularJS, React, React-Native.
+

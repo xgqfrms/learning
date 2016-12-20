@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <description>
+            <!-- google-analytics -->
+            (function(i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-89281016-1', 'auto'); ga('send', 'pageview');
+        </description>
+        <title>xgqfrms's offical website</title>
+        <generator>Sublime Text 3 (@xgqfrms)</generator>
+        <link>https://learning.xgqfrms.xyz/</link>
+        <item>
+            <title>2016-01-01</title>
+            <description>
+                &lt;a href="http://zhuanlan.zhihu.com/xgqfrms" target="_blank"&gt; http://zhuanlan.zhihu.com/xgqfrms &lt;/a&gt;
+            </description>
+            <link>https://learning.xgqfrms.xyz/post/201601010001</link>
+            <guid>https://learning.xgqfrms.xyz/post/201601010001</guid>
+            <pubDate>Mon, 01 Jan 2016 17:41:49 +0800</pubDate>
+        </item>
+        <item>
+            <title>2016-01-07</title>
+            <description>
+                &lt;p&gt; android 的开发群体不可谓不大，jvm 上面的 groovy 或者 scala，在语言特性上也不一定输给 golang 或者 node.js 之流。可大浪淘沙下来，现在 andriod 开发语言还是 java 一家独大。web 后端来说，scala 的复杂度也总不被人看好。说起来，mac 开发还有个 macruby 呢，已经停止开发了。 &lt;/p&gt;
+            </description>
+            <link>https://learning.xgqfrms.xyz/post/201601010007</link>
+            <guid>https://learning.xgqfrms.xyz/post/201601010007</guid>
+            <pubDate>Mon, 07 Jan 2016 22:55:26 +0800</pubDate>
+        </item>
+        <!-- more items -->
+        <item>
+            <title>2016-01-12</title>
+            <description>
+                &lt;p&gt; 但我决定还是不投它的票，因为 Meteor 的后端并不是遵照 Node.js 的那套标准来的。现在随便打开一个 Rails 项目的 Gemfile，都会发现一大堆的 gem 被 include 了进来。可是 Meteor 貌似无论前端还是后端的 Package 系统都用的是它自己的那一套，也就意味着无论你是想使用一个新的前端 JS 库还是 NPM 上面的库，都需要等 Meteor 官方合并进去才行，当库更新的时候，也需要 Meteor 官方来操作操作。我觉得这样的包管理策略会让开发 Meteor 应用成为一件麻烦的事情。 &lt;/p&gt;
+            </description>
+            <link>https://learning.xgqfrms.xyz/post/201601010012</link>
+            <guid>https://learning.xgqfrms.xyz/post/201601010012</guid>
+            <pubDate>Mon, 12 Jan 2016 22:06:21 +0800</pubDate>
+        </item>
+    </channel>
+</rss>
+<!-- 
+天朝的网络运营商（ISP）都比较流氓，经常有网友抱怨说访问某网站（本来是没有广告的），竟然会跳出很多中国电信的广告。为啥会这样捏？因为你的网络流量需要经过 ISP 的线路才能到达公网。如果你使用的是明文的 HTTP，ISP 很容易就可以在你访问的页面中植入广告。
+所以，当初设计 HTTPS 的时候，还有一个需求是“确保 HTTP 协议的内容不被篡改”。
+ -->

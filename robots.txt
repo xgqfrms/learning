@@ -1,0 +1,45 @@
+# Robots.txt 是存放在站点根目录下的一个纯文本文件。
+# 虽然它的设置很简单，但是作用却很强大。
+# 它可以指定搜索引擎蜘蛛只抓取指定的内容，或者是禁止搜索引擎蜘蛛抓取网站的部分或全部内容。
+User-agent: Baiduspider
+Disallow: /
+User-agent: Sosospider
+Disallow: /
+User-agent: sogou spider
+Disallow: /
+User-agent: YodaoBot
+Disallow: /
+User-agent: Googlebot
+Disallow: 
+User-agent: Bingbot
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: Teoma
+Disallow: 
+User-agent: ia_archiver
+Disallow: 
+User-agent: twiceler
+Disallow: 
+User-agent: MSNBot
+Disallow: 
+User-agent: Scrubby
+Disallow: 
+User-agent: Robozilla
+Disallow: 
+User-agent: Gigabot
+Disallow: 
+User-agent: googlebot-image
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: yahoo-mmcrawler
+Disallow: 
+User-agent: yahoo-blogs/v3.9
+Disallow: 
+User-agent: psbot
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /bin/
+Sitemap: http://xgqfrms.xyz/sitemap.xml
