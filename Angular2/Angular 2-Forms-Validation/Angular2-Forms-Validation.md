@@ -3,7 +3,7 @@
 https://angular.io/docs/ts/latest/cookbook/form-validation.html  
 
 
-## template variable ()  
+## template variable (模板变量 template variable)  
 
 回到组件模板的顶部，我们在<form>元素中设置#heroForm模板变量：
 
