@@ -1,17 +1,16 @@
 // 
 
 
-/*
 var nodes = document.getElementsByTagName('button');
 for (var i = 0; i < nodes.length; i++) {
-    nodes[i].addEventListener('click', clickedButton());
+    nodes[i].addEventListener('click', function() {
+        //console.log('You clicked element #' + i);
+        alert('You clicked element #' + i);
+    });
 }
 
-function clickedButton() {
-    //console.log('You clicked element #' + i);
-    alert('You clicked element #' + i);
-};
- */
+
+
 
 /*
 // let
@@ -24,28 +23,34 @@ for (let i = 0; i < nodes.length; i++) {
     });
 }
 
-
-
-// 
-var nodes = document.getElementsByTagName('button');
-for (var i = 0; i < nodes.length; i++) {
-    nodes[i].addEventListener('click', function() {
-        //console.log('You clicked element #' + i);
-        alert('You clicked element #' + i);
-    });
-}
-
- */
-
-// IIFE
+// IIFE & closure
 
 var nodes = document.getElementsByTagName('button');
 for (var i = 0; i < nodes.length; i++) {
-    nodes[i].addEventListener('click', (function() {
-        //console.log('You clicked element #' + i);
+    nodes[i].addEventListener('click', (function(i) {
         return function() {
-            //console.log('You clicked element #' + i);
+            // console.log('You clicked element #' + i);
             alert('You clicked element #' + i);
         }
     })(i));
 }
+
+
+
+// global function & clousure function
+
+var nodes = document.getElementsByTagName('button');
+for (var i = 0; i < nodes.length; i++) {
+    nodes[i].addEventListener('click', clickedButton(i));
+}
+
+function clickedButton(i) {
+    return function() {
+         //console.log('You clicked element #' + i);
+         alert('You clicked element #' + i);
+    }
+};
+
+
+ */
+
