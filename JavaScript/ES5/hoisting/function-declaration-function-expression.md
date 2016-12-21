@@ -19,6 +19,7 @@ https://twitter.com/intent/tweet?text=Check+out+my+code+on+Repl.it%3A+&url=https
 
 只有函数声明被提升，但函数表达式不提升。  
 
-函数声明优先于变量声明。  
+> 函数声明优先于变量声明。 ???  
 
 
+# 变量声明 > 函数声明, 变量赋值 (overwrite) > function declaration
