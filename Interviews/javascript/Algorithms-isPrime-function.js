@@ -23,3 +23,13 @@ function isPrime(number) {
     }
     return true;
 }
+
+let count = 0;
+for(let i=0; i< 100000000; i++) {
+    if(isPrime(i)){
+        console.log(`${i} is prime!`);
+        count++;
+    }
+}
+console.log(`the total num of prime in 100000000 is ${count} !`);
+
