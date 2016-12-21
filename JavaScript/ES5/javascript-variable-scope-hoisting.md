@@ -35,7 +35,7 @@ If a local variable is assigned without first being declared with the var keywor
 
 undeclared-same-name-local-variable-overwrite-global-variable  
 
-如果分配了局部变量而没有使用var关键字先声明，它将成为一个全局变量。
+如果分配值了给局部变量而没有使用var关键字先声明，它将成为一个全局变量。
 
 ## hoisting  
 
