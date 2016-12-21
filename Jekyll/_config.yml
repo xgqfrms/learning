@@ -1,0 +1,30 @@
+# Dependencies
+encoding: UTF-8
+
+# Setup
+title:            Jekyll 3 on Windows
+tagline:          'Ultimate Guide'
+description:      'An updated guide to setting up <a href="http://jekyllrb.com" target="_blank">Jekyll 3</a> on Windows. Based work by <a href="http://jekyll-windows.juthilo.com/" target="_blank">Juthilo</a> and updated by <a href="https://webgeeker.xyz" target="_blank">sverrirs</a>.'
+url:              https://jekyll.webgeeker.xyz/
+baseurl:          "./"
+
+author:
+  name:           'webgeeker.xyz'
+  url:            https://jekyll.webgeeker.xyz
+
+# Custom vars
+version:          1.4.0
+
+############################################################
+# Copy the external static folders into the output site
+include:
+  - "/js/*.*"
+  - "/img/*.*"
+  - "/css/*.*"  
+  - "/fonts/*.*"
+  - "/icon/*.*"
+
+markdown: kramdown
+highlighter: rouge
+
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
