@@ -77,4 +77,10 @@ showState();
 
 
 
+/*
+var > function  ???
 
+变量赋值 (overwrite) > function declaration
+
+
+ */
