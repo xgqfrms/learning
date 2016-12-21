@@ -9,8 +9,15 @@
 + Structural directives
 
 
-## Components
+## Components  
 
-## Attribute directives
 
-## Structural directives
+
+
+## Attribute directives  
+https://angular.io/docs/ts/latest/guide/attribute-directives.html  
+
+
+
+## Structural directives  
+https://angular.io/docs/ts/latest/guide/structural-directives.html  
