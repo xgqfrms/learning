@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "typescript.tsdk": "./ng2-app/node_modules/typescript/lib",
+    "typescript.check.tscVersion": false,
+    "typescript.check.workspaceVersion": false,
+    "editor.tabCompletion": true,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": false,
+    "html.format.wrapLineLength": 80,
+    "editor.wrappingColumn": 100,
+    "html.format.enable": false,
+    "html.format.extraLiners": "/body",
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all"
+}

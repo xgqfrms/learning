@@ -2,7 +2,25 @@
 
 https://cli.angular.io/  
 
-Angular 2 CLI
+
+https://github.com/angular/angular-cli/releases  
+
+https://github.com/angular/angular-cli/tags  
+
+
+v1.0.0-beta.24 (Verified)  
+
+## update 
+
+```sh
+$ ng -v
+
+$ npm i -g angular-cli
+
+``` 
+
+
+
 
 ## NgModule 
 
