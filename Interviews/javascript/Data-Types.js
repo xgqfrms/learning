@@ -1,19 +1,19 @@
-// Data Types
+// Data Types 
 
 console.log(typeof null);
 console.log(typeof {});
 console.log(typeof []);
 console.log(typeof undefined);
 
-object
-object
-object
-undefined
+// object
+// object
+// object
+// undefined
 
 
-var myArray = [];
+var myArray = [1, 2, 3];
 if (myArray instanceof Array) {
-    // do something...
+    console.log(`[${myArray}] is an Array!`);
 }
 
 

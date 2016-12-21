@@ -1,4 +1,4 @@
-// 
+// closure 
 
 
 var nodes = document.getElementsByTagName('button');
