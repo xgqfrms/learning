@@ -50,8 +50,8 @@ console.log(b);
 
 var c = [33, 103, 3, 726, 200, 984, 198, 764, 9];
 
-function bubbleSort(x) {
-    var numElements = x.length;
+function bubbleSort() {
+    var numElements = this.dataStore.length;
     var temp;
     for (var outer = numElements; outer >= 2; --outer) {
         for (var inner = 0; inner <= outer-1; ++inner) {
