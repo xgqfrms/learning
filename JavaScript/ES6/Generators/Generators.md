@@ -1,4 +1,8 @@
-# generator function  
+# Generators  
+
+
+https://davidwalsh.name/es6-generators  
+
 
 
 http://www.algomation.com/tutorial/algorithms-and-display-elements  
@@ -9,6 +13,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators  
 
 
-https://davidwalsh.name/es6-generators
 
 
