@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4 sides symmetry</title>
+    <style>
+        .box{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-200px) translateY(-100px);
+            width: 400px;
+            height: 200px;
+            background: #fff;
+            border: 1px solid red;
+        }
+        .div {
+            width: 300px;
+            height: 100px;
+            background-color: rgba(255,255,0,0.7);
+            box-shadow: 0px 0px 10px 10px #f00;
+            margin: 50px;
+        }
+        .div:hover{
+            box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.2);
+            transition: all 0.5s 0 ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS3 box-shadow : 4 sides symmetry</h1>
+    </div>
+    <div class="box">
+        <div class="div">
+            <!-- CSS3 box-shadow -->
+            <!-- 
+            boxShadow = "none|h-shadow v-shadow blur spread color |inset|initial|inherit"
+            坐标： 左上角(0,0) 模糊度 延展度(方向四周 ) 颜色 方式(内部，初始值，继承)
+            两组 box-shadow: 30px -10px 20px 0 #0cea15, -30px 10px 20px 0 rgba(0,0,0,0.19);
+            实现两边对称阴影效果 (Material Design)
+            两组 box-shadow: 0px 12px 16px 0 rgba(0,0,0,0.2), 0px 10px 20px 0 #9509ad;
+            实现叠加阴影效果 (外大浅色，内小深色)
+            一组 box-shadow: 0px 0px 7px 10px rgba(255,0,255,0.5);
+            实现四边对称阴影效果 (0,0 blur spread)
+             -->
+        </div>
+    </div>
+</body>
+</html>

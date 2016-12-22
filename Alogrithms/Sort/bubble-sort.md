@@ -6,6 +6,7 @@ http://www.stoimen.com/blog/2010/07/09/friday-algorithms-javascript-bubble-sort/
 
 
 http://algorithms.openmymind.net/sort/bubblesort.html  
+https://github.com/karlseguin/Algorithms  
 
 http://codereview.stackexchange.com/questions/87869/bubble-sort-algorithm-in-javascript  
 
