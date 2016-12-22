@@ -20,6 +20,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet
 
 https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet  
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3  
+
 
 
 ## Document Object Model (DOM) Level 2 Style Specification (Version 1.0)
@@ -41,10 +43,46 @@ https://www.w3.org/TR/cssom-1/
 https://drafts.csswg.org/cssom/#stylesheet  
 
 
+## W3C REC & CR & WD  
+
+> Recommendation  
+
+https://www.w3.org/TR/css3-color/  
+https://drafts.csswg.org/css-color-3/  
+
+https://www.w3.org/TR/css3-mediaqueries/  
+https://drafts.csswg.org/mediaqueries-3/  
 
 
+> Candidate Recommendation  
 
 
+https://www.w3.org/TR/css3-background/  
+https://drafts.csswg.org/css-backgrounds-3/  
+
+https://www.w3.org/TR/css3-multicol/  
+https://drafts.csswg.org/css-multicol-1/  
+
+https://www.w3.org/TR/css3-images/  
+https://drafts.csswg.org/css-images-3/  
+
+https://www.w3.org/TR/css-flexbox-1/  
+https://drafts.csswg.org/css-flexbox-1/  
+
+https://www.w3.org/TR/css3-conditional/  
+https://drafts.csswg.org/css-conditional-3/  
+
+
+> Working Draft
+
+https://www.w3.org/TR/web-animations-1/  
+https://w3c.github.io/web-animations/  
+
+https://www.w3.org/TR/css3-animations/  
+https://drafts.csswg.org/css-animations/  
+
+https://www.w3.org/TR/css3-transitions/  
+https://drafts.csswg.org/css-transitions/  
 
 
 
