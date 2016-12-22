@@ -7,6 +7,8 @@ http://css3gen.com/box-shadow/
 
 http://www.w3schools.com/cssref/css3_pr_box-shadow.asp  
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow  
+
 
 ```codes
 boxShadow = "none|h-shadow v-shadow blur spread color |inset|initial|inherit"
@@ -22,6 +24,13 @@ boxShadow = "none|h-shadow v-shadow blur spread color |inset|initial|inherit"
 实现四边对称阴影效果 (0,0 blur spread)
 
 ``` 
+
+##  pretty fancy 3D looking box shadows  
+
+/* boxShadow ? transform: rotate(-90deg); + .effect2::before, .effect2:::after*/
+
+https://css-tricks.com/almanac/properties/b/box-shadow/  
+https://css-tricks.com/snippets/css/css-box-shadow/  
 
 
 
