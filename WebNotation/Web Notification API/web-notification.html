@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <meta name="description" content="Angualr2 App">
+    <meta name="author" content="xgqfrms, https://xgqfrms.github.io">
+    <title>Web Notification API</title>
+    <!-- https://www.sitepoint.com/browser-notification-api/ -->
+    <!-- css -->
+    <link rel="stylesheet" href="./style-JS3.css">
+    <style>
+        [aria-hidden="true"] {
+          display: none;
+          visibility: hidden;
+        }
+        /*
+            WebAIM: 
+            CSS in Action - Invisible Content Just for Screen Reader Users
+            http://webaim.org/techniques/css/invisiblecontent/
+            fonts: againtsregular
+            https://www.typesample.com/samples/againtsreg_3gb8y_2x
+            https://www.typesample.com/samples/againtsreg_plafz_2x/save
+            http://www.myfonts.com/
+            https://javascript30.com/stylesheets/build/style-JS3.css
+        */
+       .x h1 {
+           font-family: 'againtsregular' !important;
+           color: #ffc600;
+           font-size: 8rem;
+           text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px 2px 3px rgba(0,0,0,0.3), -2px -2px 3px rgba(0,0,0,0.3);
+       }
+       h1, h2, h3, h4, h5, h6 {
+           font-family: 'adam.cg_proregular', sans-serif;
+           font-weight: 100;
+           margin: 0;
+       }
+       * {
+           box-sizing: border-box;
+       }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <h1>Web Notification API</h1>
+        <!-- https://www.sitepoint.com/browser-notification-api/ -->
+    </div>
+    <div>
+        <mark>
+            <span class="js-currentVersion" aria-hidden="true">3.3.7</span>
+        </mark>
+    </div>
+<!-- js -->
+<script>
+    (() => {
+        // let is only available in {}
+        if ("Notification" in window) {
+            console.log("Web Notification API is supported by this browser!");
+            let permissionx = Notification.permission;
+            console.log(`permissionx = ${permissionx}`);
+            if (permissionx === "denied" || permissionx === "granted") {
+                return ;
+            }
+            let latestVersion = document.querySelector(".js-currentVersion").textContent;
+            // Notification.requestPermission();
+            // Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+            Notification
+                .requestPermission()
+                .then(() => {
+                    let title = `Click to see what's new in v${latestVersion}`;
+                    let options = {
+                        body: `https://github.com/xgqfrms/xgqfrms/releases/v${latestVersion}`,
+                        icon: "http://www.xgqfrms.xyz/images/icon.png",
+                        link: `https://github.com/xgqfrms/xgqfrms/releases/v${latestVersion}`
+                    };
+                    var notification = new Notification(title, options);
+                    if (title) {
+                        notification.onclick = () => {
+                            window.open(`https://github.com/xgqfrms/xgqfrms/releases/`);
+                        };
+                    }
+                    setTimeout(notification.close.bind(notification), 5000);
+                    //alert(`title = ${notification.title}\n notification.options = ${notification.options}`);
+                    console.log(notification.title);
+                });
+        }else{
+            console.log("Your old browser doesn't support Web Notification API!");
+        }
+    })();
+</script>
+</body>
+</html>
