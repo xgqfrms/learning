@@ -1,5 +1,7 @@
 body {
-    background: #ccc
+    background: #fff;
+    overflow-x: hidden;
+    scroll-behavior: none;
 }
 
 .box h3 {
@@ -8,11 +10,23 @@ body {
     top: 80px;
 }
 
+.box:hover h3 {
+    color: rgba(255,0,255,0.7);
+    text-shadow: 3px 7px 12px (0,255,255,0.7);
+    -webkit-transform: scale(2) rotate(1turn);
+        -ms-transform: scale(2) rotate(1turn);
+            transform: scale(2) rotate(1turn);
+    -webkit-transition: all 0.5s 0s ease-out;
+    transition: all 0.5s 0s ease-out;
+}
+
 .box {
     width: 70%;
     height: 200px;
     background: #FFF;
     margin: 40px auto;
+    border: 1px solid rgba(0,255,0,0.7);
+    border-radius: 15px;
 }
 /* cursor */
 .box:hover{
