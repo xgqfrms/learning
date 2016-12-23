@@ -1,3 +1,9 @@
+@import url('./css3.css') screen and (min-width: 720px);
+
+/*
+@import & Media Queries  
+ */
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
