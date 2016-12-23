@@ -14,7 +14,10 @@ body {
     background: #FFF;
     margin: 40px auto;
 }
-
+/* cursor */
+.box:hover{
+    cursor: pointer;
+}
 
 /*==================================================
  * Effect 1
