@@ -1,0 +1,28 @@
+ [aria-hidden="true"] {
+   display: none;
+   visibility: hidden;
+ }
+ /*
+     WebAIM: 
+     CSS in Action - Invisible Content Just for Screen Reader Users
+     http://webaim.org/techniques/css/invisiblecontent/
+     fonts: againtsregular
+     https://www.typesample.com/samples/againtsreg_3gb8y_2x
+     https://www.typesample.com/samples/againtsreg_plafz_2x/save
+     http://www.myfonts.com/
+     https://javascript30.com/stylesheets/build/style-JS3.css
+ */
+.x h1 {
+    font-family: 'againtsregular' !important;
+    color: #ffc600;
+    font-size: 8rem;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px 2px 3px rgba(0,0,0,0.3), -2px -2px 3px rgba(0,0,0,0.3);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'adam.cg_proregular', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
