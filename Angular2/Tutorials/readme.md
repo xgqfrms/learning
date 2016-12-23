@@ -6,6 +6,12 @@
 https://www.youtube.com/watch?v=mvzNHxxjC2w  
 
 
+## scotch.io  
+
+https://scotch.io/tag/angular-js  
+
+https://scotch.io/tutorials/component-inheritance-in-angular-2  
+
 
 
 
