@@ -39,16 +39,17 @@ A primitive data type is data that has a primitive value.
 
 原始数据类型是具有原始值的数据。  
 
-JavaScript定义了5种类型的原始数据类型：
+JavaScript ES5 定义了5种类型的原始数据类型 ：
 
-string
-number
-boolean
-null
-undefined
+
+undefined, null, boolean, number, string
+
+
 
 原始值是不可变的 (它们是硬编码的，因此不能改变)  
 
+
+## ES6/ES7 Primitive value 原始值(6 种)
 
 
 Undefined, Null, Boolean, Number, String, and Symbol
