@@ -27,15 +27,17 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_
 ## demo codes  
 
 ```js
-## call() === arguments-list
+## call() === comma-separated arguments (arguments-list)  
 
 .call(this, args1, args2, args3, ...)
 
-## apply() === array-items 
+## apply() === array of arguments (array-items)  
 
 .apply(this, [arr0, arr1, arr2, ...])
 
 ``` 
+
+## this === the target object 
 
 
 ```js
@@ -86,5 +88,12 @@ dispatch(person2, update, ['Slarty', 200, '1xM']);
 ``` 
 
 
+http://www.w3schools.com/js/js_function_invocation.asp  
 
+
+
+## javaScript call apply and bind  
+
+
+https://www.youtube.com/watch?v=c0mLRpw-9rI  
 
