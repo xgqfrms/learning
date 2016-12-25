@@ -1,32 +1,14 @@
-// Object method & property
-var Person = {
-    firstName: "Xray",
-    lastName: "Smith",
-    age: 17,
-    eyeColor: "black",
-    fullName: function() {
-        return this.firstName + " " + this.lastName;
-    }
-}
-
-Person.fullName;
-// 函数定义
-
-Person.fullName();
-// 函数调用
-
-typeof(Person.fullName)
-// "function"
-typeof(Person.fullName())
-// "string"
-
-
 /*
 函数定义 === functionName
 函数调用 === functionName()
-*/
 
-// constructor function (methods & properties)  
+
+构造函数 === Constructor
+构造函数调用创建一个新对象, 新对象从其构造函数继承属性和方法。
+
+构造函数中的this关键字没有值。
+这个值将是在调用函数时创建的新对象。
+ */
 
 function myFunction(arg1, arg2) {
     this.firstName = arg1;
@@ -52,5 +34,3 @@ typeof(f.firstName);
 // "string"
 typeof(f.lastName);
 // "string"
-
-

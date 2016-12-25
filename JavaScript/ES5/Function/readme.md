@@ -1,4 +1,6 @@
-# Function constructor  
+# Function  
+
+## Function constructor  
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function  
 
@@ -37,7 +39,9 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_
 
 ``` 
 
-## this === the target object 
+## this === the target object  
+
+## 两个方法都将一个所有者对象(this)作为第一个参数。  
 
 
 ```js
@@ -96,4 +100,26 @@ http://www.w3schools.com/js/js_function_invocation.asp
 
 
 https://www.youtube.com/watch?v=c0mLRpw-9rI  
+
+
+
+## IIFE 
+
+a JavaScript function can be invoked without being called.  
+
+https://en.wikipedia.org/wiki/Immediately-invoked_function_expression  
+http://www.w3schools.com/js/js_function_invocation.asp  
+
+```js
+
+(function(){
+    console.log('this is an IIFE function!');
+})();
+
+(function(){
+    console.log("this is an IIFE \(Douglas Crockford's style \) function!");
+}());
+
+``` 
+
 
