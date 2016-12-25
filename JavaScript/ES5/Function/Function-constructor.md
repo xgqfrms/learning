@@ -27,11 +27,11 @@ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_
 ## demo codes  
 
 ```js
-## call() === c
+## call() === arguments-list
 
 .call(this, args1, args2, args3, ...)
 
-## apply() === array 
+## apply() === array-items 
 
 .apply(this, [arr0, arr1, arr2, ...])
 
