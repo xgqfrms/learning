@@ -48,3 +48,33 @@ null
 undefined
 
 原始值是不可变的 (它们是硬编码的，因此不能改变)  
+
+
+
+Undefined, Null, Boolean, Number, String, and Symbol
+
+
+http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262%206th%20edition%20June%202015.pdf (page 23/566)  
+
+
+
+
+
+
+
+
+
+
+
+
+## w3schools.com JS Objects
+
+http://www.w3schools.com/js/js_object_definition.asp  
+http://www.w3schools.com/js/js_properties.asp  
+http://www.w3schools.com/js/js_object_methods.asp  
+http://www.w3schools.com/js/js_object_prototypes.asp  
+
+
+http://www.w3schools.com/js/js_objects.asp  
+
+

@@ -122,4 +122,12 @@ http://www.w3schools.com/js/js_function_invocation.asp
 
 ``` 
 
+## w3schools.com JS Functions
+
+http://www.w3schools.com/js/js_function_definition.asp  
+http://www.w3schools.com/js/js_function_invocation.asp  
+http://www.w3schools.com/js/js_function_parameters.asp  
+http://www.w3schools.com/js/js_function_closures.asp  
+
+http://www.w3schools.com/js/js_functions.asp  
 
