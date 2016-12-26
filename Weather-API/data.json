@@ -1,0 +1,83 @@
+{
+    "error":0,
+    "status":"success",
+    "date":"2016-12-27",
+    "results":[
+        {
+            "currentCity":"北京",
+            "pm25":"22",
+            "index":[
+                {
+                    "title":"穿衣",
+                    "zs":"冷",
+                    "tipt":"穿衣指数",
+                    "des":"天气冷，建议着棉服、羽绒服、皮夹克加羊毛衫等冬季服装。年老体弱者宜着厚棉衣、冬大衣或厚羽绒服。"
+                },
+                {
+                    "title":"洗车",
+                    "zs":"较适宜",
+                    "tipt":"洗车指数",
+                    "des":"较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"
+                },
+                {
+                    "title":"旅游",
+                    "zs":"较适宜",
+                    "tipt":"旅游指数",
+                    "des":"天气较好，同时又有微风伴您一路同行。稍冷，较适宜旅游，您仍可陶醉于大自然的美丽风光中。"
+                },
+                {
+                    "title":"感冒",
+                    "zs":"较易发",
+                    "tipt":"感冒指数",
+                    "des":"天凉，昼夜温差较大，较易发生感冒，请适当增减衣服，体质较弱的朋友请注意适当防护。"
+                },
+                {
+                    "title":"运动",
+                    "zs":"较不宜",
+                    "tipt":"运动指数",
+                    "des":"天气较好，但考虑天气寒冷，推荐您进行各种室内运动，若在户外运动请注意保暖并做好准备活动。"
+                },
+                {
+                    "title":"紫外线强度",
+                    "zs":"弱",
+                    "tipt":"紫外线强度指数",
+                    "des":"紫外线强度较弱，建议出门前涂擦SPF在12-15之间、PA+的防晒护肤品。"
+                }
+            ],
+            "weather_data":[
+                {
+                    "date":"周二 12月27日 (实时：-4℃)",
+                    "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/duoyun.png",
+                    "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/duoyun.png",
+                    "weather":"多云",
+                    "wind":"微风",
+                    "temperature":"4 ~ -7℃"
+                },
+                {
+                    "date":"周三",
+                    "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/duoyun.png",
+                    "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/qing.png",
+                    "weather":"多云转晴",
+                    "wind":"北风3-4级",
+                    "temperature":"3 ~ -7℃"
+                },
+                {
+                    "date":"周四",
+                    "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/qing.png",
+                    "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/duoyun.png",
+                    "weather":"晴转多云",
+                    "wind":"南风微风",
+                    "temperature":"1 ~ -6℃"
+                },
+                {
+                    "date":"周五",
+                    "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/duoyun.png",
+                    "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/qing.png",
+                    "weather":"多云转晴",
+                    "wind":"南风微风",
+                    "temperature":"3 ~ -7℃"
+                }
+            ]
+        }
+    ]
+}
