@@ -81,7 +81,9 @@ onwaiting
 
 
 
+## CFML (ColdFusion Markup Language)  
 
+http://www.quackit.com/  
 
-
+http://searchoracle.techtarget.com/definition/CFML  
 
