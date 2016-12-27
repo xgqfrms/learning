@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+
+    <meta name="description" content="Free Web tutorials on HTML5, CSS3, JavaScript, React, Angular 2, ES6, ES7, Node, Express, PHP, Ajax , Sass, Gulp, Webpack ">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, React, Angular 2, ES6, ES7, Node, Express, PHP, Ajax , Sass, Gulp, Webpack ">
+    <meta name="author" content="xgqfrms, webgeeker">
+    <meta name="application-name" content=" App">
+    <meta name="generator" content="sublime text3, chrome, github">
+
+    <meta http-equiv="refresh" content="365; url=https://www.xgqfrms.xyz/">
+
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.png" type="image/png">
+    <!-- 
+    https://facebook.github.io/react/favicon.ico
+    https://angular.io/resources/images/icons/favicon.ico
+     -->
+    <base href="/">
+    <title>Canvas Clock</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400" style="background-color:#333">
+        <!-- you browser doesn't support canvas! -->
+    </canvas>
+<!--     <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var radius = canvas.height / 2;
+        ctx.translate(radius, radius);
+        radius = radius * 0.90;
+        setInterval(drawClock, 1000);
+
+        function drawClock() {
+          drawFace(ctx, radius);
+          drawNumbers(ctx, radius);
+          drawTime(ctx, radius);
+        }
+
+        function drawFace(ctx, radius) {
+          var grad;
+          ctx.beginPath();
+          ctx.arc(0, 0, radius, 0, 2*Math.PI);
+          ctx.fillStyle = 'white';
+          ctx.fill();
+          grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+          grad.addColorStop(0, '#333');
+          grad.addColorStop(0.5, 'white');
+          grad.addColorStop(1, '#333');
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = radius*0.1;
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+          ctx.fillStyle = '#333';
+          ctx.fill();
+        }
+
+        function drawNumbers(ctx, radius) {
+          var ang;
+          var num;
+          ctx.font = radius*0.15 + "px arial";
+          ctx.textBaseline="middle";
+          ctx.textAlign="center";
+          for(num = 1; num < 13; num++){
+            ang = num * Math.PI / 6;
+            ctx.rotate(ang);
+            ctx.translate(0, -radius*0.85);
+            ctx.rotate(-ang);
+            ctx.fillText(num.toString(), 0, 0);
+            ctx.rotate(ang);
+            ctx.translate(0, radius*0.85);
+            ctx.rotate(-ang);
+          }
+        }
+
+        function drawTime(ctx, radius){
+            var now = new Date();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            //hour
+            hour=hour%12;
+            hour=(hour*Math.PI/6)+
+            (minute*Math.PI/(6*60))+
+            (second*Math.PI/(360*60));
+            drawHand(ctx, hour, radius*0.5, radius*0.07);
+            //minute
+            minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+            drawHand(ctx, minute, radius*0.8, radius*0.07);
+            // second
+            second=(second*Math.PI/30);
+            drawHand(ctx, second, radius*0.9, radius*0.02);
+        }
+
+        function drawHand(ctx, pos, length, width) {
+            ctx.beginPath();
+            ctx.lineWidth = width;
+            ctx.lineCap = "round";
+            ctx.moveTo(0,0);
+            ctx.rotate(pos);
+            ctx.lineTo(0, -length);
+            ctx.stroke();
+            ctx.rotate(-pos);
+        }
+    </script> -->
+    <script src="./clock.js"></script>
+    <!-- 
+    <script src="clock.js" async defer crossorigin></script>
+    Ajax need a web server
+    http://www.w3schools.com/graphics/canvas_clock_start.asp
+    https://developer.mozilla.org/en/docs/Web/HTML/Element/script#Attributes
+     -->
+</body>
+</html>

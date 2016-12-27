@@ -1,0 +1,11 @@
+<xml version="1.0" encoding="UTF-8"/>
+<svg version="1.1" x="0px" y="0px" viewBox="0 0 400 400" data-reactid=".0.0">
+    <circle fill="rgba(255,255,255,0.1)" cx="200" cy="200" r="139" data-reactid=".0.0.0"></circle>
+    <path fill="none" stroke="#FFFFFF" stroke-width="4" d="M231.7,200c0,17.4-1.7,88-31.7,88s-31.7-70.6-31.7-88s1.7-88,31.7-88S231.7,182.6,231.7,200z" data-reactid=".0.0.1"></path>
+    <path fill="none" stroke="#FFFFFF" stroke-width="4" d="M216.1,227.7c-15,8.9-76.6,43.4-91.9,17.6s44.6-63.2,59.6-72.1s76.6-43.4,91.9-17.6S231.1,218.8,216.1,227.7z" data-reactid=".0.0.2"></path>
+    <path fill="none" stroke="#FFFFFF" stroke-width="4" d="M183.9,227.7c15,8.9,76.6,43.4,91.9,17.6s-44.6-63.2-59.6-72.1s-76.6-43.4-91.9-17.6S168.9,218.8,183.9,227.7z" data-reactid=".0.0.3"></path>
+    <circle fill="#FFFFFF" cx="200" cy="200" r="16" data-reactid=".0.0.4"></circle>
+    <circle fill="#00FF7F" cx="0" cy="0" r="6" data-reactid=".0.0.5" style="transform: translate3d(231.053px, 180.219px, 0px);"></circle>
+    <circle fill="#00FF7F" cx="0" cy="0" r="6" data-reactid=".0.0.6" style="transform: translate3d(232.87px, 217.009px, 0px);"></circle>
+    <circle fill="#00FF7F" cx="0" cy="0" r="6" data-reactid=".0.0.7" style="transform: translate3d(167.13px, 217.009px, 0px);"></circle>
+</svg>
