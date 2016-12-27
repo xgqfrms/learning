@@ -46,6 +46,82 @@ composer.json
 $ composer config repo.packagist composer https://packagist.phpcomposer.com
 
 
+
+
+## Artisan  
+http://www.imooc.com/video/13335  
+
+
+make:controller
+make:model
+make:middleware
+
+
+
+$ laravel new laravel53
+
+
+http://localhost:8888/laravel53/public/
+
+
+$ php artisan
+
+$ php artisan list
+
+$ php artisan help migrate
+
+$ php artisan make:controller StudentController
+
+$ php artisan make:model StudentModel
+
+$ php artisan make:middleware StudentMiddleware
+
+
+## Composer CLI  
+
+
+search, show, require, install, update
+
+
+$ composer init 
+
+$ composer init -y
+
+
+$ composer search monolog
+
+$ composer show --all monolog/monolog
+
+
+composer.json 
+
+"require": {
+    "monolog/monolog": "1.21.*"
+}
+
+
+$ composer install
+
+$ composer require symfony/http-foundation
+
+$ composer update
+
+
+
+## phpstrom
+
+
+
+
+## Symfony  
+
+Symfony是一组可重用的PHP组件...  
+
+https://symfony.com/  
+
+
+
+
 ##  2016 版 Laravel 系列入门教程 (Laravel 5.2 ) 
 
 https://github.com/johnlui/Learn-Laravel-5  
