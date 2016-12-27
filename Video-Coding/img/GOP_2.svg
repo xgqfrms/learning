@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="1055"
+   height="414"
+   id="svg2876">
+  <defs
+     id="defs2880">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         id="path4472"
+         style="stroke:#000000" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         id="path4466"
+         style="stroke:#000000" />
+    </marker>
+  </defs>
+  <use
+     transform="translate(684,0)"
+     id="use4807"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#path6593" />
+  <path
+     d="m 19.5,43 0,369"
+     id="grid"
+     style="fill:none;stroke:#646664;stroke-dasharray:2, 2" />
+  <use
+     transform="translate(969,0)"
+     id="use3922"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#grid" />
+  <g
+     id="g3254">
+    <g
+       id="g3246">
+      <g
+         id="g3240">
+        <use
+           transform="translate(114,0)"
+           id="use3878"
+           x="0"
+           y="0"
+           width="1509"
+           height="414"
+           xlink:href="#grid" />
+        <use
+           transform="translate(57,0)"
+           id="use4004"
+           x="0"
+           y="0"
+           width="1509"
+           height="414"
+           xlink:href="#grid" />
+      </g>
+      <use
+         transform="translate(114,0)"
+         id="use3244"
+         x="0"
+         y="0"
+         width="1509"
+         height="414"
+         xlink:href="#g3240" />
+    </g>
+    <use
+       transform="translate(228,0)"
+       id="use3252"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#g3246" />
+  </g>
+  <use
+     transform="translate(456,0)"
+     id="use3262"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#g3254" />
+  <path
+     d="m 264.08333,189.5 0,-90 L 48,99.5 48,214"
+     id="path6593"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-start:url(#Arrow1Mstart)" />
+  <path
+     d="m 504,189.5 0,-90 -216.08332,0 0,114.5"
+     id="path6595"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-start:url(#Arrow1Mstart)" />
+  <use
+     transform="translate(684,0)"
+     id="use3313"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#g6120" />
+  <g
+     transform="matrix(-1,0,0,1,552,0)"
+     id="g6335">
+    <path
+       d="m 228.5,308.5 0,75 41.16666,0 0,-94.5"
+       id="path6337"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+    <path
+       d="m 171.5,308.5 0,56 93.41667,0 0,-75.5"
+       id="path6339"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+    <path
+       d="m 114.5,308.5 0,37 145.66667,0 0,-56.5"
+       id="path6341"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+  </g>
+  <g
+     id="g6120">
+    <path
+       d="m 114.5,308.5 0,75 155.16667,0 0,-94.5"
+       id="path5477"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+    <path
+       d="m 171.5,308.5 0,56 93.41667,0 0,-75.5"
+       id="path5481"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+    <path
+       d="m 228.5,308.5 0,37 31.66666,0 0,-56.5"
+       id="path5485"
+       style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+  </g>
+  <path
+     d="m 152.5,308.5 0,56 -104.5,0 0,-75.5"
+     id="path5479"
+     style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+  <path
+     d="m 95.5,308.5 0,75 -52.25,0 0,-94.5"
+     id="path4461"
+     style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+  <path
+     d="m 209.5,308.5 0,37 -156.75,0 0,-56.5"
+     id="path5483"
+     style="fill:none;stroke:#000000;marker-start:url(#Arrow1Lstart)" />
+  <g
+     id="g3391">
+    <g
+       id="g3380">
+      <use
+         transform="translate(228,0)"
+         id="use6127"
+         x="0"
+         y="0"
+         width="1509"
+         height="414"
+         xlink:href="#g6120" />
+      <use
+         transform="translate(228,0)"
+         id="use3378"
+         x="0"
+         y="0"
+         width="1509"
+         height="414"
+         xlink:href="#g6335" />
+    </g>
+    <use
+       transform="translate(228,0)"
+       id="use3384"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#g3380" />
+  </g>
+  <rect
+     width="969"
+     height="19"
+     x="19.5"
+     y="203.5"
+     id="rect4008"
+     style="fill:#ffffff;stroke:#000000" />
+  <use
+     transform="translate(0,76)"
+     id="use4885"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#rect4008" />
+  <rect
+     width="684"
+     height="28"
+     x="19.5"
+     y="15"
+     id="rect6999"
+     style="fill:#04cecc;stroke:#000000;stroke-width:4" />
+  <text
+     x="312.97119"
+     y="37.898926"
+     id="text7280"
+     xml:space="preserve"
+     style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+       x="312.97119"
+       y="37.898926"
+       id="tspan7282"
+       style="font-size:27px;font-weight:bold;font-family:Liberation Mono">GoP #1</tspan></text>
+  <path
+     d="m 1048.5,43 -65,0 0,-28 65,0"
+     id="rect7334"
+     style="fill:#04cecc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-dasharray:4, 4" />
+  <path
+     d="m 988.5,43 -285,0 0,-28 285,0"
+     id="rect4913"
+     style="fill:#04cecc;stroke:#000000;stroke-width:4" />
+  <text
+     x="797.68872"
+     y="37.898926"
+     id="text7286"
+     xml:space="preserve"
+     style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+       x="797.68872"
+       y="37.898926"
+       id="tspan7288"
+       style="font-size:27px;font-weight:bold;font-family:Liberation Mono">GoP #2</tspan></text>
+  <g
+     id="Pframe">
+    <rect
+       width="57"
+       height="57"
+       x="247.5"
+       y="222.60001"
+       transform="translate(0,-0.1)"
+       id="rect3932"
+       style="fill:#9ccefc;stroke:#000000" />
+    <text
+       x="267.57568"
+       y="259.89233"
+       id="P"
+       xml:space="preserve"
+       style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+         x="267.57568"
+         y="259.89233"
+         id="tspan7259"
+         style="font-size:27px;font-weight:bold;font-family:Liberation Mono">P</tspan></text>
+  </g>
+  <g
+     id="g3450">
+    <use
+       transform="translate(57,0)"
+       id="use3928"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#Bframe" />
+    <use
+       transform="translate(114,0)"
+       id="use3930"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#Bframe" />
+    <g
+       id="Bframe">
+      <rect
+         width="57"
+         height="57"
+         x="76.5"
+         y="222.5"
+         id="rect3926"
+         style="fill:#fcfe04;stroke:#000000" />
+      <text
+         x="95.699356"
+         y="255.91832"
+         id="B"
+         xml:space="preserve"
+         style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+           x="95.699356"
+           y="255.91832"
+           id="tspan7271"
+           style="font-size:27px;font-weight:bold;font-family:Liberation Mono">B</tspan></text>
+    </g>
+  </g>
+  <g
+     id="Iframe">
+    <rect
+       width="57"
+       height="57"
+       x="19.5"
+       y="222.5"
+       id="rect3924"
+       style="fill:#fc0204;stroke:#000000" />
+    <text
+       x="39.89209"
+       y="259.89233"
+       id="I"
+       xml:space="preserve"
+       style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+         x="39.89209"
+         y="259.89233"
+         id="tspan7248"
+         style="font-size:27px;font-weight:bold;font-family:Liberation Mono">I</tspan></text>
+  </g>
+  <use
+     transform="translate(228,-0.1)"
+     id="P2"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#Pframe" />
+  <use
+     transform="translate(228,0)"
+     id="use3458"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#g3450" />
+  <use
+     transform="translate(456,0)"
+     id="use3460"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#g3450" />
+  <g
+     transform="translate(684,0)"
+     id="g4811">
+    <rect
+       width="57"
+       height="57"
+       x="247.5"
+       y="222.60001"
+       transform="translate(0,-0.1)"
+       id="rect4813"
+       style="fill:#9ccefc;stroke:#000000" />
+    <text
+       x="267.57568"
+       y="259.89233"
+       id="text4815"
+       xml:space="preserve"
+       style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+         x="267.57568"
+         y="259.89233"
+         id="tspan4817"
+         style="font-size:27px;font-weight:bold;font-family:Liberation Mono">P</tspan></text>
+  </g>
+  <g
+     transform="translate(684,0)"
+     id="g4819">
+    <use
+       transform="translate(57,0)"
+       id="use4821"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#Bframe" />
+    <use
+       transform="translate(114,0)"
+       id="use4823"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#Bframe" />
+    <g
+       id="g4825">
+      <rect
+         width="57"
+         height="57"
+         x="76.5"
+         y="222.5"
+         id="rect4827"
+         style="fill:#fcfe04;stroke:#000000" />
+      <text
+         x="95.699356"
+         y="255.91832"
+         id="text4829"
+         xml:space="preserve"
+         style="font-size:40px;font-weight:bold;fill:#000000;font-family:Liberation Mono"><tspan
+           x="95.699356"
+           y="255.91832"
+           id="tspan4831"
+           style="font-size:27px;font-weight:bold;font-family:Liberation Mono">B</tspan></text>
+    </g>
+  </g>
+  <path
+     d="M 19.5,213 989,213"
+     id="path3553"
+     style="fill:none;stroke:#000000;stroke-width:19;stroke-dasharray:19, 19" />
+  <use
+     transform="translate(0,76)"
+     id="use4427"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#path3553" />
+  <g
+     transform="translate(-499.2102,0)"
+     id="g7376">
+    <rect
+       width="10"
+       height="20"
+       x="1497.7102"
+       y="203"
+       id="use7378" />
+    <use
+       transform="translate(20,0)"
+       id="use4431"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#use7378" />
+    <use
+       transform="translate(40,0)"
+       id="use4433"
+       x="0"
+       y="0"
+       width="1509"
+       height="414"
+       xlink:href="#use7378" />
+  </g>
+  <use
+     transform="translate(0,76)"
+     id="use4429"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#g7376" />
+  <use
+     transform="translate(684,0)"
+     id="use4883"
+     x="0"
+     y="0"
+     width="1509"
+     height="414"
+     xlink:href="#Iframe" />
+  <path
+     d="m 971.91668,99.5 0,114.5"
+     id="path4916"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-start:none" />
+  <path
+     d="m 971.91668,99.5 76.58332,0"
+     id="path5114"
+     style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:3, 3" />
+</svg>
