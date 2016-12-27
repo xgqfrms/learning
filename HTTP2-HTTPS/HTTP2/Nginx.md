@@ -39,15 +39,15 @@ https://www.nginx.com/blog/supporting-http2-google-chrome-users/
 https://www.nginx.com/blog/http2-module-nginx/  
 
 
-Binary  
+Binary  二进制  
 
-Multiplexing  
+Multiplexing  复用/多路复用  
 
-Header Compression  
+Header Compression  头部/首部/标题 压缩  
 
-Prioritization  
+Prioritization  优先级  
 
-
+服务端推送  
 
 https://www.nginx.com/blog/http2-module-nginx/  
 
@@ -61,7 +61,6 @@ http://http2.github.io/http2-spec/compression.html
 
 https://en.wikipedia.org/wiki/DEFLATE 
 
-https://www.nginx.com/blog/nginx-1-9-5/  
 
 
 
