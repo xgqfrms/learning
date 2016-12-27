@@ -115,9 +115,11 @@ $ composer update
 
 ## Symfony  
 
-Symfony是一组可重用的PHP组件...  
+Symfony是一组可重用的PHP组件...和一个用于web项目的PHP框架  
 
 https://symfony.com/  
+
+https://symfony.com/projects/laravel  
 
 
 
