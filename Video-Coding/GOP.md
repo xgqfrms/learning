@@ -10,7 +10,7 @@ I === I frame (intra coded picture)
 P === P frame (predictive coded picture) 
 B === B frame (bipredictive coded picture)  
 
-D === D frame (DC direct coded picture) 
+D === D frame (DC direct coded picture)  
 
 
 http://www.imooc.com/qadetail/191573  
