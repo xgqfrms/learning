@@ -1,6 +1,8 @@
 # Vue  
 
+https://cn.vuejs.org/  
 
+https://vuejs.org/  
 
 
 ## partly free videos  

@@ -2,6 +2,10 @@
 
 https://github.com/laravel/laravel  
 
+https://github.com/xgqfrms-GitHub/laravel/tree/master/Tutorials 
+
+
+
 
 
 ## Composer  
@@ -70,6 +74,18 @@ https://laracasts.com/series/whats-new-in-laravel-5-3
 https://laracasts.com/series/how-to-use-html5-video-and-videojs/episodes/1
 
 https://github.com/laracasts  
+
+
+
+http://devmarketer.io/learn/new-laravel-5-3-part1-small-changes/  
+
+
+
+
+
+
+
+
 
 
 
