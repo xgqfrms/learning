@@ -29,7 +29,7 @@ https://www.nginx.com/blog/nginx-1-9-5/
 
 https://www.nginx.com/blog/supporting-http2-google-chrome-users/  
 
-
+https://www.nginx.com/blog/early-alpha-patch-http2/  
 
 
 
@@ -47,9 +47,39 @@ Header Compression  头部/首部/标题 压缩
 
 Prioritization  优先级  
 
-服务端推送  
+Server push  服务端推送  
 
-https://www.nginx.com/blog/http2-module-nginx/  
+
+
+
+https://www.nginx.com/blog/http2-r7/  
+
+真正的多路复用  
+
+    单个，持久连接  
+
+二进制编码  
+
+头压缩  
+
+    SSL / TLS加密  
+
+
+
+## HTTP/2 for Web Application Developers  
+
+https://cdn.wp.nginx.com/wp-content/uploads/2015/09/NGINX_HTTP2_White_Paper_v4.pdf?utm_source=http2-r7&utm_medium=blog&utm_campaign=Security  
+
+https://www.youtube.com/watch?v=4OiyssTW4BA&feature=youtu.be  
+
+
+https://www.nginx.com/blog/7-tips-for-faster-http2-performance/?utm_source=http2-r7&utm_medium=blog&utm_campaign=Security  
+
+https://www.nginx.com/blog/7-tips-for-faster-http2-performance/  
+
+
+https://www.nginx.com/http2-ebook/?utm_source=http2-r7&utm_medium=blog&utm_campaign=Security  
+
 
 
 

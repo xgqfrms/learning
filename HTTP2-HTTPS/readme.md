@@ -52,5 +52,36 @@ https://www.nginx.com/?s=HTTP%2F2+
 
 
 
+## What’s New in HTTP/2?  
+
+
+https://www.nginx.com/blog/http2-module-nginx/  
+
+
+Binary  二进制  
+
+Multiplexing  复用/多路复用  
+
+Header Compression  头部/首部/标题 压缩  
+
+Prioritization  优先级  
+
+Server push  服务端推送  
+
+
+
+
+https://www.nginx.com/blog/http2-r7/  
+
+真正的多路复用  
+
+    单个，持久连接  
+
+二进制编码  
+
+头压缩  
+
+    SSL / TLS加密  
+
 
 
