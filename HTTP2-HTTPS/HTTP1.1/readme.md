@@ -1,4 +1,15 @@
-# HTTP/1.1  
+## HTTP  Specs & HTTP Working Group  
+
+https://http2.github.io/  
+
+https://github.com/http2/http2-spec/wiki/Implementations  
+
+https://datatracker.ietf.org/wg/httpbis/charter/  
+
+
+
+
+## HTTP/1.1 (HTTP Core Specs)  
 
 http://httpwg.org/specs/rfc7230.html  
 
@@ -26,17 +37,16 @@ Hypertext Transfer Protocol (HTTP/1.1): Authentication
 
 
 
-## HTTP  Specs & HTTP Working Group  
-
-https://http2.github.io/  
-
-
-https://datatracker.ietf.org/wg/httpbis/charter/  
-
 
 http://httpwg.org/specs/rfc7540.html  
 
 Hypertext Transfer Protocol Version 2 (HTTP/2)  
+
+
+http://httpwg.org/specs/rfc7541.html  
+
+HPACK: Header Compression for HTTP/2  
+
 
 http://httpwg.org/specs/rfc6265.html  
 
