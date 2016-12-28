@@ -20,3 +20,9 @@ http://docs.nativescript.org/angular/tutorial/ng-chapter-4
 http://docs.nativescript.org/angular/tutorial/ng-chapter-5  
 http://docs.nativescript.org/angular/tutorial/ng-chapter-6  
 http://docs.nativescript.org/angular/tutorial/ng-chapter-7  
+
+
+http://docs.nativescript.org/angular/start/quick-setup  
+http://docs.nativescript.org/tutorial/chapter-0  
+
+https://www.youtube.com/watch?v=N8zsFIVdLwY  
