@@ -25,6 +25,58 @@ $ chomd 755
 
 ``` 
 
+cat  
+
+
+
+cd -
+
+cd ~
+
+
+
+cp 
+
+rm 
+
+rm -r
+
+less 
+
+
+
+mkdir 
+
+touch 
+
+echo > 
+
+echo >>  
+
+echo <  
+
+
+man 
+
+cowsay ???
+
+
+
+
+vim  
+
+esc + ZZ  === esc + :wq  
+
+??? 
+
+
+a    ahead  
+
+
+
+
+
+
 
 
 
