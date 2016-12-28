@@ -38,3 +38,12 @@ http://www.oreilly.com/web-platform/free/files/you-dont-know-js-up-going.pdf
 
 
 You Don't Know JS: Up & Going
+
+
+F:\Books\O’Reilly free ebooks  
+
+
+
+
+
+

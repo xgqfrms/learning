@@ -12,5 +12,11 @@ https://www.sitepoint.com/premium/books/bootstrap-a-sitepoint-anthology-1
 
 https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/continue  
 
+F:\Books\SitePoint-free-ebooks  
+
+
+
+
+
 
 

@@ -33,19 +33,7 @@ A function that is associated with an object via a property is called a method
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+F:\Books\JavaScript-all-in-one  
 
 
 
