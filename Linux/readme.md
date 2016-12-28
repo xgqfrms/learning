@@ -101,16 +101,37 @@ $ find . -type d
 
 $ find . -type f -exec ls -al '{}' ';'
 
+$ find . -type f -exec ls -al -n '{}' ';' -print
+
+$ find . -type f -exec ls -al -n '{}' ';' -print
+
+$ find . -type f -exec ls -al  -ni '{}' ';' -print
+
 ## grep  
 
 
+ln s grap xxx 
+
+
+link symbol  xxx === grep 
+
+
+
+
+## ack  
+
+ack 2.14 is a tool like grep, optimized for programmers 
+
+http://beyondgrep.com/  
 
 
 
 
 
 
+#!/user/bin/env bash
 
+指定执行 shell版本 === bash
 
 
 
