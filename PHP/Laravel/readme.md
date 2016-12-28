@@ -5,7 +5,7 @@ https://github.com/laravel/laravel
 https://github.com/xgqfrms-GitHub/laravel/tree/master/Tutorials 
 
 
-
+https://s3.amazonaws.com/laravelnews/books/artisanfiles.pdf  
 
 
 ## Composer  
