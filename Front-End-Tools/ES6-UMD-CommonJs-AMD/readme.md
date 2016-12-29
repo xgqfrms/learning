@@ -75,12 +75,17 @@ https://en.wikipedia.org/wiki/Asynchronous_module_definition
 
 ## RequireJS (AMD)  
 http://requirejs.org/  
+https://github.com/requirejs/requirejs  
+
+
 
 Asynchronous Module Definition (AMD) has gained traction on the frontend, with RequireJS being the most popular implementation.  
 
 RequireJS is a JavaScript file and module loader.
 
 RequireJS是一个JavaScript文件和模块加载器。
+
+
 
 > WHY AMD?  
 http://requirejs.org/docs/whyamd.html  
@@ -140,6 +145,30 @@ ES6 Modules ==> AMD (Require.js)
 
 
 https://www.sitepoint.com/understanding-es6-modules/ 
+
+
+
+https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.j59zkv6h9
+
+
+module bundlers vs. module loaders
+Webpack vs. Browserify
+AMD vs. CommonJS
+Gulp vs Grunt
+Sassvs. Less
+
+
+https://addyosmani.com/writing-modular-js/  
+
+
+https://github.com/xgqfrms-GitHub/requirejs  
+
+
+
+
+## JavaScript Module Systems Showdown: CommonJS vs AMD vs ES2015  
+
+
 
 
 
