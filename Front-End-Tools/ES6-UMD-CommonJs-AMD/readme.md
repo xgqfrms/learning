@@ -66,8 +66,30 @@ https://github.com/amdjs/amdjs-api/wiki/AMD-(中文版)
 https://github.com/amdjs/amdjs-api/wiki/require-(中文版)  
 https://github.com/amdjs/amdjs-api/wiki/Loader-Plugins(中文版)  
 
+## RequireJS (AMD)  
+
+Asynchronous Module Definition (AMD) has gained traction on the frontend, with RequireJS being the most popular implementation.  
+
+
+
+
+
 ## CommonJS (CJS)  
 http://wiki.commonjs.org/wiki/CommonJS  
+
+## Browserify, Node (CJS)  
+
+CommonJS is a style you may be familiar with if you’re written anything in Node (which uses a slight variant). It’s also been gaining traction on the frontend with Browserify.
+
+
+
+## UMD: Universal Module Definition  
+
+
+http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/ 
+
+
+
 
 
 ## ES6 Module  
@@ -86,9 +108,20 @@ https://nodesource.com/blog/es-modules-and-node-js-hard-choices/
 
 
 
+## Transpiling ES6 Modules to AMD & CommonJS Using Babel & Gulp  
+
+https://www.sitepoint.com/transpiling-es6-modules-to-amd-commonjs-using-babel-gulp/  
 
 
+ES6 Modules ==> CommonJS (Babel & Gulp, Browserify)  
 
+ES6 Modules ==> AMD (Require.js)   
+
+
+## Understanding ES6 Modules  
+
+
+https://www.sitepoint.com/understanding-es6-modules/ 
 
 
 
