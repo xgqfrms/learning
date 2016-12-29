@@ -11,7 +11,7 @@ https://github.com/systemjs/systemjs/blob/master/docs/module-formats.md
 
 
 
-ES6 > UMD > CommonJS > AMD  SystemJS
+ES6 > UMD > CJS > AMD  SystemJS
 
 
 
@@ -66,11 +66,27 @@ https://github.com/amdjs/amdjs-api/wiki/AMD-(中文版)
 https://github.com/amdjs/amdjs-api/wiki/require-(中文版)  
 https://github.com/amdjs/amdjs-api/wiki/Loader-Plugins(中文版)  
 
-## CommonJS  
+## CommonJS (CJS)  
 http://wiki.commonjs.org/wiki/CommonJS  
 
 
 ## ES6 Module  
+
+https://github.com/nodejs/node/wiki/ES6-Module-Detection-in-Node
+
+https://github.com/nodejs/help/issues/53  
+
+## ECMAScript 2015 (ES6) and beyond  
+
+https://nodejs.org/en/docs/es6/  
+
+https://fhinkel.github.io/six-speed/  
+
+https://nodesource.com/blog/es-modules-and-node-js-hard-choices/  
+
+
+
+
 
 
 
