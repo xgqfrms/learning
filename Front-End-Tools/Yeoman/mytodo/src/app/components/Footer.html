@@ -1,0 +1,18 @@
+<footer class="footer">
+  <span class="todo-count">
+    <strong>{{activeCount || 'No'}}</strong> {{activeCount === 1 ? 'item' : 'items'}} left
+  </span>
+  <ul class="filters">
+    <template ngFor let-f [ngForOf]="filters">
+      <li key="f">
+        <a [ngClass]="{'selected': f === filter?.type}" (click)="handleChange(f)">{{filterTitles[f]}}</a>
+      </li>
+    </template>
+  </ul>
+  <button *ngIf="completedCount > 0"
+    class="clear-completed"
+    (click)="handleClear($event)"
+    >
+    Clear completed
+  </button>
+</footer>

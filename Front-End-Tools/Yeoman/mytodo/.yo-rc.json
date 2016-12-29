@@ -1,0 +1,21 @@
+{
+  "generator-fountain-angular2": {
+    "version": "1.0.0-rc2",
+    "props": {
+      "framework": "angular2",
+      "modules": "webpack",
+      "js": "typescript",
+      "ci": [],
+      "css": "scss",
+      "resolved": "G:\\wwwRoot\\learning\\Front-End-Tools\\Yeoman\\node_modules\\generator-fountain-angular2\\generators\\app\\index.js",
+      "namespace": "fountain-angular2",
+      "argv": {
+        "remain": [],
+        "cooked": [],
+        "original": []
+      },
+      "sample": "todoMVC",
+      "router": "uirouter"
+    }
+  }
+}
