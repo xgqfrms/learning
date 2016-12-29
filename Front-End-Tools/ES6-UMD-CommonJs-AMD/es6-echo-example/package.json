@@ -1,0 +1,18 @@
+{
+  "name": "es6-echo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "6to5 --modules commonInterop src --out-file dist/index.js",
+    "debug": "6to5 --source-maps-inline --modules commonInterop src --out-file dist/index.js",
+    "test": "npm run compile && 6to5-node test/test-echo.js | tap-spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "6to5": "^3.6.5",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}

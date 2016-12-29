@@ -86,4 +86,3 @@ https://github.com/yeoman/generator-chrome-extension
 
 
 
-s
