@@ -66,9 +66,27 @@ https://github.com/amdjs/amdjs-api/wiki/AMD-(中文版)
 https://github.com/amdjs/amdjs-api/wiki/require-(中文版)  
 https://github.com/amdjs/amdjs-api/wiki/Loader-Plugins(中文版)  
 
+https://en.wikipedia.org/wiki/Asynchronous_module_definition  
+
+
+
+
+
+
 ## RequireJS (AMD)  
+http://requirejs.org/  
 
 Asynchronous Module Definition (AMD) has gained traction on the frontend, with RequireJS being the most popular implementation.  
+
+RequireJS is a JavaScript file and module loader.
+
+RequireJS是一个JavaScript文件和模块加载器。
+
+> WHY AMD?  
+http://requirejs.org/docs/whyamd.html  
+
+
+
 
 
 
