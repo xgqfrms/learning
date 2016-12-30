@@ -62,19 +62,37 @@ https://github.com/FountainJS/generator-fountain-react
 
 https://github.com/FountainJS/generator-fountain-vue  
 
+```sh
 
 $ mkdir mytodo && cd mytodo
 
-
 $ yo fountain-webapp
 
+``` 
 
 React, Webpack, Babel, SASS and the Redux TodoMVC sample.
 
+```sh
+
+$ git add --all && git commit -m 'First commit'
+
+$ npm run serve 
+
+$ npm test  
+
+``` 
 
 
+```sh
+
+$ npm install --save redux-localstorage@rc
+
+$ npm run build
+
+$ npm run serve:dist
 
 
+``` 
 
 https://github.com/FountainJS/generator-fountain-webapp
 

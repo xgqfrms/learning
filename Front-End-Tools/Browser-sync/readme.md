@@ -1,5 +1,13 @@
 # browser-sync  
 
+https://browsersync.io/  
+https://github.com/Browsersync/browser-sync  
+
+
+Keep multiple browsers & devices in sync when building websites.  
+
+当建立网站时，应使多个浏览器和设备保持同步。  
+
 
 https://github.com/xgqfrms-GitHub/browser-sync  
 

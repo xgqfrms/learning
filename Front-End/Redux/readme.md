@@ -20,5 +20,21 @@ https://vimeo.com/100010922
 
 
 
+https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?course=getting-started-with-redux  
+
+
+https://github.com/gaearon/redux-thunk
+
+json data 
+
+
+
+https://github.com/gaearon/react-hot-loader
+
+
+
+
+
+
 
 
