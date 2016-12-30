@@ -108,5 +108,18 @@ https://msdn.microsoft.com/zh-cn/commandline/wsl/install_guide
 
 
 
+## Upgrade Ubuntu  
+
+https://www.ubuntu.com/download/desktop/upgrade
+
+## c9.io ??? 
+
+> it doesn't work !  
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+
 
 
