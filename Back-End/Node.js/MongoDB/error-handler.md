@@ -1,20 +1,17 @@
 # Admin  
 
 
-## cmd 
+
+*******************************************************************************
+
+
+## CMD (Admin) 
 
 $ net start MongoDB
 
 $ net start mongodb
 
 > Access is denied.
-
-
-## cmd (Admin)
-
-$ net start MongoDB
-
-$ net start mongodb
 
 
 ## PS (Admin)
@@ -25,6 +22,26 @@ $ net start MongoDB
 $ net start mongodb
 
 
+*******************************************************************************
+
+System error 2 has occurred.
 
 
-https://courses.edx.org/courses/course-v1:MongoDBx+M101x+2T2016/info
+http://stackoverflow.com/questions/4661670/cannot-start-mongodb-as-a-service
+
+
+## 重新安装service
+
+
+1. 卸载 old service (v3.2)
+
+2. 重新安装 new service (v3.4)
+
+
+
+
+
+
+
+
+

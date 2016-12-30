@@ -65,16 +65,12 @@ storage:
 ``` 
 
 
-"H:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "H:\Program Files\MongoDB\Server\3.4\mongod.cfg" --install
+
+## PS/CMD (Admin)
 
 "H:\MongoDB\Server\3.4\bin\mongod.exe" --config "H:\MongoDB\Server\3.4\mongod.cfg" --install
 
-
-
-"H:\MongoDB\Server\3.2\bin\mongod.exe" --config "H:\MongoDB\Server\3.2\mongod.cfg" --install
-
-
-## PS (Admin)
+## PS/CMD (Admin)
 
 
 ```sh
@@ -87,6 +83,8 @@ $ net start mongodb
 # Stop the MongoDB service  
 
 $ net stop MongoDB
+
+$ net stop mongodb
 
 ``` 
 
@@ -101,6 +99,21 @@ https://university.mongodb.com/courses/M101JS/about
 
 https://www.edx.org/course/introduction-mongodb-using-mean-stack-mongodbx-m101x-0  
 
+
+
+
+System error 2 has occurred.
+
+
+http://stackoverflow.com/questions/4661670/cannot-start-mongodb-as-a-service
+
+
+## 重新安装service
+
+
+1. 卸载 old service (v3.2)
+
+2. 重新安装 new service (v3.4)
 
 
 
