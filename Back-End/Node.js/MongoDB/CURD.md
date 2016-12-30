@@ -69,6 +69,8 @@ Linearizable Reads via findAndModify
 
 ## Query Plan, Performance, and Analysis  
 
+查询计划，性能和分析
+
 Query Plans
 Query Optimization
 Analyze Query Performance
@@ -76,6 +78,53 @@ Write Operation Performance
 
 ## Miscellaneous  
 
+杂项
+
 Tailable Cursors
+
+
+
+*******************************************************************************
+
+
+Installation 安装  
+
+MongoDB CRUD Operations  MongoDB CRUD操作
+
+Aggregation 聚合  
+
+Text Search 文本搜索  
+
+Data Models 数据模型  
+
+Administration 管理员/管理  
+
+Indexes 索引  
+
+Storage 存储  
+
+Security 安全  
+
+Replication 复制  
+
+Sharding 分片  
+
+Frequently Asked Questions 经常问的问题  
+
+Reference 参考  
+
+Release Notes 发行说明  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
