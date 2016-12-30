@@ -16,6 +16,14 @@ https://scotch.io/tutorials/component-inheritance-in-angular-2
 
 
 
+## Google Keep (Free Angular 2 Fundamentals)  
+
+https://github.com/AngularClass/retain-app  
+
+https://github.com/ufo-github/retain-app/???branches????  
+
+http://courses.angularclass.com/courses/angular-2-fundamentals/  
+
 
 
 
