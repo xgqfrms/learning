@@ -31,10 +31,10 @@ json data
 
 https://github.com/gaearon/react-hot-loader
 
+https://github.com/gaearon/react-dnd
 
 
-
-
+https://github.com/gaearon/react-hot-boilerplate 
 
 
 

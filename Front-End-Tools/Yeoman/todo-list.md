@@ -97,3 +97,15 @@ $ npm run serve:dist
 https://github.com/FountainJS/generator-fountain-webapp
 
 
+
+
+https://github.com/AngularClass/retain-app
+
+
+Free Angular 2 Fundamentals
+
+Google Keep
+
+
+
+
