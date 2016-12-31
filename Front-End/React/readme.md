@@ -29,6 +29,8 @@ https://egghead.io/react-redux-cheatsheets
 https://online.reacttraining.com/courses/enrolled/reactjsfundamentals  
 
 
+http://www.reactboilerplate.com/ 
+
 
 
 
