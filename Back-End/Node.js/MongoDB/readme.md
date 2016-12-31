@@ -3,7 +3,9 @@
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition
 
+https://docs.mongodb.com/manual/applications/drivers/
 
+https://docs.mongodb.com/manual/reference/
 
 
 ```cmd
