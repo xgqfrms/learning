@@ -26,11 +26,17 @@ https://egghead.io/courses/building-react-applications-with-idiomatic-redux
 https://egghead.io/react-redux-cheatsheets  
 
 
+
+
+
+
 https://online.reacttraining.com/courses/enrolled/reactjsfundamentals  
 
+http://www.reactboilerplate.com/  
 
-http://www.reactboilerplate.com/ 
-
+https://github.com/reactjsprogram  
+https://github.com/ReactjsProgram/React-Fundamentals  
+https://github.com/ReactjsProgram/react-fundamentals-curriculum  
 
 
 
