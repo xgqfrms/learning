@@ -1,5 +1,11 @@
 #  lodash  
 
+https://lodash.com/  
+https://github.com/lodash/lodash  
+
+A modern JavaScript utility library delivering modularity, performance & extras.  
+
+现代JavaScript实用程序库提供模块化，性能和额外。
 
 
 ## Functional programming  
@@ -18,5 +24,8 @@ https://en.wikipedia.org/wiki/File:En-Functional_programming.ogg
 在函数代码中，函数的输出值仅取决于输入到函数的参数，因此对于参数x调用函数f两次，具有相同的值将每次产生相同的结果f（x）。  
 
 消除副作用，即不依赖于函数输入的状态改变可以使得更容易理解和预测程序的行为，这是开发函数式编程的关键动机之一。  
+
+
+
 
 
