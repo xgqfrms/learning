@@ -1,5 +1,20 @@
 # BSON  
 
+http://bsonspec.org/  
+http://json.org/  
+http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf  
+
+## Douglas Crockford's Javascript  
+
+http://javascript.crockford.com/  
+
+
+
+
+
+
+
+
 
 https://docs.mongodb.com/manual/core/document/#bson-document-format
 
