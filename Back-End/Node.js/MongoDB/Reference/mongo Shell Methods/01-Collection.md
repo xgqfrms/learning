@@ -4,7 +4,6 @@ https://docs.mongodb.com/manual/reference/method/#collection
 https://docs.mongodb.com/manual/reference/method/js-collection/  
 
 
-
 db.collection.aggregate()
 # Provides access to the aggregation pipeline.
 

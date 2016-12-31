@@ -4,7 +4,6 @@ https://docs.mongodb.com/manual/reference/method/#cursor
 https://docs.mongodb.com/manual/reference/method/js-cursor/  
 
 
-
 cursor.addOption()
 # Adds special wire protocol flags that modify the behavior of the query.’
 
