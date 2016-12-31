@@ -19,3 +19,12 @@ https://github.com/LewisJEllis/awesome-lua
 F:\Books\Lua  
 
 
+http://www.runoob.com/lua/lua-tutorial.html
+
+
+
+http://luadist.org/
+
+
+
+
