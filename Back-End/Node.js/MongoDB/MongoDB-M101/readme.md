@@ -1,10 +1,19 @@
 # MongoDB  
 
 
+https://github.com/xgqfrms-GitHub/MongoDB
+
+
+C:\Users\xray\Desktop\M101
+
+
+
+
+
 https://www.gitbook.com/book/xgqfrms-github/mongodb-offical-tutorial/details
 
 
-https://github.com/xgqfrms-GitHub/MongoDB
+
 
 
 
