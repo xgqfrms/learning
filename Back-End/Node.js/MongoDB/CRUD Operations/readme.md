@@ -79,3 +79,22 @@ http://bsonspec.org/
 
 https://docs.mongodb.com/manual/reference/bson-types/#objectid
 
+
+
+
+## Documents  
+https://docs.mongodb.com/manual/core/document/#bson-document-format  
+
+
+## Databases and Collections  
+https://docs.mongodb.com/manual/core/databases-and-collections/#collections  
+
+
+
+
+
+
+
+
+
+

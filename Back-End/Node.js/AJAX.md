@@ -1,0 +1,36 @@
+# AJAX  
+
+https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started  
+
+
+https://en.wikipedia.org/wiki/Ajax_(programming)  
+
+
+http://api.jquery.com/jquery.ajax/  
+
+
+http://www.w3schools.com/xml/ajax_intro.asp  
+
+
+https://www.tutorialspoint.com/ajax/what_is_ajax.htm  
+
+
+
+https://datatables.net/reference/option/ajax  
+
+
+
+
+## Ajax Tutorial (Level 1)  
+https://www.youtube.com/watch?v=My0MDTl0Zv4
+
+## AJAX, RESTful API Tutorial - Perform CRUD Operations with Node server  
+https://www.youtube.com/watch?v=G0BzzuXS8gI
+
+## JSON and AJAX Tutorial: With Real Examples  
+https://www.youtube.com/watch?v=rJesac0_Ftw
+
+
+https://github.com/LearnWebCode  
+
+https://zhuanlan.zhihu.com/p/23767246  
