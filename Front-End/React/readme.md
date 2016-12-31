@@ -44,3 +44,41 @@ https://github.com/ReactjsProgram/React-Fundamentals/tree/video12
 
 
 
+
+let temp = {
+       _id: 7,
+       name: "xgqfrms",
+       age: 23,
+       type: 1,
+       status: "A",
+       favorites: { artist: "Picasso", food: "pizza" },
+       finished: [ 17, 32 ],
+       badges: [ "green", "black" ],
+       points: [
+          { points: 99, bonus: 30 },
+          { points: 99, bonus: 30 }
+       ]
+     }
+
+db.users.insertOne(temp)
+
+
+db.users.find()
+db.users.find().pretty()
+
+
+db.users.find({"points.points[0]":{$lt:50}}).pretty()
+
+
+db.users.find({name: "xgqfrms"}).pretty()
+
+show collections
+
+
+
+
+
+
+
+
+
