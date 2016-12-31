@@ -37,14 +37,45 @@ https://docs.mongodb.com/manual/reference/read-concern/
 https://docs.mongodb.com/manual/reference/write-concern/  
 
 
+*******************************************************************************
+
 ## MongoDB CRUD Concepts  
+https://docs.mongodb.com/manual/core/crud/  
+
+This section contains information on additional concepts related to CRUD operations in MongoDB.  
+
+本节包含有关MongoDB中与CRUD操作相关的其他概念的信息。
+
+## Atomicity, consistency, and distributed operations  
+
+原子性，一致性和分布式操作  
+
+Atomicity and Transactions
+Read Isolation, Consistency, and Recency
+Distributed Queries
+Distributed Write Operations
+Perform Two Phase Commits
+Linearizable Reads via findAndModify
+
+## Query Plan, Performance, and Analysis  
+
+查询计划，性能和分析
+
+Query Plans
+Query Optimization
+Analyze Query Performance
+Write Operation Performance
+
+## Miscellaneous  
+
+杂项
+
+Tailable Cursors
+
 
 
 
 http://bsonspec.org/
 
 https://docs.mongodb.com/manual/reference/bson-types/#objectid
-
-
-
 
