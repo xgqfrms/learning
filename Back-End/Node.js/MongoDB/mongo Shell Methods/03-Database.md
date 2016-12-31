@@ -4,7 +4,6 @@ https://docs.mongodb.com/manual/reference/method/#database
 https://docs.mongodb.com/manual/reference/method/js-database/  
 
 
-
 db.cloneCollection()
 # Copies data directly between MongoDB instances. Wraps cloneCollection.
 
