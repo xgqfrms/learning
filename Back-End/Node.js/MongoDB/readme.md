@@ -120,8 +120,12 @@ http://stackoverflow.com/questions/4661670/cannot-start-mongodb-as-a-service
 
 
 
+https://github.com/mongodb/node-mongodb-native/releases?jmp=docs
+https://github.com/mongodb/node-mongodb-native?jmp=docs  
+http://mongodb.github.io/node-mongodb-native/?jmp=docs  
 
 
+https://docs.mongodb.com/v2.4/reference/configuration-options/
 
 
 
