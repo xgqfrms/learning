@@ -8,6 +8,7 @@ https://github.com/reactjs/redux
 
 https://egghead.io/courses/getting-started-with-redux  
 
+https://egghead.io/courses/building-react-applications-with-idiomatic-redux
 
 
 https://github.com/facebookincubator/create-react-app  

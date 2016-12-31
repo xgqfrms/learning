@@ -22,4 +22,4 @@ https://github.com/react-guide/react-basic
 F:\Books\React-all-in-one  
 
 
-
+https://egghead.io/courses/building-react-applications-with-idiomatic-redux  
