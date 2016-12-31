@@ -170,3 +170,10 @@ show collections
 
 
 
+http://www.runoob.com/mongodb/mongodb-operators.html
+
+https://www.gitbook.com/book/xgqfrms-github/mongodb-offical-tutorial/details
+
+
+
+

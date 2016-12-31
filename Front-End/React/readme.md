@@ -27,9 +27,6 @@ https://egghead.io/react-redux-cheatsheets
 
 
 
-
-
-
 https://online.reacttraining.com/courses/enrolled/reactjsfundamentals  
 
 http://www.reactboilerplate.com/  
@@ -39,6 +36,21 @@ https://github.com/ReactjsProgram/React-Fundamentals
 https://github.com/ReactjsProgram/react-fundamentals-curriculum  
 
 https://github.com/ReactjsProgram/React-Fundamentals/tree/video12  
+
+
+
+
+
+https://react2.xgqfrms.xyz/docs/jsx-in-depth.html 
+
+
+
+https://github.com/materliu   
+
+http://www.imooc.com/u/102030/courses  
+
+https://materliu.github.io/gallery-by-react/   
+
 
 
 
