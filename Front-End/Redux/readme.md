@@ -4,7 +4,7 @@ http://redux.js.org/
 https://github.com/reactjs/redux  
 
 
-
+https://egghead.io/react-redux-cheatsheets  
 
 https://egghead.io/courses/getting-started-with-redux  
 
