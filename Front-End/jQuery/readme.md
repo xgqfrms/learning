@@ -2,6 +2,10 @@
 
 http://api.jquery.com/element-selector/  
 http://api.jquery.com/ready/  
+http://api.jquery.com/id-selector/
+http://api.jquery.com/class-selector/
+
+
 
 
 
