@@ -1,0 +1,172 @@
+前端面试题思考
+
+最近面试了不少家，苦于前端经验薄弱，被各种血虐。做了不少家面试题，把各种不会的回来再做一遍，作为经验总结吧。
+
+1.如何最优性能去重一个数组？
+
+方法有好多，比如新建一个数组，原数组的内容依次往里放，若该数组元素已存在，则跳过；又或者先排序，依次比较前后两个元素是否相等，若相等，则去掉删除后一个元素。面试官有提到使用 filter 的方法,但是当场没想到，发现这个方法其实属于相当不错的，这种函数式的思维在某些地方相当实用。
+
+var arr = [3,5,2,6,2,3,5,8,6]
+function distinct(arr) {
+    return arr.filter(function (elem,index,arr){
+        return arr.indexOf(elem,index+1) === -1;
+    });
+}
+console.log(distinct(arr));
+思路扩展
+比如说存在一个数组，其中元素为对象，根据对象某个属性进行排序。例如将以下data数组按age正序排列，常规的办法可能是通过比较age大小，操作对象来进行排序，这样代码会比较复杂。而更优的方法则是通过 sort 方法。
+
+var data = [
+{name:'xiaoming',age:18},
+{name:'xiaohua',age:20},
+{name:'xiaoli',age:25},
+{name:'xiaozheng',age:16}];
+查阅 MDN 关于 sort 方法，此方法明显代码量更少，含义更加清晰。
+
+function asc_order(data){
+    return data.sort(function (a,b){
+        return a.age- b.age;
+    })
+}
+2.变量声明和函数声明提升
+
+function fn(a){
+    console.log(a);
+    var a=2;
+    function a(){}
+    console.log(a);
+}
+fn(1);
+以上代码输出内容？
+此前看书时有了解到变量声明会提升到作用域顶部，但忘记了变量赋值保持在原处，同时变量声明和函数声明的先后关系不确定，所以此题对我来说比较难，只能瞎蒙答案。
+
+function  fn(a){
+    var a;
+    function a(){}
+    console.log(a);
+    a = 2;
+    console.log(a);
+}
+fn(1);
+所有全局变量都是window或Global的属性
+函数声明会被提到范围作用域的顶端
+变量声明被提到范围作用域的顶端
+变量声明比函数声明优先级高，变量声明优于函数声明，如果两者同时存在，后被提升的函数声明会覆盖被提升的变量声明
+变量赋值不会被提升，到执行行代码才开始赋值
+参考博客地址，根据以上五点共识，可将代码翻译如上所示。
+
+深入思考
+为什么JavaScript相比较其它语言会存在声明提升？变量声明时编译器做了什么？变量赋值时编译器又做什么了？
+
+3.作用域和 this
+
+var a = 10;
+function test(){
+    a = 100;
+    console.log(a);
+    console.log(this.a);
+    var a;
+    console.log(a);
+}
+test();
+var a = 100;function test(){
+    console.log(a);
+    var a = 10;
+    console.log(a);
+}
+test();
+var a = 100;function test(){
+    console.log(a);
+    a = 10;
+    console.log(a);
+}
+test();
+console.log(a);
+在非严格环境下，以上三个代码分别输出什么？碰到这种题目我也是头晕眼花，稍有不慎就掉坑了。当然实际业务中不会出现这样的代码，但还是相当有必要以这样的代码来检查对 JavaScript 理解的程度。
+this 的用法参照阮一峰老师的博客，主要分为三种情况,但总的原则是指向调用函数的那个对象。
+
+全局环境:调用函数的对象实际为 window ，所以函数内的 this 指向 window ;
+构造函数:通过构造函造函数生成了一个新对象，this 指向这个新对象。
+对象的方法：函数作为对象的某个方法调用， this 就指向这个上级对象。
+故第一道题中属于全局环境， this 指向 window ，所以输出结果为：100，10，100；
+第二道题输出结果为：undefined，10；第三道题输出结果为：100，10，10；
+
+4.setTimeout 深入分析其机制
+
+for (var i = 0;i<=3;i++){
+    setTimeout(function (){
+        console.log(i);
+    },0);
+}
+此题输出内容是什么？
+
+setTimeout 为 Window 对象方法，用来注册在指定的事件之后单次或重复调用的函数。
+
+setTimeout的作用是将代码推迟到指定时间执行，如果指定时间为0，即setTimeout(f,0)，那么会立刻执行吗？
+
+答案是不会。因为上一段说过，必须要等到当前脚本的同步任务和“任务队列”中已有的事件，全部处理完以后，才会执行setTimeout指定的任务。也就是说，setTimeout的真正作用是，在“消息队列”的现有消息的后面再添加一个消息，规定在指定时间执行某段代码。setTimeout添加的事件，会在下一次EventLoop执行。
+
+setTimeout(f,0)将第二个参数设为0，作用是让f在现有的任务（脚本的同步任务和“消息队列”指定的任务）一结束就立刻执行。也就是说，setTimeout(f,0)的作用是，尽可能早地执行指定的任务。而并不是会立刻就执行这个任务。
+
+所以最终的结果是当前的函数执行结束之后，再去执行 setTimeout 定义的内容。
+
+5.class属性覆盖问题
+
+<style>
+    .B {color:  red}
+    .A {color: blue}
+</style>
+<body>
+<p class="A B">XXXXXXXXXX</p>
+</body>
+最后实际的问题是什么颜色？
+存在多个类名时，类名的位置不会对属性的渲染产生影响。只有在style中定义的位置才会有影响，同一条属性，后面定义的会覆盖前面定义的属性。
+
+6.实现类似 jquery 的 one 方法
+
+即对一个元素绑定一个事件，操作一次后绑定事件失效。
+
+HTML部分：
+
+<body>
+<p id="target">XXXXXXXXXX</p>
+</body>
+JS部分：
+
+window.onload = function(){
+    var target = document.getElementById('target');
+    function fn(e){
+        alert('hello');
+        target.removeEventListener('click',fn);
+    };
+    target.addEventListener('click',fn);
+}
+此代码虽可行，但没有进行封装，不便于使用。
+
+正统封装后的JS代码，使用 arguments.callee 表示当前 function ，同时需对 event 上的属性有所了解。
+
+function oneTime(node,type,callback){
+    node.addEventListener(type,function (e){
+        e.target.removeEventListener(e.type,arguments.callee);
+        return callback(e);
+    });
+}
+function handle(e){
+    alert('hello!');
+}
+oneTime(p,'click',handle);
+学习前端一个月，上一周面试了大概10多家，收获的 offer 却是寥寥。
+为了效率，前端各方面的内容都有涉猎，深度却相当不足，面试时暴露各种问题。
+还是需深入思考，欲速则不达啊！
+
+大概是要加入大鱼或者小悟，以后工作好好努力吧！
+
+
+
+http://www.cnblogs.com/fengmanlou/p/b0f66b12205e5fb9dd3fbc906ab2bba4.html
+
+
+
+http://javascript.ruanyifeng.com/oop/prototype.html
+
+
