@@ -37,5 +37,5 @@ https://teamtreehouse.com/subscribe/plans?trial=yes
 
 Start your free 7 day trial
 
-
+https://t.co/hdtJUHJGW0
 

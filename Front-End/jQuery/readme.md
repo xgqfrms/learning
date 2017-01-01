@@ -1,5 +1,12 @@
 # jQuery  
 
+http://api.jquery.com/element-selector/  
+http://api.jquery.com/ready/  
+
+
+
+http://try.jquery.com/levels/1/sections/7
+
 
 ## cnd 
 
