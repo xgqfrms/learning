@@ -51,9 +51,9 @@ https://cameronspear.com/blog/exactly-what-is-jsonp/
 
 
 
+https://www.sitepoint.com/jsonp-examples/
 
-
-
+https://remysharp.com/2007/10/08/what-is-jsonp/
 
 
 
