@@ -33,12 +33,13 @@ $(function() {
         // var hl = document.getElementById('hl');
         // hl.style.display = "none";
         var hideLoad = document.getElementById('hideLoad');
-        // var state = hideLoad.style.class = "showTure";
-        document.getElementById("MyElement").classList.add('class');
-
-        document.getElementById("MyElement").classList.remove('class');
+        var state = "showTure";
         if (state === "showTure") {
-            state = "hidenTure";
+            hideLoad.classList.remove('showTure');
+            hideLoad.classList.add("hidenTure");
+            console.log(`state = "showTure"`);
+            hideLoad.style.display = "none";
+            // ??? .classList bugs ??? 
         } else {
             //state = "showTure";
             console.log(`state = "hidenTure"`);
