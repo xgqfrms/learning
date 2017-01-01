@@ -30,8 +30,28 @@ $(function() {
         });
     }
     function hide(){
-        var hl = document.getElementById('hl');
-        hl.style.display = "none";
+        // var hl = document.getElementById('hl');
+        // hl.style.display = "none";
+        var hideLoad = document.getElementById('hideLoad');
+        var state = hideLoad.style.class = "showTure";
+        if (state === "showTure") {
+            state = "hidenTure";
+        } else {
+            //state = "showTure";
+            console.log(`state = "hidenTure"`);
+        }
     }
 });
 
+/*
+ES 6
+
+selectQueryAll ??? DOM 
+
+let = () => {
+    let = ;
+}
+
+
+
+*/

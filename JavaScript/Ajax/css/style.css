@@ -1,0 +1,22 @@
+/* utf-8 & media query */
+
+.hiddenTure{
+    display: none;
+    color: rgba(255,0,255,0.3);
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transition: all 1s 0s ease-out;
+    transition: all 1s 0s ease-out;
+}
+
+
+.showTure{
+    display: block;
+    color: rgba(0,255,0,0.7);
+    -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+            transform: scale(1.0);
+    -webkit-transition: all 1s 0s ease-in;
+    transition: all 1s 0s ease-in;
+}
