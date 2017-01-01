@@ -12,7 +12,8 @@ http://reportcard.rileyh.com/instructions.html
 https://github.com/codeschool/subtitles  
 https://github.com/codeschool/ShapingUpWithAngular.js  
 
-BlastingOffWithBootstrapDemo  
+## Bootstrap Demo  
+
 https://github.com/codeschool/BlastingOffWithBootstrapDemo/tree/gh-pages  
 https://github.com/codeschool/BlastingOffWithBootstrapDemo/tree/master  
 https://github.com/codeschool/BlastingOffWithBootstrapDemo/tree/soup_to_bits  

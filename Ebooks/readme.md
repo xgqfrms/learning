@@ -35,5 +35,11 @@ http://www.ebooksbucket.com/
 https://github.com/shihyu
 
 
+https://github.com/vhf/free-programming-books/blob/master/javascript-frameworks-resources.md
+
+
+http://onlinecomputerbooks.tradepub.com/?pt=adv&page=SitePoint  
+
+img  
 
 
