@@ -20,7 +20,7 @@
 <meta name=”twitter:image” content=”http://www.yourdomain.com /image-name.jpg” />
 
 
-
+http://ogp.me/  
 
 https://blog.kissmetrics.com/open-graph-meta-tags/  
 
