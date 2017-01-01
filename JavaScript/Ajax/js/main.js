@@ -33,7 +33,10 @@ $(function() {
         // var hl = document.getElementById('hl');
         // hl.style.display = "none";
         var hideLoad = document.getElementById('hideLoad');
-        var state = hideLoad.style.class = "showTure";
+        // var state = hideLoad.style.class = "showTure";
+        document.getElementById("MyElement").classList.add('class');
+
+        document.getElementById("MyElement").classList.remove('class');
         if (state === "showTure") {
             state = "hidenTure";
         } else {
