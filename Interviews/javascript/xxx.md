@@ -163,14 +163,7 @@ oneTime(p,'click',handle);
 
 
 
-http://www.cnblogs.com/fengmanlou/p/b0f66b12205e5fb9dd3fbc906ab2bba4.html
 
-
-
-http://javascript.ruanyifeng.com/oop/prototype.html
-
-
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 
 
 
