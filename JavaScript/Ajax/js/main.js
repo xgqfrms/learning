@@ -3,7 +3,7 @@
 $(function() {
     $.ajax({
         url: 'https://cdn.xgqfrms.xyz/json/badges.json',
-        dataType: 'jsonp',
+        dataType: 'json',
         success: function(data) {
             populateWithCourses(data.courses.completed);
             hide();
