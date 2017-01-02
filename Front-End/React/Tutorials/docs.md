@@ -10,11 +10,9 @@ GitHub React Native
 
 快速开始
 
-入门
-教程
-思考React
+入门 教程 思考React
 
-
+社区资源 会议 视频 附加工具 例子
 
 /react/ ../
 
