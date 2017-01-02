@@ -21,9 +21,12 @@ https://scotch.io/tag/react
 https://github.com/react-guide/react-basic  
 
 
-
-
+## relative path error  ??? (host https)  
 
 https://learning.xgqfrms.xyz/Front-End/React/React/app01/
+
+<script src="./test.js"></script>
+
+https://learning.xgqfrms.xyz/test.js
 
 
