@@ -46,3 +46,33 @@ https://github.com/angular/angular/milestones
 
 
 
+
+<!-- 
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/icons/angular/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/icons/react/favicon.ico" type="image/x-icon">
+    
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.png" type="image/png">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.ico" type="image/x-icon">
+ -->
+
+
+
+
+
+https://github.com/xgqfrms007/test/tree/gh-pages/angular2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
