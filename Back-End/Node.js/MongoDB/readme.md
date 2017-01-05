@@ -179,3 +179,7 @@ https://www.gitbook.com/book/xgqfrms-github/mongodb-offical-tutorial/details
 
 
 
+db.getCollection('users').find({})
+db.getCollection('users').find({type:'Condo'})
+
+## id (manual) vs ObjectID (auto)  
