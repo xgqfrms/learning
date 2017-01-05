@@ -1,4 +1,4 @@
-*{
+/**{
     background: rgba(0,0,0,0.7);
     font-size: 1rem;
     color: rgba(0,255,0,0.7);
@@ -6,9 +6,9 @@
     border: 1px solid red;
     padding: 1px rgba(255,255,255,0.7);
     box-sizing: border-box;
-}
+}*/
 
-.conatiner{
+/*.conatiner{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17,12 +17,47 @@
 .conatiner .item{
     display: flex-inline;
 }
+*/
+#deals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;        /* Flex layout so items have equal height  */
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
+}
+.sale-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;        /* Lay out each item using flex layout */
+  -ms-flex-flow: column;
+      flex-flow: column;    /* Lay out item’s contents vertically  */
+    border: thick solid hsl(60,80%,50%);
+    border-radius: 1em 1em;
+    padding: 1em 1em;
+    margin-left: 1em;
+}
+.sale-item > img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;            /* Shift image before other content (in visual order) */
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;   /* Center the image cross-wise (horizontally)         */
+}
 
-
-
-
-
-
+.sale-item > button {
+    background-color: hsl(120,100%,40%);
+    border: medium inset hsl(120,70%,40%);
+    border-radius: 1em;
+    padding: .5em;
+    font-weight: bold;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    width: 90%;
+    /*margin: 1em auto;*/
+    margin-top: auto;     /* Auto top margin pushes button to bottom */
+}
 
 
 
