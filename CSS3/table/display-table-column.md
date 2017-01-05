@@ -41,8 +41,11 @@ https://www.w3.org/TR/#tr_CSS
 
 
 
+http://stackoverflow.com/questions/7617418/how-is-a-css-display-table-column-supposed-to-work  
 
+http://colintoh.com/blog/display-table-anti-hero  
 
+https://css-tricks.com/complete-guide-table-element/  
 
 
 
