@@ -28,3 +28,9 @@ db.getCollection('users').find({})
 db.getCollection('users').find({type:'Condo'})
 
 ## id (manual) vs ObjectID (auto)  
+
+
+## jQuery & Ajax  
+
+https://cdn.xgqfrms.xyz/json/badges.json  
+https://cdn.xgqfrms.xyz/json/xgqfrms.json  
