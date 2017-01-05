@@ -28,12 +28,15 @@ xnode
 
 ## To connect using the mongo shell:  
 
+```sh
 mongo ds111188.mlab.com:11188/node-mongodb -u <dbuser> -p <dbpassword>
+``` 
 
 ## To connect using a driver via the standard MongoDB URI (what's this?):  
 
+```sh
 mongodb://<dbuser>:<dbpassword>@ds111188.mlab.com:11188/node-mongodb
-
+``` 
 
 ## standard MongoDB URI  
 
@@ -55,4 +58,12 @@ https://docs.mongodb.com/manual/reference/connection-string/
 
 http://mongodb.github.io/node-mongodb-native  
 https://github.com/mongodb/node-mongodb-native/releases  
+
+```sh
+mongodb://<dbuser>:<dbpassword>@ds111188.mlab.com:11188/node-mongodb
+``` 
+
+
+
+
 
