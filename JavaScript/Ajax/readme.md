@@ -16,7 +16,12 @@ css animation + shadow => update
 
 https://github.com/codeschool/jQueryBadgesProject/wiki/How-to-get-your-Report-Card-URL  
 
-https://www.codeschool.com/users/xgqfrms.json
+https://www.codeschool.com/users/xgqfrms.json  
+
+https://cdn.xgqfrms.xyz/json/badges.json  
+https://cdn.xgqfrms.xyz/json/xgqfrms.json
+
+## ??? mongodb (online database) 
 
 
 
