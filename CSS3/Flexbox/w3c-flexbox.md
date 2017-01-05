@@ -28,8 +28,11 @@ flex-direction: row | row-reverse | column | column-reverse;
 
 
 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
 
-
+https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties  
+http://codepen.io/justd/pen/yydezN  
+http://codepen.io/xgqfrms/pen/OWPodL  
 
 
 https://hufan-akari.github.io/solved-by-flexbox/demos/grids/  
