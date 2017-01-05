@@ -24,3 +24,20 @@ https://codeschool-project-demos.github.io/SemanticHTMLPortfolioProject/
 https://github.com/codeschool-projects/SemanticHTMLPortfolioProject/tree/solution  
 
 
+https://github.com/codeschool-projects/BootstrapPortfolioProject/tree/solution  
+
+Bootstrap Portfolio  
+
+https://github.com/codeschool-projects/BootstrapPortfolioProject/tree/solution  
+https://codeschool-project-demos.github.io/BootstrapPortfolioProject/  
+
+
+jQuery  
+
+
+
+
+
+
+
+
