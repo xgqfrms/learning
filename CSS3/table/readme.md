@@ -7,6 +7,11 @@ https://www.w3.org/TR/
 
 https://www.w3.org/TR/#tr_CSS  
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/display  
+
+
+
+
 
 
 ##  display: table-column;  
@@ -31,7 +36,7 @@ https://css-tricks.com/almanac/properties/d/display/
 http://www.mattboldt.com/kicking-ass-with-display-table/  
 
 http://www.mattboldt.com/demos/typed-js/  
-
+https://www.xgqfrms.xyz/  
 
 
 
