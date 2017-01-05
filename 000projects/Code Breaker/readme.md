@@ -36,12 +36,6 @@ https://github.com/codeschool-projects/BootstrapPortfolioProject/tree/solution
 https://codeschool-project-demos.github.io/BootstrapPortfolioProject/  
 
 
-jQuery  
-
-
-https://github.com/codeschool/jQueryBadgesProject/wiki/How-to-get-your-Report-Card-URL  
-
-https://www.codeschool.com/users/xgqfrms.json
 
 
 
