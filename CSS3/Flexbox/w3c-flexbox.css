@@ -1,0 +1,38 @@
+*{
+    background: rgba(0,0,0,0.7);
+    font-size: 1rem;
+    color: rgba(0,255,0,0.7);
+    margin: 1px;
+    border: 1px solid red;
+    padding: 1px rgba(255,255,255,0.7);
+    box-sizing: border-box;
+}
+
+.conatiner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.conatiner .item{
+    display: flex-inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
