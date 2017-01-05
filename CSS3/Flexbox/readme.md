@@ -10,6 +10,19 @@ https://www.w3.org/TR/css-flexbox-1/
 W3C Candidate Recommendation, 26 May 2016
 
 
+http://www.webstyles-chinese.info/Style/  
+https://www.w3.org/Help/Webmaster.html  
+https://www.w3.org/People/Bos/  
+
+http://caniuse.com/#search=FlexBox  
+
+
+## CSS & XSL 
+https://vimeo.com/69531452
+https://en.wikipedia.org/wiki/Bert_Bos  
+
+
+
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
 

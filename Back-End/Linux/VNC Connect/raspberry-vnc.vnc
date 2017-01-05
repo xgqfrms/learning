@@ -1,0 +1,9 @@
+[Connection]
+Host=192.168.2.102
+Password=c3abbea3b003a0b231737c0541892d72
+[Options]
+Encryption=Server
+Scaling=Fit
+Emulate3=1
+PointerEventInterval=200
+FullScreen=1
