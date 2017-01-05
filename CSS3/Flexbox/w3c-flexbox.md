@@ -18,6 +18,14 @@ display: inline-flex;
 ``` 
 
 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+
+
+flex-direction
+
+flex-direction: row | row-reverse | column | column-reverse;
+
+
 
 
 
