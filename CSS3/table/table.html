@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        .dt{
+            display: table;
+            border: 1px solid red;
+        }
+        .dtr{
+            display: table-row;
+            border: 1px solid green;
+        }
+        .dtc{
+            display: table-cell;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>display: table;</h1>
+    </div>
+    <div class="dt">
+        <div class="dtr">
+            <div class="dtc">
+                Gross but sometimes useful. dtr 1, dtc 1
+            </div>
+            <div class="dtc">
+                Gross but sometimes useful. dtr 1, dtc 2
+            </div>
+        </div>
+        <div class="dtr">
+            <div class="dtc">
+                Gross but sometimes useful. dtr 2, dtc 1
+            </div>
+            <div class="dtc">
+                Gross but sometimes useful. dtr 2, dtc 2
+            </div>
+        </div>
+    </div>
+    <section>
+        <pre>
+            <h2>## <mark>display: table</mark></h2>  
+            ```css
+                display: table;
+                display: table-cell;
+                display: table-column;
+                display: table-colgroup;
+                display: table-header-group;
+                display: table-row-group;
+                display: table-footer-group;
+                display: table-row;
+                display: table-caption;
+            ``` 
+        </pre>
+    </section>
+</body>
+</html>
