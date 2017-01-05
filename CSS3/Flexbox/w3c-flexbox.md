@@ -80,6 +80,7 @@ align-content: stretch;
 # https://www.w3.org/TR/css-flexbox-1/#flex-item  
 # https://www.w3.org/TR/css-flexbox-1/#multi-line  
 # https://www.w3.org/TR/css-flexbox-1/#property-index  
+# https://www.w3.org/TR/css-flexbox-1/#normative
 
 ``` 
 
