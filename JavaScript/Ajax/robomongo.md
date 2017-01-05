@@ -59,11 +59,27 @@ https://docs.mongodb.com/manual/reference/connection-string/
 http://mongodb.github.io/node-mongodb-native  
 https://github.com/mongodb/node-mongodb-native/releases  
 
+
+
 ```sh
-mongodb://<dbuser>:<dbpassword>@ds111188.mlab.com:11188/node-mongodb
+mongodb://xnode:123456@ds111188.mlab.com:11188/node-mongodb
+
+mongodb://xnode123456@ds111188.mlab.com:11188/node-mongodb
+
+# ???  
+
+node-mongodb
+
+ds111188.mlab.com:11188
+
+xnode
+
+123456
+
 ``` 
 
-
+https://docs.mongodb.com/manual/reference/connection-string/  
+https://www.npmjs.com/package/mongodb-uri  
 
 
 
