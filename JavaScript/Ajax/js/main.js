@@ -2,7 +2,7 @@
 
 $(function() {
     $.ajax({
-        url: 'https://cdn.xgqfrms.xyz/json/badges.json',
+        url: 'https://cdn.xgqfrms.xyz/json/honor.json',
         dataType: 'json',
         success: function(data) {
             populateWithCourses(data.courses.completed);

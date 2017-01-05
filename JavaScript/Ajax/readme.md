@@ -19,12 +19,12 @@ https://github.com/codeschool/jQueryBadgesProject/wiki/How-to-get-your-Report-Ca
 https://www.codeschool.com/users/xgqfrms.json  
 
 https://cdn.xgqfrms.xyz/json/badges.json  
-https://cdn.xgqfrms.xyz/json/xgqfrms.json
+https://cdn.xgqfrms.xyz/json/honor.json  
 
 ## mongodb (online database)  
 
 https://mlab.com/  
-
+https://mlab.com/databases/node-mongodb  
 
 ```sh
 node-mongodb
