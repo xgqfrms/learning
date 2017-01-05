@@ -17,16 +17,29 @@ https://www.w3.org/TR/#tr_URI
 
 ## CSS  
 
-https://www.w3.org/TR/css-grid-1/  
+### CSS Flexible Box Layout Module Level 1  
+W3C Candidate Recommendation, 26 May 2016
+
+https://www.w3.org/TR/css-flexbox-1/  
+
+
+### CSS Multi-column Layout Module  
+W3C Candidate Recommendation 12 April 2011
+
+https://www.w3.org/TR/css3-multicol/  
+
+
+
 
 ### CSS Grid Layout Module Level 1  
 W3C Candidate Recommendation, 29 September 2016
 
+https://www.w3.org/TR/css-grid-1/  
 
-https://www.w3.org/TR/css-flexbox-1/  
 
-### CSS Flexible Box Layout Module Level 1  
-W3C Candidate Recommendation, 26 May 2016
+
+
+
 
 
 
