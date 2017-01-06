@@ -1,6 +1,20 @@
 # Angular2 codeschool App  
 
 
+https://github.com/codeschool  
+
+https://github.com/fishbecat/Code-School-Slides  
+
+https://github.com/codeschool-projects  
+
+https://github.com/codeschool/subtitles  
+
+
+https://github.com/rileyhilliard/reportcard  
+
+
+https://codeschool.github.io/WatchUsBuild-Angular2Final/races  
+
 
 
 https://github.com/react-webpack-generators/generator-react-webpack
