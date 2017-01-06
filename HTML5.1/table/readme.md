@@ -85,30 +85,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout
 
 
 
-<colgroup>
-    <col style="background-color: #0f0">
-    <col span="2">
-</colgroup>
-
-
-<colgroup span="4"></colgroup>
-
-
-https://www.w3.org/TR/html5/tabular-data.html#the-colgroup-element  
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-http://www.w3schools.com/html/html_tables.asp  
-
-
-
-
-
-
-
 
 http://www.w3schools.com/cssref/pr_tab_table-layout.asp  
 https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout  
