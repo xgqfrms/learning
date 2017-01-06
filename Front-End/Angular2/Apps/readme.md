@@ -62,7 +62,7 @@ https://github.com/codeschool/WatchUsBuild-React
 https://github.com/codeschool/WatchUsBuild-ResponsiveSiteWithBootstrap  
 
 
-
+https://github.com/codeschool/WatchUsBuild-Angular2Final  
 
 
 

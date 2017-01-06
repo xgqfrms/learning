@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CarPart } from '../car-part';
+
 @Component({
     selector: 'app-car-parts',
     templateUrl: './car-parts.component.html',
@@ -11,7 +13,7 @@ export class CarPartsComponent implements OnInit {
 
     ngOnInit() {
     }
-    carParts = [
+    carParts: CarPart[] = [
         {
             "id": 1,
             "name":  "super car",
