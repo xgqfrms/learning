@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-// import { CarPartsComponent } from './car-parts/car-parts.component';
+import { CarPartsComponent } from './car-parts/car-parts.component';
 
 
 @Component({
