@@ -1,0 +1,38 @@
+h1{
+    color: rgba(0,255,0,0.7);
+    background: rgba(0,0,0,0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tb{
+    border: 1px solid red;
+    display: table;
+}
+.tb .tbcap{
+    border: 1px solid green;
+    display: table-caption;
+}
+.tb .tbr{
+    border: 1px solid green;
+    display: table-row;
+}
+.tb .tbc{
+    border: 1px solid blue;
+    display: table-cell;
+}
+
+.tb .tbcapg{
+    border: 1px solid green;
+    display: table-caption;
+}
+.tb .tbrg{
+    border: 1px solid green;
+    display: table-row-group;
+}
+.tb .tbcg{
+    border: 1px solid blue;
+    display: table-column-group;
+}
+/* display: table-column; */
