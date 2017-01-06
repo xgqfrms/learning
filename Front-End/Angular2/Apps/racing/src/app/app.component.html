@@ -1,3 +1,17 @@
+<div>
+    <h1>{{carParts}}</h1>
+    <ul>
+        <li *ngFor="let carPart of carParts">
+            <h2><mark>{{carPart.id}}</mark></h2>
+            <h3>{{carPart.name | uppercase}}</h3>
+            <p>{{carPart.desc}}</p>
+            <p *ngIf="carPart.inStock > 0">{{carPart.inStock }} in Stock</p>
+            <p *ngIf="carPart.inStock === 0">Out of Stock</p>
+        </li>
+    </ul>
+</div>
+
+
 <section class="sec2">
     <table>
         <caption>
@@ -85,3 +99,9 @@
     </div>
 </section>
 
+<!-- 
+http://www.w3schools.com/cssref/pr_class_display.asp
+https://css-tricks.com/complete-guide-table-element/
+http://quirksmode.org/css/css2/columns.html
+
+ -->

@@ -20,14 +20,14 @@ h1{
 }
 .tbcol1{
     display: table-column;
-    span: 3;
+    span: 2;
     color: red;
     background: rgba(255,0,255,0.3);
 }
 
 .tbcol2{
     display: table-column;
-    span: 1;
+    span: 2;
     color: red;
     background: rgba(255,255,0,0.3);
 }
@@ -58,7 +58,7 @@ h1{
     background: rgba(0,255,0,0.3);
     color: #f0f;
 }
-.tbd{
+.tbc{
     border: 1px solid blue;
     display: table-cell;
     background: rgba(0,0,255,0.3);
@@ -79,4 +79,12 @@ tr td:nth-child(even){
 }
 tr td{
     color: #fff;
+}
+tr th{
+    text-shadow: 3px 3px 3px rgba(0,255,255,0.7);
+}
+table caption{
+    color: rgba(0,0,255,0.3);
+    font-size: 1.5em;
+    background: rgba(0,0,0,0.3);
 }
