@@ -44,6 +44,9 @@ display: table-caption        /* <caption>   */
 
 
 
+
+
+
 display: inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none | inherit
 
 display: inline;
@@ -62,8 +65,8 @@ https://css-tricks.com/complete-guide-table-element/
 <tr>    A table row
 <th>    A table cell that is a header
 <td>    A table cell that is data
-<col>   A column (a no-content element)
-<colgroup>  A group of columns
+<col>   A column (a no-content element) css ?  
+<colgroup>  A group of columns css ?  
 
 
 ## table-element atrributes  

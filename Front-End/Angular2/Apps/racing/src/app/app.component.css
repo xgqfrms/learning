@@ -1,38 +1,65 @@
 h1{
     color: rgba(0,255,0,0.7);
     background: rgba(0,0,0,0.7);
+/*    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;*/
+}
+.sec1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.tb{
-    border: 1px solid red;
-    display: table;
-}
-.tb .tbcap{
-    border: 1px solid green;
+.tbcaption{
     display: table-caption;
+    color: #f0f;
 }
-.tb .tbr{
-    border: 1px solid green;
-    display: table-row;
+.tbcolgroup{
+    display: table-column-group;
 }
-.tb .tbc{
-    border: 1px solid blue;
-    display: table-cell;
+.tbcol{
+    display: table-column;
+    span: 3;
+    /*column: 2;*/
+    color: red;
+    background: rgba(0,0,0,0.3);
 }
 
-.tb .tbcapg{
-    border: 1px solid green;
-    display: table-caption;
+.tbhead{
+    display: table-header-group;
 }
-.tb .tbrg{
+
+.tbbody{
     border: 1px solid green;
     display: table-row-group;
 }
-.tb .tbcg{
-    border: 1px solid blue;
-    display: table-column-group;
+
+.tbfoot{
+    display: table-footer-group;
 }
-/* display: table-column; */
+
+.tb{
+    border: 1px solid red;
+    display: table;
+    background: rgba(255,255,255,0.3);
+    color: #000;
+}
+
+.tbr{
+    border: 1px solid green;
+    display: table-row;
+    background: rgba(0,255,0,0.3);
+    color: #f0f;
+}
+.tbd{
+    border: 1px solid blue;
+    display: table-cell;
+    background: rgba(0,0,255,0.3);
+    color: #ff0;
+}
+
+.col3{
+    background: rgba(0,0,0,0.7);
+    /*color: #0f0;*/
+}

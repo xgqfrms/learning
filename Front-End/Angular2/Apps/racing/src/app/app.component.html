@@ -1,44 +1,84 @@
-<h1>
-    {{title}}
-</h1>
-<div>
-    {{carParts.id}} <br>
-    {{carParts.name}} <br>
-    {{carParts.desc}} <br>
-    {{carParts.inStock}} <br>
-</div>
-<div class="tb">
-    <div class="tbcap">
-        {{title}}
+<section class="sec1">
+    <div class="tb">
+        <div class="tbcaption">
+            <h1>{{title}}</h1>
+            caption
+        </div>
+        <div class="tbcolgroup">
+            <div class="tbcol"></div>
+        </div>
+        <div class="tbhead">
+            <div class="tbr">
+                <div class="tbc">head {{carParts.id}}</div>
+                <div class="tbc">head {{carParts.name}}</div>
+                <div class="tbc">head {{carParts.desc}}</div>
+                <div class="tbc">head {{carParts.inStock}}</div>
+            </div>
+        </div>
+        <div class="tbbody">
+            <div class="tbr">
+                <div class="tbc">{{carParts.id}}</div>
+                <div class="tbc">{{carParts.name}}</div>
+                <div class="tbc">{{carParts.desc}}</div>
+                <div class="tbc">{{carParts.inStock}}</div>
+            </div>
+            <div class="tbr">
+                <div class="tbc">{{carParts.id}}</div>
+                <div class="tbc">{{carParts.name}}</div>
+                <div class="tbc">{{carParts.desc}}</div>
+                <div class="tbc">{{carParts.inStock}}</div>
+            </div>
+        </div>
+        <div class="tbfoot">
+            <div class="tbr">
+                <div class="tbc">sum {{carParts.id}}</div>
+                <div class="tbc">sum {{carParts.name}}</div>
+                <div class="tbc">sum {{carParts.desc}}</div>
+                <div class="tbc">sum {{carParts.inStock}}</div>
+            </div>
+        </div>
     </div>
-    <div class="tb tbr">
-        <div class="tbc">{{carParts.id}}</div>
-        <div class="tbc">{{carParts.name}}</div>
-        <div class="tbc">{{carParts.desc}}</div>
-        <div class="tbc">{{carParts.inStock}}</div>
-    </div>
-    <div class="tb tbr">
-        <div class="tbc">{{carParts.id}}</div>
-        <div class="tbc">{{carParts.name}}</div>
-        <div class="tbc">{{carParts.desc}}</div>
-        <div class="tbc">{{carParts.inStock}}</div>
-    </div>
-</div>
-
-<div class="tb">
-    <div class="tbcapg">
-        {{title}}
-    </div>
-    <div class="tb tbrg">
-        <div class="tbcg">{{carParts.id}}</div>
-        <div class="tbcg">{{carParts.name}}</div>
-        <div class="tbcg">{{carParts.desc}}</div>
-        <div class="tbcg">{{carParts.inStock}}</div>
-    </div>
-    <div class="tb tbrg">
-        <div class="tbcg">{{carParts.id}}</div>
-        <div class="tbcg">{{carParts.name}}</div>
-        <div class="tbcg">{{carParts.desc}}</div>
-        <div class="tbcg">{{carParts.inStock}}</div>
-    </div>
-</div>
+</section>
+<section class="sec2">
+    <table>
+        <caption>
+            <h1>{{title}}</h1>
+            caption
+        </caption>
+        <colgroup>
+            <col span="2" style="background: rgba(255,0,255,0.7)">
+            <col span="1" style="background: rgba(0,0,0,0.7)">
+            <col span="1" class="col3">
+        </colgroup>
+        <thead>
+            <tr>
+                <td>head {{carParts.id}}</td>
+                <td>head {{carParts.name}}</td>
+                <td>head {{carParts.desc}}</td>
+                <td>head {{carParts.inStock}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{carParts.id}}</td>
+                <td>{{carParts.name}}</td>
+                <td>{{carParts.desc}}</td>
+                <td>{{carParts.inStock}}</td>
+            </tr>
+            <tr>
+                <td>{{carParts.id}}</td>
+                <td>{{carParts.name}}</td>
+                <td>{{carParts.desc}}</td>
+                <td>{{carParts.inStock}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>sum {{carParts.id}}</td>
+                <td>sum {{carParts.name}}</td>
+                <td>sum {{carParts.desc}}</td>
+                <td>sum {{carParts.inStock}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
