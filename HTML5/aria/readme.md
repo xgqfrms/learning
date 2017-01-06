@@ -1,19 +1,19 @@
-# figure  
+# aria  
 
 
-https://www.w3.org/TR/html5/grouping-content.html#the-figure-element  
+https://www.w3.org/TR/html51/dom.html#global-aria--attributes  
+
+https://www.w3.org/TR/html51/dom.html#global-aria--attributes  
 
 
-https://developer.mozilla.org/en/docs/Web/HTML/Element/figure  
+https://www.w3.org/TR/html51/dom.html#allowed-aria-roles-states-and-properties  
+
+https://www.w3.org/TR/html51/dom.html#aria-role-attribute  
 
 
+https://www.w3.org/TR/html51/dom.html#wai-aria  
 
-https://www.w3.org/TR/html51/  
-
-
-https://www.w3.org/TR/html51/grouping-content.html#the-figure-element  
-
-
+https://www.w3.org/TR/html51/references.html#biblio-wai-aria  
 
 
 ARIA Roles, States and Properties
@@ -240,6 +240,8 @@ aria-setsize
 aria-expanded (state)
 aria-checked (state)
 aria-selected (state)
+
+
 
 
 
