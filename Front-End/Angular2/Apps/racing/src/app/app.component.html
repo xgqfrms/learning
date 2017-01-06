@@ -1,6 +1,6 @@
 <div>
     <h1>{{carParts}}</h1>
-    
+    <p>There are <mark>{{totalCarParts()}}</mark> total parts in stock.</p>
     <ul>
         <li *ngFor="let carPart of carParts">
             <h2><mark>{{carPart.id}}</mark></h2>
@@ -13,6 +13,7 @@
         </li>
     </ul>
 </div>
+
 
 
 <section class="sec2">
@@ -106,5 +107,4 @@
 http://www.w3schools.com/cssref/pr_class_display.asp
 https://css-tricks.com/complete-guide-table-element/
 http://quirksmode.org/css/css2/columns.html
-
  -->
