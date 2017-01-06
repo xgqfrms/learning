@@ -1,3 +1,47 @@
+<section class="sec2">
+    <table>
+        <caption>
+            <h1>{{title}}</h1>
+            caption
+        </caption>
+        <colgroup>
+            <col span="2" style="background: rgba(255,0,255,0.7)">
+            <col span="1" style="background: rgba(0,0,0,0.7)">
+            <col span="1" class="col3">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>head {{carParts.id}}</th>
+                <th>head {{carParts.name}}</th>
+                <th>head {{carParts.desc}}</th>
+                <th>head {{carParts.inStock}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{carParts.id}}</td>
+                <td>{{carParts.name}}</td>
+                <td>{{carParts.desc}}</td>
+                <td>{{carParts.inStock}}</td>
+            </tr>
+            <tr>
+                <td>{{carParts.id}}</td>
+                <td>{{carParts.name}}</td>
+                <td>{{carParts.desc}}</td>
+                <td>{{carParts.inStock}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>sum {{carParts.id}}</td>
+                <td>sum {{carParts.name}}</td>
+                <td>sum {{carParts.desc}}</td>
+                <td>sum {{carParts.inStock}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
 <section class="sec1">
     <div class="tb">
         <div class="tbcaption">
@@ -5,7 +49,8 @@
             caption
         </div>
         <div class="tbcolgroup">
-            <div class="tbcol"></div>
+            <div class="tbcol1"></div>
+            <div class="tbcol2"></div>
         </div>
         <div class="tbhead">
             <div class="tbr">
@@ -39,46 +84,4 @@
         </div>
     </div>
 </section>
-<section class="sec2">
-    <table>
-        <caption>
-            <h1>{{title}}</h1>
-            caption
-        </caption>
-        <colgroup>
-            <col span="2" style="background: rgba(255,0,255,0.7)">
-            <col span="1" style="background: rgba(0,0,0,0.7)">
-            <col span="1" class="col3">
-        </colgroup>
-        <thead>
-            <tr>
-                <td>head {{carParts.id}}</td>
-                <td>head {{carParts.name}}</td>
-                <td>head {{carParts.desc}}</td>
-                <td>head {{carParts.inStock}}</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{carParts.id}}</td>
-                <td>{{carParts.name}}</td>
-                <td>{{carParts.desc}}</td>
-                <td>{{carParts.inStock}}</td>
-            </tr>
-            <tr>
-                <td>{{carParts.id}}</td>
-                <td>{{carParts.name}}</td>
-                <td>{{carParts.desc}}</td>
-                <td>{{carParts.inStock}}</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>sum {{carParts.id}}</td>
-                <td>sum {{carParts.name}}</td>
-                <td>sum {{carParts.desc}}</td>
-                <td>sum {{carParts.inStock}}</td>
-            </tr>
-        </tfoot>
-    </table>
-</section>
+

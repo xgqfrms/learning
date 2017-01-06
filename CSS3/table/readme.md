@@ -29,17 +29,21 @@ https://www.w3.org/TR/CSS2/visuren.html#inline-formatting
 https://css-tricks.com/fixing-tables-long-strings/  
 
 
+display: table-caption        /* <caption>   */
+
+display: table-column-group   /* <colgroup>  */
+display: table-column         /* <col>       */
+
+display: table-footer-group   /* <tfoot>     */
+display: table-row-group      /* <tbody>     */
+display: table-header-group   /* <thead>     */
 
 display: table                /* <table> ( block-level ) */
 display: inline-table         /* <table> ( inline-level ) */
 display: table-cell           /* <td>        */
 display: table-row            /* <tr>        */
-display: table-row-group      /* <tbody>     */
-display: table-column         /* <col>       */
-display: table-column-group   /* <colgroup>  */
-display: table-footer-group   /* <tfoot>     */
-display: table-header-group   /* <thead>     */
-display: table-caption        /* <caption>   */
+
+
 
 
 
