@@ -23,10 +23,12 @@ export class AppComponent {
         }
     ];
     totalCarParts() {
-        let sum = 0;
+        /*let sum = 0;
         for (let carPart of this.carParts) {
             sum += carPart.inStock;
         }
-        return sum;
+        return sum;*/
+        // return this.carParts.reduce(function(prev, current) { return prev + current.inStock; }, 0 );
+        return this.carParts.reduce((prev, current) => prev + current.inStock, 0 );
     }
 }
