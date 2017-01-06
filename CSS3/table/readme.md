@@ -161,3 +161,41 @@ https://www.xgqfrms.xyz/
 
 
 
+http://www.w3schools.com/html/html_tables.asp  
+
+
+Use the HTML <table> element to define a table
+Use the HTML <tr> element to define a table row
+Use the HTML <td> element to define a table data
+Use the HTML <th> element to define a table heading
+Use the HTML <caption> element to define a table caption
+Use the CSS border property to define a border
+Use the CSS border-collapse property to collapse cell borders
+Use the CSS padding property to add padding to cells
+Use the CSS text-align property to align cell text
+Use the CSS border-spacing property to set the spacing between cells
+Use the colspan attribute to make a cell span many columns
+Use the rowspan attribute to make a cell span many rows
+Use the id attribute to uniquely define one table
+
+
+<table> Defines a table
+<th>    Defines a header cell in a table
+<tr>    Defines a row in a table
+<td>    Defines a cell in a table
+<caption>   Defines a table caption
+<colgroup>  Specifies a group of one or more columns in a table for formatting
+<col>   Specifies column properties for each column within a <colgroup> element
+<thead> Groups the header content in a table
+<tbody> Groups the body content in a table
+<tfoot> Groups the footer content in a table
+
+
+
+
+https://developer.mozilla.org/en/docs/Web/HTML/Element/table  
+
+
+
+
+

@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>h5 table</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 
 <body>
     <table class="users">
+        <caption>Monthly savings</caption>
+        <colgroup>
+            <col span="3" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
         <thead>
             <tr>
                 <th class="row-1 row-ID">ID</th>
@@ -43,7 +49,12 @@
             </tr>
         </tbody>
         <tfoot>
-            xxxx
+            <tr class="mtr">
+                <td span="4">Sum</td>
+                <td>Sum</td>
+                <td>Sum</td>
+                <td>Sum</td>
+            </tr>
         </tfoot>
     </table>
     <section>

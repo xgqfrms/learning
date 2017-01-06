@@ -1,0 +1,49 @@
+.users {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+/* Column widths are based on these cells */
+.row-ID {
+  width: 10%;
+}
+.row-name {
+  width: 40%;
+}
+.row-job {
+  width: 30%;
+}
+.row-email {
+  width: 20%;
+}
+.users td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.users th {
+  /*background: darkgreen;*/
+  color: white;
+}
+.users td,
+.users th {
+  text-align: left;
+  padding: 5px 10px;
+}
+.users tr:nth-child(even) {
+  /*background: lightblue;*/
+}
+.users tr:nth-child(odd) {
+  /*background: lightgrey;*/
+}
+
+.mtr{
+  span: 4;
+  background: green;
+}
+
+
+
+
+
+
