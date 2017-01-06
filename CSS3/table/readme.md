@@ -37,7 +37,7 @@ display: table-column         /* <col>       */
 display: table-column-group   /* <colgroup>  */
 display: table-footer-group   /* <tfoot>     */
 display: table-header-group   /* <thead>     */
-
+display: table-caption        /* <caption>   */
 
 
 
@@ -53,7 +53,7 @@ https://css-tricks.com/complete-guide-table-element/
 
 
 <table> The table itself
-<caption>   The caption for the table. Like a figcaption to a figure.
+<caption>  The caption for the table. Like a figcaption to a figure.
 <thead> The table header
 <tbody> The table body
 <tfoot> The table footer
@@ -76,6 +76,9 @@ headers td  space-separated string corresponding to ID's of the <th> elements re
 scope   th  row | col | rowgroup | colgroup (default) - essentially specifies the axis of the header. The default is that a header is heading a column, which is typical, but a row might start with a header also, where you would scope that header to the row or rowgroup.
 
 
+https://www.campaignmonitor.com/css/  
+https://css-tricks.com/complete-guide-table-element/  
+https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout  
 
 
 

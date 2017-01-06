@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MockdataComponent } from './mockdata/mockdata.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MockdataComponent
   ],
   imports: [
     BrowserModule,
