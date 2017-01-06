@@ -4,6 +4,8 @@
         <li *ngFor="let carPart of carParts">
             <h2><mark>{{carPart.id}}</mark></h2>
             <h3>{{carPart.name | uppercase}}</h3>
+            <p *ngIf="carPart.price < 5">{{carPart.price | currency:'EUR':true}}</p>
+            <p *ngIf="carPart.price > 5">{{carPart.price | currency:'RMB':true}}</p>
             <p>{{carPart.desc}}</p>
             <p *ngIf="carPart.inStock > 0">{{carPart.inStock }} in Stock</p>
             <p *ngIf="carPart.inStock === 0">Out of Stock</p>

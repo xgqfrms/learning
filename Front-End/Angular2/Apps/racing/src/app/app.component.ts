@@ -12,12 +12,14 @@ export class AppComponent {
         "id": 1,
         "name":  "super car",
         "desc": "These tires are the very best",
-        "inStock": 5
+        "inStock": 5,
+        "price": 4.99
         },{
         "id": 2,
         "name": "Reinforced Shocks",
         "desc": "Shocks made from kryptonite",
-        "inStock": 4
+        "inStock": 4,
+        "price": 9.99
         }
     ];
 }
