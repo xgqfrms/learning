@@ -62,4 +62,11 @@ https://developers.google.com/web/tools/lighthouse/
 
 
 
+https://developers.google.com/speed  
+https://developers.google.com/speed/docs/insights/rules  
+
+https://docs.npmjs.com/getting-started/installing-node  
+
+https://www.firebase.com/docs/hosting/guide/  
+https://console.firebase.google.com/  
 
