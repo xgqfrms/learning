@@ -9,6 +9,7 @@ https://github.com/valor-software/ng2-bootstrap
 
 
 
+
 JavaScript 模块化七日谈  
 https://github.com/Huxpro/js-module-7day  
 
@@ -28,40 +29,4 @@ https://github.com/hakimel/Ladda
 https://github.com/hakimel/css  
 http://lab.hakim.se/device-loop/  
 http://lab.hakim.se/flipside/  
-
-
-
-https://slides.com/  
-
-
-https://developers.google.com/web/progressive-web-apps/  
-
-wpa  
-
-https://developers.google.com/web/tools/lighthouse/  
-
-
-
-
-http://www.ecma-international.org/ecma-262/6.0/#sec-exports  
-
-http://www.ecma-international.org/ecma-262/6.0/#sec-imports  
-
-
-https://github.com/seajs/seajs/issues/588  
-
-
-https://github.com/GoogleChrome/samples/tree/gh-pages/classes-es6
-
-
-https://googlechrome.github.io/samples/classes-es6/index.html  
-
-https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/demo.js  
-
-
-
-https://www.chromestatus.com/feature/4633745457938432  
-
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes  
 
