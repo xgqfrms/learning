@@ -1,9 +1,6 @@
-# WPA & SAP  
+# PWA & SAP  
 
 https://en.wikipedia.org/wiki/Progressive_web_app  
-
-
-
 
 
 
