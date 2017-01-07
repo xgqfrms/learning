@@ -12,6 +12,7 @@ export class CarPartsComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        
     }
     carParts: CarPart[] = [
         {
@@ -37,5 +38,4 @@ export class CarPartsComponent implements OnInit {
         // return this.carParts.reduce(function(prev, current) { return prev + current.inStock; }, 0 );
         return this.carParts.reduce((prev, current) => prev + current.inStock, 0 );
     }
-
 }

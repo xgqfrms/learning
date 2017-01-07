@@ -1,7 +1,7 @@
 export class CarPart {
     id: number;
     name: string;
-    description: string;
+    desc: string;
     inStock: number;
     price: number;
 }
