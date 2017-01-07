@@ -6,6 +6,16 @@ https://www.w3.org/TR/service-workers/
 
 W3C Working Draft 25 June 2015
 
+
+## web worker (service worker)  
+
+https://w3c.github.io/ServiceWorker/v1/#service-worker-concept  
+
+A service worker is a type of web worker.
+
+
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers  
+
 *******************************************************************************
 
 Service Workers 1  
