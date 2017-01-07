@@ -19,6 +19,44 @@ Global : 58.5% + 2.19% = 60.69%
 
 https://jakearchibald.com/2014/offline-cookbook/#cache-network-race
 
+https://github.com/ufo-github/appcache-demo  
+
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers  
+
+
+## Service Worker  
+
+https://tc39.github.io/ecma262/#sec-promise-objects  
+
+http://caniuse.com/#search=Service%20Worker  
+
+Method that enables applications to take advantage of persistent background processing, including hooks to enable bootstrapping of web applications while offline.
+
+Global : 0% + 61.55% = 61.55%  
+
+https://developer.mozilla.org/en-US/docs/Tools/Web_Console  
+
+https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers  
+https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API  
+https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker  
+
+https://developer.mozilla.org/en-US/docs/Web/API/ChromeWorker  
+
+https://developer.mozilla.org/en-US/docs/Web/API/Worker  
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API  
+
+https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/PromiseWorker.jsm  
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers#Dedicated_workers  
+
+https://www.w3.org/TR/service-workers/  
+
+Service Workers
+
+W3C Working Draft 25 June 2015
+
+
 
 *******************************************************************************
 
