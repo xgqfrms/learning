@@ -7,6 +7,11 @@ http://valor-software.com/ng2-bootstrap/#/
 https://github.com/valor-software/ng2-bootstrap  
 
 
+
+
+JavaScript 模块化七日谈  
+https://github.com/Huxpro/js-module-7day  
+
 http://huangxuan.me/2015/07/09/js-module-7day/  
 https://github.com/Huxpro/js-module-7day  
 ES6 Module  
@@ -37,6 +42,16 @@ https://developers.google.com/web/tools/lighthouse/
 
 
 
+
+http://www.ecma-international.org/ecma-262/6.0/#sec-exports  
+
+http://www.ecma-international.org/ecma-262/6.0/#sec-imports  
+
+
+https://github.com/seajs/seajs/issues/588  
+
+
+https://github.com/GoogleChrome/samples/tree/gh-pages/classes-es6
 
 
 

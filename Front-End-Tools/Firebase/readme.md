@@ -22,3 +22,11 @@ https://firebase.google.com/docs/hosting/quickstart
 
 
 
+
+https://www.firebase.com/docs/hosting/guide/  
+https://console.firebase.google.com/  
+
+
+
+https://github.com/GoogleChrome/samples/tree/gh-pages/classes-es6  
+

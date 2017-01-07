@@ -32,5 +32,11 @@ https://webpack.js.org/organization/
 
 
 
+https://github.com/survivejs/webpack  
+
+https://github.com/petehunt/webpack-howto  
+
+
+
 
 

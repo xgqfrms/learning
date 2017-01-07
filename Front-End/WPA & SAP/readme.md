@@ -25,6 +25,69 @@ https://github.com/GoogleChrome/lighthouse
 https://docs.google.com/document/d/1pwLP9t8gKB3XyNKKz15dUPhWOeuHSqJ01paF9lN_y5g/edit  
 
 
+https://github.com/hemanth/awesome-pwa  
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Cache  
+
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers  
+
+https://codelabs.developers.google.com/codelabs/debugging-service-workers/  
+
+
+https://github.com/localForage/localForage  
+https://www.npmjs.com/package/idb  
+
+https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker/immediate-control  
+
+https://github.com/GoogleChrome/samples  
+
+https://github.com/GoogleChrome/samples/tree/gh-pages/classes-es6  
+
+https://jakearchibald.com/2014/offline-cookbook/  
+
+https://jakearchibald.com/2014/offline-cookbook/#cache-network-race  
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API  
+
+https://developer.mozilla.org/en-US/docs/Web/API  
+
+
+manifest.json  
+
+<link rel="manifest" href="/manifest.json">  
+
+
+
+https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/  
+
+
+<!-- Add to home screen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Weather PWA">
+<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+
+
+<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+<meta name="msapplication-TileColor" content="#2F3BA2">
+
+https://developers.google.com/speed  
+https://developers.google.com/speed/docs/insights/rules  
+
+https://docs.npmjs.com/getting-started/installing-node  
+
+https://www.firebase.com/docs/hosting/guide/  
+https://console.firebase.google.com/  
+
+
+
+
+
+
+
+
 
 
 ## SAP  
