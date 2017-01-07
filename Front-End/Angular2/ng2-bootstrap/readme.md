@@ -54,5 +54,14 @@ https://github.com/seajs/seajs/issues/588
 https://github.com/GoogleChrome/samples/tree/gh-pages/classes-es6
 
 
+https://googlechrome.github.io/samples/classes-es6/index.html  
 
+https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/demo.js  
+
+
+
+https://www.chromestatus.com/feature/4633745457938432  
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes  
 
