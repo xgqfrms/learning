@@ -23,16 +23,11 @@ https://github.com/ufo-github/appcache-demo
 
 https://developers.google.com/web/fundamentals/getting-started/primers/service-workers  
 
+https://jakearchibald.github.io/isserviceworkerready/resources.html  
 
-## Service Worker  
 
-https://tc39.github.io/ecma262/#sec-promise-objects  
 
-http://caniuse.com/#search=Service%20Worker  
 
-Method that enables applications to take advantage of persistent background processing, including hooks to enable bootstrapping of web applications while offline.
-
-Global : 0% + 61.55% = 61.55%  
 
 https://developer.mozilla.org/en-US/docs/Tools/Web_Console  
 
@@ -50,11 +45,25 @@ https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise
 
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers#Dedicated_workers  
 
-https://www.w3.org/TR/service-workers/  
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers  
 
-Service Workers
+https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers  
 
-W3C Working Draft 25 June 2015
+
+https://www.html5rocks.com/en/tutorials/workers/basics/  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
