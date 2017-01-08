@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppML</title>
+    <!-- 
+    http://www.w3schools.com/appml/default.asp
+    http://www.w3schools.com/appml/tryit.asp?filename=tryappml_intro
+     -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.xgqfrms.xyz/spin/spin.min.js/appml/appml.js"></script>
+</head>
+<body>
+    <h1>Customers</h1>
+    <div appml-data="customers.js">
+        <table>
+            <tr>
+                <th>Customer</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr appml-repeat="records">
+                <td>{{CustomerName}}</td>
+                <td>{{City}}</td>
+                <td>{{Country}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

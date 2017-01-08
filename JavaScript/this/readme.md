@@ -17,4 +17,13 @@ No Starch Press publishes the finest in geek entertainment
 
 https://segmentfault.com/q/1010000005987591/a-1020000005990567  
 
+http://stackoverflow.com/questions/17638305/why-is-bind-slower-than-a-closure  
+
+
+
+
+
+
+
+
 

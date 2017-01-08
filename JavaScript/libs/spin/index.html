@@ -13,11 +13,12 @@
     <!-- http://spin.js.org/ -->
 </head>
 <body>
-    <div class="box">
+    <div class="box" id="box">
         <div id="foo">
             <!-- spin -->
         </div>
         <button id="cbtn">spin</button>
+        <button id="sbtn">stop</button>
     </div>
     <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/spin/spin.min.js"></script>
@@ -35,7 +36,7 @@
             , direction: -1 // 1: clockwise, -1: counterclockwise
             , speed: 1.5 // Rounds per second
             , trail: 60 // Afterglow percentage
-            , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+            , fps: 60 // Frames per second when using setTimeout() as a fallback for CSS
             , zIndex: 2e9 // The z-index (defaults to 2000000000)
             , className: 'spinner' // The CSS class to assign to the spinner
             , top: '50%' // Top position relative to parent
@@ -44,13 +45,30 @@
             , hwaccel: true // Whether to use hardware acceleration
             , position: 'absolute' // Element positioning
         }
-        let target = document.getElementById('foo');
+        let box = document.getElementById('box');
+        let target = null;
+        target = document.getElementById('foo');
+        let spin = () => {
+           if(target !== null){
+                new Spinner(opts).spin(target);
+           }else{
+                /*let newtarget = document.createElement("div");
+                newtarget.setAttribute("id", "foo"); 
+                console.log(`newtarget = ${newtarget}`);
+                box.appendChild(newtarget);
+                console.log(`box = ${box}`);*/
+                new Spinner(opts).spin(nt);
+           }
+        }
+        let stop = () => {
+            var nt = target.remove();
+            // element.removeChild(child);
+        }
         // cbtn
         let cbtn = document.getElementById('cbtn');
-        cbtn.addEventListener = ("click", spin , false);
-        let spin = () => {
-            new Spinner(opts).spin(target);
-        }
+        cbtn.addEventListener("click", spin , false);
+        let sbtn = document.getElementById('sbtn');
+        sbtn.addEventListener("click", stop , false);
     </script>
 </body>
 </html>

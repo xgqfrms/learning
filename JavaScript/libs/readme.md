@@ -25,6 +25,7 @@ https://cdnjs.cloudflare.com/ajax/libs/sweetalert
 http://dmitrybaranovskiy.github.io/raphael/
 
 
+https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove  
 
 
 
