@@ -1,3 +1,13 @@
+/*
+http://spin.js.org/  
+https://github.com/fgnass/spin.js  
+https://cdnjs.com/libraries/spin.js  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js" integrity="sha256-PieqE0QdEDMppwXrTzSZQr6tWFX3W5KkyRVyF1zN3eg=" crossorigin="anonymous"></script>
+
+*/
+
+
 var opts = {
     lines: 13,
     // The number of lines to draw

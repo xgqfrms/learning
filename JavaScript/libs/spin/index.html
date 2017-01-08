@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <meta name="description" content="Angualr2 App, https://www.xgqfrms.xyz">
+    <meta name="author" content="xgqfrms, https://www.xgqfrms.xyz">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.png" type="image/png">
+    <title>spin</title>
+    <link rel="stylesheet" href="spin.css">
+    <!-- http://spin.js.org/ -->
+</head>
+<body>
+    <div class="box">
+        <div id="foo">
+            <!-- spin -->
+        </div>
+        <button id="cbtn">spin</button>
+    </div>
+    <!-- js -->
+    <script src="https://cdn.xgqfrms.xyz/spin/spin.min.js"></script>
+    <script>
+        let opts = {
+              lines: 13 // The number of lines to draw
+            , length: 17 // The length of each line
+            , width: 7 // The line thickness
+            , radius: 4 // The radius of the inner circle
+            , scale: 1.5 // Scales overall size of the spinner
+            , corners: 0.5 // Corner roundness (0..1)
+            , color: '#000' // #rgb or #rrggbb or array of colors
+            , opacity: 0.2 // Opacity of the lines
+            , rotate: 48 // The rotation offset
+            , direction: -1 // 1: clockwise, -1: counterclockwise
+            , speed: 1.5 // Rounds per second
+            , trail: 60 // Afterglow percentage
+            , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+            , zIndex: 2e9 // The z-index (defaults to 2000000000)
+            , className: 'spinner' // The CSS class to assign to the spinner
+            , top: '50%' // Top position relative to parent
+            , left: '50%' // Left position relative to parent
+            , shadow: true // Whether to render a shadow
+            , hwaccel: true // Whether to use hardware acceleration
+            , position: 'absolute' // Element positioning
+        }
+        let target = document.getElementById('foo');
+        // cbtn
+        let cbtn = document.getElementById('cbtn');
+        cbtn.addEventListener = ("click", spin , false);
+        let spin = () => {
+            new Spinner(opts).spin(target);
+        }
+    </script>
+</body>
+</html>

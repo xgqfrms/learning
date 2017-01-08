@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <meta name="description" content="Angualr2 App, https://www.xgqfrms.xyz">
+    <meta name="author" content="xgqfrms, https://www.xgqfrms.xyz">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn.xgqfrms.xyz/logo/favicon.png" type="image/png">
     <title>sweetalert</title>
     <link rel="stylesheet" href="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.css">
     <!-- http://codepen.io/xgqfrms/full/oBXmqm/ -->
@@ -26,7 +32,7 @@
     <section>
         <button onclick="ok();">OK!</button>
         <button id="btnok">OK!</button>
-        <button onclick="error();">OK!</button>
+        <button onclick="error();">Oops...!</button>
     </section>
     <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js"></script>
@@ -36,14 +42,18 @@
         let ok = () => {
             swal("Good job!", "You clicked the button!", "success");
         }
+        
         let btnok = document.getElementById('btnok');
         /*btnok.addEventLisenter("click", () => {
             swal("Good job!", "You clicked the button!", "success");
         }, false);*/
-        const bok = function(){
+
+        const bok = () => {
             swal("Good job!", "You clicked the button!", "success");
         }
+
         btnok.addEventListener("click", bok , false);
+
         let error = () => {
             sweetAlert("Oops...", "Something went wrong!", "error");
         }

@@ -40,3 +40,10 @@ http://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
 http://www.w3schools.com/jsref/met_element_addeventlistener.asp  
 
+
+
+btnok.addEventListener("click", bok , false);
+
+
+
+
