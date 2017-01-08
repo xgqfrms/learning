@@ -35,14 +35,14 @@
         let ok = () => {
             swal("Good job!", "You clicked the button!", "success");
         }
-        let btnok = document.getElementById('btn-ok');
+        let btnok = document.getElementById('btnok');
         /*btnok.addEventLisenter("click", () => {
             swal("Good job!", "You clicked the button!", "success");
         }, false);*/
         const bok = function(){
             swal("Good job!", "You clicked the button!", "success");
         }
-        btnok.addEventLisenter("click", bok , false);
+        btnok.addEventListener("click", bok , false);
         let error = () => {
             sweetAlert("Oops...", "Something went wrong!", "error");
         }
