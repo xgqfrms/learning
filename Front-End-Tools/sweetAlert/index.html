@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sweetalert</title>
+    <link rel="stylesheet" href="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.css">
+</head>
+<body>
+    <div>
+        <h1>sweet alert</h1>
+    </div>
+    <section>
+        <ul>
+            <li>
+                <a href="https://cdn.xgqfrms.xyz/sweetalert/index.html">sweetalert</a>
+            </li>
+            <li>
+                <a href="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.css">sweetalert.css</a>
+            </li>
+            <li>
+                <a href="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js">sweetalert.min.js</a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <button onclick="ok();">OK!</button>
+        <button id="btnok">OK!</button>
+        <button onclick="error();">OK!</button>
+    </section>
+    <!-- js -->
+    <script src="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js"></script>
+    <script>
+        // es6 
+        //swal("Good job!", "You clicked the button!", "success");
+        let ok = () => {
+            swal("Good job!", "You clicked the button!", "success");
+        }
+        let btnok = document.getElementById('btn-ok');
+        /*btnok.addEventLisenter("click", () => {
+            swal("Good job!", "You clicked the button!", "success");
+        }, false);*/
+        const bok = function(){
+            swal("Good job!", "You clicked the button!", "success");
+        }
+        btnok.addEventLisenter("click", bok , false);
+        let error = () => {
+            sweetAlert("Oops...", "Something went wrong!", "error");
+        }
+    </script>
+    <!-- 
+    http://stackoverflow.com/questions/5657292/why-is-false-used-after-this-simple-addeventlistener-function
+     -->
+</body>
+</html>
