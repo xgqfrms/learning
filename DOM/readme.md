@@ -38,6 +38,14 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document
 
 
 
+## 事件冒泡和捕获  
+
+
+
+
+##  内存管理  
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management
 
 
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>six-angle</title>
+    <!-- 1: √3: 2 (1: 1.732: 2) sin30 -->
+    <style>
+        #box {
+            position: relative;
+            width: 173.2px;
+            height: 100px;
+            margin: 100px auto 0;
+            background: red;
+        }
+        #box:before {
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            border: 50px dashed transparent;
+            border-left-width: 86.5px;
+            border-right-width: 86.5px;
+            bottom: 100px;
+            border-bottom-color: green;
+        }
+        #box:after {
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            border: 50px dashed transparent;
+            border-left-width: 86.5px;
+            border-right-width: 86.5px;
+            top: 100px;
+            border-top-color: blue;
+        }
+
+        /* #box:hover {
+             background: blue;
+             &:before {
+                 border-bottom-color: blue;
+             }
+             &:after {
+                 border-top-color: blue;
+             }
+         } */ 
+        #box:hover { background: black; }
+        #box:hover:before { border-bottom-color: black; }
+        #box:hover:after { border-top-color: black; }
+    </style>
+    <style>
+        .b{
+            display: block;
+            position: absolute;
+            bottom: 100px;
+            left: 25%;
+            transform: translateX(-86.5px);
+            width: 1px;
+            height: 1px;
+            content: '';
+            border: 50px solid transparent;
+            border-top-width: 100px;
+            border-bottom-width: 100px;
+            border-left-width: 86.5px;
+            border-right-width: 86.5px;
+            border-bottom-color: green;
+            border-top-color: red;
+            /*border-left-color: yellow;*/
+            /*border-right-color: purple;*/
+        }
+        .bb{
+            display: block;
+            position: absolute;
+            bottom: 100px;
+            left: 75%;
+            transform: translateX(-86.5px);
+            width: 1px;
+            height: 1px;
+            content: '';
+            border: 50px solid transparent;
+            border-top-width: 100px;
+            border-bottom-width: 100px;
+            border-left-width: 86.5px;
+            border-right-width: 86.5px;
+            /*border-bottom-color: green;*/
+            /*border-top-color: red;*/
+            border-left-color: yellow;
+            border-right-color: purple;
+        }
+        .b:hover{
+            border-left-color: yellow;
+            border-right-color: purple;
+            cursor: pointer;
+        }
+        .bb:hover{
+            border-bottom-color: green;
+            border-top-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="b"></div>
+    <div class="bb"></div>
+</body>
+</html>
