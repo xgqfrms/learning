@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>screen check</title>
+    <!-- http://www.w3schools.com/jsref/prop_screen_pixeldepth.asp -->
+</head>
+
+<body>
+    <h3>Your Screen:</h3>
+    <div id="demo"></div>
+    <script>
+        let txt = `
+            <p>Total width/height: ${screen.width} * ${screen.height} </p>
+            <p>Available width/height: ${screen.availWidth} * ${screen.availHeight} </p>
+            <p>Color depth: ${screen.colorDepth} </p>
+            <p>Color resolution: ${screen.pixelDepth} </p>
+        `;
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+
+</html>

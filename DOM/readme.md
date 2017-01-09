@@ -49,3 +49,12 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management
 
 
 
+
+
+
+## JavaScript and HTML DOM Reference
+
+http://www.w3schools.com/jsref/  
+
+
+
