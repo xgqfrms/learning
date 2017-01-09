@@ -95,4 +95,12 @@ https://github.com/angular/quickstart/blob/master/package.json
 
 
 
+https://angular.io/docs/ts/latest/cookbook/component-relative-paths.html#!#set-the-moduleid-  
+
+
+moduleId: module.id,
+
+https://angular.cn/docs/ts/latest/cookbook/component-relative-paths.html#!#webpack  
+
+
 
