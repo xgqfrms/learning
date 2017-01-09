@@ -1,6 +1,22 @@
 # Prototype  
 
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object  
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype  
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto  
+
+## Object.create() & Object.getPrototypeOf()
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create  
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf  
+
 
 http://javascript.ruanyifeng.com/oop/prototype.html
 
@@ -31,6 +47,21 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+
+
+## Prototypes  
+
+
+https://code.tutsplus.com/tutorials/prototypes-in-javascript--net-24949  
+
+
+__proto__
+
+
+
+
+
 
 
 
