@@ -18,6 +18,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf  
 
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor 
+
+
+
+prototype
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Shells  
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript  
+
+
+
+
+
+
+
+
+
 http://javascript.ruanyifeng.com/oop/prototype.html
 
 

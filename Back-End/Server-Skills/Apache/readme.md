@@ -13,6 +13,8 @@ $ sudo ab -h
 
 http://www.imooc.com/qadetail/181465
 
+http://www.imooc.com/video/7964   
+
 
 $ ab -n1000 -c10 http://www.xgqfrms.xyz:80/index.html
 
