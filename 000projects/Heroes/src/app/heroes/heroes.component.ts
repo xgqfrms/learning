@@ -11,13 +11,7 @@ import { HeroService } from '../hero.service';
     templateUrl: './heroes.component.html',
     styleUrls: ['./heroes.component.css']
 })
-/*export class HeroesComponent implements OnInit {
 
-    constructor() { }
-
-    ngOnInit() { }
-
-}*/
 
 export class HeroesComponent implements OnInit {
     heroes: Hero[];
