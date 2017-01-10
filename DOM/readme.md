@@ -56,5 +56,27 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management
 
 http://www.w3schools.com/jsref/  
 
+https://developer.mozilla.org/zh-CN/docs/Web/Events
+
+
+## addEventListener  
+
+
+http://www.w3schools.com/jsref/met_document_addeventlistener.asp  
+
+https://www.w3.org/TR/DOM-Level-3-Events/#event-flow  
+
+http://www.quirksmode.org/js/events_order.html#link4  
+
+## 
+
+
+
+
+
+
+
+
+
 
 
