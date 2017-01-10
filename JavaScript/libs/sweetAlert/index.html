@@ -33,15 +33,32 @@
         <button onclick="ok();">OK!</button>
         <button id="btnok">OK!</button>
         <button onclick="error();">Oops...!</button>
+        <div id="divid">
+            <button>button1</button>
+            <button>button2</button>
+            <button>button3</button>
+        </div>
     </section>
     <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js"></script>
+    <script>
+        let divid = document.getElementById('divid');
+        let ok1 = () => {
+            swal("Good job!", "You clicked the button!", "success");
+        }
+    </script>
     <script>
         // es6 
         //swal("Good job!", "You clicked the button!", "success");
         let ok = () => {
             swal("Good job!", "You clicked the button!", "success");
         }
+        /*
+        .sa-confirm-button-container > buuton 
+        let suredelete = document.getElementByClassName('sa-confirm-button-container');
+        $(.sa-confirm-button-container > buuton)
+        .addEventListener(tagert,func,false)
+        */
         
         let btnok = document.getElementById('btnok');
         /*btnok.addEventLisenter("click", () => {

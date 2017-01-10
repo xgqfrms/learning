@@ -5,6 +5,7 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
 
+
 @Component({
     selector: 'app-heroes',
     templateUrl: './heroes.component.html',
@@ -36,6 +37,20 @@ export class HeroesComponent implements OnInit {
             });
     }
 
+    /*
+    sweetalert
+    https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js
+    https://learning.xgqfrms.xyz/JavaScript/libs/sweetAlert/index.html
+    npm i -D sweetalert ??? dev
+    import lib
+    */
+/*    suredelete(): void {
+        let sd = document.getElementById('suredelete');
+        const bok = () => {
+            swal("Good job!", "You clicked the button!", "success");
+        }
+        sd.addEventListener("click", bok , false);
+    }*/
     delete(hero: Hero): void {
         this.heroService
             .delete(hero.id)
