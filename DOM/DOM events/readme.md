@@ -24,6 +24,8 @@ https://www.w3.org/TR/DOM-Level-3-Events/#event-flow
 
 
 
+http://www.w3schools.com/jsref/dom_obj_event.asp  
+
 
 
 

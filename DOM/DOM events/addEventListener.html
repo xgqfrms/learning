@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addEventListener()</title>
+    <!-- http://www.w3schools.com/jsref/met_element_addeventlistener.asp -->
+</head>
+<body>
+    <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+    <button id="myBtn">Try it</button>
+    <button id="Btn">btn</button>
+    <button id="Btn3">btn3</button>
+
+    <p><strong>Note:</strong> The addEventListener() method is not supported in Internet Explorer 8 and earlier versions.</p>
+    <p id="demo"></p>
+    <script>
+        const demo = document.getElementById("demo");
+        document.getElementById("myBtn").addEventListener("click", function(){
+            demo.innerHTML = "Hello World";
+        });
+        document.getElementById("Btn").addEventListener("click", ()=>{
+            demo.innerHTML = "Hello 2";
+        });
+        let btn = () => {
+            demo.innerHTML = "Hello 3";
+        }
+        document.getElementById("Btn3").addEventListener("click", btn , false);
+
+        let xalert = () => {
+            alert(btn);
+        }
+        setTimeout(xalert(), 3000);
+    </script>
+</body>
+</html>
