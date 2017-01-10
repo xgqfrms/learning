@@ -64,13 +64,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/Events
 
 http://www.w3schools.com/jsref/met_document_addeventlistener.asp  
 
+
+## 捕获和冒泡  
+
+
 https://www.w3.org/TR/DOM-Level-3-Events/#event-flow  
 
 http://www.quirksmode.org/js/events_order.html#link4  
-
-## 
-
-
 
 
 
