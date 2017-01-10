@@ -67,6 +67,24 @@ https://github.com/xgqfrms007/test/tree/gh-pages/angular2
 
 
 
+## TESTING
+
+https://angular.io/docs/ts/latest/guide/testing.html  
+
+
+@NgModule  
+
+https://angular.io/docs/ts/latest/guide/ngmodule.html  
+
+
+
+templates  
+
+https://angular.io/docs/ts/latest/guide/template-syntax.html  
+
+Dependency injection  
+
+https://angular.io/docs/ts/latest/guide/dependency-injection.html  
 
 
 

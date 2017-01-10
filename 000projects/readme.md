@@ -29,6 +29,21 @@ https://github.com/notifications
 
 
 
+https://www.sitepoint.com/angular-2-tutorial/  
+
+Angular 2 Tutorial: Create a CRUD App with Angular CLI  
+
+https://github.com/sitepoint-editors/todo-app  
+
+
+
+
+
+
+
+
+
+
 
 
 

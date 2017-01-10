@@ -10,17 +10,42 @@ W3C Recommendation 22 October 2015
 
 
 
-https://www.audero.it/demo/web-notifications-api-demo.html 
+https://www.w3.org/TR/notifications/  
+
+
+
+
 
 https://github.com/xgqfrms-GitHub/HTML5-API  
 
-
-
 https://www.sitepoint.com/introduction-web-notifications-api/  
+https://www.audero.it/demo/web-notifications-api-demo.html  
 
 
 
 https://developer.mozilla.org/zh-CN/docs/Web/Events  
+
+
+
+
+## Angular Debugging Tips and Tricks  
+
+https://coryrylan.com/blog/angular-debugging-tips-and-tricks
+
+
+## Blueprint CSS (Flexbox)  
+
+https://blueprintcss.io/  
+
+
+
+
+
+
+
+
+
+
 
 
 
