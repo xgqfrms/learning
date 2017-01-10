@@ -37,6 +37,15 @@ https://github.com/sitepoint-editors/todo-app
 
 
 
+## Angular Debugging Tips and Tricks  
+
+https://coryrylan.com/blog/angular-debugging-tips-and-tricks
+
+
+https://secure.digitalsignage.com/dash/public/index.html  
+
+
+https://github.com/born2net/Angular-kitchen-sink  
 
 
 
