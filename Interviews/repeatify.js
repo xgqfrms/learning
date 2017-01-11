@@ -28,7 +28,7 @@ repeatify = (str, num) => {
         // throw a RangeError.???
     }
     if(b1 === true ){
-        str.repeat(num);
+        result = str.repeat(num);
     }
     return result;
 }

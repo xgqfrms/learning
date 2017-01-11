@@ -12,6 +12,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 http://www.w3schools.com/jsref/jsref_repeat.asp  
 
+
+
+
+
+## stackoverflow  
+
 http://stackoverflow.com/questions/202605/repeat-string-javascript/41574167
 
 http://stackoverflow.com/a/41574167/5934465  
