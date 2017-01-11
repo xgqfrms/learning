@@ -12,4 +12,13 @@ https://www.sitepoint.com/community/
 
 
 
+岗位要求：
+2 年及以上开发经验
+手快
+偏重 JavaScript 方向
+熟悉 jQuery、Bootstrap，独自开发过 jQuery 插件为佳
+熟练掌握 HTML5 及 CSS3 标准
+知道并会使用 AngularJS
+知道 XSS 原理及防范
+
 
