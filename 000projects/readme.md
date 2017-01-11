@@ -52,6 +52,29 @@ https://github.com/born2net/Angular-kitchen-sink
 
 
 
+https://github.com/designcourse/angularfire2-chat  
+
+https://coursetro.com/posts/code/31/How-to-Make-an-Angular-Firebase-Chat-App  
+
+https://coursetro.com/courses/8/Learn-Angular-2-Development-with-our-Free-Course  
+
+## Understanding Angular 2 Compone  
+
+https://www.youtube.com/watch?v=H3-Y47Pt0VU  
+
+
+
+
+https://www.youtube.com/watch?v=82PRCg4QfpE  
+
+## Hosting Angular 2 Applications On Firebase  
+
+
+
+
+
+
+
 
 
 
