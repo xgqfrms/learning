@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-overflow</title>
+    <style>
+        div.box{
+            text-overflow: ellipsis;
+            width: 200px;
+            height: 100px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+            box-sizing: border-box;
+            border: 1em red ridge;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>text-overflow</h1>
+        <mark>
+            white-space: nowrap;<br>
+            overflow: hidden;<br>
+            text-overflow: ellipsis;<br>
+        </mark>
+    </div>
+    <div class="box">
+        text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; <br>
+        text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; <br>
+        This property specifies rendering when inline content overflows its line box edge in the inline progression direction of its block container element ("the block") that has overflow other than visible.
+    </div>
+</body>
+</html>

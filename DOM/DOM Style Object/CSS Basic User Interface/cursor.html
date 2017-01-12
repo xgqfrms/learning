@@ -5,17 +5,102 @@
     <title>cursor</title>
     <style>
         div.box{
+            cursor: -webkit-grab;
             cursor: grab;
         }
+        div.box2{
+            cursor: -webkit-grabbing;
+            cursor: grabbing;
+        }
+        div{
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            background: rgba(0,0,0,0.7);
+            color: rgba(0,255,0,0.7);
+            float: left;
+            margin: 10px;
+        }
+        div.custom{
+            cursor: url(https://cdn.xgqfrms.xyz/cursor/blue.svg#cur),
+                    url("./blue.cur"),
+                    url(https://cdn.xgqfrms.xyz/cursor/blue.png),
+                    pointer;
+        }
+        /* 
+        div.custom:hover{
+            cursor: url("./blue.cur");
+        }
+         */
     </style>
 </head>
 <body>
-    <div>
-        <h1>cursor</h1>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><h1>cursor</h1></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>multi options</h3>
+            <pre>
+                :link,:visited {
+                    cursor: url(example.svg#linkcursor),
+                            url(hyper.cur),
+                            url(hyper.png) 2 3,
+                            pointer;
+                }
+            </pre>
+        </section>
+    </header>
     <section>
-        <div class="box">
+        <article>
+            <pre>
+                The UA must support the following image file formats:
+
+                PNG, as defined in [PNG]
+                SVG, as defined in [SVG], in secure static mode [SVG-INTEGRATION]
+                any other non-animated image file format that they support for <image> in other properties, such as the the background-image property
+            </pre>
+            <hr>
+            <pre>
+                In addition, the UA should support the following image file formats:
+
+                SVG, as defined in [SVG], in secure animated mode [SVG-INTEGRATION]
+                any other animated image file format that they support for <image> in other properties, such as the the background-image property
+            </pre>
+            <hr>
+            <pre>
+                The UA may also support additional file formats.
+
+                Note: 
+                At the time of writing this specification (spring 2015), the only file formats supported for cursors in common desktop browsers are the <mark>.ico</mark> and <mark>.cur</mark> file formats, as designed by 
+                <mark>Microsoft</mark>. 
+                在编写本规范（2015年春季）时，通用桌面浏览器中唯一支持光标的文件格式是Microsoft设计的.ico和.cur文件格式。
+                For compatibility with legacy content, UAs are encouraged to support these, even though the lack of an open specification makes it impossible to have a normative requirement about these formats. Some information on these formats can be found on Wikipedia.
+                为了与遗留内容兼容，鼓励UA支持这些，即使缺乏开放的规范，使得不可能有关于这些格式的规范要求.
+                关于这些格式的一些信息可以在维基百科上找到。
+            </pre>
+        </article>
+    </section>
+    <section>
+        <div class="custom" title="custom blue.cur">
+            cursor: blue.cur;<br>
+            cursor: blue.ico;<br>
+            cursor: blue.svg;<br>
+            cursor: blue.png;<br>
+        </div>
+    </section>
+    <section>
+        <div class="box" title="grap">
+            cursor: -webkit-grab;<br>
             cursor: grab;
+        </div>
+    </section>
+    <section>
+        <div class="box2" title="grabbing">
+            cursor: -webkit-grabbing;<br>
+            cursor: grabbing;
         </div>
     </section>
 </body>

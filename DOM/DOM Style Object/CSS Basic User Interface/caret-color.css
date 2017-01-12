@@ -1,0 +1,12 @@
+/* 
+caret-color
+
+https://benfrain.com/creating-a-custom-input-cursorcaret/ ??? 
+
+caret-style: block;
+*/
+
+
+textarea{
+    caret-color: #00aacc;
+}

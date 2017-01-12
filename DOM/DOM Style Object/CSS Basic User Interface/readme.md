@@ -112,6 +112,17 @@ object[type$="+xml"],object[type="application/xml"]
 }
 
 
+text-overflow
+Value: [ clip | ellipsis | <string> ]{1,2}
+Initial: clip
+
+
+
+
+
+
+
+
 
 ## Pointing Devices and Keyboards  
 
@@ -126,6 +137,17 @@ Value: [
     [<url> [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ] 
 ]
 Initial: auto
+
+<url>
+https://www.w3.org/TR/css3-values/#url-value
+
+background: url("http://www.example.com/pinkish.gif");
+background: url(http://www.example.com/pinkish.gif);
+
+https://www.w3.org/TR/css3-images/#image-type
+
+
+<x> <y> 每个都是一个<number>。光标坐标系中位置的x坐标和y坐标（左/上相对），表示指向的精确位置。
 
 
 
@@ -149,6 +171,12 @@ nav-down: auto;
 nav-left: auto;
 
 
+
+## Insertion caret  
+
+caret-color
+Value: auto | <color>
+Initial: auto
 
 
 

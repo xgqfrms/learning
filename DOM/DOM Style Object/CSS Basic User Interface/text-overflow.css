@@ -1,0 +1,7 @@
+/* text-overflow */
+
+
+
+*{
+    text-overflow: ellipsis;
+}

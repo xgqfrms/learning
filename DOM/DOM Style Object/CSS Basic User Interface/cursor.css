@@ -50,3 +50,9 @@ Initial: auto;
     cursor: zoom-out;
 }
 
+:link,:visited {
+    cursor: url(example.svg#linkcursor),
+            url(hyper.cur),
+            url(hyper.png) 2 3,
+            pointer;
+}
