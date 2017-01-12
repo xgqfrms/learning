@@ -28,11 +28,16 @@ $ firebase deploy
 
 
 
+
+
 https://firebase.google.com/docs/cli/  
 
 
 
-npm install -g firebase-tools  
+$ npm install -g firebase-tools  
+
+$ firebase version
+
 
 
 

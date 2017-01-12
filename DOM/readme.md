@@ -76,6 +76,16 @@ http://www.quirksmode.org/js/events_order.html#link4
 
 
 
+https://developer.mozilla.org/en-US/docs/Web/API/Document  
+
+https://developer.mozilla.org/en-US/docs/Web/API/Node  
+
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget  
+
+
+
+
+
 
 
 

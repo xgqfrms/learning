@@ -22,3 +22,27 @@ https://www.sitepoint.com/community/
 知道 XSS 原理及防范
 
 
+https://blog.risingstack.com/articles/
+
+
+
+https://blog.risingstack.com/node-hero-tutorial-getting-started-with-node-js/
+
+
+
+
+
+ng-book 2.
+
+https://resources.risingstack.com/Node_Hero+-+The+complete+Node.js+tutorial+series+from+RisingStack.pdf?__s=2s8uo98tjcphmc38mbmw  
+
+
+https://www.ng-book.com/media/ng2/ng-book-2-table-of-contents.pdf  
+
+https://github.com/ufo-github/Useful-Programming-E-Books r39
+
+https://github.com/ufo-github/angular2-torrents  
+
+
+
+

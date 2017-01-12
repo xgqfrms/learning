@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date.getFullYear()</title>
+    <!-- https://cdn.xgqfrms.xyz/plugins/getfullyear.js -->
+</head>
+<body>
+    <div>
+        <h1>Date.getFullYear()</h1>
+    </div>
+    <footer>
+        <!-- <p><span id="spanYear"></span></p> -->
+        <p><span ><mark id="spanYear"></mark></span></p>
+    </footer>
+    <!-- js -->
+    <script>
+        const copyRightYear = () => {
+            let copyYear = Symbol();
+            copyYear = new Date().getFullYear();
+            const spanYear = document.getElementById('spanYear')
+            return spanYear.innerHTML = `copyright &copy; ${copyYear} xgqfrms`;
+        }
+        window.onload = copyRightYear();
+    </script>
+</body>
+</html>
