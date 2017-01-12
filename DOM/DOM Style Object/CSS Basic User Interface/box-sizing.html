@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <style>
+        div{
+            /*text-overflow: clip;*/
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+        }
+        div.split {
+          box-sizing: border-box;
+          width: 50%;
+          border: 1em silver ridge;
+          float: left;
+        }
+        div.split2 {
+          box-sizing: border-box;
+          width: 50%;
+          border: 1em silver ridge;
+          border-radius: 15px;
+          float: left;
+        }
+        div.split3 {
+          box-sizing: border-box;
+          width: 50%;
+          border-top: 1em silver ridge;
+          border-right: 1em rgba(255,0,0,0.7) ridge;
+          border-bottom: 1em rgba(0,255,0,0.7) ridge;
+          border-left: 1em rgba(0,0,255,0.7) ridge;
+          border-radius: 15px;
+          float: left;
+        }
+    </style>
+</head>
+<body>
+     <div>
+         <h1>box-sizing: border-box;</h1>
+         <p>
+             border:1em silver ridge;<br>
+             border <br>
+             ridge: 岭, 脊, 棱<br>
+         </p>
+     </div>
+     <hr>
+     <div class="split">
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+     </div>
+     <div class="split2">
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+     </div>
+     <div class="split3">
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+         border:1em silver ridge;<br>
+     </div>
+</body>
+</html>

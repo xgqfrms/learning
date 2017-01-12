@@ -1,0 +1,32 @@
+/*
+outline 
+*/
+
+
+:focus {
+    outline: thick solid black;
+}
+
+:active {
+    outline: thick solid red;
+}
+
+
+button {
+    outline: thick solid;
+}
+
+
+
+:focus,:active {
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+
+
+

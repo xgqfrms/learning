@@ -1,0 +1,15 @@
+/*
+https://www.w3.org/TR/css-ui-3/#box-sizing  
+
+box-sizing: content-box | border-box;
+
+box-sizing: content-box; (initial)
+
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+

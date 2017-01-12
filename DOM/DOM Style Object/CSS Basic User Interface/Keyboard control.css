@@ -1,0 +1,54 @@
+/* 
+Keyboard control
+
+https://www.w3.org/TR/css-ui-3/#keyboard  
+
+*/
+
+button {
+    position: absolute;
+}
+
+button#btn1 {
+    top: 0;
+    left: 50%;
+    nav-right: #btn2;
+    nav-left: #btn4;
+    nav-down: #btn2;
+    nav-up: #btn4;
+}
+
+button#btn2 {
+    top: 50%;
+    left: 100%;
+    nav-right: #btn3;
+    nav-left: #btn1;
+    nav-down: #btn3;
+    nav-up: #btn1;
+}
+
+button#btn3 {
+    top: 100%;
+    left: 50%;
+    nav-right: #btn4;
+    nav-left: #btn2;
+    nav-down: #btn4;
+    nav-up: #btn2;
+}
+
+button#btn4 {
+    top: 50%;
+    left: 0;
+    nav-right: #btn1;
+    nav-left: #btn3;
+    nav-down: #btn1;
+    nav-up: #btn3;
+}
+
+
+
+button#foo { 
+    nav-left: #bar "sidebar"; 
+}
+
+

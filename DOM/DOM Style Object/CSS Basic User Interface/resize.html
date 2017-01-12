@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resize</title>
+    <style>
+        iframe, object[type^="text/"], object[type$="+xml"], object[type="application/xml"] {
+            overflow:auto;
+            /*resize:both;*/
+            float: 
+            width: 50%;
+            box-sizing: border-box;
+        }
+        iframe.iframe {
+            resize: both;
+        }
+        iframe.iframe0 {
+            resize: none;
+        }
+        iframe.iframe1 {
+            resize: horizontal;
+        }
+        iframe.iframe2 {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <hi>Value: none | both | horizontal | vertical</hi>
+    </div>
+    <p>iframe resize: <mark> both; </mark></p>
+    <iframe src="https://cdn.xgqfrms.xyz" frameborder="1" class="iframe"></iframe>
+    <p>iframe resize: <mark> horizontal; </mark></p>
+    <iframe src="https://cdn.xgqfrms.xyz" frameborder="1" class="iframe1"></iframe>
+    <p>iframe resize: <mark> vertical; </mark></p>
+    <iframe src="https://cdn.xgqfrms.xyz" frameborder="1" class="iframe2"></iframe>
+    <p>iframe resize: <mark> none; </mark></p>
+    <iframe src="https://cdn.xgqfrms.xyz" frameborder="1" class="iframe0"></iframe>
+</body>
+</html>
