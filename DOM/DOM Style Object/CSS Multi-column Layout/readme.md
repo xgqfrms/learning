@@ -14,6 +14,3 @@ W3C Candidate Recommendation 12 April 2011
 
 
 
-
-
-
