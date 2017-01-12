@@ -62,6 +62,7 @@ https://www.w3.org/TR/css-fonts-3/#object-model
 
 
 
+font-variant: small-caps;
 
 
 
@@ -69,8 +70,7 @@ https://www.w3.org/TR/css-fonts-3/#object-model
 
 
 
-
-
+font-variant: small-caps;
 
 
 

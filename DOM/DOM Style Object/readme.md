@@ -24,6 +24,10 @@ document.getElementById("myP").style.font = "italic bold 20px arial,serif";
 
 http://www.w3schools.com/jsref/prop_style_fontsize.asp
 
+font-variant: small-caps;
+
+
+
 
 
 
