@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>outline</title>
+    <style>
+        :focus {
+            outline: thick solid black;
+        }
+
+        :active {
+            outline: thick solid red;
+        }
+        button {
+            outline: thick solid green;
+        }
+    </style>
 </head>
 <body>
-    <!--  -->
+    <div>
+        <h1>
+            outline
+        </h1>
+        <h3>
+            <pre>
+                At times, style sheet authors may want to create outlines around visual objects such as buttons, active form fields, image maps, etc., to make them stand out.
+                Outlines differ from borders in the following ways:
+
+                Outlines do not take up space.
+                Outlines may be non-rectangular.
+                UAs often render outlines on elements in the :focus state.
+                The outline properties control the style of these dynamic outlines.
+
+                The stacking of the rendering of these outlines is explicitly left up to implementations to provide a better user experience per platform. 
+                This supersedes the stacking of outlines as defined in CSS 2.1.
+            </pre>
+        </h3>
+    </div>
+    <hr>
+    <section>
+        <button>btn => outline: thick solid;</button>
+    </section>
 </body>
 </html>

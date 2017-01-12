@@ -1,0 +1,8 @@
+/* functional notation */
+
+* {
+    background: url(http://www.example.org/image);
+    color: rgb(100, 200, 50);
+    content: counter(list-item) ". ";
+    width: calc(50% - 2em);
+}

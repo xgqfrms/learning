@@ -1,7 +1,40 @@
 /* text-overflow */
 
-
-
-*{
+* {
     text-overflow: ellipsis;
+}
+
+div {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.1;
+    width: 3.1em;
+    padding: .2em;
+    border: solid .1em black;
+    margin: 1em 0;
+}
+
+
+.c0{
+    text-overflow: clip; 
+    overflow: hidden;
+}
+
+.c1{
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+
+.c2{
+    text-overflow: "text-overflow"; 
+    overflow: hidden;
+}
+
+
+div.crawlbar {
+    text-overflow: ellipsis;
+    height: 2em;
+    overflow: scroll;
+    white-space: nowrap;
+    width: 15em;
+    border:1em solid black;
 }

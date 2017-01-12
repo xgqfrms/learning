@@ -91,6 +91,9 @@ Value: <length>
 Initial: 0
 
 
+
+
+
 ## Resizing & Overflow  
 
 https://www.w3.org/TR/css-ui-3/#resizing-and-overflow  
@@ -107,8 +110,8 @@ resize: none;
 iframe,object[type^="text/"],
 object[type$="+xml"],object[type="application/xml"]
 {
-  overflow:auto;
-  resize:both;
+    overflow:auto;
+    resize:both;
 }
 
 

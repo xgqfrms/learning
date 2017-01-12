@@ -14,6 +14,40 @@
             border: 1em red ridge;
             white-space: nowrap;
         }
+        .div {
+            font-family: Helvetica, sans-serif;
+            line-height: 1.1;
+            width: 5em;
+            padding: .2em;
+            border: solid .1em black;
+            margin: 1em 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+
+        .c0{
+            text-overflow: clip; 
+            overflow: hidden;
+        }
+
+        .c1{
+            text-overflow: ellipsis; 
+            overflow: hidden;
+        }
+
+        .c2{
+            text-overflow: "***"; 
+            overflow: hidden;
+        }
+        div.crawlbar {
+            text-overflow: ellipsis;
+            height: 2em;
+            overflow: scroll;
+            white-space: nowrap;
+            width: 15em;
+            border:1em solid black;
+        }
     </style>
 </head>
 <body>
@@ -24,11 +58,40 @@
             overflow: hidden;<br>
             text-overflow: ellipsis;<br>
         </mark>
+        <pre>
+            Text can overflow for example when it is prevented from wrapping (e.g. due to white-space: nowrap or a single word is too long to fit). Values have the following meanings:
+            <br>
+            文本可能会溢出，例如，当它被阻止包装（例如由于white-space：nowrap或单个词太长不适合）。值具有以下含义：
+        </pre>
     </div>
     <div class="box">
         text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; <br>
         text-overflow: ellipsis; text-overflow: ellipsis; text-overflow: ellipsis; <br>
         This property specifies rendering when inline content overflows its line box edge in the inline progression direction of its block container element ("the block") that has overflow other than visible.
+    </div>
+    <hr>
+    <mark>text-overflow: "***"; </mark>
+    <span>Render the given string to represent clipped inline content.</span>
+    <pre>
+        <mark> &lt;string &gt; </mark>
+        Render the given string to represent clipped inline content. The given string is treated as an independent paragraph for bidi purposes.
+        <br>
+        呈现给定的字符串以表示剪辑的内联内容。给定的字符串被视为一个独立的段落，用于双向目的。
+    </pre>
+    <div class="div c1">
+        /wwwRoot/learning/DOM/DOM%20Style%20Object/CSS%20Basic%20User%20Interface/text-overflow.html
+    </div>
+    <div class="div c2">
+        /wwwRoot/learning/DOM/DOM%20Style%20Object/CSS%20Basic%20User%20Interface/text-overflow.html
+    </div>
+    <div class="div c3">
+        /wwwRoot/learning/DOM/DOM%20Style%20Object/CSS%20Basic%20User%20Interface/text-overflow.html
+    </div>
+    <hr>
+    <div class="crawlbar">
+        CSS is awesome, especially when you can scroll
+        to see extra text instead of just
+        having it overlap other text by default.
     </div>
 </body>
 </html>

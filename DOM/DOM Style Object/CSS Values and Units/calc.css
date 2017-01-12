@@ -1,0 +1,27 @@
+/* calc */
+
+section {
+    float: left;
+    margin: 1em;
+    border: solid 1px;
+    width: calc(100%/3 - 2*1em - 2*1px);
+}
+
+p {
+    margin: calc(1rem - 2px) calc(1rem - 1px);
+}
+
+:root {
+    font-size: calc(100vw / 40);
+}
+
+.foo {
+    background: url(top.png), url(bottom.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 20px) calc(50% + 20px), 50% 50%;
+}
+
+foo {
+    background-image: -webkit-linear-gradient(left, silver, white 50px, white calc(100% - 50px), silver);
+    background-image: linear-gradient(to right, silver, white 50px, white calc(100% - 50px), silver);
+}

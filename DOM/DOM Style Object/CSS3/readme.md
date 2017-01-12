@@ -145,6 +145,13 @@ W3C Candidate Recommendation, 7 July 2015
 
 
 
+## CSS Values and Units  
+
+https://www.w3.org/TR/css-values-3/  
+https://www.w3.org/TR/css3-values/  
+
+CSS Values and Units Module Level 3
+W3C Candidate Recommendation, 29 September 2016
 
 
 
