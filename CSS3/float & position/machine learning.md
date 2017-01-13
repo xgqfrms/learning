@@ -4,8 +4,11 @@ https://github.com/showcases/machine-learning
 
 
 
-##  tensorflow C ++  
+## TensorFlow  C ++  
 
+张力 流  
+
+https://www.tensorflow.org/
 
 https://github.com/tensorflow/tensorflow
 

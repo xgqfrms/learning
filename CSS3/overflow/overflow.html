@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style>
+        div.of{
+            width: 250px;
+            height: 200px;
+            background: rgba(0,0,0,0.7);
+            color: rgba(0,255,0,0.7);
+            float: left;
+            margin: 10px 80px;
+        }
+        /* overflow ===  clipped */
+        div.ofh{
+            overflow: hidden;
+        }
+        /* overflow ===  clipped & scroll-bar */
+        div.ofa{
+            overflow: auto;
+        }
+        div.ofs{
+            overflow: scroll;
+        }
+        /* overflow === view */
+        div.ofv{
+            overflow: visible;
+        }
+        div.ofini{
+            overflow: initial;
+        }
+        div.ofinh{
+            overflow: inherit;
+        }
+        h1{
+            text-align: center;
+            box-sizing: border-box;
+            color: rgba(255,0,255,0.7);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>overflow</h1>
+    </div>
+    <div class="of ofh">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: hidden;</h3>
+    </div>
+    <div class="of ofa">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: auto;</h3>
+    </div>
+    <div class="of ofv">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: visible;</h3>
+    </div>
+    <div class="of ofs">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: scroll;</h3>
+    </div>
+    <div class="of ofini">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: initial;</h3>
+    </div>
+    <div class="of ofinh">
+        <mark>
+            overflow: visible|hidden|scroll|auto|initial|inherit;
+        </mark>
+        <h3>overflow: inherit;</h3>
+    </div>
+</body>
+</html>

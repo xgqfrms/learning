@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <title>absolute-center</title>
     <style>
-        .box{
+        /* .box{
             width: 400px;
             height: 400px;
             background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-200px) translateY(-200px);
+        } */
+        /*@media all and (min-width: 320px)*/
+        /*.box2{
+            width: 50%;
+            height: 50%;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);            
+        }*/
+        .box2{
+            width: 50%;
+            height: 50%;
+            background: red;
+            position: absolute;
+            /*top: 50%;
+            left: 50%;*/
+            transform: translateX(50%) translateY(50%);
+            /*margin-left: -200px;
+            margin-top: -200px;*/
+            /*@media all and (min-width: 320px)*/
         }
     </style>
 </head>
 <body>
     <div class="box">
         <!-- 400x400 center -->
+    </div>
+    <div class="box2">
+        <!-- 50% x 50% center error -->
+    </div>
+    <div class="box3">
+        <!-- 50% x 50% center error -->
     </div>
 </body>
 </html>
