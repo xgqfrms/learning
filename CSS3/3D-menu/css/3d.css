@@ -1,8 +1,11 @@
-@import url("http://www.w3cplus.com/demo/css3/base.css");
+@import url("base.css");
 @font-face {
     font-family: 'sansationregular';
-    src: url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot');
-    src: url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot?#iefix') format('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/embedded-opentype'), url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.woff') format('woff'), url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.ttf') format('truetype'), url('http://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.svg#sansationregular') format('svg');
+    src: url('fonts/sansation_regular-webfont.eot');
+    src: url('fonts/sansation_regular-webfont.eot?#iefix') format('fonts/embedded-opentype'), 
+        url('fonts/sansation_regular-webfont.woff') format('woff'),
+        url('fonts/sansation_regular-webfont.ttf') format('truetype'),
+        url('fonts/sansation_regular-webfont.svg#sansationregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

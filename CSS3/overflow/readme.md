@@ -76,9 +76,7 @@ overflow-y: visible; (Default value)
 
 http://www.w3schools.com/css/css_overflow.asp
 
-
-
-
+http://www.w3schools.com/jsref/prop_style_overflow.asp
 
 
 
@@ -88,15 +86,27 @@ http://www.w3schools.com/css/css_overflow.asp
 
 http://www.w3schools.com/css/css_float.asp
 
+/* old clearfix */
+
 .clearfix {
     overflow: auto;
 }
 
 
+/* new clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 
 
+https://css-tricks.com/almanac/properties/o/overflow/
+
+https://css-tricks.com/examples/OverflowExample/
 
 
 

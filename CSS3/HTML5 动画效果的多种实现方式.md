@@ -25,7 +25,7 @@ js
 
 HTML5 动画效果的多种实现方式
 
-
+https://github.com/xgqfrms-at-GitHub/animation  
 
 
 
