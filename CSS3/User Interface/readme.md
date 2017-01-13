@@ -43,6 +43,14 @@ http://www.w3schools.com/cssref/pr_outline.asp
 
 
 
+## clearfix Hack  
+
+http://www.w3schools.com/css/css_float.asp
+
+.clearfix {
+    overflow: auto;
+}
+
 
 
 
