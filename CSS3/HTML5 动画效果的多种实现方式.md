@@ -22,7 +22,7 @@ HTML5 动画效果的多种实现方式
 
 js实现帧动画的原理：
 
-不断改变image 属性 src 的value
+不断改变image 属性 src 的value （不推荐）
 
 把所有动画关键帧绘制在一张图片里面，把图片作为元素的background-image，定时改变元素的background-position属性（推荐）
 
