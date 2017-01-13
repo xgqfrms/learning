@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>float & position => overflow: hidden;</title>
+    <!-- https://learning.xgqfrms.xyz/CSS3/float%20&%20position/overfloat.html -->
     <style>
         .box{
             background: rgba(255,0,0,0.7);
@@ -12,17 +13,26 @@
             /*clear: both;*/
             overflow: hidden;
         }
+        .box1{
+            background: rgba(255,0,255,0.7);
+            overflow: auto;
+        }
         .div1{
-            height: 500px;
+            height: 200px;
             float: left;
             background: rgba(0,255,0,0.7);
             /*position: relative;*/
         }
         .div2{
-            height: 500px;
+            height: 200px;
             float: right;
             background: rgba(0,255,0,0.7);
             /*position: relative;*/
+        }
+        span > mark{
+            border: 7px silver ridge;
+            /*transform: translateX(50px) translateY(50px);*/
+            margin: 10px 200px auto ;
         }
     </style>
 </head>
@@ -31,16 +41,28 @@
         <h1>parent box height=0 ???</h1>
         <pre>
             overflow: hidden; == clear float
+            overflow: auto; == clear float
         </pre>
     </div>
     <div class="box">
         <div class="div1">
             <mark>float left</mark>
         </div>
+        <span><mark>overflow: hidden;</mark></span>
         <div class="div2">
             <mark>float  right</mark>
         </div>
     </div>
     <!-- m4a sd/recordings 5:55 -->
+    <hr>
+    <div class="box1">
+        <div class="div1">
+            <mark>float left</mark>
+        </div>
+        <span><mark>overflow: auto;</mark></span>
+        <div class="div2">
+            <mark>float  right</mark>
+        </div>
+    </div>
 </body>
 </html>
