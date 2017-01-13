@@ -26,9 +26,20 @@ http://www.w3schools.com/css/css_float.asp
 
 
 
-https://www.w3.org/TR/CSS21/visufx.html
+https://www.w3.org/TR/CSS21/visufx.html  
+https://www.w3.org/TR/CSS21/visufx.html#propdef-overflow  
+
+## overflow
 
 
+'overflow'
+Value:      visible | hidden | scroll | auto | inherit
+Initial:    visible
+Applies to:     block containers
+Inherited:      no
+Percentages:    N/A
+Media:      visual
+Computed value:     as specified
 
 http://www.w3schools.com/cssref/pr_pos_overflow.asp  
 http://www.w3schools.com/css/css_overflow.asp  
@@ -36,11 +47,7 @@ http://www.w3schools.com/css/css_overflow.asp
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
 
-
-
 https://css-tricks.com/almanac/properties/o/overflow/
-
-
 
 http://www.imooc.com/video/6457
 
