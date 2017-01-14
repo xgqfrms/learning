@@ -13,6 +13,8 @@ $ npm i -S angularfire2 firebase
 
 
 
+$ ng server --open
+
 
 ## 设置 Hosting  
 

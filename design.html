@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+        <style>
+            body{
+                background:rgba(0,255,0,0.7);
+                color: red;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.xgqfrms.xyz" title="home page">Home</a></li>
+                <li><a href="https://www.xgqfrms.xyz" title="home page">About</a></li>
+                <li><a href="https://www.xgqfrms.xyz" title="home page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <!--sidebar-->
+    </aside>
+    <section>
+        <!--body-->
+        <div>
+            <h1>Hello, code!</h1>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <span>
+                Copyright &copy; <i id="copyspan">2016</i> xgqfrms 
+            </span>
+        </p>
+    </footer>
+    <!--js-->
+    <script>
+        window.onload = () => {
+            let copydate = new Date().getFullYear();
+            let copyspan = document.getElementById("copyspan");
+            copyspan.innerHTML = `${copydate}`;
+            copyspan.style.background = "rgba(0,0,0,0.7)";
+            copyspan.style.color = "rgba(255,0,255,0.7)";
+            copyspan.style.fontSize = "2rem";
+        }
+    </script>
+    <!-- 
+    copyspan.style.fontSize = "2 rem"; Error  
+    copyspan.style.fontSize = "2rem"; OK  
+     -->
+    <!-- 
+    http://www.w3schools.com/jsref/prop_style_fontsize.asp 
+    http://www.w3schools.com/cssref/pr_font_font-size.asp
+    -->
+</body>
+</html>

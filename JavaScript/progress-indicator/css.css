@@ -1,0 +1,13 @@
+.progress-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #ffdd57;
+}
+
+/*div.pi{
+    width: 12%;
+}*/
+
+/*<div class="progress-indicator" style="width: 12.6479%;"></div>*/

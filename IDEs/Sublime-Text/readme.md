@@ -12,3 +12,9 @@ http://stackoverflow.com/questions/30140595/show-whitespace-characters-in-visual
 ## plugins  
 
 
+subl -add foldername  
+
+(shell open  folder  in the same sublime-text3 window)
+
+
+![](subl -add folder (shell open  folder  in the same sublime-text3 window).png)
