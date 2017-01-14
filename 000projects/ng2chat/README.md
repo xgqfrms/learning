@@ -3,6 +3,13 @@
 > 将 Firebase 添加到您的网页应用 ()  
 
 
+https://ng2chat.xgqfrms.xyz
+
+
+ng2-chat => angular2-88ac6.firebaseapp.com
+
+ng2chat => xgqfrms007.github.io
+
 
 
 ## Authentication  

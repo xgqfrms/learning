@@ -3,6 +3,14 @@
 
 Tour of Heroes  
 
+https://ng2-heroes.xgqfrms.xyz
+
+https://ng2chat.xgqfrms.xyz
+
+
+
+
+
 
 
 
