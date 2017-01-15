@@ -30,6 +30,11 @@ http://www.w3schools.com/css/css_float.asp
 
 https://learning.xgqfrms.xyz/CSS3/float%20&%20position/overfloat.html
 
+https://learning.xgqfrms.xyz/CSS3/float%20&%20position/absolute-center.html
+
+
+
+
 
 
 /* clearfix */
