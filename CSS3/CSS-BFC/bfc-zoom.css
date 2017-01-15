@@ -1,0 +1,39 @@
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+
+/* new */
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+
+
+
+
+/* IE new */
+.floatfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+/* IE old */
+.floatfix{
+    *zoom: 1;
+}
