@@ -6,11 +6,11 @@
 https://ng2chat.xgqfrms.xyz
 
 
-ng2-chat => angular2-88ac6.firebaseapp.com
+ng2chat => angular2-88ac6.firebaseapp.com xgqfrms.xyz
 
-ng2chat => xgqfrms007.github.io
+ng2-chat => xgqfrms007.github.io xgqfrms.xyz
 
-
+ng2chat => xgqfrms007.github.io webgeeker.xyz
 
 ## Authentication  
 
