@@ -110,3 +110,12 @@ https://css-tricks.com/examples/OverflowExample/
 
 
 
+
+/* clearfix */
+
+overflow: auto;
+
+
+overflow: hidden;
+
+

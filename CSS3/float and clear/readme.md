@@ -32,6 +32,14 @@ https://learning.xgqfrms.xyz/CSS3/float%20&%20position/overfloat.html
 
 
 
+/* clearfix */
+
+overflow: auto;
+
+
+overflow: hidden;
+
+
 
 ## CSS clear Property  
 
