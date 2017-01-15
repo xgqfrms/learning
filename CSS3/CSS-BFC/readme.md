@@ -94,15 +94,69 @@ IE7浮动问题：
 
 
 
+http://lucybain.com/blog/2015/css-block-formatting-context/
+
+Block formatting contexts stop margins from collapsing
+
+块格式化上下文停止折叠边距
+
+overflow: hidden;
+
+
+
+Block formatting contexts restrain floats
+
+块格式化上下文抑制浮动
+
+clear float
+
+
+overflow: hidden;
+
+
+
+Block formatting contexts contain floats
+
+块格式化上下文包含浮点
+
+
+div (invisible )
++
+.clearfix{
+    clear: both;
+}
+
+
+
+overflow: hidden;
+
+
+http://lucybain.com/blog/2015/css-flexbox/
+
+http://lucybain.com/
+
+
+
+https://www.chenhuijing.com/blog/how-well-do-you-know-display/
+
+Prism
 
 
 
 
+CSS 实现三角形与平行四边形
+
+https://segmentfault.com/a/1190000003106809
+
+https://segmentfault.com/u/xgqfrms
+
+https://github.com/zry656565/heaven-blog
 
 
 
+## clearfix
 
 
-
+https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
 
 

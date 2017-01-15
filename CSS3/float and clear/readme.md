@@ -90,3 +90,14 @@ initial
 inherit  
     Inherits this property from its parent element. Read about inherit
 
+
+
+
+## clearfix
+
+
+https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
+
+
+
+
