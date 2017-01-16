@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo list</title>
+</head>
+<body>
+    <div>
+        <h1>todo list</h1>
+    </div>
+    <section>
+        <h1>My To-Do List</h1>
+        <input type="text" placeholder="New item" />
+        <button id="add">Add</button>
+        <ol id="mylist"></ol>
+        <h1>Some heading</h1>
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+        </ol>
+    </section>
+    <!-- js -->
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function() {
+            $("#add").on("click", function() {
+                var val = $("input").val();
+                if(val !== '') {
+                    var elem = $("<li></li>").text(val);
+                    $(elem).append("<button class='rem'>X</button>");
+                    $("#mylist").append(elem);
+                    $("input").val("");
+                    $(".rem").on("click", function() {
+                        $(this).parent().remove();
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

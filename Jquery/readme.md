@@ -2,6 +2,13 @@
 
 https://www.sololearn.com/Play/jQuery/
 
+https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js
+
+
+
+
+
+
 
 ## Get & Set Attribute Values --- attr()  
 
