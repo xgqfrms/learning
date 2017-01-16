@@ -96,8 +96,31 @@ p 2123
 
 
 
+The Event Object
+
+Every event handling function can receive an event object, which contains properties and methods related to the event:
+
+pageX, pageY  
+    the mouse position (X & Y coordinates) at the time the event occurred, relative to the top left of the page.
+type  
+the type of the event (e.g. "click").
+which  
+the button or key that was pressed.
+data  
+any data that was passed in when the event was bound.
+target  
+the DOM element that initiated the event.
+preventDefault()  
+prevent the default action of the event (e.g., following a link).
+stopPropagation()  
+Stop the event from bubbling up to other elements.
 
 
+
+$( "a" ).click(function(event) {
+      alert(event.pageX);
+      event.preventDefault();
+});
 
 
 
@@ -115,6 +138,32 @@ p 2123
     height: 25px;
     margin: auto;
 }
+
+https://code.sololearn.com/Images/playground/saveLoading.gif
+
+
+
+Trigger Events
+
+我们还可以使用trigger（）方法以编程方式触发事件。例如，您可以触发点击事件，而用户实际上不点击元素：
+
+$("div").click(function() {
+    alert("Clicked!");
+});
+$("div").trigger("click");
+
+The trigger() method cannot be used to mimic native browser events, such as clicking on a file input box or an anchor tag. Only events in the jQuery event system can be handled.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
