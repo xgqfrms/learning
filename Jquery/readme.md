@@ -168,13 +168,19 @@ https://www.nativescript.org/blog/optimizing-app-loading-time-with-angular-2-laz
 https://scotch.io/tutorials/server-side-rendering-in-angular-2-with-angular-universal
 
 
+<script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js"></script>
+
+
+<script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" async></script>
 
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js" integrity="sha256-Rtnfi1MVZAj3v+eDeFjh/iAXo8//D0zVKql8fjVLCiM=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js" integrity="sha256-uzKwYuH50DHzDYr3h/Bnpv7C5QJNUjHEpVmT3Xuq3ww=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.min.js" integrity="sha256-NtwBF+7tVJHQJP21n/7wq6vbvRoVyzs+Pk0YZganCN8=" crossorigin="anonymous"></script>
 
 
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom-server.min.js" integrity="sha256-XA7la7ADZ/W3fsrMnNBKdiAv9zxTeqFVH74eyQiiIts=" crossorigin="anonymous"></script>

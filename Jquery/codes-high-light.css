@@ -1,0 +1,69 @@
+/* codes high light*/
+
+
+/* clear float*/
+*{
+    color: #ffffff;
+    background: rgba(0,0,0,0.3);
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    overflow: hidden;
+}
+
+/* code-error */
+.div{
+    box-sizing: border-box;
+    /*overflow-wrap: wrap;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            /*justify-content: center;*/
+    margin: 5px auto;
+}
+
+div{
+    background: rgba(0,0,0,0.7);
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+code{
+    padding-left: 0;
+    display: inline-block;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    background: rgba(255, 235, 182, 0.7);
+}
+.code-all{
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.code-all::after{
+    display: table;
+    content: "learning 🎅 ❄ 🎄 🎁 🔀 ⛄ 🔔";
+    overflow: hidden;
+}
+.code-error{
+    color: red;
+}
+
+.code-ok{
+    color: green;
+}
+
+
+
