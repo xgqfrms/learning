@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keydown</title>
+</head>
+<body>
+    <div>
+        <h1>keydown</h1>
+    </div>
+    <input type="text" id="name" />
+    <div id="msg"></div>
+    <!-- js -->
+    <!-- <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" async></script> -->
+    <div class="js">
+        <!--  -->
+    </div>
+    <script>
+        window.onload = () => {
+            $("div.js").html(`<script id='ajaxjs'><\/script>`);
+            $('#ajaxjs').atrr("src","https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js");
+            $("#name").keydown(function() {
+                $("#msg").html($("#name").val());
+            });
+        }
+    </script>
+</body>
+</html>

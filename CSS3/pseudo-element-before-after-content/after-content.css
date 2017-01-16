@@ -1,0 +1,25 @@
+/*after-content.css*/
+
+
+
+article.post:after {
+    content: '❦';
+    font-size: 200%;
+    display: block;
+    width: 1em;
+    margin: 0 auto -.9em;
+    background: white;
+    color: gray;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

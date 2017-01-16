@@ -95,22 +95,77 @@ before()
 
 
 
+article.post:after {
+    content: '❦';
+    font-size: 200%;
+    display: block;
+    width: 1em;
+    margin: 0 auto -.9em;
+    background: white;
+    color: gray;
+    text-align: center;
+}
+
+
+data:image/svg+xml;base64
+
+
+http://www.accuradio.com/classical/?name=Classical%20Boost&b0=Classical&b1=Workplace%20Moods
+
+https://www.youtube.com/watch?v=FOIjvHjK0Rw
+
+
+https://uist.acm.org/uist2017/
 
 
 
 
 
+$("#demo").click(function() {
+    $("body").html(Date());
+});
 
 
 
 
 
+##  jQuery  
+
+$ npm install jquery 
+
+
+https://jquery.com/download/
+
+
+http://blog.jquery.com/2016/09/22/jquery-3-1-1-released/
+
+https://code.jquery.com/jquery-3.1.1.js
+
+https://code.jquery.com/jquery-3.1.1.min.js
+
+
+
+
+> Slim build  
+
+All in all, it excludes ajax, effects, and currently deprecated code. 
+
+https://code.jquery.com/jquery-3.1.1.slim.js
+
+https://code.jquery.com/jquery-3.1.1.slim.min.js
 
 
 
 
 
+https://www.thepolyglotdeveloper.com/2016/10/use-pre-populated-sqlite-database-nativescript-angular-2/
 
+https://www.youtube.com/watch?v=dHYb2cTXKYI
+
+https://www.nativescript.org/blog/optimizing-app-loading-time-with-angular-2-lazy-loading
+
+
+https://scotch.io/tutorials/server-side-rendering-in-angular-2-with-angular-universal
 
 
 

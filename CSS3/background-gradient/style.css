@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:300,400,700,900&subset=latin-ext");
+@font-face {
+  font-family: "UIST2017 Icons";
+  src: url(../fonts/uist2017-icons.woff); }
+
+* {
+  margin: 0; }
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: stretch;
+  margin: 0;
+  min-height: 100vh;
+  background: white;
+  font: 300 100%/1.5 Lato, Helvetica Neue, sans-serif;
+  text-decoration-skip: ink;
+  font-kerning: normal;
+  font-synthesis: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: .5em 0;
+  font-family: Arvo, serif;
+  font-weight: normal;
+  line-height: 1.2; }
+  h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+    font-weight: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold; }
+  a:hover {
+    text-decoration: underline; }
+
+body > header {
+  padding: 1em 1.5em 1.8em;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("../images/header.jpg") top/cover #4d91b3;
+  color: white;
+  text-align: center;
+  font-size: 120%;
+  text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2); }
+  body > header .register {
+    display: inline-block;
+    padding: .4em 1em .5em;
+    border: .15em solid white;
+    border-radius: .3em;
+    font-weight: bold; }
+    body > header .register:hover {
+      text-decoration: none;
+      background: white;
+      color: black;
+      mix-blend-mode: screen;
+      text-shadow: none; }
+  body > header h1 {
+    margin: 0;
+    filter: drop-shadow(0 0 0.1em rgba(0, 0, 0, 0.3)); }
+    body > header h1 .wordmark {
+      display: inline-block;
+      margin-top: .1em;
+      max-width: 100%;
+      background: url(../wordmark.svg) no-repeat top/contain;
+      color: transparent;
+      text-shadow: none;
+      overflow: hidden;
+      font: 900 300%/.8 'Helvetica LT Black', 'Helvetica Neue', Helvetica, Arial, Lato, sans-serif; }
+    body > header h1 img {
+      display: block;
+      height: 4.7em;
+      margin: auto; }
+    body > header h1 time {
+      font-family: 'Helvetica Neue', Helvetica, Arial, Lato, sans-serif;
+      font-weight: 300;
+      letter-spacing: -.02em; }
+  body > header h2 {
+    font: inherit;
+    font-size: 90%;
+    line-height: 1; }
+  @media (max-width: 600px) {
+    body > header hgroup {
+      font-size: 60%; } }
+  body > header p {
+    padding: .5em;
+    font: 100%/1.5 Arvo, serif; }
+    @media (min-width: 800px) {
+      body > header p {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        text-align: right;
+        font-size: 150%; } }
+    body > header p .place, body > header p time {
+      display: block; }
+      body > header p .place::before, body > header p time::before {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font: 100%/1 "UIST2017 Icons", emoji;
+        color: #ff2b00;
+        margin-right: .4rem; }
+    body > header p .place::before {
+      content: "📍"; }
+    body > header p time {
+      font-weight: bold;
+      font-size: 105%; }
+      body > header p time::before {
+        content: "📅"; }
+
+body > main {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1em; }
+  body > main > * {
+    width: 60rem;
+    max-width: 90vw;
+    padding: 1em 0; }
+    @media (min-width: 1600px) {
+      body > main > * {
+        width: 75rem; } }
+    body > main > * > h1 {
+      color: #ff2b00;
+      font-size: 220%; }
+
+body > footer {
+  position: relative;
+  padding: 1em;
+  background: #c9dee8;
+  font-weight: bold; }
+  body > footer small {
+    display: block;
+    color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 500px) {
+    body > footer {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body > footer > :first-child {
+        width: 46rem;
+        max-width: calc(100vw - 18.5em); } }
+    @media (min-width: 500px) and (min-width: 1600px) {
+      body > footer > :first-child {
+        width: 61rem; } }
+  @media (min-width: 1300px) {
+    @keyframes hue-rotate {
+      to {
+        filter: hue-rotate(360deg); } }
+    body > footer::before {
+      content: "";
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      width: 100px;
+      height: 120px;
+      background: url("../logo.svg") center/contain no-repeat;
+      animation: hue-rotate 25s linear infinite paused; }
+    body > footer:hover::before {
+      animation-play-state: running; } }
+
+.social a {
+  display: inline-block;
+  min-width: 1em;
+  padding: .6em;
+  margin: 0 .1em;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 100%/1 "UIST2017 Icons", emoji;
+  font-size: 120%;
+  background: gray;
+  background: var(--color); }
+  .social a:hover {
+    color: gray;
+    color: var(--color);
+    background: white; }
+
+.social a[title="Facebook"] {
+  --color: #3b5998; }
+
+.social a[title="Twitter"] {
+  --color: #1da1f2; }
+
+.social a[title="YouTube"] {
+  --color: #cd201f; }
+
+.social a[title="Flickr"] {
+  --color: #ff0084; }
+
+.social a[title="Github"] {
+  --color: #333; }
+
+#welcome {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  hyphens: auto; }
+  #welcome h1 {
+    display: inline;
+    padding: .3em .5em;
+    border-radius: .3em;
+    margin: 0;
+    background: #ff2b00;
+    color: white;
+    font: bold 80%/1.5 Lato, Helvetica Neue, sans-serif;
+    text-transform: uppercase; }
+  #welcome strong, #welcome a {
+    color: rgba(0, 0, 0, 0.7); }
+  @media (min-width: 800px) {
+    #welcome {
+      font-size: 125%; } }
+  #welcome p {
+    display: inline; }
+
+table {
+  width: 100%;
+  border-spacing: 0; }
+  table thead {
+    color: rgba(0, 0, 0, 0.5);
+    font: bold 100% Arvo, serif; }
+  table th, table td {
+    padding: .4em .5em; }
+  table th {
+    text-align: left; }
+
+#dates table tbody td:empty::before {
+  content: "TBD"; }
+
+#dates table tbody tr:nth-child(odd) {
+  background: #ffeae6; }
+
+#dates table tbody th {
+  font-weight: normal; }
+  @media (min-width: 600px) {
+    #dates table tbody th[aria-label]::after {
+      content: attr(aria-label);
+      display: inline-block;
+      padding: .4em .5em;
+      margin-left: .5em;
+      border-radius: .3em;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      font: bold 80%/1 Lato, Helvetica Neue, sans-serif;
+      text-transform: uppercase; }
+    #dates table tbody th[aria-label="deadline"]::after {
+      background: #70a7c2; } }
+
+#dates table tbody td {
+  display: flex; }
+  #dates table tbody td time {
+    font-weight: bold; }
+  #dates table tbody td .countdown {
+    flex: 1;
+    color: rgba(0, 0, 0, 0.6); }
+    @media (min-width: 800px) {
+      #dates table tbody td .countdown {
+        text-align: right; }
+        #dates table tbody td .countdown::before {
+          content: " ("; }
+        #dates table tbody td .countdown::after {
+          content: ")"; } }
+  @media (max-width: 800px) {
+    #dates table tbody td {
+      flex-flow: column; } }
+
+@media (min-width: 750px) {
+  #organizers {
+    columns: 2; }
+    #organizers > h1 {
+      column-span: all; } }
+
+@media (min-width: 1600px) {
+  #organizers {
+    columns: 3; } }
+
+#organizers section {
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .01em 1em .5em;
+  margin: .6em 0;
+  border-radius: .3em;
+  border: 0.1em solid #c9dee8;
+  background: #e6f0f4; }
+  #organizers section > h1 {
+    margin-bottom: .0em;
+    color: #4d91b3;
+    font-size: 120%;
+    font-weight: bold; }
+  #organizers section a[href^=mailto] {
+    display: block;
+    margin-bottom: .8em;
+    font-weight: 400;
+    color: #4d91b3; }
+
+@keyframes wobble {
+  33.3% {
+    transform: rotate(10deg); }
+  66.6% {
+    transform: rotate(-10deg); } }
+    #organizers section a[href^=mailto]::before {
+      content: "✉";
+      display: inline-block;
+      margin-right: .4em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font: 100%/1 "UIST2017 Icons", emoji;
+      color: #ff2b00;
+      animation: wobble .5s infinite paused; }
+    #organizers section a[href^=mailto]:hover::before {
+      animation-play-state: running;
+      color: #4d91b3; }
+
+#organizers article {
+  margin: .5em 0;
+  clear: both; }
+  #organizers article h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 120%; }
+  #organizers article > a {
+    font-weight: 300; }
+  #organizers article img {
+    float: left;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+    object-fit: cover;
+    border-radius: 50%; }

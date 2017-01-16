@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <div>
+        start
+    </div>
+    <section>
+        <pre>
+            \2727\2003\2003\2727\2003\2003\2727
+        </pre>
+        <div>
+            <a href="https://github.com/w3c/csswg-drafts/issues/625#issuecomment-255303762">https://github.com/w3c/csswg-drafts/issues/625#issuecomment-255303762</a> <br>
+
+            <a href="http://codepen.io/SelenIT/pen/LZVvmy">http://codepen.io/SelenIT/pen/LZVvmy</a> <br>
+
+            <a href="https://lists.w3.org/Archives/Public/public-css-archive/2016Oct/0358.html">https://lists.w3.org/Archives/Public/public-css-archive/2016Oct/0358.html</a> <br>
+
+            <a href="https://raw.githubusercontent.com/dtapuska/inputmode/master/index.html">https://raw.githubusercontent.com/dtapuska/inputmode/master/index.html</a> <br>
+        </div>
+        <pre>
+            Wouldn't it be useful also to define the behavior of `::before` and 
+            `::after` for void and (especially) replaced elements more 
+            specifically, with regard to the current behavior of the browsers? 
+            E.g., all browsers currently support these pseudo-elements for `hr` 
+            (and `hr::before { content: "\2727\2003\2003\2727\2003\2003\2727"; }` 
+            is widely used in the new design of W3C specs themselves), although 
+            this element [is defined as 
+            void](https://www.w3.org/TR/html52/syntax.html#void-elements) in HTML.
+             Also, almost all browsers don't apply them to regular `img` elements,
+             but do apply for broken `img`s 
+            (https://bitsofco.de/styling-broken-images/). Since the difference 
+            between regular and broken differ in their browser Shadow DOM 
+            structure ([at least in Blink 
+            browsers](http://css-live.ru/Primer/pseudos/chrome-img-shadow-dom.png)),
+             maybe  the behavior of pseudo elements also could be described in 
+            Shadow DOM terms?
+
+            -- 
+            GitHub Notification of comment by SelenIT
+            Please view or discuss this issue at 
+            https://github.com/w3c/csswg-drafts/issues/625#issuecomment-255303762 
+            using your GitHub account
+        </pre>
+    </section>
+    <hr>
+</body>
+</html>
