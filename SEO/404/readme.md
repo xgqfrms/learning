@@ -28,3 +28,14 @@ http://www.dictionary.com/browse/esoteric
 esoteric === 深奥  
 
 
+https://en.wikipedia.org/wiki/Polyglot_%28computing%29
+
+http://meta.stackoverflow.com/questions/252184/whats-the-joke-in-the-stack-overflow-404-page-code/341683#341683
+
+
+
+
+
+
+
+
