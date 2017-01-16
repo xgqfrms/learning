@@ -61,7 +61,30 @@ $("#name").keydown(function() {
     $("#msg").html($("#name").val());
 });
 
+
+Another way to handle events in jQuery is by using the on() method. 
+The on() method is used to attach an event to the selected element. 
+
+$( "p" ).on( "click", function() {
+    alert("clicked");
+});
+
+
+
+
+The argument of the off() method is the event name you want to remove the handler for.
+
+
+$("div").on("click", function() { 
+    alert('Hi there!'); 
+}); 
+$("div").off("click");
+
+
+
 ```
+
+
 
 
 

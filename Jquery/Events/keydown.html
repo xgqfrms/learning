@@ -11,13 +11,13 @@
     <input type="text" id="name" />
     <div id="msg"></div>
     <!-- js -->
-    <!-- <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" async></script> -->
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" async></script>
     <div class="js">
         <!--  -->
     </div>
     <script>
         window.onload = () => {
-            $("div.js").html(`<script id='ajaxjs'><\/script>`);
+            $("div.js").html("<script id='ajaxjs'></script>");
             $('#ajaxjs').atrr("src","https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js");
             $("#name").keydown(function() {
                 $("#msg").html($("#name").val());
