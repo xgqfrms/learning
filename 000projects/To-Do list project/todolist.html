@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>todo list</title>
+    <style>
+        .rbtn{
+            color: red;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -10,32 +16,61 @@
     </div>
     <section>
         <h1>My To-Do List</h1>
-        <input type="text" placeholder="New item" />
+        <input type="text" placeholder="Add new item" autofocus="" />
         <button id="add">Add</button>
-        <ol id="mylist"></ol>
         <h1>Some heading</h1>
-        <ol>
-          <li>One</li>
-          <li>Two</li>
+        <ol id="mylist">
+            <li>One</li><button class='rbtn'>Detele!</button>
+            <li>Two<button class='rbtn'>Detele!</button></li>
         </ol>
     </section>
+    <div>
+        <pre>
+            bug
+            delete all li cause ol removed???
+            after error ???
+            css ???
+        </pre>
+    </div>
     <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js"></script>
     <script>
         $(function() {
             $("#add").on("click", function() {
-                var val = $("input").val();
+                let val = $("input").val();
+                // val() get input value
+                console.log(`val = ${val}`);
+                // input value not empty
                 if(val !== '') {
-                    var elem = $("<li></li>").text(val);
-                    $(elem).append("<button class='rem'>X</button>");
-                    $("#mylist").append(elem);
+                    let li = $("<li></li>").text(val);
+                    // create <li> & set value === input value
+                    $(li).append("<button class='rbtn'>Detele!</button>");
+                    // add inside child (virtual dom)
+                    // $(li).after("<button class='rbtn'>Detele!</button>");
+                    // add outside child (virtual dom)
+                    // $(button).attr("background", "red"); 
+                    // virtual dom error ???
+                    // add delete button & set color attr
+                    $("#mylist").append(li);
+                    // add to real DOM
                     $("input").val("");
-                    $(".rem").on("click", function() {
+                    // clear input field
+                    $(".rbtn").on("click", function() {
                         $(this).parent().remove();
+                        // remove item
                     });
                 }
+                // $(button).attr("background", "red"); 
             });
         });
+        // css
+        // setTimeout(function(){
+        //     let btn = $(button);
+        //     console.log(`btn ${btn.length}`);
+        //     if(btn !== '' ){
+        //         $(button).attr("class", "rbtn");
+        //     }
+        // }, 3000);
     </script>
 </body>
 </html>
