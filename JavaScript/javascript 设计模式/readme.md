@@ -56,3 +56,10 @@ https://classroom.udacity.com/courses/ud989/lessons/3417188540/concepts/33916789
 《JavaScript 语言精粹》
 （原名：JavaScript: The Good Parts）， Douglas Crockford 著
 
+
+
+https://github.com/w3c/csswg-drafts/issues/625#issuecomment-272948709
+
+
+https://blog.risingstack.com/node-js-at-scale-understanding-node-js-event-loop/
+
