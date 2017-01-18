@@ -1,3 +1,13 @@
+/*
+https://www.freecodecamp.com/challenges/chunky-monkey
+
+https://repl.it/FM2r/0
+https://repl.it/FM2r/2
+
+*/
+
+
+
 function chunkArrayInGroups(arr, size) { // 4, 5
     const arrLength = arr.length;
     console.log("arr.length = " + arrLength);

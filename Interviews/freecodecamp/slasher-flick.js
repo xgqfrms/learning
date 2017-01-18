@@ -1,6 +1,8 @@
 /*
 
 https://repl.it/FMdx/0
+https://repl.it/FMdx/2
+https://repl.it/FMdx/3
 
 https://www.freecodecamp.com/challenges/slasher-flick
 
