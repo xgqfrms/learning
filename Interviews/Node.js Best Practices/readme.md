@@ -1,20 +1,28 @@
-# Node.js Best Practices  
+# Node.js Best Practices
 
 
-https://blog.risingstack.com/node-js-best-practices-2017/  
+
+Node.js Best Practices and Tips
 
 
-http://node.green/  
-https://github.com/williamkapke/node-compat-table  
+https://www.toptal.com/nodejs/tips-and-practices
 
-https://kangax.github.io/compat-table/es6/  
-https://github.com/kangax/compat-table  
+
+
+https://blog.risingstack.com/node-js-best-practices-2017/
+
+
+http://node.green/
+https://github.com/williamkapke/node-compat-table
+
+https://kangax.github.io/compat-table/es6/
+https://github.com/kangax/compat-table
 
 
 
 Use ES2015
 
-https://blog.risingstack.com/how-to-become-a-better-node-js-developer-in-2016/  
+https://blog.risingstack.com/how-to-become-a-better-node-js-developer-in-2016/
 
 
 Use Promises
@@ -24,22 +32,22 @@ http://bluebirdjs.com/docs/api/promise.promisifyall.html
 
 Use the JavaScript Standard Style
 
-https://github.com/feross/standard  
-http://standardjs.com/rules.html#javascript-standard-style  
+https://github.com/feross/standard
+http://standardjs.com/rules.html#javascript-standard-style
 
 
 
 Use Docker - Containers are Production Ready in 2017!
 
 
-https://docs.docker.com/engine/getstarted/  
+https://docs.docker.com/engine/getstarted/
 
-https://blog.risingstack.com/moving-node-js-from-paas-to-kubernetes-tutorial/  
+https://blog.risingstack.com/moving-node-js-from-paas-to-kubernetes-tutorial/
 
 
 Monitor your Applications
 
-https://prometheus.io/  
+https://prometheus.io/
 
 
 Use Messaging for Background Processes
@@ -53,10 +61,10 @@ AWS SQS
 
 Use the Latest LTS Node.js version
 
-https://github.com/creationix/nvm  
+https://github.com/creationix/nvm
 
-nvm install 6.9.2  
-nvm use 6.9.2  
+nvm install 6.9.2
+nvm use 6.9.2
 
 
 
@@ -74,9 +82,9 @@ PATCH
 
 Secure Your Applications
 
-https://en.wikipedia.org/wiki/List_of_data_breaches  
+https://en.wikipedia.org/wiki/List_of_data_breaches
 
-https://blog.risingstack.com/node-js-security-checklist/  
+https://blog.risingstack.com/node-js-security-checklist/
 
 Security HTTP Headers,
 Brute Force Protection,
@@ -93,8 +101,8 @@ https://www.youtube.com/watch?v=80LbyikAUqI
 
 Learn Serverless
 
-https://serverless.com/  
-https://github.com/serverless/serverless  
+https://serverless.com/
+https://github.com/serverless/serverless
 
 
 Become a better Node.js developer in 2017
