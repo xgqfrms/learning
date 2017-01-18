@@ -24,6 +24,11 @@ Array.prototype.push()
 
 
 
+Array.of()
+
+Array.from()
+
+
 
 
 
