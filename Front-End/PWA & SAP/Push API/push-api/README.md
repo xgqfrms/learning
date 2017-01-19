@@ -57,3 +57,26 @@ Uncaught (in promise) DOMException: Failed to register a ServiceWorker: An SSL c
 
 
 
+https://github.com/mwmaleks/node-openssl-p12
+
+
+???  SSL 
+
+client's ssl certificate generator for Node JS based on OpenSSL
+
+
+https://github.com/search?o=desc&q=Node+++OpenSSL&s=stars&type=Repositories&utf8=%E2%9C%93
+
+
+https://github.com/justmoon/node-bignum
+
+
+https://github.com/quartzjer/ursa
+
+https://github.com/mgcrea/node-openssl-wrapper
+
+
+https://github.com/ericvicenti/csr-gen
+
+
+

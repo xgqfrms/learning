@@ -1,0 +1,67 @@
+#maia-signature {
+    clear: both;
+    margin: 10px auto 0;
+    max-width: 978px;
+    min-height: 10px;
+}
+
+/*:after, :before {
+    box-sizing: border-box;
+}*/
+
+#maia-signature::before, [dir=rtl] #maia-signature::after {
+    border-left: 100px solid #ffa900;
+    border-right: 100px solid #00a753;
+}
+
+#maia-signature::after, [dir=rtl] #maia-signature::before {
+    border-left: 100px solid #0089fa;
+    border-right: 100px solid #ff002b;
+}
+
+#maia-signature::after, #maia-signature::before {
+    content: "";
+    float: right;
+    height: 10px;
+}
+
+
+
+#signature::before {
+    /*border-top: 100px solid #0089fa;*/
+    border-right: 100px solid #ff002b;
+    /*border-bottom: 100px solid #8900fa;*/
+    border-left: 100px solid #00ff2b;
+    content: "";
+    float: right;
+    height: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+#signature::after {
+    /*border-top: 100px solid #0089fa;*/
+    border-right: 100px solid #0089fa;
+    /*border-bottom: 100px solid #8900fa;*/
+    border-left: 100px solid #8900fa;
+    content: "";
+    float: right;
+    height: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* gradient color */
+
+/*
+
+
+linear-gradient(#ff33cc 0%, #00ffff 100%)
+
+
+border not support gradient color ???
+
+
+*/
