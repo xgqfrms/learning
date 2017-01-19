@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Progressive Web App: PhotoBooth</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://learning.xgqfrms.xyz/000projects/pwa-photo/assets/css/styles.css">
     <!-- Meta tag for changing browser colors. -->
     <meta id="theme-color" name="theme-color" content="#37474F">
     <!-- Meta tag for App-like behaviour in iOS -->
     <meta name=”apple-mobile-web-app-capable” content=”yes”>
     <!-- Web Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="https://learning.xgqfrms.xyz/000projects/pwa-photo/manifest.json">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
 
     if ('serviceWorker' in navigator) {
         // Path is relative to the origin, not project root.
-        navigator.serviceWorker.register('/pwa-photobooth/sw.js')
+        navigator.serviceWorker.register('https://learning.xgqfrms.xyz/000projects/pwa-photo/sw.js')
             .then(function(reg) {
                 console.log('Registration succeeded. Scope is ' + reg.scope);
             })
@@ -46,7 +46,7 @@
             });
     }
     </script>
-    <script src="assets/js/script.js"></script>
+    <script src="https://learning.xgqfrms.xyz/000projects/pwa-photo/assets/js/script.js"></script>
 </body>
 
 </html>
