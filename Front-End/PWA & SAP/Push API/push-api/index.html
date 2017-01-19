@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Push simple demo</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="controls">
+        <h1>Push simple demo</h1>
+        <p>This demo aims to demonstrate Push notifications in the simplest way possible.</p>
+        <form id="form">
+            <p>
+                <label for="name-input">Enter your name</label>:
+                <input type="text" id="name-input" placeholder="Bob">
+            </p>
+        </form>
+        <button class="subscribe" disabled>Subscribe to Push notifications</button>
+        <br>
+    </div>
+    <hr>
+    <div class="outputs">
+        <div class="subscribers">
+            <h2>Subscriber list</h2>
+            <ul>
+            </ul>
+        </div>
+        <div class="messages">
+            <h2>Messages</h2>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

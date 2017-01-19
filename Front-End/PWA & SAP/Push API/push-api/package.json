@@ -1,0 +1,29 @@
+{
+    "name": "push-api",
+    "version": "1.1.1",
+    "description": "a simple working example for the Push API.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xgqfrms/push-api.git"
+    },
+    "keywords": [
+        "web push",
+        "push api"
+    ],
+    "author": "xgqfrms",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xgqfrms/push-api/issues"
+    },
+    "homepage": "https://github.com/xgqfrms/push-api",
+    "dependencies": {
+        "express": "^4.13.4",
+        "serve-static": "^1.10.2",
+        "web-push": "^1.0.2"
+    }
+}
