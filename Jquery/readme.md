@@ -191,3 +191,54 @@ https://scotch.io/tutorials/server-side-rendering-in-angular-2-with-angular-univ
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom-server.min.js" integrity="sha256-XA7la7ADZ/W3fsrMnNBKdiAv9zxTeqFVH74eyQiiIts=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+https://www.codecademy.com/learn/jquery
+
+
+## selectors CSS
+
+http://learn.jquery.com/using-jquery-core/selecting-elements/
+http://api.jquery.com/category/selectors/
+
+
+## manipulation DOM
+
+http://learn.jquery.com/using-jquery-core/manipulating-elements/
+http://api.jquery.com/category/manipulation/
+
+## events JS
+
+https://learn.jquery.com/events/
+http://api.jquery.com/category/events/
+
+## effects Animation/HTML5/CSS3 
+
+http://learn.jquery.com/effects/
+http://api.jquery.com/category/effects/
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+

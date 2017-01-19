@@ -88,3 +88,15 @@ Ctrl+Shift+P
 
 
 "locale": "en-US"
+
+
+
+
+
+vscode-babel-format-error
+
+
+
+
+
+
