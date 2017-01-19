@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabCompletion": true,
+    "editor.mouseWheelZoom": true,
+    "editor.lineHeight": 24,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": false,
+    "html.format.wrapLineLength": 80,
+    "editor.wrappingColumn": 80,
+    "html.format.enable": false,
+    "html.format.extraLiners": "/body",
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all"
+}
