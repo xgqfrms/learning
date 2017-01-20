@@ -14,9 +14,10 @@ let loader3 = require('../images/loader3.gif');
 
 class AppComponent extends React.Component {
     render() {
-        return ()
+        return <div>Hello {this.props.name}</div>;
     }
 }
+
 
 AppComponent.defaultProps = {};
 
