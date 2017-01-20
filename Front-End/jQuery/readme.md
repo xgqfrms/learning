@@ -1,5 +1,22 @@
 # jQuery  
 
+
+https://www.codecademy.com/learn/jquery
+
+
+https://www.codecademy.com/learn/learn-sass
+
+https://www.codecademy.com/learn/web
+
+
+https://www.codecademy.com/learn/javascript
+
+
+
+
+
+
+
 http://api.jquery.com/element-selector/  
 http://api.jquery.com/ready/  
 http://api.jquery.com/id-selector/

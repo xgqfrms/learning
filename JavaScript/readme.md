@@ -4,6 +4,29 @@
 F:\Books\JavaScript-all-in-one  
 
 
+https://www.codecademy.com/learn/javascript
+
+
+https://www.codecademy.com/learn/react-101/
+
+https://www.codecademy.com/learn/react-102
+
+
+https://www.codecademy.com/learn/jquery
+
+
+https://www.codecademy.com/learn/learn-sass
+
+https://www.codecademy.com/learn/web
+
+
+
+
+
+
+
+
+
 
 
 ## ES 5, ES 6, ES 7

@@ -12,3 +12,21 @@ https://github.com/xgqfrms007/SQL/blob/master/sql-where.md
 
 
 
+## SQL, 'Structured Query Language'  
+
+https://www.codecademy.com/articles/sql-commands
+
+
+List of SQL commands
+
+Glossary of commonly used SQL commands
+
+## 
+
+https://www.codecademy.com/articles/sql-rdbms
+
+SQL RDBMS
+
+A Brief Overview of Common Relational Database Management Systems
+
+

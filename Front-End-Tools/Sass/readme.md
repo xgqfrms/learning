@@ -8,6 +8,15 @@ http://sass-lang.com/guide
 
 
 
+https://www.codecademy.com/learn/learn-sass
+
+https://www.codecademy.com/learn/web
+
+
+https://www.codecademy.com/learn/javascript
+
+
+
 
 
 

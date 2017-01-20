@@ -138,6 +138,30 @@ JSX
 
 
 
+https://facebook.github.io/react/docs/react-api.html#createelement
+
+
+http://facebook.github.io/react/docs/top-level-api.html#react.createelement
+
+
+
+## Components  
+
+
+https://www.codecademy.com/en/courses/react-101/lessons/your-first-react-component/exercises/hello-world-component
+
+
+A component is a small, reusable chunk of code that is responsible for one job. That job is often to render some HTML.
+
+
+
+
+
+
+
+
+
+
 
 
 
