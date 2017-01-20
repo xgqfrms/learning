@@ -43,3 +43,16 @@ http://onlinecomputerbooks.tradepub.com/?pt=adv&page=SitePoint
 img  
 
 
+
+http://files2.syncfusion.com/Downloads/Ebooks/sql_server_for_c_sharp_developers_succinctly.pdf
+
+
+
+
+
+
+
+
+
+
+
