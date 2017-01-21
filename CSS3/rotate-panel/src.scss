@@ -1,0 +1,79 @@
+$size: 300px;
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Microsoft JhengHei", PMingLiU, MingLiu, "Segoe UI", "Helvetica", Garuda, Arial, sans-serif!important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.relative {
+    position: relative;
+    height: $size;
+    width: $size;
+    margin: 30px;
+    .point {
+        &:after,
+        &:before {
+            content: "";
+            height: 0;
+            width: 0;
+            border: transparent 20px solid;
+            border-right-color: white;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+        &:after {
+            border-right-color: rgba(black, .45);
+            transform: translateY(-18px) translateX(-2px);
+            z-index: 1;
+        }
+    }
+}
+
+.turntable {
+    position: relative;
+    height: $size;
+    width: $size;
+    background: linear-gradient(45deg, #557777 50%, transparent 50%), linear-gradient(90deg, #ee6655 100%, transparent 100%), linear-gradient(135deg, #ffeebb 50%, transparent 50%) 100% 0%, linear-gradient(180deg, #ffcc55 100%, transparent 100%) 100% 0%, linear-gradient(225deg, #ffaa22 50%, transparent 50%) 100% 100%, linear-gradient(270deg, #ccddaa 100%, transparent 100%) 100% 100%, linear-gradient(315deg, #77aa88 50%, transparent 50%) 0% 100%, linear-gradient(360deg, #99cc99 100%, transparent 100%) 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    border: 15px solid tomato;
+    cursor: pointer;
+}
+
+ul {
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translateY(-50%);
+    color: white;
+    li {
+        position: absolute;
+        transform-origin: 0 0;
+    }
+    @for $i from 1 through 8 {
+        li:nth-child(#{$i}) {
+            transform: rotate(#{((360 / 8)*$i) + 22.5}deg) translateX(50px) translateY(-50%);
+        }
+    }
+}

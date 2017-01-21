@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Microsoft JhengHei", PMingLiU, MingLiu, "Segoe UI", "Helvetica", Garuda, Arial, sans-serif !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.relative {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+}
+
+.relative .point:after,
+.relative .point:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: transparent 20px solid;
+    border-right-color: white;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.relative .point:after {
+    border-right-color: rgba(0, 0, 0, 0.45);
+    transform: translateY(-18px) translateX(-2px);
+    z-index: 1;
+}
+
+.turntable {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(45deg, #557777 50%, transparent 50%), linear-gradient(90deg, #ee6655 100%, transparent 100%), linear-gradient(135deg, #ffeebb 50%, transparent 50%) 100% 0%, linear-gradient(180deg, #ffcc55 100%, transparent 100%) 100% 0%, linear-gradient(225deg, #ffaa22 50%, transparent 50%) 100% 100%, linear-gradient(270deg, #ccddaa 100%, transparent 100%) 100% 100%, linear-gradient(315deg, #77aa88 50%, transparent 50%) 0% 100%, linear-gradient(360deg, #99cc99 100%, transparent 100%) 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    border: 15px solid tomato;
+    cursor: pointer;
+}
+
+ul {
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translateY(-50%);
+    color: white;
+}
+
+ul li {
+    position: absolute;
+    transform-origin: 0 0;
+}
+
+ul li:nth-child(1) {
+    transform: rotate(67.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(2) {
+    transform: rotate(112.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(3) {
+    transform: rotate(157.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(4) {
+    transform: rotate(202.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(5) {
+    transform: rotate(247.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(6) {
+    transform: rotate(292.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(7) {
+    transform: rotate(337.5deg) translateX(50px) translateY(-50%);
+}
+
+ul li:nth-child(8) {
+    transform: rotate(382.5deg) translateX(50px) translateY(-50%);
+}
+
+
+/*# sourceMappingURL=dist.css.map */

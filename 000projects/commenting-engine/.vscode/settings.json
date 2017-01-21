@@ -7,7 +7,7 @@
     "editor.formatOnSave": false,
     "html.format.wrapLineLength": 80,
     "editor.wrappingColumn": 80,
-    "html.format.enable": false,
+    "html.format.enable": true,
     "html.format.extraLiners": "/body",
     "workbench.statusBar.visible": true,
     "editor.renderWhitespace": "all"
