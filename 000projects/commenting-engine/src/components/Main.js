@@ -14,7 +14,24 @@ let loader3 = require('../images/loader3.gif');
 
 class AppComponent extends React.Component {
     render() {
-        return <div> babel, format error </div>;
+        return (
+            <div className="index">
+                <img src={yeomanImage} alt="Yeoman Generator" />
+                <div className="notice" > 
+                    Please edit <code > src/component/Main.js </code> to get started!
+                </div >
+                <section > 
+                    <h1>hello es6 </h1>
+                    <div className="notice">
+                            <img src={loader3} alt="loader" />
+                            <div>
+                                <p> Good Morning </p>
+                                <p> 10: 55 AM </p>
+                            </div >
+                    </div>
+                </section>
+            </div>
+        );
     }
 }
 
