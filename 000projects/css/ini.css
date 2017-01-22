@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* --------------------------------------------- */
+/*   CSSMagic CSS Framework 1.0.3                */
+/*       by cssmagic                             */
+/*       http://www.cssmagic.net/                */
+/*   CSS-Reset Credited to YUI and Eric Meyer    */
+/* --------------------------------------------- */
+/*   Last Updated @ 2009-01-14 03:45:39 PM       */
+/* --------------------------------------------- */
+/** The Beginning **/
+
+/** Reset **/
+html,body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td,frame,iframe {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img,abbr,acronym {border:0;}
+abbr,acronym,kbd,q,blockquote,address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ul,ol {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+input,select,textarea,samp {font-size:100%;}
+
+/** Basic Style **/
+html,body {height:100%;}
+html {overflow-y:scroll;}  /** To make Firefox always show vertical scrollbar **/
+code,tt,var,pre,kbd,samp {font-family:'Courier New',monospace;}
+label[for] {cursor:pointer;}  /** ! IE6 **/
+* html label {cursor:pointer;}  /** IE6 **/
+abbr[title],acronym[title],dfn[title] {cursor:help;border-bottom:1px dotted;}  /** ! IE6 **/
+* html abbr span,* html acronym,* html dfn {cursor:help;border-bottom:1px dotted;}  /** IE6 **/
+.txt p {text-indent:2em;margin-bottom:1em;}  /** Text container needs class='txt' **/
+hr {display:none;}
+table {table-layout:fixed;}  /** Only applicable for CSS-Positioned Pages **/
+a:link,a:visited {text-decoration:none;}
+a:hover,a:focus,a:active {text-decoration:underline;}
+
+/** Framework **/
+.wrap {width:950px;margin:0 auto;}
+.w950 {width:950px;margin:0 auto;}
+.w960 {width:960px;margin:0 auto;}
+.w970 {width:970px;margin:0 auto;}
+.w980 {width:980px;margin:0 auto;}
+.w990 {width:990px;margin:0 auto;}
+.w1000 {width:1000px;margin:0 auto;}
+.clear {zoom:1;}
+.clear:after {content:'';display:block;clear:both;height:0px;}
+.float_l {float:left;}
+.float_r {float:right;}
+* html .float_l,* html .float_r {display:inline;}  /** To fix IE6's Double-Margin-Floating bug **/
+.clear_l {clear:left;}
+.clear_r {clear:right;}
+.clear_b {clear:both;}
+.cn {font-family: SimSun,'宋体',sans-serif;}
+
+/* --------------------------------------------- */
+
+
+
+/** The End **/
+/* --------------------------------------------- */

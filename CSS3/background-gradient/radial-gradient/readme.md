@@ -183,3 +183,9 @@ https://www.w3.org/TR/css3-images/#radial-gradients
 https://github.com/cssmagic/blog/issues/54
 
 https://github.com/junnuobaby/cartoon
+
+
+http://www.cssmagic.net/demo/20090215-arc-nav/
+
+
+

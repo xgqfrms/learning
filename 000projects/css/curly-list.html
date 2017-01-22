@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弧形排列的可折叠二级导航(完整演示) </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="ini.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="common.js"></script>
+    <!-- http://www.cssmagic.net/demo/20090215-arc-nav/ -->
+</head>
+<body>
+<div id="dv_wrap" class="w1000">
+    <div id="dv_head">
+        <h1>弧形排列的可折叠二级导航</h1>
+    </div>
+    <div id="dv_nav">
+        <h2>导航</h2>
+        <!--=======================================================-->
+        <div id="dv_placeholder">
+            <div class="n1"></div>
+            <div class="n2"></div>
+            <div class="n3"></div>
+            <div class="n4"></div>
+            <div class="n5"></div>
+            <div class="n6"></div>
+            <div class="n7"></div>
+            <div class="n8"></div>
+            <div class="n9"></div>
+            <div class="n10"></div>
+            <div class="n11"></div>
+            <div class="n12"></div>
+            <div class="n13"></div>
+            <div class="n14"></div>
+            <div class="n15"></div>
+            <div class="n16"></div>
+            <div class="n17"></div>
+            <div class="n18"></div>
+            <div class="n19"></div>
+            <div class="n20"></div>
+            <div class="n21"></div>
+            <div class="n22"></div>
+            <div class="n23"></div>
+            <div class="n24"></div>
+            <div class="n25"></div>
+            <div class="n26"></div>
+            <div class="n27"></div>
+        </div>
+        <!--=======================================================-->
+        <ul id="ul_nav">
+            <li class="n1">
+                <h3><span>洗护系列</span></h3>
+                <ul>
+                    <li class="n1"><a href="###">赋活水养</a></li>
+                    <li class="n2"><a href="###">动感卷曲</a></li>
+                    <li class="n3"><a href="###">清衡水润</a></li>
+                    <li class="n4"><a href="###">润感去屑</a></li>
+                    <li class="n5"><a href="###">质感垂坠</a></li>
+                    <li class="n6"><a href="###">炫感彩护</a></li>
+                </ul>
+            </li>
+            <li class="n2">
+                <h3><span>造型系列</span></h3>
+                <ul>
+                    <li class="n1"><a href="###">珠光亮泽</a></li>
+                    <li class="n2"><a href="###">酷炫凌乱</a></li>
+                    <li class="n3"><a href="###">弹性卷曲</a></li>
+                    <li class="n4"><a href="###">强力定型</a></li>
+                    <li class="n5"><a href="###">垂顺亮直</a></li>
+                    <li class="n6"><a href="###">自然线条</a></li>
+                    <li class="n7"><a href="###">炫色润发</a></li>
+                    <li class="n8"><a href="###">沙龙护理锁水发膜</a></li>
+                </ul>
+            </li>
+            <li class="n3">
+                <h3><a href="###">促销信息</a></h3>
+            </li>
+            <li class="n4">
+                <h3><span>秀发护理小TIPS</span></h3>
+                <ul>
+                    <li class="n1"><a href="###">洗发知多少</a></li>
+                    <li class="n2"><a href="###">护发怎么办</a></li>
+                    <li class="n3"><a href="###">型发知多少</a></li>
+                </ul>
+            </li>
+            <li class="n5">
+                <h3><a href="###">VIDEO</a></h3>
+            </li>
+        </ul>
+    </div>
+    <div id="dv_main">
+        <p>简单解释一下思路。</p>
+        <p>最大的难点就是弧形排列，而且还是动态的、可折叠的。因此，各菜单项的位置不能做死。基本方法还是 CSS 教材中都会讲到的异形文本排版――用多个不同宽度的无语义空元素浮动，占位模拟曲线轮廓，从而限制文本在合理范围内流动。（我认为在这种场合，无语义元素是可以接受的。）</p>
+        <p>此外，还使用了一些小技巧来保证基本的用户体验，比如扩展菜单项热区，避免 hover 跳闪等等。CSS 代码中均有详细注释。</p>
+        <p>最终，无需 JS 进行定位计算，我们完全实现了纯 CSS 定位。同时，菜单项可自由增减，结构代码也清晰严谨。就是这样完美，甚至在古老的 IE6 下，它的表现都十分理想。</p>
+    </div>
+</div>
+</body>
+</html>

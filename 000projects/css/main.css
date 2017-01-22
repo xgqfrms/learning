@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* --------------------------------------------- */
+/** The Beginning **/
+body {
+	font: 12px/1.2 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+	color: #ddd;
+	background: black;
+}
+#dv_wrap {
+	margin-top: 30px;
+	height: 570px;
+	background: url(../img/bg-2.jpg) no-repeat right top;
+}
+
+/* --------------------------------------------- */
+/** Head **/
+#dv_head {
+	float: right; _display: inline;
+	padding: 20px 30px 0 0;
+	text-align: right;
+}
+#dv_head h1 {
+	margin-bottom: 20px;
+	font: 700 26px/1.2 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+}
+#dv_head a {
+	margin-right: 20px;
+	color: #999;
+}
+#dv_head a:hover {
+	color: #eee;
+}
+/* --------------------------------------------- */
+/** Main **/
+#dv_main {
+	float: right; _display: inline;
+	margin: 230px 30px 0 -200px;
+	padding: 20px 30px;
+	width: 550px;
+	font: 12px/1.6 Verdana, Arial, Helvetica, sans-serif;
+	color: #aaa;
+	background: rgba(0,0,0,0.75);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#c0000000,endColorStr=#c0000000);
+}
+#dv_main p {
+	margin-bottom: 10px;
+	text-indent: 2em;
+	text-align: justify; text-justify: distribute;
+}
+
+
+
+/* --------------------------------------------- */
+/** Nav **/
+#dv_nav {
+	float: left; _display: inline;
+	padding-top: 30px;
+	width: 500px;
+	height: 540px;
+	text-align: right;  /** 各菜单项右对齐 **/
+	background: url(../img/bg-1.jpg) no-repeat;
+}
+#dv_nav h2 {
+	display: none;
+}
+/** 菜单区段间隔 **/
+#ul_nav li {
+	padding-bottom: 24px;  /** 各一级菜单区段之间的间隔 **/
+}
+#ul_nav li li {
+	padding-bottom: 0px;  /** 清除上一条对二级菜单的影响 **/
+}
+
+
+/** 一、二级菜单项基本样式 **/
+/** 让菜单项显示为inline-block，实现右对齐呈现弧形排列。inline当然也是可以右对齐的，但是我们无法扩展它的热区。 **/
+/** 同时对于inline-block，我们可以采用padding的变化来实现hover上浮效果。如果用相对定位，一来消耗资源，二来会闪烁。 **/
+/** 可惜FF 3.0.x支持inline-block还是有些问题，导致hover闪烁，于是动用其私有属性-moz-inline-box。但下划线无法显示，不解。 **/
+#ul_nav h3 span {
+	display: inline-block;  /** WebKit,Op **/
+	display: -moz-inline-box;  /** FF2,FF 3.0.x **/
+	*display: inline-block;  /** 清除前一条的影响 @ IE6,7 **/
+	padding: 3px 14px 0 3px;
+	background: url(../img/menu_arrow.gif) no-repeat right 12px;  /** 小箭头 **/
+	cursor: pointer;
+}
+#ul_nav a {
+	display: inline-block;
+	display: -moz-inline-box;
+	*display: inline-block;
+	padding: 3px 0 0 3px;
+	line-height: 19px;
+	height: 19px;  /** FF2需要它来撑高-moz-inline-box **/
+	color: #999;
+}
+/** 一级菜单项基本样式 **/
+#ul_nav h3 a,
+#ul_nav h3 span {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	height: 26px;  /** FF2需要它来撑高-moz-inline-box **/
+	color: #aaa;
+}
+
+/** 一、二级菜单项hover样式，一级菜单展开样式 **/
+#ul_nav a:hover {
+	padding: 1px 2px 2px 1px;  /** 由padding来产生hover上浮效果，FF2下还是有闪烁，暂且不管了 **/
+	color: #eee;
+}
+#ul_nav.c1 li.n1 h3 span,
+#ul_nav.c2 li.n2 h3 span,
+#ul_nav.c3 li.n3 h3 span,
+#ul_nav.c4 li.n4 h3 span,
+#ul_nav.c5 li.n5 h3 span,
+#ul_nav h3 span:hover,
+#ul_nav h3 span.hover {
+	padding: 0px 17px 3px 0px;  /** 由padding来产生hover上浮效果，FF2下还是有闪烁，暂且不管了 **/
+	color: #eee;
+	text-decoration: underline;
+	background-position: right -38px;  /** 小箭头跟随上浮 **/
+}
+
+/** 二级菜单项的小装饰 **/
+#ul_nav li li {
+	list-style: inside disc;
+	color: #600;  /** 定义小圆点颜色 **/
+}
+#ul_nav li li a {
+	margin-left: -3px;  /** 拉近小圆点 **/
+	*margin-left: -5px;
+}
+/** 二级菜单间隔 **/
+#ul_nav li li.n1 {margin-top: 6px;}
+#ul_nav li li.n2 {margin-top: 8px;}
+#ul_nav li li.n3 {margin-top: 10px;}
+#ul_nav li li.n4 {margin-top: 12px;}
+#ul_nav li li.n5 {margin-top: 14px;}
+#ul_nav li li.n6 {margin-top: 16px;}
+#ul_nav li li.n7 {margin-top: 18px;}
+#ul_nav li li.n8 {margin-top: 20px;}
+
+
+/** 菜单折叠样式 **/
+#ul_nav li ul {
+	display: none;
+}
+#ul_nav.c1 li.n1 ul,
+#ul_nav.c2 li.n2 ul,
+#ul_nav.c3 li.n3 ul,
+#ul_nav.c4 li.n4 ul,
+#ul_nav.c5 li.n5 ul {
+	display: block;
+}
+
+/* --------------------------------------------- */
+/** Placeholder **/
+#dv_placeholder div {
+	_margin-left: -3px;  /** 应付3px bug @ IE6 **/
+	float: right; _display: inline;
+	clear: right;
+	font: 1px/1 serif;  /** 清除块默认高度 @ IE6 **/
+}
+#dv_placeholder .n1  {width: 185px; height: 10px;}
+#dv_placeholder .n2  {width: 195px; height: 10px;}
+#dv_placeholder .n3  {width: 200px; height: 10px;}
+#dv_placeholder .n4  {width: 205px; height: 10px;}
+#dv_placeholder .n5  {width: 210px; height: 10px;}
+#dv_placeholder .n6  {width: 215px; height: 10px;}
+#dv_placeholder .n7  {width: 220px; height: 10px;}
+#dv_placeholder .n8  {width: 225px; height: 10px;}
+#dv_placeholder .n9  {width: 230px; height: 10px;}
+#dv_placeholder .n10 {width: 235px; height: 10px;}
+#dv_placeholder .n11 {width: 240px; height: 10px;}
+#dv_placeholder .n12 {width: 245px; height: 15px;}
+#dv_placeholder .n13 {width: 250px; height: 10px;}
+#dv_placeholder .n14 {width: 255px; height: 15px;}
+#dv_placeholder .n15 {width: 260px; height: 10px;}
+#dv_placeholder .n16 {width: 265px; height: 15px;}
+#dv_placeholder .n17 {width: 270px; height: 15px;}
+#dv_placeholder .n18 {width: 275px; height: 20px;}
+#dv_placeholder .n19 {width: 280px; height: 20px;}
+#dv_placeholder .n20 {width: 285px; height: 20px;}
+#dv_placeholder .n21 {width: 290px; height: 20px;}
+#dv_placeholder .n22 {width: 295px; height: 25px;}
+#dv_placeholder .n23 {width: 300px; height: 35px;}
+#dv_placeholder .n24 {width: 305px; height: 145px;}
+#dv_placeholder .n25 {width: 300px; height: 30px;}
+#dv_placeholder .n26 {width: 295px; height: 20px;}
+#dv_placeholder .n27 {width: 290px; height: 15px;}
+
+/** The End **/
+/* --------------------------------------------- */
