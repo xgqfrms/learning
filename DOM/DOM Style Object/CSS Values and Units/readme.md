@@ -10,11 +10,13 @@ W3C Candidate Recommendation, 29 September 2016
 
 
 
-calc
+
+
+## calc
 
 https://www.w3.org/TR/css-values-3/#funcdef-calc  
 
-
+https://www.w3.org/TR/css3-values/#calc
 
 
 2. Value Definition Syntax  
