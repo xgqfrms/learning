@@ -90,20 +90,69 @@ Hello { this.props.name }
 
 input[type="date"]
 
+属性具有此确切值
+
 a [href*="https"]
+
+在属性值中某处包含此值
 
 a [href^="https"]
 
+属性值以此开头
+
+a [href$="https"]
+
+属性值以此结束
+
 a [href~="https"]
+
+在以空格分隔的属性列表中,某处具有此值
 
 a [href|="https"]
 
-a [href$="https"]
+在以虚线分隔的属性列表中,某处具有此值
 
 
 
 
 https://css-tricks.com/almanac/selectors/
+
+
+
+
+[data-value] {
+  /* Attribute exists */
+}
+
+[data-value="foo"] {
+  /* Attribute has this exact value */
+}
+
+[data-value*="foo"] {
+  /* Attribute value contains this value somewhere in it */
+}
+
+[data-value^="foo"] {
+  /* Attribute value starts with this */
+}
+
+[data-value$="foo"] {
+  /* Attribute value ends with this */
+}
+
+[data-value~="foo"] {
+  /* Attribute has this value in a space-separated list somewhere */
+}
+
+[data-value=|"foo"] {
+  /* Attribute value has this in a dash-separated list somewhere */
+}
+
+
+
+
+
+
 
 
 
