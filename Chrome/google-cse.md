@@ -1,0 +1,15 @@
+
+<gcse:search></gcse:search>
+
+```style.css
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus{
+    background-color: #0DB5B5 !important;
+    border:none !important;
+}
+.cse .gsc-control-cse, .gsc-control-cse,.gsc-results .gsc-cursor-box .gsc-cursor-page{
+    background-color: #F0F3FA !important;
+    border:none !important;
+}
+``` 
+
+

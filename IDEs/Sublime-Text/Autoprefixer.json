@@ -1,0 +1,6 @@
+{
+    "browsers": ["ie >= 9", "> 1%"],
+    "cascade": true,
+    "remove": true,
+    "prefixOnSave": false
+}

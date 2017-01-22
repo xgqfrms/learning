@@ -18,3 +18,35 @@ subl -add foldername
 
 
 ![](subl -add folder (shell open  folder  in the same sublime-text3 window).png)
+
+
+## Autoprefixer  
+
+https://packagecontrol.io/packages/Autoprefixer
+
+
+Keyboard shortcut === "Alt + Super(Win) + P"
+
+[
+    {
+        "keys": ["alt+super+p"],
+        "command": "autoprefixer"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
