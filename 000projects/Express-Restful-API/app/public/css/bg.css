@@ -1,0 +1,4 @@
+html {
+    background: url(../img/bg-stars.png) repeat-x center top, linear-gradient(to bottom, #436f8e 0%, #c2e8c2 100%) no-repeat center;
+    min-height: 100%;
+}

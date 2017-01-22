@@ -52,3 +52,37 @@ http://leaverou.github.io/animatable/
 https://uist.acm.org/uist2017/
 
 
+## css 
+
+
+https://robots.thoughtbot.com/you-don-t-need-javascript-for-that#tooltips
+
+
+
+CSS3 :checked伪类选择器妙用
+
+
+https://github.com/jabez128/jabez128.github.io/issues/8
+
+
+使用CSS线性渐变生成彩虹图
+
+https://github.com/jabez128/jabez128.github.io/issues/4
+
+
+
+https://alexpeattie.com/projects/prideify
+
+https://github.com/alexpeattie/prideify
+
+CSS3 Patterns Gallery
+
+http://lea.verou.me/css3patterns/
+
+
+Hide screen when boss is approaching.  
+
+https://github.com/ufo-github/BossSensor  
+
+
+
