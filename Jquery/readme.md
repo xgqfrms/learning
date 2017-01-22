@@ -234,11 +234,11 @@ http://api.jquery.com/category/effects/
 
 
 *******************************************************************************
+# What’s New in jQuery 3  
 
+http://developer.telerik.com/featured/whats-new-in-jquery-3/
 
-
-
-
+https://github.com/cssmagic/blog/issues/59
 
 
 
