@@ -1,6 +1,10 @@
 # Gesture Recognizer
 
 
+https://github.com/ufo-github/ImageMagick/issues/1
+
+
+
 
 
 https://pan.baidu.com/share/home?uk=2874505125#category/type=0

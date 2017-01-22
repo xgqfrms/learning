@@ -54,7 +54,7 @@ http://files2.syncfusion.com/Downloads/Ebooks/sql_server_for_c_sharp_developers_
 
 
 
-
+https://github.com/ufo-github/it-ebooks
 
 
 
