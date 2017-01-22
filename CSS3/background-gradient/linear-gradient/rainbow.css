@@ -1,0 +1,20 @@
+.rainbow{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-image: url(cool-shit.png);
+    background-size: 100% 100%;
+}
+
+.rainbow::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: -webkit-linear-gradient(top, #ff3e18 16.66%,#fc9a00 16.66%, #fc9a00 33.32%, #ffd800 33.32%, #ffd800 49.98%, #39ea7c 49.98%, #39ea7c 66.64%, #0bb2ff 66.64%, #0bb2ff 80.3%, #985aff 80.3% );
+    background: linear-gradient(top, #ff3e18 16.66%,#fc9a00 16.66%, #fc9a00 33.32%, #ffd800 33.32%, #ffd800 49.98%, #39ea7c 49.98%, #39ea7c 66.64%, #0bb2ff 66.64%, #0bb2ff 80.3%, #985aff 80.3% );
+    opacity: 0.5;
+}
