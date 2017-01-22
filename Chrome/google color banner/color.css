@@ -1,0 +1,182 @@
+.body-bg {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: #159957;
+    background-image: -webkit-linear-gradient(330deg, #155799, #159957);
+    background-image: linear-gradient(120deg, #155799, #159957);
+    cursor: url(./images/blue.cur);
+}
+
+.main-content {
+    max-width: 100%;
+    padding: 2rem 0 0;
+}
+
+.footer {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(0, 255, 0, 0.7);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(255, 0, 255, 0.7);
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(0, 255, 255, 0.7);
+}
+
+.site-footer {
+    padding: 1rem 0;
+}
+
+#maia-signature {
+    clear: both;
+    margin: 10px auto 0;
+    max-width: 978px;
+    min-height: 4px;
+}
+
+#maia-signature:before,
+[dir=rtl] #maia-signature:after {
+    border-left: 35px solid #ffa900;
+    border-right: 34px solid #00a753;
+}
+
+#maia-signature:after,
+#maia-signature:before {
+    content: "";
+    float: right;
+    height: 4px;
+}
+
+#maia-signature:after,
+[dir=rtl] #maia-signature:before {
+    border-left: 34px solid #0089fa;
+    border-right: 35px solid #ff002b;
+}
+
+#maia-signature:after,
+#maia-signature:before {
+    content: "";
+    float: right;
+    height: 4px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    animation: xblink 0.7s infinite;
+}
+
+@keyframes xblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes xblink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.type-bg {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(0, 255, 0, 1);
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    cursor: alias;
+}
+
+.type-bg:hover {
+    border: 1px solid rgba(255, 0, 255, 0.7);
+    cursor: pointer;
+}
+
+.type-bg span {
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.telement h3 {
+    color: rgba(255, 0, 255, 0.7);
+    text-align: center;
+    margin-top: -5px;
+}
+
+@media screen and (max-width: 350px) {
+    .type-bg {
+        width: 230px!important;
+        height: 70px!important;
+        border: 1px solid rgba(255, 0, 255, 0.7);
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        color: rgba(0, 255, 0, 0.8);
+    }
+    .type-bg:hover {
+        border: 1px solid rgba(255, 0, 255, 0.7);
+        cursor: pointer;
+    }
+    .type-bg span {
+        margin: 3px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .type-bg {
+        width: 250px!important;
+        height: 50px!important;
+        border: 2px solid rgba(0, 255, 255, 0.7);
+    }
+    .type-bg:hover {
+        border: 1px solid rgba(255, 0, 255, 0.7);
+        cursor: pointer;
+    }
+    .type-bg span {
+        margin: 3px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #fork-me {
+        position: absolute;
+        top: -45px!important;
+        right: 0;
+        border: 0;
+    }
+}
+
+
+}

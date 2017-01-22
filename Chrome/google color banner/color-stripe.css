@@ -1,0 +1,32 @@
+#maia-signature {
+    clear: both;
+    margin: 10px auto 0;
+    max-width: 978px;
+    min-height: 4px;
+}
+
+#maia-signature:before,
+[dir=rtl] #maia-signature:after {
+    border-left: 35px solid #ffa900;
+    border-right: 34px solid #00a753;
+}
+
+#maia-signature:after,
+#maia-signature:before {
+    content: "";
+    float: right;
+    height: 4px;
+}
+
+#maia-signature:after,
+[dir=rtl] #maia-signature:before {
+    border-left: 34px solid #0089fa;
+    border-right: 35px solid #ff002b;
+}
+
+#maia-signature:after,
+#maia-signature:before {
+    content: "";
+    float: right;
+    height: 4px;
+}

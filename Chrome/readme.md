@@ -46,8 +46,11 @@ https://chrome.google.com/webstore/
 
 
 
+## color-stripe (google color banner)  
 
+https://www.xgqfrms.xyz/ 
 
+https://www.xgqfrms.xyz/stylesheets/selfindex.css
 
 
 
