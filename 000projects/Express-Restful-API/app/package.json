@@ -1,31 +1,32 @@
 {
-    "name": "express-restful-app",
-    "version": "4.14.0",
-    "description": "Express RESTful APIs App",
-    "main": "server.js",
-    "scripts": {
-        "test": "start",
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/xgqfrms/learning.git"
-    },
-    "keywords": [
-        "express",
-        "restful",
-        "api",
-        "node.js",
-        "linux",
-        "nginx"
-    ],
-    "author": "xgqfrms",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/xgqfrms/learning/issues"
-    },
-    "homepage": "https://github.com/xgqfrms/learning#readme",
-    "dependencies": {
-        "express": "^4.14.0"
-    }
+  "name": "express-restful-app",
+  "version": "4.14.0",
+  "description": "Express RESTful APIs App",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon ./*.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/learning.git"
+  },
+  "keywords": [
+    "express",
+    "restful",
+    "api",
+    "node.js",
+    "linux",
+    "nginx"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/learning/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/learning#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  }
 }
