@@ -172,8 +172,8 @@ https://www.w3.org/TR/css3-images/#radial-gradients
         [ ellipse || [ <length> | <percentage> ]{2} ] [ at <position> ]? , |
         [ [ circle | ellipse ] || <extent-keyword> ] [ at <position> ]? , |
         at <position> ,
-  ]?
-  <color-stop> [ , <color-stop> ]+
+    ]?
+    <color-stop> [ , <color-stop> ]+
 )
 
 <extent-keyword> = closest-corner | closest-side | farthest-corner | farthest-side

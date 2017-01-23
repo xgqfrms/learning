@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class='box'>
+    <div class='cnt'>
+        <div class='li'></div>
+        <div class='li_2'></div>
+        <div class='li_3'></div>
+    </div>
+</div>
+</body>
+</html>
+<style>
+    body {
+        padding: 50px 50px;
+    }
+
+    .box {
+        width: 500px;
+        height: 400px;
+    }
+
+    .cnt {
+        width: 500px;
+        height: 200px;
+        background-color: rgb(96, 154, 227);
+        margin: 80px auto;
+        position: relative;
+    }
+
+    .li {
+        position: absolute;
+        width: 80px;
+        height: 50px;
+        background-color: rgb(178, 100, 218);
+        left: 80px;
+        top: -50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .li::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(left top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) 70%,rgb(178, 100, 218) 70%);
+        background: -moz-radial-gradient(left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(178, 100, 218) 70%);
+        left: -15px;
+        bottom: 0px;
+    }
+
+    .li::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(178, 100, 218) 70%);
+        background: -moz-radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(178, 100, 218) 70%);
+        right: -15px;
+        bottom: 0px;
+    }
+
+    .li_2 {
+        position: absolute;
+        width: 80px;
+        height: 50px;
+        background-color: rgb(96, 154, 227);
+        left: 220px;
+        top: -50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .li_2::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(96, 154, 227) 70%);
+        background: -moz-radial-gradient(left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(96, 154, 227) 70%);
+        left: -15px;
+        bottom: 0px;
+    }
+
+    .li_2::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(96, 154, 227) 70%);
+        background: -moz-radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(96, 154, 227) 70%);
+        right: -15px;
+        bottom: 0px;
+    }
+
+    .li_3 {
+        position: absolute;
+        width: 80px;
+        height: 50px;
+        background-color: rgb(237, 172, 14);
+        left: 360px;
+        top: -50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .li_3::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(237, 172, 14) 70%);
+        background: -moz-radial-gradient(left top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(237, 172, 14) 70%);
+        left: -15px;
+        bottom: 0px;
+    }
+
+    .li_3::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(237, 172, 14) 70%);
+        background: -moz-radial-gradient(right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 70%, rgb(237, 172, 14) 70%);
+        right: -15px;
+        bottom: 0px;
+    }
+</style>

@@ -1,28 +1,6 @@
-# Raspberry Pi  
-
-F:\genuine  soft\Raspberry PI\tools\tools for VNC  
+# bash comment block  
 
 
-
-https://www.raspberrypi.org/products/raspberry-pi-3-model-b/  
-
-https://www.raspberrypi.org/resources/learn/  
-
-
-https://www.realvnc.com/download/vnc/raspberrypi/  
-
-
-
-http://192.168.2.102/  
-
-
-https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/  
-
-
-
-
-
-bash comment block
 
 http://unix.stackexchange.com/questions/37411/multiline-shell-script-comments-how-does-this-work
 
@@ -44,12 +22,14 @@ end_long_comment
 
 
 
+http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_07_04
+
+
+
 
 http://raspberrypi.stackexchange.com/questions/60847/how-can-i-make-a-video-player-by-using-raspberry-pi-3?noredirect=1#comment94738_60847
 
 
 
-
-
-
+http://stackoverflow.com/questions/947897/block-comments-in-a-shell-script
 
