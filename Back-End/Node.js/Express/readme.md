@@ -23,16 +23,27 @@ Jun 21, 2009 – Dec 17, 2016
 F:\Books\CodeSchool-JS\express\building-blocks-of-express-js.pdf
 
 
+## Express 5  
+
+
+http://expressjs.com/en/guide/migrating-5.html
 
 
 
+$ npm install express@5.0.0-alpha.2 --save
 
 
+https://github.com/expressjs/express
 
 
+## Express 4  
+
+http://expressjs.com/en/guide/migrating-4.html
 
 
+https://github.com/senchalabs/connect#middleware
 
+https://github.com/expressjs/express/releases/tag/4.14.0
 
 
 

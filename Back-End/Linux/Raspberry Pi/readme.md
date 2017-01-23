@@ -50,6 +50,10 @@ http://raspberrypi.stackexchange.com/questions/60847/how-can-i-make-a-video-play
 
 
 
+https://www.raspberrypi.org/documentation/usage/
+
+
+https://www.raspberrypi.org/documentation/hardware/display/README.md
 
 
 
