@@ -8,7 +8,9 @@ JavaScript 设计模式
 
 https://classroom.udacity.com/settings/courses
 
+https://cn.udacity.com/course/javascript-design-patterns--ud989
 
+https://classroom.udacity.com/courses/ud989/lessons/3417188540/concepts/33916789250923
 
 
 
