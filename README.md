@@ -1,5 +1,5 @@
 # learning
-learning : A list of all kinds of resources, videos, pdf, blogs, codes...
+learning : A collection of all kinds of resources, videos, pdf, blogs, codes...
 
 
 https://learning.xgqfrms.xyz
