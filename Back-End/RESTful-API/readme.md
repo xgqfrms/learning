@@ -11,6 +11,18 @@ Intro to REST (aka. What Is REST Anyway)
 
 
 
+## Designing RESTful APIs  
+
+
+https://classroom.udacity.com/settings/courses
+
+
+
+
+
+
+
+
 
 
 
