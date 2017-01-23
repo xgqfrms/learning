@@ -13,6 +13,18 @@ https://www.realvnc.com/download/vnc/raspberrypi/
 
 
 
+
+
+
+
+https://www.coursera.org/learn/raspberry-pi-platform/home
+
+
+
+
+
+
+
 http://192.168.2.102/  
 
 
