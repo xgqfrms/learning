@@ -1,0 +1,32 @@
+<!-- In the file styles.xml, create a theme named MyTheme. It will be the same as the existing theme Theme.AppCompat.Light.DarkActionBar, except that its textColor will be green. -->
+<resources>
+    <style name="MyTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+</resources>
+
+<!-- In the file AndroidManifest.xml, apply the theme to all the Views created by the app. -->
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/MyTheme"/>
+
+<!-- In the file activity_main.xml, the MyTheme is automatically applied to the TextView. -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello"/>
+
+
+
+
+
+
+
+
+
+
+

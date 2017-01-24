@@ -1,0 +1,9 @@
+<!-- 
+In the file styles.xml, create a theme named MyTheme. I
+t will be the same as the existing theme
+Theme.AppCompat.Light.DarkActionBar, except that its textColor will be green. -->
+<resources>
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+</resources>
