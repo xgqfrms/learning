@@ -36,7 +36,7 @@ https://classroom.udacity.com/courses/ud837/lessons/4027328704/concepts/42427786
 
 https://material.io/guidelines/style/typography.html#typography-typeface
 
-
+https://plus.google.com/+AndroidDevelopers/posts/gQuBtnuk6iG
 
 
 硬编码（Hard coding）
@@ -52,8 +52,20 @@ wrap_content
     android:textSize="24sp"
     android:text="Hello"/>
 
+https://plus.google.com/+AndroidDevelopers/posts/gQuBtnuk6iG
+
+<TextView
+    android:textAppearance="?android:textAppearanceSmall" />
+<TextView
+    android:textAppearance="?android:textAppearanceMedium" />
+<TextView
+    android:textAppearance="?android:textAppearanceLarge" />
 
 
 
+As of API 19 (KitKat):
+• ?android:textAppearanceSmall is currently 14sp
+• ?android:textAppearanceMedium is currently 18sp
+• ?android:textAppearanceLarge is currently 22sp
 
 
