@@ -1,5 +1,14 @@
 # View  
 
+https://developer.android.com/reference/android/view/View.html
+
+
+https://developer.android.com/reference/android/widget/TextView.html
+
+
+
+
+
 
 
 ## Android for All 术语表  
@@ -86,21 +95,21 @@ italic
 # Android 
 
 
+https://developer.android.com/studio/index.html
+
+
+https://developer.android.com/training/index.html
 
 
 
+https://developer.android.com/reference/packages.html
+
+https://developer.android.com/reference/android/text/package-summary.html
+
+https://developer.android.com/reference/android/view/package-summary.html
 
 
 
+https://developer.android.com/reference/android/view/View.html
 
-
-
-
-
-
-
-
-
-
-
-
+https://developer.android.com/reference/android/widget/TextView.html
