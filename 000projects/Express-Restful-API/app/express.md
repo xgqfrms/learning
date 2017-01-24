@@ -42,4 +42,3 @@ http://labs.udacity.com/android-visualizer/#/android/text-view
 
 
 
-

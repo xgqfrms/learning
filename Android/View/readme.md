@@ -53,6 +53,51 @@ https://developer.android.com/training/material/theme.html
     android:scaleType="centerCrop"/>
 
 
+图像视图
+□ 将高和宽更改为一个固定的 dp 值（如：100dp）
+□ 在 center 和 centerCrop 之间更改 scaleType
+□ 改成不同的图像（参见可用图像链接）
+
+
+
+查阅文档
+□ 在 Google 上搜索 “TextView android”
+□ 使用“查找”功能（Ctl + F 或 Cmd + F），在 Web 浏览器中搜索网页，寻找使文本视图文本加粗和转为斜体的 XML 属性
+□ 使用该 XML 属性！
+
+https://developer.android.com/reference/android/webkit/WebView.html
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textSize="24sp"
+    android:textStyle="blod"
+    android:text="Hello"
+    android:textAllCaps="false"/>
+
+android:textStyle="24sp"
+
+normal
+blod
+italic
+
+
+# Android 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

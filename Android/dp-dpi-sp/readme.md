@@ -69,3 +69,74 @@ As of API 19 (KitKat):
 • ?android:textAppearanceLarge is currently 22sp
 
 
+
+[1] http://developer.android.com/reference/android/R.attr.html
+[2] http://developer.android.com/design/style/typography.html 
+[3] https://plus.google.com/+AndroidDevelopers/posts/3rL9cTLyuQy
+[4] https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/themes.xml
+[5] https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/styles.xml﻿
+
+
+十六进制颜色（Hex color）
+
+https://material.io/guidelines/style/color.html#color-color-palette
+
+
+
+https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bzhp5Z4wHba3XzREV0lBeEZfWVE/Palette%20Perfect%20How%20Material%20Design%20Makes%20Color%20Easy.mp4
+
+
+
+
+<TextView
+    android:text="2017 Hapy New Year!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="12dp"
+    android:background="#0f0"
+    android:textColor="#f0f"
+    android:textSize="36sp"
+    />
+
+
+
+<!--android:background="@android:color/darker_gray"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+    android:text="2017 Hapy New Year!"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:layout_margin="20dp"
+    android:padding="12dp"
+    android:background="#0f0"
+    android:textColor="#f0f"
+    android:textSize="36sp"
+    />
+    <TextView
+    android:text="2017 Hapy New Year!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="12dp"
+    android:background="@android:color/darker_gray"
+    android:textColor="#ff0000"
+    android:textSize="36sp"
+    />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
