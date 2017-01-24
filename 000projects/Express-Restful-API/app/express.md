@@ -28,3 +28,18 @@ https://curl.haxx.se/download.html#Win64
 curl http://localhost:3000/
 
 
+https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-touch-target-size
+
+http://labs.udacity.com/android-visualizer/#/android/text-view
+
+
+
+
+
+
+
+
+
+
+
+
