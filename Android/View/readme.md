@@ -38,7 +38,7 @@ https://developer.android.com/training/material/theme.html
     android:text="Happy Birthday!"
     android:textSize="36sp"
     android:background="@android:color/darker_gray"
-    android:background="@android:icon/drawable/grass"
+    <!-- android:background="@android:icon/drawable/grass" -->
     android:layout_width="320dp"
     android:layout_height="480dp"
     android:layout_margin="20dp"/>
