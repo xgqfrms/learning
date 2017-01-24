@@ -66,10 +66,10 @@ https://github.com/udacity/Sunshine-Version-2
 https://developers.google.com/android/for-all/vocab-words/
 
 
-## Common Android Views 
+## Common Android Views Cheat Sheet
 
 https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
-
+http://cn-static.udacity.com/nd801/Common_Android_Views_Cheat_Sheet.pdf
 
 ## Creating Apps with Material Design
 

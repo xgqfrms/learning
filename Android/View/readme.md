@@ -6,9 +6,12 @@
 
 https://developers.google.com/android/for-all/vocab-words/
 
-## Common Android Views 
+## Common Android Views Cheat Sheet 
 
 https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
+
+http://cn-static.udacity.com/nd801/Common_Android_Views_Cheat_Sheet.pdf
+
 
 
 ## Creating Apps with Material Design
@@ -31,7 +34,14 @@ https://developer.android.com/training/material/theme.html
     android:textSize="24sp"
     android:text="Hello"/>
 
-
+<TextView
+    android:text="Happy Birthday!"
+    android:textSize="36sp"
+    android:background="@android:color/darker_gray"
+    android:background="@android:icon/drawable/grass"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:layout_margin="20dp"/>
 
 ## ImageView  
 
