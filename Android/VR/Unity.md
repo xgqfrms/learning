@@ -54,7 +54,7 @@ The VR Reading List
 
 Unity & VR
 
-
+https://classroom.udacity.com/nanodegrees/nd017/parts/d71c80eb-7687-41ba-8351-0561db1fe85b/modules/14690aa7-5124-4d37-a6e0-104c6e812a86/lessons/ef8941d8-7401-41db-bbae-bae7770a3247/concepts/1464c422-8508-464f-b2b1-eb78246094b4#
 
 
 

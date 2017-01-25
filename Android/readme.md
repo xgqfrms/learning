@@ -112,6 +112,25 @@ Open GL 版本
 
 
 
+textAlignment
+
+
+H:\AndroidStudioProjects\WeatherApp\app\src\main\res
+
+
+        android:textAlignment="center"
+
+
+???
+
+
+
+
+
+
+
+
+
 
 
 
