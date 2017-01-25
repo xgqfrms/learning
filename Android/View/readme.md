@@ -81,14 +81,14 @@ https://developer.android.com/reference/android/webkit/WebView.html
     android:layout_height="wrap_content"
     android:padding="8dp"
     android:textSize="24sp"
-    android:textStyle="blod"
+    android:textStyle="bold"
     android:text="Hello"
     android:textAllCaps="false"/>
 
 android:textStyle="24sp"
 
 normal
-blod
+bold
 italic
 
 
@@ -123,6 +123,13 @@ https://classroom.udacity.com/courses/ud837/lessons/4330701752/concepts/42372186
 父（Parent）
 子（Child）
 兄弟姐妹（Sibling）
+
+
+
+
+
+
+
 
 
 
