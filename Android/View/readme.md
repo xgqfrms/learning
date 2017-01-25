@@ -113,3 +113,20 @@ https://developer.android.com/reference/android/view/package-summary.html
 https://developer.android.com/reference/android/view/View.html
 
 https://developer.android.com/reference/android/widget/TextView.html
+
+
+
+https://classroom.udacity.com/courses/ud837/lessons/4330701752/concepts/42372186530923
+
+视图组（ViewGroups）
+根视图（Root View）
+父（Parent）
+子（Child）
+兄弟姐妹（Sibling）
+
+
+
+
+
+
+
