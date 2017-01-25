@@ -1,6 +1,12 @@
 # Android Debug 
 
 
+# android phone version 6.0+
+
+usb debug + files
+
+
+
 
 ## Android Emulator  debug
 
