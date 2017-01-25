@@ -86,6 +86,26 @@ https://developer.android.com/training/material/theme.html
 
 
 
+## android version distribution  
+
+https://developer.android.com/about/dashboards/index.html
+
+平台版本
+
+
+屏幕尺寸和密度
+
+ldpi    mdpi    tvdpi   hdpi    xhdpi   xxhdpi
+
+ldpi    mdpi    tvdpi   hdpi    xhdpi   xxhdpi  Total
+Small   1.8%                        1.8%
+Normal      3.8%    0.1%    40.0%   27.3%   15.5%   86.7%
+Large   0.2%    4.3%    2.1%    0.5%    0.5%        7.6%
+Xlarge      2.9%        0.3%    0.7%        3.9%
+Total   2.0%    11.0%   2.2%    40.8%   28.5%   15.5%
+
+
+Open GL 版本
 
 
 

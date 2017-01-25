@@ -8,6 +8,7 @@ usb debug + files
 
 
 
+
 ## Android Emulator  debug
 
 
@@ -17,12 +18,16 @@ https://developer.android.com/studio/run/emulator.html?utm_source=android-studio
 
 https://developer.android.com/studio/run/oem-usb.html
 
-
-
 https://developer.android.com/studio/run/win-usb.html
 
-
 http://consumer.huawei.com/en/support/index.htm
+
+
+https://classroom.udacity.com/courses/ud808/lessons/4216368924/concepts/42913536130923
+
+Troubleshooting 
+
+https://docs.google.com/document/d/1w1Xn_hnSAODAAtdRDp7haYPBtEwX_l7Htpf8Wpgbu6w/pub?embedded=true
 
 
 
