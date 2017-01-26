@@ -122,27 +122,50 @@ function tick() {
 setInterval(tick, 1000);
 
 
+## (多行JSX表达式)  
 
-return (
-      <blockquote>
-        <p>
-          The world is full of objects, more or less interesting; I do not wish to add any more.
-        </p>
-        <cite>
-          <a target="_blank"
-            href="http://bit.ly/1WGzM4G">
-            Douglas Huebler
-          </a>
-        </cite>
-      </blockquote>
-    );
 
+
+return <h1>Hello world</h1>;
 
 然而，多行JSX表达式应该总是包裹在括号中！
 
 
+return (
+    <blockquote>
+        <p>
+          The world is full of objects, more or less interesting; I do not wish to add any more.
+        </p>
+        <cite>
+            <a target="_blank" href="http://bit.ly/1WGzM4G">
+                Douglas Huebler
+            </a>
+        </cite>
+    </blockquote>
+);
 
+## JavaScript object
 
+var redPanda = {
+    src: 'http://bit.ly/1U92LL3',
+    alt: 'Red Panda',
+    width:  '200px
+};
+
+## 组件渲染前的简单计算
+
+渲染函数也可以是一个很好的地方，
+放置需要在组件渲染之前发生的简单计算。
+
+var Random = React.createClass({
+
+  // This should be in the render function:
+  var n = Math.floor(Math.random()*10+1);
+
+  render: function () {
+    return <h1>The number is {n}!</h1>;
+  }
+});
 
 
 
