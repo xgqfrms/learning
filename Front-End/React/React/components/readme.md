@@ -48,7 +48,9 @@ https://en.wikipedia.org/wiki/Naming_convention_(programming)#Java
 UpperCamelCase
 Uppercase nomenclature
 
-指令对象
+
+
+指令对象 instructions object
 
 React.createClass接受一个参数。该参数必须是JavaScript对象。此对象将充当一组指令，向您的组件类说明如何构建React组件。
 
@@ -105,14 +107,6 @@ https://facebook.github.io/react/downloads/single-file-example.html
 
 
 
-## wifi password
-
-https://www.microsoft.com/surface/en-us/support/networking-and-connectivity/how-to-find-your-wireless-network-password?os=windows-10&=undefined
-
-
-
-
-
 
 // electronic clock
 
@@ -126,3 +120,33 @@ function tick() {
 
 
 setInterval(tick, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
