@@ -14,8 +14,9 @@ python
 react
 
 
+jquery
 
-
+https://www.codecademy.com/blog/important-changes-to-codecademy-courses?utm_campaign=composer_course_replacement&utm_medium=int_butterbar_course_page&utm_source=codecademy_platform
 
 
 
