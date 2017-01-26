@@ -7,11 +7,25 @@
 <body>
     <div>
         <h1>指令对象</h1>
+        <div id="clock"></div>
     </div>
     <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/react/15.4.2/react.min.js"></script>
     <script src="https://cdn.xgqfrms.xyz/react/15.4.2/react-dom.min.js"></script>
-    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+    <!-- <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script> -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!-- https://facebook.github.io/react/downloads/single-file-example.html -->
     <script src="test.js" type="text/babel"></script>
+    <script>
+        function tick() {
+            const localTime = new Date().toLocaleTimeString();
+            console.log(`localTime = ${localTime}`);
+            let clock = document.getElementById("clock");
+            clock.innerHTML=`localTime = ${localTime}`;
+        }
+
+
+        setInterval(tick, 1000);
+    </script>
 </body>
 </html>

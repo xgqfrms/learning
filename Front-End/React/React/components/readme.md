@@ -60,4 +60,69 @@ ReactDOM.render(
     document.getElementById('example')
 );
 
+var componentBlueprint = {
+    render: function () {
+        return <h1>Hello world & instructions object </h1>;
+    }
+};
+var MyComponentClass = React.createClass(componentBlueprint);
 
+ReactDOM.render(
+    <MyComponentClass />,
+    document.getElementById('root')
+);
+
+
+
+
+
+http://codepen.io/xgqfrms/pen/LxzpoP
+
+
+https://facebook.github.io/react/tutorial/tutorial.html
+
+
+class
+
+
+export
+
+https://facebook.github.io/react/docs/installation.html
+
+
+http://github.com/facebookincubator/create-react-app
+
+
+
+<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+type="text/babel"
+
+https://facebook.github.io/react/downloads/single-file-example.html
+
+
+
+## wifi password
+
+https://www.microsoft.com/surface/en-us/support/networking-and-connectivity/how-to-find-your-wireless-network-password?os=windows-10&=undefined
+
+
+
+
+
+
+// electronic clock
+
+
+function tick() {
+    const localTime = new Date().toLocaleTimeString();
+    console.log(`localTime = ${localTime}`);
+    let clock = document.getElementById("clock");
+    clock.innerHTML=`localTime = ${localTime}`;
+}
+
+
+setInterval(tick, 1000);
