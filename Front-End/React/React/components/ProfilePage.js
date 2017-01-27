@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
+var NavBar = require('./NavBar.js');
 
 var ProfilePage = React.createClass({
   render: function () {
@@ -14,3 +14,4 @@ var ProfilePage = React.createClass({
     );
   }
 });
+ReactDOM.render(<ProfilePage />, document.getElementById('app'));
