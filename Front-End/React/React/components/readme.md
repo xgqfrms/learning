@@ -202,7 +202,15 @@ var IceCreamGuy = React.createClass({
 
 
 
+{} === 0/object
 
+[] === ""
+
+undefined === NaN/undefined
+
+??? function
+
+??? typeof 
 
 
 

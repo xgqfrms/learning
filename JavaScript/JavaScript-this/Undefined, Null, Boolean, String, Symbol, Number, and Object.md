@@ -1,4 +1,7 @@
-# Undefined, Null, Boolean, String, Symbol, Number, and Object
+# JavaScript Data Types
+
+
+## Undefined, Null, Boolean, String, Symbol, Number, and Object
 
 
 http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf

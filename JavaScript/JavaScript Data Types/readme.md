@@ -1,3 +1,60 @@
+# JavaScript Data Types  
+
+
+## Undefined, Null, Boolean, String, Symbol, Number, and Object
+
+
+http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+
+
+
+
+Undefined, Null, Boolean, String, Symbol, Number, and Object
+
+
+
+
+NaN:  
+number value that is an IEEE 754+2008 “Not a Number” value
+
+
+
+
+
+https://www.destroyallsoftware.com/talks/wat
+
+
+
+{} + []
+0
+[] + {}
+"[object Object]"
+[] + []
+""
+{} + {}
+"[object Object][object Object]"
+
+
+
+
+{} === 0/object
+
+[] === ""
+
+undefined === NaN/undefined
+
+??? function
+
+??? typeof 
+
+
+
+
+
+
+
+
+
 undefined + undefined
 NaN
 undefined + 0
@@ -25,24 +82,6 @@ Symbol + undefined
 
 
 
-let today = new Date;
-undefined
-today.toLocaleDateString();
-"2017/1/28"
-
-
-
-{} + []
-0
-[] + {}
-"[object Object]"
-[] + []
-""
-{} + {}
-"[object Object][object Object]"
-
-
-
 Symbol() + undefined
 VM717:1 Uncaught TypeError: Cannot convert a Symbol value to a number
     at <anonymous>:1:10
@@ -50,7 +89,6 @@ VM717:1 Uncaught TypeError: Cannot convert a Symbol value to a number
 undefined + Symbol()
 VM721:1 Uncaught TypeError: Cannot convert a Symbol value to a number
     at <anonymous>:1:11
-
 
 
 0 + ""
@@ -69,31 +107,18 @@ VM721:1 Uncaught TypeError: Cannot convert a Symbol value to a number
 
 
 
-/*
-
 + === plus 加/ concat 连续
 
 
 联系,联接 contact
 
 
-*/
 
 
-/*
 
 
-{} === 0/object
 
-[] === ""
 
-undefined === NaN/undefined
-
-??? function
-
-??? typeof 
-
-*/
 
 
 
