@@ -40,12 +40,23 @@ props是存储传入信息的对象的名称。 this.props指的是存储对象�
 props可以引用两条传入的信息，或者它可以引用存储这些信息的对象
 
 
+<h1 onClick={this.handleEvent}>
+    Hello world
+</h1>
 
 ## event handler
 
 
+<Button talk={this.talk} />
 
 
+π
 
+<button onClick={this.props.talk}>
+    Click me!
+</button>
+
+
+当你传递一个事件处理程序作为prop，就像你刚才做的，有两个名称，你必须选择
 
 
