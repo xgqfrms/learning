@@ -9,7 +9,7 @@ var App = React.createClass({
         <h1>
           Hullo and, "Welcome to The Newzz," "On Line!"
         </h1>
-        <Greeting name="xgqfrms" />
+        <Greeting name="xgqfrms" signedIn={true}/>
         <article>
           Latest newzz:  where is my phone?
         </article>
