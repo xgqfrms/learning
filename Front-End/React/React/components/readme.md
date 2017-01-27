@@ -158,13 +158,11 @@ var redPanda = {
 放置需要在组件渲染之前发生的简单计算。
 
 var Random = React.createClass({
-
-  // This should be in the render function:
-  var n = Math.floor(Math.random()*10+1);
-
-  render: function () {
-    return <h1>The number is {n}!</h1>;
-  }
+    // This should be in the render function:
+    var n = Math.floor(Math.random()*10+1);
+    render: function () {
+        return <h1>The number is {n}!</h1>;
+    }
 });
 
 
