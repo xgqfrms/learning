@@ -167,6 +167,56 @@ var Random = React.createClass({
 
 
 
+##  conditional statement  
+
+注意，if语句位于render函数内部，但在return语句之前。
+这几乎是你将看到在render函数中使用的if语句的唯一方法。
+
+var TonightsPlan = React.createClass({
+  render: function () {
+    var Plan;
+    if (fiftyFifty) {
+      Plan = "Tonight I'm going out WOOO"
+    } else {
+      Plan = "Tonight I'm going to bed WOOO"
+    }
+    return <h1>{Plan}</h1>;
+  }
+});
+
+
+
+## this
+
+this 指的是传递给React.createClass的 指令对象 instructions object。
+
+var IceCreamGuy = React.createClass({
+  food: 'ice cream',
+
+  render: function () {
+    return <h1>I like {this.food}.</h1>;
+  }
+});
+
+## this in JavaScript  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
