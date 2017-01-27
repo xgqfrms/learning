@@ -32,6 +32,9 @@ https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/Lecture-Slides/
 
 
 
+## Restaurant Site
+
+https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/uGlgn/lecture-59-fixing-mobile-nav-menu-automatic-collapse
 
 
 
