@@ -200,6 +200,16 @@ var IceCreamGuy = React.createClass({
 
 ## this in JavaScript  
 
+{a, b, c}
+
+var MyName = React.createClass({
+    // name property goes here:
+    name: 'whatever-your-name-is-goes-here',
+    render: function () {
+        return <h1>My name is {this.name}.</h1>;
+    }
+});
+
 
 
 {} === 0/object
@@ -218,22 +228,55 @@ undefined === NaN/undefined
 
 
 
+## event listener in a render function:
+
+
+
+React.createClass({
+  myFunc: function () {
+    alert('Stop it.  Stop hovering.');
+  },
+  render: function () {
+    return (
+      <div onHover={this.myFunc}>
+      </div>;
+    );
+  }
+});
+
+
+
+## omponents interacting  
+
+
+var OMG = React.createClass({
+  render: function () {
+    return <h1>Whooaa!</h1>;
+  }
+});
+
+var Crazy = React.createClass({
+  render: function () {
+    return <OMG />;
+  }
+});
+
+
+
+
+var NavBar = require('./NavBar.js');
+
+文件路径 ./
 
 
 
 
 
+## Module systems  
 
 
+http://eloquentjavascript.net/10_modules.html
 
-
-
-
-
-
-
-
-
-
+http://fredkschott.com/post/2014/06/require-and-the-module-system/
 
 
