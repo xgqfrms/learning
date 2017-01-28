@@ -93,6 +93,34 @@ self-closing tags
 
 
 
+## default message 
+
+
+getDefaultProps
+
+getDefaultProps函数应该返回一个对象：
+
+
+var Example = React.createClass({
+  getDefaultProps: function () {
+    // Return an object:
+    return { text: 'yo' };
+  },
+  render: function () {
+    return <h1>{this.props.text}</h1>;
+  }
+});
+
+在这个返回的对象内，写入您要设置的任何默认props的属性：
+
+
+
+
+
+
+
+
+
 
 
 
