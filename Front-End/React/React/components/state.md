@@ -1,13 +1,20 @@
 # this.state  
 
 
+## Components and Props
+
 https://facebook.github.io/react/docs/components-and-props.html
 
-Components and Props
+
+## The Component Lifecycle
+
+https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle
+
+
 
 https://facebook.github.io/react/docs/state-and-lifecycle.html
 
-State and Lifecycle
+## State and Lifecycle
 
 
 
@@ -40,20 +47,24 @@ React components will often need dynamic information in order to render. For exa
 props和state是你需要建立一个相互作用的React组件的生态系统。
 
 
+https://www.codecademy.com/courses/react-101/lessons/this-state/exercises/getinitialstate?action=lesson_resume&link_content_target=interstitial_lesson
+
+与props不同，组件的state不会从外部传递。组件决定自己的和state。
+
+getInitialState
 
 
-## The Component Lifecycle
+var Example = React.createClass({
+  getInitialState: function () {
+    return { mood: 'decent' };
+  },
 
-https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle
+  render: function () {
+    return <div></div>;
+  }
+});
 
-
-
-
-
-
-
-
-
+<Example />
 
 
 

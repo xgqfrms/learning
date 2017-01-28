@@ -73,11 +73,42 @@ state
 
 
 
+## React components lifecycle diagram  
+
+https://codepen.io/xgqfrms/pen/xgPjrN
+
+
+http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/
+
+
+https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/
+
+http://busypeoples.github.io/post/react-component-lifecycle/
+
+
+https://medium.com/react-ecosystem/react-components-lifecycle-ce09239010df#.mjbupgfxh
+
+https://medium.com/react-ecosystem/react-components-lifecycle-ce09239010df#.iaj2amt69
+
+https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm
 
 
 
+## react2
+
+https://react2.xgqfrms.xyz/docs/tutorial.html
+
+https://github.com/reactjs/react-tutorial
+
+https://react2.xgqfrms.xyz/docs/why-react.html
+
+https://react2.xgqfrms.xyz/docs/top-level-api.html
 
 
+
+ReactDOMServer
+
+服务器上渲染
 
 
 
