@@ -2,6 +2,16 @@
 
 
 
+https://facebook.github.io/react/docs/components-and-props.html
+
+## Components and Props
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html
+
+## State and Lifecycle
+
+
+
 https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/hello-world-component?action=lesson_resume
 
 

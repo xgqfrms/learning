@@ -42,7 +42,9 @@ props和state是你需要建立一个相互作用的React组件的生态系统�
 
 
 
+## The Component Lifecycle
 
+https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle
 
 
 
