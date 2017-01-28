@@ -127,15 +127,52 @@ this.setState接受一个对象，并将该对象与组件的当前状态合并�
 
 
 
+调用this.setState的最常见的方法是调用一个自定义函数，它包装一个this.setState调用。
+
+
+var Example = React.createClass({
+  getInitialState: function () {
+    return { weather: 'sunny' };
+  },
+
+  makeSomeFog: function () {
+    this.setState({
+      weather: 'foggy'
+    });
+  }
+});
+
+
+
+你不能从render函数里面调用this.setState！
+
+var green = '#39D1B4';
+
+getInitialState: function () {
+    return {
+      color: green 
+    };
+},
+
+不要把green放在引号中！green不应该是字符串，它应该是第4行声明的变量的引用
+
+style={{background: this.state.color}}
+
+确保包括双大括号！我们将在React.js第二部分简介中解释。
 
 
 
 
 
+任何时候你调用this.setState，一旦状态改变this.setState 就自动立即调用render。
 
 
+想想this.setState实际上是两件事：this.setState，紧接着是render。
 
+这就是为什么你不能从render函数里面调用this.setState！
 
+this.setState自动调用render。
+如果render调用this.setState，你将创建一个无限循环。
 
 
 
