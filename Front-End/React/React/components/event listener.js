@@ -10,4 +10,5 @@ var Button = React.createClass({
     return <button onClick={this.scream}>AAAAAH!</button>;
   }
 });
+
 ReactDOM.render(<Button />, document.getElementById('app'));

@@ -3,7 +3,10 @@ var ReactDOM = require('react-dom');
 var Greeting = require('./Greeting');
 
 var App = React.createClass({
-  render: function () {
+     getInitialState: function () {
+     return { title: 'Best App' }
+    },
+    render: function () {
     return (
       <div>
         <h1>
@@ -15,7 +18,7 @@ var App = React.createClass({
         </article>
       </div>
     );
-  }
+    }
 });
 
 ReactDOM.render(

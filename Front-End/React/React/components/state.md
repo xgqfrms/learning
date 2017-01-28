@@ -67,6 +67,73 @@ var Example = React.createClass({
 <Example />
 
 
+getInitialState: function () {
+    return { title: 'Best App' }
+},
+
+
+
+## read state
+
+this.state.???
+
+
+var TodayImFeeling = React.createClass({
+  getInitialState: function () {
+    return { mood: 'decent' };
+  },
+
+  render: function(){
+    return (
+      <h1>
+        I'm feeling {this.state.mood}!
+      </h1>
+    );
+  }
+});
+
+
+
+## set state
+
+this.setState
+
+this.setState有两个参数：一个将更新组件状态的对象和一个回调。
+你基本上不需要回调。
+
+``` 
+{
+    mood: 'great',
+    hungry: false
+}
+
++
+
+this.setState({ hungry: true });
+
+=
+
+{
+    mood: 'great',
+    hungry: true
+}
+
+``` 
+
+
+this.setState接受一个对象，并将该对象与组件的当前状态合并。
+
+如果当前状态中有属性不是该对象的一部分，那么这些属性保持不变。
+
+
+
+
+
+
+
+
+
+
 
 
 
