@@ -15,7 +15,7 @@ ReactJS为一些前端程序的最持久的问题提供了优雅的解决方案
 
 
 
-## 1Stateless Components Inherit From Stateful Components
+## 1 Stateless Components Inherit From Stateful Components
 
 Stateless Components Inherit From Stateful Components
 Child Components Update Their Parents' state
