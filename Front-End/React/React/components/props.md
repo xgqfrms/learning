@@ -1,6 +1,19 @@
 # component props  
 
 
+
+https://facebook.github.io/react/docs/components-and-props.html
+
+Components and Props
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html
+
+State and Lifecycle
+
+
+
+
+
 组件的props是一个对象。它保存有关该组件的信息。
 
 
@@ -115,6 +128,31 @@ var Example = React.createClass({
 
 
 
+props is quite possibly the longest and most difficult lesson in all of our React courses. Congratulations on getting this far!
+
+props 很可能是我们所有的React课程中最长和最困难的课程。恭喜你得到这么远！
+
+## props skills:
+
+Passing a prop by giving an attribute to a component instance
+
+Accessing a passed-in prop via this.props.prop-name
+
+Displaying a prop
+
+Using a prop to make decisions about what to display
+
+Defining an event handler in a component class
+
+Passing an event handler as a prop
+
+Receiving a prop event handler and attaching it to an event listener
+
+Naming event handlers and event handler attributes according to convention
+
+this.props.children
+
+getDefaultProps
 
 
 
