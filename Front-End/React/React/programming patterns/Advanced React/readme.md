@@ -95,11 +95,13 @@ var styles = {
 在React中，如果您将样式值写为数字，则假定单位“px”。
 
 
-{ fontSize: 30 }
+React数字 { fontSize: 30 }
 
 { fontSize: "2em" }
 
 使用字符串指定“px”仍然可以工作，虽然它是多余的。
+
+CSS/React 字符串 { fontSize: "30px" }
 
 几个特定的​​样式不会为你自动填充“px”。
 这些是你不太可能使用“px”的样式，所以你不必真正担心它。
@@ -108,6 +110,25 @@ https://facebook.github.io/react/docs/dom-elements.html
 
 
 https://react2.xgqfrms.xyz/tips/style-props-value-px.html
+
+如果你想为几个不同的组件重用样式怎么办？
+
+
+使样式可重用的一种方法是将它们保存在单独的JavaScript文件中。
+
+
+此文件应通过module.exports导出要重用的样式。然后你可以require你的样式到任何需要它们的组件。
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Container Components From Presentational Components
