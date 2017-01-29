@@ -66,6 +66,46 @@ Child Components Update Their Parents' state
 
 
 
+要使子组件更新其父组件的状态，第一步是您之前看到的：您必须在父组件上定义一个状态更改函数。
+
+
+
+<select id="great-names" onChange={this.props.onChange}>
+
+this.props.onChange
+
+此函数需要传递一个新名称作为参数，才能正常工作。
+
+
+changeName: function (newName) {
+  this.setState({
+    name: newName
+  });
+}
+
+当用户选择一个新的下拉项目时，它将调用changeName，但它不会传递正确的参数！
+而不是传递一个新的名称，它将传递一个事件对象，所有事件监听器都做。
+
+
+当在React中传递事件处理程序时，这是一个常见的问题！解决方案是定义另一个函数。
+
+
+
+这个新函数应该将事件对象作为参数，从该事件对象中提取所需的名称，然后调用事件处理程序，传递提取的名称！
+
+
+无状态组件更新他们父母的状态是一个React模式，你会看到越来越多。
+
+
+
+为了使changeName工作，this.setState中的“this”必须是Parent类的指令对象。
+
+您尝试设置<Parent />的状态，而不是某种其他类型的组件的状态。
+
+当函数被调用时，而不是当函数被定义时，this 的含义被确定。
+
+
+自动绑定允许您将函数作为prop传递，函数体中的任何this值将自动引用在定义函数时引用的任何值。没有约束的担心！
 
 
 
@@ -73,11 +113,7 @@ Child Components Update Their Parents' state
 
 
 
-
-
-
-
-
+Child Components Update Their Siblings' props
 
 
 
