@@ -108,9 +108,20 @@ changeName: function (newName) {
 自动绑定允许您将函数作为prop传递，函数体中的任何this值将自动引用在定义函数时引用的任何值。没有约束的担心！
 
 
+https://facebook.github.io/react/blog/2013/07/02/react-v0-4-autobind-by-default.html
 
 
+Autobind 
 
+
+http://bonsaiden.github.io/JavaScript-Garden/zh/
+https://bonsaiden.github.io/JavaScript-Garden/#function.this
+
+
+https://github.com/BonsaiDen/JavaScript-Garden/tree/master/doc/zh
+
+
+https://www.codecademy.com/en/courses/react-102/lessons/child-updates-sibling/exercises/child-updates-sibling-intro?action=lesson_resume&link_content_target=interstitial_lesson
 
 
 Child Components Update Their Siblings' props
