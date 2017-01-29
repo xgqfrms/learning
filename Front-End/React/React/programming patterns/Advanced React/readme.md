@@ -128,8 +128,7 @@ https://react2.xgqfrms.xyz/tips/style-props-value-px.html
 
 在本课中，您将学习第二种编程模式：将表现组件与显示组件分离。
 
-
-
+https://www.codecademy.com/en/courses/react-102/lessons/container-presentational-components/exercises/container-presentational-components-intro
 
 
 
