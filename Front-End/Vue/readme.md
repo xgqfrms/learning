@@ -1,5 +1,9 @@
 # Vue  
 
+
+https://cn.vuejs.org/v2/guide/
+
+
 https://vuejs.org/  
 https://github.com/vuejs/vue  
 https://github.com/vuejs/vuex  

@@ -93,4 +93,11 @@ https://angular.io/docs/ts/latest/guide/dependency-injection.html
 
 
 
+angular2
+
+https://github.com/xgqfrms/Angular2/
+
+https://angular2.xgqfrms.xyz/
+
+http://angular2.xgqfrms.xyz/
 
