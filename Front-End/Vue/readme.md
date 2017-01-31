@@ -39,3 +39,16 @@ http://www.ctolib.com/docs-vue-js-c-index.html
 
 http://www.ctolib.com/  
 
+
+
+
+v-text === {{ slow bugs }}
+
+v-show === display: none; ? visibility: visible;
+v-if === create/clone/remove
+
+http://dapengtalk.blog.51cto.com/11549574/1873289
+https://vuejs.org/v2/guide/conditional.html
+https://github.com/vuejs/Discussion/issues/122
+https://vuejs.org/v2/guide/conditional.html
+http://www.imooc.com/video/14039
