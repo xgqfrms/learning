@@ -1,48 +1,3 @@
-# CSS counter-increment  
-
-https://www.w3.org/TR/CSS21/generate.html#counters
-
-https://www.w3.org/TR/CSS2/generate.html
-
-
-https://www.w3.org/wiki/CSS/Properties/counter-increment
-
-http://caniuse.com/#search=counter-increment
-
-
-
-http://www.w3schools.com/cssref/pr_gen_counter-increment.asp
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
-
-https://css-tricks.com/almanac/properties/c/counter-increment/
-
-
-http://reference.sitepoint.com/css/counter-increment
-
-
-
-## demo 
-
-CSS counter-increment
-
-http://2016.js13kgames.com/#winners
-
-http://2016.js13kgames.com/style.css?v=2016v2
-
-
-counter-increment: rule;
-// (0,1,2, ...)
-content: counter(rule); 
-// (0)
-
-http://js13kgames.com/style.css?v=2016v2
-http://js13kgames.com/
-
-
-
 .winner h3:before {
     counter-increment: rule;
     content: counter(rule);
@@ -58,8 +13,6 @@ http://js13kgames.com/
     text-shadow: 0px 1px 0px #eb6e76;
     margin-bottom: 5px;
 }
-
-
 
 #rules {
     counter-reset: rule;
@@ -90,25 +43,3 @@ http://js13kgames.com/
     text-shadow: 0px 1px 0px #eb6e76;
     margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

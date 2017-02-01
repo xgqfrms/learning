@@ -18,6 +18,10 @@ https://classroom.udacity.com/courses/cs255/lessons/66584787/concepts/6651682309
 
 
 
+http://enclavegames.com/games.html
+
+http://dev.end3r.com/2016/08/js13kgames-2016-has-started/
+
 
 
 
