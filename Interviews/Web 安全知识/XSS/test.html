@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="xss">
+        <img src="https://cdn.xgqfrms.xyz/logo/logo.png" alt="logo.png">
+    </div>
+    <script>
+        // <img src=0 onerror=alert(5); />
+        // element.style.backgroundImage = "url('https://cdn.xgqfrms.xyz/logo/logo.png')";
+        // http://www.w3schools.com/jsref/prop_style_backgroundimage.asp
+        element = document.querySelector('img');
+        console.log(element.src);
+        element.src = 0;
+        console.log(element.src);
+        let XSS = () => {
+            setTimeout(function(){
+                alert("XSS test OK!");
+            }, 1000);
+        }
+        if(!element.src === false){
+            XSS();
+        }
+    </script>
+</body>
+</html>
