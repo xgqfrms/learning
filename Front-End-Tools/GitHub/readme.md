@@ -37,3 +37,8 @@ http://bestof.js.org/
 Find the best components to build amazing web applications!
 
 找到最好的组件来构建惊人的Web应用程序！
+
+A place to find the best components to build amazing web applications. The best of JavaScript!
+
+http://bestof.js.org/
+https://github.com/michaelrambeau/bestofjs-webui

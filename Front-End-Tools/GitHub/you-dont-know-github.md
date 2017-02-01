@@ -22,13 +22,20 @@ Add topics to categorize your repository and make it more discoverable.
 
 ## Chrome tools for GitHub
 
+https://github.com/buunguyen/octotree 
+
+Code tree for GitHub and GitLab
+
+GitHub和GitLab的代码树
+
+https://github.com/jasonlong/isometric-contributions
+
+Browser extension for rendering an isometric pixel art version of your GitHub contribution graph.
+
+用于渲染GitHub贡献图的等距像素艺术版本的浏览器扩展。
 
 
 
 
-
-
-
-
-
+ThoughtWorks
 

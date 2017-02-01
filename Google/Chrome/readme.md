@@ -44,6 +44,13 @@ https://chrome.google.com/webstore/
 
 
 
+## chrome-devtools
+
+https://gist.github.com/xgqfrms-GitHub/ed9a5ca1b740812bfa3dba45ef4f3ea9
+
+https://www.youtube.com/watch?v=AUZagMLMAJc
+
+
 
 
 ## color-stripe (google color banner)  
