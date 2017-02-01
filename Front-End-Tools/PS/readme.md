@@ -92,3 +92,88 @@ http://www.imooc.com/course/list?c=photoshop
 # flex  
 
 
+view > rule
+
+Ctrl+R
+
+http://oeasy.org/
+
+
+http://www.bilibili.com/video/av2275206/
+
+[oeasy]教你玩转ps视频教程-photoshop-全集
+
+2015-05-01 12:41
+
+digital-tutors
+
+Pluralsight
+
+https://www.codeschool.com/
+
+https://www.youtube.com/user/DigitalTutors
+
+http://www.digitaltutors.com
+
+http://www.digitaltutors.com/11/index.php
+
+
+
+http://caniuse.com/#search=dataset
+
+dataset & data-* attributes
+
+http://caniuse.com/#search=classlist
+
+classList, DOMTokenList
+
+http://caniuse.com/#search=css%203d
+
+CSS3 3D Transforms
+
+http://caniuse.com/#search=css%20transition
+
+CSS3 Transitions
+
+
+
+
+
+http://2016.js13kgames.com/#rules
+
+http://js13kgames.com/entries/glitch-buster
+
+
+css
+
+counter-increment: rule;
+// (0,1,2, ...)
+content: counter(rule); 
+// (0)
+
+http://js13kgames.com/style.css?v=2016v2
+http://js13kgames.com/
+
+
+http://enclavegames.com/games.html
+
+http://dev.end3r.com/2016/08/js13kgames-2016-has-started/
+
+.winner h3:before {
+    counter-increment: rule;
+    content: counter(rule);
+    background: url(/img/trophy.png) no-repeat;
+    display: inline-block;
+    width: 85px;
+    height: 80px;
+    line-height: 44px;
+    font-size: 28px;
+    text-align: center;
+    padding-right: 15px;
+    margin-left: 10px;
+    text-shadow: 0px 1px 0px #eb6e76;
+    margin-bottom: 5px;
+}
+
+
+
