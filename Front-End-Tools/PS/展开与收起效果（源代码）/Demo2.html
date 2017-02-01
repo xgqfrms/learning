@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>自动展开</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0 auto;
+            padding: 0;
+        }
+        a:focus
+        {
+            outline: none;
+        }
+        
+        #pn
+        {
+            background: #e8e8e8;
+            height: 60px;
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+            padding: 5px;
+            font-size: 9pt;
+            height: auto;
+            text-align: center;
+        }
+        .slide
+        {
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            border-top: solid 4px gray;
+            margin: 0 auto;
+        }
+        .btn-slide
+        {
+            background: gray;
+            text-align: center;
+            width: 590px;
+            height: 30px;
+            padding: 10px 10px 0 0;
+            margin: 0 auto;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript">
+        var time = 300;
+        var h = 0;
+        function addCount() {
+            if (time > 0) {
+                time--;
+                h = h + 5;
+            }
+            else {
+                return;
+            }
+            if (h >= 300)  //高度 
+            {
+                return;
+            }
+            else {
+
+                document.getElementById("pn").style.height = h + "px";
+            }
+            setTimeout("addCount()", 30);
+        }
+        window.onload = function showAds() {
+            addCount();
+            setTimeout("noneAds()", 5000); //停留时间自己调了 
+        }
+        var T = 300;
+        var N = 300; //高度 
+        function noneAds() {
+            if (T > 0) {
+                T--;
+                N = N - 5;
+            }
+            else {
+                return;
+            }
+            if (N <= 0) {
+                document.getElementById("pn").style.display = "none";
+                //document.getElementById("pn").style.height = "30px";
+                return;
+            }
+            else {
+                document.getElementById("pn").style.height = N + "px";
+            }
+            setTimeout("noneAds()", 30);
+        } 
+    </script>
+</head>
+<body>
+    <div>
+        <div id="pn">
+            <h1>
+                欢迎来到慕课网</h1>
+        </div>
+        <p class="slide">
+            <a href="javascript:showdiv();" id="strHref" class="btn-slide">慕课网欢迎你</a></p>
+    </div>
+</body>
+</html>
