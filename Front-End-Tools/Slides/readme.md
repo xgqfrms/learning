@@ -19,11 +19,13 @@ http://slides.com/kentcdodds/react-ava#/
 
 
 
-
+## slideonline
 
 http://slideonline.com/xgqfrms
 
 
+
+## slideshare
 
 http://www.slideshare.net/
 

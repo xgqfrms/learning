@@ -73,9 +73,6 @@ http://slides.com/kentcdodds/react-ava#/
 
 
 
-
-
-
 https://preactjs.com/
 
 https://github.com/developit/preact/
@@ -88,28 +85,6 @@ https://preactjs.com/repl
 
 
 
-https://developer.github.com/v3/search/#search-repositories
-
-reactjs
-
-https://api.github.com/search/repositories/
-
-https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc
-
-https://api.github.com/search/repositories?q=reactjs+language:javascript&sort=stars&order=desc
-
-
-
-https://api.github.com/search/repositories?q=user:xgqfrms&angular+language:javascript&sort=stars
-
-
-https://api.github.com/search/repositories?q=user%3Axgqfrms&angular+language:javascript&sort=stars
-
-https://github.com/search?q=user%3Agithub&type=Repositories
-
-
-
-https://api.github.com/search/repositories?q=user:xgqfrms+language:javascript&sort=stars
 
 
 
