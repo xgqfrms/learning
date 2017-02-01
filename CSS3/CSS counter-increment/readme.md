@@ -110,5 +110,19 @@ http://js13kgames.com/
 
 
 
+http://caniuse.com/#search=dataset
 
+dataset & data-* attributes
+
+http://caniuse.com/#search=classlist
+
+classList, DOMTokenList
+
+http://caniuse.com/#search=css%203d
+
+CSS3 3D Transforms
+
+http://caniuse.com/#search=css%20transition
+
+CSS3 Transitions
 

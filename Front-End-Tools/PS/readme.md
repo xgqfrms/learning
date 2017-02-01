@@ -2,59 +2,7 @@
 
 
 
-+# CSS深入理解  
 
-
-
-http://www.imooc.com/learn/755
-
-CSS深入理解之border
-
-
-
-http://www.imooc.com/learn/710
-
-CSS深入理解之padding
-
-
-http://www.imooc.com/learn/680
-
-
-CSS深入理解之margin
-
-
-
-http://www.imooc.com/learn/542
-
-CSS深入理解之vertical-align
-
-
-
-http://www.imooc.com/learn/565
-
-
-CSS深入理解之relative
-
-
-
-http://www.imooc.com/learn/403
-
-CSS深入理解之line-height
-
-
-http://www.imooc.com/learn/256
-
-CSS深入理解之overflow
-
-
-http://www.imooc.com/learn/192
-
-CSS深入理解之absolute
-
-
-http://www.imooc.com/learn/121
-
-CSS深入理解之float浮动
 
 CSS3/float & position/PSD.md
 
@@ -119,23 +67,6 @@ http://www.digitaltutors.com/11/index.php
 
 
 
-http://caniuse.com/#search=dataset
-
-dataset & data-* attributes
-
-http://caniuse.com/#search=classlist
-
-classList, DOMTokenList
-
-http://caniuse.com/#search=css%203d
-
-CSS3 3D Transforms
-
-http://caniuse.com/#search=css%20transition
-
-CSS3 Transitions
-
-
 
 
 
@@ -171,6 +102,10 @@ content: counter(rule);
 
 http://js13kgames.com/style.css?v=2016v2
 http://js13kgames.com/
+
+
+
+
 
 
 http://enclavegames.com/games.html
