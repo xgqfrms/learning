@@ -144,7 +144,25 @@ http://2016.js13kgames.com/#rules
 http://js13kgames.com/entries/glitch-buster
 
 
-css
+## CSS counter-increment
+
+http://www.w3schools.com/cssref/pr_gen_counter-increment.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+
+https://css-tricks.com/almanac/properties/c/counter-increment/
+
+https://www.w3.org/wiki/CSS/Properties/counter-increment
+
+http://reference.sitepoint.com/css/counter-increment
+
+http://caniuse.com/#search=counter-increment
+
+https://www.w3.org/TR/CSS21/generate.html#counters
+
+
 
 counter-increment: rule;
 // (0,1,2, ...)
@@ -174,6 +192,23 @@ http://dev.end3r.com/2016/08/js13kgames-2016-has-started/
     text-shadow: 0px 1px 0px #eb6e76;
     margin-bottom: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
