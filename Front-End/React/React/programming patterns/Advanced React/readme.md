@@ -153,5 +153,20 @@ https://www.codecademy.com/en/courses/react-102/lessons/container-presentational
 
 
 
+http://bestof.js.org/
+
+The Best of JavaScript and the web platform
+
+https://github.com/michaelrambeau/bestofjs-webui
+
+
+https://github.com/zeit/next.js
+https://zeit.co/blog/next
+
+Framework for server-rendered React apps
+
+
+
+
 
 

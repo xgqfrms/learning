@@ -63,3 +63,26 @@ https://materliu.github.io/gallery-by-react/
 
 https://cn.vuejs.org/v2/guide/
 
+
+
+## create-react-app
+
+
+https://github.com/facebookincubator/create-react-app
+
+
+
+$ npm install -g create-react-app
+
+
+
+
+https://github.com/zeit/next.js
+https://zeit.co/blog/next
+
+Framework for server-rendered React apps
+
+
+
+
+
