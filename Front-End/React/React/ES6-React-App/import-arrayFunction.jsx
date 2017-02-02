@@ -12,12 +12,11 @@ const App = () => {
         </p>
     );
 }
-
-const containerNode = document.getElementById('container');
+const rootNode = document.getElementById('app');
 
 ReactDOM.render(
     <App />, 
-    containerNode
+    rootNode
 );
 
 // <App name="React ❤ ES6" /> !== class/object  (name: "React ❤ ES6",)  
