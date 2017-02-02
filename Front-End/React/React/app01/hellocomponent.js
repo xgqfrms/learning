@@ -40,11 +40,7 @@ ReactDOM.render(
 
 /*
 
-# babel-standalone & type="text/babel" 
-
-https://cdn.xgqfrms.xyz/babel/babel.min.js
-
-## babel-react-jsx-to-js
+ 
 
     null,
     React.createElement(
@@ -54,9 +50,33 @@ https://cdn.xgqfrms.xyz/babel/babel.min.js
         this.props.name
     )
 
-null ? props : state
+this.props.name ? props 
 
-null ? attributes 
+null ? attributes object : null 
+
+
+// Input (JSX):
+var app = <Nav color="blue" />;
+
+
+// Output (JS):
+var app = React.createElement(Nav, {color:"blue"});
+
+// Input (JSX):
+var app = <h1 color="blue"> H1 <h1/>;
+
+
+// Output (JS):
+var app = React.createElement(
+    "h1", 
+    {color:"blue"},
+    " H1 "
+);
+
+???  https://babeljs.io/repl/ 
+
+null ? attributes object : null 
+
 
 */
 
