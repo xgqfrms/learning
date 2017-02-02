@@ -6,6 +6,13 @@ parent component & root DOM
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import Profile from './child-profile';
+// import LikeButton from './like-unlike'
+
+
+// import LikeButton from './like-unlike.js';
+
+var LikeButton = require('./like-unlike.js');
+//var LikeButton = require('./like-unlike');
 
 // <Profile avatar="https://cdn.xgqfrms.xyz/logo/favicon.png" name="React JSX ES6 webpack" />
 
@@ -21,6 +28,7 @@ const App = () => {
             <span>
                 <mark>Profile</mark> ❤ placeholder!
             </span>
+            <LikeButton />
         </div>
     );
 }
