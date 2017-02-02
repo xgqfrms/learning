@@ -17,6 +17,11 @@ https://cdn.xgqfrms.xyz/babel/babel.min.js
 
 
 
+*******************************************************************************
+
+
+## ES6 module
+
 ??? 
 
 // import Profile from './child-profile';
@@ -24,7 +29,7 @@ https://cdn.xgqfrms.xyz/babel/babel.min.js
 
 how to import another child.js file into the main.js file ???
 
-ES6 module
+
 
 <!-- 
 import Profile from './child-profile';
@@ -33,6 +38,9 @@ import Profile from './child-profile';
  -->
 
 
+*******************************************************************************
+
+# OOP vs OPP
 
 ## class ??? extends React.Component  
 
@@ -72,6 +80,7 @@ var App = React.createClass({
 
 
 
+*******************************************************************************
 
 
 

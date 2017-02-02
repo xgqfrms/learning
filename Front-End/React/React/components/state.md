@@ -55,13 +55,13 @@ getInitialState
 
 
 var Example = React.createClass({
-  getInitialState: function () {
-    return { mood: 'decent' };
-  },
+    getInitialState: function () {
+        return { mood: 'decent' };
+    },
 
-  render: function () {
-    return <div></div>;
-  }
+    render: function () {
+        return <div></div>;
+    }
 });
 
 <Example />
@@ -79,17 +79,17 @@ this.state.???
 
 
 var TodayImFeeling = React.createClass({
-  getInitialState: function () {
-    return { mood: 'decent' };
-  },
+    getInitialState: function () {
+        return { mood: 'decent' };
+    },
 
-  render: function(){
-    return (
-      <h1>
-        I'm feeling {this.state.mood}!
-      </h1>
-    );
-  }
+    render: function(){
+        return (
+            <h1>
+                I'm feeling {this.state.mood}!
+            </h1>
+        );
+    }
 });
 
 
@@ -131,15 +131,15 @@ this.setState接受一个对象，并将该对象与组件的当前状态合并�
 
 
 var Example = React.createClass({
-  getInitialState: function () {
-    return { weather: 'sunny' };
-  },
+    getInitialState: function () {
+        return { weather: 'sunny' };
+    },
 
-  makeSomeFog: function () {
-    this.setState({
-      weather: 'foggy'
-    });
-  }
+    makeSomeFog: function () {
+        this.setState({
+            weather: 'foggy'
+        });
+    }
 });
 
 
@@ -150,7 +150,7 @@ var green = '#39D1B4';
 
 getInitialState: function () {
     return {
-      color: green 
+        color: green 
     };
 },
 

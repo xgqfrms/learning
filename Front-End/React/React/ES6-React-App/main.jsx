@@ -7,14 +7,20 @@ parent component & root DOM
 // import ReactDOM from 'react-dom';
 // import Profile from './child-profile';
 
+// <Profile avatar="https://cdn.xgqfrms.xyz/logo/favicon.png" name="React JSX ES6 webpack" />
+
 const App = () => {
     let name = "React ❤ ES6";
     return (
         <div>
             <p>
-                Hello <mark>{name}</mark>!
+                <h1>
+                    Hello <mark>{name}</mark>!
+                </h1>
             </p>
-            // <Profile avatar="https://cdn.xgqfrms.xyz/logo/favicon.png" name="React JSX ES6 webpack" />
+            <span>
+                <mark>Profile</mark> ❤ placeholder!
+            </span>
         </div>
     );
 }
