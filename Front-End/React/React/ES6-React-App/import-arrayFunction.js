@@ -1,9 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
+
+// variable & function  
 
 const App = () => {
-    return (<p>Hello World!</p>);
+    let name = "React ❤ ES6";
+    return (
+        <p>
+            Hello <mark>{name}</mark>!
+        </p>
+    );
 }
 
-const exampleNode = document.getElementById('example');
-ReactDOM.render(<App />, exampleNode);
+const containerNode = document.getElementById('container');
+
+ReactDOM.render(
+    <App />, 
+    containerNode
+);
+
+// <App name="React ❤ ES6" /> !== class/object  (name: "React ❤ ES6",)  
+// <App /> === function/var  (let name = "React ❤ ES6";)  
+
+/*
+// class & props  
+
+class HelloMessage extends React.Component {
+    render() {
+        return(
+            <div>
+                <h1>
+                    Hello <mark>{this.props.name}</mark>
+                </h1>
+                <h2> Age : {this.props.age}</h2>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <HelloMessage name="xgqfrms-2017(react-jsx)" age="23" />, 
+    document.getElementById('container')
+);
+*/

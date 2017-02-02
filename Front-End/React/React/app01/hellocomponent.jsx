@@ -1,5 +1,5 @@
 // npm import/require 
-// html script src
+// html5 script src
 class HelloMessage extends React.Component {
     render() {
         return(
@@ -46,8 +46,18 @@ class HelloMessage extends React.Component {
 }
 
 ReactDOM.render(
-    React.createElement(HelloMessage, { name: "xgqfrms" }),
+    React.createElement(HelloMessage, { name: "xgqfrms-2017(react-jsx)" , age: "23"}),
     document.getElementById('container')
 );
+
+*/
+
+/*
+
+React.createElement(HelloMessage, { name: "xgqfrms-2017(react-jsx)" , age: "23"}),
+
+???
+
+React.createElement(HelloMessage, { name: "xgqfrms-2017(react-jsx)" , age: 23}),
 
 */
