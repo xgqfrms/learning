@@ -33,7 +33,7 @@ class HelloMessage extends React.Component {
     }
 }
 ReactDOM.render(
-    React.createElement(HelloMessage, { name: "xgqfrms-2017" }),
+    React.createElement(HelloMessage, { name: "xgqfrms-2017(react-js)" }),
     document.getElementById('container')
 );
 
