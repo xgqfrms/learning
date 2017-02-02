@@ -2,20 +2,20 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var Button = React.createClass({
-  getDefaultProps: function () {
-    // Return an object:
-    return { text: 'I am a button' };
-  },
-  render: function () {
-    return (
-      <button>
-        {this.props.text}
-      </button>
-    );
-  }
+    getDefaultProps: function () {
+        // Return an object:
+        return { text: 'I am a button' };
+    },
+    render: function () {
+        return (
+            <button>
+                {this.props.text}
+            </button>
+        );
+    }
 });
 
 ReactDOM.render(
-  <Button text=""/>, 
-  document.getElementById('app')
+    <Button text=""/>, 
+    document.getElementById('app')
 );

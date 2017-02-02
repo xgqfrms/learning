@@ -34,4 +34,50 @@ import Profile from './child-profile';
 
 
 
+## class ??? extends React.Component  
+
+class HelloMessage extends React.Component {
+    render() {
+        return(
+            <div>
+                <h1>
+                    Hello <mark>{this.props.name}</mark>
+                </h1>
+                <h2> Age : {this.props.age}</h2>
+            </div>
+        );
+    }
+}
+
+## ??? = React.createClass  
+
+var App = React.createClass({
+    getInitialState: function () {
+        return { title: 'Best App' }
+    },
+    render: function () {
+        return (
+            <div>
+                <h1>
+                    Hullo and, "Welcome to The Newzz," "On Line!"
+                </h1>
+                <Greeting name="xgqfrms" signedIn={true}/>
+                <article>
+                    Latest newzz:  where is my phone?
+                </article>
+            </div>
+        );
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 

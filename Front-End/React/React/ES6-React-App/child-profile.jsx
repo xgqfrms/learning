@@ -28,3 +28,56 @@ class Profile extends React.Component {
 }
 
 */
+
+/*
+
+// props  
+
+{this.props}
+
+getDefaultProps: function () {
+    // Return an object:
+    return { text: 'yo' };
+},
+
+
+// state 
+
+getInitialState: function () {
+    return { title: 'Best App' }
+},
+
+*/
+
+
+/*
+
+// object
+
+var redPanda = {
+    src: 'http://bit.ly/1U92LL3',
+    alt: 'Red Panda',
+    width:  '200px'
+};
+
+// auto complete px  
+// width:  '200px' === width:  '200'
+
+var RedPanda = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <h1>Cute Red Panda</h1>
+                <img 
+                    src={redPanda.src} 
+                    alt={redPanda.alt} 
+                    width={redPanda.width} 
+                />
+            </div>
+        );
+    }
+});
+
+
+
+*/

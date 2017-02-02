@@ -201,11 +201,10 @@ var TonightsPlan = React.createClass({
 this 指的是传递给React.createClass的 指令对象 instructions object。
 
 var IceCreamGuy = React.createClass({
-  food: 'ice cream',
-
-  render: function () {
-    return <h1>I like {this.food}.</h1>;
-  }
+    food: 'ice cream',
+    render: function () {
+        return <h1>I like {this.food}.</h1>;
+    }
 });
 
 ## this in JavaScript  
@@ -243,15 +242,15 @@ undefined === NaN/undefined
 
 
 React.createClass({
-  myFunc: function () {
-    alert('Stop it.  Stop hovering.');
-  },
-  render: function () {
-    return (
-      <div onHover={this.myFunc}>
-      </div>;
-    );
-  }
+    myFunc: function () {
+        alert('Stop it.  Stop hovering.');
+    },
+    render: function () {
+        return (
+            <div onHover={this.myFunc}>
+            </div>;
+        );
+    }
 });
 
 
@@ -282,7 +281,6 @@ var NavBar = require('./NavBar.js');
 module.exports
 
 https://www.sitepoint.com/understanding-module-exports-exports-node-js/
-
 
 
 
