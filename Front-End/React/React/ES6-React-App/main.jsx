@@ -6,12 +6,10 @@ parent component & root DOM
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import Profile from './child-profile';
+
+// npm error : Uncaught ReferenceError: require is not defined
+
 // import LikeButton from './like-unlike'
-
-
-// import LikeButton from './like-unlike.js';
-
-var LikeButton = require('./like-unlike.js');
 //var LikeButton = require('./like-unlike');
 
 // <Profile avatar="https://cdn.xgqfrms.xyz/logo/favicon.png" name="React JSX ES6 webpack" />
