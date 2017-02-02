@@ -1,6 +1,5 @@
-/*
+// JSX & babel
 
-// JSX & babel  
 class HelloMessage extends React.Component {
     render() {
         return(
@@ -10,14 +9,15 @@ class HelloMessage extends React.Component {
         );
     }
 }
+
 ReactDOM.render(
     <HelloMessage name="xgqfrms" />, 
     document.getElementById('container')
 );
 
-*/
 
-// JS  
+// JS
+
 class HelloMessage extends React.Component {
     render() {
         return React.createElement(
@@ -32,8 +32,9 @@ class HelloMessage extends React.Component {
         );
     }
 }
+
 ReactDOM.render(
-    React.createElement(HelloMessage, { name: "xgqfrms-2017" }),
+    React.createElement(HelloMessage, { name: "xgqfrms" }),
     document.getElementById('container')
 );
 
@@ -44,20 +45,5 @@ ReactDOM.render(
 
 https://cdn.xgqfrms.xyz/babel/babel.min.js
 
-## babel-react-jsx-to-js
-
-    null,
-    React.createElement(
-        "h1",
-        null,
-        "Hello ",
-        this.props.name
-    )
-
-null ? props : state
-
-null ? attributes 
 
 */
-
-

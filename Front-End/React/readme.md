@@ -83,6 +83,18 @@ https://zeit.co/blog/next
 Framework for server-rendered React apps
 
 
+*******************************************************************************
 
+# React JSX to JS (Babel)
 
+## babel-standalone
 
+/*
+
+# babel-standalone & type="text/babel" 
+
+https://cdn.xgqfrms.xyz/babel/babel.min.js
+
+*/
+
+*******************************************************************************

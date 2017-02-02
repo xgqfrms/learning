@@ -84,10 +84,14 @@ ReactDOM.render(
 class HelloMessage extends React.Component {
     render() {
         return React.createElement(
-            "h1",
+            "div",
             null,
-            "Hello ",
-            this.props.name
+            React.createElement(
+                "h1",
+                null,
+                "Hello ",
+                this.props.name
+            )
         );
     }
 }
