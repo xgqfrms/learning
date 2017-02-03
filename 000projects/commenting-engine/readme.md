@@ -533,6 +533,30 @@ Each JSX element is just syntactic sugar for calling
 React.createElement(component, props, ...children) 
 
 
+class Hello extends React.Component {
+    render() {
+        return <div>Hello {this.props.toWhat}</div>;
+    }
+}
+
+ReactDOM.render(
+    <Hello toWhat="World" />,
+    document.getElementById('root')
+);
+
+// can be compiled to this code that does not use JSX:
+
+class Hello extends React.Component {
+    render() {
+        return React.createElement('div', null, `Hello ${this.props.toWhat}`);
+    }
+}
+
+ReactDOM.render(
+    React.createElement(Hello, {toWhat: 'World'}, null),
+    document.getElementById('root')
+);
+
 
 *******************************************************************************
 https://facebook.github.io/react/docs/react-without-es6.html
