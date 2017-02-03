@@ -582,7 +582,9 @@ https://facebook.github.io/react/docs/react-without-es6.html
 
 Normally you would define a React component as a plain JavaScript class:
 
-// plain JavaScript class
+The API of ES6 classes is similar to React.createClass with a few exceptions.
+
+// ES6 plain JavaScript class
 
 class Greeting extends React.Component {
     render() {
@@ -593,13 +595,13 @@ class Greeting extends React.Component {
 
 If you don't use ES6 yet, you may use the React.createClass helper instead:
 
-// 
+// React.createClass (React helper)
 
 
 var Greeting = React.createClass({
-  render: function() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
+    render: function() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
 });
 
 
