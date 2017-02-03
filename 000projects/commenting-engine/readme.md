@@ -578,6 +578,12 @@ ReactDOM.render(
 *******************************************************************************
 https://facebook.github.io/react/docs/react-without-es6.html
 
+
+http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
+
+
+
+
 # React Without ES6  
 
 Normally you would define a React component as a plain JavaScript class:
@@ -667,6 +673,10 @@ var Counter = React.createClass({
 
 // ES6 (.bind(this))
 
+http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
+
+
+
 constructor(props) {
     super(props);
     this.state = {message: 'Hello!'};
@@ -739,16 +749,62 @@ http://react2.xgqfrms.xyz/docs/forms.html
 *******************************************************************************
 http://react2.xgqfrms.xyz/docs/interactivity-and-dynamic-uis.html
 
+http://react2.xgqfrms.xyz/docs/displaying-data.html
 
-动态交互式用户界面
 
+# 动态交互式用户界面
+
+var LikeButton = React.createClass({
+    getInitialState: function() {
+        return { liked: false };
+    },
+    handleClick: function(event) {
+        this.setState({ liked: !this.state.liked });
+    },
+    render: function() {
+        var text = this.state.liked ? 'liked' : 'haven\'t liked';
+        return ( <p onClick = { this.handleClick }>
+            You { text }
+            this.Click to toggle. </p>
+        );
+    }
+});
+
+ReactDOM.render(
+    <LikeButton / >,
+    document.getElementById('example')
+);
+
+
+
+https://www.w3.org/TR/DOM-Level-3-Events/
+
+事件处理与合成事件（Synthetic Events）
+
+幕后原理：自动绑定（Autobinding）和事件代理（Event Delegation）
+
+
+
+http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
 
 
 
 *******************************************************************************
 http://react2.xgqfrms.xyz/docs/reusable-components.html
 
+自动绑定（Autobinding）
+
+在 React 中，所有方法被自动绑定到了它的组件实例上（除非使用ES6的class符号）
+
+http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
+
 可复用组件
+
+
+
+
+
+
 
 
 
@@ -790,6 +846,15 @@ var component = <Component {...props} foo={'override'} />;
 
 console.log(component.props.foo); // 'override'
 
+
+## ...
+
+... 操作符 (增强的操作符) 已经被 ES6 数组支持
+
+
+Object 剩余和展开属性 (Rest and Spread Properties)
+
+https://github.com/sebmarkbage/ecmascript-rest-spread
 
 
 
