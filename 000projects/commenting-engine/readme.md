@@ -605,6 +605,65 @@ var Greeting = React.createClass({
 });
 
 
+## Declaring Prop Types and Default Props
+
+
+class Greeting extends React.Component {
+    // ...
+}
+
+Greeting.propTypes = {
+    name: React.PropTypes.string
+};
+
+Greeting.defaultProps = {
+    name: 'Mary'
+};
+
+
+With React.createClass(), you need to define propTypes as a property on the passed object, and getDefaultProps() as a function on it:
+
+
+var Greeting = React.createClass({
+    propTypes: {
+        name: React.PropTypes.string
+    },
+
+    getDefaultProps: function() {
+        return {
+            name: 'Mary'
+        };
+    },
+
+    // ...
+});
+
+
+## Setting the Initial State
+
+
+In ES6 classes, you can define the initial state by assigning this.state in the constructor:
+
+class Counter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {count: props.initialCount};
+    }
+    // ...
+}
+
+
+With React.createClass(), you have to provide a separate getInitialState method that returns the initial state:
+
+var Counter = React.createClass({
+    getInitialState: function() {
+        return {count: this.props.initialCount};
+    },
+    // ...
+});
+
+
+
 
 
 
