@@ -194,13 +194,15 @@ $ npm run dist
 chrome://apps/
 Web Server for Chrome
 
+
+
 2. browser-sync: G:\wwwRoot\learning\Front-End-Tools\Browser-sync
 
 $ npm i -g browser-sync
 
 $ npm i -S browser-sync
 
-## run dist dir 
+## run dist dir (auto open http://localhost:3000/)
 
 ```sh
 $ cd dist
@@ -208,6 +210,8 @@ $ cd dist
 $ browser-sync start --server --files "./*.*"
 
 ``` 
+
+
 
 3. express-simple-sever.js
 
