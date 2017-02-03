@@ -10,7 +10,8 @@ parent component & root DOM
 // npm error : Uncaught ReferenceError: require is not defined
 
 // import LikeButton from './like-unlike'
-//var LikeButton = require('./like-unlike');
+// var LikeButton = require('./like-unlike');
+// /*<LikeButton /> ??? React JSX comment ??? */
 
 // <Profile avatar="https://cdn.xgqfrms.xyz/logo/favicon.png" name="React JSX ES6 webpack" />
 
@@ -26,7 +27,9 @@ const App = () => {
             <span>
                 <mark>Profile</mark> ❤ placeholder!
             </span>
-            <LikeButton />
+            <hr/>
+            <br/>
+            <mark>??? React JSX comment ???</mark>
         </div>
     );
 }
