@@ -100,6 +100,18 @@ $ yo react-webpack:component my/namespaced/components/name --stateless
 
 ??? npm run ???
 
+***************************************
+# error  
+$ npm serve:dist
+
+# OK  
+$ npm run serve:dist
+
+# webpack build ./dist/
+$ npm run dist
+
+***************************************
+
 
 Usage: npm <command>
 
@@ -150,6 +162,53 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 
 
 *******************************************************************************
+
+--env=dev & --env=dist
+
+"serve": "node server.js --env=dev",
+"serve:dist": "node server.js --env=dist",
+
+??? npm run ???
+
+***************************************
+# error 
+$ npm serve
+$ npm serve:dist
+
+# OK  
+$ npm run serve
+$ npm run serve:dist
+
+***************************************
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
