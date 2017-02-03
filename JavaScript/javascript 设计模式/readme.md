@@ -96,7 +96,10 @@ https://www.freecodecamp.com/map
 
 
 
+## single responsibility principle  
 
 
+G:\wwwRoot\learning\JavaScript\javascript 设计模式\single responsibility principle
 
+G:\wwwRoot\learning\Interviews\javascript 设计模式
 

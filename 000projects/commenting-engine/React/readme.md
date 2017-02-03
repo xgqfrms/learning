@@ -491,57 +491,14 @@ If it ends up growing, it should be decomposed into smaller subcomponents.
 
 
 
-FilterableProductTable
-    SearchBar
-    ProductTable
-        ProductCategoryRow
-        ProductRow
-
-
-## Step 2: Build A Static Version in React 
-
-
-## Props vs State
-
-https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html
+*******************************************************************************
 
 
 
-## Step 3: Identify The Minimal (but complete) Representation Of UI State
-
-So finally, our state is:
-
-The search text the user has entered
-The value of the checkbox
-
-## Step 4: Identify Where Your State Should Live
-
-
-## Step 5: Add Inverse Data Flow
 
 
 
 *******************************************************************************
-https://facebook.github.io/react/docs/react-without-jsx.html
-
-# React Without JSX
-
-## syntactic sugar 
-
-Each JSX element is just syntactic sugar for calling 
-
-React.createElement(component, props, ...children) 
-
-
-
-*******************************************************************************
-https://facebook.github.io/react/docs/react-without-es6.html
-
-# React Without ES6  
-
-
-
-
 
 
 
