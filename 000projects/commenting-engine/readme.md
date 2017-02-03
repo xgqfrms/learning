@@ -211,7 +211,16 @@ $ browser-sync start --server --files "./*.*"
 
 3. express-simple-sever.js
 
-node express-simple-sever.js
+$ node express-simple-sever.js
+
+
+// TypeError: path must be absolute or specify root to res.sendFile
+
+app.get('/', function(req, res){
+    res.sendFile('http://localhost:3000/dist/index.html');
+});
+
+// bugs ???
 
 *******************************************************************************
 
