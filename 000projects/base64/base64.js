@@ -8,7 +8,7 @@
 // base64 (: / ; ,) 符号转译 error
 // const base64 = "https://cdn.xgqfrms.xyz/logo/favicon.png";
 
-// ES6 `template string`
+// ES6 template string !== `template literals`
 
 let timeMS = 3000;// 1000 ms
 

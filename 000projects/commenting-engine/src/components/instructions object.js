@@ -17,8 +17,29 @@ ReactDOM.render(
 
 /*
 
+// object (key: value)
+
 var MyComponentClass = React.createClass({
     render: function () {
+        return (
+            <h1>Hello world & instructions object </h1>
+        );
+    }
+});
+
+ReactDOM.render(
+    <MyComponentClass />,
+    document.getElementById('root')
+);
+
+*/
+
+/*
+
+// class {function}
+
+class MyComponentClass extends React.Component {
+    render() {
         return (
             <h1>Hello world & instructions object </h1>
         );
