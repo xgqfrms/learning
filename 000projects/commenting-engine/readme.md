@@ -558,17 +558,49 @@ ReactDOM.render(
 );
 
 
+## online Babel compiler  
+
+https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-0&code=function%20hello()%20%7B%0A%20%20return%20%3Cdiv%3EHello%20world!%3C%2Fdiv%3E%3B%0A%7D
+
+The component can either be provided as a string, or as a subclass of React.Component, or a plain function for stateless components.
+
+## shorthand
+
+const e = React.createElement;
+
+ReactDOM.render(
+  e('div', null, 'Hello World'),
+  document.getElementById('root')
+);
+
+
+
 *******************************************************************************
 https://facebook.github.io/react/docs/react-without-es6.html
 
 # React Without ES6  
 
+Normally you would define a React component as a plain JavaScript class:
+
+// plain JavaScript class
+
+class Greeting extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
+}
 
 
+If you don't use ES6 yet, you may use the React.createClass helper instead:
+
+// 
 
 
-
-
+var Greeting = React.createClass({
+  render: function() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+});
 
 
 
