@@ -94,25 +94,84 @@ h1:hover .hash-link, h2:hover .hash-link, h3:hover .hash-link, h4:hover .hash-li
 ##  命名组件（Namespaced Components） 
 
 
+命名组件, 令你使用包含其他组件作为属性的单一的组件。
+
+var Form = MyFormComponent;
+
+var App = (
+  <Form>
+    <Form.Row>
+      <Form.Label />
+      <Form.Input />
+    </Form.Row>
+  </Form>
+);
 
 
 
+要做到这一点，你只需要把你的"子组件"创建为主组件的属性。
+
+var MyFormComponent = React.createClass({ ... });
+
+MyFormComponent.Row = React.createClass({ ... });
+MyFormComponent.Label = React.createClass({ ... });
+MyFormComponent.Input = React.createClass({ ... });
 
 
 
+当编译你的代码时，JSX会恰当的进行处理。
+
+var App = (
+  React.createElement(Form, null,
+    React.createElement(Form.Row, null,
+      React.createElement(Form.Label, null),
+      React.createElement(Form.Input, null)
+    )
+  )
+);
+
+注意:
+此特性在 v0.11 及以上可用
+
+
+*******************************************************************************
 
 
 
+注释
+
+JSX 里添加注释很容易；它们只是 JS 表达式而已。
+你仅仅需要小心的是当你在一个标签的子节点块时，要用 {} 包围要注释的部分。
+
+var content = (
+  <Nav>
+    {/* child comment, 用 {} 包围 */}
+    <Person
+      /* 多
+         行
+         注释 */
+      name={window.isLoggedIn ? window.name : ''} // 行尾注释
+    />
+  </Nav>
+);
+
+注意:
+JSX 类似于 HTML，但不完全一样。参考 JSX 陷阱 了解主要不同。
 
 
+{
+    /*
+    <mark>??? React JSX comment ???</mark>
+    http://react2.xgqfrms.xyz/docs/jsx-in-depth.html
+    <LikeButton />
+    */
+    /*
+    JSX 里添加注释很容易；它们只是 JS 表达式而已。
+    你仅仅需要小心的是当你在一个标签的子节点块时，要用 {} 包围要注释的部分。
+    */
+}
 
-
-
-
-
-
-
-
+*******************************************************************************
 
 
 

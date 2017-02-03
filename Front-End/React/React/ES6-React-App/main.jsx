@@ -29,7 +29,17 @@ const App = () => {
             </span>
             <hr/>
             <br/>
-            <mark>??? React JSX comment ???</mark>
+            {
+                /*
+                <mark>??? React JSX comment ???</mark>
+                http://react2.xgqfrms.xyz/docs/jsx-in-depth.html
+                <LikeButton />
+                */
+                /*
+                JSX 里添加注释很容易；它们只是 JS 表达式而已。
+                你仅仅需要小心的是当你在一个标签的子节点块时，要用 {} 包围要注释的部分。
+                */
+            }
         </div>
     );
 }
