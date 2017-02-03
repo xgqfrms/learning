@@ -15,3 +15,22 @@ ReactDOM.render(
 );
 
 
+/*
+
+var MyComponentClass = React.createClass({
+    render: function () {
+        return (
+            <h1>Hello world & instructions object </h1>
+        );
+    }
+});
+
+ReactDOM.render(
+    <MyComponentClass />,
+    document.getElementById('root')
+);
+
+
+
+
+*/
