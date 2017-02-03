@@ -33,5 +33,42 @@ http://searchsecurity.techtarget.com/
 http://www.techtarget.com/network
 
 
+*******************************************************************************
+
+## badges 
+
+G:\wwwRoot\learning\Front-End\jQuery\jQuery Ajax Portfolio Badges
+
+
+http://www.pentesteracademy.com/topics
+
+http://videos.pentesteracademy.com.s3.amazonaws.com/videos/badges/low/PYTHON.png
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

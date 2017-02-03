@@ -1,4 +1,4 @@
-#  basuc  
+#  basic  
 
 
 http://api.jquery.com/element-selector/  
