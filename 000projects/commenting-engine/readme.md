@@ -663,7 +663,157 @@ var Counter = React.createClass({
 });
 
 
+## Autobinding  
 
+// ES6 (.bind(this))
+
+constructor(props) {
+    super(props);
+    this.state = {message: 'Hello!'};
+    // This line is important!
+    this.handleClick = this.handleClick.bind(this);
+}
+
+// React.createClass()
+
+getInitialState: function() {
+    return {message: 'Hello!'};
+},
+
+handleClick: function() {
+    alert(this.state.message);
+},
+
+// ES6 (experimental Class Properties)
+
+constructor(props) {
+    super(props);
+    this.state = {message: 'Hello!'};
+}
+
+// WARNING: this syntax is experimental!
+// Using an arrow here binds the method:
+
+handleClick = () => {
+    alert(this.state.message);
+}
+
+
+https://babeljs.io/docs/plugins/transform-class-properties/
+
+If you'd rather play it safe, you have a few options:
+
+1. Bind methods in the constructor.
+2. Use arrow functions, e.g. onClick={(e) => this.handleClick(e)}.
+3. Keep using React.createClass().
+
+
+## Mixins
+
+
+Note:
+ES6 launched without any mixin support. 
+Therefore, there is no support for mixins when you use React with ES6 classes.
+
+
+
+https://en.wikipedia.org/wiki/Cross-cutting_concern
+
+
+https://facebook.github.io/react/docs/top-level-api.html#react.createclass
+
+
+https://facebook.github.io/react/docs/working-with-the-browser.html#component-lifecycle
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/forms.html
+
+表单组件
+
+
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/interactivity-and-dynamic-uis.html
+
+
+动态交互式用户界面
+
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/reusable-components.html
+
+可复用组件
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/jsx-spread.html
+
+JSX 展开属性
+
+
+
+如果你事先知道组件需要的全部 Props（属性），JSX 很容易地这样写：
+
+var component = <Component foo={x} bar={y} />;
+
+Props 应该被认为是不可变的。(initial values)
+在别处修改 props 对象可能会导致预料之外的结果，所以原则上这将是一个冻结的对象。
+
+
+state dynamic values
+
+## 展开属性（Spread Attributes）
+
+现在你可以使用 JSX 的新特性 - 展开属性：
+
+var props = {};
+props.foo = x;
+props.bar = y;
+
+var component = <Component {...props} />;
+
+传入对象的属性会被复制到组件内。
+
+它能被多次使用，也可以和其它属性一起用。注意顺序很重要，后面的会覆盖掉前面的。
+
+
+var props = { foo: 'default' };
+
+var component = <Component {...props} foo={'override'} />;
+
+console.log(component.props.foo); // 'override'
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+*******************************************************************************
+
+
+*******************************************************************************
+
+
+
+*******************************************************************************
 
 
 
@@ -678,52 +828,7 @@ var Counter = React.createClass({
 
 
 
-
-
-
-
-
-
 *******************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-*******************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
