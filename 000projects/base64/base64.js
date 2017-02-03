@@ -10,6 +10,8 @@
 
 // ES6 `template string`
 
+let timeMS = 3000;// 1000 ms
+
 setTimeout( function(){
     // const base64 = "./images/webviewpng.png";
     document.onload = (function(){
@@ -17,6 +19,10 @@ setTimeout( function(){
         let img = document.getElementById('base64');
         console.log(`img.src = ${img.src}`);
         img.src = base64;
+        let indictor = document.getElementById('indictor');
+        // indictor.class = "hidden";
+        // ??? how modify DOM class attribute 
+        indictor.innerHTML = "";
     })();
-}, 1000);
+}, timeMS);
 
