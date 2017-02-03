@@ -784,8 +784,47 @@ https://www.w3.org/TR/DOM-Level-3-Events/
 幕后原理：自动绑定（Autobinding）和事件代理（Event Delegation）
 
 
+自动绑定（Autobinding）
 
 http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
+
+
+事件代理（Event Delegation）
+
+https://davidwalsh.name/event-delegate
+
+
+组件其实是状态机（State Machines）
+
+
+
+## State 工作原理
+
+setState(data, callback)
+
+常用的通知 React 数据变化的方法是调用 setState(data, callback)。
+这个方法会合并（merge） data 到 this.state，并重新渲染组件。
+重新渲染完成后，调用可选的 callback 回调。
+大部分情况下不需要提供 callback，因为 React 会负责把界面更新到最新状态。
+
+??? Redux  
+
+## props vs state
+
+大部分组件的工作应该是从 props 里取数据并渲染出来。
+但是，有时需要对用户输入、服务器请求或者时间变化等作出响应，这时才需要使用 State。
+
+## stateless (stateful父组件 把它的状态通过 props 传给 stateless子组件)
+
+
+尝试把尽可能多的组件无状态化。 这样做能隔离 state，把它放到最合理的地方，也能减少冗余，同时易于解释程序运作过程。
+
+常用的模式是创建多个只负责渲染数据的无状态（stateless）组件，在它们的上层创建一个有状态（stateful）父组件并把它的状态通过 props 传给子组件。
+这个有状态的组件封装了所有用户的交互逻辑，而这些无状态组件则负责声明式地渲染数据。
+
+
+
+
 
 
 
