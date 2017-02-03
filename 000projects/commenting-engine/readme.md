@@ -395,7 +395,7 @@ A good rule of thumb is that if a part of your UI is used several times (Button,
 
 ## Props are Read-Only
 
-// pure function ()
+// pure function (Functional Programming)
 
 function sum(a, b) {
     return a + b;
