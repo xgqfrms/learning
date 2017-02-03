@@ -737,13 +737,6 @@ https://facebook.github.io/react/docs/working-with-the-browser.html#component-li
 
 
 
-*******************************************************************************
-http://react2.xgqfrms.xyz/docs/forms.html
-
-表单组件
-
-
-
 
 
 *******************************************************************************
@@ -824,24 +817,13 @@ setState(data, callback)
 
 
 
+State 应该包括那些可能被组件的事件处理器改变并触发用户界面更新的数据。
 
 
 
+this.state 应该仅包括能表示用户界面状态所需的最少数据。
 
-*******************************************************************************
-http://react2.xgqfrms.xyz/docs/reusable-components.html
-
-自动绑定（Autobinding）
-
-在 React 中，所有方法被自动绑定到了它的组件实例上（除非使用ES6的class符号）
-
-http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
-
-可复用组件
-
-
-
-
+因此，它不应该包括：计算所得数据, React 组件, 基于 props 的重复数据.
 
 
 
@@ -894,6 +876,90 @@ console.log(component.props.foo); // 'override'
 Object 剩余和展开属性 (Rest and Spread Properties)
 
 https://github.com/sebmarkbage/ecmascript-rest-spread
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/reusable-components.html
+
+自动绑定（Autobinding）
+
+在 React 中，所有方法被自动绑定到了它的组件实例上（除非使用ES6的class符号）
+
+http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
+
+可复用组件
+
+## React.PropTypes  
+
+Prop 验证
+随着应用不断变大，保证组件被正确使用变得非常有用。
+为此我们引入 propTypes。
+React.PropTypes 提供很多验证器 (validator) 来验证传入数据的有效性。
+当向 props 传入无效数据时，JavaScript 控制台会抛出警告。
+注意为了性能考虑，只在开发环境验证 propTypes。
+
+
+
+
+more coming soon ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+http://react2.xgqfrms.xyz/docs/forms.html
+
+表单组件
+
+
+## 受控组件
+
+一个受控的 <input> 有一个 value prop。
+渲染一个受控 <input> 会反映 value prop 的值。
+
+render: function() {
+    return <input type="text" value="Hello!" />;
+}
+
+
+## 不受控组件
+
+一个没有 value 属性的 <input> 是一个不受控组件:
+
+  render: function() {
+    return <input type="text" />;
+}
+
+## 默认值
+
+如果想给组件设置一个非空的初始值，可以使用 defaultValue 属性。
+例如：
+
+render: function() {
+    return <input type="text" defaultValue="Hello!" />;
+}
+
+这个例子会像上面的 受控组件 例子一样运行。
+同样的， <input type="checkbox"> 和 <input type="radio"> 支持 defaultChecked 、 <select> 支持 defaultValue.
+
+注意:
+defaultValue 和 defaultChecked props 只能在内部渲染时被使用。 如果你需要在随后的渲染更新值, 你需要使用 受控组件.
+
+
+
+
+
+more coming soon ...
 
 
 
