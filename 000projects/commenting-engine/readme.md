@@ -431,6 +431,9 @@ State allows React components to change their output over time in response to us
 
 
 *******************************************************************************
+https://facebook.github.io/react/docs/thinking-in-react.html
+
+# Thinking in React
 
 
 
@@ -475,6 +478,12 @@ JSON API
     }
 ];
 
+## Step 1: Break The UI Into A Component Hierarchy
+
+
+## single responsibility principle
+
+https://en.wikipedia.org/wiki/Single_responsibility_principle
 
 
 
