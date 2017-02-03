@@ -58,3 +58,70 @@ React 的 JSX 使用大、小写的约定来区分本地组件的类和 HTML 标
 
 
 
+## 转换（Transform）
+
+
+
+XML 元素、属性和子节点被转换成 React.createElement 的参数
+
+
+
+*******************************************************************************
+
+# hash symbol hover  
+
+
+<h2>
+    <a class="anchor" name="转换transform"></a>
+    转换（Transform） 
+    <a class="hash-link" href="http://react2.xgqfrms.xyz/docs/jsx-in-depth.html#转换transform">#</a>
+</h2>
+
+h1:hover .hash-link, h2:hover .hash-link, h3:hover .hash-link, h4:hover .hash-link, h5:hover .hash-link, h6:hover .hash-link {
+    display: inline;
+}
+
+.hash-link {
+    color: #aaa;
+    display: none;
+}
+
+
+
+*******************************************************************************
+
+
+##  命名组件（Namespaced Components） 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

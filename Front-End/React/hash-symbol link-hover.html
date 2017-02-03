@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title># hash symbol hover</title>
+    <style>
+        h1:hover .hash-link, h2:hover .hash-link, h3:hover .hash-link, h4:hover .hash-link, h5:hover .hash-link, h6:hover .hash-link {
+            display: inline;
+        }
+        a .hash-link:hover{
+            transform: rotate(45deg);
+            transition: all 1s ease-in 0.5s;
+        }
+        .hash-link {
+            color: #0f0;
+            /*font-size: 32px;*/
+            display: none;
+        }
+
+        h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
+            margin-top: -50px;
+            position: absolute;
+        }
+        html * {
+            color-profile: sRGB;
+            rendering-intent: auto;
+        }
+        a {
+            color: #c05b4d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <h2>
+                <a class="anchor" name="转换transform"></a>
+                转换（Transform） 
+                <a class="hash-link" href="http://react2.xgqfrms.xyz/docs/jsx-in-depth.html#转换transform">#</a>
+            </h2>
+            <pre>
+                JSX 把类 XML 的语法转成原生 JavaScript，XML 元素、属性和子节点被转换成 React.createElement 的参数。
+
+                var Nav;
+                // 输入 (JSX):
+                var app = <Nav color="blue" />;
+                // 输出 (JS):
+                var app = React.createElement(Nav, {color:"blue"});
+                注意，要想使用 <Nav />，Nav 变量一定要在作用区间内。
+
+                JSX 也支持使用 XML 语法定义子结点：
+
+                var Nav, Profile;
+                // 输入 (JSX):
+                var app = <Nav color="blue"><Profile>click</Profile></Nav>;
+                // 输出 (JS):
+                var app = React.createElement(
+                  Nav,
+                  {color:"blue"},
+                  React.createElement(Profile, null, "click")
+                );
+                当显示名称没有定义时，JSX 会根据变量赋值来推断类的 显示名称 :
+
+                // 输入 (JSX):
+                var Nav = React.createClass({ });
+                // 输出 (JS):
+                var Nav = React.createClass({displayName: "Nav", });
+                使用 JSX 编译器 来试用 JSX 并理解它是如何转换到原生 JavaScript，还有 HTML 到 JSX 转换器 来把现有 HTML 转成 JSX。
+
+                如果你要使用 JSX，这篇 新手入门 教程来教你如何搭建环境。
+
+                注意:
+                JSX 表达式总是会当作 ReactElement 执行。具体的实际细节可能不同。一种优化 的模式是把 ReactElement 当作一个行内的对象字面量形式来绕过 React.createElement 里的校验代码。
+            </pre>
+        </section>
+    </div>
+</body>
+</html>
