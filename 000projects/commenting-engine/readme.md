@@ -185,14 +185,33 @@ $ npm run serve:dist
 
 *******************************************************************************
 
+# webpack build ./dist/
+$ npm run dist
 
 
+1. Chrome Apps: static web server
 
+chrome://apps/
+Web Server for Chrome
 
+2. browser-sync: G:\wwwRoot\learning\Front-End-Tools\Browser-sync
 
+$ npm i -g browser-sync
 
+$ npm i -S browser-sync
 
+## run dist dir 
 
+```sh
+$ cd dist
+
+$ browser-sync start --server --files "./*.*"
+
+``` 
+
+3. express-simple-sever.js
+
+node express-simple-sever.js
 
 *******************************************************************************
 
