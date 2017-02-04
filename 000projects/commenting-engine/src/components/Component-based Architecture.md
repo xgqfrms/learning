@@ -650,21 +650,450 @@ Returns an array with a new component built for each element present in commentL
 
 ## Passing Dynamic Props
 
+The callback to map takes an argument that represents each element from the calling object.
+
+
+Each element from commentList is passed as argument...
+
+...which we can use to access properties and pass them as props.
+
+
+_getComments() {
+    const commentList = [
+        { id: 1, author: 'Morgan McCircuit', body: 'Great picture!' },
+        { id: 2, author: 'Bending Bender', body: 'Excellent stuff' }
+    ];
+    return commentList.map((comment) => {
+        return (
+            <Comment 
+                author={comment.author}
+                body={comment.body} />
+        );
+    });
+}
+
+
+## Using Unique Keys on List of Components
+
+Specifying a unique key when creating multiple components of the same type can help improve performance.
+
+
+Unique key
+
+
+_getComments() {
+    const commentList = [
+        { id: 1, author: 'Morgan McCircuit', body: 'Great picture!' },
+        { id: 2, author: 'Bending Bender', body: 'Excellent stuff' }
+    ];
+    return commentList.map((comment) => {
+        return (
+            <Comment 
+                author={comment.author}
+                body={comment.body}
+                key={comment.id} />
+        );
+    });
+}
+
+
+## Using the _getComments() method
+
+We’ll store the returned value in a variable named comments and use it for display purposes.
+
+// JSX knows how to render arrays
+
+
+const comments = this._getComments();
+
+render() {
+    return (
+        <div class="comment-box">
+            <h3>Comments</h3>
+            <h4 class="comment-count">{comments.length} comments </h4>
+            <div class="comment-list">
+                {comments}
+            </div>
+        </div>
+    );
+}
+
+
+## Incorrect Grammar on the Comments Title
+
+The title has incorrect grammar in some cases.
+
+## Fixing the Title With Comment Count
+
+Let’s write a new method called _getCommentsTitle() that handles the plural case in our title.
+
+// Uses same convention with starting underscore
+
+_getCommentsTitle(commentCount) {
+    if (commentCount === 0) {
+        return 'No comments yet';
+    } else if (commentCount === 1) {
+        return '1 comment';
+    } else {
+        return `${commentCount} comments`;
+    }
+}
+
+
+## Getting the Correct Comments Title
+
+Let’s call the method we just created from our component’s render function.
+
+
+{this._getCommentsTitle(comments.length)}
+
+
+Get proper title for our component
+
+
+    render() {
+        return (
+            <div class="comment-box">
+                <h3>Comments</h3>
+                <h4 class="comment-count">
+                    //{comments.length} comments
+                    {this._getCommentsTitle(comments.length)}
+                </h4>
+                <div class="comment-list">
+                    {comments}
+                </div>
+            </div>
+        );
+    }
+
+## Title Issue Is Fixed
+
+The title now handless different quantities of comments accordingly.
+
+
+## Quick Recap on Dynamic Props
+
+Dynamic props can be a bit mind boggling. Here’s a summary of what we learned.
+
+1. How to pass dynamic props using variables
+
+2. How to map object arrays to JSX arrays for display purposes
+
+3. Used JavaScript to handle plural case on the title
+
+
+
+
+*******************************************************************************
+## Component State
+*******************************************************************************
+
+Handling Data Changes With State
+
+## Show and Hide Comments
+
+
+We’d like to add a button to the page that will let users toggle the comments.
+
+
+Click to show comments & Click to hide comments
+
+
+How can we show and hide comments based on button clicks?
+
+
+## Different Ways to Manipulate the DOM
+
+1. Direct DOM Manipulation
+
+Events => DOM updates
+
+jQuery, Backbone, etc.
+
+
+2. Indirect DOM Manipulation
+
+Events => Update state => DOM updates
+
+React, Vue (Virtual DOM)
+
+
+
+
+One way to manipulate the DOM API is by modifying it directly via JavaScript in response to browser events.
+
+
+Events =1=> DOM updates
+
+
+1. User code does this.
+
+
+# Example using jQuery:
+
+$('.show-btn').on('click', function() {
+    $('.comment-list').show();
+})
+
+$('.hide-btn').on('click', function() {
+    $('.comment-list').hide();
+})
+
+
+Manually manipulating the DOM
+
+
+In React, we don’t modify the DOM directly. Instead, we modify a component state object in response to user events and let React handle updates to the DOM.
+
+
+Events =1=> Update state =2=> DOM updates
+
+1. User code does this.
+
+2. React does this.
+
+
+# Example using React:
+
+render() {
+    if (this.state.showComments) {
+        // code displaying comments
+    } else {
+        // code hiding comments
+    }
+}
+
+Display logic based on state
+
+
+## How to Use State in a Component
+
+The state is a JavaScript object that lives inside each component. 
+We can access it via this.state
+
+
+Create list of comments if state is true.
+
+We also need to move these comments into the conditional.
+
+
+if (this.state.showComments){
+    // add code for displaying comments
+}
+
+Showing Comments Only if State Is true
+
+let commentNodes;
+if (this.state.showComments){
+    commentNodes = <div className="comment-list">{comments}</div>;
+}
+
+
+Hiding Comments on the Initial State
+
+We set the initial state of our component in the class constructor.
+
+super() must be called in our constructor.
+
+Initial state hides comments.
+
+
+constructor() {
+    super();
+    this.state = {
+        showComments: false
+    };
+}
+
+## How to Update a Component’s State
+
+We don’t assign to the state object directly — instead, we call setState by passing it an object.
+
+
+Setting state this way won't work.
+
+this.state.showComments = true
+
+
+Updates the showComments property and re-renders component
+
+this.setState({showComments: true })
+
+
+Calling setState will only update the properties passed as an argument, not replace the entire state object.
+
+
+## Causing State Change
+
+State changes are usually triggered by user interactions with our app.
+
+
+Things that could cause state change:
+
+
+• Button clicks
+• Link clicks
+• Form submissions
+• AJAX requests
+• And more!
+
+
+Button clicks can cause a change of state.
+
+Loading comments from a remote server can also cause a change of state
+
+
+## Handling Click Events
+
+
+Let’s add a button that will toggle the showComments state when a click event is fired.
+
+
+Button that will toggle state on click event
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    http://react2.xgqfrms.xyz/docs/reusable-components.html
+
+    React & ES6 无自动绑定 ??? 
+
+    .bind(this)
+
+    => 
+
+
+    http://react2.xgqfrms.xyz/docs/reusable-components.html#无自动绑定
+
+    ## 无自动绑定
+
+    class eextends React.Component 方法遵循正式的ES6 class的语义，意味着它们不会自动绑定this到实例上。
+
+    你必须显示的使用.bind(this) or 箭头函数 =>：
+
+    // 你可以使用 bind() 来绑定 `this`
+    <div onClick={this.tick.bind(this)}>
+
+    // 或者你可以使用箭头函数
+    <div onClick={() => this.tick()}>
+    我们建议你在构造函数中绑定事件处理器，这样对于所有实例它们只需绑定一次：
+
+    constructor(props) {
+        super(props);
+        this.state = {count: props.initialCount};
+        this.tick = this.tick.bind(this);
+    }
+    现在你可以直接使用 this.tick 因为它已经在构造函数里绑定过一次了。
+
+    // 它已经在构造函数里绑定过了
+    <div onClick={this.tick}>
+    这对应用的性能有帮助，特别是当你用 浅层比较 实现 shouldComponentUpdate() 时。
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<button onClick={this._handleClick.bind(this)}> Show comments </button>
+
+Button click calls _handleClick()
+
+Shows and hides comments
+
+Toggles state of showComments between true and false
+
+
+_handleClick() {
+    this.setState({
+        showComments: !this.state.showComments
+    });
+}
+
+
+## Button Text Logic Based on State
+
+We can switch the button text based on the component’s state.
+
+
+let buttonText = 'Show comments';
+    if (this.state.showComments) {
+        buttonText = 'Hide comments';
+    ...
+}
+
+Switch button text based on current state
+
+Renders button with according text
+
+return(
+    ...
+    <button onClick={this._handleClick.bind(this)}>
+        {buttonText}
+    </button>
+    ...
+);
+
+
+
+Demo: Hide and Show Comments
+
+
+Our app shows and hides comments when the button is clicked.
+
+
+
+
+## Quick Recap on State
+
+The state is a vital part of React apps, making user interfaces interactive.
+
+1. State represents data that changes over time.
+
+2. We declare an initial state in the component’s constructor.
+
+3. We update state by calling this.setState().
+
+4. Calling this.setState() causes our component to re-render.
+
+
+
+
+*******************************************************************************
+## Synthetic Events : Capturing User Actions
+*******************************************************************************
+
+## Adding New Comments
+
+We want to let users add new comments to our app.
+
+
+How should we build this new form in React?
+
+
+New Component: CommentForm
+
+CommentForm is a new component that will allow users to add comments to our app.
 
 
 
 
 
+??? Underscore ._getComments() error
 
+const comments = this._getComments();
 
+// Underscore
 
+Underscore helps distinguish custom methods from React methods
 
+New method that will return array of JSX elements
 
-
-
-
-
-
+_getComments() {
+    const commentList = [
+        { id: 1, author: 'Morgan McCircuit', body: 'Great picture!' },
+        { id: 2, author: 'Bending Bender', body: 'Excellent stuff' }
+    ];
+    return commentList.map(() => {
+        return (<Comment />);
+    });
+}
 
 
 
@@ -687,10 +1116,6 @@ Returns an array with a new component built for each element present in commentL
 
 
 
-*******************************************************************************
-## 
-*******************************************************************************
-
 
 
 *******************************************************************************
@@ -701,9 +1126,9 @@ Returns an array with a new component built for each element present in commentL
 
 
 
-
-
-
+*******************************************************************************
+## 
+*******************************************************************************
 
 
 
