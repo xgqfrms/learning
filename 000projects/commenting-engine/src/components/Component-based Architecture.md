@@ -86,6 +86,10 @@ Every time we create a new React component, we use it by writing an element name
 
 ## // defualt props ??? 
 
+
+// ES6 constructor (no getInitialState: function )
+// ES6 constructor (no getDefaultProps: function)
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 http://react2.xgqfrms.xyz/docs/reusable-components.html
 
@@ -116,6 +120,9 @@ var TickTock = React.createClass({
 
 
 ## ES6 Classes
+
+// ES6 constructor (no getInitialState: function )
+// ES6 constructor (no getDefaultProps: function)
 
 ES6 Class API近似于 React.createClass 除了 getInitialState。
 

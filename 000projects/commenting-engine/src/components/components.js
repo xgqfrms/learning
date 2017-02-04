@@ -2,10 +2,12 @@
 
 import React from 'react';
 
+// import ReactDOM from 'react-dom';
 
 
 class StoryBox extends React.Component {
-    //constructor
+    // ES6 constructor (no getInitialState: function )
+    // ES6 constructor (no getDefaultProps: function)
     render() {
         return( <div>Story Box</div> );
     }
@@ -20,6 +22,6 @@ ReactDOM.render(
 // export ???;
 
 StoryBox.defaultProps = {};
-// defualt props ??? 
+// ES6 constructor (defaultProps)
 
 export default StoryBox;
