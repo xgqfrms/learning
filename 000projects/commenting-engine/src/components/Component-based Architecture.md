@@ -381,7 +381,18 @@ React.createElement(
 3. Generated HTML
 
 
+## Using the Date Object in JSX
 
+
+Here, we’re displaying the current time using JavaScript’s native Date object and JSX.
+
+const now = new Date();
+
+<p className="lead">
+    Current time: {now.toTimeString()}
+</p>
+
+Code written within curly braces gets interpreted as literal JavaScript
 
 
 

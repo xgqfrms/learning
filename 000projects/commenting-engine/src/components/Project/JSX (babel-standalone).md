@@ -23,6 +23,7 @@ babel-standalone/babel.min.js & type="text/babel"
 <script src="./libs/babel.min.js" crossorigin="anonymous"></script>
 
 <script src="./hellocomponent.jsx"  type="text/babel"></script>
+<script src="./hellocomponent.js"  type="text/babel"></script>
  -->
 
 
