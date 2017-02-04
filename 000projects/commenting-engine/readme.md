@@ -994,9 +994,30 @@ React.createElement(
 
 
 
+解构赋值 
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
+剩余属性和展开属性 ...
 
+https://github.com/sebmarkbage/ecmascript-rest-spread
+
+剩余属性可以把对象剩下的属性提取到一个新的对象。
+这会把所有在解构赋值中列出的属性剔除。
+
+```js
+
+let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+
+??? run bugs ???
+
+// Babel 6转换 rest 和 spread 属性
+
+x; // 1
+y; // 2
+z; // { a: 3, b: 4 }
+
+``` 
 
 
 
