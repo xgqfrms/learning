@@ -48,7 +48,6 @@ $(function() {
 });
 
 /*
-
 # DOM & ES6 
 
 querySelector() & querySelectorAll() 
@@ -75,7 +74,7 @@ const ES7 = () => {
 
 ES7();
 
-``` 
+```
 
 
 */
