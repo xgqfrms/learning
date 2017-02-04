@@ -82,6 +82,18 @@ setInterval(getTime(), 1000);
 // function name OK
 let time = setInterval(getTime, 1000);
 
+setInterval(function tick() {
+    const localTime = new Date().toLocaleTimeString();
+    //console.log(`localTime = ${localTime}`);
+    return `localTime = ${localTime}`;
+}, 1000);
+
+let time = setInterval(function tick() {
+    const localTime = new Date().toLocaleTimeString();
+    console.log(`localTime = ${localTime}`);
+    return `localTime = ${localTime}`;
+}, 1000);
+
 
 */
 
@@ -89,6 +101,7 @@ class StoryBox extends React.Component {
     // ES6 constructor (no getInitialState: function )
     // ES6 constructor (no getDefaultProps: function)
     render() {
+        const now = new Date();
         let getTime = function (){
             const now = new Date();
             now.toLocaleString();
@@ -97,14 +110,14 @@ class StoryBox extends React.Component {
             // clock.innerHTML=`localTime = ${localTime}`;
         };
         // setInterval(getTime(), 1000);
-        let time = setInterval(getTime, 1000);
+        // let time = setInterval(getTime, 1000);
         return (
             <div>
                 <h1> Story Box </h1>
                 <mark> JSX.jsx </mark>
-                <p className="lead">
+                <p className="lead" id="clock">
                     {/*Current time: {now.toLocaleTimeString()}*/}
-                    Current time: { time }
+                    Current time: { now.toLocaleString()} }
                 </p>
             </div>
         );
