@@ -28,6 +28,22 @@ http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-data-types-and-va
 
 
 
+# JavaScript 基本类型(数据 & 值)  
+
+
+## ES6 / ES7 (Symbol)
+
+Number, Boolean, String, Symbol, Undefined, Null, Object[object,array,func] 
+
+
+## ES3 / ES5 / ES5.1
+
+
+Number, Boolean, String, Undefined, Null, Object[object,array,func] 
+
+
+
+
 
 
 

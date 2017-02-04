@@ -971,20 +971,165 @@ React.createClass({
 });
 
 
+## Single Child 
+
+用 React.PropTypes.element 你可以指定仅有一个子级能被传送给组件
+
+var MyComponent = React.createClass({
+  propTypes: {
+    children: React.PropTypes.element.isRequired
+  },
+
+  render: function() {
+    return (
+      <div>
+        {this.props.children} // 这里必须是一个元素否则就会警告
+      </div>
+    );
+  }
+
+});
 
 
 
+## 默认 Prop 值
 
-more coming soon ...
+React 支持以声明式的方式来定义 props 的默认值。
+
+var ComponentWithDefaultProps = React.createClass({
+  getDefaultProps: function() {
+    return {
+      value: 'default value'
+    };
+  }
+  /* ... */
+});
+
+当父级没有传入 props 时，getDefaultProps() 可以保证 this.props.value 有默认值，注意 getDefaultProps 的结果会被缓存。
+得益于此，你可以直接使用 props，而不必写手动编写一些重复或无意义的代码。
 
 
+## 传递 Props：捷径
+
+有一些常用的 React 组件只是对 HTML 做简单扩展。
+通常，你想复制任何传进你的组件的HTML属性到底层的HTML元素上。
+为了减少输入，你可以用 JSX spread 语法来完成：
+
+var CheckLink = React.createClass({
+    render: function() {
+        // 这样会把 CheckList 所有的 props 复制到 <a>
+        return <a {...this.props}>{'√ '}{this.props.children}</a>;
+    }
+});
+
+ReactDOM.render(
+    <CheckLink href="/checked.html">
+        Click here!
+    </CheckLink>,
+    document.getElementById('example')
+);
 
 
+## Mixins  
+
+组件是 React 里复用代码的最佳方式，但是有时一些不同的组件间也需要共用一些功能。
+有时会被称为 跨切面关注点。
+https://en.wikipedia.org/wiki/Cross-cutting_concern
+React 使用 mixins 来解决这类问题。
+
+一个通用的场景是：
+一个组件需要定期更新。
+用 setInterval() 做很容易，但当不需要它的时候取消定时器来节省内存是非常重要的。
+React 提供 生命周期方法 来告知你组件创建或销毁的时间。
+
+http://react2.xgqfrms.xyz/docs/working-with-the-browser.html#component-lifecycle
+
+下面来做一个简单的 mixin，使用 setInterval() 并保证在组件销毁时清理定时器。
 
 
+关于 mixin 值得一提的优点：
+如果一个组件使用了多个 mixin，并用有多个 mixin 定义了同样的生命周期方法（如：多个 mixin 都需要在组件销毁时做资源清理操作），所有这些生命周期方法都保证会被执行到。
+
+方法执行顺序是：
+首先按 mixin 引入顺序执行 mixin 里方法，最后执行组件内定义的方法。
 
 
+## ES6 Classes
 
+你也可以以一个简单的 JavaScript 类来定义你的React classes。
+
+class HelloMessage extends React.Component {
+    render() {
+        return <div>Hello {this.props.name}</div>;
+    }
+}
+
+ReactDOM.render(
+    <HelloMessage name="Sebastian" />,
+    mountNode
+);
+
+API近似于 React.createClass 除了 getInitialState。 你应该在构造函数里设置你的state，而不是提供一个单独的 getInitialState 方法。
+就像 getInitialState 的返回值，你赋给 this.state 的值会被作为组件的初始 state。
+
+另一个不同是 propTypes 和 defaultProps 是在构造函数里被定义为属性，而不是在 class body 里。
+
+export class Counter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {count: props.initialCount};
+    }
+    tick() {
+        this.setState({count: this.state.count + 1});
+    }
+    render() {
+        return (
+            <div onClick={this.tick.bind(this)}>
+                Clicks: {this.state.count}
+            </div>
+        );
+    }
+}
+
+Counter.propTypes = { initialCount: React.PropTypes.number };
+Counter.defaultProps = { initialCount: 0 };
+
+## 无自动绑定  
+
+ES6 Classes (export class Counter extends React.Component ) 方法,
+遵循正式的ES6 class的语义，意味着它们不会自动绑定this到实例上。
+你必须显示的使用.bind(this) or 箭头函数 =>：
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+// 你可以使用 bind() 来绑定 `this`
+<div onClick={this.tick.bind(this)}>
+
+// 或者你可以使用箭头函数
+<div onClick={() => this.tick()}>
+
+我们建议你在构造函数中绑定事件处理器，这样对于所有实例它们只需绑定一次：
+
+constructor(props) {
+    super(props);
+    this.state = {count: props.initialCount};
+    this.tick = this.tick.bind(this);
+}
+现在你可以直接使用 this.tick 因为它已经在构造函数里绑定过一次了。
+
+// 它已经在构造函数里绑定过了
+<div onClick={this.tick}>
+
+这对应用的性能有帮助，特别是当你用 **浅层比较** 实现 shouldComponentUpdate() 时。
+
+http://react2.xgqfrms.xyz/docs/shallow-compare.html  
+http://react2.xgqfrms.xyz/docs/component-specs.html#updating-shouldcomponentupdate  
+
+### 没有 Mixins  
+
+不幸的是ES6的发布没有任何mixin的支持。
+因此，当你在ES6 classes下使用React时不支持mixins。
+作为替代，我们正在努力使它更容易不依靠mixins支持这些用例。
 
 
 
