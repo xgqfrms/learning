@@ -8,7 +8,7 @@ F:\genuine  soft\Raspberry PI\tools\tools for VNC
 F:\genuine  soft\Raspberry PI\tools\pdf
 
 
-F:\useful tools
+F:\useful tools\SumatraPDF-3.0-install.exe
 
 F:\useful tools\software\html5-tools
 
