@@ -431,6 +431,227 @@ It is a common pattern to map arrays to JSX elements.
 We are building a commenting engine that will allow visitors to post comments on a blog post, picture, etc.
 
 
+What the structure of our React app should look like.
+
+
+CommentBox
+----Comment
+----Comment
+----...
+
+
+There are some common things we always do when creating new components.
+
+
+1. New class
+
+2. Inherit from React.Component
+
+3. Return JSX from render function
+
+
+++++++++++++++++++++++++++++++++++++++
+# React-ES6-Snippets
+
+rcc + tab
+
+react component skeleton (rcc,tab)
+++++++++++++++++++++++++++++++++++++++ 
+
+class NewComponent extends React.Component {
+    ...
+    render() {
+        return ( ... );
+    }
+}
+
+
+Let’s start with an HTML mockup and identify potential components by looking at the markup.
+
+CommentBox component
+Comment component
+
+<div class="comment-box">
+    <h3>Comments</h3>
+    <h4 class="comment-count">2 comments</h4>
+    <div class="comment-list">
+        <div ="comment">
+            <p class="comment-header">
+                Anne Droid
+            </p>
+            <p class="comment-body">
+                I wanna know what love is...
+            </p>
+            <div class="comment-footer">
+                <a href="#" class="comment-footer-delete">
+                    Delete comment
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+The Comment component renders the markup for each comment, including its author and body.
+
+
+class becomes className in JSX
+
+Can now be used as JSX, like this: <Comment />
+
+
+
+Now we’ll declare the CommentBox component and use the previously declared Comment component.
+
+Using the Comment component
+
+<div class="comment-box">
+    <h3>Comments</h3>
+    <h4 class="comment-count">2 comments</h4>
+    <div class="comment-list">
+        // comment
+        <Comment />
+        <Comment />
+        <Comment />
+        ...
+    </div>
+</div>
+
+## React Components Accept Arguments
+
+Arguments passed to components are called props. 
+They look similar to regular HTML element attributes.
+
+Passing arguments to Comment
+
+<Comment author="Morgan McCircuit" body="Great picture!" />
+<Comment author="Bending Bender" body="Excellent stuff" />
+
+## Reading Props in the Comment Component
+
+Arguments passed to components can be accessed using the this.props object.
+
+
+Reading the author prop
+
+Reading the body prop
+
+class Comment extends React.Component {
+    render() {
+        return(
+            <div className="comment">
+                <p className="comment-header">{this.props.author}</p>
+                <p className="comment-body">
+                    {this.props.body}
+                </p>
+                <div className="comment-footer">
+                    <a href="#" className="comment-footer-delete">
+                        Delete comment
+                    </a>
+                </div>
+            </div>
+        );
+    }
+}
+
+
+## Passing and Receiving Arguments Review
+
+We use the this.props object to read parameters that were passed to the component.
+
+Passing Props
+
+<Comment
+    author="Morgan McCircuit"
+    body="Great picture!" />
+
+Receiving Props
+
+// Reads arguments passed to a component
+
+class Comment extends React.Component {
+    render() {
+        return(
+            ...
+            <p className="comment-header">{this.props.author}</p>
+            <p className="comment-body">
+                {this.props.body}
+            </p>
+            ...
+        );
+    }
+}
+
+## Quick Recap on Props
+
+We just covered a lot of content — here’s a summary of what we learned.
+
+
+Convert HTML mockup to React components
+
+Created two components: CommentBox and Comment
+
+How to pass arguments to components using props
+
+Props look like HTML element attributes
+
+
+## Passing Dynamic Arguments  
+
+Problem: Props Aren’t Dynamic Yet
+
+We are passing literal strings as props, but what if we wanted to traverse an array of objects?
+
+
+// Hardcoded values
+
+<Comment
+    author="Morgan McCircuit" body="Great picture!" />
+<Comment
+    author="Bending Bender" body="Excellent stuff" />
+
+
+JavaScript Object Arrays (JSON Data)
+
+Typically, when we consume data from API servers, we are returned object arrays.
+
+const commentList = [
+    { id: 1, author: 'Morgan McCircuit', body: 'Great picture!' },
+    { id: 2, author: 'Bending Bender', body: 'Excellent stuff' }
+];
+
+
+Excellent stuff & Great picture!
+
+
+## Mapping an Array to JSX
+
+
+We can use JavaScript’s map function to create an array with Comment components.
+
+// Underscore
+
+Underscore helps distinguish custom methods from React methods
+
+New method that will return array of JSX elements
+
+_getComments() {
+    const commentList = [
+        { id: 1, author: 'Morgan McCircuit', body: 'Great picture!' },
+        { id: 2, author: 'Bending Bender', body: 'Excellent stuff' }
+    ];
+    return commentList.map(() => {
+        return (<Comment />);
+    });
+}
+
+
+Returns an array with a new component built for each element present in commentList.
+
+## Passing Dynamic Props
+
+
+
 
 
 
