@@ -1072,8 +1072,41 @@ New Component: CommentForm
 CommentForm is a new component that will allow users to add comments to our app.
 
 
+<form className="comment-form">
+    <label>Join the discussion</label>
+    <div className="comment-form-fields">
+        <input placeholder="Name:" />
+        <textarea placeholder="Comment:"></textarea>
+    </div>
+    <div className="comment-form-actions">
+        <button type="submit">
+            Post comment
+        </button>
+    </div>
+</form>
 
 
+## Adding an Event Listener to Our Form
+
+To add an event listener to the form, we use the onSubmit prop and pass a handler to it.
+
+onSubmit={this._handleSubmit.bind(this)}
+
+Adds an event listener to the submit event
+
+Don't forget to bind event handlers,
+otherwise this will not work!
+
+_handleSubmit(event) {
+    event.preventDefault();
+}
+
+Prevents page from reloading
+
+
+
+
+______________________________________________
 
 ??? Underscore ._getComments() error
 
@@ -1094,6 +1127,21 @@ _getComments() {
         return (<Comment />);
     });
 }
+______________________________________________
+
+
+
+
+## Problem: Can’t Access User Input in handleSubmit()
+
+
+
+pdf 81/128
+
+
+
+??? github codeschool source codes ???
+
 
 
 
@@ -1109,7 +1157,7 @@ _getComments() {
 
 
 *******************************************************************************
-## 
+## Talking to Remote Servers : Using Lifecycle Methods to Load Comments
 *******************************************************************************
 
 
@@ -1119,8 +1167,24 @@ _getComments() {
 
 
 *******************************************************************************
-## 
+## Talking to Remote Servers : Adding and Deleting Comments on the Server Side
 *******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
