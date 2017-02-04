@@ -1,7 +1,21 @@
 # Raspberry Pi  
 
+*******************************************************************************
+
+
 F:\genuine  soft\Raspberry PI\tools\tools for VNC  
 
+F:\genuine  soft\Raspberry PI\tools\pdf
+
+
+F:\useful tools
+
+F:\useful tools\software\html5-tools
+
+F:\genuine  soft\SSH tools
+
+
+*******************************************************************************
 
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/  
