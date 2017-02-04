@@ -395,12 +395,66 @@ const now = new Date();
 Code written within curly braces gets interpreted as literal JavaScript
 
 
+## Iterating Arrays in JSX
+
+Here, we’re displaying a list of elements using JSX and JavaScript’s native map function.
+
+const topicsList = ['HTML', 'JavaScript', 'React'];
+
+{topicsList.map( topic => <li>{topic}</li> )}
+
+
+This function returns this JSX array.
+
+
+
+
+Quick Recap on JSX
+
+JSX stands for JavaScript XML.
+
+JSX markup looks similar to HTML, but ultimately gets transpiled to JavaScript function calls, which React will know how to render to the page.
+
+Code written within curly braces is interpreted as literal JavaScript.
+
+It is a common pattern to map arrays to JSX elements.
+
+
+
 
 
 
 *******************************************************************************
-## 
+## Talk Through Props
 *******************************************************************************
+
+We are building a commenting engine that will allow visitors to post comments on a blog post, picture, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
