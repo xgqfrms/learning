@@ -18,10 +18,24 @@ ReactDOM.render(
     document.getElementById('story-app')
 );
 
-
-// export ???;
-
 StoryBox.defaultProps = {};
 // ES6 constructor (defaultProps)
 
 export default StoryBox;
+// export ???;
+
+/*
+
+export xxx ? export default StoryBox : export StoryBox
+
+
+export default StoryBox;
+
+// have multi components, setting main/defualt Component
+
+
+export StoryBox; === export default StoryBox;
+
+// only one component, setting main Component
+
+*/
