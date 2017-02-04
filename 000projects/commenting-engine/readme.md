@@ -893,11 +893,84 @@ http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
 ## React.PropTypes  
 
 Prop 验证
-随着应用不断变大，保证组件被正确使用变得非常有用。
-为此我们引入 propTypes。
+
+随着应用不断变大，保证组件被正确使用变得非常有用, 为此我们引入 propTypes。
 React.PropTypes 提供很多验证器 (validator) 来验证传入数据的有效性。
 当向 props 传入无效数据时，JavaScript 控制台会抛出警告。
-注意为了性能考虑，只在开发环境验证 propTypes。
+
+注意:
+为了性能考虑，只在开发环境验证 propTypes。
+
+不同验证器的区别：
+
+
+React.createClass({
+  propTypes: {
+    // 可以声明 prop 为指定的 JS 基本类型
+    // (Number,Boolean,String,Symbol,Undefined,Null, Object[object,array,func] )。
+    // 默认情况下，这些 prop 都是可传可不传的。
+    optionalArray: React.PropTypes.array,
+    optionalBool: React.PropTypes.bool,
+    optionalFunc: React.PropTypes.func,
+    optionalNumber: React.PropTypes.number,
+    optionalObject: React.PropTypes.object,
+    optionalString: React.PropTypes.string,
+    optionalSymbol: React.PropTypes.symbol,
+
+    // 所有可以被渲染的对象：数字，
+    // 字符串，DOM 元素或包含这些类型的数组(or fragment) 。
+    optionalNode: React.PropTypes.node,
+
+    // React 元素
+    optionalElement: React.PropTypes.element,
+
+    // 你同样可以断言一个 prop 是一个类的实例。
+    // 用 JS 的 instanceof 操作符声明 prop 为类的实例。
+    optionalMessage: React.PropTypes.instanceOf(Message),
+
+    // 你可以用 enum 的方式
+    // 确保你的 prop 被限定为指定值。
+    optionalEnum: React.PropTypes.oneOf(['News', 'Photos']),
+
+    // 指定的多个对象类型中的一个
+    optionalUnion: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.number,
+      React.PropTypes.instanceOf(Message)
+    ]),
+
+    // 指定类型组成的数组
+    optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),
+
+    // 指定类型的属性构成的对象
+    optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),
+
+    // 特定形状参数的对象
+    optionalObjectWithShape: React.PropTypes.shape({
+      color: React.PropTypes.string,
+      fontSize: React.PropTypes.number
+    }),
+
+    // 你可以在任意东西后面加上 `isRequired`
+    // 来确保 如果 prop 没有提供 就会显示一个警告。
+    requiredFunc: React.PropTypes.func.isRequired,
+
+    // 不可空的任意类型
+    requiredAny: React.PropTypes.any.isRequired,
+
+    // 你可以自定义一个验证器。如果验证失败需要返回一个 Error 对象。
+    // 不要直接使用 `console.warn` 或抛异常，
+    // 因为这在 `oneOfType` 里不起作用。
+    customProp: function(props, propName, componentName) {
+      if (!/matchme/.test(props[propName])) {
+        return new Error('Validation failed!');
+      }
+    }
+  },
+  /* ... */
+});
+
+
 
 
 
@@ -991,6 +1064,43 @@ React.createElement(
 
 最佳实践 : 使用了 JSX 和 试验性的ECMAScript 语法。
 
+## 手动传递 props
+
+大部分情况下你应该显式地向下传递 props。这样可以确保只公开你认为是安全的内部 API 的子集。
+
+
+## 在 JSX 里使用 ... (Rest and Spread Properties ...) 传递 props
+
+
+http://react2.xgqfrms.xyz/docs/transferring-props.html#%E5%89%A9%E4%BD%99%E5%B1%9E%E6%80%A7%E5%92%8C%E5%B1%95%E5%BC%80%E5%B1%9E%E6%80%A7-...
+
+// --harmony 标志是必须的因为这个语法是ES7的实验性语法。
+
+<script type="text/jsx; harmony=true">
+
+有时把所有属性都传下去是不安全或啰嗦的。
+这时可以使用 解构赋值 中的剩余属性特性来把未知属性批量提取出来。
+
+列出所有当前要使用的属性，后面跟着 ...other。
+
+var { checked, ...other } = props;
+
+这样能确保把所有 props 传下去，除了 那些已经被使用了的。
+
+在传递这些未知的 other 属性时，要经常使用解构赋值模式。
+
+
+## 使用和传递同一个 Prop  
+
+如果组件需要使用一个属性又要往下传递，可以直接使用 checked={checked} 再传一次。
+这样做比传整个 props 对象要好，因为更利于重构和语法检查。
+
+注意:
+顺序很重要，把 {...other} 放到 JSX props 前面会使 props 不会被覆盖。上面例子中我们可以保证 input 的 type 是 "checkbox"。
+
+
+
+##  剩余属性和展开属性 ...  
 
 
 
@@ -1011,7 +1121,11 @@ let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
 
 ??? run bugs ???
 
-// Babel 6转换 rest 和 spread 属性
+注意:
+
+要用 Babel 6转换 rest 和 spread 属性，
+你需要安装 es2015 preset，transform-object-rest-spread 插件,
+并在 .babelrc 里配置他们.
 
 x; // 1
 y; // 2
@@ -1019,6 +1133,26 @@ z; // { a: 3, b: 4 }
 
 ``` 
 
+## 使用 Underscore 来传递 props
+
+如果不使用 JSX，可以使用一些库来实现相同效果。
+
+Underscore 提供 _.omit 来过滤属性，_.extend 复制属性到新的对象。
+
+function FancyCheckbox(props) {
+    var checked = props.checked;
+    var other = _.omit(props, 'checked');
+    var fancyClass = checked ? 'FancyChecked' : 'FancyUnchecked';
+    return (
+        React.DOM.div(
+            _.extend(
+                {},
+                other,
+                { className: fancyClass }
+            )
+        )
+    );
+}
 
 
 
