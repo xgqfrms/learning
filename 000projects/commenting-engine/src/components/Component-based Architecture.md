@@ -74,7 +74,9 @@ ReactDOM.render(
 
 1. Invoke StoryBox — again, we don't need quotes.
 
-2. Target container where component will be rendered to html target where Element'id="story-app"
+2. Target container where component will be rendered to html target where Element'id="story-app" (Target container)
+
+
 
 
 Every time we create a new React component, we use it by writing an element named after the class.
@@ -205,32 +207,181 @@ export class Counter extends React.Component {
 
 
 *******************************************************************************
-## 
+## Application Structure
+*******************************************************************************
+
+// components.js
+...
+ReactDOM.render(
+    <StoryBox />, document.getElementById('story-app')
+);
+
+// index.html
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="story-app">
+            <!-- Target container -->
+        </div>
+    </body>
+</html>
+
+That’s all there is to creating a component. Now we just need to add libraries.
+
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="story-app">
+            <!-- Target container -->
+        </div>
+        <!--  -->
+        <script src="vendors/react.js"></script>
+        <script src="vendors/react-dom.js"></script>
+        <script src="vendors/babel.js"></script>
+        <!-- babel  -->
+        <script type="text/babel" src="components.js"></script>
+    </body>
+</html>
+
+## React libraries
+
+vendors
+----react.js
+----react-dom.js
+----babel.js(standalone)
+
+
+Babel: Allows using latest features of JavaScript (class syntax, fat arrow, etc.)
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+G:\wwwRoot\learning\Front-End\React\React\ES6-React-App\libs
+
+G:\wwwRoot\learning\Front-End\React\React\app01\libs
+
+
+# JSX (babel-standalone)
+
+
+# JSX => JS  
+
+
+https://cdn.xgqfrms.xyz/babel/babel.min.js
+
+babel-standalone/babel.min.js & type="text/babel" 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*******************************************************************************
+## React Application Flow
+*******************************************************************************
+
+To clarify, here is what takes place when we load a page with a React component:
+
+1. First, the static HTML page is loaded...
+
+2. ...then then React library and our custom component is loaded...
+
+3. ...then the ReactDOM renderer renders the component....
+
+4. ...returning a virtual representation of the DOM, which is turned into real DOM elements.
+
+
+*******************************************************************************
+
+## Quick Recap on React
+
+React was built to solve one problem:
+building large applications with data that changes over time.
+
+In React, we write apps in terms of components.
+
+We use JavaScript classes when declaring React components.
+
+Components must extend the React.Component class and must contain a render() method.
+
+We call the ReactDOM.render() function to render components to a
+web page.
+
 *******************************************************************************
 
 
-
-
-
-
-
 *******************************************************************************
-## 
+## Understanding JSX
 *******************************************************************************
 
+The markup we use when writing React apps is not a string. 
+This markup is called JSX (JavaScript XML).
+
+1. HTML elements are written in lowercase.
+
+<div>Story Box</div>
+
+2. React components are written in upper camel case.
+
+<StoryBox />
+
+JSX is just another way of writing JavaScript with a transpile step.
+
+
+## JSX to JS
+
+React.createElement('div', null, 'Story Box')
+
+React.createElement(StoryBox, null)
+
+
+JSX looks similar to HTML, and it is ultimately transformed into JavaScript.
+
+class StoryBox extends React.Component {
+    render() {
+        return(
+            <div>
+                <h3>Stories App</h3>
+                <p className="lead">Sample paragraph</p>
+            </div>
+        );
+    }
+}
+
+Notice we are using className and not class, which is a JavaScript-reserved keyword.
+
+
+## Transpiled JSX code
+
+React.createElement(
+    "div", 
+    null,
+    React.createElement(
+        "h3",
+        null,
+        "Stories App"
+    ),
+    React.createElement(
+        "p",
+        {className:"lead"},
+        "Sample paragraph"
+    )
+);
+
+
+## From JSX to HTML
+
+
+1. All JSX gets transformed to JavaScript.
+
+2. Rendered by the browser
+
+3. Generated HTML
 
 
 
-
-
-
-
-
-
-
-*******************************************************************************
-## 
-*******************************************************************************
 
 
 
