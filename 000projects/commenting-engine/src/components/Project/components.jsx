@@ -22,6 +22,14 @@ export StoryBox; === export default StoryBox;
 
 // only one component, setting main Component
 
+
+//export default StoryBox;
+//export StoryBox;
+
+
+root/parent component export error ???
+
+
 */
 
 class StoryBox extends React.Component {
@@ -43,4 +51,5 @@ ReactDOM.render(
 
 StoryBox.defaultProps = {};
 
-export default StoryBox;
+//export default StoryBox;
+//export StoryBox;
