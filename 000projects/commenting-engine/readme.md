@@ -1,9 +1,6 @@
 # commenting engine  
 
 
-
-
-
 $ npm start  
 
 $ npm dist
@@ -100,6 +97,10 @@ $ yo react-webpack:component my/namespaced/components/name --stateless
 
 ??? npm run ???
 
+
+$ npm run [commands]
+
+
 ***************************************
 # error  
 $ npm serve:dist
@@ -156,7 +157,7 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 },
 
 
-
+*******************************************************************************
 *******************************************************************************
 
 --env=dev & --env=dist
