@@ -965,6 +965,37 @@ more coming soon ...
 
 
 *******************************************************************************
+http://react2.xgqfrms.xyz/docs/transferring-props.html
+
+http://react2.xgqfrms.xyz/docs/jsx-spread.html
+
+# 传递 Props
+
+React 里有一个非常常用的模式就是对组件做一层抽象。
+组件对外公开一个简单的属性（Props）来实现功能，但内部的实现可能非常复杂。
+
+可以使用 **JSX 展开属性** 来合并现有的 props 和其它值：
+
+<Component {...this.props} more="values" />
+
+如果不使用 JSX，可以使用一些对象辅助方法如 ES6 的 Object.assign 或 Underscore _.extend。
+
+React.createElement(
+    Component, 
+    Object.assign(
+        {},
+        this.props,
+        { more: 'values' }
+    )
+);
+
+最佳实践 : 使用了 JSX 和 试验性的ECMAScript 语法。
+
+
+
+
+
+
 
 
 
