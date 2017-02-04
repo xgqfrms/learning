@@ -1009,7 +1009,7 @@ var ComponentWithDefaultProps = React.createClass({
 得益于此，你可以直接使用 props，而不必写手动编写一些重复或无意义的代码。
 
 
-## 传递 Props：捷径
+## 传递 Props：捷径(shorthand )
 
 有一些常用的 React 组件只是对 HTML 做简单扩展。
 通常，你想复制任何传进你的组件的HTML属性到底层的HTML元素上。
@@ -1133,11 +1133,89 @@ http://react2.xgqfrms.xyz/docs/component-specs.html#updating-shouldcomponentupda
 
 
 
+## 无状态函数
+
+你也可以用 JavaScript 函数来定义你的 React 类。例如使用无状态函数语法：
+
+function HelloMessage(props) {
+    return <div>Hello {props.name}</div>;
+}
+ReactDOM.render(
+    <HelloMessage name="Sebastian" />,
+    mountNode
+);
+
+或者,使用新的ES6箭头函数:
+
+<!-- 
+const HelloMessage = (props) => {
+    <div>Hello {props.name}</div>;
+}
+
+const HelloMessage = (props) => {
+    (<div>Hello {props.name}</div>);
+}
+
+ -->
+
+const HelloMessage = (props) => <div>Hello {props.name}</div>;
+
+ReactDOM.render(
+    <HelloMessage name="Sebastian" />,
+    mountNode
+);
+
+这个简化的组件API旨在用于那些纯函数态(pure function)的组件 。
+这些组件必须没有保持任何内部状态，没有备份实例，也没有组件生命周期方法。
+他们纯粹的函数式的转化他们的输入，没有引用。
+然而，你仍然可以以设置函数 properties 的方式来指定 .propTypes 和 .defaultProps，就像你在ES6类里设置他们那样。
+
+注意：
+因为无状态函数没有备份实例，你不能附加一个引用到一个无状态函数组件。
+通常这不是问题，因为无状态函数不提供一个命令式的API。
+没有命令式的API，你就没有任何需要实例来做的事。
+然而，如果用户想查找无状态函数组件的DOM节点，他们必须把这个组件包装在一个有状态组件里（比如，ES6 类组件） 并且连接一个引用到有状态的包装组件。
+
+在理想世界里，你的大多数组件都应该是无状态函数(stateless function)，因为将来我们可能会用避免不必要的检查和内存分配的方式来对这些组件进行优化。 如果可能，这是推荐的模式。
+
+
+
 
 *******************************************************************************
 http://react2.xgqfrms.xyz/docs/forms.html
 
-表单组件
+# 表单组件
+
+## 表单组件
+
+诸如 <input>、<textarea>、<option> 这样的表单组件不同于其他原生组件，因为他们可以通过用户交互发生变化。
+这些组件提供的界面使响应用户交互的表单数据处理更加容易。
+
+关于 <form> 事件详情请查看 表单事件。
+
+http://react2.xgqfrms.xyz/docs/events-zh-CN.html#%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6
+
+## 交互属性
+
+表单组件支持几个受用户交互影响的属性：
+
+value，用于 <input>、<textarea> 组件。
+checked，用于类型为 checkbox 或者 radio 的 <input> 组件。
+selected，用于 <option> 组件。
+
+在 HTML 中，<textarea> 的值通过子节点设置；在 React 中则应该使用 value 代替。
+
+表单组件可以通过 onChange 回调函数来监听组件变化。
+当用户做出以下交互时，onChange 执行并通过浏览器做出响应：
+
+<input> 或 <textarea> 的 value 发生变化时。
+<input> 的 checked 状态改变时。
+<option> 的 selected 状态改变时。
+
+和所有 DOM 事件一样，所有的 HTML 原生组件都支持 onChange 属性，而且可以用来监听冒泡的 change 事件。
+
+注意:
+对于 <input> and <textarea>， onChange 取代 — 一般应该用来替代 — DOM内建的 oninput 事件处理。
 
 
 ## 受控组件
@@ -1149,14 +1227,57 @@ render: function() {
     return <input type="text" value="Hello!" />;
 }
 
+用户输入在被渲染的元素里将没有作用,因为 React 已经声明值为 Hello!。
+要更新 value 来响应用户输入，你可以使用 onChange 事件：
+
+getInitialState: function() {
+    return {value: 'Hello!'};
+},
+handleChange: function(event) {
+    this.setState({value: event.target.value});
+},
+render: function() {
+    return (
+        <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+        />
+    );
+}
+
+在这个例子中，我们接受用户提供的值并更新 <input> 组件的 value prop。
+这个模式使实现响应或者验证用户输入的界面更容易。例如：
+
+handleChange: function(event) {
+    this.setState({value: event.target.value.substr(0, 140)});
+}
+
+上面的代码接受用户输入，并截取前 140 个字符。
+
+受控组件不维持一个自己的内部状态;它单纯的基于 props 渲染。
+
+## 复选框与单选按钮的潜在问题
+
+当心，在力图标准化复选框与单选按钮的变换处理中，React使用 click 事件代替 change 事件。
+在大多数情况下它们表现的如同预期，除了在change handler中调用preventDefault 。
+preventDefault 阻止了浏览器视觉上更新输入，即使checked被触发。
+变通的方式是要么移除preventDefault的调用，要么把checked 的触发放在一个setTimeout里。
+
 
 ## 不受控组件
 
 一个没有 value 属性的 <input> 是一个不受控组件:
 
-  render: function() {
+render: function() {
     return <input type="text" />;
 }
+
+
+上面的代码将渲染出一个空值的输入框，用户输入将立即反应到元素上。
+和受控元素一样，使用 onChange 事件可以监听值的变化。
+
+不受控组件维持它自己的内部状态。
 
 ## 默认值
 
@@ -1174,10 +1295,67 @@ render: function() {
 defaultValue 和 defaultChecked props 只能在内部渲染时被使用。 如果你需要在随后的渲染更新值, 你需要使用 受控组件.
 
 
+http://react2.xgqfrms.xyz/docs/forms.html#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6
 
 
 
-more coming soon ...
+# 高级主题
+
+## 为什么使用受控组件？
+
+在 React 中使用诸如 <input> 的表单组件时，遇到了一个在传统 HTML 中没有的挑战。
+比如下面的代码：
+
+<input type="text" name="title" value="Untitled" />
+
+它渲染一个初始值为 Untitled 的输入框。
+当用户改变输入框的值时，节点的 value 属性( property)将随之变化，但是 node.getAttribute('value') 还是会返回初始设置的值 Untitled.
+
+与 HTML 不同，React 组件必须在任何时间点都表现视图的状态，而不仅仅是在初始化时。
+比如在 React 中：
+
+render: function() {
+    return <input type="text" name="title" value="Untitled" />;
+}
+
+由于这个方法描述了在任意时间点上的视图，那么文本输入框的值就应该始终为 Untitled。
+
+
+## 为什么 <textarea> 使用 value 属性？
+
+在 HTML 中， <textarea> 的值通常使用子节点设置：
+
+<!-- 反例：在 React 中不要这样使用！ -->
+<textarea name="description">This is the description.</textarea>
+
+对 HTML 而言，让开发者设置多行的值很容易。
+但是，由于 React 是 JavaScript，没有字符串限制，可以使用 \n 实现换行。
+简言之，React 已经有 value、defaultValue 属性，<textarea> 组件的子节点扮演什么角色就有点模棱两可了。
+基于此， 设置 <textarea> 值时不应该使用子节点：
+
+<textarea name="description" value="This is a description." />
+
+如果 非要 使用子节点，效果和使用 defaultValue 一样。
+
+
+## 为什么 <select> 使用 value 属性
+
+HTML 中 <select> 通常使用 <option> 的 selected 属性设置选中状态；
+React 为了更方便地控制组件，采用以下方式代替：
+
+<select value="B">
+    <option value="A">Apple</option>
+    <option value="B">Banana</option>
+    <option value="C">Cranberry</option>
+</select>
+
+如果是不受控组件，则使用 defaultValue。
+
+注意：
+给 value 属性传递一个数组，可以选中多个选项：
+
+<select multiple={true} value={['B', 'C']}>
+
 
 
 

@@ -20,7 +20,8 @@ export class Counter extends React.Component{
 ## ES5 React.createClass({})
 
 var CheckLink = React.createClass({
-
+    //
+});
 */
 
 var CheckLink = React.createClass({
