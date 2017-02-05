@@ -29,6 +29,7 @@ https://babeljs.io/learn-es2015/
 
 
 
+https://github.com/addyosmani/es6-tools
 
 
 
