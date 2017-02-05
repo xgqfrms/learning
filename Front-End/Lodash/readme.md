@@ -54,7 +54,9 @@ https://en.wikipedia.org/wiki/Functional_programming
 G:\wwwRoot\learning\JavaScript\Functional Programming\pure
 
 
+Lodash 
 
+A modern JavaScript utility library delivering modularity, performance & extras.
 
 
 

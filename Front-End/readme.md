@@ -42,12 +42,7 @@ https://github.com/slevithan/xregexp
 
 https://www.javascripting.com/
 
-
-
 https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
-
-
-
 
 
 
@@ -57,5 +52,18 @@ http://2016.js13kgames.com/
 
 
 
+
+
+## FP  === Functional programming
+
+
+https://en.wikipedia.org/wiki/Functional_programming
+
+G:\wwwRoot\learning\JavaScript\Functional Programming\pure
+
+
+Lodash 
+
+A modern JavaScript utility library delivering modularity, performance & extras.
 
 
