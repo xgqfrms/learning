@@ -38,5 +38,21 @@ function sum(a, b) {
 
 
 
+## functional javascript workshop
+
+A functional javascript workshop. No libraries required (i.e. no underscore), just ES5.
+
+https://github.com/ufo-github/functional-javascript-workshop
+
+
+
+
+
+
+
+
+
+
+
 
 
