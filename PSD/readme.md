@@ -24,7 +24,7 @@ http://tutorialzine.com/webdev-newsletter/8bef16bf/
 
 
 
-
+G:\wwwRoot\learning\Jquery\100 Must Know jQuery Tips and Tricks
 
 
 

@@ -18,7 +18,7 @@ http://tutorialzine.com/webdev-newsletter/8bef16bf/
 ## Tzine's PSD Collection
 
 
-
+G:\wwwRoot\learning\PSD
 
 
 

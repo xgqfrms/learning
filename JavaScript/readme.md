@@ -122,14 +122,30 @@ Javascript Scope Chains And Closures Workshop
 
 *******************************************************************************
 
+https://www.destroyallsoftware.com/talks/wat
+
+Wat
+
+A lightning talk by Gary Bernhardt from CodeMash 2012
+
+https://www.destroyallsoftware.com/screencasts/catalog
 
 
 
+https://www.destroyallsoftware.com/talks
 
 
+The Birth & Death of JavaScript
+
+A talk by Gary Bernhardt from PyCon 2014
 
 
+the-birth-and-death-of-javascript.mov
 
+17.0 KB/s - 272 KB，共 84.4 MB，还剩 1 小时
+
+
+*******************************************************************************
 
 
 
