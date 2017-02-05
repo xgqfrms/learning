@@ -10,6 +10,14 @@ https://lodash.com/
 
 
 
+https://lodash.com/docs/4.17.4
+
+
+
+https://github.com/lodash/lodash/wiki/FP-Guide
+
+
+
 In a browser:
 
 <script src="lodash.js"></script>
@@ -48,6 +56,8 @@ var extend = require('lodash/fp/extend');
 
 ## FP  === Functional programming
 
+
+https://github.com/lodash/lodash/wiki/FP-Guide
 
 https://en.wikipedia.org/wiki/Functional_programming
 

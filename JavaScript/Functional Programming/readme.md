@@ -7,6 +7,11 @@
 https://en.wikipedia.org/wiki/Functional_programming
 
 
+https://github.com/lodash/lodash/wiki/FP-Guide
+
+
+
+
 
 ## Functional Programming  
 
