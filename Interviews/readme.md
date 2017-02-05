@@ -239,5 +239,9 @@ https://github.com/amfe/article/issues/1
 
 
 
+## Essential JavaScript Links
 
+https://github.com/ericelliott/essential-javascript-links/edit/master/README.md
+
+https://gist.github.com/xgqfrms-GitHub/f27ddadcb221303f599743b77e045887
 
