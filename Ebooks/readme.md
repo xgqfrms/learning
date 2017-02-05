@@ -58,4 +58,23 @@ https://github.com/ufo-github/it-ebooks
 
 
 
+## ebooksbucket
+
+http://www.ebooksbucket.com/
+
+http://www.ebooksbucket.com/uploads/itprogramming/javascript/Programming_JavaScript_Applications.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

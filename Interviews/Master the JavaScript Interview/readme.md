@@ -46,10 +46,23 @@ AKA: The Keys to JavaScript Mastery
 *******************************************************************************
 
 
+https://github.com/ericelliott
+
+https://ericelliottjs.com/
+
+
+https://gist.github.com/ericelliott/
 
 
 
 
+https://github.com/ericelliott/essential-javascript-links
+
+
+http://chimera.labs.oreilly.com/books/1234000000262/index.html
+
+
+http://www.ebooksbucket.com/uploads/itprogramming/javascript/Programming_JavaScript_Applications.pdf
 
 
 *********************************************************************************************************************************************************************************************************************************************
