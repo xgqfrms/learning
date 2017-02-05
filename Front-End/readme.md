@@ -17,6 +17,23 @@ https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
 
 https://www.javascripting.com/
 
+
+Please make sure the submission is a clientside library, and has at least 80 stars on Github.
+
+
+请确保提交的是一个客户端库， 并在Github上至少有80颗星。
+
+
+https://www.javascripting.com/submit
+
+https://github.com/xgqfrms-GitHub/ng2seed
+
+
+
+
+
+
+
 https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
 
 
@@ -25,6 +42,10 @@ http://tutorialzine.com/2016/01/15-interesting-javascript-and-css-libraries-for-
 
 
 https://www.smashingmagazine.com/2009/03/40-stand-alone-javascript-libraries-for-specific-purposes/
+
+
+
+http://www.webdesignerdepot.com/2016/11/12-javascript-libraries-to-watch-in-2017/
 
 
 
