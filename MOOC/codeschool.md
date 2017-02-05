@@ -1,6 +1,28 @@
 # codeschool 
 
 
+https://www.codeschool.com/courses
+
+free
+
+
+
+http://courseware.codeschool.com/cracking-the-case-with-flexbox/slides/CodeSchool-CrackingTheCaseWithFlexbox.pdf
+
+
+
+
+http://courseware.codeschool.com/digging_into_django/slides/CodeSchool-DiggingIntoDjango.pdf
+
+
+
+
+
+
+
+
+
+
 
 
 http://courseware.codeschool.com/close_encounters_with_php/slides/CodeSchool-CloseEncountersWithPHP.pdf
@@ -13,6 +35,29 @@ http://courseware.codeschool.com/powering-up-with-react/CodeSchool-PoweringUpWit
 
 
 
+
+http://courseware.codeschool.com/try_php/slides/CodeSchool-TryPHP.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+https://medium.com/code-school/comprehensive-list-of-2017-web-developer-conferences-6a0777ae95bb
 
 
 
@@ -72,3 +117,28 @@ http://softwareleadweekly.com/
 
 
 *******************************************************************************
+
+
+
+
+
+https://bitbucket.org/xgqfrms/react-app-2017
+
+
+https://bitbucket.org/tutorials/markdowndemo
+
+
+http://daringfireball.net/projects/markdown/
+
+
+
+
+
+
+
+
+
+
+
+
+

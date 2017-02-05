@@ -209,6 +209,33 @@ http://www.infoq.com/cn/articles/react-dom-diff
 https://github.com/ufo-github/virtual-dom/tree/master/tutorials
 
 
+
+
+
+
+http://www.infoq.com/cn/profile/%E7%8E%8B%E6%B2%9B
+
+ReactJS 实战
+
+
+
+深入浅出React（五）：使用Flux搭建React应用程序架构
+
+深入浅出React（四）：虚拟DOM Diff算法解析
+
+深入浅出React（三）：理解JSX和组件
+
+深入浅出React（二）：React开发神器Webpack
+
+深入浅出React（一）：React的设计哲学 - 简单之美
+
+
+
+
+
+
+
+
 *******************************************************************************
 
 

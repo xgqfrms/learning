@@ -57,7 +57,48 @@ https://www.codecademy.com/learn/learn-git
 
 
 
+## Markdown
 
+https://bitbucket.org/xgqfrms/react-app-2017
+
+
+https://bitbucket.org/tutorials/markdowndemo
+
+
+http://daringfireball.net/projects/markdown/
+
+
+
+## Bitbucket  
+
+https://developer.atlassian.com/bitbucket/api/2/reference/
+
+
+
+
+
+## GitLab  
+
+https://about.gitlab.com/
+
+
+
+
+## coding  
+
+https://coding.net/user
+
+https://mart.coding.net
+
+
+
+
+## csdn 
+
+https://code.csdn.net/
+
+
+https://code.csdn.net/help/CSDN_Code/code_support/FAQ_2_3
 
 
 
