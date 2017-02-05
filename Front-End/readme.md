@@ -24,8 +24,7 @@ http://tutorialzine.com/2016/01/15-interesting-javascript-and-css-libraries-for-
 
 
 
-
-
+https://www.smashingmagazine.com/2009/03/40-stand-alone-javascript-libraries-for-specific-purposes/
 
 
 
