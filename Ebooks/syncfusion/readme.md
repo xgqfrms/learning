@@ -22,6 +22,27 @@ http://files2.syncfusion.com/Downloads/Ebooks/groovy_succinctly.pdf
 
 
 
+## Keystone (Express)
+
+http://files2.syncfusion.com/Downloads/Ebooks/Keystonejs_Succinctly.pdf
+
+
+http://keystonejs.com/
+
+Node.js CMS & Web Application Platform
+
+
+
+
+https://www.syncfusion.com/resources/techportal/ebooks
+
+
+
+https://www.syncfusion.com/content/downloads/ebook/SQL_Queries_Succinctly.pdf
+
+
+
+
 
 
 
