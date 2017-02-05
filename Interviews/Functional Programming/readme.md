@@ -231,6 +231,56 @@ ReactJS 实战
 
 
 
+http://facebook.github.io/flux/docs/overview.html
+
+https://github.com/facebook/flux
+
+
+
+
+http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react
+
+https://github.com/supnate/react-tab-selector
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+http://redux.js.org/
+
+https://github.com/reactjs/redux
+
+
+
+https://github.com/reactjs/react-redux
+
+http://redux.js.org/docs/basics/UsageWithReact.html
+
+
+https://egghead.io/courses/getting-started-with-redux
+
+
+
+https://github.com/gaearon/redux-devtools
+
+https://www.youtube.com/watch?v=xsSnOQynTHs
+
+
+
+
+
+
+https://reduxframework.com/
+
+What is Redux?
+Redux is a simple, truly extensible options framework for WordPress themes and plugins.
+
 
 
 
