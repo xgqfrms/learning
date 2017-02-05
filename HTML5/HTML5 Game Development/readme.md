@@ -36,9 +36,18 @@ http://dev.end3r.com/2016/08/js13kgames-2016-has-started/
 
 canvas
 
+******************************************************************************
+
+## Pixi.js
+
+A 2D JavaScript Renderer
+
+Super fast HTML 5 2D rendering engine that uses webGL with canvas fallback
+
+https://github.com/ufo-github/pixi.js
 
 
-
+******************************************************************************
 
 
 
