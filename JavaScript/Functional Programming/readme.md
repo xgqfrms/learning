@@ -50,7 +50,13 @@ https://github.com/ufo-github/functional-javascript-workshop
 
 
 
+## RxJS
 
+
+http://reactivex.io/learnrx/
+
+
+Functional Programming in Javascript, RxJS
 
 
 

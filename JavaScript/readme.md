@@ -64,3 +64,73 @@ http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-
 
 http://javascriptissexy.com/understand-javascript-closures-with-ease/  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+
+https://nodeschool.io/zh-cn/
+
+https://github.com/nodeschool/nodeschool.github.io
+
+https://github.com/nodeschool/discussions
+
+
+https://github.com/stackgl/shader-school
+
+
+
+
+
+https://github.com/ufo-github/promise-it-wont-hurt
+
+A Workshopper module that teaches you to use promises in javascript
+
+
+
+
+https://github.com/ufo-github/webgl-workshop
+
+The sequel to shader-school: Learn the WebGL API
+
+
+https://github.com/ufo-github/IntroToWebGLWithThreeJS
+
+
+Intro to WebGL with three.js
+
+
+https://github.com/ufo-github/scope-chains-closures
+
+Javascript Scope Chains And Closures Workshop
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+

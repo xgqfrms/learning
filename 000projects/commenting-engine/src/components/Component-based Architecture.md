@@ -1165,9 +1165,6 @@ pdf 81/128
 
 
 
-
-
-
 *******************************************************************************
 ## Talking to Remote Servers : Using Lifecycle Methods to Load Comments
 *******************************************************************************
@@ -1215,49 +1212,116 @@ pdf 81/128
 
 
 
+*******************************************************************************
+https://nodeschool.io/zh-cn/
+
+
+https://github.com/ufo-github/learnyoureact
+
+
+
+https://github.com/ufo-github/perfschool
+
+https://github.com/ufo-github/functional-javascript-workshop
+
+https://github.com/jesstelford/scope-chains-closures
+
+
+https://github.com/maxogden/elementary-electron
+
+https://github.com/ufo-github/learnyounode
+
+https://github.com/ufo-github/javascripting
+
+https://github.com/ufo-github/expressworks
+
+https://github.com/ufo-github/planetproto
+
+https://github.com/ufo-github/test-anything
+
+https://github.com/ufo-github/promise-it-wont-hurt
+
+https://github.com/ufo-github/async-you
+
+https://github.com/caolan/async
+
+https://github.com/ufo-github/shader-school
+
+https://github.com/ufo-github/IntroToWebGLWithThreeJS
+
+https://github.com/ufo-github/webgl-workshop
+
+
+https://get.webgl.org/
+
+Your browser supports WebGL
+
+
+*******************************************************************************
+
+
+https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060#.bwjby5t2i
+
+
+http://www.infoq.com/cn/profile/%E7%8E%8B%E6%B2%9B
+
+ReactJS 实战
+
+
+
+深入浅出React（五）：使用Flux搭建React应用程序架构
+
+深入浅出React（四）：虚拟DOM Diff算法解析
+
+深入浅出React（三）：理解JSX和组件
+
+深入浅出React（二）：React开发神器Webpack
+
+深入浅出React（一）：React的设计哲学 - 简单之美
 
 
 
 
 
+## 颠覆式前端UI开发框架：React
+
+http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react
+
+
+https://github.com/supnate/react-tab-selector
 
 
 
 
+https://github.com/supnate/react-dom-diff/tree/gh-pages
+
+https://supnate.github.io/react-dom-diff/index.html
+
+
+Demonstrate React component life-cycle and DOM diff algorithm.
+
+
+
+https://github.com/supnate/icropper
+
+http://supnate.github.io/icropper/demo.html
 
 
 
 
+http://rekit.js.org/
+
+
+https://www.youtube.com/watch?v=9lqWoQjy-JY&feature=youtu.be
+
+
+
+http://v.youku.com/v_show/id_XMTcyNTQxNzgwNA==.html
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*******************************************************************************
 
 
 

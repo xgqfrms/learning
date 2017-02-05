@@ -103,6 +103,24 @@ AKA: The Keys to JavaScript Mastery
 
 
 
+*******************************************************************************
+
+
+## RxJS
+
+Functional Programming in Javascript, RxJS
+
+https://reduxframework.com/
+
+What is Redux?
+Redux is a simple, truly extensible options framework for WordPress themes and plugins.
+
+
+
+*******************************************************************************
+
+
+
 
 ## functional javascript workshop
 
@@ -276,17 +294,6 @@ https://www.youtube.com/watch?v=xsSnOQynTHs
 
 
 
-https://reduxframework.com/
-
-What is Redux?
-Redux is a simple, truly extensible options framework for WordPress themes and plugins.
-
-
-
-
-
-
-*******************************************************************************
 
 
 
