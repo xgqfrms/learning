@@ -13,6 +13,7 @@ http://grfia.dlsi.ua.es/ml/algorithms/references/editsurvey_bille.pdf
 
 *******************************************************************************
 
+https://github.com/ufo-github/virtual-dom/tree/master/tutorials
 
 
 https://github.com/maxogden/yo-yo#morphdom

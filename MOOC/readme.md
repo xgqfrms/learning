@@ -11,13 +11,24 @@ coursera
 
 https://www.coursera.org/learn/raspberry-pi-platform/home/welcome
 
-
-
-
 https://egghead.io/
 
 
 
+
+
+
+
+
+
+
+
+
+
+https://nodeschool.io/zh-cn/
+
+
+https://github.com/nodeschool
 
 
 

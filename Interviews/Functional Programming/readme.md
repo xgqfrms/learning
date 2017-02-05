@@ -149,6 +149,12 @@ https://github.com/ufo-github/IntroToWebGLWithThreeJS
 Intro to WebGL with three.js
 
 
+https://github.com/ufo-github/scope-chains-closures
+
+Javascript Scope Chains And Closures Workshop
+
+
+
 
 *******************************************************************************
 
@@ -200,7 +206,7 @@ http://www.infoq.com/cn/articles/react-dom-diff
 
 
 
-
+https://github.com/ufo-github/virtual-dom/tree/master/tutorials
 
 
 *******************************************************************************
