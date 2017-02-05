@@ -11,6 +11,11 @@ https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
 
 *******************************************************************************
 
+https://zhuanlan.zhihu.com/p/24658626
+
+
+
+*******************************************************************************
 
 
 ## The Database of JavaScript Libraries
