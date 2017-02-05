@@ -45,7 +45,16 @@ Browser extension for rendering an isometric pixel art version of your GitHub co
 
 
 
-ThoughtWorks
+
+
+## Sync-commit-time-Days-Ok
+
+
+
+offline local GitHub commits (commit)
+
+online Sync commits time to GitHub, (push)
+
 
 
 
