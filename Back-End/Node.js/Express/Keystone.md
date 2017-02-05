@@ -18,9 +18,9 @@ http://files2.syncfusion.com/Downloads/Ebooks/Keystonejs_Succinctly.pdf
 
 
 
+http://keystonejs.com/zh/
 
-
-
+https://github.com/keystonejs/keystone
 
 
 
