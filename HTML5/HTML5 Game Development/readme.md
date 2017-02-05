@@ -16,6 +16,14 @@ https://classroom.udacity.com/courses/cs255/lessons/66584787/concepts/6651682309
 
 
 
+## HTML5 and JavaScript Game Development Competition in just 13 kB
+
+
+http://2016.js13kgames.com/
+
+
+
+
 
 
 http://enclavegames.com/games.html
