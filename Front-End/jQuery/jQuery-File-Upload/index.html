@@ -8,9 +8,19 @@
         https://github.com/blueimp/jQuery-File-Upload
         https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" crossorigin="anonymous"
      -->
+     <style>
+         .bar {
+             height: 18px;
+             background: green;
+         }
+     </style>
 </head>
 <body>
     <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+    <div id="progress">
+        <div class="bar" style="width: 0%;"></div>
+    </div>
+    <!-- js -->
     <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <script src="js/vendor/jquery.ui.widget.js" crossorigin="anonymous"></script>
     <script src="js/jquery.iframe-transport.js" crossorigin="anonymous"></script>
@@ -19,13 +29,27 @@
         $(function () {
             $('#fileupload').fileupload({
                 dataType: 'json',
+                add: function (e, data) {
+                    data.context = $('<button/>').text('Upload')
+                        .appendTo(document.body)
+                        .click(function () {
+                            data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+                            data.submit();
+                        });
+                },
                 done: function (e, data) {
-                    $.each(data.result.files, function (index, file) {
-                        $('<p/>').text(file.name).appendTo(document.body);
-                    });
+                   data.context.text('Upload finished.');
                 }
             });
         });
+        //
+        progressall: function (e, data) {
+           var progress = parseInt(data.loaded / data.total * 100, 10);
+           $('#progress .bar').css(
+               'width',
+               progress + '%'
+           );
+       }
     </script>
 </body>
 </html>
