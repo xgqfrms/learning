@@ -82,6 +82,87 @@ https://doc.webpack-china.org/
 
 
 
+
+
+https://github.com/webpack-china/awesome-webpack-cn
+
+
+https://webpack.toobug.net/zh-cn/
+
+https://github.com/TooBug/javascript.patterns
+https://github.com/lxj/javascript.patterns
+
 *******************************************************************************
+
+
+
+
+https://www.toobug.net/article/capture_video_on_web.html
+
+https://futu.im/posts/capture-video-on-web/
+
+https://github.com/samdutton/simpl
+https://github.com/samdutton/simpl/tree/gh-pages/mediarecorder
+
+https://simpl.info/mediarecorder/
+
+
+<input type="file" accept="video/mp4,video/x-m4v,video/*"/>
+
+*******************************************************************************
+
+
+
+http://xheditor.com/
+http://xheditor.com/demo.html
+http://xheditor.com/download.html
+https://github.com/yaniswang/xheditor
+
+xhEditor是一个基于jQuery开发的简单迷你并且高效的在线可视化HTML编辑器。 
+
+https://github.com/yaniswang/HTMLHint
+
+A Static Code Analysis Tool for HTML 
+
+http://htmlhint.com/
+
+*******************************************************************************
+
+
+
+JavaScript 异常档案
+
+http://errors.totorojs.org/
+
+
+.document::after {
+    content: "❦";
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(221, 17, 68);
+}
+
+❦ Floral Heart Emoji & 花卉心脏 Emoji ❦
+
+https://www.utf8icons.com/character/10086/floral-heart
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 

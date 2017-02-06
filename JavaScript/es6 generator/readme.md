@@ -30,3 +30,24 @@ https://doc.webpack-china.org/
 https://github.com/ufo-github/ImageMagick/issues/1
 
 
+
+
+
+*******************************************************************************
+
+
+学习ES6生成器（Generator）
+
+
+https://www.toobug.net/article/learning_es6_generator.html
+
+
+
+
+
+
+
+
+
+
+
