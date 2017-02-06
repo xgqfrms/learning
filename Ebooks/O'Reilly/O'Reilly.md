@@ -43,6 +43,118 @@ You Don't Know JS: Up & Going
 F:\Books\O’Reilly free ebooks  
 
 
+*******************************************************************************
+
+
+## O’Reilly Media
+
+https://github.com/oreillymedia/
+
+
+
+
+https://github.com/oreillymedia/HTML5-for-Publishers  
+https://github.com/sandersk/HTML5-for-Publishers  
+
+http://shop.oreilly.com/product/0636920022473.do  
+
+
+Title:HTML5 for Publishers 
+Ebook: October 2011 
+Pages: 56 
+
+
+*******************************************************************************
+
+
+
+https://github.com/oreillymedia/learn.jquery.com
+
+https://github.com/odewahn/learn.jquery.com
+
+
+learn.jquery.com web site 
+
+http://learn.jquery.com
+
+
+
+
+https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript
+
+http://shop.oreilly.com/product/0636920029557.do
+
+
+
+Data Structures and Algorithms with JavaScript Bringing classic computing approaches to the Web
+
+Final Release Date: March 2014
+Pages: 252
+
+
+
+
+https://github.com/oreillymedia/beautiful_javascript
+
+Beautiful JavaScript Leading Programmers Explain How They Think
+
+Final Release Date: August 2015
+Pages: 168
+
+
+
+https://github.com/oreillymedia/htmlbook.js
+
+https://github.com/oreillymedia/htmlbook
+
+
+http://oreillymedia.github.io/HTMLBook/
+
+
+https://www.w3.org/TR/html5/
+
+
+
+https://github.com/w3c/respec
+
+A tool that helps you write web standards
+
+https://github.com/w3c/respec/wiki
+
+https://github.com/w3c/respec/wiki/User's-Guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
