@@ -22,12 +22,33 @@ https://cdn.xgqfrms.xyz/babel/babel.min.js
 
 ## ES6 module
 
-??? 
+
+How to import / export in React/ES6 ?
+
+
+http://vincentaudebert.github.io/javascript/react/es6/2016/05/15/import-export-react-es6/
+
+
+
+
+
+
+
 
 // import Profile from './child-profile';
 
 
 how to import another child.js file into the main.js file ???
+
+
+
+
+
+export default class GridViewSample extends Component 
+
+
+export class GridViewSample extends Component 
+
 
 
 

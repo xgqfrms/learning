@@ -74,6 +74,26 @@ http://ebooksreleases.com/zurb-foundation-blueprints-by-james-michael-stone-eboo
 
 
 
+## allitebooks
+
+http://www.allitebooks.com/
+
+http://www.allitebooks.com/?s=angular
+
+http://www.allitebooks.com/?s=react
+
+
+
+
+## http://pepa.holla.cz/wp-content/uploads/
+
+http://pepa.holla.cz/wp-content/uploads/2016/12/Mastering-React.pdf
+
+
+http://pepa.holla.cz/wp-content/uploads/
+
+
+http://pepa.holla.cz/wp-content/uploads/2016/12/
 
 
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery插件: 插页式弹出窗</title>
+    <link rel="stylesheet" href="interstitial.css">
+</head>
+<body>
+    <div>
+         <a href="#" onClick="javascript:$().interstitial('close'); return false">Close</a>
+    </div>
+    <!-- libs -->
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="interstitial.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $().interstitial('open', {
+                'url' : 'https://cdn.xgqfrms.xyz/index.html'
+            });
+        });
+     </script>
+</body>
+</html>
