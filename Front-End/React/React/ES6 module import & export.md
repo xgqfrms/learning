@@ -28,6 +28,19 @@ https://facebook.github.io/react/docs/react-api.html
 https://facebook.github.io/react/blog/2014/10/14/introducing-react-elements.html
 
 
+
+https://facebook.github.io/react/docs/react-component.html
+
+
+
+
+
+
+
+
+
+
+
 ******************************************************************************
 
 
@@ -96,14 +109,6 @@ Code written with JSX will be converted to use React.createElement(). You will n
 
 
 
-
-
-
-
-
-
-
-
 ******************************************************************************
 
 ## ReactElement
@@ -127,6 +132,7 @@ The signature of a ReactElement is something like this:
 
 Languages with static typing that don't need validation (e.g. Om in ClojureScript), and production level compilers will be able to generate these objects inline instead of going through the validation step. This optimization will allow significant performance improvements in React.
 
+******************************************************************************
 
 
 ## The Next Step: ES6 Classes
