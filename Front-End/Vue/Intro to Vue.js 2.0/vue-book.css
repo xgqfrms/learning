@@ -1,0 +1,45 @@
+body {
+  background: #d1d3d4;
+  font-family: 'Bitter', serif; }
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.books {
+  width: 500px; }
+
+.booktext {
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  position: absolute;
+  font-size: 14px;
+  width: 80px;
+  height: 110px;
+  transform: translate(-35px, 180px) skew(-7deg) rotate(-5deg); }
+
+.submit {
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 6px 8px;
+  width: 100%;
+  background: #AC2E3A;
+  cursor: pointer;
+  outline: none; }
+
+h3 {
+  text-align: center; }
+
+textarea {
+  color: #777;
+  border: none;
+  width: 80px;
+  padding: 5px 10px;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=vue-book.css.map */

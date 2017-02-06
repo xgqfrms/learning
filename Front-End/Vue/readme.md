@@ -79,6 +79,19 @@ lifecycle
 
 
 
+## Intro to Vue.js - Article Series:
+
+
+Part 1: Rendering, Directives, and Events (You are here!)
+
+Part 2: Components, Props, and Slots
+
+Part 3: Vue-cli
+
+Part 4: Vuex
+
+Part 5: Animations
+
 
 https://css-tricks.com/intro-to-vue-1-rendering-directives-events/
 
@@ -87,13 +100,26 @@ https://css-tricks.com/intro-to-vue-1-rendering-directives-events/
 
 
 
+## webpack
+
+
+https://webpack.vuefe.cn/
+https://github.com/vuefe/webpack2
+
+
+https://stackoverflow.com/questions/tagged/webpack
+
+https://sidecar.gitter.im/dist/sidecar.v1.js
 
 
 
+https://github.com/webpack/webpack.js.org
+
+https://github.com/webpack-china/webpack.js.org
 
 
 
+https://webpack-china.org/
 
-
-
+https://doc.webpack-china.org/
 
