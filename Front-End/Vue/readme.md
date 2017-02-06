@@ -77,3 +77,23 @@ https://cn.vuejs.org/v2/guide/instance.html
 lifecycle
 
 
+
+
+
+https://css-tricks.com/intro-to-vue-1-rendering-directives-events/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
