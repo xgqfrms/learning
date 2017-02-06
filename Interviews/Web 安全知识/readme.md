@@ -23,3 +23,20 @@ http://my.jikexueyuan.com/fooying/record/
 
 
 ## SQL 注入利用与防御
+
+
+
+各种漏洞PoC、ExP的收集或编写
+
+
+https://github.com/coffeehb/Some-PoC-oR-ExP
+
+
+
+
+
+
+
+
+
+
