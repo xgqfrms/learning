@@ -1159,6 +1159,23 @@ pdf 81/128
 
 
 
+## meta http-equiv refresh
+
+http://w3c.github.io/html/single-page.html#the-meta-element
+
+http://www.w3schools.com/tags/att_meta_http_equiv.asp
+
+https://www.w3.org/TR/WCAG20-TECHS/H76.html
+
+
+https://www.w3.org/TR/2012/WD-html-markup-20121011/meta.http-equiv.refresh.html
+
+
+
+
+
+
+
 
 
 
