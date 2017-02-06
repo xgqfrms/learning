@@ -31,6 +31,19 @@ http://vincentaudebert.github.io/javascript/react/es6/2016/05/15/import-export-r
 
 
 
+https://discuss.reactjs.org/t/can-react-have-multiple-export-default-exports-in-a-single-module/4863
+
+
+
+http://stackoverflow.com/questions/33956201/how-to-import-and-export-components-using-react-es6-webpack
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export
+
+{{harmony}}
 
 
 

@@ -1,6 +1,11 @@
 # ES6 module import & export
 
 
+
+https://gist.github.com/xgqfrms-GitHub/bbb77383793f7952cb2a3b50bb067f71
+
+
+
 How to import / export in React/ES6 ?
 
 
@@ -9,11 +14,16 @@ http://vincentaudebert.github.io/javascript/react/es6/2016/05/15/import-export-r
 
 http://stackoverflow.com/questions/33956201/how-to-import-and-export-components-using-react-es6-webpack
 
+http://stackoverflow.com/questions/31852933/why-es6-react-component-works-only-with-export-default
+
+http://stackoverflow.com/a/31853887/5934465
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export
 
+{{harmony}}
 
 
 
@@ -30,7 +40,6 @@ https://facebook.github.io/react/blog/2014/10/14/introducing-react-elements.html
 
 
 https://facebook.github.io/react/docs/react-component.html
-
 
 
 
