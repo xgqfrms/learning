@@ -15,6 +15,11 @@ http://smtebooks.com/
 
 http://smtebooks.com/Category/programming-it  
 
+http://smtebooks.com/
+
+
+
+
 
 ## error ???  
 
@@ -94,6 +99,38 @@ http://pepa.holla.cz/wp-content/uploads/
 
 
 http://pepa.holla.cz/wp-content/uploads/2016/12/
+
+
+
+
+???
+
+http://bariatricsebook.com/
+
+
+???
+
+http://www.wowebook.org/
+
+
+http://uploaded.net/file/u5l5sl9e
+
+
+
+
+
+
+
+https://github.com/liubo404/it-ebooks
+
+
+
+
+
+
+
+
+
 
 
 

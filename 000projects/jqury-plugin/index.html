@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery插件: 插页式弹出窗</title>
-    <link rel="stylesheet" href="interstitial.css">
+    <link rel="stylesheet" href="jquery.interstitial.css">
     <!-- 
         https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
         https://github.com/blueimp/jQuery-File-Upload
@@ -11,17 +11,21 @@
 </head>
 <body>
     <div>
-         <a href="#" onClick="javascript:$().interstitial('close'); return false">Close</a>
+         <a href="#" onClick="close()">Close</a>
     </div>
     <!-- libs -->
-    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-    <script src="interstitial.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-1.9.1.min.js" crossorigin="anonymous"></script>
+    <script src="jquery.interstitial.js"></script>
     <script>
         $(document).ready(function(){
             $().interstitial('open', {
                 'url' : 'https://cdn.xgqfrms.xyz/index.html'
             });
         });
+        function close(){
+            $().interstitial('close');
+            return false;
+        }
      </script>
 </body>
 </html>
