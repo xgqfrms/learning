@@ -118,3 +118,76 @@ ryan repos:>10  Find all ryan users with more than 10 repositories.
 
 
 
+
+
+
+
+
+
+
+https://github.com/catberry/catberry
+
+https://github.com/integrations
+
+https://github.com/showcases
+
+
+https://github.com/showcases/projects-with-great-wikis
+
+Projects with great wikis
+
+https://github.com/d3/d3/blob/master/API.md
+
+
+https://github.com/tianxuzhang/d3.v4-API-Translation
+
+
+
+
+https://github.com/showcases/government
+
+
+
+https://github.com/showcases/front-end-javascript-frameworks
+
+Front-end JavaScript frameworks
+
+https://github.com/showcases/open-data
+
+
+https://openaddresses.io/
+
+The free and open global address collection
+
+
+自由和开放的全球地址集合
+
+
+http://www.openstreetmap.org/about/
+
+
+
+
+https://github.com/showcases/machine-learning
+
+
+
+https://github.com/showcases/hacking-minecraft
+
+
+
+
+
+https://github.com/oxford-cs-deepnlp-2017/lectures
+
+
+
+
+
+
+
+
+
+
+
+
