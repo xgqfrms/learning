@@ -155,8 +155,23 @@ https://ninenines.eu/
 
 
 
+https://learning.xgqfrms.xyz/Google/Google-online-ppt/google-ppt.html
 
 
+
+
+
+
+jquery.fancybox
+
+http://fancybox.net/
+
+https://github.com/fancyapps/fancyBox
+
+fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
+
+
+fancyBox是一个工具，提供了一个漂亮和优雅的方式添加缩放功能的图像，html内容和多媒体在您的网页上。
 
 
 
