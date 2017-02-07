@@ -1177,7 +1177,7 @@ https://www.w3.org/TR/2012/WD-html-markup-20121011/meta.http-equiv.refresh.html
 https://mva.microsoft.com/zh-cn/training-courses/-javascript--14430?l=YVFpNWj4B_9305918554#
 
 
-BB8 from Starwars ⚾️ – with SVG & GSAP
+BB8 from Starwars – with SVG & GSAP
 
 
 http://codepen.io/xgqfrms/full/dNjRpy/
