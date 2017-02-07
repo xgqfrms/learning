@@ -20,7 +20,7 @@ https://developer.github.com/early-access
 
 
 
-## 
+## GitHub GraphQL API
 
 https://developer.github.com/early-access/graphql
 
