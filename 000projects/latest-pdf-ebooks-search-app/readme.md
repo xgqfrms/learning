@@ -176,6 +176,15 @@ fancyBox是一个工具，提供了一个漂亮和优雅的方式添加缩放功
 
 
 
+https://creator.ionic.io/share/a8419c08802c
+
+
+http://caibaojian.com/es6/
+
+
+
+https://github.com/ruanyf/es6tutorial/
+
 
 
 
