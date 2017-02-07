@@ -25,12 +25,17 @@ http://caibaojian.com/fedbook/practice/front-end-interview.html
 
 
 
-## JavaScript Web Quiz
 
 
-http://davidshariff.com/js-quiz/
 
 
-## Front End Web Development Quiz
 
-http://davidshariff.com/quiz/
+
+
+
+
+
+
+
+
+
