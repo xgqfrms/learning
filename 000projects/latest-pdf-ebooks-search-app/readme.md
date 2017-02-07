@@ -187,7 +187,30 @@ https://github.com/ruanyf/es6tutorial/
 
 
 
+https://gist.github.com/xgqfrms-GitHub/523f5813f37cee1af96d9ea2e6bc3f89
 
+
+
+代码俄罗斯方块
+
+
+https://github.com/chvin/react-tetris
+
+https://chvin.github.io/react-tetris/
+
+
+http://www.ruanyifeng.com/blog/2015/03/react.html
+
+https://camsong.github.io/redux-in-chinese/index.html
+
+http://cn.redux.js.org/
+
+https://github.com/camsong/blog/issues/3
+
+
+
+
+http://caibaojian.com/fedbook/practice/front-end-interview.html
 
 
 
