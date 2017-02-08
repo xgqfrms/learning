@@ -206,26 +206,28 @@ http://courses.angularclass.com/courses/enrolled/73288
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 https://github.com/codeschool/WatchUsBuild-FlexboxReactNativeUI/
+
+https://facebook.github.io/react-native/
+
+
+
 
 
 https://github.com/codeschool/WatchUsBuild-Angular2App
 
+https://github.com/codeschool/WatchUsBuild-Angular2App/tree/master-final-version
+
+
+
+
+
 
 https://github.com/codeschool/WatchUsBuild-ResponsiveSiteWithBootstrap
 
+https://github.com/codeschool/WatchUsBuild-ResponsiveSiteWithBootstrap/blob/gh-pages/CNAME
+
+blastingoffwithbootstrap.com
 
 http://blastingoffwithbootstrap.com/
 
@@ -233,31 +235,50 @@ http://blastingoffwithbootstrap.com/
 
 
 
+https://github.com/codeschool/WatchUsBuild-React
+
+https://github.com/codeschool/WatchUsBuild-React/tree/gh-pages
+
+http://codeschool.github.io/WatchUsBuild-React/demo/
+
+
+
+
+
+
+
+
+
 https://github.com/codeschool/jQueryBadgesProject/tree/solution
+
+https://github.com/codeschool-projects/jQueryBadgesProject/tree/solution
 
 https://codeschool-project-demos.github.io/jQueryBadgesProject/
 
 
+
+
 https://github.com/codeschool/HTMLPortfolioProject/tree/solution
 
+https://github.com/codeschool-projects/HTMLPortfolioProject/tree/solution
+
+https://codeschool-project-demos.github.io/HTMLPortfolioProject/
+
+
+
+
+https://github.com/codeschool/SemanticHTMLPortfolioProject
+
+https://github.com/codeschool-projects/SemanticHTMLPortfolioProject
 
 https://codeschool-project-demos.github.io/SemanticHTMLPortfolioProject/
 
 
-https://github.com/codeschool/SemanticHTMLPortfolioProject
 
 
 
 https://github.com/codeschool/BootstrapPortfolioProject
 
+https://github.com/codeschool-projects/BootstrapPortfolioProject
 
-
-
-
-
-
-
-
-
-
-
+https://codeschool-project-demos.github.io/BootstrapPortfolioProject/

@@ -32,6 +32,12 @@ $ android
 // GenyMotion ADB path === *./android-sdk/24.4.1_1/.* ???
 
 
+??? Android SDK  >= API 25.0.2 
+
+
+
+
+
 # open GenyMotion Android emulator
 
 $ tns emulate android
