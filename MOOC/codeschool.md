@@ -135,6 +135,87 @@ http://daringfireball.net/projects/markdown/
 
 
 
+## demos
+
+
+https://codeschool.github.io/WatchUsBuild-Angular2Final/races
+
+https://github.com/codeschool/WatchUsBuild-Angular2Final
+
+
+
+
+
+.fof {
+    align-items: center;
+    background: url(/images/errors/bg-404-stars.svg) center repeat-x #161c21;
+    -webkit-background-size: 1117px 832px;
+    -moz-background-size: 1117px 832px;
+    -o-background-size: 1117px 832px;
+    background-size: 1117px 832px;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+
+https://github.com/ufo-github/awesome-angular2
+
+https://angularclass.github.io/awesome-angular2/
+
+
+https://angularclass.com/
+
+
+https://angularclass.github.io/angular2-webpack-starter/
+
+https://github.com/timjacobi/angular2-education
+
+
+
+https://egghead.io/technologies/angular2
+
+https://egghead.io/courses/angular-2-fundamentals
+
+https://egghead.io/courses/create-native-mobile-apps-with-nativescript-for-angular
+
+
+https://egghead.io/courses/animate-angular-2-web-applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
