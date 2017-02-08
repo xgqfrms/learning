@@ -23,8 +23,7 @@ https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md
 
 
 
-
-
+$ npm install gitbook-cli -g
 
 
 
