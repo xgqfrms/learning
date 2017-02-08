@@ -3,6 +3,9 @@
 
 https://www.nativescript.org/
 
+https://github.com/NativeScript/NativeScript
+
+
 
 Build amazing iOS and Android apps
 with technology you already know
@@ -44,13 +47,14 @@ https://egghead.io/courses/animate-angular-2-web-applications
 
 
 
+http://developer.telerik.com/featured/what-is-a-webview/
 
 
 
 
+## NativeScript CLI
 
-
-
+$ npm i -g nativescript
 
 
 

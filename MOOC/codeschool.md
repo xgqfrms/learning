@@ -193,6 +193,9 @@ https://egghead.io/courses/animate-angular-2-web-applications
 
 
 
+holy shit webpage error-bugs
+
+http://courses.angularclass.com/courses/enrolled/73288
 
 
 
@@ -211,6 +214,41 @@ https://egghead.io/courses/animate-angular-2-web-applications
 
 
 
+
+
+
+
+https://github.com/codeschool/WatchUsBuild-FlexboxReactNativeUI/
+
+
+https://github.com/codeschool/WatchUsBuild-Angular2App
+
+
+https://github.com/codeschool/WatchUsBuild-ResponsiveSiteWithBootstrap
+
+
+http://blastingoffwithbootstrap.com/
+
+
+
+
+
+https://github.com/codeschool/jQueryBadgesProject/tree/solution
+
+https://codeschool-project-demos.github.io/jQueryBadgesProject/
+
+
+https://github.com/codeschool/HTMLPortfolioProject/tree/solution
+
+
+https://codeschool-project-demos.github.io/SemanticHTMLPortfolioProject/
+
+
+https://github.com/codeschool/SemanticHTMLPortfolioProject
+
+
+
+https://github.com/codeschool/BootstrapPortfolioProject
 
 
 
