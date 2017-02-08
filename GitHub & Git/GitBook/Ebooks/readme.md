@@ -21,11 +21,43 @@ Preview and serve your book using:
 
 $ gitbook serve
 
+http://localhost:4000/
+
+:fontState {"size":2,"family":1,"theme":1}
+
+:sidebar false
+
+
+Ebooks/_book/gitbook/theme.js
+
+
 Or build the static website using:
 
 $ gitbook build
 
 
+
+*******************************************************************************
+
+## theme
+
+
+index.html
+
+
+
+"theme":"default",
+
+===
+
+"theme":"1",
+
+
+var gitbook = gitbook || [];
+gitbook.push(function() {
+    gitbook.page.hasChangedgitbook.page.hasChanged({});
+
+*******************************************************************************
 
 
 
