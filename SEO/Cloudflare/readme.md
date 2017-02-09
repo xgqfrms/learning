@@ -51,7 +51,7 @@ https://laracasts.com/discuss/channels/javascript/rocketscript-what-is-it
 
 
 
-<script data-cfasync="" type="text/rocketscript">
+<script data-cfasync="true" type="text/javascript">
     // Javscript
 </script>
 
