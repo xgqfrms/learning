@@ -45,10 +45,12 @@ https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
 
 
-https://zellwk.com/blog/responsive-grid-system/
 
 
 
+
+
+https://egghead.io/lessons/javascript-eliminate-function-arguments-point-free-style-with-ramda-s-converge
 
 
 
