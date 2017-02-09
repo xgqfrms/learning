@@ -27,8 +27,25 @@ http://taskjs.org/
 generators + promises = tasks
 
 
+https://github.com/mattdesl/promise-cookbook  
+
+https://helloangular.com/observables-vs-promises/  
 
 
+http://kosamari.com/notes/the-promise-of-a-burger-party
+
+https://github.com/mattdesl/promise-cookbook/blob/master/README.md
+
+http://liubin.org/promises-book/
+
+https://github.com/liubin/promises-book/
+
+https://developers.google.com/web/fundamentals/getting-started/primers/promises
+
+
+
+
+https://zellwk.com/blog/responsive-grid-system/
 
 
 

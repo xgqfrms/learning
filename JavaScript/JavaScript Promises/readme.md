@@ -157,4 +157,15 @@ https://github.com/mozilla/task.js (5 years ago)
 
 
 
+https://github.com/mattdesl/promise-cookbook  
+
+https://helloangular.com/observables-vs-promises/  
+
+
+
+
+
+
+
+
 
