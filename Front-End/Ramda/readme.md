@@ -43,3 +43,5 @@ https://egghead.io/lessons/javascript-convert-a-querystring-to-an-object-using-f
 
 
 
+https://egghead.io/lessons/javascript-convert-a-querystring-to-an-object-using-function-composition-in-ramda
+

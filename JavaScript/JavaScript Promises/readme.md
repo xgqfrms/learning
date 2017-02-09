@@ -450,12 +450,27 @@ https://bitsofco.de/javascript-promises-101/
 
 
 
+https://laracasts.com/series/es6-cliffsnotes/episodes/13
+
+https://egghead.io/lessons/node-js-use-es6-style-promises-with-node-js#/tab-code
 
 
 
 
+https://developers.google.com/web/updates/tags/es6
 
 
+https://developers.google.com/web/updates/tags/es2015
+
+
+https://developers.google.com/web/updates/tags/javascript
+
+
+
+
+https://developers.google.com/web/updates/2016/02/es2015-proxies
+
+https://developers.google.com/web/updates/2012/03/Optimizing-JavaScript
 
 
 
