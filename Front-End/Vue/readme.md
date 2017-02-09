@@ -139,7 +139,7 @@ https://egghead.io/courses/develop-web-apps-with-vue-js
 
 
 
-
+https://laracasts.com/series/learn-vue-2-step-by-step
 
 
 
