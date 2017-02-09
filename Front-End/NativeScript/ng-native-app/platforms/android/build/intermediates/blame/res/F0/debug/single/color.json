@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_spinner.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_default.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_edittext.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_search_url_text.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\color\\design_error.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\color\\design_error.xml"
+    }
+]

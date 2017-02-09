@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_fab_in.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_fab_out.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_snackbar_in.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_snackbar_out.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_fade_out.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_popup_enter.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_fade_in.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_popup_exit.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "G:\\wwwRoot\\learning\\Front-End\\NativeScript\\ng-native-app\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    }
+]

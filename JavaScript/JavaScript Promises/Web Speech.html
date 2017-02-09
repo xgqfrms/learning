@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Speech</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            transition: all 0.4s;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 150px;
+            transition: all 0.4s;
+            /*top:50%;*/
+            position: relative;
+            color: rgba(0, 0, 0, 0.4);
+        }
+        
+        span {
+            color: rgba(0, 0, 0, 0.4);
+            /*text-shadow:1px 1px 0 rgba(0,0,0,0.5);*/
+            padding: 10px;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Say some words!</h1>
+        <!-- <p>Easy</p>
+        <span style="background:PINK;">PINK</span>
+        <span style="background:PERU;">PERU</span>
+        <span style="background:SALMON;">SALMON</span>
+        <span style="background:MAGENTA;">MAGENTA</span>
+        <span style="background:WHEAT;">WHEAT</span>
+        <span style="background:VIOLET;">VIOLET</span>
+        <span style="background:PLUM;">PLUM</span>
+        <span style="background:TOMATO;">TOMATO</span>
+        <span style="background:TEAL;">TEAL</span>
+        <span style="background:Silver;">Silver</span>
+        <span style="background:DARKRED;">DARKRED</span>
+        <p>Harder</p>
+        <span style="background:lemonchiffon;">lemonchiffon</span>
+        <span style="background:dodgerblue;">dodgerblue</span>
+        <span style="background:cornflowerblue;">cornflowerblue</span>
+        <span style="background:PALEGOLDENROD;">PALEGOLDENROD</span>
+        <span style="background:STEELBLUE;">STEELBLUE</span>
+        <span style="background:CHARTREUSE;">CHARTREUSE</span>
+        <span style="background:lightgoldenrodyellow;">lightgoldenrodyellow</span> -->
+    </section>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        var speech = function() {
+            var x = "lol";
+
+            var recognition = new webkitSpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+
+            recognition.onresult = function(event) {
+                var colour = event.results[event.results.length - 1][0].transcript;
+                // make it lowercase
+                colour = colour.toLowerCase();
+                // strip the spaces out of it
+                colour = colour.replace(/\s/gi, '');
+                $('body').css('background', colour);
+                $('h1').text(colour);
+            }
+            recognition.start();
+        }
+        if (!('webkitSpeechRecognition' in window)) {
+            alert("Sorry you require a browser that supports speech recognition");
+        } else {
+            speech();
+        }
+    </script>
+</body>
+</html>

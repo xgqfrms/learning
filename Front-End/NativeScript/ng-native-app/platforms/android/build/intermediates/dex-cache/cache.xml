@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-v4-25.1.1_46d99833ea3f7b6f02ae26a79cc1bf8804e2af46.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-recyclerview-v7-25.1.1_01f3a1260812482ad2c7ae6128a45273d8088213.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-animated-vector-drawable-25.1.1_6aab78526dec3789028403e34e0289d320b8169a.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-design-25.1.1_ec1353fb6ca55f1f693222f27409ef7ea25a548d.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-vector-drawable-25.1.1_66f4d9a79780e4c8d2ab24e23511ae040f73b9fb.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-transition-25.1.1_0c824c8b208f04f5f74dcfd9be9789bf9f1b4d6a.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-core-ui-25.1.1_b23556a7f679975fe1527de6af694f605100fa31.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-fragment-25.1.1_6e499a2fea9c52a75b9283ad5cd8127972d35d06.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\ngnativeapp\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="632bf39700c28ba66c117628dab343126ef89551">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\ngnativeapp-runtime-unspecified_338116c4cf4ebecdfe7ff6d074b836d19b273be7.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="8a73b09319cc3945912970487ced4c7724acc97d">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\intermediates-exploded-aar-widgets-release_8183068ea72464190855f8668eeb2d1372a93de1.jar" />
+    </item>
+    <item
+        jar="H:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\support-annotations-25.1.1_51399ffaa9dd2e4c4e434aa116efebd1f619cee2.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-appcompat-v7-25.1.1_71b928d701990c91da8782e0e58fd79ef9f87129.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-media-compat-25.1.1_b156d6c59607c23efb1d4b154206f75bb7452944.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\ngnativeapp\runtime\unspecified\jars\libs\binding-generator.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d82f3ca98719f09b65db6aeaf450ad3bafc46e81">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\binding-generator_93599fba2edcd44a33c3531667a2849916d26381.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-compat-25.1.1_b5a8f8656c02f4055abca52413632d21dd382d6f.jar" />
+    </item>
+    <item
+        jar="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-core-utils-25.1.1_183136e1ea2cff50d19ae88d31b050db3dc39c53.jar" />
+    </item>
+
+</items>

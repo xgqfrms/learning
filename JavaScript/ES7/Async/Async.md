@@ -7,3 +7,28 @@ https://developers.google.com/web/fundamentals/getting-started/primers/async-fun
 https://tc39.github.io/ecmascript-asyncawait  
 
 https://jakearchibald.com/2014/es7-async-functions/  
+
+
+
+
+
+
+
+
+
+
+http://caniuse.com/#feat=async-functions  
+https://tc39.github.io/ecmascript-asyncawait/  
+
+
+
+http://taskjs.org/
+
+generators + promises = tasks
+
+
+
+
+
+
+

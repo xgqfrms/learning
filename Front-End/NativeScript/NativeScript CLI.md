@@ -42,9 +42,12 @@ $ android
 
 $ tns emulate android
 
+$ tns emulate android --emulator
+
 $ tns run android
 
 
+$ tns run android --emulator
 
 
 ## livesync
@@ -80,14 +83,14 @@ $ tns livesync --watch
 
 
 
+$ tns run android --emulator
+
+
+192.168.85.101:5555
 
 
 
 
-
-
-
-
-
+$ tns livesync android --emulator --watch
 
 
