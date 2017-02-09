@@ -37,6 +37,7 @@ You can really unlock the power of ramda (and functional programming in general)
 
 
 
+https://egghead.io/lessons/javascript-convert-a-querystring-to-an-object-using-function-composition-in-ramda
 
 
 
