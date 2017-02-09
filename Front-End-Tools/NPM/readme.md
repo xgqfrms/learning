@@ -178,8 +178,20 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 ## How to Use npm Scripts as Your Build Tool
 
 
-
 https://egghead.io/lessons/tools-create-a-basic-package-json-file?course=how-to-use-npm-scripts-as-your-build-tool
+
+
+https://egghead.io/instructors/elijah-manor
+
+
+https://github.com/elijahmanor/react-file-size
+
+
+
+$ npm init 
+
+$ npm init -f
+
 
 
 

@@ -111,3 +111,84 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 
 
 *******************************************************************************
+
+
+## How to Use npm Scripts as Your Build Tool
+
+
+https://egghead.io/lessons/tools-create-a-basic-package-json-file?course=how-to-use-npm-scripts-as-your-build-tool
+
+
+https://egghead.io/instructors/elijah-manor
+
+https://github.com/elijahmanor/react-file-size
+
+https://egghead.io/lessons/javascript-es6-parameter-object-destructuring-with-required-values
+
+
+$ npm init 
+
+$ npm init -f
+
+$ npm init -f -y
+
+// https://nodejs.org/api/synopsis.html
+// https://nodejs.org/api/cli.html#cli_command_line_options
+
+// node -e "script_codes" === node scriptname.js
+
+# === node ...
+$ npm run  
+
+
+
+$ npm test
+
+$ npm t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
