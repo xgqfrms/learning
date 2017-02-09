@@ -124,3 +124,38 @@ https://www.w3.org/TR/css3-box/#floating0
 
 https://www.w3.org/TR/css3-box/#CSS21  
 
+
+
+
+
+
+
+## Autoprefix CSS  
+
+1. close save auto prefix (sublime-setting.json)
+
+// key bindings : { "keys": ["alt+super+p"], "command": "autoprefixer" }
+
+2. manaul command: Win + Alt + P
+
+// super === Win 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

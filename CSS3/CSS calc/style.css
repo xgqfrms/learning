@@ -1,0 +1,107 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100%;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20rem;
+}
+
+
+/* Demo styles only  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+nav {
+    background-color: rgba(70, 130, 180, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem 0 2rem 1rem;
+}
+
+nav li:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+svg {
+    width: 36px;
+    height: 36px;
+}
+
+path {
+    fill: #eee;
+}
+
+a:hover path {
+    fill: tomato;
+}
+
+main {
+    padding: 1rem 2rem;
+    background-color: tomato;
+    color: #333;
+    min-height: 100vh;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+a {
+    color: steelblue;
+}
+
+aside {
+    color: white;
+    background-color: rgba(112, 128, 144, 0.8);
+}
+
+@media screen and (max-width: 40em) {
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+/* 
+
+main {
+    margin-left: 5rem;
+    width: calc(100% - 25rem);
+}
+
+@media screen and (max-width: 40em) {
+    nav {
+        width: 3rem;
+    }
+    main {
+        margin-left: 3rem;
+        width: calc(100% - 15rem);
+    }
+    aside {
+        width: 12rem;
+    }
+}
+
+*/

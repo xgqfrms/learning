@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS calc() fixed-fluid-fixed-layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 8.2v1c0 1.6 4 1.6 4 0v-1c0-1.5-4-1.5-4 0zm2 .7c-.7 0-1.3-.3-1.3-.7 0-.3.6-.5 1.3-.5.7 0 1.3.2 1.3.5 0 .4-.6.6-1.3.6zm6.4-2.2v-1c0-1.5-4-1.5-4 0v1c-.2 1.5 4 1.6 4 0zm-2-1.4c.7 0 1.3.2 1.3.5s-.6.5-1.3.5c-.8 0-1.4-.3-1.4-.6s.6-.6 1.4-.6zm-10.8.4v1c0 1.5 4.2 1.6 4 0v-1c0-1.5-4-1.5-4 0zm2 .7c-.7 0-1.3-.3-1.3-.6s.6-.6 1.3-.6c.8 0 1.3.2 1.3.5s-.6.5-1.4.5zm2.3-3v1c0 1.6 4 1.6 4 0v-1c0-1.5-4-1.5-4 0zm3.3.2c0 .3-.6.5-1.3.5-.7 0-1.3-.2-1.3-.5S11.3 3 12 3c.7 0 1.3.3 1.3.7zM12 0L1 6v12l11 6 11-6V6L12 0zm-1 21l-8-4.3v-7l8 4.3v7zM2 6.5L12 1l10 5.6L12 12 2 6.5zM13 14l8-4.4v7L13 21v-7z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15 0v1.6c3.8 0 6.4 2.6 6.4 6.4H23c0-4.7-3.4-8-8-8zm0 3v1.6c2 0 3.4 1.3 3.4 3.4H20c0-3-2-5-5-5zM1 24h2.5c.8-.6 1.8-1.6 3-1.6s2.2 1 3 1.6H12l-5.5-4.8L1 24zm16.3-6.4c0 2.6-4.7 2.7-7.8 1.4C4 17 2 11.4 3.3 7c.7-2 1.5-3 5-.7C9.3 7 10 7.6 11 8.5l-1.3 1C3.7 3.7 4.2 7.7 9 13c4.5 5 9 6.8 4.5.5l1-1.3c1 1.3 2.8 3.8 2.8 5.4zm-1-9.8c0 .6-.4 1.2-1 1.2h-.6l-3 4.3c-.6-.4-1.6-1.4-2-2l4.5-3v-.5c0-.7.4-1.2 1-1.2.7 0 1.2.5 1.2 1.2z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18 1H6L0 8l12 15L24 8l-6-7zm-3.4 8L12 16.8 9.4 9h5.2zM10 7l2-2.4L14 7h-4zm5.6-1l-2.3-3h3.3l-1 3zM8.4 6l-1-3h3.3L8.4 6zM6.6 7h-3l2.2-2.6.8 2.6zm.7 2l2.8 8.4L3.5 9h4zm9.4 0h4L14 17.4 16.6 9zm.7-2l1-2.6 2 2.6h-3z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M4 22H2.4C1 22 0 20.8 0 19.6c0-.4 0-.8.2-1l3.8-7c1-2 2-4.5 2-7V4h2v1c0 2.7-1.2 5.3-2.2 7.5l-3.8 7c0 .2 0 .5.4.5h2C4 21 4 21.4 4 22zM6 2h6c.6 0 1-.4 1-1s-.4-1-1-1H6c-.6 0-1 .4-1 1s.4 1 1 1zm12 1h-6c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1zm6 18.6c0 1.2-1 2.4-2.4 2.4H8.4C7 24 6 22.8 6 21.6c0-.4 0-.8.2-1 2.4-3.8 5.8-8.2 5.8-13V7h2v1c0 3-1.5 6-2.4 8h4.6l4 6h1.4c.3 0 .5-.3.4-.6-2.5-4-5.8-8.2-6-13.4V7h2v.6c0 4.8 3.4 9 5.8 13l.2 1z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2.4 9H0V7h2.4v2zM10 2.5V0H8v2.5h2zm-4.8 1l-2-2L2 3l1.8 1.8 1.4-1.4zm9.2-2.2L12.6 3 14 4.7l1.8-2-1.4-1.3zM3 12l-2 1.7L2 15.2l2-1.8L3 12zm21 2.7c0 2.4-2 4.3-4.4 4.3H9.4C7 19 5 17 5 14.7c0-.7.2-1.5.6-2-1-1-1.6-2.3-1.6-3.7 0-2.8 2.2-5 5-5 1.3 0 2.5.5 3.4 1.4.7-.3 1.4-.4 2-.4 3.3 0 6 2.4 6 5.5 2 .4 3.6 2 3.6 4.2zM6 9c0 1 .4 1.6 1 2.2.4-.3 1-.6 1.6-.7 0-1.6.8-3 2-4C10 6.2 9.6 6 9 6 7.3 6 6 7.3 6 9zm16 5.7c0-2-2-2.6-3.5-2.5.2-1.4-.2-5.2-4-5.2-4 0-4 4-4 5.2-1.4 0-3.5.4-3.5 2.5C7 16 8 17 9.4 17h10.2c1.3 0 2.4-1 2.4-2.3zM6.4 24L5 22.6 7.6 20 9 21.4 6.4 24zm7.6-2.6L12.6 20 10 22.6l1.4 1.4 2.6-2.6zm4.8 0L17.4 20l-2.6 2.6 1.4 1.4 2.6-2.6z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+        <h2>Header Level 2</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+        <h3>Header Level 3</h3>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    </main>
+    <aside>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+        </ul>
+    </aside>
+</body>
+
+</html>
