@@ -86,3 +86,59 @@ https://github.com/ufo-github/BossSensor
 
 
 
+
+
+CSS Selectors Reference 
+
+
+类(.class)
+元素(element)
+
+
+## CSS Pseudo-elements
+
+::after, ::before
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3.
+
+在CSS3中, 双冒号代替伪元素的单冒号符号。
+
+
+This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+
+这是W3C尝试区分伪类(:pseudo-class)和伪元素(::pseudo-element)的尝试。
+
+The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.
+
+单冒号语法用于CSS2和CSS1中的伪类和伪元素。
+
+
+
+
+
+
+
+
+
+
+http://www.w3schools.com/css/css_pseudo_elements.asp
+
+http://www.w3schools.com/cssref/css_selectors.asp
+
+
+http://www.w3schools.com/cssref/sel_after.asp
+
+http://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after  
+
+
+Note: For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).
+
+
+
+http://www.w3schools.com/cssref/sel_before.asp
+
+http://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_before_style
+
+
+Note: For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:before instead of ::before).
+
