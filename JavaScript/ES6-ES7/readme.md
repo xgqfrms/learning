@@ -2,6 +2,16 @@
 
 
 
+http://exploringjs.com/es2016-es2017.html
+
+http://exploringjs.com/es2016-es2017/index.html
+
+
+https://leanpub.com/understandinges6/read/
+
+
+
+
 
 # ES 5/6/7
 

@@ -1,13 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>leaverou animatable</title>
+    <style>
+        ul > li{
+            /*text-decoration: none;*/
+            list-style-type: none;
+        }
+        #main .widget-area ul li > *:first-child:after {
+            content: '◦ ❉ ◦';
+            white-space: pre;
+            left: 50%;
+            margin-left: -1em;
+            font-size: 110%;
+        }
+
+        #main .widget-area ul li:before {
+            content: '◅';
+            left: 0;
+        }
+
+        #main .widget-area ul li:after {
+            content: '▻';
+            right: 0;
+        }
+
+        a[href^="http://dribbble.com"]:before {
+            content: url(http://lea.verou.me/wp-content/themes/elegant/favicons/dribbble.ico);
+        }
+        a[href^="http://twitter.com"]:before {
+            content: url(http://lea.verou.me/wp-content/themes/elegant/favicons/twitter.png);
+        }
+        a:before {
+            vertical-align: -2px;
+            margin-right: 5px;
+            width: 16px;
+            height: 16px;
+        }
+        #main .widget-area ul li:before, #main .widget-area ul li:after, #main .widget-area ul li a:after {
+            background: white;
+            line-height: 1;
+            position: absolute;
+            bottom: -.7em;
+            color: #ccc;
+            font-size: 60%;
+        }
+    </style>
 </head>
+
 <body>
     <div>
-        https://github.com/LeaVerou/animatable/
+        https://github.com/LeaVerou/animatable/ 
+        <br>
         http://leaverou.github.io/animatable/
+        <br>
+        http://duoload.verou.me/
+    </div>
+    <hr>
+    <div id="main">
+        <div class="widget-area">
+            <div class="textwidget">
+                <ul id="social-me">
+                    <li>
+                        <a href="http://twitter.com/leaverou">Follow me on twitter</a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/leaverou">Follow me on facebook</a>
+                    </li>
+                    <li>
+                        <a href="http://lanyrd.com/people/LeaVerou/">My speaking on Lanyrd</a>
+                    </li>
+                    <li>
+                        <a href="http://slideshare.net/LeaVerou">View my slides on slideshare</a>
+                    <li>
+                        <a href="https://github.com/LeaVerou">Fork me on Github</a></li>
+                    <li>
+                        <a href="http://dribbble.com/LeaVerou">My dribbble shots</a>
+                    </li>
+                    <li>
+                        <a href="http://gr.linkedin.com/in/leaverou">My LinkedIn</a>
+                        </li>
+                    <li>
+                        <a href="http://www.tripit.com/people/leaverou">My traveling on TripIt</a>
+                    <li>
+                        <a href="http://last.fm/user/LeaVerou">Music I like on last.fm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
+<!-- 
+
+
+http://lanyrd.com/2016/cssconfasia/
+
+http://lanyrd.com/profile/leaverou/sessions/
+
+https://2016.cssconf.asia/
+
+https://www.chenhuijing.com/slides/css-conf-2016/#/7/7
+
+
+https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-pseudo-elements-in-css/
+
+https://www.chenhuijing.com/slides/css-conf-2016/#/8
+
+https://github.com/huijing/album-art
+
+http://blog.iso50.com/34853/epoch-artwork-lineage/
+
+
+https://github.com/huijing/huijing.github.io
+
+
+https://github.com/huijing/slides
+
+
+
+https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+
+https://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/
+
+
+https://docs.google.com/spreadsheets/d/1Hvi0nu2wG3oQ51XRHtMv-A_ZlidnwUYwgQsPQUg1R2s/pub?single=true&gid=0&output=html
+
+
+https://css-tricks.com/the-checkbox-hack/
+
+
+
+http://bradclicks.com/CSSplay/foldingList.html
+
+
+https://www.thecssninja.com/css/custom-inputs-using-css
+
+
+https://www.w3.org/TR/css-content-3/
+
+
+https://www.thecssninja.com/
+
+https://thecssninja.com/demo/form_generated-content/
+
+https://www.thecssninja.com/demo/css_custom-forms/legacy/
+
+
+
+https://www.smashingmagazine.com/2015/05/creating-responsive-shapes-with-clip-path/http:/a.singlediv.com/
+
+
+
+https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/
+
+https://2013.cssconf.com/talk-verou.html
+
+
+http://a.singlediv.com/
+
+
+A Single Div, pure CSS iamges
+
+
+http://a.singlediv.com/
+
+
+
+https://css-tricks.com/the-checkbox-hack/
+
+https://css-tricks.com/functional-css-tabs-revisited/
+
+http://www.weblaunchr.com/whatsmympg/
+
+
+http://dabblet.com/
+
+http://lynnandtonic.com/about/
+
+https://css-tricks.com/introducing-css-scroll-snap-points/
+
+https://drafts.csswg.org/css-scroll-snap/
+
+https://github.com/ckrack/scrollsnap-polyfill/pull/7
+
+
+
+https://developers.google.com/web/feedback/
+
+
+https://developers.google.com/products/
+
+
+https://www.youtube.com/watch?v=gJA5sdyCWNQ&index=7&list=PL37ZVnwpeshFizH1JsG3s7_qyN2Uk0OSh
+
+
+ -->

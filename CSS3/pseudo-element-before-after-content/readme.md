@@ -227,8 +227,9 @@ http://codepen.io/team/nclud/pen/GJpdVo
 
 
 
+http://es6katas.org/
 
-
+http://tddbin.com/ 
 
 
 
