@@ -41,6 +41,25 @@ https://github.com/xgqfrms-GitHub/TypeScriptSamples/blob/master/007-demos/readme
 
 
 
+https://egghead.io/courses/use-types-effectively-in-typescript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
