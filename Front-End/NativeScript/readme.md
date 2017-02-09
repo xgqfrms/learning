@@ -60,3 +60,19 @@ $ npm i -g nativescript
 
 
 
+
+
+G:\wwwRoot\learning\Front-End\NativeScript\ng-native-app\platforms\android\build\outputs\apk
+
+
+
+.apk => .zip
+
+
+
+
+
+
+
+
+

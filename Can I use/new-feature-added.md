@@ -262,6 +262,55 @@ https://bitsofco.de/
 </p>
 
 
+https://www.webcomponents.org/element/ireade/caniuse-embed-polymer
+
+
+https://helloangular.com/
+
+https://bitsofco.de/javascript-promises-101/  
+
+
+https://helloangular.com/observables-vs-promises/
+
+
+
+
+http://velocityjs.org/  
+https://github.com/julianshapiro/velocity
+
+
+
+http://prismjs.com/  
+http://prismjs.com/download.html  
+
+https://github.com/PrismJS/prism  
+https://github.com/PrismJS/prism/graphs/contributors  
+https://github.com/PrismJS/prism/tree/master  
+https://github.com/PrismJS/prism/tree/gh-pages  
+
+http://lea.verou.me/2012/07/introducing-prism-an-awesome-new-syntax-highlighter/#more-1841
+
+
+
+
+
+
+
+http://alistapart.com/article/creating-intrinsic-ratios-for-video
+
+
+
+http://lea.verou.me/  
+
+https://github.com/LeaVerou/duoload  
+http://duoload.verou.me/  
+
+
+
+
+
+
+
 
 
 
