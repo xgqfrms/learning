@@ -427,10 +427,15 @@ http://www.iwanttouse.com/
 
 
 
+https://laracasts.com/series/es6-cliffsnotes
 
+https://laracasts.com/series/es6-cliffsnotes/episodes/16
 
+ES2015 Generators
 
+https://laracasts.com/series/es6-cliffsnotes/episodes/13
 
+Promises 101
 
 
 

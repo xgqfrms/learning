@@ -113,6 +113,9 @@ The single-colon syntax was used for both pseudo-classes and pseudo-elements in 
 单冒号语法用于CSS2和CSS1中的伪类和伪元素。
 
 
+For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.
+
+为了向后兼容，CSS2和CSS1伪元素可接受单冒号语法。
 
 
 
@@ -141,4 +144,97 @@ http://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_before_style
 
 
 Note: For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:before instead of ::before).
+
+
+
+
+
+
+
+
+E === Elements
+
+
+
+
+
+E::first-line
+
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_firstline
+
+
+E::first-letter
+
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_firstletter
+
+
+E.class::first-letter
+
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-element
+
+
+E::first-letter & E::first-line
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_firstline_letter
+
+
+E::after {content: ???;}
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_after
+
+E::before {content: ???;}
+
+http://www.w3schools.com/css/tryit.asp?filename=trycss_before
+
+
+
+
+
+
+
+
+
+
+
+http://rollupjs.org/
+
+
+the next-generation JavaScript module bundler
+
+
+
+
+
+http://codepen.io/damonbauer/pen
+
+codepen 404 series
+
+
+For now, enjoy this randomized and thematically appropriate Pen.
+
+现在，享受这个随机和主题适当的笔。
+
+
+http://codepen.io/xgqfrms/pen/RKeBPd
+
+http://codepen.io/team/nclud/pen/GJpdVo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
