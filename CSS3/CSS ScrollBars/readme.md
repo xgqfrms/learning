@@ -94,6 +94,18 @@ http://scriptgenerator.net/html-css-custom-scrollbar-code-generator/
 http://www.gaijin.at/en/olsbarcss.php
 
 
+<style type="text/css">
+body { 
+    scrollbar-arrow-color: #008000;
+    scrollbar-base-color: #FF0000;
+    scrollbar-track-color: #FF0000;
+    scrollbar-face-color: #FFA500;
+    scrollbar-highlight-color: #C0C0C0;
+    scrollbar-3dlight-color: #F5F5DC;
+    scrollbar-darkshadow-color: #800080;
+    scrollbar-shadow-color: #00008B;
+}
+</style>
 
 
 *******************************************************************************
