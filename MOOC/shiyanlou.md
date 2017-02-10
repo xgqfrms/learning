@@ -56,21 +56,20 @@ https://www.shiyanlou.com/courses/368/labs/1172/document
 
 
 
+http://gabrielecirulli.github.io/2048/
+
+https://github.com/gabrielecirulli
+
+https://github.com/gabrielecirulli/2048/tree/master/js
 
 
 
 
 
 
+https://git-scm.com/book/en/v2
 
+http://gitbook.liuhui998.com/
 
-
-
-
-
-
-
-
-
-
+https://www.shiyanlou.com/courses/4/labs/20/document
 
