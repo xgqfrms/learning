@@ -21,6 +21,21 @@ https://www.codecademy.com/blog/important-changes-to-codecademy-courses?utm_camp
 
 
 
+https://www.codecademy.com/apis
+
+
+https://www.codecademy.com/en/tracks/soundcloud
+
+SoundCloud API
+
+
+https://www.codecademy.com/en/tracks/oauth
+
+OAuth2 with GitHub
+
+
+
+
 
 
 
