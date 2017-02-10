@@ -30,3 +30,33 @@ background: radial-gradient(shape size at position, start-color, ..., last-color
 
 
 
+
+# linear-gradient()
+
+
+## gradient-line
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

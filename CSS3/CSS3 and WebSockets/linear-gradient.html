@@ -5,10 +5,11 @@
     <title>linear-gradient</title>
     <style>
         footer.code {
-            background-image: linear-gradient(50deg, #00ffff, #7d81ff);
+            /*background-image: linear-gradient(50deg, #00ffff, #7d81ff);*/
+            background-image: 
+                linear-gradient(50deg, #00ffff, #7d81ff),
+                linear-gradient(150deg, #ff00ff, #ff81ff);
         }
-
-
         footer {
             position: relative;
             width: 100%;
@@ -18,10 +19,56 @@
     </style>
 </head>
 <body>
-    <footer>
-        <div class="code">
+    <div>
+        <h1>linear-gradient with angle</h1>
+    </div>
+    <footer class="code">
+        <div>
             <!--  -->
+            <pre>
+                # Server (app.js)
+                var app = require('http').createServer(handler)
+                var io = require('socket.io')(app);
+                var fs = require('fs');
+
+                app.listen(80);
+
+                function handler (req, res) {
+                  fs.readFile(__dirname + '/index.html',
+                  function (err, data) {
+                    if (err) {
+                      res.writeHead(500);
+                      return res.end('Error loading index.html');
+                    }
+
+                    res.writeHead(200);
+                    res.end(data);
+                  });
+                }
+
+                io.on('connection', function (socket) {
+                  socket.emit('news', { hello: 'world' });
+                  socket.on('my other event', function (data) {
+                    console.log(data);
+                  });
+                });
+            </pre>
         </div>
     </footer>
 </body>
 </html>
+<!-- 
+
+CSS linear-gradient（）函数创建一个表示颜色的线性渐变的<image>。
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+
+
+
+
+
+
+
+
+ -->

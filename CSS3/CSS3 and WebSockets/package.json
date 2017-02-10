@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/xgqfrms/xgqfrms/issues"
   },
-  "homepage": "https://github.com/xgqfrms/xgqfrms#readme"
+  "homepage": "https://github.com/xgqfrms/xgqfrms#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  }
 }

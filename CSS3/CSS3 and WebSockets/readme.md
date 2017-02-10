@@ -5,6 +5,8 @@
 ## Making Magic with WebSockets and CSS3
 
 
+https://medium.com/outsystems-engineering/making-magic-with-websockets-and-css3-ec22c1dcc8a8
+
 https://www.outsystems.com/blog/2016/10/outsystems-wins-hackathon.html  
 https://www.outsystems.com/home/Signup.GetStarted.aspx  
 
@@ -27,8 +29,27 @@ https://github.com/heliodolores/magic-tricks-example
 
 
 
+
+## Socket.IO
+
 http://socket.io/  
 https://github.com/socketio/socket.io  
+http://socket.io/get-started/chat/  
+
+
+
+$ npm install socket.io
+
+// $ npm init -y
+
+$ npm i -S socket.io
+
+
+// $ npm i -S express
+
+
+
+
 
 
 For this example, I used a library called socket.io. This library does more than just simplify the way I deal with WebSockets. It also creates a nice fallback for older versions of browsers that do not support the WebSocket protocol.
