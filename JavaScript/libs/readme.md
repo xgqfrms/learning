@@ -30,6 +30,19 @@ https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove
 
 
 
+## clipboard.js
+
+
+Just because you can doesn't mean you should — clipboard.js
+
+https://clipboardjs.com/
+
+
+https://github.com/zenorocha/clipboard.js
+
+A modern approach to copy text to clipboard
+
+No Flash. No frameworks. Just 3kb gzipped
 
 
 

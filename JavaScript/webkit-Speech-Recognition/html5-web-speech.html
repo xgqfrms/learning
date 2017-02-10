@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 web speech</title>
+    <!-- https://ctrlq.org/code/19680-html5-web-speech-api -->
+</head>
+<body>
+    <div>
+        <h1>webkit Speech Recognition</h1>
+    </div>
+    <div>
+        <div>
+          <a href="#" id="start_button" onclick="startDictation(event)">Dictate</a>
+        </div>
+        <div id="results">
+          <span id="final_span" class="final"></span>
+          <span id="interim_span" class="interim"></span>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="html5-web-speech.js"></script>
+</body>
+</html>
