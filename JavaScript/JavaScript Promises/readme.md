@@ -459,9 +459,7 @@ https://egghead.io/lessons/node-js-use-es6-style-promises-with-node-js#/tab-code
 
 https://developers.google.com/web/updates/tags/es6
 
-
 https://developers.google.com/web/updates/tags/es2015
-
 
 https://developers.google.com/web/updates/tags/javascript
 

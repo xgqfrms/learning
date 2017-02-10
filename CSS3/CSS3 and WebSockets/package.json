@@ -1,0 +1,24 @@
+{
+  "name": "css3-websockets",
+  "version": "1.0.1",
+  "description": "Magic with WebSockets and CSS3",
+  "main": "node-websocket.js",
+  "scripts": {
+    "app": "node node-websocket.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/xgqfrms.git"
+  },
+  "keywords": [
+    "Magic",
+    "WebSockets",
+    "CSS3"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/xgqfrms/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/xgqfrms#readme"
+}
