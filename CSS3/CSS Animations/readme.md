@@ -84,6 +84,21 @@ http://www.internetslang.com/TLDR-meaning-definition.asp
 
 
 
+## Smooth as Butter: Achieving 60 FPS Animations with CSS3
+
+https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108#.gye3k9lwr
+
+
+## Making Magic with WebSockets and CSS3
+
+https://medium.com/outsystems-engineering/making-magic-with-websockets-and-css3-ec22c1dcc8a8#.epq93f65h
+
+https://www.outsystems.com/blog/2016/10/outsystems-wins-hackathon.html
+
+
+
+
+
 
 
 

@@ -136,6 +136,66 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 
 
+## Smooth as Butter: Achieving 60 FPS Animations with CSS3
+
+https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108#.gye3k9lwr
+
+
+## Making Magic with WebSockets and CSS3
+
+https://medium.com/outsystems-engineering/making-magic-with-websockets-and-css3-ec22c1dcc8a8#.epq93f65h
+
+https://www.outsystems.com/blog/2016/10/outsystems-wins-hackathon.html
+
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.viget.com/articles/ensuring-css-animations-run-and-stop-gracefully?utm_campaign=Issue-248&utm_medium=email&utm_source=CSS-Weekly
+
+
+
+https://medium.com/@evejweinberg/web-animation-everything-you-need-to-know-in-too-much-detail-91bf5d48f980#.8gfujfcji
+
+
+
+https://robots.thoughtbot.com/css-animation-for-beginners?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue
+
+
+https://journal.helabs.com/pocket-guide-to-css-only-drawings-and-animations-781470436ecc#.jlfs37l3v
+
+
+
+https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css?utm_campaign=Issue-250&utm_medium=email&utm_source=CSS-Weekly
+
+
+https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108#.gye3k9lwr
+
+
+
+
+
+https://scotch.io/tutorials/whats-new-in-expressjs-5-0
+
+
 
 
 

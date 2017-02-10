@@ -15,6 +15,20 @@ https://egghead.io/
 
 
 
+https://scotch.io/
+
+
+https://scotch.io/tutorials
+
+https://scotch.io/bar-talk
+
+https://pub.scotch.io/ideas
+
+
+https://github.com/iamcal/oembed
+
+
+
 
 
 
