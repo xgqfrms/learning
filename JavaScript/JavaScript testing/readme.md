@@ -63,6 +63,15 @@ English
 
 
 
+https://www.filestackapi.com/ asserts 
+
+https://www.filestackapi.com/api/file/53mNtglpTEaMbHaR8GI1
+
+
+
+
+
+
 
 // Unique Visitor
 
@@ -73,21 +82,45 @@ http://www.qlcoder.com/task/752a
 
 
 
+// IP
+
+http://www.qlcoder.com/task/752d
+
+
+$ ping www.qlcoder.com
+
+
+121.201.63.168
+
+
+nmap -T4 -A -v 121.201.63.168
+
+
+http://www.nmonitoring.com/ip-to-domain-name.html?ip=208.97.177.124&pingsub=1&ln=en
+
+
+
+$ ping 208.97.177.124
+
+
+$ curl 208.97.177.124
 
 
 
 
 
 
+nslookup -type=PTR 208.97.177.124.in-addr.arpa  
+
+nslookup -type=PTR 208.97.177.124 in-addr.arpa  
+
+nslookup -type=PTR 208.97.177.124
 
 
 
 
 
-
-
-
-
+http://superuser.com/questions/287577/how-to-find-a-domain-based-on-the-ip-address
 
 
 
