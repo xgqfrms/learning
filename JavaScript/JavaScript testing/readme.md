@@ -87,11 +87,15 @@ http://www.qlcoder.com/task/752a
 http://www.qlcoder.com/task/752d
 
 
+## ping 
+
 $ ping www.qlcoder.com
 
 
 121.201.63.168
 
+
+## nmap
 
 nmap -T4 -A -v 121.201.63.168
 
@@ -103,14 +107,17 @@ http://www.nmonitoring.com/ip-to-domain-name.html?ip=208.97.177.124&pingsub=1&ln
 $ ping 208.97.177.124
 
 
+
+
+## curl 
+
 $ curl 208.97.177.124
 
 
 
 
 
-
-nslookup -type=PTR 208.97.177.124.in-addr.arpa  
+## nslookup
 
 nslookup -type=PTR 208.97.177.124 in-addr.arpa  
 
@@ -121,6 +128,31 @@ nslookup -type=PTR 208.97.177.124
 
 
 http://superuser.com/questions/287577/how-to-find-a-domain-based-on-the-ip-address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
