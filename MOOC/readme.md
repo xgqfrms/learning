@@ -89,9 +89,48 @@ https://www.codecourse.com/
 
 
 
+MOOC学院
 
+http://mooc.guokr.com/career/
 
+全部平台： 
 
+MOOC学院 
+优达学城（Udacity） 
+Codecademy 
+IBM大数据大学 
+Google 
+Microsoft-Virtual-Academy 
+网易云课堂 
+慕课网 
+极客学院 
+我赢职场 
+沪江网校 
+智课网 
+小象学院 
+萌码网 
+踏浪100 
+饭糕网 
+萝卜网 
+51CTO学院 
+实验楼 
+云路课堂 
+智慧芽学院 
+doyoudo 
+麦子学院 
+馒头商学院 
+
+其他 
+小牛学堂 
+LEARNO.NET 
+顶你学堂 
+恩启云课堂 
+高高手 
+Udemy 
+雪晴数据网 
+极客标签 
+HR-Bar 
+计蒜客
 
 
 
