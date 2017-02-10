@@ -1,0 +1,80 @@
+/* 
+
+## Webkit Scrollbar Generator
+
+http://mikethedj4.github.io/Webkit-Scrollbar-Generator/
+
+
+伪元素
+
+::-webkit-scrollbar               滚动条
+::-webkit-scrollbar-button        滚动条按钮
+::-webkit-scrollbar-track         滚动条轨道
+::-webkit-scrollbar-track-piece   滚动条轨道件
+::-webkit-scrollbar-thumb         滚动条
+::-webkit-scrollbar-corner        滚动条角落
+::-webkit-resizer                 调整大小
+
+learning/CSS3/CSS ScrollBars/Webkit-Scrollbar-Generator
+
+*/
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:hover {
+    width: 23px;
+    height: 23px;
+    color: red;
+    background: #000;
+}
+
+::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #80ffff;
+    border: 36px dashed #ffff00;
+    border-radius: 39px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0000ff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #cb1b01;
+    border: 23px none #ff8000;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #c409a8;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #106204;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #000;
+}
+
+
+::-webkit-resizer {
+    background: #0f0;
+}
