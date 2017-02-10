@@ -6,21 +6,20 @@
 </head>
 <body>
     <div class="info">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-          <span id="showDays" class="show-days"></span>
-          <script>
-          var birthDay = new Date('07/07/2012');
-          var now = new Date();
-          var duration = now.getTime() - birthDay.getTime();
-          var total= Math.floor(duration / (1000 * 60 * 60 * 24));
-          document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
-          </script>
-          ---
-
+        <span id="showDays" class="show-days"></span>
+        ---
         <span id="busuanzi_container_site_pv">
-            总访问量<span id="busuanzi_value_site_pv"></span>次
+        总访问量: <mark>100,0<span id="busuanzi_value_site_pv"></span></mark>次
         </span>
-      </div>
+    </div>
+    <!-- js -->
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" crossorigin="anonymous"></script>
+    <script>
+        var birthDay = new Date('07/07/2012');
+        var now = new Date();
+        var duration = now.getTime() - birthDay.getTime();
+        var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+        document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
+    </script>
 </body>
 </html>
