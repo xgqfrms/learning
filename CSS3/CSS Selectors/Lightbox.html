@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lightbox ☯</title>
+    <!-- 
+    http://ashleydw.github.io/lightbox/
+     -->
+    <style>
+        h1 > span#c8g:hover a{
+            transform: translateX(5.5px) translateY(-13px) rotateZ(445deg);
+            transition: all 1s ease 0s;
+            display: inline-block;
+            font-size: 2em;
+            cursor: pointer;
+            color: orange;
+        }
+        h1:hover{
+            background-color: rgba(0,255,0,0.7);
+            /*color: orange;*/
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+        }
+        a, a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <span id="c8g">
+                <a href="https://github.com/xgqfrms/">☯</a>
+            </span>
+        </h1>
+        <div>
+            <form action="https://google.com/search" method="get">
+                <fieldset role="search">
+                    <input type="hidden" name="q" value="site:www.xgqfrms.xyz"/>
+                    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

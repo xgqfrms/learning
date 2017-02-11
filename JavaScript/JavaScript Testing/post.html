@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+</head>
+<body>
+    <form method="POST" action="http://www.qlcoder.com/task/7527">
+        <input type="text" name="answer" value="restful"/>
+        <input type="submit" value="submit">
+    </form>
+    <!-- js -->
+    <script>
+        
+            var testEditor;
+            //is pass?
+            var _flag=false;
+            $(function() {
+                                $("#fenye").pagination({
+                    prevText:"上一页",
+                    nextText:"下一页",
+                    ulClass:"in clearfix",
+                    items: 0,//--总个数
+                    itemsOnPage: 20,//--个数
+                    currentPage:1,//-当前
+                    //hrefTextSuffix:"javascript:;",
+                    hrefText:"",
+                    onPageClick:function(pageNumber, event){
+                        console.log(pageNumber);
+                        $(".well .row").removeAttr("style");
+                        $(".well .row").slice(0,(pageNumber-1)*20).css({"height":"0","overflow":"hidden"});
+                        }
+                    });
+                $("button.solve").click(function(){
+                    var val=$("textarea.form-control").val() || localStorage.getItem("codeMirror");
+                    var token=$("input[name='_token']").val();
+                    var _href=$("input[name='phref']").val();
+                    var lan= "" || $(".codeLanguage").val() ;
+                    $(".task-shadow").toggleClass("none");
+                    $(".loadding_img").removeClass("none");
+                    $.ajax({
+                        url:_href,
+                        timeout:60000,
+                        type:"post",
+                        data:{answer:val,_token:token,lan:lan},
+                        dataType:"json",
+                        success:function(data){
+                            if(data.success==true)
+                            {
+                                $(".result_warp").removeClass("none");
+                                $(".result-alert").toggleClass("none").find(".warning").find("i").html("&#xe617;").css("color","#2aa515");
+                                $(".result-alert p").html(data.result);
+                                _flag=true;
+                            }
+                            else{
+                               /* $(".result_warp").removeClass("none");
+                                $(".result-alert").toggleClass("none").find(".warning").find("i").html("&#xe616;");
+                               $(".result-alert p").html(data.result);*/
+                                if($("#taskType").val()==1){//区分代码题还是普通题，代码题错误的话不弹框
+                                    $("#codeError").show().html(data.result);
+                                    $(".task-shadow,.result-alert,.loadding_img").addClass('none');
+                                    window.location.hash="codeError";
+                                }else{
+                                    $(".result_warp").removeClass("none");
+                                    $(".result-alert").toggleClass("none").find(".warning").find("i").html("&#xe616;");
+                                    $(".result-alert p").html(data.result);
+                                }
+                            }
+                        },
+                        complete:function(XMLHttpRequest,status){
+                                if(status=='timeout'){
+                                    $(".result_warp").removeClass("none");
+                                    $(".result-alert").toggleClass("none").find(".warning").find("i").html("&#xe616;");
+                                    $(".result-alert p").html("请求超时，请重新尝试！");
+                                }
+                        }
+                    })
+                    
+                });
+                $(".commentLogin").click(function(){
+                    $(".authority,.task-shadow").removeClass("none");
+                })
+                $(".result-close").click(function(){
+                    if(_flag){
+                        window.location.reload();
+                    }
+                    else{
+                        $(".task-shadow").addClass("none");
+                        $(".result-alert").addClass("none");
+                        $(".loadding_img").addClass("none");
+                    }
+                })
+                $(".authority-close").click(function(){
+                    $(".authority,.task-shadow").addClass("none");
+                });
+        });
+        function codeMirrorEditor(mode){
+                var myTextarea = document.getElementById('editor');
+                var CodeMirrorEditor = CodeMirror.fromTextArea(myTextarea, {
+                    mode: mode || "text/x-python",
+                    lineNumbers: true,
+        //            value: localStorage.getItem("codeMirror") || "",
+                    extraKeys: {
+                        "F11": function(cm) {
+                            cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+                        },
+                        "Esc": function(cm) {
+                            if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+                        }
+                    }
+                });
+                $(".fullScreen").click(function(){
+                    CodeMirrorEditor.setOption("fullScreen", !CodeMirrorEditor.getOption("fullScreen"));
+                    if(CodeMirrorEditor.getOption("fullScreen")) {
+                        $(this).css({"position":"fixed","top":"5px","right":"5px","z-index":"11"}).html("取消全屏");
+                    }else{
+                        $(this).removeAttr("style").html("全屏");
+                    }
+                });
+                localStorage.setItem("codeMirror",$("#editor").val());
+                //load code
+                /*if(localStorage.getItem('codeMirror')){
+                    CodeMirrorEditor.setOption("value",localStorage.getItem("codeMirror") || "");
+        }*/
+                //save code
+                CodeMirrorEditor.on("change",function(){
+                    localStorage.setItem("codeMirror", CodeMirrorEditor.getValue());
+                    console.log(localStorage.getItem("codeMirror"));
+        })
+            }
+    </script>
+    <script>
+        let fff = document.getElementsByTagName('footer');
+        fff[0].innerHTML = `
+        
+        `;
+    </script>
+</body>
+</html>

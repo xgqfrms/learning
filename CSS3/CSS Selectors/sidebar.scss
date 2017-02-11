@@ -1,0 +1,259 @@
+/*-------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+$dark: #252525;
+$blue: #263347;
+$white: #f6f6f6;
+$green: #7db067;
+$blueWhite: #edeff4;
+$backgroundImage: url(http://f.cl.ly/items/0G3l1S3d0K39232G0p1W/generated.png) 0 0 repeat;
+@mixin hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@mixin visible {
+    display: block;
+    visibility: visible;
+}
+
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+
+/*-------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        family: 'Bitter', sans-serif;
+        weight: normal;
+        size: 100%;
+    }
+    line-height: 1.5em;
+    color: lighten($dark, 15%);
+    background: $dark $backgroundImage;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, .5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: {
+        family: 'Bitter', serif;
+        weight: normal;
+    }
+    color: darken($dark, 7.5%);
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+}
+
+h2,
+h3 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin: 1.2em 0;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+    color: lighten($dark, 30%);
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: none;
+    &:hover {
+        border-bottom: 2px solid;
+    }
+}
+
+#wrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 3em auto;
+    background: $blueWhite $backgroundImage;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+[role="banner"] {
+    width: 100%;
+    background: $blue $backgroundImage;
+    padding: 3em 2.5%;
+    & h1 {
+        color: #fff;
+        text-shadow: none;
+        line-height: 1;
+        margin: 0;
+    }
+    & a {
+        text-decoration: none;
+        color: #fff;
+        text-shadow: none;
+        &:hover {
+            border-bottom: 2px solid;
+        }
+    }
+}
+
+nav {
+    height: 2em;
+    width: 100%;
+    background: $green $backgroundImage;
+}
+
+[role="main"] {
+    width: 60%;
+    float: left;
+    z-index: 10;
+    background: $white $backgroundImage;
+    height: 100%;
+    padding: 0 2.5%;
+    margin-top: -1.5em;
+    border-right: 1px solid lighten($dark, 75%);
+    & h1:first-child {
+        margin: 2em 0;
+    }
+    & p:first-of-type {
+        color: #000;
+    }
+}
+
+[role="complimentary"] {
+    width: 40%;
+    float: right;
+    padding: 0 2.5%;
+    & p {
+        font-size: 0.875em;
+        line-height: 1.714286em;
+        margin-bottom: 1.714286em;
+    }
+    & h2 {
+        margin: 1.2em 0 2.4em 0;
+        & a {
+            color: $blue;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 2px solid $blue;
+            }
+        }
+    }
+}
+
+input[type=checkbox] {
+    @include visuallyhidden;
+}
+
+[for="width_sidebar"] {
+    border-right: 1px solid lighten($dark, 75%);
+    border-bottom: 1px solid lighten($dark, 75%);
+    display: inline;
+    border-radius: 0 0 5px 0;
+    float: left;
+    margin-left: 59.9%;
+    position: relative;
+    top: 0;
+    width: 5%;
+    height: auto;
+    background: $white $backgroundImage;
+    text-align: center;
+    color: lighten($dark, 60%);
+    line-height: 1.5em;
+    &:hover ~ [role="main"] {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .10);
+    }
+    & span {
+        &:nth-of-type(1) {
+            @include visuallyhidden;
+        }
+        &:nth-of-type(3) {
+            @include hidden;
+        }
+    }
+}
+
+input[type=checkbox]:checked {
+    & ~ [role="complimentary"] {
+        width: 100% !important;
+        margin-top: 1.2em;
+    }
+    & ~ [role="main"] {
+        width: 100%;
+        box-shadow: none;
+    }
+    & ~ [for="width_sidebar"] {
+        border: none;
+        margin: 0;
+        float: right;
+        & span {
+            &:nth-of-type(3) {
+                @include visible;
+            }
+            &:nth-of-type(2) {
+                @include hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 804px) {
+    [for="width_sidebar"] {
+        margin-left: 59.7%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 90%;
+    }
+    [role="complimentary"] {
+        width: 100%;
+        background: $blueWhite $backgroundImage;
+        margin-top: 1.2em;
+    }
+    [role="main"] {
+        width: 100%;
+        margin-top: 0;
+    }
+    [for="width_sidebar"] {
+        @include visuallyhidden;
+    }
+}
