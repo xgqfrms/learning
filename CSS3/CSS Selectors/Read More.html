@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Read More</title>
+    <link rel="stylesheet" href="read-more.css">
+    <!-- http://jsfiddle.net/genelocklin/SNB2e/ -->
 </head>
 <body>
     <article>
@@ -13,7 +14,7 @@
             <span>Hide This Shit!</span>
         </label>
         <figure>
-            <img src="http://genelocklin.com/examples/shared-images/owl-1.jpg" alt="placeholder" />
+            <img src="https://cdn.xgqfrms.xyz/logo/favicon.png" alt="placeholder" />
         </figure>
         <section>
             <p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). </p>
@@ -22,11 +23,44 @@
             <p>Owls hunt mostly small mammals, insects, and other birds, although a few species specialize in hunting fish. They are found in all regions of the Earth except Antarctica, most of Greenland and some remote islands. Though owls are typically solitary, the literary collective noun for a group of owls is a parliament. Owls are characterized by their small beaks and wide faces, and are divided into two families: the typical owls, Strigidae; and the barn-owls, Tytonidae.</p>
             <p>Owls have large forward-facing eyes and ear-holes; a hawk-like beak; a flat face; and usually a conspicuous circle of feathers, a facial disc, around each eye. The feathers making up this disc can be adjusted in order to sharply focus sounds that come from varying distances onto the owls' asymmetrically placed ear cavities. Most birds of prey sport eyes on the sides of their heads, but the stereoscopic nature of the owl's forward-facing eyes permits the greater sense of depth perception necessary for low-light hunting. Although owls have binocular vision, their large eyes are fixed in their sockets — as are those of other birds — so they must turn their entire head to change views. Owls can rotate their heads and necks as much as 270 degrees in either direction. As owls are farsighted, they are unable to see clearly anything within a few centimeters of their eyes. Caught prey can be felt by owls with the use of filoplumes — like feathers on the beak and feet that act as "feelers". Their far vision, particularly in low light, is exceptionally good.</p>
             <p>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jsfiddle.net/genelocklin/SNB2e/" data-via="genelocklin" data-size="large">Tweet</a>
-                <a href="https://twitter.com/genelocklin" class="twitter-follow-button" data-show-count="false" data-width="170px" data-size="large">Follow @genelocklin</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jsfiddle.net/xgqfrms" data-via="xgqfrms" data-size="large">Tweet</a>
+                <a href="https://twitter.com/xgqfrms" class="twitter-follow-button" data-show-count="false" data-width="170px" data-size="large">Follow @xgqfrms</a>
             </p>
         </section>
     </article>
+    <section>
+        <footer>
+            <!--  -->
+        </footer>
+        <!-- js -->
+        <script>
+            const copyRightYear = () => {
+                let copyYear=Symbol();
+                copyYear=new Date().getFullYear();
+                // const spanYear=document.getElementById('spanYear');
+                const body = document.querySelector('body');
+                const reference = body.lastChild;
+                const footer = document.createElement('footer');
+                footer.id = "foo";
+                footer.style.background = "rgba(0,0,0,0.7)";
+                footer.style.color = "rgba(0,255,0,0.7)";
+                footer.style.textAlign = "center";
+                let fullYear = `Copyright © 2012 - ${copyYear} ❤️ xgqfrms `;
+                footer.innerText = `${fullYear}`;
+
+                // let fullYear = `<mark>Copyright &copy; 2012 - ${copyYear} ❤️ xgqfrms </mark>`;
+                // footer.innerText = `<div>${fullYear}</div>`;
+
+                return body.insertBefore(footer, reference);
+                // return body.innerHTML = footer;
+                // return body.innerHTML = `<div>${fullYear}</div>`;
+                // return body.insertBefore = `<div>${fullYear}</div>`;
+                //return body.append = `<div>${fullYear}</div>`
+                //return body.appendChild = `<div>${fullYear}</div>`;
+            }
+            window.onload = copyRightYear();
+        </script>
+    </section>
 </body>
 
 </html>
