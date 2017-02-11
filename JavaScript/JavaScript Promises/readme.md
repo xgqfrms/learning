@@ -475,3 +475,48 @@ https://developers.google.com/web/updates/2012/03/Optimizing-JavaScript
 
 
 
+<script>
+function escape(input) {
+    var stripTagsRE = /<\/?[^>]+>/gi;
+    input=input.replace(stripTagsRE, '');
+    input=input.replace(/[(]/g, '');
+    input=input.replace(/>|on.+?=|focus/gi, '_');
+    return '<article>' + input + '</article>';
+}     
+document.write("<h1>意见反馈预览页</h1>");
+//服务端将你的输入转成base64
+text=decodeURIComponent(atob("JTI2JTIzeDNDJTNCJTBEJTBBc2NyaXB0JTI2JTIzeDNFJTNCKyUwRCUwQWFsZXJ0JTI2JTIzeDI4JTNCJTIyaGVsbG8lMkMrWFNTJTIxJTIyJTI5KyUwRCUwQSUyNiUyM3gzQyUzQiUwRCUwQSUyNiUyM3gyRiUzQiUwRCUwQXNjcmlwdCUwRCUwQSUyNiUyM3gzRSUzQiUwRCUwQQ=="));
+text=text.replace(/[+]/g,' ');
+document.write(escape(text));
+</script>
+
+
+http://www.qlcoder.com/train/suggest?text=%26%23x3C%3B%0D%0Ascript%26%23x3E%3B+%0D%0Aalert%26%23x28%3B%22hello%2C+XSS%21%22%29+%0D%0A%26%23x3C%3B%0D%0A%26%23x2F%3B%0D%0Ascript%0D%0A%26%23x3E%3B%0D%0A
+
+
+
+http://www.technicalinfo.net/papers/CSS.html
+
+https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
+https://www.owasp.org/index.php/Testing_for_Cross_site_scripting
+
+
+
+https://www.acunetix.com/websitesecurity/cross-site-scripting/
+
+
+https://www.veracode.com/security/xss
+
+https://www.youtube.com/watch?v=t161cahMAZc
+
+
+https://github.com/leizongmin/js-xss
+
+
+
+http://www.martani.net/2009/08/xss-steal-passwords-using-javascript.html
+
+https://excess-xss.com/
+
+
+
