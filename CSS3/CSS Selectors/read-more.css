@@ -37,6 +37,14 @@ body {
     *zoom: 1;
 }
 
+/*
+
+CSS3 ::before, ::after 
+
+CSS2 :before, :after
+
+*/
+
 body:before,
 body:after {
     content: "";

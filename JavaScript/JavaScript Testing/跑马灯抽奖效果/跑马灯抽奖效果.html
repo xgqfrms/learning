@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.qlcoder.com/uploads/63343.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>跑马灯抽奖效果-Seven_Tao</title>
+    <link rel="stylesheet" href="lottery.marquee.css">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style>
+</head>
+<!-- Brendan Eich -->
+<body data-pinterest-extension-installed="cr2.0.5">
+    <div class="wrapper">
+        <ul class="prizes">
+            <li class="p1">答案</li>
+            <li class="p2">谢谢参与</li>
+            <li class="p3">谢谢参与</li>
+            <li class="p4">谢谢参与</li>
+            <li class="p5">谢谢参与</li>
+            <li class="p6">谢谢参与</li>
+            <li class="p7">谢谢参与</li>
+            <li class="p8">谢谢参与</li>
+            <li class="p9">谢谢参与</li>
+            <li class="p10 active">谢谢参与</li>
+            <li class="p11">谢谢参与</li>
+            <li class="p12">谢谢参与</li>
+        </ul>
+        <div class="dashboard">
+            <a href="javascript:;" class="drawbtn">点我抽奖</a>
+        </div>
+    </div>
+     <!-- 脚本 -->
+    <script src="jquery.min.js."></script>
+    <script src="aes.js"></script>
+    <script src="lottery.marquee.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.drawbtn').click(function() {
+            $('.prizes').lottery({
+                winId: Math.ceil(Math.random() * 11),
+                finish: function() {
+                    alert("很遗憾,没有抽中答案哦,再试试吧^_^");
+                }
+            })
+        });
+    });
+    </script>
+</body>
+</html>

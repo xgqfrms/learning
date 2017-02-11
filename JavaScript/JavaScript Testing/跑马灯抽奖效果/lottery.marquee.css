@@ -1,0 +1,123 @@
+.wrapper {
+    width: 906px;
+    height: 532px;
+    margin: 50px auto;
+    padding: 40px 0 0 94px;
+    position: relative;
+    background: url('marqueen-bg.png') no-repeat;
+}
+
+.prizes {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.prizes li {
+    width: 218px;
+    height: 124px;
+    display: block;
+    position: absolute;
+    background: url('marqueen-main.png') no-repeat 0 -84px;
+    text-align: center;
+    line-height: 124px;
+    font-size: 25px;
+    color: #d16700;
+}
+
+.prizes .active {
+    background: url('marqueen-main.png') no-repeat -238px -84px;
+}
+
+.prizes .p1 {
+    left: 0;
+    top: 0;
+}
+
+.prizes .p2 {
+    left: 219px;
+    top: 0;
+}
+
+.prizes .p3 {
+    left: 438px;
+    top: 0;
+}
+
+.prizes .p4 {
+    left: 657px;
+    top: 0;
+}
+
+.prizes .p5 {
+    left: 657px;
+    top: 125px;
+}
+
+.prizes .p6 {
+    left: 657px;
+    top: 250px;
+}
+
+.prizes .p7 {
+    left: 657px;
+    top: 375px;
+}
+
+.prizes .p8 {
+    left: 438px;
+    top: 375px;
+}
+
+.prizes .p9 {
+    left: 219px;
+    top: 375px;
+}
+
+.prizes .p10 {
+    left: 0;
+    top: 375px;
+}
+
+.prizes .p11 {
+    left: 0;
+    top: 250px;
+}
+
+.prizes .p12 {
+    left: 0;
+    top: 125px;
+}
+
+.dashboard {
+    background-color: rgb( 255, 205, 70);
+    position: absolute;
+    left: 313px;
+    top: 165px;
+    width: 437px;
+    height: 249px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px rgba(221, 169, 29, 0.4) inset;
+}
+
+.drawbtn {
+    background: url('/img/marqueen-main.png') no-repeat 0 -506px;
+    position: absolute;
+    width: 206px;
+    height: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -103px;
+    margin-top: -36px;
+    display: block;
+    text-indent: -100em;
+    overflow: hidden;
+}
+
+.drawbtn:hover {
+    background: url('/img/marqueen-main.png') no-repeat 0 -433px;
+}

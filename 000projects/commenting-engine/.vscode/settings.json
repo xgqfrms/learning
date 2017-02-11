@@ -10,5 +10,6 @@
     "html.format.enable": true,
     "html.format.extraLiners": "/body",
     "workbench.statusBar.visible": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "vsicons.presets.angular": false
 }
