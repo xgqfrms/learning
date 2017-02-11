@@ -58,3 +58,35 @@
     </script>
 </body>
 </html>
+<!-- 
+
+// 解密
+
+var de = CryptoJS.AES.decrypt("U2FsdGVkX1/3vXBiL3ac3cEoYTaeHa30OEtnllDGfKOulwahpXKlVizvYQ8GWUYXa6cqJXj8PIKqvVLD59sPag==", "Secret Passphrase");
+
+
+console.log(de.toString(CryptoJS.enc.Utf8));
+
+
+
+// 加密
+let enx = CryptoJS.AES.encrypt("xgqfrms 2017", "Secret Passphrase");
+
+
+// 解密
+console.log(`${enx.toString(CryptoJS.dec)}`);
+
+
+
+U2FsdGVkX1/pI1yeyctBcut49Vdwi8wExCIpEH3KbPQ=
+
+
+// 解密
+let dex = CryptoJS.AES.decrypt("U2FsdGVkX1/pI1yeyctBcut49Vdwi8wExCIpEH3KbPQ=", "Secret Passphrase");
+
+
+// 加密
+console.log(`${dex.toString(CryptoJS.enc.Utf8)}`);
+
+
+ -->
