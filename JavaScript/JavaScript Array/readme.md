@@ -105,19 +105,250 @@ console.log(fruits.length);
 
 ## Array.prototype.push()
 
+push() 方法将一个或多个元素添加到数组的末尾，并返回数组的新长度。
 
+```js
 
+var numbers = [1, 2, 3];
+numbers.push(4);
 
+console.log(numbers); 
+// [1, 2, 3, 4]
+
+numbers.push(5, 6, 7);
+
+console.log(numbers); 
+// [1, 2, 3, 4, 5, 6, 7]
+
+``` 
 
 
 ## Array.prototype.unshift()
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+
+
+unshift() 方法将一个或多个元素添加到数组的开头，并返回新数组的长度。
+
+
+```js
+
+let a = [1, 2, 3];
+a.unshift(4, 5);
+
+console.log(a); 
+// [4, 5, 1, 2, 3]
+
+``` 
+
+
+## Array.prototype.join() 连接
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+
+join() 方法将数组（或一个类数组对象）的所有元素连接到一个字符串中。
+
+PS: join() 方法，不会改变现有数组！
+
+
+
+```js
+let a = ['Wind', 'Rain', 'Fire'];
+
+a.join(); 
+// 默认为 ","
+// 'Wind,Rain,Fire'
+
+a.join(""); 
+// 分隔符 === 空字符串 ""
+// "WindRainFire"
+
+a.join("-"); 
+// 分隔符 "-"
+// 'Wind-Rain-Fire'
+
+console.log(a);
+// ['Wind', 'Rain', 'Fire']
+``` 
+
+
+
+## Array.prototype.concat() 合并
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+
+concat() 法用于合并两个或多个数组。
+此方法不会更改现有数组，而是返回一个新数组。
+
+
+```js
+
+let arr1 = ["a", "b", "c"];
+let arr2 = ["d", "e", "f"];
+
+let arr3 = arr1.concat(arr2);
+
+console.log(arr3);
+
+// [ "a", "b", "c", "d", "e", "f" ]
+
+console.log(arr3);
+// [ "a", "b", "c" ]
+
+console.log(arr3);
+// [ "d", "e", "f" ]
+
+
+``` 
 
 
 
 
 
 ## Array.prototype.splice()
+
+
+
+
+## Array.prototype.splice()
+
+
+
+
+
+## Array.prototype.splice()
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+
+
+arr.sort() 
+
+arr.sort(compareFunction)
+
+可选。用来指定按某种顺序进行排列的函数。
+如果省略，元素按照转换为的字符串的诸个字符的Unicode位点进行排序。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+
+
+
+
+
+
+## Array.prototype.entries()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/entries
+
+
+```js
+
+entries() 方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键/值对。
+
+var arr = ["a", "b", "c"];
+var iterator = arr.entries();
+// undefined
+
+console.log(iterator);
+// Array Iterator {}
+
+console.log(iterator.next().value); 
+// [0, "a"]
+console.log(iterator.next().value); 
+// [1, "b"]
+console.log(iterator.next().value); 
+// [2, "c"]
+
+var arr = ["a", "b", "c"];
+var iterator = arr.entries();
+// undefined
+
+for (let e of iterator) {
+    console.log(e);
+}
+
+// [0, "a"] 
+// [1, "b"] 
+// [2, "c"]
+
+``` 
+
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/values
+
+
+Chrome 未实现 
+
+
+
+
+
+
+## Array.prototype.keys()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/keys
+
+
+keys() 方法返回一个新的Array迭代器，它包含数组中每个索引的键。
+
+
+```js
+
+let arr = ["a", "b", "c"];
+
+let iterator = arr.keys();
+// undefined
+
+console.log(iterator);
+// Array Iterator {}
+
+console.log(iterator.next()); 
+// Object {value: 0, done: false}
+
+console.log(iterator.next()); 
+// Object {value: 1, done: false}
+
+console.log(iterator.next()); 
+// Object {value: 2, done: false}
+
+console.log(iterator.next()); 
+// Object {value: undefined, done: true}
+
+
+``` 
+
+
+
+
+
+
 
 
 
@@ -186,10 +417,10 @@ https://www.bennadel.com/blog/1796-javascript-array-methods-unshift-shift-push-a
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
 
-
-
-
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 
