@@ -1,6 +1,26 @@
 # JavaScript Array.prototype.xxx()
 
 
+
+http://www.w3schools.com/jsref/jsref_obj_array.asp
+
+http://www.w3schools.com/js/js_arrays.asp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 访问数组的元素的方式
 
 let objectsArr = [
@@ -45,24 +65,52 @@ pop()方法从数组中删除最后一个元素，并返回该元素的值。此
 
 var a = [1, 2, 3];
 a.pop();
+// 3
 
-console.log(a); // [1, 2]
+console.log(a); 
+// [1, 2]
+
+console.log(a.length); 
+// 2
+
+``` 
+
+
+## Array.prototype.shift()
+
+http://www.w3schools.com/jsref/jsref_shift.asp
+
+shift() 方法从数组中删除最后一个元素，并返回该元素的值。此方法更改数组的长度。
+
+
+```js
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+console.log(fruits);
+
+fruits.shift();
+// "Banana"
+
+console.log(fruits);
+// ["Orange", "Apple", "Mango"];
+
+console.log(fruits.length);
+// 3
 
 ``` 
 
 
 
 
+## Array.prototype.push()
 
-
-
-
-## Array.prototype.pop()
 
 
 
 
 
+## Array.prototype.push()
 
 
 
