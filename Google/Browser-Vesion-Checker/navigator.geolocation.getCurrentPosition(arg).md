@@ -1,6 +1,12 @@
 # navigator.geolocation.getCurrentPosition(args)
 
 
+https://www.w3.org/TR/geolocation-API/
+
+Geolocation API Specification 2nd Edition
+W3C Recommendation 8 November 2016
+
+
 
 
 
@@ -102,21 +108,10 @@ https://forum.ionicframework.com/t/navigator-geolocation-getcurrentposition-work
 
 http://codepen.io/ionic/pen/uzngt
 
-
-https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
-
+http://codepen.io/xgqfrms/full/vgvxVG/
 
 
-
-
-
-
-
-
-
-
-
-
+http://www.w3schools.com/html/html5_geolocation.asp
 
 
 
