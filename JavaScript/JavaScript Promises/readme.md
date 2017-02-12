@@ -438,6 +438,19 @@ https://laracasts.com/series/es6-cliffsnotes/episodes/13
 Promises 101
 
 
+A JavaScript Promise represents the result of an operation that hasn't been completed yet, but will at some undetermined point in the future.
+
+JavaScript承诺表示尚未完成但在未来某个未确定点的操作的结果。
+
+
+
+
+
+
+
+
+
+
 
 
 
