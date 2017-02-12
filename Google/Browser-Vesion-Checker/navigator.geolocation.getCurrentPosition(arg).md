@@ -98,6 +98,26 @@ Latitude and Longitude to Address
 
 
 
+https://forum.ionicframework.com/t/navigator-geolocation-getcurrentposition-work-not-work/5127/4
+
+http://codepen.io/ionic/pen/uzngt
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
