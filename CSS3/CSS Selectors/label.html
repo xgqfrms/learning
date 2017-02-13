@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>label</title>
+    <style>
+        label {
+            cursor: pointer;
+            background: red;
+        }
+        /*label:first-child{
+           background: green;
+        }*/
+        label:hover{
+           background: green;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+        <h1>label for === input id</h1>
+    </div>
+    <div class="div">
+        <p>A label element is displayed like this:</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+    </div>
 </body>
 </html>

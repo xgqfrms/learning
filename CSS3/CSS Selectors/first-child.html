@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>first-child</title>
+    <style>
+        ul>li{
+            list-style: none;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li>item 01</li>
+        <li>item 02</li>
+        <li>item 03</li>
+        <li>item 04</li>
+        <li>item 05</li>
+        <li>item 06</li>
+        <li>item 07</li>
+    </ul>
 </body>
 </html>

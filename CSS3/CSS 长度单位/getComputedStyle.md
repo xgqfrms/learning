@@ -94,12 +94,12 @@ http://stackoverflow.com/questions/10803023/why-wont-getpropertyvalue-return-a-v
 https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
 
 
+https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/getComputedStyle 
 
-
-
-
+http://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html 
 
 
 
