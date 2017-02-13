@@ -1,6 +1,16 @@
 # window.open
 
 
+http://codepen.io/xgqfrms/full/ggqpKo/
+
+
+
+
+
+
+
+
+
 
 ## Window open() Method
 

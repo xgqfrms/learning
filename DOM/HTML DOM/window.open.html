@@ -10,25 +10,43 @@
     </p>
     <button onclick="selfFunc()">Try it <mark>_self</mark></button><br>
     <button onclick="selfFunc()">Try it <mark>_parent</mark></button><br>
-    <button onclick="selfFunc()">Try it <mark>_parent</mark></button><br>
-    <button onclick="selfFunc()">Try it <mark>_parent</mark></button><br>
-    <button onclick="selfFunc()">Try it <mark>_parent</mark></button><br>
+    <button onclick="topFunc()">Try it <mark>_top</mark></button><br>
+    <button onclick="blankFunc()">Try it <mark>_blank(default)</mark></button><br>
+    <button onclick="nameFunc()">Try it <mark>name</mark></button><br>
     <script>
         function selfFunc() {
-            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
         }
         function parentFunc() {
-            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+            window.open("https://www.xgqfrms.xyz/", "_parent","toolbar=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
         }
-        function parentFunc() {
-            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+        function topFunc() {
+            window.open("https://www.xgqfrms.xyz/", "_top","toolbar=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
         }
-        function parentFunc() {
-            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+        function blankFunc() {
+            window.open("https://www.xgqfrms.xyz/", "_blank","toolbar=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
         }
-        function parentFunc() {
-            window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+        function nameFunc() {
+            window.open("https://www.xgqfrms.xyz/", "name","toolbar=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
         }
     </script>
+    <iframe src="window.open.html" frameborder="1"></iframe>
+    <!-- 
+    function selfFunc() {
+        window.open("https://www.xgqfrms.xyz/", "_self","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+    }
+    function parentFunc() {
+        window.open("https://www.xgqfrms.xyz/", "_parent","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+    }
+    function topFunc() {
+        window.open("https://www.xgqfrms.xyz/", "_top","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+    }
+    function blankFunc() {
+        window.open("https://www.xgqfrms.xyz/", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+    }
+    function nameFunc() {
+        window.open("https://www.xgqfrms.xyz/", "name","toolbar=yes,scrollbars=yes,resizable=yes,status=yes,menubar=yes,titlebar=yes,top=50,left=50,width=400,height=300", false)
+    }
+     -->
 </body>
 </html>
