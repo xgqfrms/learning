@@ -111,6 +111,11 @@ JavaScript ServiceWorker API
 
 
 
+http://www.webhek.com/postmessage-cross-domain-post
+
+
+使用HTML5中postMessage实现Ajax中的POST跨域问题
+
 
 
 

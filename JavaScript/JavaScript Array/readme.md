@@ -349,6 +349,63 @@ console.log(iterator.next());
 
 
 
+## Array.prototype.forEach()  
+
+
+
+http://www.webhek.com/javascript-loop-foreach-for-in-for-of
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+
+forEach() 方法对数组的每个元素执行一次提供的函数。
+
+let a = ['a', 'b', 'c'];
+
+a.forEach(function(element) {
+    console.log(element);
+});
+
+// a
+// b
+// c
+
+
+
+array.forEach(callback[, thisArg])
+
+
+
+function logArrayElements(element, index, array) {
+    console.log("a[" + index + "] = " + element);
+}
+
+// 注意索引2被跳过了，因为在数组的这个位置没有项
+[2, 5, ,9].forEach(logArrayElements);
+// logs:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
