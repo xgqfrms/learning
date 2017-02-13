@@ -533,3 +533,54 @@ https://excess-xss.com/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.webhek.com/javascript-promise-programming
+
+
+Promise异步编程模式总结
+
+
+
+http://www.webhek.com/javascript-promise-api
+
+
+JavaScript Promise API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

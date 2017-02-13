@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3d cube</title>
+    <!-- 
+    CSS3景深、三维变换属性及旋转三维立方体的实现
+    http://www.webhek.com/css-3d-rotate-cube
+     -->
+    <style>
+        ul {  /*调整ul标签的样式，取消内边距、外边距，和“点”样式*/
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .stage {  /*设置舞台元素在屏幕居中，设置合适的景深大小*/
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            perspective: 400px;
+        }
+        @keyframes move { /*设置动画关键帧*/
+            0% {
+                transform: rotateX(0deg);
+            }
+            25% {
+                transform: rotateX(180deg);
+            }
+            50% {
+                transform: rotateX(360deg) rotateY(0deg);
+            }
+            75% {
+                transform: rotateX(360deg) rotateY(180deg);
+            }       
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .stage .three-d-box {  /*动画容器居中在舞台元素中间*/
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -100px 0 0 -100px;
+            transform-style: preserve-3d; /*设置3D属性让子元素三维空间呈现*/
+            animation: move 3s linear infinite; /*设置动画*/
+
+        }
+        .stage .three-d-box>li { /*设置动画子元素公共属性*/
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            opacity: 0.5;
+        }
+        /*为了保证我们对立方体位置的控制，我们需要让动画容器在立方体的中间位置*/
+        .stage .three-d-box>li:nth-child(1) {
+            background-color: red;
+            transform: translateZ(-100px);
+        }
+        .stage .three-d-box>li:nth-child(2) {
+            background-color: greenyellow;
+            transform: translateZ(100px);
+        }
+        .stage .three-d-box>li:nth-child(3) {
+            background-color: cornflowerblue;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .stage .three-d-box>li:nth-child(4) {
+            background-color: orangered;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .stage .three-d-box>li:nth-child(5) {
+            background-color: deeppink;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .stage .three-d-box>li:nth-child(6) {
+            background-color: lightcoral;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">  <!--舞台元素，视角所在-->
+        <ul class="three-d-box">   <!--动画容器，通过它来控制整个立方体-->
+            <li>♑</li>  <!--动画元素，立方体的六个面-->
+            <li>♍</li>
+            <li>♌</li>
+            <li>♋</li>
+            <li>♎</li>
+            <li>♓</li>
+        </ul>
+    </div>
+</body>
+</html>
