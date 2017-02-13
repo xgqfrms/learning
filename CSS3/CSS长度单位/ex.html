@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex</title>
+    <style>
+        .sup {
+            position: relative;
+            bottom: 1ex;
+        }
+        .sub {
+            position: relative;
+            bottom: -1ex;
+        }
+        /*
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            -webkit-margin-before: 0.83em;
+            -webkit-margin-after: 0.83em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+         */
+        /* 1ex = 1/2 em*/
+        .h2{
+            font-size: 3ex;
+            display: block;
+            -webkit-margin-before: 0.83em;
+            -webkit-margin-after: 0.83em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>x-height; the height of the lower case x</h1>
+        <p>
+            ex 定义为当前字体的小写x字母的高度或者 1/2 的 1em。
+        </p>
+        <p>
+            ch 单位通常被定义为数字0的宽度。
+        </p>
+        <pre>
+            x-height; the height of the lower case x
+
+            这些单位有很多用途，大部分用于版式的微调。比方说，sup 元素（上角文字标），可以通过position:relative;bottom: 1ex;实现 。类似的方法，你可以实现一个下角文字标。浏览器默认的方式是利用
+            上标和下标特定垂直对齐规则，但是如果你想更细粒度更精确得控制，你可以像下面这样做：
+        </pre>
+    </div>
+    <div>
+        <p>
+            this is a <sub>sub</sub>
+        </p>
+        <p>
+            this is a <sup>sup</sup>
+        </p>
+        <p>
+            this is a <span class="sub">span sub</span>
+        </p>
+        <p>
+            this is a <span class="sup">span sup</span>
+        </p>
+    </div>
+    <div>
+        <h2>defualt h2 = 1.5em </h2>
+        <br>
+        <span class="h2">ex h2 = 3ex</span>
+    </div>
+</body>
+</html>
