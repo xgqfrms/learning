@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label-input-id</title>
+    <style>
+        label:first-child {
+            cursor: help;
+        }
+        input{
+            color: red;
+            background: green;
+            content: "v";
+            border: 3px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>A label element is displayed like this:</p>
+        <hr>
+        <label for="male" title="not-bind-id">Male</label>
+        <input type="radio" name="gender" title="not-bind-id" value="male"><br>
+        <span><mark>male not-bind-id</mark></span><br>
+        <label for="female" title="Female bind-id">Female</label>
+        <input type="radio" name="gender" title="Female bind-id" id="female" value="female"><br>
+        <label for="other" title="Other bind-id">Other</label>
+        <input type="radio" name="gender" title="Other bind-id" id="other" value="other">
+    </div>
+</body>
+</html>
