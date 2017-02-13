@@ -245,7 +245,7 @@ log的第三个参数是要输出的字符串。%s
 
 
 
-
+http://www.webhek.com/tag/console
 
 
 
