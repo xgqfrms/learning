@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get style.fontSize</title>
+    <!-- 
+    http://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
+    https://developer.mozilla.org/zh-CN/docs/Web/API/Window/getComputedStyle
+     -->
+</head>
+<body>
+    <pre>
+        &lt;p id="fp" style="font-size:200%">
+            This is a paragraph. &lt;br>
+            &lt;mark>inline style : &lt;code>style="font-size:200%"&lt;code>&lt;/mark>
+        &lt;/p>
+        &lt;button type="button" onclick="tureFunc()">Return font size&lt;/button>
+        &lt;h1 id="fh">
+            This is a H1. &lt;mark>browser defualt value&lt;/mark>
+        &lt;/h1>
+        &lt;button type="button" onclick="myFunction()">Not Return font size&lt;button>
+        &lt;script>
+            function tureFunc() {
+                alert(document.getElementById("fp").style.fontSize);
+            }
+            function falseFunc() {
+                alert(document.getElementById("fh").style.fontSize);
+            }
+        &lt;/script>
+    </pre>
+    <hr>
+    <p id="fp" style="font-size:200%">
+        This is a paragraph. <br>
+        <mark>inline style : <code>style="font-size:200%"</code></mark>
+    </p>
+    <button type="button" onclick="tureFunc()">Return font size</button>
+    <h1 id="fh">
+        This is a H1. <mark>browser defualt value</mark>
+    </h1>
+    <button type="button" onclick="myFunction()">Not Return font size</button>
+    <script>
+        function tureFunc() {
+            alert(document.getElementById("fp").style.fontSize);
+        }
+        function falseFunc() {
+            alert(document.getElementById("fh").style.fontSize);
+        }
+    </script>
+</body>
+</html>

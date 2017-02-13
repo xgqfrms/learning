@@ -1,6 +1,45 @@
 # style.fontSize  
 
 
+
+
+
+http://stackoverflow.com/questions/15195209/how-to-get-font-size-in-html
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/getComputedStyle
+
+
+
+
+
+
+<p id="fp" style="font-size:200%">
+    This is a paragraph. <br>
+    <mark>inline style : <code>style="font-size:200%"</code></mark>
+</p>
+<button type="button" onclick="tureFunc()">Return font size</button>
+<h1 id="fh">
+    This is a H1. <mark>browser defualt value</mark>
+</h1>
+<button type="button" onclick="myFunction()">Not Return font size</button>
+<script>
+    function tureFunc() {
+        alert(document.getElementById("fp").style.fontSize);
+    }
+    function falseFunc() {
+        alert(document.getElementById("fh").style.fontSize);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
 http://www.w3schools.com/jsref/prop_style_fontsize.asp
 
 
@@ -23,7 +62,6 @@ inherit Inherits this property from its parent element. Read about inherit
 
 // Set font size
 <p id="myP">This is a paragraph.</p>
-
 <button type="button" onclick="myFunction()">Set font size</button>
 
 <script>
@@ -37,9 +75,7 @@ function myFunction() {
 // Return font size
 
 <p id="myP" style="font-size:200%">This is a paragraph.</p>
-
 <button type="button" onclick="myFunction()">Return font size</button>
- 
 <script>
 function myFunction() {
     alert(document.getElementById("myP").style.fontSize);
@@ -47,10 +83,10 @@ function myFunction() {
 </script>
 
 
-<h1 id="myP">This is a paragraph.</h1>
+// Not Return font size
 
+<h1 id="myP">This is a paragraph.</h1>
 <button type="button" onclick="myFunction()">Return font size</button>
- 
 <script>
 function myFunction() {
     alert(document.getElementById("myP").style.fontSize);
@@ -76,7 +112,6 @@ function myFunction() {
     <option>2cm</option>
     <option>100px</option>
 </select>
- 
 <script>
 function myFunction(selectTag) {
     var listValue = selectTag.options[selectTag.selectedIndex].text;
@@ -128,20 +163,15 @@ document.write("<p>Blink: " + txt.blink() + " (does not work in IE, Chrome, Fire
 
 </script>
 
-The write() method writes HTML expressions or JavaScript code to a document. The write() method is mostly used for testing: If it is used after an HTML document is fully loaded, it will delete all existing HTML.
-
 
 write() 方法将HTML表达式或JavaScript代码写入文档。 
 write() 方法主要用于测试：
 如果在HTML文档完全加载后使用它，它将删除所有现有的HTML。
 
-When this method is not used for testing, it is often used to write some text to an output stream opened by the document.open() method.
 
 当此方法不用于测试时，通常用于将一些文本写入由document.open() 方法打开的输出流。
 
 
-
-Tip: The document.writeln() method is similar to write(), only it adds a newline character after each statement.
 
 提示：document.writeln()方法类似于write() ，只有在每个语句之后添加一个换行符。
 
@@ -150,7 +180,6 @@ Tip: The document.writeln() method is similar to write(), only it adds a newline
 
 document.write(exp1, exp2, exp3, ...)
 
-Optional. What to write to the output stream. Multiple arguments can be listed and they will be appended to the document in order of occurrence
 
 exp1, exp2, exp3, ... 
 

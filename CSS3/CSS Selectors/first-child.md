@@ -27,15 +27,8 @@ http://www.webhek.com/javascript-loop-foreach-for-in-for-of
 
 
 
-
-
-
-
-
-
-
 for (var index in myArray) {    // 不推荐这样
-  console.log(myArray[index]);
+    console.log(myArray[index]);
 }
 
 

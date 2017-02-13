@@ -1,17 +1,14 @@
-# 
+#  write writeln  open close
 
 
-
-
-## HTML DOM open() Method
-
-
+G:\wwwRoot\learning\CSS3\CSS长度单位
 
 
 
 ## HTML DOM open() Method
 
 http://www.w3schools.com/jsref/met_doc_open.asp
+http://www.w3schools.com/jsref/met_win_open.asp
 
 document.open(MIMEtype, replace)
 

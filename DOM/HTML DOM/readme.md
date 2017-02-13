@@ -42,10 +42,11 @@ http://www.w3schools.com/jsref/obj_cssstyledeclaration.asp
 
 
 
+#  write writeln  open close
 
 
 
-
+G:\wwwRoot\learning\CSS3\CSS长度单位
 
 
 
