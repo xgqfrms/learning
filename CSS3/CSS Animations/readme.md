@@ -238,7 +238,10 @@ console.log(args,args,args,args,args,args,args,??? )
 
 
 
-
+这里的用法很像C语言里格式化字符串输出的printf函数，
+log的第一个参数声明第二、第三个参数的作用， %c%s
+log的第二个参数就是样式，%c
+log的第三个参数是要输出的字符串。%s
 
 
 
