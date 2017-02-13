@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getComputedStyle</title>
+    <style>
+        h3::after {
+            content: "rocks!";
+        }
+        #elem-container{
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            height: 100px;
+            font-size: 1.5ex;
+        }
+    </style>
+</head>
+<body>
+    <h3>generated content</h3> 
+    <script>
+        let h3 = document.querySelector('h3'), 
+        result = getComputedStyle(h3, '::after').content;
+        // console.log("the generated content is: ", result);
+        console.log(`the generated content is: ${result}`); 
+        // alert(`the generated content is: ${result}`);
+        // the generated content is: "rocks!"
+    </script>
+    <hr>
+    <div id="elem-container">dummy</div>
+    <div id="output"></div>  
+    <script>
+        function getTheStyle(){
+            let elem = document.getElementById("elem-container");
+            let fontSize = window.getComputedStyle(elem,null).getPropertyValue("font-size");
+            // font-size !=== fontSize
+            console.log(`fontSize = ${fontSize}`);
+            document.getElementById("output").innerHTML = fontSize;
+        }
+        getTheStyle();
+    </script>
+</body>
+</html>
