@@ -1,6 +1,19 @@
 # Chrome URLs
 
 
+https://developer.mozilla.org/en-US/docs/Glossary/Chrome
+
+
+http://www.webhek.com/firefox-chrome
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Glossary/Chrome
+
+
+
+
+
 
 
 

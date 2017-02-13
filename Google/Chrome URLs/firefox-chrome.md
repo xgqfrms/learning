@@ -1,6 +1,20 @@
 # firefox-chrome
 
 
+https://developer.mozilla.org/zh-CN/docs/Glossary/Chrome
+
+
+https://developer.mozilla.org/en-US/docs/Glossary/Chrome
+
+
+http://www.webhek.com/firefox-chrome
+
+
+
+
+
+
+
 
 
 chrome://
@@ -31,7 +45,7 @@ moz-extension://a79f9c4e-c8af-4afc-96bc-04898503fdbe/options.html
 http://www.webhek.com/firefox-chrome
 
 
-
+https://developer.mozilla.org/en-US/docs/Glossary/Chrome
 
 
 
