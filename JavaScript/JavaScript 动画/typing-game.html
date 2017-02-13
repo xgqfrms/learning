@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>盲打高手打飞字</title>
+<!-- <base href='http://www.webhek.com/misc-res/z-type/'> -->
+<meta name="description" content="打飞字(Z-Type)是有史以来最酷的一款盲打练习游戏。游戏中的视觉效果、射击爆破效果和声音效果都绝对的刺激。这款游戏是用HTML5做成的，曾经获得Mozilla Game On游戏大赛的Community Choice Award大奖。玩家可以选择关闭游戏音效，轻按ESC按键便可以暂停游戏。" >
+    <style type="text/css">
+        html,body {
+            background-color: #25272b;
+            background-image: url(phobos.png);
+            background-position: 54px 105px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            font-family: helvetica, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 12pt;
+        }
+        
+        #canvas {
+            background-color: #000;
+            border: 1px solid #555;
+            height: 640px;
+            width: 360px;
+            margin: 0 auto;
+        }
+        
+        #game {
+                display: block;
+                height: 640px;
+                margin-top: 20px;
+                min-height: 640px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+        }
+        
+        #nocanvas {
+            width: 360px;
+            margin: 150px auto;
+        }
+        
+        a {
+            color: #0066cc;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        .made-with-impact {
+            position: absolute;
+            text-align: center;
+            bottom: 32px;
+            right: 32px;
+        }
+        #ad {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        #fbhint {
+            position: absolute;
+            bottom: 0;
+            left: 1px;
+            display: none;
+        }
+        #fboverlay {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 420px;
+            height: 180px;
+            padding: 10px;
+            background-color: rgba(110,132,180,0.8);
+            border: 6px solid rgba(60,90,152,0.8);
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+        
+        .fbbutton {
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3b5998;
+            border: 1px solid #2a457f;
+            border-top-color: #8a9cc2;
+            text-align: center;
+            font-weight: bold;
+            xfont-size: 12px;
+            padding: 3px 8px;
+            margin-right: 16px;
+        }
+        
+        .fbbutton.no {
+            background-color: #5F6D89;
+        }
+        
+        .fbbutton:hover {
+            background-color: #283b62;
+        }
+
+        #overlay {
+            position: absolute;
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            background-color: #222;
+            background-color: rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        input.button {
+            width: 400px;
+            cursor: pointer;
+            background-color: #40b6e4;
+            color: #fff;
+            margin-top: 16px;
+            margin-bottom: 18px;
+            padding: 6px 8px;
+            font-size: 16px;
+            border: 0;
+            border-radius: 2px;
+        }
+
+        input.button:hover {
+            background-color: #0098db;
+        }
+    </style>
+    <style type="text/css">
+    .Qg{height: 30px;width: 250px;}
+    .iI {
+        background: url(/misc-res/images/share.png) no-repeat scroll 0px 0px rgba(0, 0, 0, 0);
+        display: inline-block;
+        height: 16px;
+        margin-bottom: 3px;
+        vertical-align: middle;
+        width: 16px;
+    }
+    .jI {
+        margin-left: 2px;
+        color: #000000;
+    }
+
+    .Dg {
+        background-color: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        float: left;
+        height: 28px;
+        line-height: 28px;
+        margin-left: 8px;
+        outline: medium none;
+        padding: 0 10px;
+        transition: background-color 0.218s ease 0s, border-color 0.218s ease 0s, box-shadow 0.218s ease 0s;
+        width: auto;
+    }.RF {
+         display: block;
+        position: relative;
+        height: 28px;
+        overflow: hidden;
+        white-space: nowrap;
+      float: left;
+        border-radius: 0 0 3px;
+        line-height: 30px;
+        outline: medium none;
+        overflow: hidden;
+        padding-left: 7px;
+        padding-right: 16px;
+    }
+    .IH {
+        display: inline-block;
+        max-width: 200px;
+    }.JH {
+        display: inline-block;
+        margin-right: 4px;
+        margin-top: 1px;
+    }
+    .ho {
+        border-radius: 2px;
+    }
+    </style>
+    <script type="text/javascript" src="libs/ztype.js"></script>
+    <script type="text/javascript">
+        window.initGame = function() {
+            // document.getElementById('ad').style.display = 'block';
+            var overlay = document.getElementById('overlay');
+            if( overlay ) { overlay.style.display = 'none'; }
+            ig.module('start').requires('game.main').defines(function(){
+                ZType.startGame();  
+            });
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="made-with-impact">
+        <div>
+        <a href="http://impactjs.com/">
+        <img src="made-with-impact.png">
+        </a>
+        </div>
+    </div>    
+    <div id="game">
+        <canvas style="cursor: auto;" height="640" width="360" id="canvas">
+            <div id="nocanvas">
+                想玩这款游戏？你需要有个不错的浏览器，比如
+                <a href="http://www.google.com/chrome">谷歌浏览器</a>,
+                <a href="http://www.mozilla.com/firefox/">火狐浏览器</a>，
+                <a href="http://www.opera.com/">Opera浏览器</a>, 或
+                <a href="http://www.apple.com/safari/">Safari浏览器</a>.
+            </div>
+        </canvas>
+    </div>
+<script type="text/javascript">window.initGame();</script>
+<script src='libs/jquery-1.7.2.min.js'></script>
+</body>
+</html>
