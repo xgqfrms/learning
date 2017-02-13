@@ -381,14 +381,49 @@ function logArrayElements(element, index, array) {
 }
 
 // 注意索引2被跳过了，因为在数组的这个位置没有项
+
 [2, 5, ,9].forEach(logArrayElements);
-// logs:
+
 // a[0] = 2
 // a[1] = 5
 // a[3] = 9
 
 
+[2, 5,"" ,9].forEach(logArrayElements);
 
+// a[0] = 2
+// a[1] = 5
+// a[2] = 
+// a[3] = 9
+
+[2, 5, undefined ,9].forEach(logArrayElements);
+
+// a[0] = 2
+// a[1] = 5
+// a[2] = undefined
+// a[3] = 9
+
+
+let xxx;
+// undefined
+[2, 5, xxx ,9].forEach(logArrayElements);
+
+// a[0] = 2
+// a[1] = 5
+// a[2] = undefined
+// a[3] = 9
+
+
+
+let a = ['a', 'b', 'c'];
+
+a.forEach(function(element, index, array) {
+    console.log("a[" + index + "] = " + element);
+});
+
+// a[0] = a
+// a[1] = b
+// a[2] = c
 
 
 
