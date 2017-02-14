@@ -109,12 +109,53 @@ Sourcemap options (sourceMap, inlineSourceMap, inlineSources, sourceRoot) - Use 
 https://github.com/floridoo/gulp-sourcemaps
 
 
+$ npm i gulp-sourcemaps -D
+
+var sourcemaps = require('gulp-sourcemaps');
+
+.pipe(sourcemaps.write())
 
 
 sourcemaps.write()
 
 
 https://gist.github.com/xgqfrms-GitHub/d8b8b43ac51d99bacfb422a6b62df4ed
+
+https://github.com/ivogabe/gulp-typescript/issues/483
+
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+```
+--sourceMap boolean false   Generates corresponding .map file.
+
+
+gulp.task('typescript-options', function() {
+    gulp.src('./TypeScript/**/*.ts')
+        .pipe(smaps.init())
+        .pipe(tsc({target:'ES5'}))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/TypeScript'));
+});
+
+
+```
+
+
+$ gulp typescript
+$ gulp typescript-options
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

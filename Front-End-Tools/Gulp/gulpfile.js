@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     coffee = require('gulp-coffee'),
-    tsc = require('gulp-typescript');
+    tsc = require('gulp-typescript'),
+    smaps = require('gulp-sourcemaps');
 
 gulp.task('coffee', function() {
     gulp.src('./Coffee/**/*.coffee')
@@ -32,10 +33,9 @@ gulp.task('typescript', function() {
 
 gulp.task('typescript-options', function() {
     gulp.src('./TypeScript/**/*.ts')
-        .pipe(tsc({
-            sourcemap:true,
-            target:'ES5'
-        }))
+        .pipe(smaps.init())
+        .pipe(tsc({target:'ES5'}))
+        .pipe(smaps.write('./maps'))
         .pipe(gulp.dest('./build/TypeScript'));
 });
 
@@ -44,4 +44,4 @@ gulp.task('watch', ['coffee']);
 gulp.task('default', ['coffee', 'watch']);
 
 
-
+// .pipe(smaps.write('../maps'))
