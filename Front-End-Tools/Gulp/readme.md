@@ -259,16 +259,35 @@ $ gulp sass
 $ npm i gulp-sass -D
 
 
+https://gist.github.com/xgqfrms-GitHub/aec1e8560ec9e7686985976a7f4c3a01
+
+
+## .pipe(smaps.write('../maps')) ? the only one map folder === OK
+
+gulp.task('sass1', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(smaps.write('../maps'))
+        .pipe(gulp.dest('./build/css1'));
+});
+
+gulp.task('sass2', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(smaps.write('../maps'))
+        .pipe(gulp.dest('./build/css2'));
+});
+
+gulp.task('default', ['sass1', 'sass2']);
 
 
 
 
+## Chrome 
 
-
-
-
-
-
+F12 > Resource maps
 
 
 
