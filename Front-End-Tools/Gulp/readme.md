@@ -290,6 +290,152 @@ gulp.task('default', ['sass1', 'sass2']);
 F12 > Resource maps
 
 
+## Chrome console debug .ts
+
+TypeScript Source maps debug
+
+
+
+
+## Restoring order 还原顺序
+
+
+这可能发生的情况是一堆CSS文件的连接。
+顺序在这样的文件中非常重要，因为它可能使您的应用程序看起来不同于您想要的。
+
+
+
+## multi 文件合并
+
+gulp-concat
+
+它的作用是将流合并为一个文件，在此特定情况下，all.css文件。
+
+
+这使得非常容易将脚本捆绑在一起，并减少浏览器需要提取的文件数。
+
+
+gulp.task('sass-concat-all', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(concat('all.css'))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/css'));
+});
+
+
+
+
+
+all.css
+
+
+gulp.task('all-css', function () {
+return gulp.src('./Sass/**/*.css')
+    .pipe(concat('all.css'))
+    .pipe(gulp.dest('./build/css'));
+});
+
+
+这不是我们想要的，因为使div边框为红色的样式应该成为文件中的最后一个。 我们可以用不同的方式做到这一点; 让我们研究一下如何。
+
+
+## Ordering via gulp.src
+
+通过 gulp.src 排序
+
+
+gulp.task('css', function () {
+return gulp.src(['./Assets/css/styles.css', './Assets/css/**/*.css'])
+    .pipe(concat('all.css'))
+    .pipe(gulp.dest('./wwwroot/css'));
+});
+
+
+可以使用一个数组来存放你想要的文件顺序。
+
+
+
+
+styles.css文件作为排序中的第一个，
+并且在文件夹中按文件名的顺序保持其余文件，all.css文件被生成。
+
+
+
+
+## Ordering with gulp-order
+
+通过 gulp-order 排序
+
+$ npm i gulp-order -D
+
+
+
+即使通过gulp.src排序工作，它使它容易改变，实际上做两件事：抓取文件和排序。
+
+
+从关注点分离的角度来看，这并不总是希望的。
+
+
+
+
+gulp.task('css', function () {
+return gulp.src('./Assets/css/**/*.css')
+    .pipe(order(['styles.css', '*.css']))
+    .pipe(concat('all.css'))
+    .pipe(gulp.dest('./wwwroot/css'));
+});
+
+
+
+gulp.task('sass-order', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(order(['styles.scss', '*.scss']))
+        .pipe(concat('all.css'))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/css'));
+});
+
+
+
+## Logging
+
+记录, 日志
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,8 @@ let gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     tsc = require('gulp-typescript'),
     smaps = require('gulp-sourcemaps'),
+    concat = require('gulp-concat'),
+    order = require('gulp-order'),
     sass = require('gulp-sass'),
     babel = require('gulp-babel');
 
@@ -64,6 +66,28 @@ gulp.task('sass', function() {
     gulp.src('./Sass/**/*.scss')
         .pipe(smaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/css'));
+});
+
+
+// concat all
+gulp.task('sass-concat-all', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(concat('all.css'))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/css'));
+});
+
+// order
+gulp.task('sass-order', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(order(['styles.scss', '*.scss']))
+        .pipe(concat('all.css'))
         .pipe(smaps.write('./maps'))
         .pipe(gulp.dest('./build/css'));
 });
