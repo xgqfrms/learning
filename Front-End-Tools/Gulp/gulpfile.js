@@ -23,6 +23,12 @@ gulp.task('coffee-bare-error', function() {
         .pipe(gulp.dest('./build/CoffeeBare'));
 });
 
+gulp.task('typescript', function() {
+    gulp.src('./TypeScript/**/*.ts')
+        .pipe(tsc())
+        .pipe(gulp.dest('./build/TypeScript'));
+});
+
 gulp.task('watch', ['coffee']);
 
 gulp.task('default', ['coffee', 'watch']);

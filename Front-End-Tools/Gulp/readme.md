@@ -54,6 +54,43 @@ $ gulp coffee-bare-error
 
 
 
+## TypeScript
+
+
+
+http://www.typescriptlang.org/
+
+http://www.typescriptlang.org/#download-links
+
+http://www.typescriptlang.org/play/index.html
+
+http://www.typescriptlang.org/community/index.html
+
+
+INSTALL
+
+$ npm install -g typescript
+
+COMPILE
+
+$ tsc helloworld.ts
+
+
+$ tsc -v
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
