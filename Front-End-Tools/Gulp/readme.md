@@ -1,19 +1,49 @@
 # Gulp
 
 
-
-
-
-
-# 网站工具化和自动化  
+## 网站工具化和自动化  
 
 
 
 https://classroom.udacity.com/settings/courses
 
 
-
-
 https://classroom.udacity.com/courses/ud892/lessons/5332430841/concepts/53580095540923
+
+
+## Gulp4  vs Gulp3
+
+https://gist.github.com/xgqfrms-GitHub/1e877684a302fb70570f1f17f2b2819e
+
+
+
+
+
+
+F:\Books\Syncfusion ebooks\2016-Succinctly-ebook-pdf\Gulp_Succinctly.pdf
+
+
+
+
+
+
+
+## Gulp.js Build System 
+
+https://www.youtube.com/watch?v=LmdT2zhFmn4&list=PLv1YUP7gO_viROuRcGsDCNM-FUVgMYb_G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

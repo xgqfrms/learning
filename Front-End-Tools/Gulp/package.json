@@ -1,0 +1,26 @@
+{
+  "name": "gulp3",
+  "version": "3.9.1",
+  "description": "gulp3 vs gulp4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/gulp.git"
+  },
+  "keywords": [
+    "gulp3",
+    "gulp4"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/gulp/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/gulp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
