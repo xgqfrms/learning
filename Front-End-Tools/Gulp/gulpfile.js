@@ -4,6 +4,7 @@ let gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     tsc = require('gulp-typescript'),
     smaps = require('gulp-sourcemaps'),
+    sass = require('gulp-sass'),
     babel = require('gulp-babel');
 
 gulp.task('coffee', function() {
@@ -48,7 +49,46 @@ gulp.task('babel-es5', function() {
         .pipe(gulp.dest('./build/ES5'));
 });
 
+
+// inline-map === .pipe(smaps.write())
+gulp.task('sass-inline-map', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(smaps.write())
+        .pipe(gulp.dest('./build/css'));
+});
+
+// separate .map file === .pipe(smaps.write('./maps')) || .pipe(smaps.write('../maps'))
+gulp.task('sass', function() {
+    gulp.src('./Sass/**/*.scss')
+        .pipe(smaps.init())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/css'));
+});
+
 gulp.task('watch', ['coffee']);
 
 gulp.task('default', ['coffee', 'watch']);
+
+// .pipe(smaps.write('../maps')) ? the only one map folder === OK
+
+// gulp.task('sass1', function() {
+//     gulp.src('./Sass/**/*.scss')
+//         .pipe(smaps.init())
+//         .pipe(sass({outputStyle: 'compressed'}))
+//         .pipe(smaps.write('../maps'))
+//         .pipe(gulp.dest('./build/css1'));
+// });
+
+// gulp.task('sass2', function() {
+//     gulp.src('./Sass/**/*.scss')
+//         .pipe(smaps.init())
+//         .pipe(sass({outputStyle: 'compressed'}))
+//         .pipe(smaps.write('../maps'))
+//         .pipe(gulp.dest('./build/css2'));
+// });
+
+// gulp.task('default', ['sass1', 'sass2']);
 

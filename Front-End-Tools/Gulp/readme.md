@@ -240,7 +240,32 @@ $ npm i gulp-concat gulp-babel babel-preset-es2015 -D
 
 
 
-## concat, livereload, uglify, 
+## concat, livereload, uglify, minify, watch
+
+
+
+
+
+## Source maps
+源映射是一种方便的方式，使浏览器知道原始文件的位置
+某些资源像JavaScript或CSS文件。
+
+
+$ gulp sass
+
+
+## Sass(.scss)
+
+$ npm i gulp-sass -D
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,9 @@
+a.CoolLink {
+    color: blue;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: green;
+    }
+}
