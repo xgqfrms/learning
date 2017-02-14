@@ -172,7 +172,7 @@ https://angular.io/
 ## ES6 to ES5
 
 
-
+$ gulp babel-es5
 
 class
 
@@ -234,6 +234,24 @@ https://github.com/ludohenin/gulp-inline-ng2-template
 
 $ npm i gulp-concat gulp-sourcemaps gulp-babel babel-preset-es2015 -D
 $ npm i gulp-concat gulp-babel babel-preset-es2015 -D
+
+
+
+
+
+
+## concat, livereload, uglify, 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -27,7 +27,11 @@ class Circle extends Shape {
 let circle = new Circle('firstCircle', 3, 4, 5);
 
 console.log(`before move circle = ${circle}`);
+console.log(circle);
+// Circle {id: "firstCircle", x: 3, y: 4, radius: 5}
 
 circle.move(10, 20);
 
 console.log(`after moved circle = ${circle}`);
+console.log(circle);
+// Circle {id: "firstCircle", x: 10, y: 20, radius: 5}
