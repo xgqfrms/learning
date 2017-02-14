@@ -567,6 +567,22 @@ JavaScript Promise API
 
 
 
+你不需要Lodash或Underscore —— 用JavaScript原生函数替代
+
+
+https://github.com/kyhwsk/notes/blob/master/underscore%E4%B8%8Elodash.md
+
+http://fordawn.in/
+
+http://www.bootcss.com/p/underscore/
+
+
+http://www.webhek.com/apps/you-dont-need-lodash-underscore/ 
+
+
+Lodash和Underscore是两款非常流利的JavaScript工具库，广泛的被程序员用于WEB前端开发。然而，如果你使用的是现代浏览器，你会发现，有很多的方法、函数实际是可以使用原生的JavaScript函数代替，这要感谢ECMAScript5 [ES5]和ECMAScript2015 [ES6]。如果你希望你的项目能有更少的依赖，而且你使用的是现代浏览器，那么，使用下面介绍的方法，你完全不再需要Lodash/Underscore等使用多年的JavaScript工具库。
+
+**需要注意的是，下面的代码例子只是用来展示如何用原生的JavaScript函数替代Lodash/Underscore里的函数执行等效的任务，但Lodash/Underscore可能会提供更丰富的功能特性，所以，不要1:1的比较它们。
 
 
 
@@ -579,6 +595,146 @@ JavaScript Promise API
 
 
 
+
+
+
+
+http://www.webhek.com/linux-file-extension-change-shortcut
+
+
+修改文件后缀是我们经常会遇到的操作，在Windows系统下，这个操作也许很简单。但在Linux下，我们经常需要在命令行执行操作，传统的做法就是将文件移动成另外一个文件，顺便更换了文件名称。但其实我们经常只需要修改的是文件的后缀，虽然多输入整个文件名一次也不是太多的劳动，但如果重复经常做这种事情，也会让人感到懊恼。
+
+直到最近，我才发现一个修改文件名后缀的快捷方法：
+
+# mv filename.{old,new}
+mv code.{txt,js}
+花括号的语法能让你方便的更换文件的后缀，而避免了重复输入文件名。不错吧！
+
+
+
+
+http://www.webhek.com/7-essential-javascript-functions
+
+
+WEB开发者必备的7个JavaScript函数
+
+
+
+http://www.webhek.com/get-absolute-url
+
+
+http://www.webhek.com/popup-blocker
+
+用JavaScript检查弹出窗口是否被阻拦的方法
+
+
+
+http://www.webhek.com/effective-javascript
+
+前端程序员必须知道的高性能Javascript知识
+
+
+重绘与重排
+
+浏览器下载完HTMl，CSS，JS后会生成两棵树：DOM树和渲染树。 当Dom的几何属性发生变化时，比如Dom的宽高，或者颜色，position，浏览器需要重新计算元素的几何属性，并且重新构建渲染树，这个过程称之为重绘重排。
+
+bodystyle = document.body.style; 
+bodystyle.color = red; 
+bodystyle.height = 1000px; 
+bodystyke.width = 100%;
+
+上述方式修改三个属性，浏览器会进行三次重排重绘，在某些情况下，减少这种重排可以提高浏览器渲染性能。 推荐方式如下，只进行一次操作，完成三个步骤：
+
+bodystyle = document.body.style; 
+bodystyle.cssText 'color:red;height:1000px;width:100%';
+
+
+http://insights.thoughtworkers.org/effective-javascript/
+
+
+
+https://developer.github.com/v3/users/#get-a-single-user
+
+
+
+https://api.github.com/users?since=135
+
+https://api.github.com/users/octocat
+
+
+
+http://www.webhek.com/block-isp-pop-ad
+
+
+站长如何屏蔽流氓宽带商在你的页面里面强行插入的广告代码
+
+
+
+http://www.webhek.com/css-user-select
+
+
+使用CSS里的user-select属性控制用户在页面上选中的内容
+
+
+用纯CSS绘制美国动画片《辛普森一家》中的各种人物
+
+http://www.webhek.com/simpsons-in-css
+
+
+
+https://github.com/pattle/simpsons-in-css/
+
+
+
+
+http://www.webhek.com/demo/nudity-detection
+
+http://www.webhek.com/nudity-detection/
+
+
+https://www.patrick-wied.at/static/nudejs/
+
+https://github.com/pa7/nude.js
+
+http://www.webhek.com/demo/face-detection
+
+JavaScript人脸识别技术
+
+http://www.webhek.com/html5-canvas-clock
+
+
+http://www.webhek.com/demo-css-triangles
+
+
+纯CSS绘制的三角形箭头图案效果演示
+
+http://www.webhek.com/demo-css-cube-colorful
+
+
+http://www.webhek.com/background-animation-css-cloud
+
+https://davidwalsh.name/background-animation-css
+
+
+http://www.webhek.com/10-amazing-html5-drawing-and-sketching-tools-for-designers
+
+http://www.webhek.com/black-tech-in-css
+
+新手玩CSS中的一些黑科技
+
+
+http://www.webhek.com/deprecated-html-tags
+
+
+
+那些不推荐使用的html标签
+
+
+
+http://www.webhek.com/misc/circumscrible
+
+
+http://www.webhek.com/misc/responsive-web-design
 
 
 
