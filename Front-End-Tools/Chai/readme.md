@@ -5,7 +5,7 @@ http://chaijs.com/
 
 http://chaijs.com/guide/installation/#node
 
-
+https://github.com/chaijs/chai
 
 
 $ npm install chai

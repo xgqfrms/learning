@@ -76,7 +76,65 @@ COMPILE
 $ tsc helloworld.ts
 
 
+$ npm i typescript -D
+
 $ tsc -v
+
+
+https://www.npmjs.com/package/gulp-typescript
+
+
+$ npm install gulp-typescript 
+
+$ npm i gulp-typescript -D
+
+
+
+
+
+$ npm i typescript gulp-typescript -D
+
+
+
+
+https://github.com/ivogabe/gulp-typescript
+
+## Options
+
+target (string) - Specify ECMAScript target version: 'ES3' (default), 'ES5' or 'ES6'.
+
+
+Sourcemap options (sourceMap, inlineSourceMap, inlineSources, sourceRoot) - Use gulp-sourcemaps instead.
+
+https://github.com/floridoo/gulp-sourcemaps
+
+
+
+
+sourcemaps.write()
+
+
+https://gist.github.com/xgqfrms-GitHub/d8b8b43ac51d99bacfb422a6b62df4ed
+
+
+
+
+
+
+NativeScript 2
+
+
+http://www.telerik.com/nativescript  
+https://github.com/NativeScript/NativeScript  
+
+Angular 2
+
+https://angular.io/
+
+
+
+
+
 
 
 
