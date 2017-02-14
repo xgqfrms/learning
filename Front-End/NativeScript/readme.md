@@ -101,3 +101,42 @@ https://github.com/liubin/promises-book/
 https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NativeScript 2
+
+
+http://www.telerik.com/nativescript  
+https://github.com/NativeScript/NativeScript  
+
+Angular 2
+
+https://angular.io/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

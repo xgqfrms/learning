@@ -1,9 +1,10 @@
 "use strict";
 
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     tsc = require('gulp-typescript'),
-    smaps = require('gulp-sourcemaps');
+    smaps = require('gulp-sourcemaps'),
+    babel = require('gulp-babel');
 
 gulp.task('coffee', function() {
     gulp.src('./Coffee/**/*.coffee')
@@ -39,9 +40,15 @@ gulp.task('typescript-options', function() {
         .pipe(gulp.dest('./build/TypeScript'));
 });
 
+gulp.task('babel-es5', function() {
+    gulp.src('./ES6/**/*.js')
+        .pipe(smaps.init())
+        .pipe(babel({presets: ['es2015']}))
+        .pipe(smaps.write('./maps'))
+        .pipe(gulp.dest('./build/ES5'));
+});
+
 gulp.task('watch', ['coffee']);
 
 gulp.task('default', ['coffee', 'watch']);
 
-
-// .pipe(smaps.write('../maps'))

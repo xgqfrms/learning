@@ -125,6 +125,11 @@ https://github.com/ivogabe/gulp-typescript/issues/483
 
 https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
+
+
+
+## .pipe(smaps.init()) ... .pipe(smaps.write('./maps'))
+
 ```
 --sourceMap boolean false   Generates corresponding .map file.
 
@@ -150,18 +155,6 @@ $ gulp typescript-options
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 NativeScript 2
 
 
@@ -176,18 +169,71 @@ https://angular.io/
 
 
 
+## ES6 to ES5
 
 
 
 
+class
+
+constructor
+
+super() 
+
+https://gist.github.com/xgqfrms-GitHub/aec1e8560ec9e7686985976a7f4c3a01
+
+https://www.npmjs.com/package/gulp-babel
+
+
+
+$ npm install --save-dev gulp-babel babel-preset-es2015
+
+$ npm i gulp-babel babel-preset-es2015 -D
+
+const gulp = require('gulp');
+const babel = require('gulp-babel');
+ 
+gulp.task('default', () => {
+    return gulp.src('src/app.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('dist'));
+});
+
+
+
+const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const concat = require('gulp-concat');
+ 
+gulp.task('default', () => {
+    return gulp.src('src/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(concat('all.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('dist'));
+});
 
 
 
 
+https://www.npmjs.com/package/gulp-babel
+
+
+https://www.npmjs.com/package/gulp-inline-ng2-template
+
+https://github.com/ludohenin/gulp-inline-ng2-template
 
 
 
 
+$ npm i gulp-concat gulp-sourcemaps gulp-babel babel-preset-es2015 -D
+$ npm i gulp-concat gulp-babel babel-preset-es2015 -D
 
 
 

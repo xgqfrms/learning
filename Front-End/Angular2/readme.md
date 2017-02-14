@@ -101,3 +101,33 @@ https://angular2.xgqfrms.xyz/
 
 http://angular2.xgqfrms.xyz/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NativeScript 2
+
+
+http://www.telerik.com/nativescript  
+https://github.com/NativeScript/NativeScript  
+
+Angular 2
+
+https://angular.io/
+
+
+
+
