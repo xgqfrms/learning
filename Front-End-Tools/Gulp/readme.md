@@ -464,9 +464,86 @@ https://www.npmjs.com/package/gulp-util
 https://www.npmjs.com/package/gulp-logger
 
 
+
+
+
+
+
+
+
+
+
 ## Cleaning up
 
 
+gulp.task('default', ['clean','build','watch','connect']);
+
+
+https://www.npmjs.com/package/gulp-clean
+
+
+https://github.com/robrich/gulp-rimraf  
+https://www.npmjs.com/package/gulp-rimraf  
+
+
+
+https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md
+
+
+
+del = require('del');
+
+
+gulp.task('clean', function () {
+    return del(['./wwwroot/css', './wwwroot/js', '!./wwwroot/config.json']);
+});
+
+gulp.task('build', function () {
+    console.log('Building stuff - using less and coffeescript');
+});
+
+gulp.task('default', ['clean', 'build']);
+
+
+
+## Load plugins dynamically
+
+
+动态加载插件
+
+
+gulp-load-plugins
+
+$ npm i gulp-load-plugins -D
+
+
+
+
+var gulp = require('gulp'),
+    gulpLoadPlugins = require('gulp-load-plugins'),
+    plugins = gulpLoadPlugins();
+
+gulp.task('css:less', function () {
+    return gulp.src('./b.less')
+    .pipe(plugins.less())
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('css:sass', function () {
+    return gulp.src('./c.scss')
+    .pipe(plugins.sass())
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', function () {
+    return plugins.util.log('Gulp is running!')
+});
+
+
+
+Instead of writing less(), we then write plugins.less() to make it work.
+
+代替写less（），我们写plugins.less（）使它工作。
 
 
 
@@ -474,6 +551,28 @@ https://www.npmjs.com/package/gulp-logger
 
 
 
+let gulp = require('gulp'),
+    gulpLoadPlugins = require('gulp-load-plugins'),
+    plugins = gulpLoadPlugins();
+
+
+let gulp = require('gulp'),
+    del = require('del'),
+    less = require('gulp-less'),
+    path = require('path'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    concat = require('gulp-concat'),
+    order = require('gulp-order'),
+    filesize = require('gulp-filesize'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    minify = require('gulp-minify'),
+    connect = require('gulp-connect'),
+    jshint = require('gulp-jshint'),
+    jade = require('gulp-jade'),
+    minifyCss = require('gulp-clean-css'),
+    coffee = require('gulp-coffee');
 
 
 
@@ -481,6 +580,66 @@ https://www.npmjs.com/package/gulp-logger
 
 
 
+## Chapter 5 Gulp in Visual Studio
+
+
+http://www.asp.net/mvc/overview/performance/bundling-and-minification
+
+
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification
+
+Bundling and Minification
+
+捆绑和缩小
+
+
+
+## Grunt code vs. Gulp code
+
+Grunt is all about configuration over coding, while Gulp is all about configuration through code.
+
+
+Grunt是关于如何通过编码来实现配置，而Gulp是关于通过配置来实现编码。
+
+// gruntfile.js
+
+module.exports = function (grunt) {
+    grunt.initConfig({
+        less: {
+            development: {
+                files: {
+                    "wwwroot/css/app.css": "Assets/*.less"
+                }
+            }
+        },
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version']
+            },
+            single_file: {
+                src: 'wwwroot/css/app.css',
+                dest: 'wwwroot/css/single_file.css'
+            },
+        }
+    });
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.registerTask('css:less', ['less', 'autoprefixer']);
+};
+
+
+// gulpfile.js
+
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    prefix = require('gulp-autoprefixer')；
+
+gulp.task('css:less', function () {
+    gulp.src('./Assets/*.less')
+    .pipe(less())
+    .pipe(prefix({ browsers: ['last 2 versions'], cascade: true }))
+    .pipe(gulp.dest('./wwwroot/css/'));
+});
 
 
 
@@ -488,18 +647,89 @@ https://www.npmjs.com/package/gulp-logger
 
 
 
+## out of the box 开箱即用
+
+
+$ npm i gulp-inject -D
+
+
+
+
+/// <binding Clean='clean' />
+var gulp = require("gulp"),
+    rimraf = require("rimraf"),
+    concat = require("gulp-concat"),
+    cssmin = require("gulp-cssmin"),
+    uglify = require("gulp-uglify"),
+    project = require("./project.json");
+
+var paths = {
+    webroot: "./" + project.webroot + "/"
+};
+
+paths.js = paths.webroot + "js/**/*.js";
+paths.minJs = paths.webroot + "js/**/*.min.js";
+paths.css = paths.webroot + "css/**/*.css";
+paths.minCss = paths.webroot + "css/**/*.min.css";
+paths.concatJsDest = paths.webroot + "js/site.min.js";
+paths.concatCssDest = paths.webroot + "css/site.min.css";
+
+gulp.task("clean:js", function (cb) {
+    rimraf(paths.concatJsDest, cb);
+});
+
+gulp.task("clean:css", function (cb) {
+    rimraf(paths.concatCssDest, cb);
+});
+
+gulp.task("clean", ["clean:js", "clean:css"]);
+
+gulp.task("min:js", function () {
+    gulp.src([paths.js, "!" + paths.minJs], { base: "." })
+    .pipe(concat(paths.concatJsDest))
+    .pipe(uglify())
+    .pipe(gulp.dest("."));
+});
+
+gulp.task("min:css", function () {
+    gulp.src([paths.css, "!" + paths.minCss])
+    .pipe(concat(paths.concatCssDest))
+    .pipe(cssmin())
+    .pipe(gulp.dest("."));
+});
+
+gulp.task("min", ["min:js", "min:css"]);
 
 
 
 
 
 
+out of the box
+
+https://www.visualstudio.com/zh-hans/
 
 
 
 
+## gulp-inject
 
 
+$ npm i gulp-inject -D
+
+
+
+
+var gulp = require("gulp"),
+    inject = require('gulp-inject');
+
+gulp.task("inject", function () {
+    var target = gulp.src('./Views/Shared/_layout.cshtml');
+    var sources = gulp.src('./wwwroot/css/**/*.css');
+    return target
+        .pipe(inject(sources))
+        .pipe(gulp.dest('./Views/Shared/'));
+});
 
 
 
