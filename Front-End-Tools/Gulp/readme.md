@@ -1,5 +1,110 @@
 # Gulp
 
+https://www.npmjs.com/search?q=gulp
+
+https://www.npmjs.com/search?q=gulp&page=2
+
+9100 PACKAGES FOUND
+for "gulp"
+
+
+
+
+## out of the box 开箱即用  
+
+$ npm i gulp-inject rimraf gulp-concat -D
+
+$ npm i gulp-cssmin gulp-uglify -D
+
+$ npm i gulp.spritesmith -D
+
+$ npm i gulp-imagemin -D
+
+
+$ npm i gulp-less gulp-autoprefixer gulp-if gulp-rename gulp-eslint gulp-load-plugins gulp-imagemin gulp-watch gulp-filter replace-ext gulp-clean-css gulp-changed -D
+
+
+$ npm i gulp-htmlmin gulplog http-proxy-middleware gulp-jshint gulp-template gulp-zip gulp-debug run-sequence gulp-rev -D
+
+
+
+
+gulp-less
+
+gulp-autoprefixer
+
+gulp-if
+
+gulp-rename
+
+gulp-eslint
+
+gulp-load-plugins
+
+
+gulp-imagemin
+
+gulp-watch
+
+gulp-filter
+
+replace-ext
+
+gulp-clean-css
+
+gulp-changed
+
+
+gulp-htmlmin
+
+gulplog
+
+http-proxy-middleware
+
+gulp-jshint
+
+gulp-template
+
+gulp-zip
+
+gulp-debug
+
+run-sequence
+
+gulp-rev
+
+
+
+
+
+https://developer.yahoo.com/performance/rules.html#expires=
+
+
+Best Practices for Speeding Up Your Web Site
+
+加速您的网站的最佳实践
+
+The Exceptional Performance team has identified a number of best practices for making web pages fast. The list includes 35 best practices divided into 7 categories.
+
+卓越绩效团队已经确定了一些快速制作网页的最佳做法。该清单包括35个最佳做法，分为7个类别。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 网站工具化和自动化  
 
@@ -14,6 +119,58 @@ https://classroom.udacity.com/courses/ud892/lessons/5332430841/concepts/53580095
 ## Gulp4  vs Gulp3
 
 https://gist.github.com/xgqfrms-GitHub/1e877684a302fb70570f1f17f2b2819e
+
+
+
+
+# 开箱即用
+
+$ npm init
+$ npm i gulp -D
+$ npm i gulp-coffee -D
+
+$ npm i gulp-inject rimraf gulp-concat -D
+
+$ npm i gulp-cssmin gulp-uglify -D
+
+$ npm i gulp.spritesmith -D
+
+$ npm i gulp-imagemin -D
+
+$ npm i gulp-typescript -D
+
+
+
+
+
+
+"devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-coffee": "^2.3.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-logger": "0.0.2",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-typescript": "^3.1.4",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "^6.3.0",
+    "typescript": "^2.1.6"
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -650,8 +807,15 @@ gulp.task('css:less', function () {
 ## out of the box 开箱即用
 
 
-$ npm i gulp-inject -D
+$ npm i gulp-inject rimraf gulp-concat -D
 
+$ npm i gulp-cssmin gulp-uglify -D
+
+
+
+
+
+？？？ images 
 
 
 

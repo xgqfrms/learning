@@ -10,19 +10,19 @@ let gulp = require('gulp'),
     babel = require('gulp-babel');
 
 gulp.task('coffee', function() {
-    gulp.src('./Coffee/**/*.coffee')
+    gulp.src('./src/Coffee/**/*.coffee')
         .pipe(coffee())
         .pipe(gulp.dest('./build/Coffee'));
 });
 
 gulp.task('coffee-bare', function() {
-    gulp.src('./Coffee/**/*.coffee')
+    gulp.src('./src/Coffee/**/*.coffee')
         .pipe(coffee({ bare:true}))
         .pipe(gulp.dest('./build/CoffeeBare'));
 });
 
 gulp.task('coffee-bare-error', function() {
-    gulp.src('./Coffee/**/*.coffee')
+    gulp.src('./src/Coffee/**/*.coffee')
         .pipe(coffee({ bare:true}).on('error', function (e) {
             console.log(e + '\r\n There\'s something wrong with the CoffeeScript file(s)');
         }))
@@ -30,24 +30,24 @@ gulp.task('coffee-bare-error', function() {
 });
 
 gulp.task('typescript', function() {
-    gulp.src('./TypeScript/**/*.ts')
+    gulp.src('./src/TypeScript/**/*.ts')
         .pipe(tsc())
         .pipe(gulp.dest('./build/TypeScript'));
 });
 
 gulp.task('typescript-options', function() {
-    gulp.src('./TypeScript/**/*.ts')
+    gulp.src('./src/TypeScript/**/*.ts')
         .pipe(smaps.init())
         .pipe(tsc({target:'ES5'}))
-        .pipe(smaps.write('./maps'))
+        .pipe(smaps.write('../maps'))
         .pipe(gulp.dest('./build/TypeScript'));
 });
 
 gulp.task('babel-es5', function() {
-    gulp.src('./ES6/**/*.js')
+    gulp.src('./src/ES6/**/*.js')
         .pipe(smaps.init())
         .pipe(babel({presets: ['es2015']}))
-        .pipe(smaps.write('./maps'))
+        .pipe(smaps.write('../maps'))
         .pipe(gulp.dest('./build/ES5'));
 });
 
@@ -63,32 +63,32 @@ gulp.task('sass-inline-map', function() {
 
 // separate .map file === .pipe(smaps.write('./maps')) || .pipe(smaps.write('../maps'))
 gulp.task('sass', function() {
-    gulp.src('./Sass/**/*.scss')
+    gulp.src('./src/Sass/**/*.scss')
         .pipe(smaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(smaps.write('./maps'))
+        .pipe(smaps.write('../maps'))
         .pipe(gulp.dest('./build/css'));
 });
 
 
 // concat all
 gulp.task('sass-concat-all', function() {
-    gulp.src('./Sass/**/*.scss')
+    gulp.src('./src/Sass/**/*.scss')
         .pipe(smaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(concat('all.css'))
-        .pipe(smaps.write('./maps'))
+        .pipe(smaps.write('../maps'))
         .pipe(gulp.dest('./build/css'));
 });
 
 // order
 gulp.task('sass-order', function() {
-    gulp.src('./Sass/**/*.scss')
+    gulp.src('./src/Sass/**/*.scss')
         .pipe(smaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(order(['styles.scss', '*.scss']))
         .pipe(concat('all.css'))
-        .pipe(smaps.write('./maps'))
+        .pipe(smaps.write('../maps'))
         .pipe(gulp.dest('./build/css'));
 });
 
@@ -99,7 +99,7 @@ gulp.task('default', ['coffee', 'watch']);
 // .pipe(smaps.write('../maps')) ? the only one map folder === OK
 
 // gulp.task('sass1', function() {
-//     gulp.src('./Sass/**/*.scss')
+//     gulp.src('./src/Sass/**/*.scss')
 //         .pipe(smaps.init())
 //         .pipe(sass({outputStyle: 'compressed'}))
 //         .pipe(smaps.write('../maps'))
@@ -107,7 +107,7 @@ gulp.task('default', ['coffee', 'watch']);
 // });
 
 // gulp.task('sass2', function() {
-//     gulp.src('./Sass/**/*.scss')
+//     gulp.src('./src/Sass/**/*.scss')
 //         .pipe(smaps.init())
 //         .pipe(sass({outputStyle: 'compressed'}))
 //         .pipe(smaps.write('../maps'))
