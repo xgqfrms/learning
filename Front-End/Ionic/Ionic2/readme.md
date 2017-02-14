@@ -55,6 +55,9 @@ https://github.com/seeschweiler/angular2-router-tutorial
 https://www.youtube.com/watch?v=1KFs3q503KM&feature=youtu.be
 
 
+https://drive.google.com/drive/folders/0B7Ovm8bUYiUDR29iSkEyMk5pVUk
+
+
 
 
 https://github.com/seeschweiler/angular2-education
@@ -72,6 +75,65 @@ https://github.com/ImageMagick/ImageMagick
 
 
 
+
+
+http://codingthesmartway.com/
+
+## Vue.js 2 Quickstart Tutorial 2017
+
+
+https://www.youtube.com/watch?v=0x02_Be0Jq4
+
+
+http://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/
+
+
+
+
+
+
+
+https://books.ninja-squad.com/angular/changelog
+
+
+https://books.ninja-squad.com/public/samples/Become_a_ninja_with_Angular2_sample.pdf
+
+
+
+
+
+
+
+
+
+
+
+## Ionic CLI
+
+
+
+http://ionicframework.com/docs/v2/cli/
+
+Ionic CLI是开发Ionic应用程序过程中使用的主要工具。
+
+
+
+
+$ npm install -g ionic
+
+$ ionic start myAwesomeApp --v2
+
+> cd myAwesomeApp
+
+$ ionic info
+
+$ ionic serve
+
+
+
+
+
+$ ionic
 
 
 

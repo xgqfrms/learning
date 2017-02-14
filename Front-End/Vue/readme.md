@@ -136,17 +136,22 @@ https://egghead.io/courses/develop-web-apps-with-vue-js
 
 
 
-
-
-
 https://laracasts.com/series/learn-vue-2-step-by-step
 
 
 
 
 
+http://codingthesmartway.com/
+
+## Vue.js 2 Quickstart Tutorial 2017
 
 
+https://www.youtube.com/watch?v=0x02_Be0Jq4
+
+
+
+http://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/
 
 
 
