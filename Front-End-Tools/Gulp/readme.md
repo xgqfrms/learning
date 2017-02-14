@@ -30,10 +30,24 @@ https://packagecontrol.io/packages/Better%20CoffeeScript
 
 
 
+$ npm init
+$ npm install gulp --save-dev
+$ npm install gulp-coffee --save-dev
 
 
+$ npm init
+$ npm i gulp -D
+$ npm i gulp-coffee -D
 
 
+## Fibonacci sequence 斐波那契序列
+
+
+$ gulp
+
+$ gulp coffee-bare
+
+$ gulp coffee-bare-error
 
 
 

@@ -9,3 +9,5 @@ for number in [0..10]
 console.log solutions
 
 # https://en.wikipedia.org/wiki/Fibonacci
+
+# // error comments
