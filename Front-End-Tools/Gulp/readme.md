@@ -24,6 +24,25 @@ F:\Books\Syncfusion ebooks\2016-Succinctly-ebook-pdf\Gulp_Succinctly.pdf
 
 
 
+## CoffeeScript
+
+https://packagecontrol.io/packages/Better%20CoffeeScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
