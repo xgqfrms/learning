@@ -407,6 +407,71 @@ gulp.task('sass-order', function() {
 
 
 
+console.log
+
+
+gulp-util
+
+$ npm i gulp-util -D
+
+
+gutil = require('gulp-util');
+
+
+gulp.task('log', function () {
+    gutil.beep();
+    gutil.log(gutil.colors.red.underline('Error'), 'Something went terribly
+    wrong...');
+    gutil.log(gutil.colors.bgGreen('OK'), 'Everything went smooth.');
+});
+
+
+gulp-util colors
+
+
+
+
+gulp-logger
+
+
+$ npm i gulp-logger -D
+
+
+logger = require('gulp-logger');
+
+
+logger = require('gulp-logger');gulp.task('css:sass', function () {
+gulp.src('./Assets/Sass/**/*.scss')
+    .pipe(logger({
+        before: 'Going to process Sass files...',
+        after: 'Sass files were processed...',
+        beforeEach: 'Processing... ',
+        afterEach: ' ...Done'
+    }))
+    .pipe(sass())
+    .pipe(gulp.dest('./wwwroot/css'));
+});
+
+
+
+
+
+
+https://www.npmjs.com/package/gulp-util
+
+
+
+https://www.npmjs.com/package/gulp-logger
+
+
+## Cleaning up
+
+
+
+
+
+
+
 
 
 
