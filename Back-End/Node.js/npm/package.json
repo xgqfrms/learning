@@ -1,14 +1,20 @@
 {
-  "name": "cookie-session",
+  "name": "cookie-and-session",
   "version": "1.1.1",
-  "description": "cookie-session",
+  "description": "cookie & session",
   "main": "scriptname.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "cookie-session"
+    "cookie, session"
   ],
   "author": "xgqfrms",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cookie-session": "^2.0.0-alpha.3",
+    "cookies": "^0.6.2",
+    "helmet": "^3.4.0",
+    "request-promise": "^4.1.1"
+  }
 }
