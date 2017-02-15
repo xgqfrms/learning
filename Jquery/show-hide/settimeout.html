@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>settimeout</title>
+</head>
+<body>
+    <div id="one">
+        <mark>this is a div#one!</mark>
+    </div>
+
+    <div>
+        <h1>TypeScript to ES6 !</h1>
+    </div>
+    <!-- https://jsfiddle.net/xgqfrms007/76ogukhL/ -->
+    <!-- https://jsfiddle.net/xgqfrms007/gy4yz2th/ -->
+    <!-- https://developer.mozilla.org/zh-CN/docs/Web/API/ChildNode/remove -->
+    <!-- https://jsfiddle.net/dwqs/3epxmg2n/ -->
+    <!-- https://jsfiddle.net/xgqfrms007/0cmnf49z/ -->
+    <script>
+        const getID = (id) => {
+            return document.getElementById(id);
+        }
+        setTimeout(function(){
+            let one = getID('one');
+            // one.removeChild(one.firstChild);
+            // alert(one);
+            one.style.fontSize = '2rem';
+            one.style.background = 'red';
+            setTimeout(function(){one.remove(); }, 1000);
+        },1000);
+    </script>
+</body>
+</html>
