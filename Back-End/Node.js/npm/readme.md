@@ -159,6 +159,8 @@ $ npm i request-promise cookie-session cookies helmet -D
 
 ## npm
 
+https://www.npmjs.com/package/request
+
 https://www.npmjs.com/package/request-promise
 
 https://www.npmjs.com/package/cookie-session
@@ -174,7 +176,7 @@ $ npm i cookie-session -D
 $ npm i request-promise cookies helmet -D
 
 
-
+$ npm i request -D
 
 
 

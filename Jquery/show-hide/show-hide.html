@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>show hide</title>
+    <!-- 
+    https://www.sitepoint.com/community/t/why-doesnt-my-js-show-hide-div-script-work/253548
+    http://jsfiddle.net/zEG4g/1574/
+    http://currentmillis.com/
+     -->
+</head>
+
+<body>
+    <section>
+        <div id="wrapper">
+            <div id="one" style="display:none">
+                <a href="2017/one/index.html">
+                    <img width="100px" height="100px" class="change" id="maybe" src="http://static.jsbin.com/images/dave.min.svg" alt="one" title="2017 one">
+                </a>
+            </div>
+            <div id="two" style="display:none">
+                <a href="2017/two/index.html">
+                    <img width="100px" height="100px" class="change" id="summat" src="http://static.jsbin.com/images/dave.min.svg" alt="two" title="2017 two">
+                </a>
+            </div>
+            <div id="three" style="display:none">
+                <a href="2017/three/index.html">
+                    <img width="100px" height="100px" class="change" id="okay" src="http://static.jsbin.com/images/dave.min.svg" alt="three" title="2017 three">
+                </a>
+            </div>
+            <div id="four" style="display:none">
+                <a href="2017/four/index.html">
+                    <img width="100px" height="100px" class="change" id="dunno" src="http://static.jsbin.com/images/dave.min.svg" alt="four" title="2017 four">
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="../jquery-3.1.1.js"></script>
+    <script>
+        window.setInterval(function() {
+            var current = new Date();
+            var expiry = new Date("February 12, 2017 12:00:00")
+            var expiry2 = new Date("October 30, 2017, 12:00:00")
+            if (current.getTime() > expiry.getTime()) {
+                $('#one').hide();
+                $('#two').show();
+                $('#three').show();
+                $('#four').show();
+            } else if (current.getTime() > expiry2.getTime()) {
+                $('#one').hide();
+                $('#two').hide();
+                $('#three').show();
+                $('#four').show();
+            }
+        }, 0);
+        $('#one').show();
+    </script>
+</body>
+
+</html>
