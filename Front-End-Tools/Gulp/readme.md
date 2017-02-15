@@ -23,6 +23,11 @@ $ npm i gulp-imagemin -D
 
 $ npm i gulp-livereload -D
 
+$ npm i gulp-inject gulp-changed gulp-cached gulp-remember gulp-newer -D
+
+$ npm i gulp-inject gulp-cached gulp-remember gulp-newer -D
+
+
 
 $ npm i gulp-less gulp-autoprefixer gulp-if gulp-rename gulp-eslint gulp-load-plugins gulp-imagemin gulp-watch gulp-filter replace-ext gulp-clean-css gulp-changed -D
 
@@ -924,16 +929,29 @@ gulp.task('default', ['watchLessFiles']);
 
 
 
-http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
 
+
+
+
+https://www.npmjs.com/package/gulp-clean-css
+
+var gulp = require('gulp');
+var cleanCSS = require('gulp-clean-css');
+ 
+gulp.task('minify-css', function() {
+  return gulp.src('styles/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
+});
+
+
+
+http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
 
 Trendy Web Color Palettes and Material Design Color Schemes & Tools
 
 
-
-
 https://gist.github.com/apiv/4399737
-
 
 https://github.com/apiv
 
@@ -941,7 +959,33 @@ https://github.com/apiv
 
 
 
+https://github.com/sindresorhus/gulp-changed
 
+https://github.com/contra/gulp-cached
+
+https://github.com/ahaurw01/gulp-remember
+
+https://github.com/tschaub/gulp-newer
+
+gulp-changed
+
+
+$ npm i gulp-inject -D
+
+$ npm i gulp-changed -D
+
+
+$ npm i gulp-cached -D
+
+
+$ npm i gulp-remember -D
+
+
+$ npm i gulp-newer -D
+
+
+
+$ npm i gulp-inject gulp-changed gulp-cached gulp-remember gulp-newer -D
 
 
 

@@ -92,31 +92,50 @@ gulp.task('sass-order', function() {
         .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('watch', ['coffee']);
+
+let coffeePath = './src/Coffee/**/*.coffee';
+    tsPath = './src/TypeScript/**/*.ts',
+    es6Path = './src/ES6/**/*.js',
+    sassPath = './src/Sass/**/*.scss';
 
 
-
-let lessPath = './Assets/**/*.less';
-
-gulp.task('lessToCss', function () {
-    gulp.src(lessPath)
-    .pipe(less())
-    .pipe(gulp.dest('wwwroot/css'));
+gulp.task('watchFiles', function () {
+    gulp.watch(coffeePath, ['coffee']);
+    gulp.watch(tsPath, ['typescript']);
+    gulp.watch(es6Path, ['babel-es5']);
+    gulp.watch(sassPath, ['sass', 'sass-concat-all', 'sass-order']);
 });
 
-
-gulp.task('watchLessFiles', function () {
-    gulp.watch(lessPath, ['lessToCss']);
-});
+gulp.task('watch', ['watchFiles', 'coffee', 'typescript', 'babel-es5', 'sass', 'sass-concat-all', 'sass-order']);
 
 
+// Rerun the task when a file changes
+// gulp.task('watch', function() {
+//     gulp.watch(paths.scripts, ['scripts']);
+//     gulp.watch(paths.images, ['images']);
+// });
+
+// let lessPath = './Assets/**/*.less';
+
+// gulp.task('lessToCss', function () {
+//     gulp.src(lessPath)
+//     .pipe(less())
+//     .pipe(gulp.dest('wwwroot/css'));
+// });
+
+
+// gulp.task('watchLessFiles', function () {
+//     gulp.watch(lessPath, ['lessToCss']);
+// });
 
 
 
 
 
 
-gulp.task('default', ['coffee', 'watch']);
+
+
+gulp.task('default', ['watch', 'watchFiles', 'coffee', 'typescript', 'babel-es5', 'sass', 'sass-concat-all', 'sass-order']);
 
 // .pipe(smaps.write('../maps')) ? the only one map folder === OK
 
