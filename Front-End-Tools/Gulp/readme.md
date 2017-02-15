@@ -21,6 +21,9 @@ $ npm i gulp.spritesmith -D
 $ npm i gulp-imagemin -D
 
 
+$ npm i gulp-livereload -D
+
+
 $ npm i gulp-less gulp-autoprefixer gulp-if gulp-rename gulp-eslint gulp-load-plugins gulp-imagemin gulp-watch gulp-filter replace-ext gulp-clean-css gulp-changed -D
 
 
@@ -895,6 +898,44 @@ gulp.task("inject", function () {
         .pipe(gulp.dest('./Views/Shared/'));
 });
 
+
+
+
+## Watching a folder
+
+
+
+"use strict";
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    lessPath = './Assets/**/*.less';
+
+gulp.task('lessToCss', function () {
+    gulp.src(lessPath)
+    .pipe(less())
+    .pipe(gulp.dest('wwwroot/css'));
+});
+
+gulp.task('watchLessFiles', function () {
+    gulp.watch(lessPath, ['lessToCss']);
+});
+
+gulp.task('default', ['watchLessFiles']);
+
+
+
+http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
+
+
+Trendy Web Color Palettes and Material Design Color Schemes & Tools
+
+
+
+
+https://gist.github.com/apiv/4399737
+
+
+https://github.com/apiv
 
 
 

@@ -94,6 +94,28 @@ gulp.task('sass-order', function() {
 
 gulp.task('watch', ['coffee']);
 
+
+
+let lessPath = './Assets/**/*.less';
+
+gulp.task('lessToCss', function () {
+    gulp.src(lessPath)
+    .pipe(less())
+    .pipe(gulp.dest('wwwroot/css'));
+});
+
+
+gulp.task('watchLessFiles', function () {
+    gulp.watch(lessPath, ['lessToCss']);
+});
+
+
+
+
+
+
+
+
 gulp.task('default', ['coffee', 'watch']);
 
 // .pipe(smaps.write('../maps')) ? the only one map folder === OK

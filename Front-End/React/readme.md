@@ -153,6 +153,18 @@ https://github.com/camsong/blog/issues/3
 
 
 
+http://files2.syncfusion.com/Downloads/Ebooks/Reactjs_Succinctly.pdf
+
+
+Reactjs_Succinctly
+
+
+https://drive.google.com/file/d/0B2t-Tmujl-IbZjdOSTQ4Wi1VRk0/view
+
+
+
+Learning React 1st Edition 
+
 
 
 
