@@ -52,10 +52,10 @@ https://egghead.io/courses/use-types-effectively-in-typescript
 
 
 
+## introducing-typescript
 
 
-
-
+https://www.sitepoint.com/premium/courses/introducing-typescript-2933/lesson/1/step/1
 
 
 

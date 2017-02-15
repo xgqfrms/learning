@@ -154,8 +154,19 @@ $ npm t
 
 
 
+## npm
+
+https://www.npmjs.com/package/request-promise
+
+https://www.npmjs.com/package/cookie-session
 
 
+https://www.npmjs.com/package/cookies
+
+https://www.npmjs.com/package/helmet
+
+
+$ cookie-session
 
 
 
