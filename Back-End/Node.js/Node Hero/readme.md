@@ -123,6 +123,7 @@ https://blog.risingstack.com/operating-node-in-production/
 
 ## npm
 
+https://www.npmjs.com/package/request-promise
 
 https://www.npmjs.com/package/cookie-session
 
@@ -184,6 +185,13 @@ https://www.troyhunt.com/dating-the-ginormous-myspace-breach/
 Node.js v6.9.5 Documentation
 
 https://nodejs.org/dist/latest-v6.x/docs/api/debugger.html
+
+
+https://nodejs.org/api/http.html
+
+
+
+
 
 
 
@@ -268,16 +276,90 @@ SET count x
 
 
 
-## 
+## Passport 
+
+http://passportjs.org/  
+http://passportjs.org/docs/oauth2-api  
+
+https://github.com/jaredhanson/passport-http
+
+
+
+
+Simple, unobtrusive authentication for Node.js
+
+对于Node.js的简单，不显眼认证
+
+Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application. 
+
+Passport是Node.js的认证中间件。
+
+极其灵活和模块化，Passport可以毫不含糊地(不引人注目地/不显眼地)放在任何基于Express的Web应用程序中。
+一套全面的策略支持使用用户名和密码，Facebook，Twitter等进行身份验证。
 
 
 
 
 
 
+## REST & HTTP Status Codes
+
+http://www.restapitutorial.com/httpstatuscodes.html
+
+
+https://github.com/tfredrich/RestApiTutorial.com
+
+
+http://www.restapitutorial.com/
+
+http://www.restapitutorial.com/lessons/whatisrest.html
+
+http://www.restapitutorial.com/lessons/restquicktips.html
+
+
+RESTful Best Practices-v1_0.pdf
+
+https://github.com/ufo-github/RestApiTutorial.com/blob/master/media/RESTful%20Best%20Practices-v1_0.pdf
+
+https://github.com/ufo-github/RestApiTutorial.com/blob/master/media/RESTful%20Best%20Practices-v1_1.pdf
+
+https://github.com/ufo-github/RestApiTutorial.com/blob/master/media/RESTful%20Best%20Practices-v1_2.pdf
 
 
 
 
+## PostgreSQL
+
+
+
+
+http://www.postgresonline.com/
+
+http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf
+
+
+
+http://www.techrepublic.com/blog/diy-it-guy/diy-a-postgresql-database-server-setup-anyone-can-handle/
+
+
+
+
+DIY: A PostgreSQL database server setup anyone can handle
+
+http://www.techrepublic.com/blog/diy-it-guy/diy-a-postgresql-database-server-setup-anyone-can-handle/
+
+
+
+
+## Cross-platform asynchronous I/O 
+
+https://github.com/libuv/libuv
+
+http://libuv.org/
+
+
+libuv is a multi-platform support library with a focus on asynchronous I/O. 
+
+libuv是一个关注异步 I/O 的多平台支持库。 
 
 
