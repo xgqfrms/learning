@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChildNode.remove()</title>
+</head>
+<body>
+    <div>
+        <h1></h1>
+    </div>
+    <section>
+        <div id="div-01">Here is div-01</div>
+        <div id="div-02">Here is div-02</div>
+        <div id="div-03">Here is div-03</div>
+        <!-- https://developer.mozilla.org/zh-CN/docs/Web/API/ChildNode/remove -->
+    </section>
+    <!-- js -->
+    <script>
+        let el = document.getElementById('div-01');
+        setTimeout(function(){
+          el.nextElementSibling.remove();
+          // id 为 'div-02' 的 div 被删掉了
+          setTimeout(function(){
+            el.remove(); 
+            // 删除 id 为 'div-01' 的 div (本身)
+          },1000);
+        },1000);
+    </script>
+</body>
+</html>
