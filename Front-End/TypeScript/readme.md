@@ -61,5 +61,62 @@ https://www.sitepoint.com/premium/courses/introducing-typescript-2933/lesson/1/s
 
 
 
+## Roadmap
+
+
+https://github.com/Microsoft/TypeScript/wiki/Roadmap
+
+
+
+## TypeScript Language Specification
+
+Version 1.8 (January, 2016)
+
+https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
+
+
+
+
+http://www.typescriptlang.org/docs/tutorial.html
+
+
+
+https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#typescript-22
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Mix-ins
+
+
+http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
