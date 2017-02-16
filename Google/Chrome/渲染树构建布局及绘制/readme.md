@@ -1,6 +1,8 @@
 # 渲染树构建布局及绘制
 
 
+
+
 https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction
 
 
@@ -101,6 +103,18 @@ Timeline 中，"Layout" 事件捕获渲染树的构建及位置、尺寸的计�
 
 
 
+
+
+
+https://github.com/udacity/frontend-nanodegree-mobile-portfolio
+
+
+https://classroom.udacity.com/courses/ud884/lessons/3056248797/concepts/30575087220923
+
+网站性能优化
+
+
+F:\Udacity\网站性能优化
 
 
 

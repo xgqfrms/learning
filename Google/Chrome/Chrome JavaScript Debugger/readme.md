@@ -5,6 +5,46 @@ http://discover-devtools.codeschool.com/
 
 
 
+## Chapter 3 Console
+
+http://discover-devtools.codeschool.com/chapters/3?locale=en
+
+3.1 Working with the Console videochallenges
+3.2 Examining Exceptions videochallenges
+3.3 Element Selector Shortcuts videochallenges
+
+
+## Chapter 4 Debugging
+
+http://discover-devtools.codeschool.com/chapters/4?locale=en
+
+4.1 Debugging JavaScript videochallenges
+4.2 Pause on Exceptions videochallenges
+4.3 Local Storage video
+
+
+
+
+https://developers.google.com/web/tools/chrome-devtools/console/console-reference
+
+
+https://developers.google.com/web/fundamentals/design-and-ui/responsive/#set-the-viewport
+
+
+
+
+
+
+F:\Udacity\Chrome-DevTools
+
+
+
+
+
+
+
+
+
 ## Explore and Master Chrome DevTools
 
 
