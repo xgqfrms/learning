@@ -384,6 +384,17 @@ https://developers.google.com/web/tools/chrome-devtools/javascript/step-code#ste
 https://developers.google.com/web/tools/chrome-devtools/javascript/reference#stepping
 
 
+## JavaScript Debugging Reference
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -394,6 +405,14 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Using_the_application_cache
 
 在此刻使用这里描述的应用程序缓存功能高度不鼓励; 它正在处于从Web平台中被删除的过程。请改用Service Workers 代替。
 事实上，在Firefox 44中，当AppCache用于为页面提供离线支持时，控制台中现在显示一条警告消息，建议开发人员改用 Service workers 代替
+
+
+https://developers.google.com/web/tools/service-worker-libraries/
+
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
+
+
+
 
 
 
