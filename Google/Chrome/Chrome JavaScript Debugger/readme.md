@@ -280,23 +280,93 @@ https://udacity.com/ud860
 
 
 
+## How to Use the Timeline Tool 如何使用时间轴工具
+
+
+https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool
+
+
+
+## Inspect and Manage Storage, Databases, and Caches 检查和管理存储，数据库和高速缓存  
+
+
+https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
+
+key-value pairs (KVPs), 键值对
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
+
+
+
+## Understand Security Issues 了解安全问题
+
+https://developers.google.com/web/tools/chrome-devtools/security
+
+
+https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https
+
+
+HTTPS 
+
+
+
+https://en.wikipedia.org/wiki/TL;DR
+
+TL;DR
+
+too long; didn't read.
+
+https://en.wikipedia.org/wiki/Same-origin_policy
+
+
+
+## Speed Up JavaScript Execution 加快JavaScript执行
+
+
+https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution
+
+
+Identify expensive functions using the Chrome DevTools CPU Profiler.
+
+使用Chrome DevTools CPU Profiler识别昂贵的功能。
 
 
 
 
+## Command Line API Reference
+
+https://developers.google.com/web/tools/chrome-devtools/debug/command-line/command-line-reference#profilename-and-profileendname
 
 
 
 
+## Get Started with Debugging JavaScript in Chrome DevTools
+
+https://developers.google.com/web/tools/chrome-devtools/javascript/
 
 
+https://googlechrome.github.io/devtools-samples/debug-js/get-started
 
 
+breakpoints
+
+断点
 
 
+Conditional breakpoints that are only triggered when the condition that you provide is true. 
+Breakpoints on caught or uncaught exceptions. 
+XHR breakpoints that are triggered when the requested URL matches a substring that you provide.
 
-
-
+仅当您提供的条件为真时触发条件断点。 
+捕获或未捕获异常的断点。 
+当请求的URL与您提供的子字符串匹配时触发的XHR断点。
 
 
 
@@ -314,10 +384,10 @@ https://developers.google.com/web/fundamentals/performance/critical-rendering-pa
 
 
 网站性能优化 关键渲染路径
-https://cn.udacity.com/course/website-performance-optimization--ud884/
+https://cn.udacity.com/course/website-performance-optimization--ud884/  
+https://udacity.com/ud860  
 
-
-
+https://classroom.udacity.com/courses/ud884/lessons/1464158641/concepts/4222787770923#
 
 
 

@@ -160,3 +160,97 @@ webpack, Babel , ESLint
 Create React App doesn't handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. It uses webpack, Babel and ESLint under the hood, but configures them for you.
 
 创建React应用程序不处理后端逻辑或数据库;它只是创建一个前端构建管道，所以你可以使用它与任何后端你想要的。它使用webpack，Babel和ESLint在引擎盖下，但配置他们为你。
+
+
+
+
+
+
+https://facebook.github.io/react/docs/installation.html
+
+
+
+
+To install React with Yarn, run:
+
+$ yarn init
+$ yarn add react react-dom
+
+
+To install React with npm, run:
+
+$ npm init
+$ npm install --save react react-dom
+
+
+
+
+Enabling ES6 and JSX
+
+We recommend using React with Babel to let you use ES6 and JSX in your JavaScript code. ES6 is a set of modern JavaScript features that make development easier, and JSX is an extension to the JavaScript language that works nicely with React.
+
+The Babel setup instructions explain how to configure Babel in many different build environments. Make sure you install babel-preset-react and babel-preset-es2015 and enable them in your .babelrc configuration, and you're good to go.
+
+
+.babelrc
+
+$ npm install babel-preset-react babel-preset-es2015 -D
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+);
+
+
+
+
+
+
+
+Development and Production Versions
+
+By default, React includes many helpful warnings. These warnings are very useful in development. However, they make React larger and slower so you should make sure to use the production version when you deploy the app.
+
+Create React App
+If you use Create React App, npm run build will create an optimized build of your app in the build folder.
+
+$ npm run build
+
+
+Webpack
+Include both DefinePlugin and UglifyJsPlugin into your production Webpack configuration as described in this guide.
+
+DefinePlugin, UglifyJsPlugin
+
+https://webpack.js.org/guides/production-build/
+
+
+
+Browserify
+Run Browserify with NODE_ENV environment variable set to production and use UglifyJS as the last build step so that development-only code gets stripped out.
+
+NODE_ENV, production
+
+UglifyJS
+https://github.com/mishoo/UglifyJS
+
+
+Using a CDN
+
+<script src="https://unpkg.com/react@15/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+
+<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+
+
+
+
+
+
