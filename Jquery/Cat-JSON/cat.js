@@ -31,7 +31,7 @@ https://www.freecodecamp.com/json/cats.json
 
 $(document).ready(function() {
     $("#getMessage").on("click", function() {  
-        $.getJSON("https://www.freecodecamp.com/json/cats.json", function(json) {
+        $.getJSON("https://cdn.xgqfrms.xyz/json/cat.json", function(json) {
             var html = "";
             // Only change code below this line.
             json = json.filter(function(val) {
@@ -45,5 +45,8 @@ $(document).ready(function() {
             });    
             $(".message").html(html);  
         });
+    });
+    $("#deleteAll").on("click", function() {
+        $("div.cat").remove();
     });
 });

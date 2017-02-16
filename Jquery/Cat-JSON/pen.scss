@@ -1,0 +1,33 @@
+i.emoji::after{
+    content: "❦";
+    background: rgba(0,255,255,0.7);
+    border: 1px solid rgba(255,0,255,0.7);
+    box-shadow: 3px 7px 12px #000;
+    border-radius: 12px;
+    color: red;
+    display: block;
+    width: calc(100% - 20px);
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3ex;
+    margin: 7px auto 12px;
+    cursor: pointer;
+}
+
+.emoji::after{
+    content: "❦";
+    // background: rgba(0,255,255,0.7);
+    border: 1px solid rgba(255,0,255,0.7);
+    box-shadow: 3px 7px 12px #000;
+    border-radius: 12px;
+    color: red;
+    display: inline-block;
+    width: 37px;
+    // height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3ex;
+    margin: 7px auto 12px;
+    cursor: pointer;
+}
