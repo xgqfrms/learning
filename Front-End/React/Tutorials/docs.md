@@ -22,6 +22,11 @@ ga('create', 'UA-86246022-1', 'react2.webgeeker.xyz');
 
 https://react2.webgeeker.xyz/img/logo.svg
 
+https://react2.webgeeker.xyz/icon.ico
+
+base URL ???
+<img class="nav-logo" src="https://react2.webgeeker.xyz/img/logo.svg" width="36" height="36">
+
 
 
 

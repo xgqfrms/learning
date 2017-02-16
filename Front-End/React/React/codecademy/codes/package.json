@@ -1,0 +1,22 @@
+{
+  "name": "react2-codes",
+  "version": "15.4.3",
+  "description": "Learn ReactJS: Part II",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://facebook.github.io/react/"
+  },
+  "keywords": [
+    "react2"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
