@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Paul Lewis and Surma" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="theme-color" content="#455A64">
+    <title>CSS Triggers</title>
+    {{{styles}}}
+    <link rel="manifest" href="/manifest.json">
+</head>
+<!--
+   _____  _____ _____   _______   _
+  / ____|/ ____/ ____| |__   __| (_)
+ | |    | (___| (___      | |_ __ _  __ _  __ _  ___ _ __ ___
+ | |     \___ \\___ \     | | '__| |/ _` |/ _` |/ _ \ '__/ __|
+ | |____ ____) |___) |    | | |  | | (_| | (_| |  __/ |  \__ \
+  \_____|_____/_____/     |_|_|  |_|\__, |\__, |\___|_|  |___/
+                                     __/ | __/ |
+                                    |___/ |___/
+That's right, it's back! And this time it has the data from Blink, Gecko, WebKit and EdgeHTML! And that makes everyone feel like a winner. High fives all round? We think so.
+<3'z,
+Paul & Surma
+-->
+
+<body>
+    <!-- @VERSION@ -->
+    <header class="js-header app-header">
+        <h1 class="app-header__title js-header-title">CSS Triggers</h1>
+        <form class="filter-form js-filter-form" autocomplete="off">
+            <div class="filter-form__filter-widget js-filter-widget">
+                <button type="button" tabindex="0" class="filter-form__input-icon js-filter-toggle">Filter</button>
+                <input aria-hidden="true" placeholder="filter" autocorrect="off" autocapitalize="off" class="filter-form__input js-filter-input" name="filter" type="text" autofocus="true" />
+                <button type="reset" aria-hidden="true" class="filter-form__reset-icon js-filter-reset">Reset</button>
+            </div>
+        </form>
+        <div class="app-header__labels-container" aria-hidden="true">
+            <div class="app-header__labels-inner-container">
+                <ul class="app-header__labels">
+                    <li class="app-main__engine-labels-item">B</li>
+                    <li class="app-main__engine-labels-item">G</li>
+                    <li class="app-main__engine-labels-item">W</li>
+                    <li class="app-main__engine-labels-item">E</li>
+                </ul>
+                <ul class="app-header__labels">
+                    <li class="app-main__engine-labels-item">B</li>
+                    <li class="app-main__engine-labels-item">G</li>
+                    <li class="app-main__engine-labels-item">W</li>
+                    <li class="app-main__engine-labels-item">E</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="app-container">
+        <main class="app-main">
+            <div class="app-main__engines" aria-hidden="true">
+                <div class="js-legend app-main__engine-legend-container">
+                    <ul class="app-main__engine-legend">
+                        <li class="app-main__engine-legend-item app-main__engine-legend-item-layout">Layout</li>
+                        <li class="app-main__engine-legend-item app-main__engine-legend-item-paint">Paint</li>
+                        <li class="app-main__engine-legend-item app-main__engine-legend-item-composite">Composite</li>
+                    </ul>
+                </div>
+                <div class="js-labels app-main__engine-labels-container">
+                    <ul class="app-main__engine-labels">
+                        <li class="app-main__engine-labels-item">Blink</li>
+                        <li class="app-main__engine-labels-item">Gecko</li>
+                        <li class="app-main__engine-labels-item">WebKit</li>
+                        <li class="app-main__engine-labels-item">EdgeHTML</li>
+                    </ul>
+                    <ul class="app-main__engine-labels">
+                        <li class="app-main__engine-labels-item">Blink</li>
+                        <li class="app-main__engine-labels-item">Gecko</li>
+                        <li class="app-main__engine-labels-item">WebKit</li>
+                        <li class="app-main__engine-labels-item">EdgeHTML</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="js-state-labels app-main__state-labels-container" aria-hidden="true">
+                <div class="app-main__state-labels">
+                    <div class="app-main__state-label">Change from default</div>
+                    <div class="app-main__state-label">Subsequent updates</div>
+                </div>
+            </div>
+            <div class="app-main__properties">
+                {{!-- Each CSS Property --}} {{#each data}}
+                <div data-property="{{@key}}" class="js-property app-main__property">
+                    <a tabindex="{{counter}}" title="Get details on {{@key}}" class="js-deeplink app-main__property-link" href="/{{@key}}">
+                        <span class="property-name">{{@key}}</span>
+                        <div class="app-main__property-state">
+                            {{!-- Initial / Update --}} {{#each this}}
+                            <div class="app-main__property-state-entry {{@key}}">
+                                <span class="condition-name">{{conditionValue @key}}</span>
+                                <div class="app-main__property-condition">
+                                    {{!-- Engine --}} {{#each this}}
+                                    <div title="{{titleValue @../../key this @key}}" class="{{classValue this}} app-main__property-engine {{@key}}">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    {{/each}}
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+            <div aria-hidden="true" class="app-main__no-results-message js-no-results-message">
+                There are no properties containing "<span class='app-main__no-results-message__filter-text js-filter-text'></span>"
+            </div>
+            <section class="js-details property-details" tabindex="{{counter}}" aria-hidden="true">
+                <div class="js-details-bg property-details__background"></div>
+                <div class="js-details-masthead property-details__masthead"></div>
+                <div class="js-details-content property-details__content">
+                    <div class="property-details__content-header">
+                        <h1 class="js-details-property-name property-details__property-name">@PROPERTY_NAME@</h1>
+                        <button class="js-details-close property-details__close">Close</button>
+                    </div>
+                    <div class="property-details__content-body">
+                        <div class="js-details-property-description property-details__property-description">
+                            @PROPERTY_DESCRIPTION@
+                        </div>
+                        <aside class="js-details-breakdown property-details__breakdown">
+                            <!-- Change from default -->
+                            <div class="app-main__property-state-entry initial">
+                                <ul class="app-main__engine-labels">
+                                    <li class="app-main__engine-labels-item">B</li>
+                                    <li class="app-main__engine-labels-item">G</li>
+                                    <li class="app-main__engine-labels-item">W</li>
+                                    <li class="app-main__engine-labels-item">E</li>
+                                </ul>
+                                <div id="details-default" class="app-main__property-condition">
+                                    <!-- Blink -->
+                                    <div class="app-main__property-engine blink">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- Gecko -->
+                                    <div class="app-main__property-engine gecko">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- WebKit -->
+                                    <div class="app-main__property-engine webkit">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- EdgeHTML -->
+                                    <div class="app-main__property-engine edgehtml">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                </div>
+                                <label for="details-default">Change from default</label>
+                            </div>
+                            <!-- Subsequent updates -->
+                            <div class="app-main__property-state-entry change">
+                                <ul class="app-main__engine-labels">
+                                    <li class="app-main__engine-labels-item">B</li>
+                                    <li class="app-main__engine-labels-item">G</li>
+                                    <li class="app-main__engine-labels-item">W</li>
+                                    <li class="app-main__engine-labels-item">E</li>
+                                </ul>
+                                <div id="details-update" class="app-main__property-condition">
+                                    <!-- Blink -->
+                                    <div class="app-main__property-engine blink">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- Gecko -->
+                                    <div class="app-main__property-engine gecko">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- WebKit -->
+                                    <div class="app-main__property-engine webkit">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                    <!-- EdgeHTML -->
+                                    <div class="app-main__property-engine edgehtml">
+                                        <span class="app-main__property-value"></span>
+                                    </div>
+                                </div>
+                                <label for="details-change">Subsequent updates</label>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src="scripts/css-triggers-core-@VERSION@.js" async defer></script>
+</body>
+
+</html>
