@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 表格排序 </title>
+    <style type="text/css">
+        div {
+            width: 1024px;
+            margin: 0 auto;
+            /*div相对屏幕左右居中*/
+        }
+        
+        table {
+            border: solid 1px #666;
+            border-collapse: collapse;
+            width: 100%;
+            cursor: default;
+        }
+        
+        tr {
+            border: solid 1px #666;
+            height: 30px;
+        }
+        
+        table thead tr {
+            background-color: #ccc;
+        }
+        
+        td {
+            border: solid 1px #666;
+        }
+        
+        th {
+            border: solid 1px #666;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .sequence {
+            text-align: center;
+        }
+        
+        .hover {
+            background-color: #3399FF;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="tableSort">
+            <thead>
+                <tr>
+                    <th type="number">序号</th>
+                    <th type="string">书名</th>
+                    <th type="number">价格（元）</th>
+                    <th type="string">出版时间</th>
+                    <th type="number">印刷量（册）</th>
+                    <th type="ip">IP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover">
+                    <td class="sequence">1</td>
+                    <td>狼图腾</td>
+                    <td>29.80</td>
+                    <td>2009-10</td>
+                    <td>50000</td>
+                    <td>192.168.1.125</td>
+                </tr>
+                <tr>
+                    <td class="sequence">2</td>
+                    <td>孝心不能等待</td>
+                    <td>29.80</td>
+                    <td>2009-09</td>
+                    <td>800</td>
+                    <td>192.68.1.125</td>
+                </tr>
+                <tr>
+                    <td class="sequence">3</td>
+                    <td>藏地密码2</td>
+                    <td>28.00</td>
+                    <td>2008-10</td>
+                    <td></td>
+                    <td>192.102.0.12</td>
+                </tr>
+                <tr>
+                    <td class="sequence">4</td>
+                    <td>藏地密码1</td>
+                    <td>24.80</td>
+                    <td>2008-10</td>
+                    <td></td>
+                    <td>215.34.126.10</td>
+                </tr>
+                <tr>
+                    <td class="sequence">5</td>
+                    <td>设计模式之禅</td>
+                    <td>69.00</td>
+                    <td>2011-12</td>
+                    <td></td>
+                    <td>192.168.1.5</td>
+                </tr>
+                <tr>
+                    <td class="sequence">6</td>
+                    <td>轻量级 Java EE 企业应用实战</td>
+                    <td>99.00</td>
+                    <td>2012-04</td>
+                    <td>5000</td>
+                    <td>192.358.1.125</td>
+                </tr>
+                <tr>
+                    <td class="sequence">7</td>
+                    <td>Java 开发实战经典</td>
+                    <td>79.80</td>
+                    <td>2012-01</td>
+                    <td>2000</td>
+                    <td>192.168.1.25</td>
+                </tr>
+                <tr>
+                    <td class="sequence" onclick="sortArray()">8</td>
+                    <td>Java Web 开发实战经典</td>
+                    <td>69.80</td>
+                    <td>2011-11</td>
+                    <td>2500</td>
+                    <td>215.168.54.125</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="sort-table.js"></script>
+</body>
+
+</html>

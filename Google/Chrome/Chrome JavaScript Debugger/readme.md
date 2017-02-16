@@ -38,6 +38,15 @@ https://developers.google.com/web/fundamentals/design-and-ui/responsive/#set-the
 F:\Udacity\Chrome-DevTools
 
 
+https://developers.google.com/web/fundamentals/getting-started/primers/promises
+
+https://developers.google.com/web/fundamentals/getting-started/primers/async-functions
+
+https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
+
+
+?hl=zh-cn
+
 
 
 
