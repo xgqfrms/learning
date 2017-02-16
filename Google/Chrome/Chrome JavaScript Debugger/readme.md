@@ -62,11 +62,13 @@ https://github.com/googlechrome
 
 
 
+Ctrl+Shift+I
 
 
 
+TL;DR
 
-
+too long not read
 
 
 
