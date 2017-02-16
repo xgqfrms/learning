@@ -20,6 +20,8 @@ GitHub React Native
 
 ga('create', 'UA-86246022-1', 'react2.webgeeker.xyz');
 
+https://react2.webgeeker.xyz/img/logo.svg
+
 
 
 
