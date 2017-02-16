@@ -369,6 +369,32 @@ XHR breakpoints that are triggered when the requested URL matches a substring th
 当请求的URL与您提供的子字符串匹配时触发的XHR断点。
 
 
+https://developers.google.com/web/tools/chrome-devtools/javascript/
+
+https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints
+
+## Pause Your Code With Breakpoints 使用断点暂停代码
+
+
+
+
+https://developers.google.com/web/tools/chrome-devtools/javascript/step-code#stepping_in_action
+
+
+https://developers.google.com/web/tools/chrome-devtools/javascript/reference#stepping
+
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Using_the_application_cache
+
+已废弃
+该特性已经从 Web 标准中删除，虽然一些浏览器目前仍然支持它，但也许会在未来的某个时间停止支持，请尽量不要使用该特性。
+
+在此刻使用这里描述的应用程序缓存功能高度不鼓励; 它正在处于从Web平台中被删除的过程。请改用Service Workers 代替。
+事实上，在Firefox 44中，当AppCache用于为页面提供离线支持时，控制台中现在显示一条警告消息，建议开发人员改用 Service workers 代替
+
 
 
 
