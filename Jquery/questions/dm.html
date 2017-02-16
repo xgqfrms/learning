@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现弹幕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 800px;
+            height: 550px;
+            background: #E9E8E8;
+            margin: 0 auto;
+            position: relative;
+        }
+        #content {
+            width: 750px;
+            height: 400px;
+            background: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        input:nth-of-type(1) {
+            width: 250px;
+            height: 30px;
+            margin: 20px 0 0 200px;
+        }
+        
+        input:nth-of-type(2) {
+            width: 60px;
+            height: 33px;
+        }
+        .p {
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            top: 0;
+            left: 770px;
+            font-weight: 900;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <!-- ??? -->
+        </div>
+        <input type="text" id="txt" placeholder="一起来吐槽吧~" />
+        <input type="button" value="发送" id="btn" />
+    </div>
+    <script src="../jquery-3.1.1.js"></script>
+    <script>
+        $(function() {
+            $("#btn").click(function() {
+                var $value = $("#txt").val();
+                var $p = $("<p></p>");
+                    $p.addClass("p");
+                    $p.text($value);
+                //点击后,清空文本框内容
+                $("#txt").val(""); 
+                var _top = Math.floor(Math.random()*($("#content").innerHeight() - 30));
+                var _fontsize = 16 + Math.floor(Math.random() * 10);
+                var _rgb = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random() * 255) + ")";
+                $p.css({
+                    "top": _top,
+                    "font-size": _fontsize,
+                    "color": _rgb
+                });
+                $("#content").append($p);
+                var _timer = Math.ceil(Math.random() * 4000) + 3000;
+                $p.stop().animate({
+                    "left": "-500px"
+                }, _timer, function() {
+                    $(this).remove();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
