@@ -15,6 +15,19 @@ https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.min.js
 
 
 
+$ npm install bootsratp jquery webpack lodash -S
+
+
+
+
+
+
+
+
+
+
+## codepen
+
 http://codepen.io/xgqfrms/pen/ZpLLYp
 
 https://codefree-xgqfrms.c9users.io/freecode/json/cats.json
@@ -25,12 +38,34 @@ http://codepen.io/xgqfrms/pen/zoaMqP
 Implementing Dynamic Browser Notifications
 
 
-$ npm install bootsratp jquery webpack lodash -S
+
+
+
 
 
 
 
 ## cats.json
+
+
+# The Cat API
+
+http://thecatapi.com/docs.html
+
+
+
+https://crossorigin.me/https://www.freecodecamp.com/json/cats.json
+
+https://crossorigin.me/
+
+http://codepen.io/PiotrBerebecki/pen/yOvRJO
+
+
+
+
+
+
+http://codepen.io/xgqfrms/pen/ZpLLYp
 
 
 https://github.com/freeCodeCamp/freeCodeCamp/wiki/Challenge-Get-JSON-With-The-JQuery-GetJSON-Method
@@ -68,6 +103,11 @@ https://ide.c9.io/xgqfrms/angular2
 
 
 
+
+http://codepen.io/xgqfrms/pen/LxvyZv
+
+
+Pure CSS, annotated linear carousel  
 
 
 
