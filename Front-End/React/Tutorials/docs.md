@@ -23,8 +23,39 @@ ga('create', 'UA-86246022-1', 'react2.webgeeker.xyz');
 
 
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://facebook.github.io/react/docs/dom-differences-zh-CN.html">
+https://react2.xgqfrms.xyz/blog/2016/07/13/mixins-considered-harmful.html
+
+https://react2.webgeeker.xyz/blog/2016/07/13/mixins-considered-harmful.html
+
+
+../../../../
+
+blog/2016/07/13/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
     <meta property="og:description" content="A JavaScript library for building user interfaces">
     <meta property="fb:app_id" content="623268441017527">
@@ -54,4 +85,4 @@ ga('create', 'UA-86246022-1', 'react2.webgeeker.xyz');
     <script src="../js/react-dom.js"></script>
     <script src="../js/babel.min.js"></script>
     <script src="../js/live_editor.js"></script>
-</head>
+
