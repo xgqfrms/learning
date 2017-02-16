@@ -17,5 +17,3 @@ https://developers.google.com/web/fundamentals/performance/critical-rendering-pa
 
 
 
-
-
