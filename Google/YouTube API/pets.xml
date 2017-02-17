@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<PETS>
+    <PET>
+        <NAME>Jeffrey</NAME>
+        <SPECIES>Giraffe</SPECIES>
+    </PET>
+    <PET>
+        <NAME>Gustav</NAME>
+        <SPECIES>Dog</SPECIES>
+    </PET>
+    <PET>
+        <NAME>Bruce</NAME>
+        <SPECIES>Duck</SPECIES>
+    </PET>
+</PETS>
