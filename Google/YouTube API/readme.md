@@ -44,6 +44,7 @@ XMLHttpRequest标准定义了一个API，它提供了用于在客户端和服务
 
 
 
+```
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://www.codecademy.com/", false);
 xhr.send();
@@ -53,6 +54,8 @@ console.log(xhr.statusText);
 
 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. 
 For more help, check https://xhr.spec.whatwg.org/.
+``` 
+
 
 
 
@@ -90,7 +93,48 @@ https://developers.google.com/youtube/v3/
 ## A RESTful API
 
 
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
 
+
+http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven
+
+
+http://www.restapitutorial.com/
+
+http://searchcloudstorage.techtarget.com/definition/RESTful-API
+
+https://www.youtube.com/watch?v=llpr5924N7E
+
+https://www.youtube.com/watch?v=WQLzZf34FJ8&feature=youtu.be
+
+https://www.youtube.com/watch?v=LHJk_ISxHHc
+
+https://www.youtube.com/watch?v=7YcW25PHnAA
+
+https://www.youtube.com/watch?v=rJesac0_Ftw
+
+
+The Full Stack Web Development
+
+https://www.youtube.com/watch?v=9hDKfBKuXjI
+
+
+Skeleton: Responsive CSS Boilerplate
+https://github.com/dhg/Skeleton  
+
+
+
+https://stackshare.io/xgqfrms-GitHub/job-stack
+
+
+https://stackshare.io/xgqfrms-GitHub/webgeeker
+
+
+
+
+https://www.traversymedia.com/video/jquery-ajax-github-finder/
+
+https://www.youtube.com/watch?v=lIKrfLWNsUI
 
 
 
