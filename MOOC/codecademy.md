@@ -17,6 +17,15 @@ https://www.codecademy.com/articles/glossary-css
 
 
 
+http://www.javascripter.net/faq/creatingarrays.htm
+
+https://github.com/ethanchewy
+
+http://ethanchiu.xyz/WatchAndLearn/
+
+
+
+
 
 https://www.codecademy.com/xgqfrms
 

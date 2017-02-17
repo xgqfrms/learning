@@ -15,6 +15,62 @@ https://www.codecademy.com/articles/glossary-html
 https://www.codecademy.com/articles/glossary-css
 
 
+http://www.javascripter.net/faq/creatingarrays.htm
+
+https://github.com/ethanchewy
+
+http://ethanchiu.xyz/WatchAndLearn/
+
+
+
+
+https://www.codecademy.com/articles/react-setup-i
+
+https://www.codecademy.com/articles/react-setup-ii
+
+https://www.codecademy.com/articles/react-setup-iii
+
+https://www.codecademy.com/articles/react-setup-iv
+
+https://www.codecademy.com/articles/react-setup-v
+
+https://www.codecademy.com/articles/react-101-virtual-dom
+
+https://www.codecademy.com/articles/react-virtual-dom
+
+
+https://www.codecademy.com/articles/html5-features
+
+https://www.codecademy.com/articles/css3-features
+
+https://www.codecademy.com/articles/http-errors-404
+
+https://www.codecademy.com/articles/bootstrap
+
+
+https://www.codecademy.com/articles/request-response-cycle-static
+
+https://www.codecademy.com/articles/request-response-cycle-dynamic
+
+https://www.codecademy.com/articles/request-response-cycle-forms
+
+
+https://www.codecademy.com/articles/command-line-commands
+
+
+
+
+
+
+Angular 2 Development with TypeScript
+
+https://github.com/Farata/angular2typescript
+
+https://github.com/oauthinaction/oauth-in-action-code
+
+https://www.manning.com/books/oauth-2-in-action
+
+
 
 
 
