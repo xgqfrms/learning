@@ -2,6 +2,21 @@
 
 
 
+https://www.codecademy.com/blog
+
+https://discuss.codecademy.com/c/javascript
+
+https://www.codecademy.com/glossary/javascript
+
+
+https://www.codecademy.com/articles/glossary-javascript
+
+https://www.codecademy.com/articles/glossary-html
+
+https://www.codecademy.com/articles/glossary-css
+
+
+
 
 https://www.codecademy.com/xgqfrms
 
