@@ -3,6 +3,28 @@
 
 https://www.codecademy.com/en/tracks/youtube
 
+https://developers.google.com/youtube/v3/
+
+https://www.codecademy.com/learn/javascript
+
+https://developers.google.com/youtube/v3/docs/search/list
+
+https://developers.google.com/youtube/v3/code_samples/
+
+https://developers.google.com/youtube/v3/guides/implementation
+
+https://github.com/youtube/api-samples
+
+https://github.com/youtube/api-samples/tree/master/javascript
+
+
+https://developers.google.com/youtube/v3/code_samples/code_snippets
+
+
+
+
+
+
 
 ## XMLHttpRequest
 
@@ -13,14 +35,6 @@ https://github.com/whatwg/xhr
 https://w3c-test.org/XMLHttpRequest/
 
 https://github.com/w3c/web-platform-tests/
-
-
-https://github.com/whatwg/xhr/issues/115
-
-https://github.com/whatwg/fetch
-
-https://fetch.spec.whatwg.org/
-
 
 
 
@@ -39,6 +53,68 @@ console.log(xhr.statusText);
 
 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. 
 For more help, check https://xhr.spec.whatwg.org/.
+
+
+
+## Fetch
+
+https://github.com/whatwg/xhr/issues/115
+
+https://github.com/whatwg/fetch
+
+https://fetch.spec.whatwg.org/
+
+The Fetch standard defines requests, responses, and the process that binds them: fetching.
+
+Fetch标准定义请求，响应以及绑定它们的进程：抓取。
+
+
+
+http://caniuse.com/#search=fetch
+
+
+A modern replacement for XMLHttpRequest.
+
+XMLHttpRequest 的现代替代品。
+
+Global 63.62% + 0.1% =  63.72%
+
+
+
+https://developers.google.com/youtube/v3/
+
+
+
+
+
+## A RESTful API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -184,3 +184,26 @@ https://weblogs.asp.net/dwahlin/angularjs-in-60-ish-minutes-the-ebook
 
 
 https://github.com/ufo-github/Angular-JumpStart
+
+
+
+
+
+
+
+
+https://ng2-heroes.xgqfrms.xyz/
+
+
+https://ng2-chat.xgqfrms.xyz/
+
+bugs firebase
+
+
+<img src="https://cdn.xgqfrms.xyz/404/404.gif" alt="https://cdn.xgqfrms.xyz/404/404.gif" title="https://cdn.xgqfrms.xyz/404/404.gif">
+
+
+
+
+
+
