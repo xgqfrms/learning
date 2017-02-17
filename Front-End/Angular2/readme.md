@@ -159,3 +159,28 @@ Angular2 Master Manual Book (Published December 10, 2016)
 https://xgqfrms.atavist.com/angular2-master-manual-book
 
 https://xgqfrms-github.gitbooks.io/ng-book2/content/angular-2%E8%B7%AF%E7%94%B1%E7%9A%84%E7%BB%84%E4%BB%B6.html
+
+
+
+
+
+ebpack & HTTP/2
+
+https://www.nginx.com/blog/http2-module-nginx/
+https://medium.com/webpack/webpack-http-2-7083ec3f3ce6#.bf76ki6d1
+
+
+https://www.sitepoint.com/beginners-guide-to-webpack-2-and-module-bundling/
+
+A Beginner’s Guide to Webpack 2 and Module Bundling
+
+
+
+
+
+https://weblogs.asp.net/dwahlin/the-angularjs-jumpstart-video-training-course-has-been-released
+
+https://weblogs.asp.net/dwahlin/angularjs-in-60-ish-minutes-the-ebook
+
+
+https://github.com/ufo-github/Angular-JumpStart

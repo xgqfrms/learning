@@ -173,6 +173,16 @@ A Beginner’s Guide to Webpack 2 and Module Bundling
 
 
 
+https://weblogs.asp.net/dwahlin/the-angularjs-jumpstart-video-training-course-has-been-released
+
+https://weblogs.asp.net/dwahlin/angularjs-in-60-ish-minutes-the-ebook
+
+
+
+
+
+https://github.com/ufo-github/Angular-JumpStart
+
 
 
 
