@@ -28,13 +28,6 @@ https://classroom.udacity.com/courses/cs387/lessons/48735205/concepts/4872450309
 
 
 
-Angular 2 Development with TypeScript
-
-https://github.com/Farata/angular2typescript
-
-F:\Books\All-it-ebooks\Angular 2
-
-
 
 https://github.com/oauthinaction/oauth-in-action-code
 

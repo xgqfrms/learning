@@ -131,3 +131,13 @@ https://angular.io/
 
 
 
+
+Angular 2 Development with TypeScript
+
+https://github.com/Farata/angular2typescript
+
+F:\Books\All-it-ebooks\Angular 2
+
+https://firebootcamp.com/
+
+
