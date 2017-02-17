@@ -62,16 +62,6 @@ https://www.codecademy.com/articles/command-line-commands
 
 
 
-Angular 2 Development with TypeScript
-
-https://github.com/Farata/angular2typescript
-
-https://github.com/oauthinaction/oauth-in-action-code
-
-https://www.manning.com/books/oauth-2-in-action
-
-
-
 
 
 
