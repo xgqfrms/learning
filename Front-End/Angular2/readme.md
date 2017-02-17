@@ -141,3 +141,21 @@ F:\Books\All-it-ebooks\Angular 2
 https://firebootcamp.com/
 
 
+
+
+
+
+
+https://medium.com/javascript-scene/javascript-new-year-resolutions-countdown-8390dae90762#.fdl9yqdo1
+
+JavaScript Interview
+
+
+https://xgqfrms.atavist.com/
+
+
+Angular2 Master Manual Book (Published December 10, 2016)
+
+https://xgqfrms.atavist.com/angular2-master-manual-book
+
+https://xgqfrms-github.gitbooks.io/ng-book2/content/angular-2%E8%B7%AF%E7%94%B1%E7%9A%84%E7%BB%84%E4%BB%B6.html
