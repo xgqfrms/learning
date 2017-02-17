@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>modal 模态图片</title>
+    <link rel="stylesheet" href="img-modal.css">
+</head>
+<body>
+    <div>
+        <h1>模态图片</h1>
+    </div>
+    <section>
+        <!-- 触发弹窗 - 图片改为你的图片地址 -->
+        <img id="myImg" src="sky.jpg" alt="sky.jpg" width="300" height="200">
+        <!-- 弹窗 -->
+        <div id="myModal" class="modal">
+            <!-- 关闭按钮 -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <!-- 弹窗内容 -->
+            <img class="modal-content" id="img01">
+            <!-- 文本描述 -->
+        <div id="caption"></div>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="img-modal.js"></script>
+</body>
+</html>
