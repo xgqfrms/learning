@@ -2,14 +2,13 @@
 
 
 
-xgqfrms@outlook.com
-
-https://blogs.xgqfrms.xyz/pages/001.html
-
-Why Google is more better than Baidu in term of Search Engine!
 
 
 google docs
+
+Phrasebook 短语手册
+
+https://docs.google.com/spreadsheets/d/1jIM7cd8zbmgZQSBa2QAe7l7_V-m-CitdILrzFZTPzeg/edit#gid=172694286
 
 <iframe src="https://docs.google.com/spreadsheets/d/1jIM7cd8zbmgZQSBa2QAe7l7_V-m-CitdILrzFZTPzeg/pubhtml?widget=true&amp;headers=false"></iframe>
 

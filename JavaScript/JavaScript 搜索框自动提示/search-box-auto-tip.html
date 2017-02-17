@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search-auto-tip</title>
+    <style>
+        #myInput {
+            background-image: url('searchicon.png'); /* 搜索按钮 */
+            background-position: 10px 12px; /* 定位搜索按钮 */
+            background-repeat: no-repeat; /* 不重复图片*/
+            width: 100%; 
+            font-size: 16px; /* 加大字体 */
+            padding: 12px 20px 12px 40px; 
+            border: 1px solid #ddd; 
+            margin-bottom: 12px; 
+        }
+        #myUL {
+            /* 移除默认的列表样式 */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL li a {
+            border: 1px solid #ddd; /* 链接添加边框 */
+            margin-top: -1px; 
+            background-color: #f6f6f6; 
+            padding: 12px; 
+            text-decoration: none;
+            font-size: 18px; 
+            color: black; 
+            display: block; 
+        }
+        #myUL li a.header {
+            background-color: #e2e2e2; 
+            cursor: default; 
+        }
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+        #myUL {
+            visibility: hidden;
+            /*visibility: visible;*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>JavaScript 搜索框内容自动提示</h1>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索...">
+    <!-- addEventListener() -->
+    <ul id="myUL">
+        <li><a href="https://www.xgqfrms.xyz" class="header">A</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Adele</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Agnes</a></li>
+
+        <li><a href="https://www.xgqfrms.xyz" class="header">B</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Billy</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Bob</a></li>
+
+        <li><a href="https://www.xgqfrms.xyz" class="header">C</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Calvin</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Christina</a></li>
+        <li><a href="https://www.xgqfrms.xyz">Cindy</a></li>
+    </ul>
+    <!-- js -->
+    <script src="auto-tips.js"></script>
+    <!-- enhancement -->
+</body>
+</html>
