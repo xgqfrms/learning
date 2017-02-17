@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Internet Explorer - <mark>XML 数据岛</mark></h1>
+        <p>
+            它是什么？XML 数据岛是嵌入到 HTML 页面中的 XML 数据。
+        </p>
+    </div>
+    <xml id="cdcat" src="cd_catalog.xml"></xml>
+    <table border="1" datasrc="#cdcat">
+        <tr>
+            <td>
+                <span datafld="ARTIST"></span>
+            </td>
+            <td>
+                <span datafld="TITLE"></span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

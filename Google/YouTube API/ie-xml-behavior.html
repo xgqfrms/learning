@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>behavior 行为</title>
+    <style>
+        h1{
+            behavior: url(behave.htc);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Mouse over me!!!</h1>
+        <p>
+            下面显示的是 XML 文档 "behave.htc" (该文件包含了一段 JavaScript 和针对元素的事件句柄):
+            <pre>
+                &lt;attach for="element" event="onmouseover" handler="hig_lite" />
+                &lt;attach for="element" event="onmouseout" handler="low_lite" />
+
+                &lt;script>
+                    function hig_lite(){
+                        element.style.color='red';
+                    };
+
+                    function low_lite(){
+                        element.style.color='blue';
+                    };
+                &lt;/script>
+            </pre>
+        </p>
+    </div>
+</body>
+</html>
