@@ -12,19 +12,32 @@
         <li class="l4">04</li>
         <li class="l5">05</li>
     </ul>
+    <a href="  http://music.163.com/playlist/535857379/36346215?userid=36346215">
+          http://music.163.com/playlist/535857379/36346215?userid=36346215
+    </a>
     <!-- js -->
     <script src="../jquery-3.1.1.js"></script>
+<!--     <script>
+    $(document).ready() = function(){
+        alert(`Are you ready ?`);
+        $.("#ul").click(function(){
+            // alert();
+            let arr = $("ul").child();
+            arr.forEach(){
+                // 
+            }
+        });
+    };
+</script> -->
     <script>
-        $(document).ready() = function(){
-            alert(`Are you ready ?`);
-            $.("#ul").click(function(){
-                // alert();
-                let arr = $("ul").child();
-                arr.forEach(){
-                    // 
+        var oLis = document.getElementsByTagName('li');
+        for(var i=0; i< oLis.length; i++){
+            oLis[i].onclick = (function(j){
+                return function(){
+                    alert(j);
                 }
-            });
-        };
+            })(++i);
+        }
     </script>
 </body>
 </html>
