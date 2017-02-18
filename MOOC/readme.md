@@ -144,3 +144,5 @@ Free Online Tutorials & Courses
 https://www.runoob.com/
 
 
+
+Window.getComputedStyle()
