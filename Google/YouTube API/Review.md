@@ -297,9 +297,25 @@ https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy
 
 
 
+## Using AutoComplete in HTML Forms
+
+
+https://www.bennadel.com/blog/2307-disabling-auto-correct-and-auto-capitalize-features-on-iphone-inputs.htm
+
+https://gist.github.com/bennadel/9760670#file-code-1-cfm
+
+https://github.com/bennadel/JavaScript-Demos
+
+https://github.com/bennadel/JavaScript-Demos/tree/master/demos
+
+
+https://msdn.microsoft.com/en-us/library/ms533032%28v=vs.85%29.aspx
 
 
 
+spellcheck
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/spellcheck
 
 
 

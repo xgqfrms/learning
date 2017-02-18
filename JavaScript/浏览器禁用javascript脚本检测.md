@@ -44,6 +44,25 @@ https://github.com/modernizr/modernizr
 https://noscript.net/
 
 
+http://www.cnblogs.com/Ren_Lei/archive/2010/09/30/1839399.html
+
+
+http://www.adobe.com/cn/devnet/flash/articles/fp8_detection.html
+
+
+Flash Player 检测的最佳实践 30 May 2006
+
+http://www.adobe.com/devnet.html
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/noscript
+
+
+How to Turn Off Form Autocompletion
+
+https://developer.mozilla.org/zh-CN/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion
+
+
 
 
 
