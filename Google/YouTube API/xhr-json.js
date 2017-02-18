@@ -1,11 +1,17 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.codecademy.com/files/samples/javascript_learn_apis.xml", false);
+xhr.open("GET", "https://cdn.xgqfrms.xyz/json/honor.json", false);
 
-xhr.setRequestHeader('Content-Type', 'text/xml');
+xhr.setRequestHeader('Content-Type', 'text/json');
 xhr.send();
 
 xmlDocument = xhr.responseXML;
 console.log(xmlDocument.childNodes['0'].textContent);
+
+
+??? 
+JSON.parse()
+
+JSON.stringify(obj);
 
 
 
@@ -27,3 +33,5 @@ var json = JSON.parse(demo);
 console.log(json);
 
 */
+
+
