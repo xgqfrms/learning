@@ -5,6 +5,15 @@ xhr.send();
 console.log(xhr.status);
 console.log(xhr.statusText);
 
+
+/*
+
+false 
+(this means the exercise will wait until it gets a response from the server).
+
+
+*/
+
 /*
 
 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. 
@@ -14,6 +23,7 @@ For more help, check https://xhr.spec.whatwg.org/.
 */
 /*
 
+GET: POST: PUT: DELETE: 
 
 The Four Verbs
 

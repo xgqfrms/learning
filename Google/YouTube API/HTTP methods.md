@@ -1,6 +1,6 @@
 # HTTP methods
 
-
+The Four Verbs
 
 The number of HTTP methods you'll use is quite small—there are just four HTTP "verbs" you'll need to know! They are:
 
@@ -26,7 +26,7 @@ So when we sent our GET request to codecademy.com, we retrieved information. Whe
 
 
 
-
+GET: POST: PUT: DELETE: 
 
 
 
