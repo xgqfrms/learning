@@ -1,1 +1,4 @@
-document.querySelector("span.statcounter").style.display = "none";
+window.onload = (function(){
+    document.querySelector("span.statcounter").style.display = "none";
+})();
+
