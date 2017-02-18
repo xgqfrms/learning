@@ -286,6 +286,13 @@ XMLHttpRequest.responseXML
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy
+
+
+真值 Truthy
+
+
+在JavaScript中，真值指的是在Boolean上下文中转换后的值为真的指。所有值都是真值，除非它们被定义为 falsy (即， 除了false 外，0，“”，null，undefined和NaN)
 
 
 
@@ -293,5 +300,13 @@ XMLHttpRequest.responseXML
 
 
 
-真值
+
+
+
+
+
+
+
+
+
 
