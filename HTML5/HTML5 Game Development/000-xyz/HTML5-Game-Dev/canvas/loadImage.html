@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p><a href="index.html">Prev &lt; Make a canvas</a> | <a href="showImage.html">Next &gt; Draw an image</a></p>
+		<h1>2. Load an image </h1>
+		<div id="body">
+		</div>
+		<script>
+			setup = function() {
+				var body = document.getElementById('body');
+				var canvas = document.createElement('canvas');
+
+				var context = canvas.getContext('2d');
+				
+				canvas.width = window.innerWidth;
+				canvas.height = window.innerHeight;
+
+				body.appendChild(canvas);
+
+				// Create a new image with a src of "https://www.udacity.com/media/js/standalone/libs/gamedev_assets/ralphyrobot.png" and onload of onImageLoad
+				// YOUR CODE HERE
+
+				var img = new Image();
+				img.onload = onImageLoad;
+				img.src = "https://www.udacity.com/media/js/standalone/libs/gamedev_assets/ralphyrobot.png";
+			};
+
+			onImageLoad = function(){
+				// Use the console.log function to print a statement to the browser console.
+				// This will print once the image has been downloaded.
+				// YOUR CODE HERE
+				console.log('image loaded');
+			};
+
+			setup();
+
+		</script>
+	</body>
+</html>

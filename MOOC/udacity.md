@@ -130,7 +130,10 @@ var object = object.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh);
 
 
 
+https://www.w3.org/TR/2dcontext/
 
+HTML Canvas 2D Context
+W3C Recommendation 19 November 2015
 
 
 

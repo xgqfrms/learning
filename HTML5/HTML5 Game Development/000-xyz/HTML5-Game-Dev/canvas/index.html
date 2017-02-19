@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p><a href="loadImage.html">Next &gt; Load image</a></p>
+		<h1>1. Make a Canvas</h1>
+		<div id="body">
+		</div>
+
+				<script>
+		setup = function() {
+			// Grab the body element using document.getElementById,
+			// assume the body element has an id of 'body'.
+			// Create a canvas element using document.createElement,
+			// then set the width and height properties to 1200 and
+			// 720, respectively.
+			// Finally, append the canvas element to the body.
+			var body = // YOUR CODE HERE
+				document.getElementById("body"); 
+
+			var canvas = // YOUR CODE HERE
+				document.createElement("canvas");
+
+			canvas.width = // YOUR CODE HERE
+				1200;
+			canvas.height = // YOUR CODE HERE
+				720;
+
+			// YOUR CODE HERE
+			body.appendChild(canvas);
+		};
+
+	setup();
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p><a href="loadImage.html">Prev &lt; Draw an image</a></a></p>
+		<h1>4. Flipbook</h1>
+		<div id="body">
+		</div>
+		<script>
+			var canvas = null;
+			var context = null;
+			var assets = ['https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk00.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk01.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk02.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk03.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk04.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk05.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk06.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk07.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk08.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk09.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk10.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk11.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk12.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk13.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk15.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk16.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk17.png',
+						  'https://www.udacity.com/media/js/standalone/libs/gamedev_assets/robowalk/robowalk18.png'
+						 ];
+			var frames = [];
+
+			var /*frameCount = 0, */ currentFrame =0, framerate = 1000/30;
+
+			var onImageLoad = function(){
+				console.log("IMAGE!!!");
+				//frameCount++;
+			};
+
+			var setup = function() {
+				body = document.getElementById('body');
+				canvas = document.createElement('canvas');
+
+				context = canvas.getContext('2d');
+				
+				canvas.width = 100;
+				canvas.height = 100;
+
+				body.appendChild(canvas);
+
+				// Load each image URL from the assets array into the frames array 
+				// in the correct order.
+				// Afterwards, call setInterval to run at a framerate of 30 frames 
+				// per second, calling the animate function each time.
+				// YOUR CODE HERE
+
+				for(var i=0; i < assets.length; i++){
+					var img = new Image();
+					img.onload = onImageLoad;
+					img.src = assets[i];
+					frames.push(img);
+				}
+
+				setInterval(animate,framerate);
+
+			};
+
+			var animate = function(){
+				// Draw each frame in order, looping back around to the 
+				// beginning of the animation once you reach the end.
+			    // Draw each frame at a position of (0,0) on the canvas.
+				// YOUR CODE HERE
+
+				// GOD FORBID YOU MAKE SURE EVERYTHING IS LOADED BEFORE CALLING THIS. JESUS CHRIST GUYS.
+				//if (frameCount == assets.length){
+						context.drawImage(frames[currentFrame],0,0);
+						currentFrame = (currentFrame == frameCount-1)? 0: currentFrame+1;
+				//	}
+
+			};
+
+			setup();
+		</script>
+	</body>
+</html>
