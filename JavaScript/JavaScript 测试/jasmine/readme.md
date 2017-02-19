@@ -14,7 +14,19 @@ https://github.com/udacity/ud549
 
 
 
-2.2
+jasmine 2.2
+
+
+
+https://github.com/jasmine/jasmine/releases/tag/v2.5.2
+
+
+jasmine-standalone-2.5.2
+
+
+
+
+
 
 
 
