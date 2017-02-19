@@ -11,20 +11,20 @@ https://github.com/vuejs/vue-cli
 
 
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ 
 $ cd my-project
 $ npm install
 $ npm run dev
 
 
 
+http://standardjs.com/demo.html
 
+http://airbnb.io/enzyme/
 
+https://github.com/airbnb/javascript
 
-
-
-
-
+http://jscs.info/
 
 
 
