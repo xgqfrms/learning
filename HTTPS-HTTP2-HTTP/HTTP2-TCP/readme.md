@@ -2,9 +2,6 @@
 
 
 
-
-
-
 https://http2.github.io/
 
 https://http2.github.io/faq/
@@ -279,6 +276,69 @@ JSON Web Token(JWT) 是一个应用安全通信规范
 http://wiki.geekdream.com/Specification/jwt.html
 
 https://tools.ietf.org/html/rfc7519
+
+
+
+
+
+
+https://github.com/bagder/http2-explained/blob/master/zh/part3.md
+
+
+http://wiki.jikexueyuan.com/project/http-2-explained/latency.html
+
+http://wiki.jikexueyuan.com/project/java-socket/udp.html
+
+
+
+http://www.cnblogs.com/dreamroute/p/6247726.html
+
+http://blog.csdn.net/sundacheng1989/article/details/28239711
+
+http://blog.csdn.net/sundacheng1989/article/details/52437128
+
+
+http://www.jianshu.com/p/13e6a943b3f5
+
+
+http://www.cnblogs.com/panwenbin-logs/p/5655130.html
+
+http://www.importnew.com/20267.html
+
+https://github.com/syq1122/AsynSocketDemoSYQ/
+
+
+
+
+
+## TCP
+
+
+https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE
+
+
+https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+
+
+
+
+
+## socket 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

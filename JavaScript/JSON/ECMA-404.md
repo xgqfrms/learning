@@ -2,6 +2,9 @@
 
 
 
+https://github.com/feross/standard/issues/788#issuecomment-280929067
+
+
 
 
 ## ECMA-404
