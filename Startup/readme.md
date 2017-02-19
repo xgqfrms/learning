@@ -20,21 +20,40 @@ Lecture 1 - How to Start a Startup (Sam Altman, Dustin Moskovitz)
 
 
 
+http://startupclass.samaltman.com/
+
+
+https://en.wikipedia.org/wiki/Y_Combinator_(company)
+
+
+
+https://en.wikipedia.org/wiki/Sam_Altman
+
+
+
+http://startupclass.samaltman.com/courses/lec01/
+http://startupclass.samaltman.com/
+
+
+
+http://blog.samaltman.com/advice-for-ambitious-19-year-olds
+
+https://medium.com/i-m-h-o/good-and-bad-reasons-to-become-an-entrepreneur-decf0766de8d
 
 
 
 
+http://blog.samaltman.com/stupid-apps-and-changing-the-world
+
+
+Y Combinator
+
+https://www.ycombinator.com/
 
 
 
+https://view-api.box.com/1/sessions/95ab0d95b72942dcab9fe6e483b33d03/view
 
-
-
-
-
-
-
-
-
+http://startupclass.samaltman.com/lists/about/
 
 
