@@ -47,6 +47,8 @@ http://www.devcurry.com/2010/11/redirect-user-from-http-to-https-using.html
 
 http://www.kevinverver.com/http-to-https-javascript-redirect/
 
+http://www.mycertprofile.com/Search
+
 
 <script type="text/javascript" language="javascript">
 
@@ -72,9 +74,58 @@ console.log(location.pathname);
 
 
 
+## Redirect to SSL
+
+https://css-tricks.com/snippets/javascript/redirect-to-ssl/
 
 
 
+window.location = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+
+
+https://css-tricks.com/snippets/javascript/redirect-to-ssl/#comment-145972
+
+window.location.protocol = "https:"
+// "https:"
+
+
+
+https://css-tricks.com/snippets/javascript/redirect-to-ssl/#comment-145966
+
+Don’t forget about location.hash!
+
+console.log(location.hash);
+// "#comment-1606895"
+
+
+
+var addy = window.location.href;
+if (addy.indexOf('http:') === 0) {
+    window.location.href = addy.replace(/^http/, 'https')
+}
+
+
+https://css-tricks.com/snippets/javascript/redirect-to-ssl/#comment-149622
+
+??? indexOf
+
+
+
+
+
+window.location = window.location.href.substr(0,4) + "s" + window.location.href.substr(4,250);
+
+
+https => http
+
+window.location = window.location.href.substr(0,4) +""+ window.location.href.substr(5,250);
+// "http://css-tricks.com/snippets/javascript/redirect-to-ssl/#comment-1606895"
+
+
+
+
+location.origin
+// "https://css-tricks.com"
 
 
 
