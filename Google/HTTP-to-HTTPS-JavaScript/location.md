@@ -151,6 +151,10 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 String.prototype.replace()
 
+replace() 方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。
+
+str.replace(regexp|substr, newSubstr|function)
+
 
 
 
@@ -159,6 +163,12 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 String.prototype.substr()
 
+
+substr() 方法返回一个字符串中从指定位置开始到指定字符数的字符。
+
+str.substr(start[, length])
+
+开始索引， 字符数/长度
 
 
 
@@ -170,6 +180,8 @@ String.prototype.substring()
 substring() 方法返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。
 
 str.substring(indexStart[, indexEnd])
+
+开始索引， 结束索引
 
 
 ??? 循环
