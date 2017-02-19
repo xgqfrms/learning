@@ -129,6 +129,38 @@ location.origin
 
 
 
+## USE JAVASCRIPT OR JQUERY TO REDIRECT HTTP TO HTTPS (NON-SECURE TO SECURE WEBSITE)
+
+http://rricketts.com/use-javascript-or-jquery-to-redirect-http-to-https-non-secure-to-secure-website/
+
+
+
+location.href
+
+
+
+(function RedirNonHttps() {
+    if (location.href.indexOf("https://") == -1) {
+        location.href = location.href.replace("http://", "https://");
+    }
+})();
+
+
+$(function () {
+    if(location.href.indexOf("https://") == -1) { 
+        location.href = location.href.replace("http://", "https://"); 
+    }
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
