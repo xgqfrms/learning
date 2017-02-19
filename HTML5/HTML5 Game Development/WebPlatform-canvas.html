@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> WebPlatform </title>
+    <!-- https://github.com/ufo-github/docs/blob/manual-edits/canvas/methods/getContext/index.md -->
+</head>
+
+<body onload="draw()" bgcolor="lightgray">
+    <div>
+        <canvas id="MyCanvas" width="500" height="500"> </canvas>
+    </div>
+    <script>
+        function draw() {
+            var canvas = document.getElementById("MyCanvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.font = "italic 36px/2 Unknown Font, sans-serif";
+                ctx.fillStyle = "blue";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "white";
+                ctx.fillText("Hello World", canvas.width / 2, canvas.height * .8);
+            }
+        }
+    </script>
+</body>
+
+</html>

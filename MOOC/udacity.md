@@ -122,11 +122,26 @@ HTML5 Game Development
 https://classroom.udacity.com/courses/cs255/lessons/74901984/concepts/754392520923#
 
 
+Canvas
+
+http://docs.webplatform.org/apis/canvas/CanvasRenderingContext2D/drawImage/
+
+var object = object.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh);
 
 
 
 
 
+
+
+
+
+
+
+https://github.com/UltimateAngular/angular-fundamentals-src/tree/master/37-routing
+
+
+https://www.fullstackreact.com/articles/react-create-class-vs-es6-class-components/
 
 
 
