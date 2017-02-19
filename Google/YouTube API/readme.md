@@ -232,11 +232,17 @@ https://www.w3.org/TR/custom-elements/
 http://codepen.io/xgqfrms/pen/MJdMxd?editors=100
 
 
+https://davidwalsh.name/chris-coyiers-favorite-demos-ii
 
 
 
 
+https://davidwalsh.name/ana-tudors-favorite-codepen-demos
 
 
+
+https://davidwalsh.name/essential-javascript-functions
+
+https://davidwalsh.name/promises
 
 
