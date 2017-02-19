@@ -30,6 +30,62 @@ console.log(window.location.protocol.length);
 
 
 
+## Redirect a user from HTTP to HTTPS using JavaScript
+
+http://www.devcurry.com/2010/11/redirect-user-from-http-to-https-using.html
+
+
+<script type="text/javascript">
+    if (window.location.protocol == "http:") {
+        var restOfUrl = window.location.href.substr(5);
+        window.location = "https:" + restOfUrl;
+    }
+</script>
+
+
+## HTTP to HTTPS Javascript Redirect
+
+http://www.kevinverver.com/http-to-https-javascript-redirect/
+
+
+<script type="text/javascript" language="javascript">
+
+let protocol = location.protocol,
+    hostname = location.hostname,
+    pathname = location.pathname;
+
+if (protocol == "http:"){ 
+    protocol = "https:";
+    location.replace(protocol + "//" + hostname + pathname); 
+};
+
+</script>
+
+console.log(location.protocol);
+// "http:"
+
+console.log(location.hostname);
+// "www.kevinverver.com"
+
+console.log(location.pathname);
+// "/http-to-https-javascript-redirect/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
