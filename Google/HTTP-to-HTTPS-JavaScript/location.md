@@ -92,8 +92,49 @@ ocation.href.substr / location.href.substring
 location = location.href.substr(0,4) +""+ location.href.substr(5,250);
 location = location.href.substr(0,4) +"s"+ location.href.substr(4,250);
 
+
+substr() 方法返回一个字符串中从指定位置开始到指定字符数的字符。
+
+str.substr(start[, length])
+
+开始索引， 字符数/长度
+
+
+
 location = location.href.substring(0,4) +""+ location.href.substring(5,250);
 location = location.href.substring(0,4) +"s"+ location.href.substring(4,250);
+
+
+substring() 方法返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。
+
+str.substring(indexStart[, indexEnd])
+
+开始索引， 结束索引
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
