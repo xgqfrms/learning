@@ -72,9 +72,9 @@ https://startupclass.co/courses/3108/lectures/64058
 
 
 
+http://startupclass.samaltman.com/
 
-
-
+https://startupclass.co/courses/3108/lectures/64057
 
 
 
