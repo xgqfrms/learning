@@ -64,3 +64,34 @@ function isIE() {
 }
 
 */
+
+/*
+
+
+## navigator.userAgent
+
+console.log(navigator.userAgent);
+
+// Chrome
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+
+
+
+
+(function isChrome() {
+    let fullVerion = null;
+    if(/Chrome\/56/i.test(navigator.userAgent)){
+        fullVerion = navigator.userAgent.substring(81, 100);
+        //alert(fullVerion);
+        //console.log(fullVerion);
+    }else{
+        //console.log(fullVerion);
+        fullVerion = "Sorry, Unknow Version!";
+    }
+    return fullVerion;
+})();
+
+
+
+*/

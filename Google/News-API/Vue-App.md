@@ -37,17 +37,3 @@ http://vuex.vuejs.org/en/structure.html
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
