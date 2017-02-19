@@ -1,0 +1,583 @@
+[
+    [
+        "james",
+        {
+            "name":"James Zhao",
+            "description":"CEO  ---  Create Employee’s Opportunity"
+        }
+    ],
+    [
+        "jerryzhu",
+        {
+            "name":"Jerry Zhu",
+            "description":"    有所作为是生活的最高境界。"
+        }
+    ],
+    [
+        "hyman",
+        {
+            "name":"Hyman Zhu",
+            "description":"    伟大的思想能变成巨大的财富。"
+        }
+    ],
+    [
+        "victorye",
+        {
+            "name":"Victor Ye",
+            "description":"所谓热爱，就是当时间抹去所有的感觉之后，还在你脑子里蹦出来的第一个想法。"
+        }
+    ],
+    [
+        "tiansheng",
+        {
+            "name":"Chinson Liu",
+            "description":"事在人为！"
+        }
+    ],
+    [
+        "joeluo",
+        {
+            "name":"Joe Luo ",
+            "description":"不用相当的独立功夫，不论在哪个严重的问题上都不能找出真理；谁怕用功夫，谁就无法找到真理。"
+        }
+    ],
+    [
+        "felix",
+        {
+            "name":"Felix Wang",
+            "description":"让身边的一切完美起来。"
+        }
+    ],
+    [
+        "samrtzhang",
+        {
+            "name":"Smart Zhang",
+            "description":"向同事中的牛人学习，并超过他们！"
+        }
+    ],
+    [
+        "hongmin",
+        {
+            "name":"Hongmin Wang",
+            "description":"弱水三千只取一瓢饮"
+        }
+    ],
+    [
+        "cherry",
+        {
+            "name":"Cherry Zhou",
+            "description":"与你同行，共同努力，共享成长"
+        }
+    ],
+    [
+        "gaoren",
+        {
+            "name":"Gaoren Yang",
+            "description":"     敢做，敢担当。"
+        }
+    ],
+    [
+        "leo",
+        {
+            "name":"Leo Dai",
+            "description":"最大的成就就是完成别人认为你完不成事情。"
+        }
+    ],
+    [
+        "carolma",
+        {
+            "name":"Carol Ma",
+            "description":"天道酬勤，总不言败！"
+        }
+    ],
+    [
+        "iris",
+        {
+            "name":"Iris Gao",
+            "description":"海阔凭鱼跃，天高任鸟飞。"
+        }
+    ],
+    [
+        "santiago",
+        {
+            "name":"Santiago",
+            "description":"非淡泊无以明志，非宁静无以致远。"
+        }
+    ],
+    [
+        "dickzhang",
+        {
+            "name":"Dick Zhang",
+            "description":"当你停止尝试时，就是失败的时候。"
+        }
+    ],
+    [
+        "timzhang",
+        {
+            "name":"Tim Zhang",
+            "description":"世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理。"
+        }
+    ],
+    [
+        "ritaren",
+        {
+            "name":"Rita Ren",
+            "description":"和喜欢的一切在一起。"
+        }
+    ],
+    [
+        "brianding",
+        {
+            "name":"Brian Ding",
+            "description":" 善待一切，不忘初心。"
+        }
+    ],
+    [
+        "paulyu",
+        {
+            "name":"Paul Yu",
+            "description":"把生命浪费在美好的事情上"
+        }
+    ],
+    [
+        "sunny",
+        {
+            "name":"Sunny Ma",
+            "description":"临渊羡鱼，不如退而结网"
+        }
+    ],
+    [
+        "jackyzhang",
+        {
+            "name":"Jacky Zhang",
+            "description":"匆匆百年如白驹过隙，不努力就是对不起自己..."
+        }
+    ],
+    [
+        "tracyzhang",
+        {
+            "name":"Tracy Zhang",
+            "description":"认真做好每一天!"
+        }
+    ],
+    [
+        "lilygu",
+        {
+            "name":"Lily Gu",
+            "description":"不积跬步，无以至千里；不积小流，无以成江海 "
+        }
+    ],
+    [
+        "eva",
+        {
+            "name":"Eva Yan",
+            "description":"     有志者事竟成"
+        }
+    ],
+    [
+        "vivianqian",
+        {
+            "name":"Vivian Qian",
+            "description":"  希望能有一群人，让我恋上一座城。"
+        }
+    ],
+    [
+        "kellyli",
+        {
+            "name":"Kelly Li",
+            "description":"     “食”不可无欲。"
+        }
+    ],
+    [
+        "ciciyang",
+        {
+            "name":"Cici Yang",
+            "description":"     不求最好，但求更好，相信自己！"
+        }
+    ],
+    [
+        "vincent",
+        {
+            "name":"Vincent Qian",
+            "description":" 知而好问，然后能才 。"
+        }
+    ],
+    [
+        "forrestfan",
+        {
+            "name":"Forrest Fan",
+            "description":"做事要尽心尽力，做人应问心无愧"
+        }
+    ],
+    [
+        "robinlang",
+        {
+            "name":"Robin Lang",
+            "description":"     人生本无意义 那让我们赋予它意义。"
+        }
+    ],
+    [
+        "merrymeng",
+        {
+            "name":"Merry Meng",
+            "description":"像蚂蚁一样工作，像蝴蝶一样生活"
+        }
+    ],
+    [
+        "tonybian",
+        {
+            "name":"Tony Bian",
+            "description":"精诚所至，金石为开"
+        }
+    ],
+    [
+        "strong",
+        {
+            "name":"Strong Si",
+            "description":"The harder you work, the luckier you get.."
+        }
+    ],
+    [
+        "arron",
+        {
+            "name":"Arron Wang",
+            "description":" 凡事要三思，但比三思更重要的是三思而行。"
+        }
+    ],
+    [
+        "tingliu",
+        {
+            "name":"Ting Liu",
+            "description":"最困难的时候，就是距离成功不远了。"
+        }
+    ],
+    [
+        "kayliu",
+        {
+            "name":"Kay Liu",
+            "description":"     要成功，先发疯，头脑简单向前冲。"
+        }
+    ],
+    [
+        "zealot",
+        {
+            "name":"Zealot Jiang",
+            "description":"     每天都要做得更好。"
+        }
+    ],
+    [
+        "kathyye",
+        {
+            "name":"Kathy Ye",
+            "description":" 让我们携手，共创、共享、共成长！"
+        }
+    ],
+    [
+        "arthurwang",
+        {
+            "name":"Arthur Wang",
+            "description":"Stay hungry,stay foolish!"
+        }
+    ],
+    [
+        "armstrongzhu",
+        {
+            "name":"Armstrong Zhu",
+            "description":"Just do it！"
+        }
+    ],
+    [
+        "yangyang",
+        {
+            "name":"Yang Yang",
+            "description":" 人生至善，就是对生活乐观，对工作愉快，对事业兴奋。"
+        }
+    ],
+    [
+        "cherripe",
+        {
+            "name":"Cherripe Chen",
+            "description":"换一个角度，世界不再是我所熟悉的那个"
+        }
+    ],
+    [
+        "westzhang",
+        {
+            "name":"West Zhang",
+            "description":"世上无难事，只要肯登攀"
+        }
+    ],
+    [
+        "mandahuang",
+        {
+            "name":"Manda Huang",
+            "description":"劳动创造世界。"
+        }
+    ],
+    [
+        "rogers",
+        {
+            "name":"Rogers Chen",
+            "description":"努力工作，与公司一起成长。"
+        }
+    ],
+    [
+        "jolly",
+        {
+            "name":"Jolly Cheng",
+            "description":"存在即为合理。"
+        }
+    ],
+    [
+        "steve",
+        {
+            "name":"Steve Chi",
+            "description":"All 4 win！"
+        }
+    ],
+    [
+        "long",
+        {
+            "name":"Long Dai",
+            "description":"每一天，我都要尽职尽责，让平凡的工作增添我个人的荣耀。"
+        }
+    ],
+    [
+        "charles",
+        {
+            "name":"Charles Deng",
+            "description":"I'm Charles Deng"
+        }
+    ],
+    [
+        "danger",
+        {
+            "name":"Danger Deng",
+            "description":"从零开始。"
+        }
+    ],
+    [
+        "hedy",
+        {
+            "name":"Hedy Han",
+            "description":"I'm Hedy Han"
+        }
+    ],
+    [
+        "jumper",
+        {
+            "name":"Jumper Huang",
+            "description":"成长是我与公司的关键词。"
+        }
+    ],
+    [
+        "jeff",
+        {
+            "name":"Jeff Huang",
+            "description":"微笑工作。"
+        }
+    ],
+    [
+        "summer",
+        {
+            "name":"Summer Huang",
+            "description":"I'm Summer Huang"
+        }
+    ],
+    [
+        "wen",
+        {
+            "name":"Wen Jian",
+            "description":"努力学习，与公司一同成长。"
+        }
+    ],
+    [
+        "alant",
+        {
+            "name":"Alant Liu",
+            "description":"只要有目标，路就不会消失。"
+        }
+    ],
+    [
+        "young",
+        {
+            "name":"Young Yang",
+            "description":" 永不言弃。"
+        }
+    ],
+    [
+        "sam",
+        {
+            "name":"Sam Pan",
+            "description":"与讯联携手共创明天。"
+        }
+    ],
+    [
+        "dorothy",
+        {
+            "name":"Dorothy Shi",
+            "description":"同公司一起成长，一起努力。"
+        }
+    ],
+    [
+        "david",
+        {
+            "name":"David Sun",
+            "description":"天行健，君子以自强不息。"
+        }
+    ],
+    [
+        "candy",
+        {
+            "name":"Candy Tang",
+            "description":"一起努力，一起进步。"
+        }
+    ],
+    [
+        "tandy",
+        {
+            "name":"Tandy Tian",
+            "description":"有事者事竟成；破釜沉舟，百二秦关终归楚；苦心人，天不负；卧薪尝胆，三千越甲可吞吴。"
+        }
+    ],
+    [
+        "peter",
+        {
+            "name":"Peter Tuo",
+            "description":"做一个本分的人，寻找新的事物，开拓新的征程。"
+        }
+    ],
+    [
+        "evelyn",
+        {
+            "name":"Evelyn Wang",
+            "description":" ^o^ "
+        }
+    ],
+    [
+        "wanny",
+        {
+            "name":"Wanny Wang",
+            "description":"我们一起努力，做最好的支付收单系统。"
+        }
+    ],
+    [
+        "moira",
+        {
+            "name":"Moira Wei",
+            "description":"努力工作，用心生活，保持积极、热情、向上的人生态度。"
+        }
+    ],
+    [
+        "jie",
+        {
+            "name":"Jie Wu",
+            "description":"做好自己。"
+        }
+    ],
+    [
+        "adair",
+        {
+            "name":"Adair Xiong",
+            "description":"理想是人生的太阳。"
+        }
+    ],
+    [
+        "jane",
+        {
+            "name":"Jane Yang",
+            "description":"不甘今天，追逐明天。"
+        }
+    ],
+    [
+        "michael",
+        {
+            "name":"Michael Yang",
+            "description":"胜则举杯相庆，败则拼死相救。"
+        }
+    ],
+    [
+        "godzilla",
+        {
+            "name":"Godzilla Zhang",
+            "description":"你的态度决定你的高度。"
+        }
+    ],
+    [
+        "selena",
+        {
+            "name":"Selena Zhang",
+            "description":"奋斗吧！"
+        }
+    ],
+    [
+        "green",
+        {
+            "name":"Green Zhang",
+            "description":"每天都是新的开始，加油。"
+        }
+    ],
+    [
+        "steven",
+        {
+            "name":"Steven Zhao",
+            "description":"不断学习，不断提升。"
+        }
+    ],
+    [
+        "yann",
+        {
+            "name":"Yann Zhao",
+            "description":"做最好的自己。"
+        }
+    ],
+    [
+        "mazy",
+        {
+            "name":"Mazy Zhong",
+            "description":"世上无难事，只怕有心人。"
+        }
+    ],
+    [
+        "jeffrey",
+        {
+            "name":"Jeffrey Zhu",
+            "description":"只要有方向，就不会迷路。"
+        }
+    ],
+    [
+        "niki",
+        {
+            "name":"Niki Yu",
+            "description":"I'm Niki Yu"
+        }
+    ],
+    [
+        "jim",
+        {
+            "name":"Jim Wang",
+            "description":"没有谁必定成功，努力决定将来。"
+        }
+    ],
+    [
+        "amy",
+        {
+            "name":"Amy Liu",
+            "description":"扎实工作，坦荡做人。"
+        }
+    ],
+    [
+        "echo",
+        {
+            "name":"Echo Peng",
+            "description":"一步一脚印。"
+        }
+    ],
+    [
+        "anneguo",
+        {
+            "name":"Anne Guo",
+            "description":" 莫找借口失败，只找理由成功。"
+        }
+    ]
+]

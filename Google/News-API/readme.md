@@ -34,11 +34,12 @@ https://newsapi.org/#apiSources
 https://a-limon.github.io/news-vue/#/
 
 
+https://a-limon.github.io/
 
 https://github.com/a-limon/news-vue/
 
 
-
+https://github.com/vuejs/vue-cli/issues/361
 
 
 
