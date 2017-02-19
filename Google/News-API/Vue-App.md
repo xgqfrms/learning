@@ -31,9 +31,9 @@ http://vuex.vuejs.org/en/structure.html
 
 
 
+https://scotch.io/tutorials/angular-2-classes-with-ngclass-and-ngstyle
 
-
-
+https://www.fullstackreact.com/articles/react-create-class-vs-es6-class-components/
 
 
 

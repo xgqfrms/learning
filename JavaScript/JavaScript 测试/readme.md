@@ -9,12 +9,31 @@ https://classroom.udacity.com/settings/courses
 https://classroom.udacity.com/courses/ud549/lessons/3773158892/concepts/38457086570923
 
 
+JavaScript 测试
+
+
+https://classroom.udacity.com/courses/ud549/lessons/3773158892/concepts/38457086570923#
+
+
+
+
+Jasmine 简介
+
+https://github.com/udacity/ud549
+
 
 jasmine
 
 https://jasmine.github.io/
 
 https://github.com/jasmine/jasmine
+
+
+
+
+
+
+
 
 
 
