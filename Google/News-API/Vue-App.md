@@ -129,9 +129,9 @@ How do I use BigQuery to write custom queries over the data?
 The HTTP Archive data dumps are also available in Google BigQuery thanks to Ilya Grigorik. This means you can create your own custom queries like How many resources return Last-Modified and/or ETag values? and What is the distribution of 1st party vs 3rd party resources?. For more information see Ilya's blog post HTTP Archive + BigQuery = Web Performance Answers and video. And checkout all the custom queries shared on BigQueri.es.
 
 
+http://httparchive.org/downloads.php
 
-
-
+https://github.com/HTTPArchive/httparchive
 
 
 
@@ -211,6 +211,10 @@ unescape("%3Cspan id='icon'%3E %3C/span%3E %3Cscript src='" + https_protocol + "
 
 %3E %3C
 <   >
+
+
+https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
+
 
 
 
