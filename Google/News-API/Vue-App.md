@@ -26,6 +26,27 @@ https://github.com/airbnb/javascript
 
 http://jscs.info/
 
+http://vuex.vuejs.org/en/structure.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

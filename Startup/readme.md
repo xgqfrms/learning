@@ -57,3 +57,25 @@ https://view-api.box.com/1/sessions/95ab0d95b72942dcab9fe6e483b33d03/view
 http://startupclass.samaltman.com/lists/about/
 
 
+
+
+
+https://startupclass.co/courses/3108/lectures/64030
+
+http://www.paulgraham.com/startupideas.html
+
+
+http://paulgraham.com/ds.html
+
+
+https://startupclass.co/courses/3108/lectures/64058
+
+
+
+
+
+
+
+
+
+
