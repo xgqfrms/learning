@@ -1,0 +1,19 @@
+{
+  "name": "lightbox2-app",
+  "version": "2.9.0",
+  "description": "lightbox2-2.9.0 image effect modal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "lightbox",
+    "lightbox2"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "lightbox2": "^2.9.0"
+  }
+}

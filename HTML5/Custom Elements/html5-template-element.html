@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5-template-element</title>
+    <!-- https://www.w3.org/TR/html5/scripting-1.html#the-template-element -->
+    <style>
+        table td{
+            border: 1px solid red;
+            min-width: 100px;
+            background-color: rgba(0,0,0,0.7);
+            color: rgba(0,255,0,0.7);
+            text-align: center;
+        }
+        /* 
+        table>thead>tr>th:first-child {
+            border-left: 1px solid #f0f;
+        }
+        table>thead>tr>th:last-child {
+            border-right: 1px solid #f0f;
+        }
+        table>thead>tr>th{
+            border-top: 1px solid #f0f;
+            border-bottom: 1px solid #f0f;
+        }
+         */
+        table>thead>tr>th{
+            border: 1px solid #f0f!important;
+            background-color: #fff;
+            /*display: inline-block;*/
+            /*display: table-cell;*/
+            /*display: table-row;*/
+            /*display: table-row-group;*/
+            /*display: table-header-group;*/
+        }
+    </style>
+</head>
+<body>
+    <!-- table template -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Sex</th>
+                <th>Legs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template id="row">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+    <!-- js -->
+    <script>
+        // Data is hard-coded here, but could come from the server
+        const data = [
+            {
+                name: 'Pillar',
+                color: 'Ticked Tabby',
+                sex: 'Female (neutered)',
+                legs: 3 
+            },
+            {
+                name: 'Hedral',
+                color: 'Tuxedo',
+                sex: 'Male (neutered)',
+                legs: 4 
+            }
+        ];
+        // 
+        const template = document.querySelector('#row');
+        for (let i = 0; i < data.length; i += 1) {
+            let cat = data[i];
+            let clone = template.content.cloneNode(true);
+            let cells = clone.querySelectorAll('td');
+            cells[0].textContent = cat.name;
+            cells[1].textContent = cat.color;
+            cells[2].textContent = cat.sex;
+            cells[3].textContent = cat.legs;
+            template.parentNode.appendChild(clone);
+        }
+    </script>
+</body>
+</html>
