@@ -18,6 +18,27 @@ https://github.com/ouvens/ouvens.github.io
 *******************************************************************************
 
 
+前端自动化测试解决方案探析
+
+
+http://jixianqianduan.com/frontend-javascript/2016/11/22/front-end-auto-test.html
+
+
+BDD(Bebavior Driven Developement，行为驱动测试)
+
+TDD(Testing Driven Developement，测试驱动开发)
+
+
+
+
+react+redux+koa技术栈实现小结
+
+http://jixianqianduan.com/frontend-build/2017/01/10/react-redux-koa.html
+
+https://github.com/ouvens/fis3-koa-node
+
+http://jixianqianduan.com/frontend-build/2016/04/21/koa-fis3-swig-nodejs-isomorphic.html
+
 
 
 
@@ -122,4 +143,10 @@ http://codepen.io/ColleenEMc/pen/wKYxZa?editors=1010
 
 
 
-http://ife.baidu.com/2016/task/all
+
+
+
+
+
+
+
