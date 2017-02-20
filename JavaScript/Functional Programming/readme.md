@@ -62,3 +62,27 @@ Functional Programming in Javascript, RxJS
 
 
 
+## Functional Programming: Pure Functions
+
+
+https://www.sitepoint.com/functional-programming-pure-functions/
+
+
+http://jixianqianduan.com/article-translation/2016/06/22/ways-to-write-self-documenting-js.html
+
+
+
+
+
+
+http://ife.baidu.com/2016/task/all
+
+
+
+
+
+
+
+
+
+

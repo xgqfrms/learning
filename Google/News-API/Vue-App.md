@@ -68,6 +68,25 @@ http://ife.baidu.com/2016/task/all
 
 
 
+## Functional Programming: Pure Functions
+
+
+http://jixianqianduan.com/article-translation/2016/06/22/ways-to-write-self-documenting-js.html
+
+https://www.sitepoint.com/functional-programming-pure-functions/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
