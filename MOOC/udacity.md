@@ -401,14 +401,3 @@ https://www.fullstackreact.com/articles/react-create-class-vs-es6-class-componen
 
 
 
-https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
-
-
-http://lokeshdhakar.com/projects/lightbox2/
-
-https://github.com/lokesh/lightbox2/
-
-https://github.com/lokesh/color-thief
-
-https://github.com/ashleydw/lightbox#fork-destination-box
-
