@@ -187,6 +187,28 @@ Canvas
 
 
 
+一种 Roguelike 地牢生成算法
+
+https://indienova.com/indie-game-development/roguelike-dungeon-building-algorithm/
+
+
+http://www.roguebasin.com/index.php?title=Dungeon-Building_Algorithm
+
+房间和迷宫：一个地牢生成算法
+
+https://indienova.com/indie-game-development/rooms-and-mazes-a-procedural-dungeon-generator/
+
+
+
+Dom and Canvas Scroll Parallax Crazyness  
+
+滚动视差疯狂
+
+http://codepen.io/xgqfrms/pen/ggNyyQ
+
+
+
+
 
 
 
