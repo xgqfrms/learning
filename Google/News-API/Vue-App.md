@@ -86,12 +86,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 
 
-https://w3c.github.io/webcomponents/spec/custom/
-
-
-
-
-
 
 
 
