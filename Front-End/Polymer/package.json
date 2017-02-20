@@ -1,0 +1,25 @@
+{
+  "name": "polymer",
+  "version": "1.8.0",
+  "description": "polymer, web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/polymer.git"
+  },
+  "keywords": [
+    "polymer",
+    "xgqfrms",
+    "Web",
+    "Components"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/polymer/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/polymer#readme"
+}
