@@ -50,54 +50,6 @@ In 1873 Edison first confronted what he later called a bug when he began develop
 
 
 
-Interactivity With JavaScript - Week Two
-
-
-http://codepen.io/collection/Adbwgo/
-
-https://www.coursera.org/learn/javascript/supplement/TafNU/link-to-all-of-the-code-for-week-two
-
-
-http://codepen.io/ColleenEMc/pen/wKYxZa?editors=1010
-
-
-
-
-
-http://ife.baidu.com/2016/task/all
-
-
-
-## Functional Programming: Pure Functions
-
-https://www.sitepoint.com/functional-programming-pure-functions/
-
-
-## 15 Ways to Write Self-documenting JavaScript
-
-
-http://jixianqianduan.com/article-translation/2016/06/22/ways-to-write-self-documenting-js.html
-
-
-https://www.sitepoint.com/self-documenting-javascript/
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
