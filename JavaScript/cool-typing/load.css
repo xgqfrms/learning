@@ -1,0 +1,23 @@
+body{
+    margin: 10px; 
+    padding: 10px;
+    text-align: center;
+}
+div{
+    margin: 30px; 
+    padding: 0px;
+    color: red;
+}
+.style2 {
+    font-size: 16px;
+    font-family: "MS UI Gothic";
+}
+.title{
+    font-family: "Courier New";
+    color: #000000;
+}
+#type_text{
+    color: rgba(0,255,0,0.7);
+    background: rgba(0,0,0,0.7);
+    font-size: 3ex;
+}

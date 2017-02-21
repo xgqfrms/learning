@@ -22,6 +22,28 @@ $ npm i -g angular-cli
 
 
 
+v1.0.0-beta.32 (Verified)  
+
+## update 
+
+```sh
+$ ng -v
+
+$ npm i -g angular-cli
+
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
 ## NgModule 
 
 {
