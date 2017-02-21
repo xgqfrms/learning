@@ -84,4 +84,19 @@ https://coursetro.com/posts/code/25/Understanding-Angular-2-Animations-Tutorial
 
 
 
+https://www.npmjs.com/package/jquery
+
+$ npm install jquery
+
+import $ from "jquery";
+
+
+var $ = require("jquery");
+
+
+
+
+
+npm install bootstrap
+
 
