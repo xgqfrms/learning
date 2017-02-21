@@ -21,12 +21,14 @@ $ ng -v
 
 $ npm i -g angular-cli
 
+$ npm i -g @angular/cli
+
+$ npm i -g @angular/cli
+
 ``` 
 
 
-
-
-http://stackoverflow.com/questions/30623825/how-to-use-jquery-with-angular2
+https://github.com/angular/angular-cli/blob/master/CHANGELOG.md#features-2
 
 
 
