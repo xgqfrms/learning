@@ -1,9 +1,9 @@
-# Angular2 profiles
+# Angular2 GitHub Search App
 
 
 
+https://github.xgqfrms.xyz/
 
-https://profiles.xgqfrms.xyz/
 
 
 
@@ -34,11 +34,6 @@ https://github.com/angular/angular-cli/issues/4866
 
 
 
-
-
-
-
-G:\wwwRoot\learning\JavaScript\Ajax
 
 
 
