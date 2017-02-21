@@ -16,6 +16,26 @@ $ ng new ???-app
 
 > cd ???-app
 
+
+## ng2-new-CLI-ng-serve-all-in-one
+
+--open (Boolean) (Default: false) Opens the url in default browser
+
+aliases: -o, -open, -open, -open
+
+
+$ ng serve --help
+
+$ ng server -o
+
+$ ng server -open
+
+$ ng server --open
+
+
+
+
+
 $ ng server -O
 $ ng server -o
 
