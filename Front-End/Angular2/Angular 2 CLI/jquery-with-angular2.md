@@ -1,9 +1,10 @@
-# jquery-with-angular2
+# jQuery & Angular2
 
 
 
 
 http://stackoverflow.com/questions/30623825/how-to-use-jquery-with-angular2
+
 
 http://www.wintellect.com/devcenter/dbaskin/yes-used-jquery-angular2-application
 
@@ -15,7 +16,7 @@ http://4dev.tech/2016/05/using-jquery-with-angular2/
 
 
 
-
+G:\wwwRoot\learning\JavaScript\Ajax
 
 
 

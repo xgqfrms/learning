@@ -18,8 +18,6 @@ $ npm i -g angular-cli
 
 $ npm i -g @angular/cli
 
-$ npm i -g @angular/cli
-
 
 $ npm cache clean
 
@@ -73,6 +71,8 @@ Global package:
 npm uninstall -g angular-cli @angular/cli
 npm cache clean
 npm install -g @angular/cli@latest
+
+
 Local project package:
 
 rm -rf node_modules dist # use rmdir on Windows

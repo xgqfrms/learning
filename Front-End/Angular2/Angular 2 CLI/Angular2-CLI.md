@@ -23,7 +23,9 @@ $ npm i -g angular-cli
 
 $ npm i -g @angular/cli
 
-$ npm i -g @angular/cli
+$ npm cache clean
+
+$ npm i -g @angular/cli@latest
 
 ``` 
 
@@ -61,23 +63,23 @@ https://github.com/angular/angular-cli#webpack-update
 
 ## ng g ???
 
-Scaffold	Usage  
+Scaffold    Usage  
 
-Component	ng g component my-new-component  
+Component   ng g component my-new-component  
 
-Directive	ng g directive my-new-directive  
+Directive   ng g directive my-new-directive  
 
-Pipe	ng g pipe my-new-pipe  
+Pipe    ng g pipe my-new-pipe  
 
-Service	ng g service my-new-service  
+Service ng g service my-new-service  
 
-Class	ng g class my-new-class  
+Class   ng g class my-new-class  
 
-Interface	ng g interface my-new-interface  
+Interface   ng g interface my-new-interface  
 
-Enum	ng g enum my-new-enum  
+Enum    ng g enum my-new-enum  
 
-Module	ng g module my-module  
+Module  ng g module my-module  
 
 
 
