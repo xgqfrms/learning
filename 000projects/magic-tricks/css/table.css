@@ -1,0 +1,112 @@
+/* 
+  I'm using these amazing projects for the cards: 
+  https://github.com/pakastin/deck-of-cards
+  which is using:
+  https://sourceforge.net/projects/vector-cards/
+*/
+
+.card {
+    /* out of screen: translateY viewport height */
+    transform: translateY(100vh) scale(1.5);
+    box-shadow: 21px 21px 14px -9px rgba(0,0,0,1);
+    margin: 0 auto; 
+}
+
+.card.thrown {
+    transition: all 1s ease-in;
+    /* back on screen: translateY to a lower level */
+    transform: translateY(10vh) scale(1);
+    box-shadow: 8px 8px 14px -9px rgba(0,0,0,1);
+}
+
+.path {
+    height: 220vh;
+    position: absolute;
+    bottom: -120vh;
+    left: 50%;
+    margin-left: -1.9rem;
+}
+
+#phone-move.path  {
+    background-color: rgba(255,255,255,0.3);
+    width: 1px;
+    margin-left: 0px;
+}
+
+html {
+    font-size: 40px; /* this sets the card size */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("http://res.cloudinary.com/dzqowkhxu/image/upload/v1484821182/Ak9p24B_nxadh7.jpg");
+  overflow: hidden;
+}
+
+#waiting-for-device {
+  position: fixed;
+  height: 400px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.7);
+  color: #555;
+  font-size: 20px;
+  line-height: 30px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#waiting-for-device .section {
+  margin: 35px;
+}
+
+#waiting-for-device #placeholder {
+  margin: 35px;
+}
+
+
+/* Article Link */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+.banner-article {
+  position: absolute;
+  bottom: 30px;
+  right: 30px; 
+}
+
+.banner-article a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-article .container-image {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-article img {
+  width: 45px;
+  position: relative;
+  top: 3px;
+}
+
+a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}

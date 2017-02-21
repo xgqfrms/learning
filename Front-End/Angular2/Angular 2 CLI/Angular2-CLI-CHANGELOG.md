@@ -35,7 +35,7 @@ https://github.com/angular/angular-cli/commit/601f9b3
 
 https://github.com/angular/angular-cli/pull/4328
 
-
+https://github.com/angular/angular-cli/issues/4861
 
 
 
@@ -64,7 +64,30 @@ Module  ng g module my-module
 
 
 
+Updating Angular CLI
+
+To update Angular CLI to a new version, you must update both the global package and your project's local package.
+
+Global package:
+
 npm uninstall -g angular-cli @angular/cli
 npm cache clean
 npm install -g @angular/cli@latest
+Local project package:
+
+rm -rf node_modules dist # use rmdir on Windows
+npm install --save-dev @angular/cli@latest
+npm install
+
+
+
+
+
+
+
+
+
+
+
+
 

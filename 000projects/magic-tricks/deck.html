@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" type="text/css" href="css/deck.css">
+        <link rel="stylesheet" type="text/css" href="css/cards.css">
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/deck.js"></script>
+        <script type="text/javascript" src="js/gestures.js"></script>
+    </head>
+    <body>
+        <div id="waiting-for-calibration" onclick="calibrate()">
+            <div class="section">
+                <span>Point the device 90° <br> to the table bottom</span>
+            </div>
+            <div class="section">
+                <span>Touch to Start</span>
+            </div>
+        </div>
+        <div id="touchHandler"></div>
+    </body>
+</html>

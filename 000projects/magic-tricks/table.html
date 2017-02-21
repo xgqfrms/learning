@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="node_modules/qrcode-generator/qrcode.js"></script>
+        <script type="text/javascript" src="js/table.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/table.css">
+        <link rel="stylesheet" type="text/css" href="css/cards.css">
+        <title>Magic Tricks Example</title>
+    </head>
+    <body>
+        <!-- Pointer to indicate phone direction-->
+        <div id="phone-move" class="path"></div>
+        <!-- Waiting for phone to connect banner -->
+        <div id="waiting-for-device">
+            <div class="section">
+                <span>Scan with phone or go to:</span>
+                <span id="url"></span>
+            </div>
+            <div id="placeholder"></div>
+            <div class="section">
+                <span>Waiting phone to connect ...</span>
+            </div>
+        </div>
+        <!-- Medium article link -->
+        <div class="banner-article">
+            <a href="https://medium.com/outsystems-engineering/making-magic-with-websockets-and-css3-ec22c1dcc8a8" target="_blank">
+                <div class="container-image">
+                    <img src="http://res.cloudinary.com/dzqowkhxu/image/upload/v1484735594/medium-png_hmcjft.png"/>
+                </div>
+                <span> Read Full Article Here</span>
+            </a>
+        </div>
+    </body>
+</html>

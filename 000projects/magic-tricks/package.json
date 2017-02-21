@@ -1,0 +1,15 @@
+{
+  "name": "magic-tricks-example",
+  "version": "1.0.0",
+  "description": "Demo code for: https://medium.com/outsystems-engineering/making-magic-with-websockets-and-css3-ec22c1dcc8a8",
+  "main": "server.js",
+  "author": "Hélio Dolores",
+  "license": "MIT",
+  "repository": "https://github.com/heliodolores/magic-tricks-example",
+  "dependencies": {
+    "socket.io": "^1.7.2",
+    "socket.io-client": "^1.7.2",
+    "mobile-detect": "^1.3.5",
+    "qrcode-generator": "^1.1.0"
+  }
+}
