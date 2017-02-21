@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pomodoro Timer - by Alexander Kallaway</title>
+  </head>
+  <body>
+    <div id="app-container">
+      <h1>POMODORO CLOCK</h1>
+
+      <div class="timer-buttons">
+        <div class="clock-button" id="button-start"><i class="fa fa-play"></i></div>
+        <div class="clock-button" id="button-pause"><i class="fa fa-pause"></i></div>
+        <div class="clock-button" id="button-reset"><i class="fa fa-stop"></i></div>
+      </div>
+
+      <canvas id="pomodoro-display-canvas" height="400px" width="400px"></canvas>
+
+      <div class="customization-controls">
+        <!-- work buttons -->
+        <div class="controls-with-label">
+          <p class="length">Session Length</p>
+          <div class="controls">
+            <div class="clock-button" id="less-work">-</div>
+            <p class="user-display" id="user-work-display">25</p>
+            <div class="clock-button" id="more-work">+</div>
+          </div>
+        </div>
+        <!-- rest buttons -->
+        <div class="controls-with-label">
+          <p class="length">Break Length</p>
+          <div class="controls">
+            <div class="clock-button" id="less-rest">-</div>
+            <p class="user-display" id="user-rest-display">5</p>
+            <div class="clock-button" id="more-rest">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="author-info">
+        <p>Made by <a href="http://kallaway.github.io/">Alexander Kallaway</a></p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
