@@ -35,7 +35,7 @@ https://github.com/angular/angular-cli/issues/4866
 
 
 
-
+You can `ng set --global packageManager=yarn`.
 
 
 

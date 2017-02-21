@@ -42,7 +42,7 @@ G:\wwwRoot\learning\JavaScript\Ajax
 
 
 
-
+You can `ng set --global packageManager=yarn`.
 
 
 
