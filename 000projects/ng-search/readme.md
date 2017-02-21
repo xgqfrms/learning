@@ -100,3 +100,8 @@ var $ = require("jquery");
 npm install bootstrap
 
 
+???
+
+import bootstrap from "bootstrap";
+
+
