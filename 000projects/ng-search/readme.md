@@ -36,7 +36,8 @@ $ ng server --open
 
 
 
-$ ng server -O
+<<del>$ ng server -O</del>
+
 $ ng server -o
 
 $ ng server --open

@@ -51,10 +51,26 @@ http://www.digitaltrends.com/computing/best-free-video-converters/
 
 
 
-## VLC
+## VLC ??? error
 
+
+http://www.digitaltrends.com/computing/how-to-download-youtube-videos/
 
 http://www.digitaltrends.com/computing/how-to-download-youtube-videos/2/
+
+https://wiki.videolan.org/Documentation:VLC_for_dummies
+
+
+
+https://www.youtube.com/channel/UC8wXC0ZCfGt3HaVLy_fdTQw?sub_confirmation=1
+
+
+
+
+
+
+
+
 
 
 
