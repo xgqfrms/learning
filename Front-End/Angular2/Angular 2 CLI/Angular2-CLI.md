@@ -8,18 +8,8 @@ https://github.com/angular/angular-cli/releases
 https://github.com/angular/angular-cli/tags  
 
 
-v1.0.0-beta.24 (Verified)  
 
-## update 
-
-```sh
-$ ng -v
-
-$ npm i -g angular-cli
-
-``` 
-
-
+Angular2  CLI v1.0.0-beta.32 (Verified)
 
 
 v1.0.0-beta.32 (Verified)  
@@ -36,7 +26,7 @@ $ npm i -g angular-cli
 
 
 
-
+http://stackoverflow.com/questions/30623825/how-to-use-jquery-with-angular2
 
 
 
