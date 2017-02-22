@@ -105,3 +105,63 @@ npm install bootstrap
 import bootstrap from "bootstrap";
 
 
+
+React vs Angular 2
+
+
+https://www.codementor.io/reactjs/tutorial/react-vs-angularjs
+
+https://www.cleveroad.com/blog/react-vs-angular-ultimate-performance-research-2017
+
+
+
+https://codepajamas.com/
+
+https://codepajamas.com/courses/build-blog-app-with-riotjs/#units/1
+
+https://codepajamas.com/courses/introduction-to-css-animations/#units/1
+
+
+
+https://www.codecourse.com/lessons/vuex-notes-app
+
+
+
+
+http://www.imooc.com/learn/744
+
+在React中使用Redux数据流
+
+https://online.reacttraining.com/courses/enrolled/50507
+
+
+
+
+class extend 
+
+array copy
+
+array remove duplication item
+
+
+
+cookies 4k
+sessionStorage
+localStorage 5M
+
+react lifecircle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
