@@ -525,9 +525,13 @@ https://design.google.com/spec/layout/responsive-ui.html#responsive-ui-breakpoin
 
 react fundamental free video
 
+https://reacttraining.com/online/react-fundamentals
+
+https://egghead.io/courses/react-fundamentals
+
+https://github.com/awwong1/react-fundamentals
 
 
+https://learnredux.com/
 
-
-
-
+20 video tutorials to help you learn how to build JavaScript apps with React.js and Redux.
