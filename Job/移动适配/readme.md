@@ -471,11 +471,59 @@ https://bradenhan.gitbooks.io/front-end/content/mobile/adaptation.html
 https://www.zhihu.com/question/28885332
 
 
+移动 WEB 如何适配千奇百怪的分辨率？
 
 
 
 
 
+http://resizer.cn/
+
+
+
+
+https://github.com/riskers/blog/issues/17
+
+移动端适配方案(上)
+
+
+https://github.com/riskers/blog/issues/18
+
+移动端适配方案(下) 
+
+
+
+http://www.jianshu.com/p/3a5063028706
+
+移动端开发中，关于适配问题的一点总结(一)
+
+
+http://www.jianshu.com/p/221bebfae266
+
+移动端适配- dpr浅析
+
+
+http://www.alloyteam.com/2016/03/mobile-web-adaptation-tool-rem/
+
+移动web适配利器-rem
+
+
+
+
+
+Google Resizer中文网
+
+https://www.xgqfrms.xyz
+
+http://resizer.cn/#url=http%3A%2F%2Fwww.xgqfrms.xyz
+
+
+https://design.google.com/spec/layout/responsive-ui.html#responsive-ui-breakpoints
+
+
+
+
+react fundamental free video
 
 
 
