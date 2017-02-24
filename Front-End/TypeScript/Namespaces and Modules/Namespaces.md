@@ -212,6 +212,7 @@ MyTestPage.html (摘抄/节选)
 
 
 ```html
+    <!-- js加载顺序对应 tsc --outFile 编译顺序-->
     <script src="Validation.js" type="text/javascript" />
     <script src="LettersOnlyValidator.js" type="text/javascript" />
     <script src="ZipCodeValidator.js" type="text/javascript" />
