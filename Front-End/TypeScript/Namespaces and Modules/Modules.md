@@ -171,7 +171,6 @@ JQuery.d.ts
     export default $;
 ``` 
 
-
 App.ts
 
 ```ts
@@ -180,6 +179,107 @@ App.ts
 ``` 
 
 
+类和函数声明可以直接创建为默认导出。
+默认导出类和函数声明名称是可选的。
+
+
+ZipCodeValidator.ts
+
+
+```ts
+    export default class ZipCodeValidator {
+        static numberRegexp = /^[0-9]+$/;
+        isAcceptable(s: string) {
+            return s.length === 5 && ZipCodeValidator.numberRegexp.test(s);
+        }
+    }
+``` 
+
+Test.ts
+
+```ts
+    import validator from "./ZipCodeValidator";
+    let myValidator = new validator();
+``` 
+
+StaticZipCodeValidator.ts
+
+```ts
+    const numberRegexp = /^[0-9]+$/;
+    export default function (s: string) {
+        return s.length === 5 && numberRegexp.test(s);
+    }
+``` 
+
+Test.ts
+
+```ts
+    import validate from "./StaticZipCodeValidator";
+    let strings = ["Hello", "98052", "101"];
+    // Use function validate
+    strings.forEach(s => {
+        console.log(`"${s}" ${validate(s) ? " matches" : " does not match"}`);
+    });
+``` 
+
+default 导出也可以只是值:  
+
+
+OneTwoThree.ts
+
+```ts
+    export default "123";
+``` 
+
+Log.ts
+
+```ts
+    import num from "./OneTwoThree";
+    console.log(num); 
+    // "123"
+``` 
+
+export = 和 import = require()
+
+CommonJS 和 AMD通常都有一个 exports对象的概念，它包含一个模块的所有输出。
+它们还支持使用一个自定义单个对象替换 exports对象。
+默认导出用于替代这种行为;但是，两者不兼容。
+TypeScript支持 export = 模型化传统的 CommonJS和 AMD工作流。
+
+export =语法指定从模块导出的一个单个对象。
+这可以是类，接口，命名空间，函数或枚举。
+
+当使用 export =导入一个模块时，必须使用 TypeScript专用的 import let = require("module") 来导入模块。
+
+
+ZipCodeValidator.ts
+
+
+```ts
+    let numberRegexp = /^[0-9]+$/;
+    class ZipCodeValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && numberRegexp.test(s);
+        }
+    }
+    export = ZipCodeValidator;
+``` 
+
+Test.ts
+
+```ts
+    import zip = require("./ZipCodeValidator");
+    // Some samples to try
+    let strings = ["Hello", "98052", "101"];
+    // Validators to use
+    let validator = new zip();
+    // Show whether each string passed each validator
+    strings.forEach(s => {
+        console.log(`"${ s }" - ${ validator.isAcceptable(s) ? "matches" : "does not match" }`);
+    });
+``` 
+
+
 
 ```ts
 ``` 
@@ -187,8 +287,17 @@ App.ts
 
 
 ```ts
-
 ``` 
+
+
+导入导出
+
+
+
+
+
+
+
 
 
 
