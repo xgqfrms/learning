@@ -155,31 +155,77 @@ LettersOnlyValidator.ts
 
 ZipCodeValidator.ts
 
-
 ```ts
-
+    /// <reference path="Validation.ts" />
+    namespace Validation {
+        const numberRegexp = /^[0-9]+$/;
+        export class ZipCodeValidator implements StringValidator {
+            isAcceptable(s: string) {
+                return s.length === 5 && numberRegexp.test(s);
+            }
+        }
+    }
 ``` 
 
+Test.ts
+
+```ts
+    /// <reference path="Validation.ts" />
+    /// <reference path="LettersOnlyValidator.ts" />
+    /// <reference path="ZipCodeValidator.ts" />
+
+    // Some samples to try
+    let strings = ["Hello", "98052", "101"];
+
+    // Validators to use
+    let validators: { [s: string]: Validation.StringValidator; } = {};
+    validators["ZIP code"] = new Validation.ZipCodeValidator();
+    validators["Letters only"] = new Validation.LettersOnlyValidator();
+
+    // Show whether each string passed each validator
+    for (let s of strings) {
+        for (let name in validators) {
+            console.log(""" + s + "" " + (validators[name].isAcceptable(s) ? " matches " : " does not match ") + name);
+        }
+    }
+``` 
+
+一旦涉及到多个文件，我们需要确保所有编译的代码被加载。有两种方法这样做。
+
+
+首先/第一: 
+
+我们可以使用 --outFile标志来连接输出，将所有输入文件编译为单个 JavaScript输出文件：
+
+```sh
+$ tsc --outFile sample.js Test.ts
+``` 
+
+编译器将根据文件中存在的引用标记自动对输出文件进行排序。您还可以单独指定每个文件：
+
+tsc --outFile sample.js Validation.ts LettersOnlyValidator.ts ZipCodeValidator.ts Test.ts
+
+或者，我们可以使用每个文件的编译（默认）为每个输入文件发出/发射一个JavaScript文件。
+如果生成多个JS文件，我们需要在网页上使用 &lt;script&gt;标签，以适当的顺序加载每个发出的文件，例如：
+
+MyTestPage.html (摘抄/节选)  
+
+
+```html
+    <script src="Validation.js" type="text/javascript" />
+    <script src="LettersOnlyValidator.js" type="text/javascript" />
+    <script src="ZipCodeValidator.js" type="text/javascript" />
+    <script src="Test.js" type="text/javascript" />
+``` 
+
+
 ```ts
 ``` 
 
 
 
-
-
-```ts
-
-``` 
-
 ```ts
 ``` 
-
-
-
-
-
-
-
 
 
 
