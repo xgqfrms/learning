@@ -146,5 +146,5 @@ https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#c
 
 
 
-
+http://stackoverflow.com/questions/39560638/why-are-some-typescript-module-names-given-as-strings/42445987#42445987
 
