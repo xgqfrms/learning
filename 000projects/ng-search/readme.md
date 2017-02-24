@@ -158,9 +158,82 @@ react lifecircle
 
 
 
+https://github.com/riskers/blog/issues/17
+
+移动端适配方案(上)
+
+
+https://github.com/riskers/blog/issues/18
+
+移动端适配方案(下) 
 
 
 
+http://www.jianshu.com/p/3a5063028706
+
+移动端开发中，关于适配问题的一点总结(一)
+
+
+http://www.jianshu.com/p/221bebfae266
+
+移动端适配- dpr浅析
+
+
+http://www.alloyteam.com/2016/03/mobile-web-adaptation-tool-rem/
+
+移动web适配利器-rem
+
+
+
+
+
+Google Resizer中文网
+
+https://www.xgqfrms.xyz
+
+http://resizer.cn/#url=http%3A%2F%2Fwww.xgqfrms.xyz
+
+
+https://design.google.com/spec/layout/responsive-ui.html#responsive-ui-breakpoints
+
+
+
+http://www.smashingmagazine.com/2012/08/20/towards-retina-web/
+http://www.paintcodeapp.com/news/iphone-6-screens-demystified
+http://www.inserthtml.com/2012/09/designing-retina-devices/
+http://iconmoon.com/blog2/iphone-6-plus-screen-size/
+http://dieulot.net/css-retina-hairline
+
+
+
+
+https://github.com/amfe/lib-flexible
+
+
+https://github.com/amfe/article/issues/17
+
+
+
+
+
+https://slides.com/shibiaozhang/deck-1/live
+
+移动端适配
+
+
+
+
+
+https://bradenhan.gitbooks.io/front-end/content/mobile/adaptation.html
+
+移动端优化  移动端屏幕适配
+
+
+
+https://www.zhihu.com/question/28885332
+
+
+移动 WEB 如何适配千奇百怪的分辨率？
 
 
 
