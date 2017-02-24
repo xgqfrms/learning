@@ -375,28 +375,276 @@ Native ECMAScript 2015 modules SimpleModule.js
 
 
 
+下面，我们整合了前面示例中使用的Validator实现，只从每个模块导出单个命名导出。
+
+要编译，我们必须在命令行上指定一个模块目标。
+对于 Node.js，使用 --module commonjs; 对于 require.js，使用 --module amd。
+例如：
+
+```sh
+$ tsc --module commonjs Test.ts
+``` 
+
+当编译时，每个模块将成为一个单独的 .js文件。
+与参考标签一样，编译器将遵循 import语句来编译依赖的文件。
+
+Validation.ts
+
+```ts
+    export interface StringValidator {
+        isAcceptable(s: string): boolean;
+    }
+``` 
+
+LettersOnlyValidator.ts
+
+```ts
+    import { StringValidator } from "./Validation";
+
+    const lettersRegexp = /^[A-Za-z]+$/;
+
+    export class LettersOnlyValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return lettersRegexp.test(s);
+        }
+    }
+``` 
+
+ZipCodeValidator.ts
+
+```ts
+    import { StringValidator } from "./Validation";
+
+    const numberRegexp = /^[0-9]+$/;
+
+    export class ZipCodeValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && numberRegexp.test(s);
+        }
+    }
+``` 
+
+Test.ts
+
+```ts
+    import { StringValidator } from "./Validation";
+    import { ZipCodeValidator } from "./ZipCodeValidator";
+    import { LettersOnlyValidator } from "./LettersOnlyValidator";
+
+    // Some samples to try
+    let strings = ["Hello", "98052", "101"];
+
+    // Validators to use
+    let validators: { [s: string]: StringValidator; } = {};
+    validators["ZIP code"] = new ZipCodeValidator();
+    validators["Letters only"] = new LettersOnlyValidator();
+
+    // Show whether each string passed each validator
+    strings.forEach(s => {
+        for (let name in validators) {
+            console.log(`"${ s }" - ${ validators[name].isAcceptable(s) ? "matches" : "does not match" } ${ name }`);
+        }
+    });
+``` 
+
+可选模块加载和其他高级加载方案/场景:  
+
+
+在某些情况下，您可能只想在某些条件下加载模块。
+在TypeScript中，我们可以使用下面显示的模式来实现这种和其他高级加载方案，直接调用模块加载器而不会损失类型安全性。
+
+
+编译器检测每个模块是否在发出/发射的JavaScript中被使用。
+如果模块标识符只是作为类型注释的一部分使用，而不是作为表达式，那么不会为该模块发出 require调用。
+这种未使用的引用的精确性是良好的性能优化，并且还允许可选地加载那些模块。
+
+
+模式的核心思想是 import id = require("...") 给我们访问模块公开的类型
+模块加载器被动态调用 (通过require)，如下面的if块所示。
+这利用了参考精度优化，以便模块仅在需要时加载。
+
+要使此模式正常工作，通过一个 import导入定义的符号仅用于类型位置很重要 (即, 从不处于将被发射到JavaScript中的位置)
+
+为了保持类型安全，我们可以使用 typeof关键字。
+typeof 关键字在类型位置中使用时会生成值的类型，在这种情况下是模块的类型。
+
+
+
+Dynamic Module Loading in Node.js
+
+```ts
+    declare function require(moduleName: string): any;
+
+    import { ZipCodeValidator as Zip } from "./ZipCodeValidator";
+
+    if (needZipValidation) {
+        let ZipCodeValidator: typeof Zip = require("./ZipCodeValidator");
+        let validator = new ZipCodeValidator();
+        if (validator.isAcceptable("...")) { /* ... */ }
+    }
+``` 
+
+Sample: Dynamic Module Loading in require.js
+
+
+```ts
+    declare function require(moduleNames: string[], onLoad: (...args: any[]) => void): void;
+
+    import  * as Zip from "./ZipCodeValidator";
+
+    if (needZipValidation) {
+        require(["./ZipCodeValidator"], (ZipCodeValidator: typeof Zip) => {
+            let validator = new ZipCodeValidator.ZipCodeValidator();
+            if (validator.isAcceptable("...")) { /* ... */ }
+        });
+    }
+``` 
+
+Sample: Dynamic Module Loading in System.js
+
+```ts
+    declare const System: any;
+
+    import { ZipCodeValidator as Zip } from "./ZipCodeValidator";
+
+    if (needZipValidation) {
+        System.import("./ZipCodeValidator").then((ZipCodeValidator: typeof Zip) => {
+            var x = new ZipCodeValidator();
+            if (x.isAcceptable("...")) { /* ... */ }
+        });
+    }
+``` 
+
+
+与其他JavaScript库共同工作 / 与其他JavaScript库协作
+
+
+为了描述不是用 TypeScript编写的库的形状，我们需要声明库公开的API。
+
+
+我们调用没有定义实现  “ambient”的声明。通常，这些文件在.d.ts文件中定义。
+如果你熟悉 C / C ++，你可以认为这些是.h文件。
+让我们来看几个例子。
+
+环境模块:  
+
+在Node.js中，大多数任务是通过加载一个或多个模块来完成的。
+我们可以使用顶级导出声明在每个模块的自己的.d.ts文件中定义每个模块，但是将它们写为一个较大的.d.ts文件更方便。
+
+我们可以在每个模块自己的.d.ts文件中用顶级导出声明定义每个模块，但更方便的是将它们写为一个较大的.d.ts文件。
+
+为此，我们使用类似于 ambient命名空间的构造，但是我们使用 module关键字和模块的引用名称，以便稍后导入。例如：
+
+
+node.d.ts (简化的摘抄)
+
+```ts
+    declare module "url" {
+        export interface Url {
+            protocol?: string;
+            hostname?: string;
+            pathname?: string;
+        }
+        export function parse(urlStr: string, parseQueryString?, slashesDenoteHost?): Url;
+    }
+    declare module "path" {
+        export function normalize(p: string): string;
+        export function join(...paths: any[]): string;
+        export var sep: string;
+    }
+``` 
+
+现在我们可以 /// <reference> node.d.ts 然后加载模块使用 import url = require("url");
+
+```ts
+    /// <reference path="node.d.ts"/>
+    import * as URL from "url";
+    let myUrl = URL.parse("http://www.typescriptlang.org");
+``` 
+
+
+
+速记环境模块:  
+
+如果你不想花时间在使用新模块之前写出声明，可以使用简写声明快速开始。
+
+
+declarations.d.ts
+
+```ts
+    declare module "hot-new-module";
+``` 
+从速记模块导入的所有内容都将具有 any类型。
+
+```ts
+    import x, {y} from "hot-new-module";
+    x(y);
+``` 
+
+通配符模块声明:
+
+
+某些模块加载程序 (如 SystemJS和 AMD) 允许导入非JavaScript内容。
+
+这些通常使用前缀或后缀来指示特殊加载语义。
+
+通配符模块声明可用于覆盖这些情况。
+
+
+```ts
+    declare module "*!text" {
+        const content: string;
+        export default content;
+    }
+    // Some do it the other way around.
+    declare module "json!*" {
+        const value: any;
+        export default value;
+    }
+``` 
+
+
+现在您可以导入匹配 "*!text" 或 "json!* 的内容。
+
+
+```ts
+    import fileContent from "./xyz.txt!text";
+    import data from "json!http://example.com/data.json";
+    console.log(data, fileContent);
+``` 
+
+
+UMD 模块
+
+一些库设计为在许多模块加载器中使用，或者没有模块加载(全局变量)。
+这些称为 UMD或 同构模块。
+
+
+
+http://isomorphic.net/
+
+同构 JavaScript  
+Isomorphic JavaScript应用程序是可以运行客户端和服务器端的JavaScript应用程序。 后端和前端共享相同的代码。
+
+http://insights.thedevelopmentfactory.com/isomorphic-javascript-and-the-future-of-web-applications/
 
 
 
 
+```ts
+``` 
 
 
 
+```ts
+``` 
 
 
+```ts
+``` 
 
-
-
-
-
-
-
-
-
-
-
-
-
+```ts
+``` 
 
 
 
@@ -407,10 +655,12 @@ Native ECMAScript 2015 modules SimpleModule.js
 
 
 
+```ts
+``` 
 
 
-
-
+```ts
+``` 
 
 
 
