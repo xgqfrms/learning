@@ -219,22 +219,72 @@ MyTestPage.html (摘抄/节选)
     <script src="Test.js" type="text/javascript" />
 ``` 
 
+别名:  
+
+你可以简化使用命名空间的另一种方法是使用 import q = x.y.z 为常用对象创建较短的名称。
+不要混淆与 import x = require("name") 语法用于加载模块，此语法简单地为指定的符号创建别名。
+你可以对任何种类的标识符使用这些类型的 imports（通常称为别名），包括从模块import创建的对象。
 
 ```ts
+    namespace Shapes {
+        export namespace Polygons {
+            export class Triangle { }
+            export class Square { }
+        }
+    }
+
+    import polygons = Shapes.Polygons;
+    let sq = new polygons.Square(); // 与 'new Shapes.Polygons.Square()' 一样
 ``` 
 
+注意，我们不使用 require关键字;
+而是直接从我们要导入的符号的限定名称中分配。
+这类似于使用 var，但也适用于导入符号的类型和命名空间含义。
+重要的是，对于值，import是与原始符号的不同引用，因此对别名 var的更改不会反映在原始变量中。
 
+
+工作与其他JavaScript库:  
+
+为了描述不是用TypeScript编写的库的形状，我们需要声明库公开/暴露的API。
+因为大多数JavaScript库只暴露了一些顶级对象，所以命名空间是表示它们的好方法。
+
+我们调用没有定义一个“ambient/环境”实现的声明。
+通常这些是在 .d.ts文件中定义的。
+如果你熟悉 C/C++，你可以认为这些是.h文件。让我们来看几个例子。
+
+
+环境命名空间:  
+
+流行库 D3在称为 d3的全局对象中定义其功能。
+因为这个库是通过 &lt;script&gt; 标签(而不是模块加载器)加载，它的声明使用命名空间来定义它的形状。
+为了让TypeScript编译器看到这种形状，我们使用了一个ambient命名空间声明。
+例如，我们可以开始写如下：
+
+
+
+D3.d.ts (简化的摘抄)
 
 ```ts
+    declare namespace D3 {
+        export interface Selectors {
+            select: {
+                (selector: string): Selection;
+                (element: EventTarget): Selection;
+            };
+        }
+
+        export interface Event {
+            x: number;
+            y: number;
+        }
+
+        export interface Base extends Selectors {
+            event: Event;
+        }
+    }
+
+    declare var d3: D3.Base;
 ``` 
-
-
-
-
-
-
-
-
 
 
 
