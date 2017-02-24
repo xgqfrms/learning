@@ -79,33 +79,101 @@ ZipCodeValidator.ts
     export { ZipCodeValidator as mainValidator };
 ``` 
 
+
+重新导出:
+
+通常模块扩展/继承其他模块，并部分暴露其某些功能。一个重新导出不会在本地导入，或引入本地变量。
+
+ParseIntBasedZipCodeValidator.ts
+
+```ts
+    export class ParseIntBasedZipCodeValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && parseInt(s).toString() === s;
+        }
+    }
+
+    // 导出原始的验证器，但将其重命名
+    export {ZipCodeValidator as RegExpBasedZipCodeValidator} from "./ZipCodeValidator";
+``` 
+
+
+或者，一个模块可以包装一个或多个模块，并合并其所有导出,使用 export * from "module" 语法。
+
+AllValidators.ts
+
+```ts
+    export * from "./StringValidator"; 
+    // exports interface 'StringValidator'
+
+    export * from "./LettersOnlyValidator"; 
+    // exports class 'LettersOnlyValidator'
+
+    export * from "./ZipCodeValidator";  
+    // exports class 'ZipCodeValidator'
+``` 
+
+Import: 
+
+
+导入就像从一个模块导出一样简单。导入一个导出的声明通过使用下面的 import形式之一来完成：
+
+
+从一个模块导入单个导出:  
+
+```ts
+    import { ZipCodeValidator } from "./ZipCodeValidator";
+
+    let myValidator = new ZipCodeValidator();
+``` 
+
+导入也可以重命名:  
+
+```ts
+    import { ZipCodeValidator as ZCV } from "./ZipCodeValidator";
+    let myValidator = new ZCV();
+``` 
+
+将整个模块导入单个变量，并使用它访问模块所有导出:  
+
+```ts
+    import * as validator from "./ZipCodeValidator";
+    let myValidator = new validator.ZipCodeValidator();
+``` 
+
+
+导入一个模块仅用于副作用:  
+
+虽然不推荐的做法，一些模块设置了一些可以被其他模块使用的全局状态。
+这些模块可能没有任何出口，或消费者对他们的任何出口不感兴趣。要导入这些模块，请使用：
+
+
+```ts
+    import "./my-module.js";
+``` 
+
+默认导出:  
+
+default
+
+
+
+
+
 ```ts
 ``` 
 
 
 
 
-
 ```ts
+
 ``` 
 
 
 
 ```ts
 ``` 
-
-
-
-```ts
-``` 
-
-
-```ts
-``` 
-
-
-
-
 
 
 
@@ -120,5 +188,23 @@ ZipCodeValidator.ts
 
 
 
+```ts
+
+``` 
+
+
+
+```ts
+``` 
+
+
+```ts
+
+``` 
+
+
+
+```ts
+``` 
 
 
