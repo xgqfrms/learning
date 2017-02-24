@@ -32,30 +32,51 @@ https://www.typescriptlang.org/docs/handbook/modules.html#import
 JavaScript中使用的众所周知的模块加载器是用于 Node.js 的 CommonJS模块加载器和 Web应用程序的 require.js。
 
 
+在TypeScript中，与ECMAScript 2015中一样，包含一个顶级 import 或 export 的任何文件都被视为模块。
 
 
 
+Export:  
+
+导出一个声明:  
+
+可以通过添加 export关键字来导出任何声明 (例如变量，函数，类，类型别名或接口)。
 
 
-
-
-
-
-
+Validation.ts
 
 ```ts
-
+    export interface StringValidator {
+        isAcceptable(s: string): boolean;
+    }
 ``` 
 
+ZipCodeValidator.ts
+
 ```ts
+    // 导出一个声明
+    export const numberRegexp = /^[0-9]+$/;
+    export class ZipCodeValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && numberRegexp.test(s);
+        }
+    }
 ``` 
 
+导出语句:  
 
-
+当导出需要为消费者重命名时，导出语句很方便，所以上面的例子可以写成：
 
 
 ```ts
-
+    class ZipCodeValidator implements StringValidator {
+        isAcceptable(s: string) {
+            return s.length === 5 && numberRegexp.test(s);
+        }
+    }
+    // 导出语句
+    export { ZipCodeValidator };
+    export { ZipCodeValidator as mainValidator };
 ``` 
 
 ```ts
