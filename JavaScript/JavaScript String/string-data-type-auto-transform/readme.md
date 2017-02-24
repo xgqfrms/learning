@@ -75,6 +75,10 @@ In 2015, designer Frances Berriman and Google Chrome engineer Alex Russell coine
 
 https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/
 
+https://en.wikipedia.org/wiki/Progressive_web_app
+
+https://developers.google.com/web/progressive-web-apps/
+
 
 ## PSA: Service Workers are Coming
 
@@ -85,8 +89,37 @@ https://github.com/w3c/ServiceWorker/blob/master/explainer.md
 https://blog.chromium.org/2014/12/chrome-40-beta-powerful-offline-and.html
 
 
+## 浏览器的同源策略
+
+https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy
+
+https://html.spec.whatwg.org/multipage/browsers.html#concept-origin
+
+https://heycam.github.io/webidl/#securityerror  
+https://heycam.github.io/webidl/#dfn-DOMException  
+
+https://html.spec.whatwg.org/multipage/browsers.html#dom-document-domain
+
+https://url.spec.whatwg.org/#concept-url-scheme
 
 
+## URL
+
+https://url.spec.whatwg.org/#concept-url-scheme
+
+https://url.spec.whatwg.org/#urls
+
+https://url.spec.whatwg.org/#url-representation
+
+https://url.spec.whatwg.org/#url-miscellaneous
 
 
+scheme  port
+"ftp"   21
+"file"  
+"gopher"    70
+"http"  80
+"https" 443
+"ws"    80
+"wss"   443
 
