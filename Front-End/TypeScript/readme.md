@@ -120,6 +120,16 @@ https://en.wikipedia.org/wiki/Mixin
 
 
 
+## Namespaces and Modules
+
+https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+
+
+https://www.typescriptlang.org/docs/handbook/namespaces.html
+
+
+https://www.typescriptlang.org/docs/handbook/modules.html
+
 
 
 
