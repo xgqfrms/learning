@@ -139,3 +139,48 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 // 1:"beta" => 1:"copy"
 
 copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。
+
+
+
+http://javascript.ruanyifeng.com/grammar/conversion.html#toc0
+
+数据类型转换
+
+当JavaScript遇到预期为布尔值的地方（比如if语句的条件部分），就会将非布尔值的参数自动转换为布尔值。
+
+当JavaScript遇到预期为字符串的地方，就会将非字符串的数据自动转为字符串。系统内部会自动调用String函数。
+
+字符串的自动转换，主要发生在加法运算时。当一个值为字符串，另一个值为非字符串，则后者转为字符串。
+
+
+当JavaScript遇到预期为数值的地方，就会将参数值自动转换为数值。系统内部会自动调用Number函数。
+
+除了加法运算符有可能把运算子转为字符串，其他运算符都会把运算子自动转成数值。
+
+
+http://javascript.ruanyifeng.com/nodejs/module.html
+
+
+CommonJS 规范
+
+AMD 规范与CommonJS 规范的兼容性
+
+
+
+## Namespaces and Modules
+
+https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+
+
+https://www.typescriptlang.org/docs/handbook/namespaces.html
+
+
+https://www.typescriptlang.org/docs/handbook/modules.html
+
+
+
+
+
+
+
+
