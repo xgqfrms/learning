@@ -154,20 +154,29 @@ Import:
 
 默认导出:  
 
-default
+
+每个模块可以选择导出一个 default导出。
+默认导出使用关键字 default标记; 并且每个模块只能有一个默认导出。
+default 导出使用一个不同的导入形式导入。
+
+default 导出真的很方便。
+
+例如，像 JQuery这样的库可能默认导出 jQuery或 $，我们也可能导入在名称 $或 jQuery下。
 
 
-
-
+JQuery.d.ts
 
 ```ts
+    declare let $: JQuery;
+    export default $;
 ``` 
 
 
-
+App.ts
 
 ```ts
-
+    import $ from "JQuery";
+    $("button.continue").html( "Next Step..." );
 ``` 
 
 
