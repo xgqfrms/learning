@@ -280,6 +280,15 @@ Test.ts
 ``` 
 
 
+模块代码生成:  
+
+根据编译期间指定的模块目标，编译器将为 Node.js (CommonJS), require.js (AMD), 同构 (UMD), SystemJS, 或 ECMAScript 2015 native modules (ES6) 模块加载系统生成相应的代码。
+
+
+有关生成代码中定义，要求和寄存器调用的更多信息，请参阅每个模块加载程序的文档。
+
+
+
 
 ```ts
 ``` 
