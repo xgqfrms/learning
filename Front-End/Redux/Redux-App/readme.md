@@ -35,5 +35,8 @@ https://learnredux.com/account
 
 
 
+https://egghead.io/courses/getting-started-with-redux
+
+
 
 

@@ -620,18 +620,110 @@ UMD 模块
 这些称为 UMD或 同构模块。
 
 
+```notes
+    同构 JavaScript  
 
-http://isomorphic.net/
+    http://isomorphic.net/
 
-同构 JavaScript  
-Isomorphic JavaScript应用程序是可以运行客户端和服务器端的JavaScript应用程序。 后端和前端共享相同的代码。
-
-http://insights.thedevelopmentfactory.com/isomorphic-javascript-and-the-future-of-web-applications/
+    Isomorphic JavaScript应用程序是可以运行客户端和服务器端的JavaScript应用程序。 后端和前端共享相同的代码。
+``` 
 
 
+
+math-lib.d.ts
 
 
 ```ts
+    export const isPrime(x: number): boolean;
+    export as namespace mathLib;
+``` 
+
+然后可以将库用作模块中的导入：
+
+```ts
+    import { isPrime } from "math-lib";
+    isPrime(2);
+    mathLib.isPrime(2); 
+    // //错误：不能从一个模块的内部使用全局定义
+``` 
+
+它也可以用作一个全局变量，但只在脚本内。(脚本是没有导入或导出的文件。)
+
+```ts
+    mathLib.isPrime(2);
+``` 
+
+
+结构化模块的指导:  
+
+您的模块的消费者在使用您导出的东西时应该尽可能少的摩擦。
+添加太多层次的嵌套往往是麻烦的，所以仔细思考你想要如何构造事物。
+
+从模块导出命名空间是添加太多嵌套层的示例。
+虽然命名空间有时有它们的用途，但是当使用模块时，它们增加了一个额外的间接层。
+这可能很快成为用户的痛点，通常是不必要的。
+
+导出类上的静态方法有一个类似的问题 - 类本身添加了一层嵌套。
+除非它以明显有用的方式增加表达力或意图，否则可以考虑简单地导出帮助函数。
+
+
+如果您只导出单个 class 或 function，请使用export default
+
+
+正如“在顶层附近导出”减少了模块的消费者的摩擦，所以引入默认导出。
+如果模块的主要目的是容纳一个特定导出，则应考虑将其导出为默认导出。
+这使得导入和实际使用导入更容易一些。
+例如：
+
+
+MyClass.ts
+
+```ts
+    export default class SomeType {
+        constructor() { ... }
+    }
+``` 
+
+MyFunc.ts
+
+```ts
+    export default function getThing() { return "thing"; }
+``` 
+
+Consumer.ts
+
+```ts
+    import t from "./MyClass";
+    import f from "./MyFunc";
+    let x = new t();
+    console.log(f());
+``` 
+
+这对消费者是最佳的。
+他们可以为你的类型命名任何他们想要的 (t 在这个情况下)，并不需要做任何过多的 dotting/点击 来找到你的对象。
+
+
+如果您要导出多个对象，请将它们全部置于顶级
+
+
+MyThings.ts
+
+```ts
+    export class SomeType { /* ... */ }
+    export function someFunc() { /* ... */ }
+``` 
+
+反过来/相反，在导入时：
+
+
+显式列出导入的名称
+
+Consumer.ts
+
+```ts
+    import { SomeType, someFunc } from "./MyThings";
+    let x = new SomeType();
+    let y = someFunc();
 ``` 
 
 
@@ -640,8 +732,10 @@ http://insights.thedevelopmentfactory.com/isomorphic-javascript-and-the-future-o
 ``` 
 
 
+
 ```ts
 ``` 
+
 
 ```ts
 ``` 
