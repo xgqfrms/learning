@@ -1,0 +1,29 @@
+/* old clearfix */
+
+.clearfix:after {
+    overflow: auto;
+}
+
+
+/* new clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* new clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* old clearfix */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,4 +1,4 @@
-<!-- display: table -->
+# display: table;
 
 
 
@@ -7,9 +7,16 @@
 
 http://www.w3schools.com/css/css_float.asp
 
+https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
+
+
+
+
+```css
+
 /* old clearfix */
 
-.clearfix {
+.clearfix:after {
     overflow: auto;
 }
 
@@ -23,9 +30,9 @@ http://www.w3schools.com/css/css_float.asp
 }
 
 
-## display: table;  
+  
 
-
+``` 
 
 
 

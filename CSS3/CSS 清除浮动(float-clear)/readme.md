@@ -107,9 +107,21 @@ https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
 
 清除浮动
 
-
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear
 
 
+/* new clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
+/* old clearfix */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
