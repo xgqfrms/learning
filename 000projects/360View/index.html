@@ -1,0 +1,34 @@
+<!DOCTYPE html">
+<html>
+<head>
+<meta charset="utf-8" />
+<title>360 View</title>
+<style type="text/css">
+    body {
+        margin:0;
+    }
+    #myCar {
+        width:800px;
+        height:600px;
+        border:1px solid #ddd;
+        overflow:hidden;
+        cursor: move;
+    }
+</style>
+
+<script src="js/jquery.js"></script>
+<script src="js/3deye.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#myCar").vc3dEye({
+        imagePath:"images/",
+        totalImages:51,
+        imageExtension:"png"
+    });
+});
+</script>
+</head>
+<body>
+<div id="myCar"></div>
+</body>
+</html>

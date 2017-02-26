@@ -532,15 +532,48 @@ Don't use Array.forEach, use for() instead
 function test(){
     let name="xyz";
     let friends = ["AAA","BBB","CCC"];
-    this.forEach(friends){
+    friends.forEach(function(name){
         console.log(this.name);
-    }
+        console.log(name);
+    });
+}
+
+test();
+
+
+function test(){
+    let name="xyz";
+    let friends = ["AAA","BBB","CCC"];
+    friends.forEach(function(name){
+        console.log(this.name);
+        console.log(name);
+    }, this);
+}
+
+test();
+
+
+function test(){
+    let name="xyz";
+    let xthis = this;
+    let friends = ["AAA","BBB","CCC"];
+    friends.forEach(function(name){
+        console.log(this.name);
+        console.log(xthis.name);
+        console.log(name);
+    }, xthis);
+    console.log(xthis.name);
+    console.log(this.name);
 }
 
 test();
 
 
 
+
+Array.prototype.map()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 
 
@@ -581,6 +614,26 @@ https://react-dnd.github.io/react-dnd/
 https://github.com/react-dnd/react-dnd
 
 https://react-dnd.github.io/react-dnd/examples-chessboard-tutorial-app.html
+
+
+
+
+
+
+froEach
+
+
+map
+
+
+
+string 
+
+replace
+
+
+
+
 
 
 
