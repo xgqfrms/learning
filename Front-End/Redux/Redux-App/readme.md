@@ -71,10 +71,10 @@ http://javascript.ruanyifeng.com/nodejs/module.html#toc4
 
 ## how to convert a string to object javascript
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 
 
-
-
+http://www.2ality.com/2011/04/javascript-converting-any-value-to.html
 
 
 
