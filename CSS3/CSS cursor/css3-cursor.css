@@ -1,0 +1,14 @@
+.foo  {
+    cursor:  auto;
+    cursor:  url(cursor1.png) 4 12, auto;
+}
+
+.bar  {
+    cursor:  pointer;
+    cursor:  url(cursor2.png) 2 2, pointer;
+} 
+
+/* 
+fallsback onto 'auto' and 'pointer' in IE, 
+but must be set separately 
+*/
