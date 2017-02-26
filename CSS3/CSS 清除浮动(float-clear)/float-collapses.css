@@ -1,0 +1,46 @@
+/*float-collapses*/
+
+.el-1,
+.el-2 {
+    float: left;
+    width: 50%;
+}
+
+.el-1 {
+    /* styles for .el-1 here */
+}
+
+.el-2 {
+    /* styles for .el-2 here */
+}
+
+.main {
+    /* styles for .main here */
+}
+
+pre:first-child{
+    background-color: #000;
+    color: #0f0;
+    overflow-x: hidden;
+}
+pre:last-child{
+    background-color: #f0f;
+    color: #0f0;
+    overflow-x: hidden;
+}
+
+.main>pre{
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* new clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+

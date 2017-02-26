@@ -21,7 +21,6 @@
 }
 
 /* old clearfix */
-
 .clearfix:after {
     content: "";
     display: block;
