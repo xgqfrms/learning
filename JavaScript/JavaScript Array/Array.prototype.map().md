@@ -95,5 +95,5 @@ Array.from(foo);
 // ["a", "b", "c", "d", "e", "f", "g"]
 
 
-Array.prototype.from()
+Array.from()
 
