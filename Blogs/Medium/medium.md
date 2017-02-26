@@ -36,6 +36,6 @@ https://ng2-app.xgqfrms.xyz/callback/medium
 
 
 
-
+https://cdn.xgqfrms.xyz/logo/icon.png
 
 
