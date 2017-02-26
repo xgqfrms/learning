@@ -37,6 +37,49 @@ https://learnredux.com/account
 
 https://egghead.io/courses/getting-started-with-redux
 
+https://egghead.io/lessons/react-react-fundamentals-development-environment-setup
+
+
+https://online.reacttraining.com/courses/50507/lectures/806187
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://try.jquery.com/levels/3/challenges/1
+
+
+
+https://github.com/FrontEndRoad/HTML5-FAQ
+
+
+http://javascript.ruanyifeng.com/nodejs/module.html#toc4
+
+
+
+
+
+## how to convert a string to object javascript
+
+
+
+
+
+
+
+
+
+
 
 
 

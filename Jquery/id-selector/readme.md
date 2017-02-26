@@ -89,7 +89,6 @@ http://stackoverflow.com/questions/3239598/how-can-i-get-the-id-of-an-element-us
 
 
 
-
 https://www.w3.org/TR/SRI/
 
 Subresource Integrity
