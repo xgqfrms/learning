@@ -39,3 +39,9 @@ jspm_packages
 # .exe
 .exe
 
+# .sass-cache
+.sass-cache
+
+# .css.map
+.css.map
+.map
