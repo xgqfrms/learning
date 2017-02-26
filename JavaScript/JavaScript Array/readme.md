@@ -516,3 +516,44 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 
+
+
+
+
+
+
+
+
+https://coderwall.com/p/kvzbpa/don-t-use-array-foreach-use-for-instead
+
+Don't use Array.forEach, use for() instead
+
+
+function test(){
+    let name="xyz";
+    let friends = ["AAA","BBB","CCC"];
+    this.forEach(friends){
+        console.log(this.name);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
