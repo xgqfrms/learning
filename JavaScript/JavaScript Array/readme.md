@@ -544,15 +544,74 @@ test();
 
 
 
+## Flux
+
+使用单向数据流的React的
+
+一个应用程序架构用于使用单向数据流的React。
+
+
+https://facebook.github.io/flux/docs/in-depth-overview.html#content
+
+Flux应用程序中的数据在单个方向上流动：
+
+
+视图可以导致新的动作通过系统传播以响应用户交互：
+
+
+所有数据作为中心集线器通过调度器。
+动作在动作创建者方法中提供给调度器，并且大多数情况下源自用户与视图的交互。
+
+
+
+https://github.com/facebook/flux/tree/master/examples
+
+https://github.com/facebook/flux/tree/master/examples/flux-concepts
 
 
 
 
 
+React DnD
+Drag and Drop for React
+
+https://react-dnd.github.io/react-dnd/
+
+
+https://github.com/react-dnd/react-dnd
+
+https://react-dnd.github.io/react-dnd/examples-chessboard-tutorial-app.html
 
 
 
 
+CSS3 Animations(@keyframes)
+
+https://codepen.io/xgqfrms/full/pevGrG/
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+
+盒模型
+
+
+在一个文档中，每个元素都被表示为一个矩形的盒子。
+确定尺寸, 属性 - 像它的颜色，背景，边框方面 - 和这些盒子的位置是渲染引擎的目标。
+
+在CSS中，使用标准盒个模型描述这些矩形盒子中的每一个。这个模型描述了元素所占空间的内容。每个盒子有四个边：外边距边, 边框边, 内填充边 与 内容边。 
+
+
+外边距塌陷
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+
+块的顶部外边距和底部外边距有时被组合(折叠)为单个外边距，其大小是组合到其中的最大外边距，这种行为称为外边距塌陷(margin collapsing)。
+
+
+
+清除浮动
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear
 
 
 
