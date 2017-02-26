@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+    /*background-color: rgba(0,0,0,0.9);*/
+}
+.loading-box{
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+    width: 300px;
+    height: 88px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.ball{
+    /*min-width: 66px;
+    max-width: 88px;
+    min-height: 66px;
+    max-height: 88px;*/
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    animation: 
+        bounce 0.7s infinite alternate,
+        fade 1s infinite;
+}
+@keyframes bounce{
+    from { bottom: 11px;}
+    /*bottom === 88px -11px */
+    to { bottom: 55px;}
+    /*bottom === 88px - 11px - 22px*/
+    /*to { top: 11px;}*/
+}
+@keyframes fade{
+    0% {background: red;}
+    25% {background: green;}
+    50% {background: blue;}
+    75% {background: purple;}
+    100% {background: yellow;}
+}
+.ball-bg01{
+    left: calc(0%);
+    animation-delay: 0ms;
+}
+.ball-bg02{
+    left: calc(25% - 11px);
+    animation-delay: 100ms;
+}
+.ball-bg03{
+    left: calc(50% - 11px);
+    animation-delay: 200ms;
+}
+.ball-bg04{
+    left: calc(75% - 11px);
+    animation-delay: 300ms;
+}
+.ball-bg05{
+    left: calc(100% - 22px);
+    animation-delay: 400ms;
+}
