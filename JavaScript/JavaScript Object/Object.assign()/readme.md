@@ -20,7 +20,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 
-
+http://www.ecma-international.org/ecma-262/6.0/#sec-object.assign
 
 
 https://googlechrome.github.io/samples/object-assign-es6/
@@ -32,6 +32,85 @@ https://googlechrome.github.io/samples/object-assign-es6/
 
 
 
+
+
+
+
+https://googlechrome.github.io/samples/object-assign-es6/
+
+
+http://www.2ality.com/2014/01/object-assign.html
+
+https://github.com/sindresorhus/object-assign
+
+
+https://www.npmjs.com/package/object-assign
+
+
+
+https://www.npmjs.com/package/es6-object-assign
+
+
+## Angular 2 
+
+
+https://ultimateangular.com/
+
+
+https://github.com/ultimateangular
+
+https://github.com/UltimateAngular/angular-pro-src
+
+
+
+https://medium.com/statuscode/functional-programming-for-the-dysfunctional-756531f5b9b4#.f4i6oar07
+
+
+
+https://ultimateangular.com/typescript-fundamentals
+
+
+https://ultimateangular.com/angular-2-fundamentals
+
+
+
+
+
+
+http://www.2ality.com/2014/01/object-assign.html
+
+http://www.2ality.com/2014/12/es6-oop.html
+
+http://www.2ality.com/search/label/javascript
+
+
+
+
+## redux & Object.assign()
+
+http://redux.js.org/docs/recipes/UsingObjectSpreadOperator.html
+
+
+
+https://egghead.io/lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread
+
+
+
+
+```js
+
+function todoApp(state = initialState, action) {
+  switch (action.type) {
+    case SET_VISIBILITY_FILTER:
+      return Object.assign({}, state, {
+        visibilityFilter: action.filter
+      })
+    default:
+      return state
+  }
+}
+
+``` 
 
 
 
