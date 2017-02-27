@@ -65,3 +65,224 @@ http://blog.csdn.net/v_july_v
 
 
 
+https://en.wikipedia.org/wiki/Sorting_algorithm
+
+
+
+3   Popular sorting algorithms
+    3.1 Simple sorts
+        3.1.1   Insertion sort
+        3.1.2   Selection sort
+    3.2 Efficient sorts
+        3.2.1   Merge sort
+        3.2.2   Heapsort
+        3.2.3   Quicksort
+    3.3 Bubble sort and variants
+        3.3.1   Bubble sort
+        3.3.2   Shellsort
+        3.3.3   Comb sort
+    3.4 Distribution sort
+        3.4.1   Counting sort
+        3.4.2   Bucket sort
+        3.4.3   Radix sort
+
+
+
+
+
+
+https://h3manth.com/javascript-sorting/
+
+
+
+```js
+let quicksort = function(arr) {
+    if(arr.length <= 1) return arr;
+    let pivot = Math.floor((arr.length -1)/2);
+    let val = arr[pivot], less = [], more = [];
+    arr.splice(pivot, 1);
+    arr.forEach(function(e,i,a){
+        e < val ? less.push(e) : more.push(e);
+    });
+    return (quicksort(less)).concat([val],quicksort(more))
+}
+
+let arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+quicksort(arr);
+
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 快速排序/分区交换排序
+
+https://www.nczonline.net/blog/2012/11/27/computer-science-in-javascript-quicksort/
+
+
+https://en.wikipedia.org/wiki/Quicksort
+
+https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
+
+
+
+
+```js
+Array.prototype.quick_sort = function() {
+    var len = this.length;
+    if (len <= 1)
+        return this.slice(0);
+    var left = [];
+    var right = [];
+    var mid = [this[0]];
+    for (var i = 1; i < len; i++)
+        if (this[i] < mid[0])
+            left.push(this[i]);
+        else
+            right.push(this[i]);
+    return left.quick_sort().concat(mid.concat(right.quick_sort()));
+};
+
+var arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+arr = arr.quick_sort();
+for (i = 0; i < arr.length; i++)
+    document.body.innerHTML += arr[i] + " ";
+document.body.innerHTML += "<br>";
+``` 
+
+
+
+## Bubble Sort  
+
+https://h3manth.com/javascript-sorting/
+
+
+```js
+
+let compare = (n1, n2) => n1 - n2;
+
+let bubbleSort = (arr, cmp = compare) => {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j > 0; j--) {
+            if (cmp(arr[j], arr[j - 1]) < 0) {
+                [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+            }
+        }
+    }
+    return arr;
+};
+
+
+let arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+bubbleSort(arr);
+
+``` 
+
+
+
+
+## Insertion Sort  
+
+https://h3manth.com/javascript-sorting/
+
+
+```js
+
+let insertionSort = (arr) => {
+    for (let i = 0; i < a.length; i++) {
+        let toCmp = arr[i];
+        for (let j = i; j > 0 && toCmp < a[j - 1]; j--)
+            arr[j] = a[j - 1];
+        arr[j] = toCmp;
+    }
+    return arr;
+}
+
+let arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+insertionSort(arr);
+
+``` 
+
+
+
+## Selection Sort  
+
+https://h3manth.com/javascript-sorting/
+
+
+```js
+
+var selectionSort = function (arr) {
+    let i,m,j;
+    for (i = -1; ++i < a.length;) {
+        for (m = j = i; ++j < a.length;) {
+            if (arr[m] > arr[j]) m = j;
+        }
+        [arr[m], arr[i]] = [arr[i], arr[m]];
+    }
+    return arr;
+}
+
+let arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+selectionSort(arr);
+
+``` 
+
+
+
+
+
+
+## Merge Sort  
+
+https://h3manth.com/javascript-sorting/
+
+
+```js
+
+let mergeSort = (arr) => {
+    if (arr.length < 2) return arr;
+    let middle = parseInt(arr.length / 2),
+    left = arr.slice(0, middle),
+    right = arr.slice(middle);
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+let merge = (left, right) => {
+    let result = [];
+    while (left.length && right.length) {
+        left[0] <= right[0] ?
+        result.push(left.shift()) :
+        result.push(right.shift());
+    }
+    while (left.length) result.push(left.shift());
+    while (right.length) result.push(right.shift());
+    return result;
+}
+
+let arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+insertionSort(arr);
+
+``` 
+
+
+
+
+
+
+
+
+
+
+
