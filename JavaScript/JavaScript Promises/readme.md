@@ -740,3 +740,9 @@ http://www.webhek.com/misc/responsive-web-design
 
 
 
+
+https://segmentfault.com/a/1190000002395343
+
+
+https://github.com/stefanpenner/es6-promise
+
