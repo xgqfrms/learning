@@ -97,3 +97,192 @@ Array.from(foo);
 
 Array.from()
 
+
+
+
+
+Object.keys(Array.apply(null,{length:100}));
+
+
+
+
+Array.apply(null,{length:10})
+
+// [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
+
+
+Object.keys(Array.apply(null,{length:10}));
+
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
+
+
+
+Object.keys(Array.apply(null,{length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Object.keys(Array.apply(0,{length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Object.keys(Array.apply(1,{length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Object.keys(Array.apply(Number,{length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Object.keys(Array.apply(true, {length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Object.keys(Array.apply({length:10}));
+// []
+
+
+Object.keys(Array.apply(NaN,{length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
+
+
+
+Object.keys(Array.from({length:10}));
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
+Array.from({length:10});
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
+
+
+Array.from(Array(10).keys()) 
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+[...Array(10).keys()]
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+Number.prototype[Symbol.iterator] = function() {
+    return {
+        v: 0,
+        e: this,
+        next() {
+            return {
+                value: this.v++,
+                done: this.v > this.e
+            }
+        }
+    }
+}
+
+[...100]
+
+
+递归
+
+function reduce(prev, curr) {
+    if (curr >= 100) {
+        return prev
+    }
+    prev.push(curr)
+    return reduce(prev, curr + 1)
+}
+
+reduce([], 0);
+
+
+
+Object.keys(new Array(10))
+// []
+Object.keys(new Int8Array(10))
+// ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
+
+
+
+
+
+(1<<24).toString(2)
+"1000000000000000000000000"
+(1<<24)
+16777216
+(1<<24).toString()
+"16777216"
+(1<<24).toString(1)
+
+
+toString() radix参数必须介于2和36之间
+
+(1<<24).toString(2)
+// "1000000000000000000000000"
+"1000000000000000000000000".length
+// 25
+(1<<24).toString(2).replace(/\d/g, '1111')
+// "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111".length
+// 100
+
+"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111".split('')
+// ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+
+"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111".split('').map((x, i) => i);
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+
+
+
+
+
+
+["1", "1", "1"].map((x, i) => i);
+
+
+
+
+
+https://www.zhihu.com/question/41493194
+
+
+如何不使用loop循环，创建一个长度为100的数组，并且每个元素的值等于它的下标？
+
+
+
+
+
+
+
+
+
+
+
+var test = (
+    function(a) {
+        console.log(`a = ${a}`);
+        console.log(`this.a = ${this.a}`);
+        this.a = a;
+        return function(b) {
+            console.log(`b = ${b}` );
+            console.log(`this.a = ${this.a}`);
+            return this.a + b;
+        }
+    } (function(a, b) {
+            console.log(`IIFE a = ${a}`);
+            console.log(`IIFE b = ${b}`);
+            return a;
+        }(1, 2))
+); 
+
+// IIFE a = 1
+// IIFE b = 2
+// a = 1
+// this.a = 1
+
+console.log(test(4)); //输出什么 ?
+
+test(4);
+// b = 4
+// this.a = 1
+// 5
+
+
+
+
+
