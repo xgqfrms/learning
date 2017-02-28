@@ -96,3 +96,36 @@ https://url.spec.whatwg.org/#constructors
 
 
 
+URL() 构造函数返回一个新创建的URL对象，表示由参数定义的URL。
+
+如果给定的基本URL或生成的URL不是有效的URL，则会抛出类型为SYNTAX_ERROR的DOMException。
+
+语法 
+url = new URL(urlString, [baseURLstring])
+url = new URL(urlString, baseURLobject)
+
+
+
+
+var a = new URL("/", "https://developer.mozilla.org"); 
+// Creates a URL pointing to 'https://developer.mozilla.org/'
+var b = new URL("https://developer.mozilla.org");      
+// Creates a URL pointing to 'https://developer.mozilla.org'
+var c = new URL('en-US/docs', b);                      
+// Creates a URL pointing to 'https://developer.mozilla.org/en-US/docs'
+var d = new URL('/en-US/docs', b);                     
+// Creates a URL pointing to 'https://developer.mozilla.org/en-US/docs'
+var f = new URL('/en-US/docs', d);                     
+// Creates a URL pointing to 'https://developer.mozilla.org/en-US/docs'
+var g = new URL('/en-US/docs', "https://developer.mozilla.org/fr-FR/toto");
+// Creates a URL pointing to 'https://developer.mozilla.org/en-US/docs'
+var h = new URL('/en-US/docs', a);                     
+// Creates a URL pointing to 'https://developer.mozilla.org/en-US/docs'
+var i = new URL('/en-US/docs', '');                    
+// Raises a SYNTAX ERROR exception as '/en-US/docs' is not valid
+var j = new URL('/en-US/docs');                        
+// Raises a SYNTAX ERROR exception as 'about:blank/en-US/docs' is not valid
+var k = new URL('http://www.example.com', 'https://developers.mozilla.com');
+// Creates a URL pointing to 'https://developer.mozilla.org'
+var l = new URL('http://www.example.com', b);          
+ // Creates a URL pointing to 'https://www.example.com'
