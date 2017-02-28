@@ -22,11 +22,11 @@ Object.keys(new Int8Array(10))
 
 http://www.cnblogs.com/yugege/p/5292612.html
 
+https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 
+Fisher-Yates shuffle是用于生成有限集合的随机置换的算法，该算法对该集合进行洗牌。
 
-
-
-
+https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming
 
 
 
@@ -42,6 +42,10 @@ http://www.cnblogs.com/yugege/p/5292612.html
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array
 
+
+Int8Array 类型数组表示二进制补码8位有符号整数的数组。
+内容初始化为0。
+ 一旦建立，你可以使用对象的方法引用数组中的元素，或使用标准数组索引语法( 即，使用括号注释)。
 
 
 
@@ -65,7 +69,7 @@ console.log(test.length);
 
 
 
-
+https://msdn.microsoft.com/en-us/library/br212462(v=vs.94).aspx
 
 
 
