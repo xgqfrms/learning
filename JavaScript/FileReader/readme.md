@@ -129,3 +129,22 @@ var k = new URL('http://www.example.com', 'https://developers.mozilla.com');
 // Creates a URL pointing to 'https://developer.mozilla.org'
 var l = new URL('http://www.example.com', b);          
  // Creates a URL pointing to 'https://www.example.com'
+
+
+
+
+
+
+
+
+
+
+
+
+
+正则表达式
+
+
+
+
+
