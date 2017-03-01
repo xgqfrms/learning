@@ -2,15 +2,39 @@
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments
+
+
+
+arguments 是一个类似数组的对象, 对应于传递给函数的参数。
 
 
 
 
+## 获取未知函数函数的参数信息 ？
 
 
+function test(a,b,c,d,e,f){
+    //
+}
 
+.toString 
+// 获取函数的参数
 
+test.toString();
+//"function test(a,b,c,d,e,f){
+    //
+}"
 
+.length
+// 获取函数的参数个数
+test.length;
+//6
+
+.name
+// 获取函数的参数名称
+
+???
 
 
 
@@ -56,6 +80,24 @@ setTimeout(function(){
     }
 }, 100);
 
+
+
+
+
+
+http://stackoverflow.com/questions/8361642/arguments-callee-is-deprecated-what-should-be-used-instead
+
+http://javascript.info/tutorial/arguments#arguments-callee
+
+http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
+
+
+http://stackoverflow.com/questions/103598/why-was-the-arguments-callee-caller-property-deprecated-in-javascript
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments
 
 
 
