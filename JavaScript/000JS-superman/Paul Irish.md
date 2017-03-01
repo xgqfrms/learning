@@ -37,7 +37,7 @@ https://devchat.tv/js-jabber/006-jsj-chrome-dev-tools-with-paul-irish
 
 
 
-
+https://github.com/paulirish
 
 
 
