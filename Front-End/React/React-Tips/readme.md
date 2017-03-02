@@ -79,6 +79,11 @@ https://babeljs.io/docs/plugins/transform-decorators/
 
 http://docs.ractivejs.org/0.8/decorators
 
+https://github.com/ractivejs/ractive
+
+
+
+
 
 
 https://www.youtube.com/watch?v=s3nfIzWI05I
@@ -87,6 +92,22 @@ https://www.youtube.com/watch?v=s3nfIzWI05I
 React Tip #3 - Autobinding in React with Decorators
 
 
+https://www.npmjs.com/package/core-decorators
+
+
+
+$ npm install --save-dev babel-plugin-transform-decorators
+
+
+$ npm install core-decorators --save
+
+
+
+
+
+## Meteor + React
+
+https://www.youtube.com/playlist?list=PLLnpHn493BHGGHRmdXip3GswwLWY9S6of
 
 
 

@@ -1,6 +1,8 @@
 # commenting engine  
 
 
+ctrl + ` === open commands line terminal
+
 $ npm start  
 
 $ npm dist

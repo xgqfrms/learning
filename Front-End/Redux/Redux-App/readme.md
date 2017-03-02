@@ -59,8 +59,16 @@ http://elijahmanor.com/talks/react-to-the-future/dist/#/
 
 
 
-http://try.jquery.com/levels/3/challenges/1
 
+
+
+
+
+
+
+
+
+http://try.jquery.com/levels/3/challenges/1
 
 
 https://github.com/FrontEndRoad/HTML5-FAQ
