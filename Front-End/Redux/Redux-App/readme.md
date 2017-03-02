@@ -92,5 +92,19 @@ http://www.2ality.com/2011/04/javascript-converting-any-value-to.html
 
 
 
+for(let item in window){
+    console.log(item);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
