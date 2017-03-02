@@ -84,6 +84,26 @@ https://www.flickr.com/services/api/
 http://code.flickr.net/
 
 
+
+
+https://purecss.io/
+
+https://github.com/yahoo/pure
+
+
+
+https://www.flickr.com/services/developer
+
+
+
+
+
+
+
+
+
+
+
 https://www.flickr.com/services/developer/api/
 
 
