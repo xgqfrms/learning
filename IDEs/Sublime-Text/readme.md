@@ -87,7 +87,14 @@ Keyboard shortcut === "Alt + Super(Win) + P"
 
 
 
+## Sublime
 
+https://packagecontrol.io/packages/HyperClick
+
+https://github.com/aziz/SublimeHyperClick
+
+
+https://sublimetextbook.com/
 
 
 

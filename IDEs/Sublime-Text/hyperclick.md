@@ -4,15 +4,6 @@
 https://leveluptutorials.com/tutorials/react-tips/quickly-navigating-components-with-hyperclick
 
 
-## Atom
-
-
-https://atom.io/packages/hyperclick
-
-
-https://packagecontrol.io/packages/HyperClick
-
-
 
 ## Sublime
 
