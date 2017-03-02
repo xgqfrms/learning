@@ -2,7 +2,6 @@
 
 
 
-REACT TIPS
 
 https://leveluptutorials.com/tutorials/react-tips/how-to-convert-components-to-functional-stateless-components
 
