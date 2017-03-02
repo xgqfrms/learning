@@ -69,5 +69,43 @@ https://developer.github.com/v3/#cross-origin-resource-sharing
 
 
 
+https://www.flickr.com/services/developer
+
+
+https://www.flickr.com/photos/146881831@N04/32385194563/in/dateposted-public/
+
+
+https://www.flickr.com/services/api/
+
+http://code.flickr.net/
+
+
+https://www.flickr.com/services/developer/api/
+
+
+
+Key:
+4b7e6324c567cc60ae1bbaea0e8c476f
+
+Secret:
+a7906d5aa16e1a6d
+
+
+https://www.flickr.com/people/xgqfrms/?rb=1
+
+
+https://www.flickr.com/photos/xgqfrms/
+
+
+
+
+https://www.flickr.com/services/apps/by/xgqfrms
+
+
+
+
+
+
+
 
 

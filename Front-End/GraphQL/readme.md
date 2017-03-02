@@ -96,11 +96,23 @@ https://libraries.io/api/github/xgqfrms/repositories?api_key=81f6dd633f0b9d0b99c
 
 
 
+http://graphql.org/
+
+https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html?utm_source=tuicool
+
+
+https://facebook.github.io/graphql/
+
+
+http://www.infoq.com/cn/news/2015/10/graphql-your-schema
+
+http://taobaofed.org/blog/2015/11/26/graphql-basics-server-implementation/
 
 
 
 
 
+https://www.fullstackreact.com/articles/react-create-class-vs-es6-class-components/
 
 
 

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>CORS</title>
 </head>
-<body onload="loadPhotos();">
+<body>
     <div id="photos">Loading photos...</div>
     <script>
         function loadPhotos() {
-            var api_key = 'xxxx';
+            var api_key = '4b7e6324c567cc60ae1bbaea0e8c476f';
             var method = 'GET';
             var url = 'https://api.flickr.com/services/rest/?' + 'method=flickr.people.getPublicPhotos&' + 'user_id=32951986%40N05&' + 'extras=url_q&format=json&nojsoncallback=1&' + 'api_key=' + api_key;
             var xhr = new XMLHttpRequest();
@@ -27,8 +27,8 @@
                     photosDiv.innerHTML = '';
                     var photos = data.photos.photo;
                     for (var i = 0; i < photos.length; i++) {
-                        var img=d ocument.createElement( 'img');
-                        img.src=p hotos[i].url_q;
+                        var img=document.createElement('img');
+                        img.src=photos[i].url_q;
                         photosDiv.appendChild(img);
                     }
                 } else {
@@ -37,6 +37,7 @@
             };
             xhr.send();
         }
+        window.onload = loadPhotos();
     </script>
 </body>
 </html>
