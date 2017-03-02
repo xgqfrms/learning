@@ -65,6 +65,13 @@ https://en.wikipedia.org/wiki/Decorator_pattern
 
 https://www.typescriptlang.org/docs/handbook/decorators.html
 
+https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators
+
+https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators
+
+
+
+
 https://github.com/wycats/javascript-decorators
 
 https://babeljs.io/docs/plugins/transform-decorators/
