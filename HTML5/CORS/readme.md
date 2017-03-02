@@ -68,6 +68,10 @@ https://developer.github.com/v3/#cross-origin-resource-sharing
 
 
 
+## flickr & cors
+
+
+
 
 https://www.flickr.com/services/developer
 
@@ -100,6 +104,59 @@ https://www.flickr.com/photos/xgqfrms/
 
 
 https://www.flickr.com/services/apps/by/xgqfrms
+
+
+
+
+
+https://leveluptutorials.com/tutorials/sketch-app-tutorials/series-introduction
+
+https://www.sketchapp.com/learn/
+
+https://www.youtube.com/user/LevelUpTuts
+
+https://www.youtube.com/channel/UCyU5wkjgQYGRB0hIHMwm2Sg
+
+
+REACT TIPS
+
+https://leveluptutorials.com/tutorials/react-tips/how-to-convert-components-to-functional-stateless-components
+
+https://leveluptutorials.com/tutorials/react-tips/quickly-navigating-components-with-hyperclick
+
+
+
+
+
+
+
+## particles.js
+
+https://github.com/VincentGarreau/particles.js/
+
+
+https://vincentgarreau.com/particles.js/
+
+
+https://vincentgarreau.com/particles.js/#snow
+
+
+
+## <frameset>
+
+https://www.w3.org/TR/html401/present/frames.html
+
+https://www.tutorialspoint.com/html/html_frames.htm
+
+https://www.w3schools.com/tags/tag_frameset.asp
+
+
+
+
+
+
+
+
 
 
 
