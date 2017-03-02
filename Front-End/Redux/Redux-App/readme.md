@@ -57,12 +57,12 @@ http://elijahmanor.com/talks/react-to-the-future/dist/#/
 
 
 
+## JavaScript library to make drawing animation on SVG
 
 
+https://github.com/maxwellito/vivus
 
-
-
-
+http://taobaofed.org/blog/2015/11/26/graphql-basics-server-implementation/
 
 
 

@@ -111,5 +111,22 @@ https://www.youtube.com/playlist?list=PLLnpHn493BHGGHRmdXip3GswwLWY9S6of
 
 
 
+https://www.youtube.com/watch?v=zPHerhks2Vg
+
+https://www.youtube.com/watch?v=s3nfIzWI05I
+
+
+
+https://www.youtube.com/watch?v=A71aqufiNtQ
+
+https://www.youtube.com/watch?annotation_id=annotation_3776896399&feature=iv&src_vid=PGUMRVowdv8&v=ZnRFerIP8aA
+
+
+https://www.youtube.com/watch?v=PGUMRVowdv8
+
+
+
+
+
 
 
