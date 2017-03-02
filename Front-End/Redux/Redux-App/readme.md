@@ -44,6 +44,9 @@ https://online.reacttraining.com/courses/50507/lectures/806187
 
 
 
+http://elijahmanor.com/talks/react-to-the-future/dist/#/
+
+
 
 
 

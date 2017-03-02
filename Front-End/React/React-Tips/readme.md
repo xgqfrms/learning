@@ -43,3 +43,44 @@ https://sublimetextbook.com/
 
 https://atom-china.org/t/hyperclick-js-hyperclick/1953
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## React .bind(this) & Decorators
+
+
+Decorators ? Typescript
+
+https://en.wikipedia.org/wiki/Decorator_pattern
+
+https://www.typescriptlang.org/docs/handbook/decorators.html
+
+https://github.com/wycats/javascript-decorators
+
+https://babeljs.io/docs/plugins/transform-decorators/
+
+http://docs.ractivejs.org/0.8/decorators
+
+
+
+https://www.youtube.com/watch?v=s3nfIzWI05I
+
+
+React Tip #3 - Autobinding in React with Decorators
+
+
+
+
+
+
+
