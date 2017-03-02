@@ -16,7 +16,6 @@ $ ng new ???-app
 
 > cd ???-app
 
-$ ng server -O
 $ ng server -o
 
 $ ng server --open
