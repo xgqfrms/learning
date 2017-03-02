@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="example">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS 1.x CRUD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl as main">
+<div class="container">
+    <h3>Address Book</h3>
+    <p>
+        <label>First Name</label>
+        <input type="text" ng-model="main.person.firstname " />
+        <label>Last Name</label>
+        <input type="text " ng-model="main.person.lastname" />
+        <label>City</label>
+        <input type="text" ng-model="main.person.city " />
+    </p>
+    <div class="row">
+        <div class="col-md-7">
+            <button class="btn btn-primary" ng-click="main.addClickHandler()">Save</button>
+            <button class="btn btn-default" ng-click="main.resetClickHandler()">Clear Form</button>
+        </div>
+        <div class="col-md-5">
+            <label>Search:</label>
+            <input type="text" ng-model="main.search" />
+        </div>
+    </div>
+    <p></p>
+    <div class="row" ng-show="main.addresses">
+        <table class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in main.addresses |filter:main.search ">
+                    <td ng-bind="item.firstname "></td>
+                    <td ng-bind="item.lastname "></td>
+                    <td ng-bind="item.city "></td>
+                    <td>
+                        <button class="btn btn-primary" ng-click="main.editClickHandler(item)">Edit</button>
+                        <button class="btn btn-danger" ng-click="main.removeClickHandler(item)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
