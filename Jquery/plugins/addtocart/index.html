@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="jQuery" />
+<meta name="description" content="Helloweba演示平台，演示XHTML、CSS、jquery、PHP案例和示例" />
+<title>演示：添加到购物车相关操作</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-md-3 col-xs-12"><h1 class="logo"><a href="https://www.xgqfrms.xyz" title="返回helloweba首页">helloweba</a></h1></div>
+        </div>
+    </header>
+    <div class="row main">
+        <div class="col-md-12">
+            <h2 class="top_title"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><a href="https://www.xgqfrms.xyz/">添加到购物车相关操作</a></h2>
+            
+            <div class="row">
+                <div class="col-md-3 col-xs-6 pro text-center">
+                    <div class="selectProduct">
+                        <img src="img/huawei_p9.jpg">
+                        <h4>华为 P9</h4>
+                        <a href="#0" class="btn btn-success add-button" data-price="3669.00" data-proid="1" data-proname="华为P9" data-proimg="img/huawei_p9.jpg">添加到购物车</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 pro text-center">
+                    <div class="selectProduct">
+                        <img src="img/Galaxy_s7.jpg">
+                        <h4>Galaxy S7</h4>
+                        <a href="#0" class="btn btn-success add-button" data-price="3559.99" data-proid="2" data-proname="Galaxy S7" data-proimg="img/Galaxy_s7.jpg">添加到购物车</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 pro text-center">
+                    <div class="selectProduct">
+                        <img src="img/iphone6.jpg">
+                        <h4>iPhone 6</h4>
+                         <a href="#0" class="btn btn-success add-button" data-price="3559.00" data-proid="3" data-proname="iPhone 6" data-proimg="img/iphone6.jpg">添加到购物车</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 pro text-center">
+                    <div class="selectProduct">
+                        <img src="img/iphone_se.jpg">
+                        <h4>iPhone SE</h4>
+                        <a href="#0" class="btn btn-success add-button" data-price="3449.99" data-proid="4" data-proname="iPhone SE" data-proimg="img/iphone_se.jpg">添加到购物车</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by xgqfrms<a href="https://www.xgqfrms.xyz">https://www.xgqfrms.xyz</a></p>
+    </footer>
+</div>
+
+<div class="cd-cart-container empty">
+    <a href="#0" class="cd-cart-trigger">
+        购物车
+        <ul class="count"> <!-- cart items count -->
+            <li>0</li>
+            <li>0</li>
+        </ul> <!-- .count -->
+    </a>
+
+    <div class="cd-cart">
+        <div class="wrapper">
+            <header>
+                <h2>购物车</h2>
+                <span class="undo">已删除 <a href="#0">恢复</a></span>
+            </header>
+            
+            <div class="body">
+                <ul>
+                    <!-- products added to the cart will be inserted here using JavaScript -->
+                </ul>
+            </div>
+
+            <footer>
+                <a href="#0" class="checkout"><em>结算 - ￥<span>0</span></em></a>
+            </footer>
+        </div>
+    </div> <!-- .cd-cart -->
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

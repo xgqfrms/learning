@@ -29,3 +29,76 @@ Tiny, invisible and simple, yet powerful and incredibly fast vanilla JavaScript 
 
 https://github.com/javve/list.js
 
+
+
+
+
+
+
+
+
+
+贝塞尔曲线之购物车动画效果
+
+
+https://gold.xitu.io/post/57e8d26d67f3560057a37022
+
+
+http://m.jb51.net/article/81936.htm
+
+
+http://codepen.io/hzxs1990225/pen/ogLaVp
+
+
+https://github.com/amibug/fly/tree/master/dist
+
+
+
+
+
+
+## jQuery实现加入购物车飞入动画效果
+
+
+http://www.helloweba.com/demo/fly/
+
+http://www.helloweba.com/view-blog-294.html
+
+
+## 添加到购物车相关操作
+
+
+http://www.helloweba.com/demo/2016/addtocart/
+
+
+
+## 使用jquery.qrcode生成二维码
+
+http://www.helloweba.com/view-blog-226.html
+
+
+
+## 基于jQuery+JSON的省市联动效果
+
+http://www.helloweba.com/view-blog-188.html
+
+
+
+## 简单的jQuery图片标注效果
+
+http://www.helloweba.com/view-blog-356.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
