@@ -101,8 +101,94 @@ for(let item in window){
 
 
 
+https://react-quickly-demo-bffyryjazc.now.sh/
 
 
+https://github.com/azat-co/react-quickly
+
+http://reactquickly.co/
+
+https://www.manning.com/books/react-quickly
+
+https://owlcarousel2.github.io/OwlCarousel2/
+
+
+carousel 旋转木马
+
+
+https://github.com/OwlCarousel2/OwlCarousel2
+
+
+https://github.com/OwlFonk/OwlCarousel
+
+
+
+
+## 
+
+https://www.w3.org/TR/html5/forms.html#the-form-element
+
+https://www.sitepoint.com/work-with-forms-in-react/
+
+
+
+
+onChange vs. onInput
+
+onSubmit
+
+onKeyUp
+onClick
+
+推荐 onChange === HTML5 input
+
+
+
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/Events/change
+
+
+change 事件被 &lt;input>, &lt;select>, 和&lt;textarea> 元素触发, 当用户提交对元素值的更改时。
+与 input 事件不同，change 事件不一定会对元素值的每次更改触发。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/Events/input
+
+此外， change 事件是相关的。change 触发的频率少于 input - 它只会在用户提交更改时触发。
+
+
+当 &lt;input> 或 &lt;textarea> 元素的值更改时，DOM input 事件会同步触发。
+(对于 type = checkbox 或 type = radio 的输入元素，当用户单击控件时，输入事件不会触发，因为value属性不会更改。) 
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/designMode$edit
+
+document.designMode 控制整个文档是否可编辑。
+有效值为 “on”和 “off”。根据规范，这个属性是默认为 “off”。
+
+
+const mode = document.designMode;
+
+document.designMode = "on";
+​document.designMode = "off";
+
+
+
+
+
+
+
+
+
+## React.JS - Component Life Cycle
+
+
+https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm
 
 
 
