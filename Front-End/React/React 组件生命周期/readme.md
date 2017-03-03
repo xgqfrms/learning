@@ -46,6 +46,21 @@ This method is called when a component is being removed from the DOM:
 
 
 
+https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/
+
+
+http://michelletilley.net/2014/02/24/creating-chrome-extensions-with-react.html
+
+https://github.com/BinaryMuse/chrome-fast-tab-switcher
+
+
+https://www.slideshare.net/EswaraP/react-flux-react-router-and-jest
+
+
+
+
+
+
 
 
 

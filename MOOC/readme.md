@@ -147,3 +147,25 @@ https://www.runoob.com/
 
 
 Window.getComputedStyle()
+
+
+
+
+
+
+
+
+https://thinkster.io/
+
+
+
+https://www.slideshare.net/search/slideshow?searchfrom=header&q=react
+
+
+
+
+
+
+
+
+
