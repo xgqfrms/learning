@@ -59,5 +59,33 @@ https://www.slideshare.net/EswaraP/react-flux-react-router-and-jest
 
 
 
+https://thinkster.io/tutorials/learn-angular-2
+
+https://thinkster.io/getting-started-with-react
+
+
+http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/
+
+http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/
+
+
+https://sivers.org/learn-js
+
+
+
+http://www.codevoila.com/post/57/reactjs-tutorial-react-component-lifecycle
+
+
+https://www.sitepoint.com/work-with-forms-in-react/
+
+http://www.codevoila.com/post/57/reactjs-tutorial-react-component-lifecycle
+
+
+http://www.codevoila.com/tag/react
+
+http://www.codevoila.com/tag/javascript
+
+
+
 
 

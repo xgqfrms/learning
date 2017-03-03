@@ -19,7 +19,3 @@ https://datatables.net/
 
 
 
-
-
-
-

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Component Lifecycle Demo</title>
+    <!-- react includes two parts: react.js and react-dom.js -->
+    <script src="https://unpkg.com/react@15.4.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
+
+    <!-- babel standalone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        const tom_and_jerry = [
+            {
+                name: 'Tom',
+                score: 55
+            },
+            {
+                name: 'Jerry',
+                score: 80
+            }
+        ];
+
+        class SinglePlayer extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { isPassed: false }
+            }
+            componentWillMount() {
+                // Mark it as 'Pass' if score >= 60
+                this.setState({
+                    isPassed: this.props.score >= 60
+                });
+
+                console.log('componentWillMount => ' + this.props.name);
+                //alert('componentWillMount => ' + this.props.name);
+            }
+            componentDidMount() {
+                console.log('componentDidMount => ' + this.props.name);
+                //alert('componentDidMount => ' + this.props.name);
+            }
+            componentWillReceiveProps(nextProps) {
+                // Calculate state according to props changes
+                this.setState({
+                    isPassed: nextProps.score >= 60
+                });
+
+                console.log('componentWillReceiveProps => ' + this.props.name + ': ' + nextProps.score);
+                //alert('componentWillReceiveProps => ' + this.props.name + ': ' + nextProps.score);
+            }
+            shouldComponentUpdate(nextProps, nextState) {
+                // Don't rerender if score doesn't change,
+                if ( nextProps.score == this.props.score ) {
+                    console.log('shouldComponentUpdate => ' + this.props.name + '? false');
+                    //alert('shouldComponentUpdate => ' + this.props.name + '? false');
+                    return false;
+                }
+
+                console.log('shouldComponentUpdate => ' + this.props.name + '? true');
+                //alert('shouldComponentUpdate => ' + this.props.name + '? true');
+                return true;
+            }
+            componentWillUpdate(nextProps, nextState) {
+                console.log('componentWillUpdate => ' + this.props.name);
+                //alert('componentWillUpdate => ' + this.props.name);
+            }
+            componentDidUpdate(prevProps, prevState) {
+                console.log('componentDidUpdate => ' + this.props.name);
+                //alert('componentDidUpdate => ' + this.props.name);
+            }
+            componentWillUnmount() {
+                console.log('componentDidUpdate => ' + this.props.name);
+                //alert('componentDidUpdate => ' + this.props.name);
+            }
+            render() {
+                console.log("render => " + this.props.name);
+                return (
+                    <div>
+                        <h5><span>Name: </span>{this.props.name}</h5>
+                        <p><span>Score: </span><em>{this.props.score}</em></p>
+                        <p><span>Pass: </span><input type="checkbox" defaultChecked={this.state.isPassed} disabled={true}  /></p>
+                    </div>
+                );
+            }
+        }
+
+        class ScoreBoard extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    players: tom_and_jerry
+                };
+            }
+            changeScore(amount) {
+                if ( typeof(amount) != "number" ) {
+                    return;
+                }
+
+                let players = this.state.players;
+                let tom = players[0];
+                tom.score = tom.score + amount;
+
+                tom.score = (tom.score > 100) ? 100 : tom.score;
+                tom.score = (tom.score < 0) ? 0 : tom.score;
+
+                players[0] = tom;
+                this.setState({ players: players });
+            }
+            render() {
+                return (
+                    <div>
+                        <h4>Score Board</h4>
+                        <div>
+                            <button onClick={ (amount) => this.changeScore(5) }>Score of Tom: +5</button>
+                            <button onClick={ (amount) => this.changeScore(-5) }>Score of Tom: -5</button>
+                        </div>
+                        {
+                            this.state.players.map((v, idx) => {
+                                return <SinglePlayer key={idx} name={v.name} score={v.score} />
+                            })
+                        }
+                    </div>
+                );
+            }
+        }
+
+
+
+        class App extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h1>React Component Lifecycle Demo</h1>
+                        <ScoreBoard />
+                    </div>
+                )
+            }
+        }
+
+        // Mount root App component
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
