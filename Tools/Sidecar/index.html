@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sidecar | https://sidecar.gitter.im/</title>
+</head>
+<body>
+    <div>
+        <h1>Gitter</h1>
+    </div>
+    <section>
+        <pre>
+            Add some Gitter to your site
+
+            Sidecar is a (mostly) code-free way of embedding Gitter into your website with a simple JavaScript snippet.
+
+            It works out of the box with no customization, or you can control its behaviour with some basic configuration.
+        </pre>
+    </section>
+    <script>
+        ((window.gitter = {}).chat = {}).options = {
+            room: 'full-stack-web-developers/xgqfrms'
+        };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+</body>
+</html>
