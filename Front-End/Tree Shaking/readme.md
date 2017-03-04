@@ -102,6 +102,45 @@ $ npm install --save lodash
 import _ from 'lodash';
 
 
+<script src="dist/bundle.js"></script>
+
+
+
+./node_modules/.bin/webpack app/index.js dist/bundle.js
+
+## Using webpack with a config
+
+webpack.config.js
+
+var path = require('path');
+
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+
+
+## Using webpack with npm
+
+{
+  ...
+  "scripts": {
+    "build": "webpack"
+  },
+  ...
+}
+
+
+$ npm run build
+
+
+
+https://webpack.js.org/guides/get-started/
+
+
 
 
 https://doc.webpack-china.org/guides/migrating/
