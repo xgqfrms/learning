@@ -17,6 +17,24 @@
             It works out of the box with no customization, or you can control its behaviour with some basic configuration.
         </pre>
     </section>
+    <section>
+        <input id="error-text" class="error-input" size="55" readonly="readonly">
+        <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            let text = "404. This is not the chat you\'re looking for.---------------- Sorry.-------- :(";
+            let input = $("#error-text");
+            input.select();
+            setTimeout(startTyping, 1000, input, text);
+            function startTyping(input, text) {
+                for ( var i = 0; i < text.length; i++ ) {
+                    setTimeout(addText,120*i, input, text.charAt(i));
+                }
+            }
+            function addText(i,c) {
+                if (c !== "-") i.val( i.val() + c );
+            }
+        </script>
+    </section>
     <script>
         ((window.gitter = {}).chat = {}).options = {
             room: 'full-stack-web-developers/xgqfrms'

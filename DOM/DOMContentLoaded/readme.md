@@ -40,6 +40,22 @@ https://developer.mozilla.org/zh-CN/docs/Web/Events/hashchange
 
 
 
+https://code.jquery.com/
+
+https://www.srihash.org/
+
+
+<script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+
+https://cdn.xgqfrms.xyz/jquery/jquery-3.1.1.min.js
+
+https://cdn.xgqfrms.xyz/
+
+
+
+
+
 
 
 

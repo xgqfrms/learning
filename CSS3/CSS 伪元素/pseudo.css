@@ -1,0 +1,18 @@
+.div::before, .div::after{
+    content: "❦";
+    color: red;
+    font-size: 3ex;
+    /*text-align: center;*/
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:auto 50%;
+}
+div > h1{
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #000;
+    background: rgba(0,255,255,0.7);
+}

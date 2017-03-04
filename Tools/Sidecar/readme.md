@@ -20,6 +20,12 @@ https://gitter.im/full-stack-web-developers/xgqfrms
 
 
 
+https://developer.gitter.im/docs/welcome
+
+http://blog.gitter.im/
+
+https://webpack.js.org/configuration/
+
 
 
 
