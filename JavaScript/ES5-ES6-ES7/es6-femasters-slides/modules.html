@@ -1,0 +1,666 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modules</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/es6.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title style="display: none;"><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle style="display: none;"><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter style="display: none;"><!-- populated from slide_config.json --></p>
+      <h1>Modules</h1>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Hard To Discuss</h4>
+      </p>
+      <ul class="build fade">
+        <li>Not any great support right now</li>
+        <li>
+          <a href="https://github.com/ModuleLoader/es6-module-loader">
+            Polyfills only
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rwaldron/tc39-notes/blob/master/es6/2014-06/jun-5-modules.md">
+            Still Fresh
+          </a>
+        </li>
+        <li>Least amount of Tooling</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Bits of CommonJS & AMD</h4>
+      </p>
+      <ul class="build fade">
+        <li>
+          <h4>Similar To CommonJS</h4>
+          <ul>
+            <li>Single Exports</li>
+            <li>Cyclic Dependencies</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Similar To AMD</h4>
+          <ul>
+            <li>Async Loading Support</li>
+            <li>Configurable Module Loading</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Major Design Goals</h4>
+      </p>
+      <ul>
+        <li><b>default</b> exports are favored</li>
+        <li>static module structure</li>
+        <li>support for sync/async loading</li>
+        <li>support for cyclical dependencies</li>
+      </ul>
+      <ul class="build fade">
+        <li>Let's talk about each one</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Two Pieces</h4>
+      </p>
+      <ul>
+        <li>Import/Export Syntax</li>
+        <li>Programmatic Loading API</li>
+      </ul>
+      <ul class="build fade">
+        <li>Let's talk about each one</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/es6.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Import/Export Syntax</h2>
+      <!--<h3>Questions???</h3>-->
+      <div class="author">
+        #ES6 #frontendmasters @js_dev
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Exporting Default</h4>
+      </p>
+      MyClass.js
+<pre class="prettyprint" data-lang="javascript">
+  class MyClass{
+    constructor(){}
+    //....
+  }
+  export <b>default</b> MyClass;
+</pre>
+  Main.js
+<pre class="prettyprint" data-lang="javascript">
+  import MyClass from 'MyClass';
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Exporting Multiple Exports</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+export const sqrt = Math.sqrt;
+export function square(x) {
+  return x * x;
+}
+export function diag(x, y) {
+  return sqrt(square(x) + square(y));
+}
+</pre>
+  main.js
+<pre class="prettyprint" data-lang="javascript">
+<b>import { square, diag } from 'lib';</b>
+console.log(square(11)); // 121
+console.log(diag(4, 3)); // 5
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Exporting Multiple Exports - All</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+export const sqrt = Math.sqrt;
+export function square(x) {
+  return x * x;
+}
+export function diag(x, y) {
+  return sqrt(square(x) + square(y));
+}
+</pre>
+  main.js
+<pre class="prettyprint" data-lang="javascript">
+<b>import * as lib from 'lib';</b>
+console.log(lib.square(11)); // 121
+console.log(lib.diag(4, 3)); // 5
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Export As</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  class MyClass{
+    //....
+  }
+  <b>export {MyClass as Dude};</b>
+</pre>
+  main.js
+<pre class="prettyprint" data-lang="javascript">
+  <b>import { Dude as Bro } from 'lib';</b>
+  var bro = new Bro(); //instanceof MyClass
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Cyclical Dependencies</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  import Main from 'main';
+
+  var lib = {message: "This Is A Lib"};
+
+  export { lib as Lib };
+</pre>
+  main.js
+<pre class="prettyprint" data-lang="javascript">
+  import { Lib } from 'lib';
+
+  export default class Main{
+    //....
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Export As</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  import Main from 'main';
+
+  var lib = {message: "This Is A Lib"};
+
+  export { <b>lib as Lib</b> };
+</pre>
+      main.js
+<pre class="prettyprint" data-lang="javascript">
+  import { Lib } from 'lib';
+
+  export default class Main{
+    //....
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>More Importing</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  // Default exports and named exports
+  import theDefault, { named1, named2 } from 'src/mylib';
+  import theDefault from 'src/mylib';
+  import { named1, named2 } from 'src/mylib';
+
+  // Renaming: import named1 as myNamed1
+  import { named1 as myNamed1, named2 } from 'src/mylib';
+
+  // Importing the module as an object
+  // (with one property per named export)
+  import * as mylib from 'src/mylib';
+
+  // Only load the module, don’t import anything
+  import 'src/mylib';
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>More Exporting</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  export var myVar1 = ...;
+  export let myVar2 = ...;
+  export const MY_CONST = ...;
+
+  export function myFunc() {
+      ...
+  }
+  export function* myGeneratorFunc() {
+      ...
+  }
+  export class MyClass {
+      ...
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Import/Export</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Re-exporting</h4>
+      </p>
+      lib.js
+<pre class="prettyprint" data-lang="javascript">
+  export * from 'src/other_module';
+
+  export { foo, bar } from 'src/other_module';
+
+  // Export other_module’s foo as myFoo
+  export { foo as myFoo, bar } from 'src/other_module';
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/es6.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Import/Export Modules</h2>
+      <h3>Questions???</h3>
+      <div class="author">
+        #ES6 #frontendmasters @js_dev
+      </div>
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/es6.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Programmatic Loading API</h2>
+      <!--<h3>Questions???</h3>-->
+      <div class="author">
+        #ES6 #frontendmasters @js_dev
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Programmatic Loading API</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>System.import API</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  System.import('some_module')
+  .then(some_module => {
+      ...
+  })
+  .catch(error => {
+      ...
+  });
+</pre>
+      <ul class="build fade">
+        <li>System.import returns Promise</li>
+        <li>Promise.then provides 'exports'</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Programmatic Loading API</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Load All</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  Promise.all(
+      ['module1', 'module2', 'module3']
+      .map(x => System.import(x)))
+  .then(function ([module1, module2, module3]) {
+    //my code....
+  });
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Programmatic Loading API</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>System "Module" functions</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  System.import(source);
+  //Returns module via Promise
+
+  System.module(source, options);
+  //Return module via Promise
+
+  System.set(name, module);
+  //Inline register a new module
+
+  System.define(name, source, options?);
+  //Eval code, and register module
+</pre>
+      <ul>
+        <li>Wish I had better explanations</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Programmatic Loading API</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Module Tag</h4>
+      </p>
+<pre class="prettyprint" data-lang="html">
+  &lt;head&gt;
+    ....
+    &lt;module import="my-module.js"&gt;&lt;/module&gt;
+    ....
+
+
+  &lt;/head&gt;
+</pre>
+      <ul>
+        <li>Wish I had better explanations</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modules - Programmatic Loading API</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Module Tag</h4>
+      </p>
+<pre class="prettyprint" data-lang="html">
+  &lt;head&gt;
+    ....
+    &lt;module&gt;
+      import $ from 'lib/jquery';
+
+      console.log('$' in this); //false
+      //globals trapped in module
+
+      //Other JS here
+      console.log(window); //Still can access window
+
+      //let x = 1;
+      //Module Tag is force strict mode
+
+    &lt;/module&gt;
+    ....
+  &lt;/head&gt;
+</pre>
+      <ul>
+        <li>Wish I had better explanations</li>
+        <li>
+          <a href="https://mail.mozilla.org/pipermail/es-discuss/2013-November/034869.html">
+            Read @littlecalculist's Email
+          </a>
+        </li>
+        <li>Let's use the Polyfill to check it out a bit</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+  //No Note
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <!-- -->
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/es6.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Modules</h2>
+      <h3>Questions???</h3>
+      <div class="author">
+        #ES6 #frontendmasters @js_dev
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>TRY THIS</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><b>Modules</b> in <a href="http://google.github.io/traceur-compiler/demo/repl.html#%2F%2F%20Options%3A%20--annotations%20--array-comprehension%20--async-functions%20--block-binding%20--exponentiation%20--generator-comprehension%20--symbols%20--types%0A%0A">Traceur Repl</a></li>
+        <li>es6-module-loader polyfill in Node</li>
+        <li>Make some classes, and export them in a module</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

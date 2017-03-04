@@ -1,0 +1,483 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/es6.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title style="display: none;"><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle style="display: none;"><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter style="display: none;"><!-- populated from slide_config.json --></p>
+      <h1>Classes</h1>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>History of ES6 Classes</h4>
+      </p>
+      <ul class="build fade">
+        <li>Goes back to ES4 days</li>
+        <li>Lots of Churn</li>
+        <li>Lots of Precedence</li>
+        <li><a href="https://mail.mozilla.org/pipermail/es-discuss/2012-March/021430.html">Russell Leggett, March 19 2012</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Russell Leggett's Proposal</h4>
+      </p>
+      <ul class="build fade">
+        <li>Called "Maximall Minimal Classes"</li>
+        <li>Points out the need for classes in JS, a la CoffeeScript</li>
+        <li>Make sure it is enhanceable in Future Harmony Releases</li>
+        <li>Points to Brendan's <b>Goldilocks Proposal</b></li>
+        <li>Proposes new analogy - <b>Safety School Proposal</b></li>
+        <li><b>Since we must have something in ES6, what is it?</b></li>
+        <li>Wins Out! (not easily)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4><a href="http://wiki.ecmascript.org/doku.php?id=strawman:maximally_minimal_classes">Class Proposal Site</a></h4>
+      </p>
+      <h2>There Be Dragons!!</h2>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Example</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  <b>//FUNCTIONALLY SAME</b>
+  function Foo(){
+    //....
+  }
+
+  class Foo{
+    //....
+  }
+</pre>
+      <ul class="build fade">
+        <li>Class is sugar</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Constructor
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  class Animal{
+
+    <b>constructor(name)</b>{
+      this.name = name;
+    }
+
+  }
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <a href="http://google.github.io/traceur-compiler/demo/repl.html#%2F%2F%20Options%3A%20--annotations%20--array-comprehension%20--async-functions%20--block-binding%20--exponentiation%20--generator-comprehension%20--source-maps%20--symbols%20--types%20%0A%0Avar%20a%20%3D%20(function()%7B%0A%20%20var%20monsterHealth%20%3D%20Symbol()%3B%0A%20%20console.log(monsterHealth)%3B%0A%0A%20%20class%20Monster%7B%0A%20%20%20%20constructor(name%2C%20health)%7B%0A%20%20%20%20%20%20this.name%20%3D%20name%3B%0A%20%20%20%20%20%20this%5BmonsterHealth%5D%20%3D%20health%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%0A%20%20return%20Monster%3B%0A%7D)()%3B%0A%0Aconsole.log(a)%3B">
+          Private Properties
+        </a>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  <b>const monsterHealth = Symbol();</b>
+
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      <b>this[monsterHealth] = health;</b>
+    }
+  }
+</pre>
+      <ul class="build fade">
+        <li>Look at <a href="http://google.github.io/traceur-compiler/demo/repl.html#%2F%2F%20Options%3A%20--annotations%20--array-comprehension%20--async-functions%20--block-binding%20--exponentiation%20--generator-comprehension%20--source-maps%20--symbols%20--types%20%0A%0Avar%20a%20%3D%20(function()%7B%0A%20%20var%20monsterHealth%20%3D%20Symbol()%3B%0A%20%20console.log(monsterHealth)%3B%0A%0A%20%20class%20Monster%7B%0A%20%20%20%20constructor(name%2C%20health)%7B%0A%20%20%20%20%20%20this.name%20%3D%20name%3B%0A%20%20%20%20%20%20this%5BmonsterHealth%5D%20%3D%20health%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%0A%20%20return%20Monster%3B%0A%7D)()%3B%0A%0Aconsole.log(a)%3B">Symbols</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Get Properties
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  const monsterHealth = Symbol();
+
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+    }
+
+    <b>get isAlive(){</b>
+      return this[monsterHealth] > 0;
+    }
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+
+  let nessy = new Monster('Nessy', 100);
+  console.log(<b>nessy.isAlive</b>); <b>//Logs true</b>
+
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Set Properties
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  //....
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+    }
+    //...
+    <b>set health(val){</b>
+      if(val < 0){
+        throw new Error('Health must be positive number');
+      }
+      this[monsterHealth] = val;
+    }
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+
+  let nessy = new Monster('Nessy', 100);
+  <b>nessy.health = 200; //Cause nessy is bad A</b>
+
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Prototype Methods
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  //....
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+    }
+    //...
+    <b>attack(target){</b>
+      console.log(this.name + ' attacks ' + target.name);
+    }
+  }
+</pre>
+    </article>
+    <aside class="note">
+      <section>
+<pre class="prettyprint" data-lang="javascript">
+
+  let nessy = new Monster('Nessy', 100);
+  let dom = new Monster('Dominique', 20);
+
+  <b>nessy.attack(dom); //Nessy attacks Dominique</b>
+
+</pre>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Class Properties
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+      <b>Monster.allMonsters.push(this);</b>
+    }
+    //....
+  }
+  <b>Monster.allMonsters = [];</b>
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Extend Classes
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+    }
+    //....
+  }
+  <b>class Godzilla extends Monster{</b>
+    constructor(){
+      <b>super('Godzilla', 10000);</b>
+    }
+  }
+</pre>
+      <ul class="build fade">
+        <li>Could we do this with Prototypes?</li>
+      </ul>
+    </article>
+    <aside class="note">
+      <section>
+        <h4>How to use this</h4>
+<pre class="prettyprint" data-lang="javascript">
+  let zilly = new Godzilla();
+
+  zilly instanceof Gozilla; <b>//true</b>
+
+  zilly instanceof Monster; <b>//true</b>
+</pre>
+
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        Extend Classes via Expression
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  class MySocket <b>extends getClass()</b> {
+    //....
+  }
+
+  function getClass(){
+    if(isIE()){
+      return IEWebSocketImpl;
+    }
+    return WebSocket;
+
+    function isIE(){
+      return false;
+    }
+  }
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+<pre class="prettyprint" data-lang="javascript">
+  class Monster{
+    constructor(name, health){
+      this.name = name;
+      this[monsterHealth] = health;
+    }
+    attack(target){...}
+  }
+  class Godzilla extends Monster{
+    constructor(){
+      super('Godzilla', 10000);
+    }
+    attack(target){
+      <b>super(target);        //Currently THIS</b>
+      <b>super.attack(target); //Could Change to THIS</b>
+    }
+  }
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>Classes Do No Hoist</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+  new Bar(); <b>//runtime error</b>
+
+  class Bar{}
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+        <h4>If no constructor, default behavior</h4>
+      </p>
+<pre class="prettyprint" data-lang="javascript">
+
+  constructor(..args){
+    super(...args);
+  }
+
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Classes</h2>
+    </hgroup>
+    <article>
+      <p>
+      <h4>Benefits of Classes</h4>
+      </p>
+      <ul class="build fade">
+        <li>Sugar</li>
+        <li>Easier to learn #noobs</li>
+        <li>Subclassing easier to learn #noobs</li>
+        <li>Subclass built in object: Array, Error, etc</li>
+        <li>Code more portable between JS Frameworks</li>
+        <li>Possible Perf Gains</li>
+      </ul>
+    </article>
+  </slide>
+
+
+
+  <!-- -->
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/es6.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Classes</h2>
+      <h3>Questions???</h3>
+      <div class="author">
+        #ES6 #frontendmasters @js_dev
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>TRY THIS</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><b>Classes</b> in <a href="http://google.github.io/traceur-compiler/demo/repl.html#%2F%2F%20Options%3A%20--annotations%20--array-comprehension%20--async-functions%20--block-binding%20--exponentiation%20--generator-comprehension%20--symbols%20--types%0A%0A">Traceur Repl</a></li>
+        <li><b>Classes</b>: build some inheritance model</li>
+        <li>Build something in Prototype AND Class</li>
+        <li>Force method implementation from Super</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
