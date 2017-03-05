@@ -172,14 +172,86 @@ str
 
 
 
+当你想要知道一个模式是否存在于一个字符串中时，就可以使用 test()（类似于 String.prototype.search() 方法），差别在于test返回一个布尔值，而 search 返回索引（如果找到）或者-1（如果没找到）；若想知道更多信息（然而执行比较慢），可使用exec() 方法（类似于 String.prototype.match() 方法）。 和 exec() (或者组合使用),一样，在相同的全局正则表达式实例上多次调用test将会越过之前的匹配。
+
+
+
+## String.prototype.match()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match
+
+
+当一个字符串与一个正则表达式匹配时， match()方法检索匹配项。
+
+语法 
+str.match(regexp);
+参数
+
+regexp
+一个正则表达式对象。如果传入一个非正则表达式对象，则会隐式地使用 new RegExp(obj) 将其转换为一个 RegExp 。如果你未提供任何参数，直接使用 match() ，那么你会得到一个包含空字符串的 Array ：[""] 。
+
+
+## String.prototype.search()
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/search
+
+
+search() 方法执行正则表达式和 String对象之间的一个搜索匹配。
+
+语法 
+str.search(regexp)
+参数
+
+regexp
+一个正则表达式（regular expression）对象。如果传入一个非正则表达式对象，则会使用 new RegExp(obj) 隐式地将其转换为正则表达式对象。
+返回值
+
+如果匹配成功，则 search() 返回正则表达式在字符串中首次匹配项的索引。否则，返回 -1。
 
 
 
 
 
+## String.prototype.replace()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+
+replace() 方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。
+
+语法 
+str.replace(regexp|substr, newSubStr|function)
+参数
+
+regexp (pattern)
+一个 RegExp 对象或者其字面量。该正则所匹配的内容会被第二个参数的返回值替换掉。
+substr (pattern)
+一个要被 newSubStr 替换的字符串。其被视为一整个字符串，而不是一个正则表达式。仅仅是第一个匹配会被替换。
+newSubStr (replacement)
+ 用于替换掉第一个参数在原字符串中的匹配部分的 字符串。该字符串中可以内插一些特殊的变量名。参考下面的使用字符串作为参数。
+function (replacement)
+一个用来创建新子字符串的函数，该函数的返回值将替换掉第一个参数匹配到的结果。参考下面的指定一个函数作为参数。
 
 
 
+
+## String.prototype.split()
+
+split() 方法将一个String对象分割成字符串数组，通过将字符串分成子串。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+str.split([separator][, limit])
+
+
+参数
+
+separator
+指定用来分割字符串的字符（串）。separator 可以是一个字符串或正则表达式。 如果忽略 separator，则返回整个字符串的数组形式。如果 separator 是一个空字符串，则 str 将会把原字符串中每个字符的数组形式返回。
+limit
+一个整数，限定返回的分割片段数量。split 方法仍然分割每一个匹配的 separator，但是返回的数组只会截取最多 limit 个元素。
 
 
 
