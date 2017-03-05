@@ -134,11 +134,11 @@ HTML5 - QR Generator
 
 
 
+https://www.tutorialspoint.com/reactjs/index.htm
 
 
 
-
-
+https://www.tutorialspoint.com/typescript/index.htm
 
 
 
