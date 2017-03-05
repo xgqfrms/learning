@@ -122,3 +122,22 @@ https://github.com/xgqfrms-GitHub/google-interview-university
 https://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/
 
 
+
+
+
+## position: sticky;
+
+https://www.w3.org/TR/CSS2/visuren.html#propdef-position
+
+https://pengtikui.cn/css-position/
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/position 
+
+
+
+
+
+
+
+
