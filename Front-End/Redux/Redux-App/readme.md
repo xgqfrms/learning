@@ -193,4 +193,23 @@ https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm
 
 
 
+https://medium.com/@xgqfrms/react-cc27d7b2e48e#.2wp1s1hu9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
