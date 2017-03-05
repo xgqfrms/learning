@@ -118,6 +118,25 @@ https://www.tutorialspoint.com/cloud_computing/index.htm
 
 
 
+## tutorialspoint
+
+
+
+http://www.ituring.com.cn/book/1222
+
+网络上最大的教程库
+
+
+
+https://www.tutorialspoint.com/html5/qr_code.htm
+
+HTML5 - QR Generator
+
+
+
+
+
+
 
 
 
