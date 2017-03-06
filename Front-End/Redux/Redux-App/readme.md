@@ -255,7 +255,7 @@ http://cool.miaov.com/zhangbingxue/others/works/js/picReload/index.html
 
 
 
-
+https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopPropagation
 
 
 

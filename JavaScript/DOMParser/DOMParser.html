@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOMParser</title>
+</head>
+<body>
+    <script>
+        (function(){
+            let doc = new DOMParser().parseFromString('<div><b>Hello!</b></div>', 'text/html');
+            let div = doc.body.firstChild;
+            let divs = doc.body.querySelectorAll('div');
+            document.querySelectorAll('body').appendChild(doc);
+        })();
+    </script>
+</body>
+</html>
