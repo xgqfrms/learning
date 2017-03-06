@@ -1,6 +1,80 @@
 # DOMParser
 
 
+
+https://w3c.github.io/DOM-Parsing/
+
+DOM Parsing and Serialization
+DOMParser, XMLSerializer, innerHTML, and similar APIs
+
+W3C Editor's Draft 14 November 2016
+
+
+
+
+
+
+
+
+
+
+https://w3c.github.io/DOM-Parsing/#the-domparser-interface
+
+
+
+
+
+
+
+[Constructor]
+interface DOMParser {
+    [NewObject]
+    Document parseFromString(DOMString str, SupportedType type);
+};
+
+enum SupportedType {
+    "text/html",
+    "text/xml",
+    "application/xml",
+    "application/xhtml+xml",
+    "image/svg+xml"
+};
+
+
+domparser = new DOMParser ()
+    构造一个新的DOMParser对象。
+
+document = domparser . parseFromString ( str, type )
+
+    使用与类型支持的MIME类型（XML或HTML）匹配的解析器解析str，
+    如果成功，返回包含已解析内容的Document对象。
+    如果不成功，则返回描述错误的文档。
+    如果类型与SupportedType枚举中的值不匹配，则抛出异常
+
+
+
+
+
+
+https://msdn.microsoft.com/en-us/library/ff975060(v=vs.85).aspx
+
+http://www.javascripture.com/DOMParser
+
+
+
+http://caniuse.com/#search=DOMParser
+
+
+各种DOM解析和序列化函数，特别是DOMParser，XMLSerializer，innerHTML，outerHTML和insertAdjacentHTML。
+
+Global 83.33%  +   14.98%  =   98.3%
+
+
+https://www.w3.org/TR/DOM-Parsing/
+
+
+
+
 https://davidwalsh.name/convert-html-stings-dom-nodes
 
 
