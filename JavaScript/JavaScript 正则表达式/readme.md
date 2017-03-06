@@ -381,6 +381,40 @@ for (var n of m) {
 
 
 
+http://www.runoob.com/regexp/regexp-syntax.html
+
+
+https://msdn.microsoft.com/zh-cn/library/dn858238(v=vs.94).aspx
+
+for...of 语句 (JavaScript)
+
+对从可迭代对象中获取的迭代器的每个值执行一个或多个语句。
+
+
+
+Labeled 语句 (JavaScript)
+
+https://msdn.microsoft.com/zh-cn/library/d3666y5k(v=vs.94).aspx
+
+ label :
+statements 
+
+
+try...catch...finally 语句 (JavaScript)
+
+https://msdn.microsoft.com/zh-cn/library/4yahc5d8(v=vs.94).aspx
+
+
+
+
+https://msdn.microsoft.com/zh-cn/ms704300
+
+https://msdn.microsoft.com/zh-cn/library/az24scfc(v=vs.110).aspx
+
+
+
+
+
 
 
 

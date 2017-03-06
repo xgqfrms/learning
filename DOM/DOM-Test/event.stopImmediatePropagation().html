@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event.stopImmediatePropagation()</title>
+</head>
+<body>
+    <div>
+        <p>
+            paragraph <br>
+            <button>button</button>
+        </p>
+    </div>
+    <script>
+        document.querySelector("p").addEventListener("click", function(event){
+            alert("我是p元素上被绑定的第一个监听函数");
+        }, false);
+        document.querySelector("p").addEventListener("click", function(event){
+            alert("我是p元素上被绑定的第二个监听函数");
+            event.stopImmediatePropagation();
+            /*
+                执行 stopImmediatePropagation方法,阻止click事件冒泡,
+                并且阻止 p元素上绑定的其他click事件的事件监听函数的执行.
+            */
+        }, false);
+        document.querySelector("p").addEventListener("click", function(event){
+            alert("我是p元素上被绑定的第三个监听函数");
+            //该监听函数排在上个函数后面,该函数不会被执行.
+        }, false);
+        document.querySelector("div").addEventListener("click",function(event){
+            alert("我是div元素,我是p元素的上层元素");
+            //p元素的click事件没有向上冒泡,该函数不会被执行.
+        }, false);
+    </script>
+</body>
+</html>

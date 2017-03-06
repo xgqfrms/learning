@@ -200,12 +200,58 @@ https://medium.com/@xgqfrms/react-cc27d7b2e48e#.2wp1s1hu9
 
 
 
+https://github.com/gajus/react-css-modules
+
+https://github.com/ruanyf/css-modules-demos
 
 
 
 
 
+https://codepen.io/xgqfrms/pen/wJWRNZ
 
+
+Flexible boxes (CSS3 Layout) 
+
+
+section {
+    width: 93%;
+    height: 240px;
+    margin: 20px auto;
+    background: purple;
+    display: flex;
+}
+
+div {
+    color: white;
+    background: orange;
+    flex: 1;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+p:nth-of-type(n) { color: red; }
+
+
+
+
+http://2016.miaov.com/
+
+http://apeclass.cn/1212/index.html
+
+
+
+http://www.miaov.com/index.php/course/coursedetail/cid/21
+
+
+
+http://www.miaov.com/index.php/news/newsDetail/nid/95
+
+http://cool.miaov.com/zhangbingxue/#works
+
+
+http://cool.miaov.com/zhangbingxue/others/works/js/picReload/index.html
 
 
 

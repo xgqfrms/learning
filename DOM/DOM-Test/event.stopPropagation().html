@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event.stopPropagation()</title>
+</head>
+<body>
+    <div>
+        <h1>event.stopPropagation() 阻止捕获和冒泡阶段中当前事件的进一步传播。</h1>
+    </div>
+    <p>请点击复选框控件</p>
+    <form id="box">
+        <label for="id-checkbox">Checkbox</label>
+        <input type="checkbox" id="id-checkbox"/>
+    </form>
+    <script>
+        document.querySelector("#id-checkbox").addEventListener("click", function(event){
+            alert("event.stopPropagation() 阻止捕获和冒泡阶段中当前事件的进一步传播")
+            event.stopPropagation();
+            //阻止捕获和冒泡阶段中当前事件的进一步传播
+        }, false);
+        document.querySelector("#box").addEventListener("click", function(event){
+            alert("this is a box!")
+        }, false);
+    </script>
+</body>
+</html>

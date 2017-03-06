@@ -1,0 +1,73 @@
+* {
+    min-height: 100px;
+}
+
+main {
+    display: flex;
+    font-size: 3ex;
+    text-align: center;
+    color: #fff;
+    height: 300px;
+}
+
+main > article {
+    order: 2;
+    min-width: 12em;
+    flex: 1;
+    background: red;
+}
+
+main > nav {
+    order: 1;
+    width: 200px;
+    background: green;
+}
+
+main > aside {
+    order: 3;
+    width: 200px;
+    background: blue;
+}
+
+header {
+    min-width: 12em;
+    flex: 1;
+    background: #f0f;
+    text-align: center;
+/*    top: 0;
+    position: absolute;*/
+}
+header::after{
+    clear: both;
+    overflow: hidden;
+    display: table;
+}
+
+footer {
+    min-width: 12em;
+    flex: 1;
+    background: #0ff;
+    text-align: center;
+/*    bottom: 0;
+    position: absolute;*/
+}
+footer::after{
+    clear: both;
+    overflow: hidden;
+    display: table;
+}
+
+@media all and (max-width: 600px) {
+    /* Too narrow to support three columns */
+    main {
+        flex-flow: column;
+    }
+    main > article,
+    main > nav,
+    main > aside {
+        /* Return them to document order */
+        order: 0;
+        width: auto;
+        min-height: 50px;
+    }
+}
