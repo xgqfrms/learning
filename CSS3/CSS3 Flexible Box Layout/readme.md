@@ -39,6 +39,12 @@ W3C Candidate Recommendation, 26 May 2016
 
 
 
+
+
+
+
+
+
 3. Flex Containers: the flex and inline-flex display values
 
 Name:   display
@@ -175,7 +181,7 @@ Applies to: flex items and absolutely-positioned children of flex containers
 
 默认情况下，Flex项目以与在源文档中显示的顺序相同的顺序显示和布局。 order属性可用于更改此顺序。 
 
-名称：订单 值：<integer> 初始：0
+名称：订单 值：<integer> 初始值：0
 
 
 
@@ -199,6 +205,203 @@ flex: none === flex: 0 0 auto
 flex: <positive-number> === flex: <positive-number> 1 0
 
 
+The flex property specifies the components of a flexible length: the flex grow factor and flex shrink factor, and the flex basis. When a box is a flex item, flex is consulted instead of the main size property to determine the main size of the box. If a box is not a flex item, flex has no effect.
+
+flex属性指定flex长度的组件
+flex增长因子和flex收缩因子，以及flex基准。
+当一个框是一个flex项时，参考flex而不是主size属性来确定框的主要尺寸。
+如果一个框不是一个flex项，flex不起作用。
+
+
+<‘flex-grow’>
+This <number> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.
+
+这个<number>组件设置flex-grow longhand，并指定flex增长因子，它确定当分配正空闲空间时，flex项目相对于flex容器中其余flex项目的增长量。省略时，设置为1。
+
+
+<‘flex-shrink’>
+This <number> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.
+
+
+这个<number>组件设置flex-shrink  longhand ，并指定flex收缩因子，它确定当分配负自由空间时，flex项相对于flex容器中的其余flex项收缩多少。省略时，设置为1。
+
+
+Note: The flex shrink factor is multiplied by the flex base size when distributing negative space. This distributes negative space in proportion to how much the item is able to shrink, so that e.g. a small item won’t shrink to zero before a larger item has been noticeably reduced.
+
+
+注意：分配负空间时，Flex收缩因子乘以flex基本尺寸。
+这与物品能够收缩多少成比例地分配负空间，使得例如在较大的项目显着减少之前，小项目将不会收缩到零。
+
+
+<‘flex-basis’>
+This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors.
+
+这个组件设置flex-basis longhand，它指定flex基础：flex项目的初始主要尺寸，根据flex因子分配可用空间之前。
+
+
+<‘flex-basis’> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword:
+
+
+<'flex-basis'>接受与宽度和高度属性相同的值（除了auto被视为不同）加上content关键字：
+
+
+
+auto
+When specified on a flex item, the auto keyword retrieves the value of the main size property as the used flex-basis. If that value is itself auto, then the used value is content.
+
+当在flex项目上指定时，auto关键字检索main size属性的值作为使用的flex-basis。
+如果该值本身是auto，则使用的值是content。
+
+
+content
+Indicates automatic sizing, based on the flex item’s content.
+
+表示基于flex项目的内容自动调整大小。
+
+Note: This value was not present in the initial release of Flexible Box Layout, and thus some older implementations will not support it. The equivalent effect can be achieved by using auto together with a main size (width or height) of auto.
+
+注意：此值在Flexible Box Layout的初始版本中不存在，因此一些较旧的实现将不支持它。通过使用auto和auto的主要尺寸（宽度或高度）可以实现等效效果。
+
+<‘width’>
+For all other values, flex-basis is resolved the same way as for width and height.
+
+对于所有其他值，flex-basis解析与宽度和高度相同的方式。
+
+
+When omitted from the flex shorthand, its specified value is 0.
+
+当从flex缩写中省略时，其指定的值为0。
+
+
+none
+The keyword none expands to 0 0 auto.
+
+关键字none将扩展为0 0 auto。
+
+
+The initial values of the flex components are equivalent to flex: 0 1 auto.
+
+flex组件的初始值等同于flex：0 1 auto。
+
+
+
+
+
+The flex-grow property
+
+Name:   flex-grow
+Value:  <number>
+Initial:    0
+Applies to: flex items
+
+
+The flex-shrink property
+
+Name:   flex-shrink
+Value:  <number>
+Initial:    1
+Applies to: flex items
+
+
+The flex-basis property
+
+Name:   flex-basis
+Value:  content | <‘width’>
+Initial:    auto
+Applies to: flex items
+
+
+
+
+## Alignment
+
+
+
+The margin properties can be used to align items in a manner similar to, but more powerful than, what margins can do in block layout.
+
+margin属性可用于以类似于但是比margin可以做的块布局更强大的方式对齐项目。
+
+
+Auto margins on flex items have an effect very similar to auto margins in block flow:
+
+flex 项目上的auto 边距的效果与块流中的自动边距非常相似：
+
+
+
+During calculations of flex bases and flexible lengths, auto margins are treated as 0.
+Prior to alignment via justify-content and align-self, any positive free space is distributed to auto margins in that dimension.
+Overflowing boxes ignore their auto margins and overflow in the end direction.
+
+在计算灵活基数和灵活长度时，自动边距被视为0。
+在通过justify-content和align-self进行对齐之前，任何正空闲空间被分布到该维度中的自动边距。
+溢出框忽略它们的自动边距，并在结束方向溢出。
+
+
+margin-left: auto;
+
+
+Axis Alignment: the justify-content property
+
+Name:   justify-content
+Value:  flex-start | flex-end | center | space-between | space-around
+Initial:    flex-start
+Applies to: flex containers
+
+
+Cross-axis Alignment: the align-items and align-self properties
+
+Name:   align-items
+Value:  flex-start | flex-end | center | baseline | stretch
+Initial:    stretch
+Applies to: flex containers
+
+Name:   align-self
+Value:  auto | flex-start | flex-end | center | baseline | stretch
+Initial:    auto
+Applies to: flex items
+
+
+Packing Flex Lines: the align-content property
+
+Name:   align-content
+Value:  flex-start | flex-end | center | space-between | space-around | stretch
+Initial:    stretch
+Applies to: multi-line flex containers
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.w3.org/TR/css-flexbox-1/#property-index
+
+
+
+
+
+
+
+https://www.w3.org/TR/css-align-3/
+
+CSS Box Alignment Module Level 3
+W3C Working Draft, 15 February 2017
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,20 +414,20 @@ flex: <positive-number> === flex: <positive-number> 1 0
 display : flex;
 display : inline-flex;
 
-// 初始：row
+// 初始值：row
 flex-direction : row;
 flex-direction : row-reverse;
 flex-direction : column;
 flex-direction : column-reverse;
 
 
-// 初始：nowrap
+// 初始值：nowrap
 flex-wrap : nowrap;
 flex-wrap : wrap;
 flex-wrap : wrap-reverse;
 
 
-// 初始：row nowrap
+// 初始值：row nowrap
 flex-flow : row nowrap;
 flex-flow : row wrap;
 flex-flow : row wrap-reverse;
@@ -248,7 +451,24 @@ flex-flow : <flex-direction> || <flex-wrap>;
 
 
 
-## 
+## Applies to:  flex items
+
+
+
+flex: none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’>
+
+
+flex: initial;
+flex: 0 1 auto;
+
+flex: auto;
+flex: 1 1 auto;
+
+flex: none;
+flex: 0 0 auto;
+
+flex: <positive-number>;
+flex: <positive-number> 1 0;
 
 
 
@@ -258,27 +478,48 @@ flex-flow : <flex-direction> || <flex-wrap>;
 
 
 
+margin: auto;
+margin-*: auto;
 
 
+## Applies to:  flex containers
+
+// 初始值：flex-start
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
 
 
+// 初始值：stretch
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline;
+align-items: stretch;
 
 
+## Applies to:  multi-line flex containers
+
+// 初始值：stretch
+align-content: flex-start;
+align-content: flex-end;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+align-content: stretch;
 
 
+## Applies to:  flex items
 
-
-
-
-
-
-
-
-
-
-
-
-
+// 初始值：auto
+align-self: auto;
+align-self: flex-start;
+align-self: flex-end;
+align-self: center;
+align-self: baseline;
+align-self: stretch;
 
 
 
