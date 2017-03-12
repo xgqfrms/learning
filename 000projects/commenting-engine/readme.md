@@ -3,6 +3,9 @@
 
 ctrl + ` === open commands line terminal
 
+
+```sh
+
 $ npm start  
 
 $ npm dist
@@ -11,6 +14,7 @@ $ npm serve:dist
 
 $ npm serve  
 
+``` 
 
 http://localhost:8000/webpack-dev-server/
 
@@ -22,6 +26,7 @@ http://localhost:8000/
 
 https://github.com/react-webpack-generators/generator-react-webpack#readme
 
+```json
 
 "dist": "npm run copy & webpack --env=dist",
 "lint": "eslint ./src",
@@ -30,15 +35,12 @@ https://github.com/react-webpack-generators/generator-react-webpack#readme
 "serve:dist": "node server.js --env=dist",
 "start": "node server.js --env=dev",
 
+``` 
 
 *******************************************************************************
 *******************************************************************************
 
 
-## generator-react-webpack 
-
-
-$ yo react-webpack
 
 
 
@@ -48,6 +50,7 @@ https://github.com/react-webpack-generators/generator-react-webpack#readme
 
 ## yeoman  
 
+```sh
 
 # Make sure both is installed globally
 
@@ -69,12 +72,18 @@ $ N
 
 $ yarn install ???
 
+``` 
+
 *******************************************************************************
 ???
 
 index.html ? momery : cache 
 
+```html
+
 <script type="text/javascript" src="/assets/app.js"></script>
+
+``` 
 
 ??? 
 
@@ -99,11 +108,15 @@ $ yo react-webpack:component my/namespaced/components/name --stateless
 
 ??? npm run ???
 
+```sh
 
 $ npm run [commands]
 
-
+``` 
 ***************************************
+
+```sh
+
 # error  
 $ npm serve:dist
 
@@ -113,8 +126,11 @@ $ npm run serve:dist
 # webpack build ./dist/
 $ npm run dist
 
+``` 
+
 ***************************************
 
+```sh
 
 Usage: npm <command>
 
@@ -159,8 +175,11 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 },
 
 
+``` 
 *******************************************************************************
 *******************************************************************************
+
+```sh
 
 --env=dev & --env=dist
 
@@ -169,7 +188,12 @@ npm@4.0.5 C:\Users\xray\AppData\Roaming\npm\node_modules\npm
 
 ??? npm run ???
 
+``` 
+
 ***************************************
+
+```sh
+
 # error 
 $ npm serve
 $ npm serve:dist
@@ -178,15 +202,20 @@ $ npm serve:dist
 $ npm run serve
 $ npm run serve:dist
 
+``` 
+
 ***************************************
 
 
 
 *******************************************************************************
 
+```sh
+
 # webpack build ./dist/
 $ npm run dist
 
+``` 
 
 1. Chrome Apps: static web server
 
@@ -197,11 +226,16 @@ Web Server for Chrome
 
 2. browser-sync: G:\wwwRoot\learning\Front-End-Tools\Browser-sync
 
+```sh
+
 $ npm i -g browser-sync
 
 $ npm i -S browser-sync
 
+``` 
 ## run dist dir (auto open http://localhost:3000/)
+
+
 
 ```sh
 $ cd dist
@@ -213,9 +247,13 @@ $ browser-sync start --server --files "./*.*"
 
 
 3. express-simple-sever.js
+```sh
 
 $ node express-simple-sever.js
 
+``` 
+
+```js
 
 // TypeError: path must be absolute or specify root to res.sendFile
 
@@ -224,6 +262,8 @@ app.get('/', function(req, res){
 });
 
 // bugs ???
+
+``` 
 
 *******************************************************************************
 
@@ -323,6 +363,8 @@ https://facebook.github.io/react/docs/components-and-props.html
 
 ## Functional and Class Components
 
+```js
+
 // components "functional" 
 
 function Welcome(props) {
@@ -337,16 +379,18 @@ class Welcome extends React.Component {
     }
 }
 
+``` 
+
 https://facebook.github.io/react/docs/state-and-lifecycle.html
 
 
 ## Rendering a Component
 
+```jsx
+
 const element = <div />;
 
 const element = <Welcome name="Sara" />;
-
-
 
 
 function Welcome(props) {
@@ -361,10 +405,12 @@ ReactDOM.render(
 );
 
 
+``` 
 ## Composing Components
 
 Components can refer to other components in their output.
 
+```jsx
 
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
@@ -385,12 +431,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+``` 
 
 ## Extracting Components
 
 
 Don't be afraid to split components into smaller components.
 
+```jsx
 
 function Comment(props) {
   return (
@@ -450,16 +498,23 @@ function Comment(props) {
   );
 }
 
+``` 
+
 A good rule of thumb is that if a part of your UI is used several times (Button, Panel, Avatar), or is complex enough on its own (App, FeedStory, Comment), it is a good candidate to be a reusable component.
 
 
 ## Props are Read-Only
+
+```jsx
 
 // pure function (Functional Programming)
 
 function sum(a, b) {
     return a + b;
 }
+
+
+``` 
 
 https://facebook.github.io/react/docs/components-and-props.html#props-are-read-only
 
@@ -498,6 +553,8 @@ https://facebook.github.io/react/docs/thinking-in-react.html
 
 
 JSON API
+
+```json
 
 [
     {
@@ -538,6 +595,8 @@ JSON API
     }
 ];
 
+``` 
+
 ## Step 1: Break The UI Into A Component Hierarchy
 
 
@@ -549,14 +608,14 @@ https://en.wikipedia.org/wiki/Single_responsibility_principle
 A component should ideally only do one thing.
 If it ends up growing, it should be decomposed into smaller subcomponents.
 
-
+```sh
 
 FilterableProductTable
     SearchBar
     ProductTable
         ProductCategoryRow
         ProductRow
-
+``` 
 
 ## Step 2: Build A Static Version in React 
 
@@ -589,6 +648,8 @@ https://facebook.github.io/react/docs/react-without-jsx.html
 ## syntactic sugar 
 
 Each JSX element is just syntactic sugar for calling 
+
+```jsx
 
 React.createElement(component, props, ...children) 
 
@@ -633,7 +694,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
+``` 
 
 *******************************************************************************
 https://facebook.github.io/react/docs/react-without-es6.html
@@ -650,6 +711,8 @@ Normally you would define a React component as a plain JavaScript class:
 
 The API of ES6 classes is similar to React.createClass with a few exceptions.
 
+```jsx
+
 // ES6 plain JavaScript class
 
 class Greeting extends React.Component {
@@ -658,8 +721,11 @@ class Greeting extends React.Component {
     }
 }
 
+``` 
 
 If you don't use ES6 yet, you may use the React.createClass helper instead:
+
+```jsx
 
 // React.createClass (React helper)
 
@@ -671,8 +737,11 @@ var Greeting = React.createClass({
 });
 
 
+``` 
+
 ## Declaring Prop Types and Default Props
 
+```jsx
 
 class Greeting extends React.Component {
     // ...
@@ -686,9 +755,11 @@ Greeting.defaultProps = {
     name: 'Mary'
 };
 
+``` 
 
 With React.createClass(), you need to define propTypes as a property on the passed object, and getDefaultProps() as a function on it:
 
+```jsx
 
 var Greeting = React.createClass({
     propTypes: {
@@ -704,11 +775,14 @@ var Greeting = React.createClass({
     // ...
 });
 
+``` 
 
 ## Setting the Initial State
 
 
 In ES6 classes, you can define the initial state by assigning this.state in the constructor:
+
+```jsx
 
 class Counter extends React.Component {
     constructor(props) {
@@ -718,8 +792,11 @@ class Counter extends React.Component {
     // ...
 }
 
+``` 
 
 With React.createClass(), you have to provide a separate getInitialState method that returns the initial state:
+
+```jsx
 
 var Counter = React.createClass({
     getInitialState: function() {
@@ -728,6 +805,7 @@ var Counter = React.createClass({
     // ...
 });
 
+``` 
 
 ## Autobinding  
 
@@ -735,6 +813,7 @@ var Counter = React.createClass({
 
 http://react2.xgqfrms.xyz/docs/reusable-components.html#no-autobinding
 
+```jsx
 
 
 constructor(props) {
@@ -768,6 +847,7 @@ handleClick = () => {
     alert(this.state.message);
 }
 
+``` 
 
 https://babeljs.io/docs/plugins/transform-class-properties/
 
@@ -807,6 +887,8 @@ http://react2.xgqfrms.xyz/docs/displaying-data.html
 
 # 动态交互式用户界面
 
+```jsx
+
 var LikeButton = React.createClass({
     getInitialState: function() {
         return { liked: false };
@@ -828,7 +910,7 @@ ReactDOM.render(
     document.getElementById('example')
 );
 
-
+``` 
 
 https://www.w3.org/TR/DOM-Level-3-Events/
 
@@ -910,16 +992,21 @@ state dynamic values
 
 现在你可以使用 JSX 的新特性 - 展开属性：
 
+```jsx
+
 var props = {};
 props.foo = x;
 props.bar = y;
 
 var component = <Component {...props} />;
 
+``` 
+
 传入对象的属性会被复制到组件内。
 
 它能被多次使用，也可以和其它属性一起用。注意顺序很重要，后面的会覆盖掉前面的。
 
+```jsx
 
 var props = { foo: 'default' };
 
@@ -927,10 +1014,11 @@ var component = <Component {...props} foo={'override'} />;
 
 console.log(component.props.foo); // 'override'
 
+``` 
 
 ## ...
 
-... 操作符 (增强的操作符) 已经被 ES6 数组支持
+`... `操作符 (增强的操作符) 已经被 ES6 数组支持
 
 
 Object 剩余和展开属性 (Rest and Spread Properties)
@@ -963,6 +1051,7 @@ React.PropTypes 提供很多验证器 (validator) 来验证传入数据的有效
 
 不同验证器的区别：
 
+```jsx
 
 React.createClass({
   propTypes: {
@@ -1030,10 +1119,13 @@ React.createClass({
   /* ... */
 });
 
+``` 
 
 ## Single Child 
 
 用 React.PropTypes.element 你可以指定仅有一个子级能被传送给组件
+
+```jsx
 
 var MyComponent = React.createClass({
   propTypes: {
@@ -1050,11 +1142,13 @@ var MyComponent = React.createClass({
 
 });
 
-
+``` 
 
 ## 默认 Prop 值
 
 React 支持以声明式的方式来定义 props 的默认值。
+
+```jsx
 
 var ComponentWithDefaultProps = React.createClass({
   getDefaultProps: function() {
@@ -1065,6 +1159,8 @@ var ComponentWithDefaultProps = React.createClass({
   /* ... */
 });
 
+``` 
+
 当父级没有传入 props 时，getDefaultProps() 可以保证 this.props.value 有默认值，注意 getDefaultProps 的结果会被缓存。
 得益于此，你可以直接使用 props，而不必写手动编写一些重复或无意义的代码。
 
@@ -1074,6 +1170,8 @@ var ComponentWithDefaultProps = React.createClass({
 有一些常用的 React 组件只是对 HTML 做简单扩展。
 通常，你想复制任何传进你的组件的HTML属性到底层的HTML元素上。
 为了减少输入，你可以用 JSX spread 语法来完成：
+
+```jsx
 
 var CheckLink = React.createClass({
     render: function() {
@@ -1089,6 +1187,7 @@ ReactDOM.render(
     document.getElementById('example')
 );
 
+``` 
 
 ## Mixins  
 
@@ -1118,6 +1217,8 @@ http://react2.xgqfrms.xyz/docs/working-with-the-browser.html#component-lifecycle
 
 你也可以以一个简单的 JavaScript 类来定义你的React classes。
 
+```jsx
+
 class HelloMessage extends React.Component {
     render() {
         return <div>Hello {this.props.name}</div>;
@@ -1129,10 +1230,14 @@ ReactDOM.render(
     mountNode
 );
 
+``` 
+
 API近似于 React.createClass 除了 getInitialState。 你应该在构造函数里设置你的state，而不是提供一个单独的 getInitialState 方法。
 就像 getInitialState 的返回值，你赋给 this.state 的值会被作为组件的初始 state。
 
 另一个不同是 propTypes 和 defaultProps 是在构造函数里被定义为属性，而不是在 class body 里。
+
+```jsx
 
 export class Counter extends React.Component {
     constructor(props) {
@@ -1154,6 +1259,8 @@ export class Counter extends React.Component {
 Counter.propTypes = { initialCount: React.PropTypes.number };
 Counter.defaultProps = { initialCount: 0 };
 
+``` 
+
 ## 无自动绑定  
 
 ES6 Classes (export class Counter extends React.Component ) 方法,
@@ -1162,23 +1269,32 @@ ES6 Classes (export class Counter extends React.Component ) 方法,
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
+```html
+
 // 你可以使用 bind() 来绑定 `this`
 <div onClick={this.tick.bind(this)}>
 
 // 或者你可以使用箭头函数
 <div onClick={() => this.tick()}>
 
+``` 
+
 我们建议你在构造函数中绑定事件处理器，这样对于所有实例它们只需绑定一次：
+
+```jsx
 
 constructor(props) {
     super(props);
     this.state = {count: props.initialCount};
     this.tick = this.tick.bind(this);
 }
-现在你可以直接使用 this.tick 因为它已经在构造函数里绑定过一次了。
+
+// 现在你可以直接使用 this.tick 因为它已经在构造函数里绑定过一次了。
 
 // 它已经在构造函数里绑定过了
 <div onClick={this.tick}>
+
+``` 
 
 这对应用的性能有帮助，特别是当你用 **浅层比较** 实现 shouldComponentUpdate() 时。
 
@@ -1197,6 +1313,8 @@ http://react2.xgqfrms.xyz/docs/component-specs.html#updating-shouldcomponentupda
 
 你也可以用 JavaScript 函数来定义你的 React 类。例如使用无状态函数语法：
 
+```jsx
+
 function HelloMessage(props) {
     return <div>Hello {props.name}</div>;
 }
@@ -1205,7 +1323,10 @@ ReactDOM.render(
     mountNode
 );
 
+``` 
 或者,使用新的ES6箭头函数:
+
+```jsx
 
 <!-- 
 const HelloMessage = (props) => {
@@ -1224,6 +1345,8 @@ ReactDOM.render(
     <HelloMessage name="Sebastian" />,
     mountNode
 );
+
+``` 
 
 这个简化的组件API旨在用于那些纯函数态(pure function)的组件 。
 这些组件必须没有保持任何内部状态，没有备份实例，也没有组件生命周期方法。
@@ -1283,12 +1406,18 @@ selected，用于 <option> 组件。
 一个受控的 <input> 有一个 value prop。
 渲染一个受控 <input> 会反映 value prop 的值。
 
+```jsx
+
 render: function() {
     return <input type="text" value="Hello!" />;
 }
 
+
+``` 
 用户输入在被渲染的元素里将没有作用,因为 React 已经声明值为 Hello!。
 要更新 value 来响应用户输入，你可以使用 onChange 事件：
+
+```jsx
 
 getInitialState: function() {
     return {value: 'Hello!'};
@@ -1306,12 +1435,18 @@ render: function() {
     );
 }
 
+``` 
+
 在这个例子中，我们接受用户提供的值并更新 <input> 组件的 value prop。
 这个模式使实现响应或者验证用户输入的界面更容易。例如：
+
+```jsx
 
 handleChange: function(event) {
     this.setState({value: event.target.value.substr(0, 140)});
 }
+
+``` 
 
 上面的代码接受用户输入，并截取前 140 个字符。
 
@@ -1366,7 +1501,10 @@ http://react2.xgqfrms.xyz/docs/forms.html#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6
 在 React 中使用诸如 <input> 的表单组件时，遇到了一个在传统 HTML 中没有的挑战。
 比如下面的代码：
 
+```jsx
 <input type="text" name="title" value="Untitled" />
+
+``` 
 
 它渲染一个初始值为 Untitled 的输入框。
 当用户改变输入框的值时，节点的 value 属性( property)将随之变化，但是 node.getAttribute('value') 还是会返回初始设置的值 Untitled.
@@ -1374,10 +1512,13 @@ http://react2.xgqfrms.xyz/docs/forms.html#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6
 与 HTML 不同，React 组件必须在任何时间点都表现视图的状态，而不仅仅是在初始化时。
 比如在 React 中：
 
+```jsx
+
 render: function() {
     return <input type="text" name="title" value="Untitled" />;
 }
 
+``` 
 由于这个方法描述了在任意时间点上的视图，那么文本输入框的值就应该始终为 Untitled。
 
 
@@ -1385,15 +1526,22 @@ render: function() {
 
 在 HTML 中， <textarea> 的值通常使用子节点设置：
 
+```jsx
 <!-- 反例：在 React 中不要这样使用！ -->
 <textarea name="description">This is the description.</textarea>
+
+``` 
 
 对 HTML 而言，让开发者设置多行的值很容易。
 但是，由于 React 是 JavaScript，没有字符串限制，可以使用 \n 实现换行。
 简言之，React 已经有 value、defaultValue 属性，<textarea> 组件的子节点扮演什么角色就有点模棱两可了。
 基于此， 设置 <textarea> 值时不应该使用子节点：
 
+```jsx
+
 <textarea name="description" value="This is a description." />
+
+``` 
 
 如果 非要 使用子节点，效果和使用 defaultValue 一样。
 
@@ -1403,20 +1551,26 @@ render: function() {
 HTML 中 <select> 通常使用 <option> 的 selected 属性设置选中状态；
 React 为了更方便地控制组件，采用以下方式代替：
 
+```jsx
+
 <select value="B">
     <option value="A">Apple</option>
     <option value="B">Banana</option>
     <option value="C">Cranberry</option>
 </select>
 
+``` 
+
 如果是不受控组件，则使用 defaultValue。
 
 注意：
 给 value 属性传递一个数组，可以选中多个选项：
 
+```jsx
+
 <select multiple={true} value={['B', 'C']}>
 
-
+``` 
 
 
 
@@ -1432,9 +1586,15 @@ React 里有一个非常常用的模式就是对组件做一层抽象。
 
 可以使用 **JSX 展开属性** 来合并现有的 props 和其它值：
 
+```jsx
+
 <Component {...this.props} more="values" />
 
+``` 
+
 如果不使用 JSX，可以使用一些对象辅助方法如 ES6 的 Object.assign 或 Underscore _.extend。
+
+```jsx
 
 React.createElement(
     Component, 
@@ -1444,6 +1604,8 @@ React.createElement(
         { more: 'values' }
     )
 );
+
+``` 
 
 最佳实践 : 使用了 JSX 和 试验性的ECMAScript 语法。
 
@@ -1459,14 +1621,22 @@ http://react2.xgqfrms.xyz/docs/transferring-props.html#%E5%89%A9%E4%BD%99%E5%B1%
 
 // --harmony 标志是必须的因为这个语法是ES7的实验性语法。
 
+```jsx
+
 <script type="text/jsx; harmony=true">
+
+``` 
 
 有时把所有属性都传下去是不安全或啰嗦的。
 这时可以使用 解构赋值 中的剩余属性特性来把未知属性批量提取出来。
 
 列出所有当前要使用的属性，后面跟着 ...other。
 
+```jsx
+
 var { checked, ...other } = props;
+
+``` 
 
 这样能确保把所有 props 传下去，除了 那些已经被使用了的。
 
@@ -1504,11 +1674,15 @@ let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
 
 ??? run bugs ???
 
+``` 
+
 注意:
 
 要用 Babel 6转换 rest 和 spread 属性，
 你需要安装 es2015 preset，transform-object-rest-spread 插件,
 并在 .babelrc 里配置他们.
+
+```js 
 
 x; // 1
 y; // 2
@@ -1521,6 +1695,9 @@ z; // { a: 3, b: 4 }
 如果不使用 JSX，可以使用一些库来实现相同效果。
 
 Underscore 提供 _.omit 来过滤属性，_.extend 复制属性到新的对象。
+
+```jsx
+
 
 function FancyCheckbox(props) {
     var checked = props.checked;
@@ -1537,7 +1714,7 @@ function FancyCheckbox(props) {
     );
 }
 
-
+``` 
 
 
 *******************************************************************************
