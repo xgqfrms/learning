@@ -31,7 +31,7 @@ webpack --config webpack.dev.js
 
 
 
-
+2.2.1
 
 
 

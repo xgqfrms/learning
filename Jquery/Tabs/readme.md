@@ -14,6 +14,14 @@ tab切换效果，包括滑动、点击切换，延迟切换及自动切换
 焦点轮播
 
 
+http://www.imooc.com/learn/42
+
+
+表单美化
+
+http://www.imooc.com/learn/44
+
+表单验证
 
 
 

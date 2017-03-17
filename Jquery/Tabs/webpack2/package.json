@@ -1,6 +1,6 @@
 {
   "name": "webpack2",
-  "version": "2.2.2",
+  "version": "2.2.1",
   "description": "webpack2 ",
   "main": "webpack.config.js",
   "scripts": {
