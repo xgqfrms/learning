@@ -23,6 +23,28 @@ webpack2-offical-docs
 
 https://gist.github.com/xgqfrms-GitHub/6846eb4070a3eca79b7689660da7c095
 
+<a href="https://gist.github.com/xgqfrms-GitHub/8baf3c49ca472ebd8b281a5dbb5ccc53#gistcomment-2030198">ES6 version</a>
+
+
+
+http://www.imooc.com/learn/42
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
