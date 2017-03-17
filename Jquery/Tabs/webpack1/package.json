@@ -1,0 +1,21 @@
+{
+  "name": "webpack1",
+  "version": "1.1.1",
+  "description": "webpack1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xgqfrms/learning/"
+  },
+  "keywords": [
+    "https://github.com/xgqfrms/learning/"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
+}
