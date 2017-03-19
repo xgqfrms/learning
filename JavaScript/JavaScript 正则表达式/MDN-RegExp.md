@@ -525,6 +525,173 @@ https://regexper.com/#%5Cw(%3F!%5Cd)
 断言不会匹配!
 
 
+## RegExp 实例 属性 (RegExp 属性只读，不可修改赋值)
+
+注意，RegExp 对象的几个属性既有完整的长属性名，也有对应的类 Perl 的短属性名。
+两个属性都有着同样的值。
+JavaScript 的正则语法就是基于 Perl 的。
+
+RegExp.prototype.constructor
+创建该正则对象的构造函数。
+
+RegExp.prototype.global
+是否开启全局匹配，也就是匹配目标字符串中所有可能的匹配项，而不是只进行第一次匹配。
+
+RegExp.prototype.ignoreCase
+在匹配字符串时是否要忽略字符的大小写。
+
+RegExp.prototype.lastIndex
+下次匹配开始的字符串索引位置。
+
+RegExp.prototype.multiline
+是否开启多行模式匹配（影响 ^ 和 $ 的行为）。
+
+RegExp.prototype.source
+正则对象的源模式文本(RegExp 模式自身)。
+
+RegExp.prototype.sticky 
+是否开启粘滞匹配。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features
+
+废弃和过时的JavaScript特性
+
+
+
+
+
+
+
+let regex = /(\d{4}\1)-(\d{2})-(\d{2})/g;
+
+regex.source
+"(\d{4}\1)-(\d{2})-(\d{2})"
+
+regex.ignoreCase
+false
+
+regex.multiline
+false
+
+regex.sticky
+false
+
+regex.lastIndex
+0
+
+regex.global
+true
+
+regex.flags
+"g"
+
+
+
+
+
+
+
+## 方法
+
+
+RegExp.prototype.exec()
+在目标字符串中执行一次正则匹配操作。
+
+RegExp.prototype.test()
+测试当前正则是否能匹配目标字符串。
+
+RegExp.prototype.toSource() 
+返回一个字符串，其值为该正则对象的字面量形式。
+覆盖了Object.prototype.toSource 方法.
+
+RegExp.prototype.toString()
+返回一个字符串，其值为该正则对象的字面量形式。
+覆盖了Object.prototype.toString() 方法。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features
+
+废弃和过时的JavaScript特性
+
+
+
+
+
+
+
+let regex = /(\d{4}\1)-(\d{2})-(\d{2})/g;
+
+
+regex.test("abc123")
+true
+
+regex.exec("abc123")
+
+
+regex.toString("abc123")
+
+
+regex.toSource("abc123")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## String.prototype.replace()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+
+replace() 方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。
+模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。
+
+语法 
+
+str.replace(regexp|substr, newSubStr|function)
+
+参数
+
+regexp (pattern)
+一个 RegExp 对象或者其字面量。该正则所匹配的内容会被第二个参数的返回值替换掉。
+
+substr (pattern)
+一个要被 newSubStr 替换的字符串。其被视为一整个字符串，而不是一个正则表达式。仅仅是第一个匹配会被替换。
+
+newSubStr (replacement)
+用于替换掉第一个参数在原字符串中的匹配部分的 字符串。该字符串中可以内插一些特殊的变量名。参考下面的使用字符串作为参数。
+
+function (replacement)
+一个用来创建新子字符串的函数，该函数的返回值将替换掉第一个参数匹配到的结果。参考下面的指定一个函数作为参数。
+
+
+返回值
+
+一个部分或全部匹配由替代模式所取代的新的字符串。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
