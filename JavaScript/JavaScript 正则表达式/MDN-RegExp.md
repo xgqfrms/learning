@@ -624,18 +624,27 @@ let regex = /(\d{4}\1)-(\d{2})-(\d{2})/g;
 
 
 regex.test("abc123")
-true
+false
 
 regex.exec("abc123")
-
+null
 
 regex.toString("abc123")
+"/(\d{4}\1)-(\d{2})-(\d{2})/g"
 
 
 regex.toSource("abc123")
 
+// Uncaught TypeError: regex.toSource is not a function
 
 
+## lastIndex bug???
+
+http://www.imooc.com/video/12537
+
+g
+test()
+lastIndex bug??? 执行多次，结果不一致！
 
 
 
