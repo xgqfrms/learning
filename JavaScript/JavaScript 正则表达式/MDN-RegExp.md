@@ -700,23 +700,87 @@ regexg.test("abc");
 
 
 
+## RegExp.prototype.exec()
+
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
 
 
+exec() 方法在一个指定字符串中执行一个搜索匹配。
+返回一个结果数组或 null。
+
+如果你正在执行一个匹配只是为了找到 true或 false，可以使用 RegExp.test() 方法，或者 String.search() 方法。
+
+
+regexObj.exec(str)
+
+
+str 要匹配正则表达式的字符串。
+
+如果成功匹配，exec() 方法返回一个数组并更新正则表达式对象的属性。返回的数组具有匹配的文本作为第一项，然后匹配的每个捕获括号的一个项包含捕获的文本。
+
+如果匹配失败，exec() 方法返回 null。
+
+
+
+index   匹配到的字符位于原始字符串的基于0的索引值
+
+input   原始字符串
+
+
+
+
+
+## String.prototype.split()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+
+字符串 => 数组
+
+
+`a1b2c3d4e5f6g7`.split(/\w/g, ",");
+
+`a1b2c3d4e5f6g7`.split(/\d/g);
+["a", "b", "c", "d", "e", "f", "g", ""]
+
+`a1b2c3d4e5f6g7`.split(/[^\d]/g);
+["", "1", "2", "3", "4", "5", "6", "7"]
+
+
+
+
+"a,b,c,d,e,f,g,1,2,3,4,5,6,7".split(",");
+
+"a,b,c,d,e,f,g,1,2,3,4,5,6,7".split(",");
+["a", "b", "c", "d", "e", "f", "g", "1", "2", "3", "4", "5", "6", "7"]
+
+"a,b,c,d,e,f,g,1,2,3,4,5,6,7".split(/,/g)
+["a", "b", "c", "d", "e", "f", "g", "1", "2", "3", "4", "5", "6", "7"]
 
 
 
 
 
 
+## String.prototype.match()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
 
+当一个字符串与一个正则表达式匹配时， match()方法检索匹配项。
 
 
+str.match(regexp);
 
 
+regexp
+
+一个正则表达式对象。如果传入一个非正则表达式对象，则会隐式地使用 new RegExp(obj) 将其转换为一个 RegExp 。如果你未提供任何参数，直接使用 match() ，那么你会得到一个包含空字符串的 Array ：[""] 。
 
 
+array
+
+一个包含了整个匹配结果以及任何括号捕获的匹配结果的 Array ；如果没有匹配项，则返回 null 。
 
 
 
@@ -781,8 +845,46 @@ function (replacement)
 
 
 
+`a1b2c3d4e5f6g7`.replace(/\d/g, (match, index, origin)=>{
+    console.log(index);
+    return parseInt(match) + 1;
+});
+
+"a2b3c4d5e6f7g8"
+
+`a1b2c3d4e5f6g7`.replace(/\d/g, (match, index, origin)=>{
+    console.log(index);
+    for(match of origin){
+        console.log(match);
+    }
+    return parseInt(match) + 1;
+});
+
+"a2b3c4d5e6f7g8"
 
 
+
+
+`a1b2c3d4e5f6g7`.replace(/(\d)(\w)(\d)/g, (match, group1, group2, group3, index, origin)=>{
+    console.log(index);
+    console.log(match);
+    return group1 + group3;
+});
+
+1
+1b2
+5
+3d4
+9
+5f6
+
+"a12c34e56g7"
+
+replace function 删除 group2 
+
+
+
+http://www.imooc.com/video/12538
 
 
 
