@@ -1,6 +1,220 @@
 # JavaScript 正则表达式
 
 
+
+
+
+https://regexper.com
+
+https://regexper.com/documentation.html
+
+
+https://regexper.com/#%5E(%5Ba-zA-Z0-9_-%5D)%2B%40(%5Ba-zA-Z0-9_-%5D)%2B((%5C.%5Ba-zA-Z0-9_-%5D%7B2%2C3%7D)%7B1%2C2%7D)%24
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+
+字面量, 构造函数和工厂符号都是可以的：
+
+/pattern/flags 
+
+// 字面量: 模式 标志
+
+new RegExp(pattern [, flags])
+
+// 构造函数: 模式 标志
+
+​​​​​​​RegExp(pattern [, flags])
+
+// 工厂符号:​​​​​​​ 模式 标志​​​​​​​
+
+
+
+
+^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$
+
+email
+
+
+https://regexper.com/#%5E(%5Ba-zA-Z0-9_-%5D)%2B%40(%5Ba-zA-Z0-9_-%5D)%2B((%5C.%5Ba-zA-Z0-9_-%5D%7B2%2C3%7D)%7B1%2C2%7D)%24
+
+
+正则表达式中的特殊字符含义
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Special_characters_in_regular_expressions
+
+
+## 字符集合（Character Sets）
+
+[one of]
+
+一个字符集合，也叫字符组。
+匹配集合中的任意一个字符。
+你可以使用连字符'-'指定一个范围。
+
+例如，[abcd] 等价于 [a-d]。
+匹配"brisket"中的'b'和"chop"中的'c'。
+
+
+[^None of]
+[^xyz]  
+一个反义或补充字符集，也叫反义字符组。
+也就是说，它匹配任意不在括号内的字符。
+你也可以通过使用连字符 '-' 指定一个范围内的字符。
+
+例如，[^abc] 等价于 [^a-c]。 
+第一个匹配的是 "bacon" 中的'o' 和 "chop" 中的 'h'。
+
+
+
+\w  
+匹配任意来自基本拉丁字母表中的字母数字字符，还包括下划线。
+等价于 [A-Za-z0-9_]。
+
+例如，/\w/ 匹配 "apple" 中的 'a'，"$5.28" 中的 '5' 和 "3D" 中的 '3'。
+
+\W  
+匹配任意不是基本拉丁字母表中单词（字母数字下划线）字符的字符。
+等价于 [^A-Za-z0-9_]。
+
+例如，/\W/ 或 /[^A-Za-z0-9_]/ 匹配 "50%" 中的 '%'。
+
+
+
+
+[A-Za-z0-9-] , [^A-Za-z0-9-] 匹配 中的 - 
+
+
+`2017-03-19`.replace(/[0-9-]/, `X`);
+"X017-03-19"
+`2017-03-19`.replace(/[0-9-]/g, `X`);
+"XXXXXXXXXX"
+
+
+`2017-03-19`.replace(/[0-9]/, `X`);
+"X017-03-19"
+`2017-03-19`.replace(/[0-9]/g, `X`);
+"XXXX-XX-XX"
+
+
+
+
+## 字符类别（Character Classes）
+
+字符  含义
+
+. (点号，小数点)匹配任意单个字符，但是回车\r换行\n符除外：\n \r \u2028 或 \u2029。
+
+. 匹配除了行终止符(回车\r换行\n)之外的任何单个字符：
+
+. === [^\r\n]
+
+
+. (点号，小数点) 匹配任意单个字符，但是回车\r换行\n符除外：\n \r \u2028 或 \u2029。
+
+在字符集中，点( . )失去其特殊含义，并匹配一个字面点( . )。
+
+
+需要注意的是，m 多行（multiline）标志不会改变点号的表现。因此为了匹配多行中的字符集，可使用[^] （当然你不是打算用在旧版本 IE 中），它将会匹配任意字符，包括换行符。
+
+例如，/.y/ 匹配 "yes make my day" 中的 "my" 和 "ay"，但是不匹配 "yes"。
+
+\d  
+匹配基本拉丁字母表（basic Latin alphabet）中的一个数字字符。等价于[0-9]。
+
+例如，/\d/ 或 /[0-9]/ 匹配 "B2 is the suite number." 中的 '2'。 
+
+\D  
+匹配任意一个不是基本拉丁字母表中数字的字符。等价于[^0-9]。
+
+例如，/\D/ 或 /[^0-9]/ 匹配 "B2 is the suite number." 中的 'B'。
+
+\w  
+匹配任意来自基本拉丁字母表中的字母数字字符，还包括下划线。等价于 [A-Za-z0-9_]。
+
+例如，/\w/ 匹配 "apple" 中的 'a'，"$5.28" 中的 '5' 和 "3D" 中的 '3'。
+
+`2017-03-19_abc.xyz`.replace(/[\w]/g, `X`);
+"XXXX-XX-XXXXXX.XXX"
+
+
+\W  
+匹配任意不是基本拉丁字母表中单词（字母数字下划线）字符的字符。等价于 [^A-Za-z0-9_]。
+
+例如，/\W/ 或 /[^A-Za-z0-9_]/ 匹配 "50%" 中的 '%'。
+
+
+`2017-03-19_abc.xyz`.replace(/[\W]/g, `X`);
+"2017X03X19_abcXxyz"
+
+
+
+
+\s  
+匹配一个空白符，包括空格、制表符、换页符、换行符和其他 Unicode 空格。
+
+等价于 [ \f\n\r\t\v​\u00a0\u1680​\u180e\u2000​\u2001\u2002​\u2003\u2004​ \u2005\u2006​\u2007\u2008​\u2009\u200a​\u2028\u2029​​\u202f\u205f​ \u3000]。
+
+例如 /\s\w*/ 匹配 "foo bar" 中的 ' bar'。
+
+\S  
+匹配一个非空白符。等价于 [^ \f\n\r\t\v​\u00a0\u1680​\u180e\u2000​\u2001\u2002​\u2003\u2004​ \u2005\u2006​\u2007\u2008​\u2009\u200a​\u2028\u2029​\u202f\u205f​\u3000]。
+
+例如，/\S\w*/ 匹配 "foo bar" 中的 'foo'。
+
+\t  匹配一个水平制表符（tab）
+\r  匹配一个回车符（carriage return）
+\n  匹配一个换行符（linefeed）
+\v  匹配一个垂直制表符（vertical tab）
+\f  匹配一个换页符（form-feed）
+[\b]    匹配一个退格符（backspace）（不要与 \b 混淆）
+\0  匹配一个 NUL 字符。不要在此后面跟小数点。
+\cX 
+X 是 A - Z 的一个字母。匹配字符串中的一个控制字符。
+
+例如，/\cM/ 匹配字符串中的 control-M。
+
+\xhh    匹配编码为 hh （两个十六进制数字）的字符。
+\uhhhh  匹配 Unicode 值为 hhhh （四个十六进制数字）的字符。
+\   
+对于那些通常被认为字面意义的字符来说，表示下一个字符具有特殊用处，并且不会被按照字面意义解释。
+
+例如 /b/ 匹配字符 'b'。在 b 前面加上一个反斜杠，即使用 /\b/，则该字符变得特殊，以为这匹配一个单词边界。
+
+或
+
+对于那些通常特殊对待的字符，表示下一个字符不具有特殊用途，会被按照字面意义解释。
+
+例如，* 是一个特殊字符，表示匹配某个字符 0 或多次，如 /a*/ 意味着 0 或多个 "a"。 为了匹配字面意义上的 * ，在它前面加上一个反斜杠，例如，/a\*/匹配 'a*'。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Regular Expressions
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
