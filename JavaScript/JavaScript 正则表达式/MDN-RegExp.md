@@ -646,8 +646,98 @@ g
 test()
 lastIndex bug??? 执行多次，结果不一致！
 
+let regex = /\w/;
+
+let regexg = /\w/g;
+
+regexg.test("abc");
 
 
+let regexg = /\w/g;
+
+regexg.test("abc");
+true
+regexg.test("abc");
+true
+regexg.test("abc");
+true
+
+regexg.test("abc");
+false
+
+
+regexg.test("abc");
+true
+regexg.test("abc");
+true
+regexg.test("abc");
+true
+
+regexg.test("abc");
+false
+
+
+## lastIndex bug??? (test不要使用g 标志符)
+
+当前匹配结果的的最后一个字符的下一个字符位置，
+
+首先匹配到a，a是当前匹配结果，最后一个字符仍是a，
+a的位置是0，true,下一个字符位置是1，
+b的位置是1，true,下一个字符位置是2，
+c的位置是2，true,下一个字符位置是3，
+
+?的位置是3，false,下一个字符位置是0，
+
+
+
+
+
+let regex = /\w/;
+
+let regexg = /\w/g;
+
+regexg.test("abc");
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Object.prototype.toSource()
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource
+
+
+function Dog(name, breed, color, sex) {
+    this.name = name;
+    this.breed = breed;
+    this.color = color;
+    this.sex = sex;
+}
+
+theDog = new Dog("Gabby", "Lab", "chocolate", "girl");
+
+theDog.toSource();
 
 
 
