@@ -507,15 +507,22 @@ x(?!y)
 
 
 
+\w(?=\d)
+
+positive lookahead 正向前瞻/积极的向前查找
+
+https://regexper.com/#%5Cw(%3F%3D%5Cd)
+
+
+\w(?!\d)
+
+negative lookahead 负向前瞻/否定,拒绝向前查找
+
+https://regexper.com/#%5Cw(%3F!%5Cd)
 
 
 
-
-
-
-
-
-
+断言不会匹配!
 
 
 
