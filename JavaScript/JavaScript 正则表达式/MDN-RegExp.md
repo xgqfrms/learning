@@ -900,12 +900,17 @@ http://www.imooc.com/video/528
 
 
 
+## React 2
+
 https://github.com/facebook/react/issues/9203#issuecomment-287319766
 
 
+https://gist.github.com/xgqfrms-GitHub
 
 
+https://gist.github.com/xgqfrms-GitHub/78e30aa832bfc923f92bd59c6d27046c
 
+http://qianduan.guru/2017/01/11/react-higher-order-components-in-depth/
 
 
 
