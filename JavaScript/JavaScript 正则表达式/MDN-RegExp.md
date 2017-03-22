@@ -900,10 +900,7 @@ http://www.imooc.com/video/528
 
 
 
-
-
-
-
+https://github.com/facebook/react/issues/9203#issuecomment-287319766
 
 
 
