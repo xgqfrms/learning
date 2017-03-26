@@ -55,3 +55,23 @@ https://www.youtube.com/watch?v=G0BzzuXS8gI
 
 
 
+
+
+## JSON server 
+
+
+https://github.com/typicode/json-server
+
+
+$ npm install -g json-server
+
+
+https://gist.github.com/xgqfrms-GitHub/cb8459af5e7db7af107a25615f738ab5
+
+
+https://github.com/xgqfrms-GitHub/json-server
+
+
+
+
+

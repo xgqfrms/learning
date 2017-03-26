@@ -1,0 +1,28 @@
+{
+  "name": "json-rest-api-server",
+  "version": "0.9.6",
+  "description": "JSON-REST-API-Server, JSON-Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms-GitHub/json-server.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "JSON",
+    "Server"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms-GitHub/json-server/issues"
+  },
+  "homepage": "https://github.com/xgqfrms-GitHub/json-server#readme",
+  "devDependencies": {
+    "json-server": "^0.9.6"
+  }
+}
