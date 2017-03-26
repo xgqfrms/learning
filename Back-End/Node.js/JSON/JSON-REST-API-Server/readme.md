@@ -210,6 +210,49 @@ faker.js - 在node.js和浏览器中生成大量的假数据
 
 https://marak.github.io/faker.js/
 
+https://www.npmjs.com/package/faker
+
+
+
+
+
+
+```sh
+
+$ npm install faker -D
+
+``` 
+
+
+
+firstName = faker.name.firstName();
+lastName = faker.name.lastName();
+email = faker.internet.email();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

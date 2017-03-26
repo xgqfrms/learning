@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/xgqfrms-GitHub/json-server#readme",
   "devDependencies": {
+    "faker": "^4.1.0",
     "json-server": "^0.9.6"
   }
 }
