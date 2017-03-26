@@ -15,7 +15,7 @@ function generateEmployees(){
             "id" : i,
             "firstName" : firstName,
             "lastName" : lastName,
-            " email" : email
+            "email" : email
         });
     }
     return {

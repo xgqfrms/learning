@@ -233,11 +233,21 @@ email = faker.internet.email();
 
 
 
+http://localhost:3000/employees
 
+http://localhost:3000/
 
+firstName
+lastName
+email
 
+/*
 
+$ json-server --watch db.json
 
+$ json-server --watch fakerdb.js
+
+*/
 
 
 
