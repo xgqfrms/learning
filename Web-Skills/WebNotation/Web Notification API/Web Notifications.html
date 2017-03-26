@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Notifications</title>
+    <!-- https://codepen.io/xgqfrms/post/web-notifications -->
+    <!-- https://codepen.io/xgqfrms/pen/vxaQKe -->
+</head>
+<body>
+    <script>
+        const MyNotification = () => {
+            if("Notification" in window){
+                let ask = Notification.requestPermission();
+                console.log(`ask = ${ask}`);
+                ask.then(permission => {
+                    let msg = new Notification(
+                        "title", 
+                        {
+                            body: "Hello, Notifications!",
+                            icon: "https://cdn.xgqfrms.xyz/logo/favicon.png"
+                        }
+                    );
+                    msg.addEventListener("click", (event) => {
+                        alert("close this Notification!");
+                    })
+                });
+            }
+        }
+        window.onload = MyNotification();
+    </script>
+</body>
+</html>

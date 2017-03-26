@@ -150,6 +150,36 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 https://gist.github.com/xgqfrms-GitHub/5b8bf3b7d1990e8682b897fd670c1449
 
 
+if("Notification" in window){
+    let ask = Notification.requestPermission();
+    console.log(`ask = ${ask}`);
+    ask.then(permission => {
+        let msg = new Notification(
+            "title", 
+            {
+                body: "Hello, Notifications!",
+                icon: "url"
+            }
+        );
+        msg.addEventListener("click", () => {
+            alert("close this Notification!");
+        })
+    });
+}
+
+
+
+https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications
+
+https://gist.github.com/xgqfrms-GitHub/e2c262cee5454dff25db53941d9d1177
+
+
+
+
+
+
+
+
 
 
 

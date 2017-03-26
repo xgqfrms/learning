@@ -35,6 +35,10 @@ https://notifications.spec.whatwg.org/
 
 
 
+https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications
+
+https://gist.github.com/xgqfrms-GitHub/e2c262cee5454dff25db53941d9d1177
+
 
 
 
