@@ -1,15 +1,41 @@
 {
-    "posts": [{
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-    }],
-    "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server1",
+      "author": "typicode1"
+    },
+    {
+      "id": 2,
+      "title": "json-server2",
+      "author": "typicode2"
+    },
+    {
+      "id": 3,
+      "title": "json-server3",
+      "author": "typicode3"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment1",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment2",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "some comment3",
+      "postId": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode1",
+    "name": "typicode2",
+    "name": "typicode3"
+  }
 }

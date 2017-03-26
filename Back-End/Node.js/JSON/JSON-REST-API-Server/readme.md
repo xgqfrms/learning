@@ -201,5 +201,13 @@ get
 
 
 
+## faker.js
+
+
+https://github.com/marak/Faker.js/
+
+faker.js - 在node.js和浏览器中生成大量的假数据
+
+https://marak.github.io/faker.js/
 
 
