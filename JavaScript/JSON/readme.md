@@ -118,3 +118,64 @@ https://tools.ietf.org/html/rfc7519
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+## JSON：不是JavaScript子集 ???
+
+ttps://github.com/zeit/next.js#how-to-use
+
+
+http://timelessrepo.com/json-isnt-a-javascript-subset
+
+
+JSON：不是JavaScript子集
+
+JSON基于JavaScript脚本语言的一个子集。
+所有JSON格式的文本也是语法合法的JavaScript代码。
+JSON是JavaScript的一个子集。
+
+
+这些年来，我们一再听到：“JSON是一个JavaScript子集”。你猜怎么了？他们错了错，错，错
+
+你看，恶魔的细节，没有办法避免它：并不是所有的JSON格式的文本是合法的JavaScript代码：
+
+```
+
+{"JSON": "rocks!"}
+
+```
+
+复制上面的确切代码，并将其粘贴到一个括号中的Firebug或Web Inspector中（为了避免JavaScript语法中的歧义）
+
+
+{"JSON": "rocks!"}
+// Object {JSON: "rocks!"}
+
+({"JSON": "rocks!"})
+// Object {JSON: "rocks!"}
+
+
+
+Douglas Crockford
+
+http://crockford.com/
+
+http://crockford.com/calendar.html
+http://crockford.com/javascript/encyclopedia/
+
+https://github.com/douglascrockford/TheJavaScriptEncyclopedia
+
+https://github.com/douglascrockford/JSON-js/blob/master/json2.js
+
+
+
+https://github.com/FreedGo
