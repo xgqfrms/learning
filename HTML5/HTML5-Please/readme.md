@@ -145,3 +145,16 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 
 
+## 后台管理 restful api 设计
+
+https://gist.github.com/xgqfrms-GitHub/5b8bf3b7d1990e8682b897fd670c1449
+
+
+
+
+
+
+
+
+
+

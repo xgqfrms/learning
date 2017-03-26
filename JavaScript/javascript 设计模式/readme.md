@@ -103,3 +103,16 @@ G:\wwwRoot\learning\JavaScript\javascript 设计模式\single responsibility pri
 
 G:\wwwRoot\learning\Interviews\javascript 设计模式
 
+
+
+
+
+
+
+
+
+
+https://sourcemaking.com/design-patterns-and-tips
+
+
+101种的设计模式与技巧开发
