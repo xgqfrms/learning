@@ -131,4 +131,29 @@ https://gist.github.com/xgqfrms-GitHub/c2a887477b79d2b940e78723cbfafcf0
 
 
 
+https://github.com/xgqfrms/learning/issues/10
+
+
+JavaScript 正则表达式
+
+
+https://gist.github.com/xgqfrms-GitHub/2c085400d92808c2ad342e5403a597ee
+
+
+cmd multi commands
+
+
+https://gist.github.com/xgqfrms-GitHub
+
+
+
+
+
+
+
+
+
+
+
+
 

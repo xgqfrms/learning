@@ -36,12 +36,25 @@ https://regexper.com/#%5E(%5Ba-zA-Z0-9_-%5D)%2B%40(%5Ba-zA-Z0-9_-%5D)%2B((%5C.%5
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
 
 
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/search
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
 
 
