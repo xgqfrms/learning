@@ -48,3 +48,9 @@ http://files2.syncfusion.com/Downloads/Ebooks/SQL_Queries_Succinctly.pdf
 
 
 
+http://files2.syncfusion.com/Downloads/Ebooks/Angular2_Succinctly.pdf
+
+
+
+
+
