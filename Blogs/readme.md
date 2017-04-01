@@ -28,6 +28,17 @@ http://www.webdesignernews.com/
 
 
 
+https://cm.engineering/getting-to-know-css-grid-layout-818e43ca71a5
+
+
+https://hackernoon.com/12-extremely-useful-hacks-for-javascript-278567de2706
+
+
+
+https://www.youtube.com/watch?v=5bsZJGAelFM&list=PLOa5YIicjJ-XcXUG-li0bAAIJQxshPZTB&index=6
+
+
+Learn The Local Service Angular Application Design Pattern
 
 
 
