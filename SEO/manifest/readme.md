@@ -19,3 +19,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Cache
 ## Service Workers
 
 
+
+## 前端埋点技术实现方案，技术难点，解决方案
