@@ -46,7 +46,9 @@ FALLBACK:
 # https://moz.com/learn/seo/redirection
 # http://www.redirect-checker.org/
 # http://www.checkupdown.com/status/E405_zh.html
+# https://www.html5rocks.com/zh/tutorials/appcache/beginner/
 
 CACHE:
 /html5/ /404.html
-/* /404.html
+
+*.html /404.html
