@@ -212,6 +212,7 @@ https://www.w3.org/TR/html5/browsers.html#application-cache-download-process
 
 
 
+```js
 
 document.getElementById('indicator').textContent
 
@@ -237,6 +238,9 @@ document.getElementById('application-cache-api').innerHTML
 document.getElementById('application-cache-api').textContent = navigator.onLine ? 'online' : 'offline';
 
 // "online"
+
+
+``` 
 
 
 
@@ -267,7 +271,7 @@ https://www.w3.org/TR/html5/browsers.html#manifests
 https://www.w3.org/TR/html5/browsers.html#application-cache-api
 
 
-
+HTML 5 应用程序缓存
 
 
 
