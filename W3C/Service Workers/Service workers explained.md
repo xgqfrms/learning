@@ -51,5 +51,37 @@ https://www.html5rocks.com/zh/tutorials/
 
 
 
+## appcache
+
+http://www.w3school.com.cn/html5/html_5_app_cache.asp
+
+https://www.html5rocks.com/zh/tutorials/appcache/beginner/
+
+
+
+## .htaccess
+
+
+http://www.htaccess-guide.com/
+
+
+.htaccess是用于在运行Apache Web Server软件的Web服务器上使用的配置文件。
+
+当.htaccess文件被放置在依次通过Apache Web Server加载的目录中时，Apache Web Server软件会检测并执行.htaccess文件。
+
+这些.htaccess文件可用于更改Apache Web Server软件的配置，以启用/禁用Apache Web Server软件提供的其他功能和功能。
+
+这些设施包括基本的重定向功能，例如，如果发现404文件未发现错误，或者用于更高级的功能，例如内容密码保护或图像热链接防护。
+
+
+http://httpd.apache.org/docs/current/howto/htaccess.html
+
+
+
+
+
+
+
+
 
 
