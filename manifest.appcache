@@ -1,0 +1,40 @@
+CACHE MANIFEST
+# comment: the above line is required
+
+
+# online whitelist - it isn't cached
+
+NETWORK:
+index.php
+
+# CSS
+CACHE:
+# https://learning.xgqfrms.xyz/stylesheets/style.css
+/stylesheets/style.css
+
+
+# images
+
+CACHE:
+# https://learning.xgqfrms.xyz/logos/canva-Angular2-bible.png
+https://cdn.xgqfrms.xyz/logo/favicon.ico
+https://cdn.xgqfrms.xyz/logo/favicon.png
+/logos/canva-Angular2-bible.png
+
+# json
+
+https://learning.xgqfrms.xyz/manifest.json
+
+# SEO
+
+https://learning.xgqfrms.xyz/humans.txt
+
+
+FALLBACK:
+
+# 404 redirect
+# https://moz.com/learn/seo/redirection
+# http://www.redirect-checker.org/
+
+/html5/ /404.html
+/* /404.html

@@ -275,6 +275,10 @@ HTML 5 应用程序缓存
 
 
 
+manifest.json
+
+
+
 
 
 
