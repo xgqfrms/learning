@@ -437,6 +437,13 @@ https://html.spec.whatwg.org/#toc-workers
 
 
 
+switch
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/switch
+
+
+
+
 
 
 
