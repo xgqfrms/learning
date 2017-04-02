@@ -280,16 +280,49 @@ manifest.json
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Using_the_application_cache
+
+
+
+HTML5 提供一种 应用程序缓存 机制，使得基于web的应用程序可以离线运行。开发者可以使用 Application Cache (AppCache) 接口设定浏览器应该缓存的资源并使得离线用户可用。 在处于离线状态时，即使用户点击刷新按钮，应用也能正常加载与工作。
+使用应用缓存可以得到以下益处：
+
+离线浏览: 用户可以在离线状态下浏览网站内容。
+更快的速度: 因为数据被存储在本地，所以速度会更快。
+减轻服务器的负载: 浏览器只会下载在服务器上发生改变的资源。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html
+
+
+
+## 测试缓存清单的更新
+
+```js
+
+function onUpdateReady() {
+    alert('found new version!');
+}
+
+window.applicationCache.addEventListener('updateready', onUpdateReady);
+
+if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+    onUpdateReady();
+}
+``` 
 
 
 
 
 
 
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/applicationCache
 
 
 
+REC
 
+WD
 
 
 

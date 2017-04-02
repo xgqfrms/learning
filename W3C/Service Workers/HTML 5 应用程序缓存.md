@@ -128,6 +128,10 @@ manifest 文件被修改（参阅下面的提示）
 
 ## 实例 - 完整的 Manifest 文件
 
+# version 1.x.x 2017-04-02
+
+
+
 ```md
 CACHE MANIFEST
 # 2012-02-21 v1.0.0

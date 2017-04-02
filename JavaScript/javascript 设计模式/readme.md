@@ -116,3 +116,21 @@ https://sourcemaking.com/design-patterns-and-tips
 
 
 101种的设计模式与技巧开发
+
+
+
+
+
+Learning JavaScript Design Patterns
+
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+
+http://www.kancloud.cn/kancloud/learn-js-design-patterns/56461
+
+
+
+
+
+
+
+

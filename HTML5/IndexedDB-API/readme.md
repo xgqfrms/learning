@@ -35,7 +35,24 @@ HTML5 提供一种 应用程序缓存 机制，使得基于web的应用程序可
 减轻服务器的负载: 浏览器只会下载在服务器上发生改变的资源。
 
 
-version
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html
+
+
+
+## 测试缓存清单的更新
+
+```js
+
+function onUpdateReady() {
+    alert('found new version!');
+}
+
+window.applicationCache.addEventListener('updateready', onUpdateReady);
+
+if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+    onUpdateReady();
+}
+``` 
 
 
 
