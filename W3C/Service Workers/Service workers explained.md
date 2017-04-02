@@ -81,6 +81,14 @@ http://httpd.apache.org/docs/current/howto/htaccess.html
 
 
 
+http://html5demos.com/offlineapp#view-source
+
+http://html5demos.com/offlineapp
+
+https://twitter.com/rem
+
+https://remysharp.com/2017/03/27/dollar-in-code-examples
+
 
 
 

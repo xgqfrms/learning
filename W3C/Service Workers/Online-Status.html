@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Status</title>
+    <!-- 
+     Node.textContent 
+     https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent 
+     innerText
+     innerHTML
+     https://developer.mozilla.org/zh-CN/docs/Web/API/Node/innerText
+     childNodes
+     https://developer.mozilla.org/zh-CN/docs/Web/API/Node
+     outerText
+     https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/outerText
+     http://stackoverflow.com/questions/18481382/what-is-the-difference-between-innertext-and-outertext/18481435#18481435
+     -->
+</head>
+<body onload="updateIndicator()" ononline="updateIndicator()" onoffline="updateIndicator()">
+    <p>The network is: <span id="indicator">(state unknown)</span></p>
+    <div>
+        <h1>
+            Online Status
+            <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent">https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent</a>
+        </h1>
+    </div>
+    <script>
+        function updateIndicator() {
+            document.getElementById('indicator').textContent = navigator.onLine ? 'online' : 'offline';
+        }
+    </script>
+</body>
+</html>
