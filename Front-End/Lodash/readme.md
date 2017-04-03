@@ -70,6 +70,21 @@ A modern JavaScript utility library delivering modularity, performance & extras.
 
 
 
+## 自定义构建
+
+
+https://lodash.com/custom-builds
+
+```sh
+$ npm i -g npm
+$ npm i -g lodash-cli
+$ lodash -h
+
+``` 
+
+## 前端代码风格指南
+
+https://gist.github.com/xgqfrms-GitHub/a337ce4d2fa881db7bdb4d97c9947fb7
 
 
 
