@@ -75,6 +75,14 @@ A modern JavaScript utility library delivering modularity, performance & extras.
 
 https://lodash.com/custom-builds
 
+自定义构建使得轻松创建仅包含您需要的功能的Lodash的轻量级版本变得容易。
+
+
+https://github.com/lodash/lodash/wiki/Build-Differences
+
+https://www.npmjs.com/package/lodash-cli
+
+
 ```sh
 $ npm i -g npm
 $ npm i -g lodash-cli
