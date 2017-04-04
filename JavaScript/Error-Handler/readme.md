@@ -60,10 +60,15 @@ view-source:https://learning.xgqfrms.xyz/error.js
 
 
 
+# HTTP Status Codes
+
+https://gist.github.com/xgqfrms-GitHub/3c1df86c0cca4281516ddbb7132f77c3
 
 
 
+G:\wwwRoot\learning\JavaScript\Error-Handler
 
+G:\wwwRoot\cdn\https\redirection.js
 
 
 
