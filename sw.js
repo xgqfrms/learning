@@ -68,9 +68,18 @@ timedCount();
 
 
 
+// https://cdn.xgqfrms.xyz/plugins/getfullyear.js
 
-
-
+const copyRightYear = () => {
+    let copyYear = Symbol();
+    copyYear = new Date().getFullYear();
+    const spanYear = document.getElementById('spanYear');
+    spanYear.style.background = "yellow";
+    spanYear.style.color = "#000";
+    spanYear.innerHTML = `Copyright &copy; ${copyYear} - 2050 xgqfrms`;
+    return spanYear;
+}
+window.onload = copyRightYear();
 
 
 
