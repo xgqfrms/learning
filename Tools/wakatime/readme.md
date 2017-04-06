@@ -10,6 +10,11 @@ https://wakatime.com/dashboard
 
 
 
+whttps://wakatime.com/api/v1/users/current/machine_names
+
+
+
+
 
 
 
