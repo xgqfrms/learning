@@ -36,3 +36,18 @@ whttps://wakatime.com/api/v1/users/current/machine_names
 }
 
 
+
+https://wakatime.com/api/v1/users/current/user_agents
+
+
+
+https://wakatime.com/api/v1/users/current/heartbeats?date=2017-04-06&show=machine_name,user_agent
+
+
+
+
+G:\wwwRoot\learning\000projects\commenting-engine
+
+https://github.com/wakatime/vscode-wakatime#troubleshooting
+
+

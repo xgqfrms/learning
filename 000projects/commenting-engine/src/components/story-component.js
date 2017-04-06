@@ -1,6 +1,8 @@
 // Story component
 
 // stateless component
+import React, { Component } from 'react'
+
 
 let Story = React.creatClass({
     render: function(){
