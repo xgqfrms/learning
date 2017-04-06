@@ -1,6 +1,8 @@
 // StoryForm component
 
 // stateless component
+import React, { Component } from 'react'
+
 
 let StoryForm = React.creatClass({
     render: function(){

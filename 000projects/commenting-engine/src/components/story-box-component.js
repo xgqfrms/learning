@@ -14,6 +14,7 @@ let StoryBox = React.creatClass({
 });
 */
 
+import React, { Component } from 'react'
 
 class StoryBox extends React.Component {
     render(){
@@ -23,11 +24,12 @@ class StoryBox extends React.Component {
             </section>
         );
     }
-);
+};
 
 
 // export.module = StoryBox;
 
-StoryBox;.defaultProps = {};
+StoryBox.defaultProps = {};
 
 export default StoryBox;
+
