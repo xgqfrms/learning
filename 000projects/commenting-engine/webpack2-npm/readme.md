@@ -38,6 +38,9 @@ open in browser (TechTR)
 generator html
 
 
+
+## plugins
+
 html-webpack-plugin
 
 
@@ -53,6 +56,39 @@ module.exports = {
         filename: './dist/app.bundle.js'
     }
 }
+
+
+
+## loaders
+
+???
+
+loader: ['style-loader', 'css-loader', 'sass-loader']
+
+{
+    test: /\.scss$/,
+    use: extractTextWebpackPlugin.extract(
+        loader: ['style-loader', 'css-loader', 'sass-loader']
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
