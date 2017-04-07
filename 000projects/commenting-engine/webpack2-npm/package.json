@@ -1,0 +1,20 @@
+{
+    "name": "webpack2-npm",
+    "version": "2.2.1",
+    "description": "webpack2",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack -d --watch",
+        "prod": "webpack -p"
+    },
+    "repository": {
+        "type": "https: //github.com/xgqfrms/webpack2.git",
+        "url": "https: //github.com/xgqfrms/webpack2.git"
+    },
+    "keywords": [
+        "webpack2"
+    ],
+    "author": "xgqfrms",
+    "license": "MIT"
+}

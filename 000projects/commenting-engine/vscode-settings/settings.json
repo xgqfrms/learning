@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     "typescript.check.tscVersion": true,
+    "vsicons.presets.angular": false,
     "files.autoSave": "afterDelay",
     "files.associations": {
         "*.js": "javascript",
@@ -23,8 +24,6 @@
     "editor.lineHeight": 24,
     "editor.fontSize": 14,
     "editor.formatOnSave": false,
-    "editor.formatOnType": false,
-    "editor.formatOnPaste": false,
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "same",
@@ -34,7 +33,6 @@
     "html.format.wrapAttributes": "auto",
     "workbench.statusBar.visible": true,
     "workbench.iconTheme": "vscode-icons",
-    "vsicons.presets.angular": false,
     "json.format.enable": false,
     "[json]": {
         "editor.quickSuggestions": {
@@ -43,5 +41,4 @@
     },
     "vsicons.presets.jsOfficial": true,
     "vsicons.presets.jsonOfficial": true
-}
 }
