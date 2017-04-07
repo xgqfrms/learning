@@ -41,6 +41,10 @@ generator html
 html-webpack-plugin
 
 
+template
+minify
+hash
+
 
 
 module.exports = {
@@ -52,10 +56,14 @@ module.exports = {
 
 
 
-"files.autoSave": "afterDelay",
-"files.autoSaveDelay": 3000,
+# autoSave & trimAutoWhitespace bugs
 
 "files.autoSave": "off",
+
+"editor.trimAutoWhitespace": false,
+
+
+
 
 
 
