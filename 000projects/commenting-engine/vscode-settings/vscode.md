@@ -1,10 +1,20 @@
+# autoSave & trimAutoWhitespace bugs
+
+
+
+
+"files.autoSave": "off",
+
+"editor.trimAutoWhitespace": false,
+
+
 
 ```json
 
 // Place your settings in this file to overwrite the default settings
 {
     "typescript.check.tscVersion": true,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "files.associations": {
         "*.js": "babel",
         "*.jsx": "javascriptreact",
@@ -20,6 +30,7 @@
         "**/.DS_Store": true,
         "**/node_modules": true
     },
+    "editor.trimAutoWhitespace": false,
     "editor.renderWhitespace": "all",
     "editor.tabCompletion": true,
     "editor.mouseWheelZoom": true,
@@ -83,6 +94,12 @@
         }
     },
     "vsicons.presets.jsOfficial": true,
-    "vsicons.presets.jsonOfficial": true
+    "vsicons.presets.jsonOfficial": true,
+    "eslint.enable": false,
+    "eslint.run": "onSave",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ]
 }
 ```

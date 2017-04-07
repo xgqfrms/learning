@@ -33,6 +33,32 @@ $ npm run prod
 
 ```
 
+open in browser (TechTR)
+
+generator html
+
+
+html-webpack-plugin
+
+
+
+
+module.exports = {
+    entry: ['./src/app.js'],
+    output: {
+        filename: './dist/app.bundle.js'
+    }
+}
+
+
+
+"files.autoSave": "afterDelay",
+"files.autoSaveDelay": 3000,
+
+"files.autoSave": "off",
+
+
+
 
 
 
