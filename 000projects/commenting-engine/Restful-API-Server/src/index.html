@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Axios : Restful API Server</title>
+    <link rel="stylesheet" href="https://cdn.xgqfrms.xyz/3.3.7/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Axios : Restful API Server <small>xgqfrms</small></h1>
+        <div class="jumbotron">
+            <h2>Restful API Server (JSON)</h2>
+            <p>
+                <ul>
+                    <li>get</li>
+                    <li>post</li>
+                    <li>put</li>
+                    <li>delete</li>
+                </ul>
+            </p>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel">GET</div>
+            <div class="panel-body">
+                <button type="button" class="btn btn-primary" onclick="getDataRequest()">
+                    GET data
+                </button>
+                <button type="button" class="btn btn-warning" onclick="clearData()">
+                    clear data
+                </button>
+                <div class="panel-body" data-getData="data-getData"></div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel">GET?id</div>
+            <div class="panel-body">
+                <input type="text" id="todoID" class="form-control" placeholder="id">
+                <button type="button" class="btn btn-primary" onclick="getDataRequestID()">
+                    GET data ? ID
+                </button>
+                <button type="button" class="btn btn-warning" onclick="clearData()">
+                    clear data
+                </button>
+                <div class="panel-body" data-getDataID="data-getDataID"></div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel">POST</div>
+            <div class="panel-body">
+                <!--form-->
+                <form action="" method="POST" role="form" class="form-inline" id="formPostData">
+                    <legend>Form title</legend>
+                    <div class="form-group">
+                        <label for="">label</label>
+                        <input type="text" class="form-control" id="todoTitle" placeholder="Input field">
+                    </div>
+                    <button type="submit" class="btn btn-primary">POST data</button>
+                </form>
+                <button type="button" class="btn btn-warning" onclick="clearData()">
+                    clear data
+                </button>
+                <div class="panel-body" data-postData="data-postData"></div>
+            </div>
+        </div>
+    </div>
+    <!--jquery-->
+    <script src="https://cdn.xgqfrms.xyz/3.2.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="https://cdn.xgqfrms.xyz/3.3.7/bootstrap.min.js"></script>
+    <!--axios-->
+    <script src="https://cdn.xgqfrms.xyz/axios/axios.min.js"></script>
+    <!--js-->
+    <script scr="./main.js"></script>
+</body>
+
+</html>
