@@ -1,0 +1,26 @@
+{
+    "employees": [{
+            "id": 1,
+            "first_name": "xgqfrms",
+            "last_name": "xray",
+            "email": "xqqfrms@gmail.com"
+        },
+        {
+            "id": 2,
+            "first_name": "webgeeker",
+            "last_name": "xray",
+            "email": "webgeeker@gmail.com"
+        },
+        {
+            "id": 3,
+            "first_name": "xgqfrms007",
+            "last_name": "xray",
+            "email": "xqqfrms007@gmail.com"
+        }
+    ],
+    "objects-bug": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "value3"
+    }
+}

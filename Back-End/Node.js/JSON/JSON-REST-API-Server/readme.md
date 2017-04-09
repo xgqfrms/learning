@@ -67,6 +67,23 @@ http://localhost:3000/posts/1
 
 ``` 
 
+## bugs { "objects": [{"key1": "value1"}, {"key2": "value2"}, {"key3": "value3"}]}
+
+```js
+# OK
+{ "objects": [{"key1": "value1"}, {"key2": "value2"}, {"key3": "value3"}]}
+
+# bug
+{ "objects-bug": {"key1": "value1","key2": "value2","key3": "value3"}}
+
+
+http://localhost:3000/objects-bug/
+
+http://localhost:3000/objects-bug/1
+http://localhost:3000/objects-bug/key1
+http://localhost:3000/objects-bug/value1
+
+``` 
 
 
 
@@ -288,24 +305,25 @@ gulpfile.js
 
 ```js
 
-var gulp = require('gulp');
-var pug = require('gulp-pug');
-var less = require('gulp-less');
-var minifyCSS = require('gulp-csso');
+const gulp = require('gulp'),
+    pug = require('gulp-pug'),
+    less = require('gulp-less'),
+    minifyCSS = require('gulp-csso');
 
 gulp.task('html', function(){
-  return gulp.src('client/templates/*.pug')
-    .pipe(pug())
-    .pipe(gulp.dest('build/html'))
+    return 
+        gulp.src('client/templates/*.pug')
+        .pipe(pug())
+        .pipe(gulp.dest('build/html'));
 });
 
 gulp.task('css', function(){
-  return gulp.src('client/templates/*.less')
-    .pipe(less())
-    .pipe(minifyCSS())
-    .pipe(gulp.dest('build/css'))
+    return 
+        gulp.src('client/templates/*.less')
+        .pipe(less())
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('build/css'));
 });
 
 gulp.task('default', [ 'html', 'css' ]);
-
 ``` 
