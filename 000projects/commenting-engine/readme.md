@@ -10,11 +10,16 @@ $ npm start
 
 $ npm dist
 
-$ npm serve:dist  
+$ npm run server:dist  
 
-$ npm serve  
+$ npm run server  
 
 ``` 
+
+# open browser
+
+const open = require('open');
+
 
 http://localhost:8000/webpack-dev-server/
 

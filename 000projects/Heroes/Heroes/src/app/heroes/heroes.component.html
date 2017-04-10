@@ -1,0 +1,22 @@
+<h2>我的英雄</h2>
+<div>
+    <label>英雄名字:</label>
+    <input #heroName />
+    <button (click)="add(heroName.value); heroName.value=''">
+        添加
+    </button>
+</div>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+        <span class="badge">{{hero.id}}</span>
+        <span>{{hero.name}}</span>
+        <button id="suredelete" class="delete" (click)="delete(hero); $event.stopPropagation()">删除</button>
+        <!-- sweetalert -->
+    </li>
+</ul>
+<div *ngIf="selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} 是我的英雄
+    </h2>
+    <button (click)="gotoDetail()">查看详情</button>
+</div>

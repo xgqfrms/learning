@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <meta name="description" content="Angualr2 App, 英雄之旅, https://www.xgqfrms.xyz">
+    <meta name="author" content="xgqfrms, https://www.xgqfrms.xyz">
+    <title>英雄之旅</title>
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- application level css -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <app-root>英雄之旅 🎅❄🎄🎁🔀⛄🔔Loading...</app-root>
+    <!-- js -->
+    <script src="https://cdn.xgqfrms.xyz/sweetalert/sweetalert.min.js" async></script>
+    <script>
+        let sd = document.getElementByClassName('suredelete');
+        // let sd = document.getElementById('suredelete');
+        // parent id , child add class
+        // multi id error
+        const bok = () => {
+            swal("Good job!", "You clicked the button!", "success");
+            console.log(`You clicked the button!`);
+        }
+        if(sd.lenght > 0){
+            console.log(sd.lenght);
+            for(let i=0; i < sd.lenght; i++){
+                sd[i].addEventListener("click", bok , false);
+            }
+        }
+    </script>
+</body>
+</html>
