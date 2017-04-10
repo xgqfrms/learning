@@ -12,7 +12,22 @@
 
 */
 
+(function(){
+    var OSName="Unknown OS";
+    if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+    if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+    if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+    if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+    // document.write('Your OS: '+OSName);
+    let osDiv = document.createElement("div");
+    let osText = document.createTextNode(`Your OS is: ${OSName}`);
+    osDiv.appendChild(osText);
+    osDiv.style.color = "red";
+    document.querySelector("body").insertAdjacentElement('beforeend', osDiv);
+}());
 
 (function() {
     alert("https://www.xgqfrms.xyz/tracker.js");
 })();
+
+
