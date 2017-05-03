@@ -8,11 +8,14 @@ http://www.w3schools.com/jsref/met_document_queryselector.asp
 
 获取文档中class =“example”的第一个元素：
 
+```js
+
 document.querySelector(".example");
 
 document.querySelector("div > p");
 document.querySelector("a[target]");
 
+```
 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
@@ -38,6 +41,7 @@ http://www.w3schools.com/cssref/css_selectors.asp
 
 ## .classList.remove() & .classList.add()
 
+```js
 
 function hide(){
     // var hl = document.getElementById('hl');
@@ -55,6 +59,9 @@ function hide(){
         console.log(`state = "hidenTure"`);
     }
 }
+
+
+```
 
 
 
