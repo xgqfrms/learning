@@ -18,7 +18,7 @@ https://doc.webpack-china.org/guides/get-started/#-webpack
 https://github.com/webpack/webpack.js.org/edit/master/content/guides/code-splitting-async.md
 
 
-JS文件压缩
+JS文件压缩, Source Maps, 高级途径
 
 https://doc.webpack-china.org/guides/production-build/#js-
 
