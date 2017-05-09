@@ -54,6 +54,40 @@ if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
 }
 ``` 
 
+# indexedDB
+
+https://gist.github.com/xgqfrms-GitHub/c04b9f3b146b3ca6ee74311cefe04699
+
+
+```js
+
+if (!window.indexedDB) {
+    window.alert("Your browser doesn't support a stable version of IndexedDB. Such and such feature will not be available.")
+}else{
+    let request = window.indexedDB.open(`indexedDB Database`);
+    request.onerror = (event) => {
+        // Do something with request.errorCode!
+        console.log('%c Error !', 'background: #000; color: #f00; font-size: 32px; border: 1px solid #f0f; margin: 0 auto; text-align: center; border-radius: 7px;', request);
+    };
+    request.onsuccess = (event) => {
+        // Do something with request.result!
+        console.log('%c Success !', 'background: #000; color: #0f0; font-size: 32px; border: 1px solid #f0f; margin: 0 auto; text-align: center; border-radius: 7px;', request);
+    };
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
