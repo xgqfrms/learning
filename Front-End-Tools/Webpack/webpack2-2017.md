@@ -48,11 +48,14 @@ module.exports = {
 
 
 
+sass 命令行编译
+
+https://www.w3cplus.com/sassguide/compile.html
+
+$ sass --watch sassFileDirectory:cssFileDirectory
 
 
-
-
-
+https://github.com/xgqfrms-GitHub/webgeeker/issues/7
 
 
 
