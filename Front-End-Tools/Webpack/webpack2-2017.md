@@ -1,7 +1,8 @@
 # webpack 2 2017
 
 
-https://github.com/xgqfrms-GitHub/webpack2/master/README.md
+
+https://github.com/xgqfrms-GitHub/webpack2/blob/master/README.md
 
 
 https://github.com/xgqfrms-GitHub/webgeeker/tree/gh-pages/webpack2
@@ -11,7 +12,7 @@ https://doc.webpack-china.org/guides/migrating/
 
 
 
-
+https://webpack2.xgqfrms.xyz/
 
 
 
