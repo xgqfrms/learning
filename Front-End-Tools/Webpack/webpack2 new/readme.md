@@ -1,6 +1,16 @@
 # webpack2 new 
 
 
+## webpack2 & npm clean
+
+https://www.npmjs.com/package/rimraf
+https://github.com/isaacs/rimraf
+
+
+https://gist.github.com/xgqfrms-GitHub/f71453cff397181ad927c5217ec9b7e4
+
+
+
 
 
 <script>
