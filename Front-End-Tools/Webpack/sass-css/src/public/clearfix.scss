@@ -1,0 +1,22 @@
+/* clearfix.css */
+
+
+.clearfix{
+    clear: both;
+    overflow: hidden;
+    display: table;
+    content: '';
+}
+
+
+
+.clearfix::after, .clearfix::before{
+    clear: both;
+    overflow: hidden;
+    display: table;
+    content: '';
+}
+
+
+
+

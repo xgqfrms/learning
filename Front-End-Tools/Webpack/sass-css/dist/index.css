@@ -1,9 +1,21 @@
+/* @import url(./public/reset.css); */
+/* reset.css */
+:root {
+  font-size: 12px; }
+
+* {
+  color: #fff;
+  background-color: #000; }
+
+/* a.css */
 .a {
   color: #f00; }
 
+/* b.css */
 .b {
   color: #0f0; }
 
+/* c.css */
 .c {
   color: #00f; }
 
@@ -17,6 +29,21 @@
 /* 
 
 sass --watch src:dist
+
+
+@import url(./public/reset.css);
+
+error
+
+!===
+
+@import "./public/reset.scss";
+
+OK
+
+or
+
+@import url(./public/reset.scss);
 
 */
 
