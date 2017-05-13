@@ -30,9 +30,14 @@
 
 
 
-# webpack2 & npm clean
+# webpack2 & npm clean & rimraf
 
 > https://www.npmjs.com/package/rimraf
+
+https://github.com/isaacs/rimraf
+
+
+
 
 
 
