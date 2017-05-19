@@ -72,5 +72,57 @@ https://gist.github.com/xgqfrms-GitHub/19829c5d830ea4b2fe0c6ef5a622a1f5
 
 
 
+https://github.com/stanzhai/be-a-professional-programmer
+
+
+https://github.com/kpaxqin/react-from-scratch
+
+
+https://github.com/zpao/building-react-from-scratch
+
+https://github.com/reactjs/express-react-views
+
+https://github.com/zpao/qrcode.react
+
+https://github.com/facebook/draft-js
+
+
+
+<QRCode
+  value={"https://www.xgqfrms.xyz/"}
+  size={320}
+  bgColor={"#00ff80"}
+  fgColor={"#ff00ff"}
+  level={"L"}
+/>
+
+https://zpao.github.io/qrcode.react/
+
+https://www.xgqfrms.xyz/
+
+https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
+
+https://facebook.github.io/react/contributing/implementation-notes.html
+
+https://github.com/kpaxqin/react-from-scratch
+
+
+https://kpaxqin.github.io/
+
+https://kpaxqin.github.io/blog/2016/03/13/High-order_component_in_React
+
+
+React进阶——使用高阶组件（Higher-Order Components）优化代码
+
+
+http://tools.zhaishidan.cn/
+
+
+
+
+
+
+
+
 
 
