@@ -20,3 +20,22 @@ fetch(url, {
 }, function(error) {
     error.message; //=> String
 })
+
+
+
+// https://gist.github.com/xgqfrms-GitHub/636260e8332f0fe4f530fe040ffd3741
+
+fetch('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest', {
+    method: 'get',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'X-Api-Key': `0987b00e542141369049e647701b65d9`
+    }
+}).then(function(response) {
+    return response.json()
+}).then(function(json) {
+    console.log('parsed json: ', json)
+}).catch(function(error) {
+    console.log('parsing failed: ', error)
+});
