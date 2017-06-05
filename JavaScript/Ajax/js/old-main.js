@@ -1,28 +1,22 @@
-// main.js
+// old main.js
 
-
-(() => {
-    fetch('https://cdn.xgqfrms.xyz/json/xgqfrms.json', {
-        method: 'get',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
-    }).then((response) => {
-            console.log('parsed response: ', response);
-            return response.json();
-    }).then((json) => {
-            console.log('parsed json: ', json);
+$(() => {
+    let xyz = `xgqfrmsx.json`;
+    $.ajax({
+        url: `https://cdn.xgqfrms.xyz/json/${xyz}`,
+        dataType: 'json',
+        success: (data) => {
             populateWithCourses(data.courses.completed);
             populateWithCourses(data.courses.in_progress);
             hide();
-    }).catch((error) => {
-          console.log('parsing failed: ', error);
-          setTimeout(() =>{
-              alert(`faild to load data!`);
-              // redirect to 
-              this.window.location = `https://learning.xgqfrms.xyz`;
-          }, 3000);
+        },
+        error: (error) => {
+            setTimeout(() =>{
+                alert(`faild to load data!`);
+                // redirect to 
+                this.window.location = `https://learning.xgqfrms.xyz`;
+            }, 3000);
+        }
     });
     populateWithCourses = (courses) => {
         const $badges = $('#badges');
@@ -60,9 +54,5 @@
             console.log(`state = "hidenTure"`);
         }
     }
-})();
-
-
-
-
+});
 
