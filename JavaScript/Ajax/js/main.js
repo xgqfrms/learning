@@ -2,25 +2,30 @@
 
 $(function() {
     $.ajax({
-        url: 'https://cdn.xgqfrms.xyz/json/honor.json',
+        url: 'https://cdn.xgqfrms.xyz/json/xgqfrms.json',
         dataType: 'json',
         success: function(data) {
             populateWithCourses(data.courses.completed);
+            populateWithCourses(data.courses.in_progress);
             hide();
         }
     });
-    function populateWithCourses(courses) {
-        var $badges = $('#badges');
+    populateWithCourses = (courses) => {
+        const $badges = $('#badges');
+        console.log(`courses`, courses);
         courses.forEach(function(course) {
             $div = $('<div />', {
                 'class': 'course'
             }).appendTo($badges);
+
             $('<h3 />', {
                 text: course.title
             }).appendTo($div);
+
             $('<img />', {
                 src: course.badge
             }).appendTo($div);
+
             $('<a />', {
                 'class': 'btn btn-primary',
                 target: '_blank',
@@ -29,11 +34,11 @@ $(function() {
             }).appendTo($div);
         });
     }
-    function hide(){
+    const hide = () => {
         // var hl = document.getElementById('hl');
         // hl.style.display = "none";
-        var hideLoad = document.getElementById('hideLoad');
-        var state = "showTure";
+        const hideLoad = document.getElementById('hideLoad');
+        let state = "showTure";
         if (state === "showTure") {
             hideLoad.classList.remove('showTure');
             hideLoad.classList.add("hidenTure");
@@ -79,3 +84,45 @@ ES7();
 
 
 */
+
+/*
+
+
+https://www.codeschool.com/users/xgqfrms
+
+https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/700/try-docker-1a004d3fd48268281985771485fd8405.png
+
+https://github.com/codeschool-projects/jQueryBadgesProject
+
+
+
+
+
+https://codeschool-project-demos.github.io/jQueryBadgesProject/
+
+https://www.codeschool.com/users/xgqfrms.json
+
+
+
+https://www.codeschool.com/users/xgqfrms.json
+
+https://learning.xgqfrms.xyz/JavaScript/Ajax/Ajax-Portfolio.html
+
+https://github.com/codeschool-projects
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
