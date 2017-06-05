@@ -107,4 +107,12 @@ https://gist.github.com/xgqfrms-GitHub/1b2f1697b3e2fea2cf7ab61d286e2527
 
 
 
+https://gist.github.com/xgqfrms-GitHub/a68522a0ffd0905b4ea71b7effb02628
+
+
+document.styleSheets & document.styleSheets[0].cssRules
+
+
+
+
 
