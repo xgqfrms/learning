@@ -31,6 +31,10 @@ ES7();
 
 # fetch api & promise
 
+https://github.com/xgqfrms-GitHub/browser-sync/tree/master/Ajax-Fetch
+
+
+https://gist.github.com/xgqfrms-GitHub/68af127cb3ec33587ee5bffe9810fb1b
 
 
 # async await
@@ -69,7 +73,7 @@ https://github.com/codeschool-projects
 
 
 
-
+# browser sync
 
 
 https://www.codetuts.tech/browsersync/
@@ -80,10 +84,26 @@ https://github.com/Swiip/generator-gulp-angular/issues/848
 https://github.com/BrowserSync/browser-sync/issues/646
 
 
+https://gist.github.com/xgqfrms-GitHub/7e356dd38a4b892f6268dc12147630f6
+
+
+$ browser-sync start --server --files "*.html"
+
+
+https://scotch.io/@xgqfrms
+
+http://xgqfrms.pythonanywhere.com/
 
 
 
 
+js click add more & pagination
+
+
+分页 / 点击加载更多/ 滚动加载更多
+
+
+https://gist.github.com/xgqfrms-GitHub/1b2f1697b3e2fea2cf7ab61d286e2527
 
 
 

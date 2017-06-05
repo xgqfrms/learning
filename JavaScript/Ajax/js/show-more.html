@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery showMore 显示更多</title>
+    <link rel="stylesheet" href="https://cdn.xgqfrms.xyz/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <ul class="showMoreNChildren" pagesize="5">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+            <li>g</li>
+            <li>h</li>
+            <li>i</li>
+            <li>j</li>
+            <li>k</li>
+            <li>m</li>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+            <li>g</li>
+            <li>h</li>
+            <li>i</li>
+            <li>j</li>
+            <li>k</li>
+            <li>m</li>
+        </ul>
+        <ul class="mynews" pagesize="4">
+            <li>news 11</li>
+            <li>news 12</li>
+            <li>news 13</li>
+            <li>news 14</li>
+            <li>news 21</li>
+            <li>news 22</li>
+            <li>news 23</li>
+            <li>news 24</li>
+            <li>news 31</li>
+            <li>news 32</li>
+            <li>news 33</li>
+            <li>news 34</li>
+        </ul>
+    </section>
+    <!-- libs -->
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.2.1.min.js"></script>
+    <script src="showMore.js"></script>
+    <!-- js -->
+    <script type="text/javascript">
+        //调用显示更多插件, 参数是标准的 jquery 选择符 
+        $.showMore(".showMoreNChildren,.mynews");
+    </script>
+</body>
+</html>
