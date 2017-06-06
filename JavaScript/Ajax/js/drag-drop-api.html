@@ -3,14 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML5 drag & drop API</title>
+    <!-- https://gist.github.com/xgqfrms-GitHub/9cef79afee86c8f8b5848d8931ab275d -->
+    <style>
+        section{
+            box-sizing: border-box;
+            max-width: 50%;
+            margin: 3rem auto;
+            overflow: hidden;
+        }
+        .drop-box{
+            background-color: #f0f;
+            color: green;
+        }
+        .draggable-box{
+            background-color: #000;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <section>
         <h1>HTML5 drag & drop API</h1>
     </section>
+    <section class="draggable-box">
+        <div>
+            <p id="p1" draggable="true" ondragstart="dragstart_handler(event);">
+                This element is draggable.
+            </p>
+        </div>
+    </section>
+    <section class="drop-box">
+        <div id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
+            Drop Zone
+        </div>
+    </section>
     <!-- js -->
     <script>
-        
+        // https://developer.mozilla.org/zh-CN/docs/tag/ECMAScript
+        // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript
+        function dragstart_handler(ev) {
+            console.log("dragStart");
+            // Add the target element's id to the data transfer object
+            ev.dataTransfer.setData("text/plain", ev.target.id);
+        }
+        function dragstart_handler(ev) {
+            // Add the drag data
+            ev.dataTransfer.setData("text/plain", ev.target.id);
+            ev.dataTransfer.setData("text/html", "<p>Example paragraph</p>");
+            ev.dataTransfer.setData("text/uri-list", "http://developer.mozilla.org");
+        }
+        function dragstart_handler(ev) {
+            // Create an image and then use it for the drag image.
+            // NOTE: change "example.gif" to an existing image or the image 
+            // will not be created and the default drag image will be used.
+            var img = new Image(); 
+            img.src = 'https://cdn.xgqfrms.xyz/logo/icon.png'; 
+            ev.dataTransfer.setDragImage(img, 10, 10);
+        }
+        function dragstart_handler(ev) {
+            // Set the drag effect to copy
+            ev.dataTransfer.dropEffect = "copy";
+        }
+        function dragover_handler(ev) {
+            ev.preventDefault();
+            // Set the dropEffect to move
+            ev.dataTransfer.dropEffect = "move"
+        }
+
+        function drop_handler(ev) {
+            ev.preventDefault();
+            // Get the id of the target and add the moved element to the target's DOM
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        function dragstart_handler(ev) {
+            // Add the target element's id to the data transfer object
+            ev.dataTransfer.setData("text/plain", ev.target.id);
+            ev.dropEffect = "move";
+        }
+
+        function dragover_handler(ev) {
+            ev.preventDefault();
+            // Set the dropEffect to move
+            ev.dataTransfer.dropEffect = "move";
+        }
+
+        function drop_handler(ev) {
+            ev.preventDefault();
+            // Get the id of the target and add the moved element to the target's DOM
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
     </script>
 </body>
 </html>
