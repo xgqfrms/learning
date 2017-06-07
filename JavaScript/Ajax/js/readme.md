@@ -1,5 +1,30 @@
 
 
+
+build & server:dist
+
+
+npm run server:dist
+
+
+???
+
+
+https://www.npmjs.com/package/http-server
+
+
+https://stackoverflow.com/questions/31976722/start-script-missing-error-when-running-npm-start
+
+
+
+
+
+
+
+
+
+
+
 # DOM & ES6 
 
 querySelector() & querySelectorAll() 

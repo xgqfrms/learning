@@ -20,6 +20,12 @@
             color: red;
         }
     </style>
+    <style>
+        abbr[title] {
+            cursor: help;
+            text-decoration: dotted underline;
+        }
+    </style>
 </head>
 <body>
     <section>
@@ -36,6 +42,13 @@
         <div id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
             Drop Zone
         </div>
+    </section>
+    <section>
+        <!-- abbr -->
+        <abbr title="internationalization" data-zh="国际化">i18n</abbr>
+        <br>
+        <abbr title="Localization" data-zh="本地化">L10n</abbr>
+        <!-- https://www.w3.org/International/questions/qa-i18n -->
     </section>
     <!-- js -->
     <script>
