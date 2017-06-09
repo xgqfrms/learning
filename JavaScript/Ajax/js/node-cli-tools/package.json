@@ -1,6 +1,10 @@
 {
     "name": "hello",
     "bin": {
-        "hello": "hello"
+        "hi": "hello",
+        "nc": "nodecli"
+    },
+    "dependencies": {
+        "commander": "^2.9.0"
     }
 }

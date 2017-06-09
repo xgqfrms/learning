@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+
+
+var program = require('commander');
+
+
+console.log('Node CLI');
+
+
+program.version('1.1.1').parse(process.argv);
+
+console.log('Node CLI', process.argv[0]);
+
+console.log('Node CLI', process.argv[1]);
+
+console.log('Node CLI', process.argv[2]);
+
+
+
+
+

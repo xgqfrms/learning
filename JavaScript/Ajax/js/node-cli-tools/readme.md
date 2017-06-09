@@ -110,8 +110,24 @@ https://guoyongfeng.github.io/book/01/04-git%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA
 
 
 
+{
+    "name": "hello",
+    "bin": {
+        "hello": "hello"
+    }
+}
 
 
+
+https://github.com/tj/commander.js
+
+https://sfantasy.gitbooks.io/node-in-action/content/zh/cli/
+
+
+https://github.com/tj/commander.js/tree/master/examples
+
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/2
 
 
 
