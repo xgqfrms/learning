@@ -65,7 +65,47 @@ c 字符设备
 
 
 
+https://github.com/shelljs/shelljs
 
+
+
+
+
+> yargs 模块提供 argv 对象，用来读取命令行参数
+
+```sh
+    
+$ npm install --save yargs
+
+
+```
+
+#!/usr/bin/env node
+var argv = require('yargs').argv;
+
+console.log('hello ', argv.name);
+
+
+
+
+$ hello --name=tom
+hello tom
+
+$ hello --name tom
+hello tom
+
+
+
+https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2
+
+
+
+https://github.com/jaywcjlove/wcj
+
+http://jaywcjlove.github.io/wcj/
+
+
+https://guoyongfeng.github.io/book/01/04-git%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html
 
 
 
