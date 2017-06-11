@@ -11,6 +11,7 @@ console.log(`********************************************************\n\n\n`);
 */
 
 
+
 let username = process.argv[2] ? process.argv[2] : `xgqfrms-GitHub`;
     repo = process.argv[3] ? process.argv[3] : `Node-CLI-Tools`;
 
@@ -44,9 +45,13 @@ fetch(`https://api.github.com/repos/${username}/${repo}/commits`,{
 
 
 
+const nct = (data) => {
+    // data
+};
 
 
 
 
+module.exports = nct;
 
 
