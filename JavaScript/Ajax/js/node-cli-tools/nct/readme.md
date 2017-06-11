@@ -112,6 +112,11 @@ http://jaywcjlove.github.io/wcj/
 https://guoyongfeng.github.io/book/01/04-git%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html
 
 
+## hello !== hello.js
+
+> #!/usr/bin/env node
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/9
 
 
 {
