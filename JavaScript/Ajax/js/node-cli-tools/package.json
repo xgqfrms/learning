@@ -5,6 +5,7 @@
         "nc": "nodecli"
     },
     "dependencies": {
+        "colors": "^1.1.2",
         "commander": "^2.9.0",
         "node-fetch": "^1.7.1",
         "request": "^2.81.0",
