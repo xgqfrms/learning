@@ -153,10 +153,15 @@ https://github.com/xgqfrms-GitHub/Node-CLI-Tools/wiki/npm-link
 
 
 
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/2
 
 
+```sh
+    
+# npm link <module-name>
+$ npm link nct
 
-
+```
 
 
 

@@ -3,7 +3,7 @@
     "version": "1.1.1",
     "private": true,
     "bin": {
-        "nct": "nctcli",
+        "xyznct": "nctcli",
         "hi": "hello",
         "nc": "nodecli"
     },
