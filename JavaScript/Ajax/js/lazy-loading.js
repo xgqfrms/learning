@@ -23,6 +23,16 @@ placeholder.png === base64 image
 
 
 
+fetch('http://localhost:3000/tasks/')
+.then(function(response) {
+    return response.json()
+}).then(function(json) {
+    console.log('parsed json: ', json)
+}).catch(function(ex) {
+    console.log('parsing failed: ', ex)
+});
+
+
 */
 
 

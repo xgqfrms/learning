@@ -1,3 +1,119 @@
+// document.onload = (() => alert('ok'))();
+// 
+// https://developer.github.com/v3/#rate-limiting
+// https://developer.github.com/v3/rate_limit/
+
+
+/*
+
+// response.json()
+
+fetch(`https://api.github.com/users/xgqfrms/repos`)
+.then(function(response) {
+    let json = response.json();
+    console.log(`response = ${json}`);
+    return json;
+})
+.then(function(json) {
+    console.log('parsed json: ', json);
+    console.log('parsed json: ', json[0]);
+    console.log('parsed json: ', json[1].name);
+});
+
+
+
+
+fetch(`https://api.github.com/users/xgqfrms/repos`, {
+    method: 'get',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+})
+.then(function(response) {
+    return response.json();
+    // json() ???
+})
+.then(function(json) {
+    console.log('parsed json: ', json);
+    console.log('parsed json: ', json[0]);
+    console.log('parsed json: ', json[1].name);
+})
+.catch(function(error) {
+    console.log('parsing failed: ', error);
+});
+
+
+
+
+fetch(`https://cdn.xgqfrms.xyz/json/badges.json`)
+.then((res) => res.json())
+.then((data) => console.log(data));
+
+
+fetch(`https://cdn.xgqfrms.xyz/json/badges.json`)
+.then((res) => JSON.parse(res))
+.then((data) => {
+    console.log(data.user);
+    console.log(data.courses);
+    console.log(data.badges);
+});
+
+
+
+*/
+
+
+
+
+
+document.onload = (() => {
+    alert('ok');
+    let keyListener = document.querySelector('#searchUser');
+    // 
+    keyListener.addEventListener('keypress', (e) => {
+        if(e.keyCode === 13){
+            let username = e.target.value;
+            console.log(`username = ${username}`);
+            fetch(`https://api.github.com/users/${username}`,{
+                data: {
+                    client_id: '08ecc2f68d922f18800e',
+                    client_secret: '5846d428b5340812b76c9637eceaee979340b922'
+                }
+            })
+            .then((response) => response.json())
+            .then((json)=> console.log(`json = ${json}`));
+            fetch(`https://api.github.com/users/${username}/repos`,{
+                data: {
+                    client_id: '08ecc2f68d922f18800e',
+                    client_secret: '5846d428b5340812b76c9637eceaee979340b922'
+                }
+            })
+            .then((response) => response.json())
+            .then((json)=> {
+                console.log(`json = ${json}`);
+                return repos = json;
+            })
+            .then((repos)=>{
+                console.log(`repos = ${repos}`);
+                console.log(`repos = ${repos.length}`);
+                console.log(`repos$ 0  = ${repos[0]}`);
+                console.log(`repos$ 1  = ${repos[1]}`);
+                for (let i = 0; i < repos.length; i++) {
+                    console.log(`repos${i}  = ${repos[i]}`);
+                }
+            });
+        }else{
+            console.log(`e.keyCode = ${e.keyCode}`);
+        }
+    });
+})();
+
+
+
+
+
+
 $(document).ready(function() {
     $('#searchUser').on('keyup', function(e) {
         let username = e.target.value;
@@ -8,7 +124,8 @@ $(document).ready(function() {
                 client_id: '08ecc2f68d922f18800e',
                 client_secret: '5846d428b5340812b76c9637eceaee979340b922'
             }
-        }).done(function(user) {
+        })
+        .done(function(user) {
             $.ajax({
                 url: 'https://api.github.com/users/' + username + '/repos',
                 data: {
@@ -17,7 +134,8 @@ $(document).ready(function() {
                     sort: 'created: asc',
                     per_page: 5
                 }
-            }).done(function(repos) {
+            })
+            .done(function(repos) {
                 $.each(repos, function(index, repo) {
                     $('#repos').append(`
                       <div class="well">
