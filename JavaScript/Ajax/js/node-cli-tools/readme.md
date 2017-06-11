@@ -144,3 +144,33 @@ https://www.npmjs.com/package/colors
 
 
 
+
+# sudo npm link ???
+
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/wiki/npm-link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

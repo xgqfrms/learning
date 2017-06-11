@@ -5,15 +5,19 @@
 
 https://github.com/xgqfrms-GitHub/Node-CLI-Tools
 
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues
+
 
 
 ## Node.js CLI 
 
 一、请开发一个 Node.js CLI 工具:
 
-查看指定 git 仓库的 commit history ; 
-能对 commit history 进行搜索; 
-能查看指定时间范围的 commit history. 
+查看指定 git 仓库的 `commit history` ; 
+
+能对 commit history 进行`搜索`; 
+
+能查看`指定时间范围`的 commit history. 
 
 https://node-cli-tools.xgqfrms.xyz
 

@@ -1,13 +1,20 @@
 {
-    "name": "hello",
+    "name": "node-cli-tools",
+    "version": "1.1.1",
+    "private": true,
     "bin": {
+        "nct": "nctcli",
         "hi": "hello",
         "nc": "nodecli"
     },
+    "scripts": {
+        "newnct": "node nctcli",
+        "start": "node nctcli"
+    },
     "dependencies": {
         "colors": "^1.1.2",
-        "commander": "^2.9.0",
         "node-fetch": "^1.7.1",
+        "commander": "^2.9.0",
         "request": "^2.81.0"
     }
 }
