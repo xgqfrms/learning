@@ -3,7 +3,8 @@
     "version": "1.1.1",
     "private": true,
     "bin": {
-        "nct": "nctcli"
+        "nct": "nctcli",
+        "newnct": "nctcli.js"
     },
     "scripts": {
         "start": "node nctcli"

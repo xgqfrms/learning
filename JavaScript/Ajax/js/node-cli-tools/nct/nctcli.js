@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 const colors = require('colors');
 const fetch = require('node-fetch');
 
