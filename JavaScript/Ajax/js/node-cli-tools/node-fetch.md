@@ -27,11 +27,6 @@ $ npm i -S node-fetch
 https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
 
 
-https://www.npmjs.com/package/fetch
-
-
-
-
 https://github.com/github/fetch#installation
 
 
@@ -42,6 +37,20 @@ https://github.com/github/fetch/issues/184
 
 
 https://github.com/github/fetch/issues/184#issuecomment-307622071
+
+
+```js
+
+
+```
+
+
+
+
+
+
+
+
 
 
 

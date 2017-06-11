@@ -53,7 +53,7 @@ fetch(`https://cdn.xgqfrms.xyz/json/badges.json`)
 ```
 
 
-https://github.com/github/fetch
+
 
 
 ## OPEN CODE OF CONDUCT & 开放行为守则
@@ -102,6 +102,43 @@ fetch(`https://cdn.xgqfrms.xyz/json/badges.json`)
 });
 
 ```
+
+
+
+# node-fetch
+
+https://www.npmjs.com/package/node-fetch
+
+
+
+```js
+var fetch = require('node-fetch');
+ 
+// if you are on node v0.10, set a Promise library first, eg. 
+// fetch.Promise = require('bluebird'); 
+
+// json 
+
+fetch('https://api.github.com/users/github')
+    .then(function(res) {
+        return res.json();
+    }).then(function(json) {
+        console.log(json);
+    });
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
