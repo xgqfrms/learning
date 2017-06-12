@@ -2,10 +2,11 @@
 
 /**
  * [nct : node cli tools]
- * @type {[type]}
+ * @author: xgqfrms
+ * @date: 2017-06-12
  */
 
-const nct = require('./lib');
+const nct = require('./libs');
 
 let username = process.argv[2] ? process.argv[2] : `xgqfrms-GitHub`;
     repo = process.argv[3] ? process.argv[3] : `Node-CLI-Tools`;

@@ -1,8 +1,7 @@
-#!/usr/bin/env node
-
 /**
  * [showdata: show json data]
- * @type {[type]}
+ * @author: xgqfrms
+ * @date: 2017-06-12
  */
 const colors = require('colors');
 

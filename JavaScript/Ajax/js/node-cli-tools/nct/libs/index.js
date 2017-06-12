@@ -1,8 +1,7 @@
-#!/usr/bin/env node
-
 /**
  * [nct: fetch data]
- * @type {[type]}
+ * @author: xgqfrms
+ * @date: 2017-06-12
  */
 
 const fetch = require('node-fetch');
