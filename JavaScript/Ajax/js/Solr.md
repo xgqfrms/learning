@@ -187,13 +187,13 @@ http://www.allitebooks.com/javascript-application-design/
 
 
 
+react-redux-todo-list
 
 
+https://egghead.io/lessons/node-js-using-npm-link-to-use-node-modules-that-are-in-progress
 
 
-
-
-
+http://redux.js.org/docs/basics/ExampleTodoList.html
 
 
 

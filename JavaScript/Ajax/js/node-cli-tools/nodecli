@@ -20,3 +20,11 @@ console.log('Node CLI', process.argv[2]);
 
 
 
+/*
+
+Node CLI
+Node CLI H:\Program Files\nodejs\node.exe
+Node CLI C:\Users\xray\AppData\Roaming\npm\node_modules\node-cli-tools\nodecli
+Node CLI undefined
+
+*/
