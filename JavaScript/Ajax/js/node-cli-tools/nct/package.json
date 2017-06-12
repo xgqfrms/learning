@@ -7,7 +7,8 @@
         "newnct": "nctcli.js"
     },
     "scripts": {
-        "start": "node nctcli"
+        "start": "node nctcli",
+        "nct": "node nctcli"
     },
     "dependencies": {
         "colors": "^1.1.2",

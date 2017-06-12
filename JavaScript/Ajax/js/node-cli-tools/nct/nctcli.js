@@ -4,55 +4,44 @@
 const colors = require('colors');
 const fetch = require('node-fetch');
 
-/*
-console.log(`\n\n\n********************************************************`);
-
-console.log(`\ncolors = ${colors}\n`.red);
-console.log(`\nfetch = ${fetch}\n`.white);
-
-console.log(`********************************************************\n\n\n`);
-*/
-
+const showdata = require('./lib/showdata');
 
 
 let username = process.argv[2] ? process.argv[2] : `xgqfrms-GitHub`;
     repo = process.argv[3] ? process.argv[3] : `Node-CLI-Tools`;
 
-fetch(`https://api.github.com/repos/${username}/${repo}/commits`,{
-    data: {
-        client_id: '08ecc2f68d922f18800e',
-        client_secret: '5846d428b5340812b76c9637eceaee979340b922'
-    }
-})
-.then((response) => response.json())
-.then((json)=> {
-    // console.log(`json = ${json}`);
-    return repos = json;
-})
-.then((repos)=>{
-    // console.log(`repos = ${repos}`);
-    console.log(`repos = ${repos.length}`);
-    console.log(`********************************************************\n\n\n`);
-    for (let i = 0; i < repos.length; i++) {
-        console.log(`\n\nrepos${i}\n`);
-        console.log(`${i} sha = ${repos[i].sha}`.red);
-        console.log(`${i} url = ${repos[i].url}`.white);
-        console.log(`${i} login = ${repos[i].author.login}`.white);
-        console.log(`${i} avatar_url = ${repos[i].author.avatar_url}`.rainbow);
-        console.log(`${i} commit.message = ${repos[i].commit.message}`.white);
-        console.log(`${i} url = ${repos[i].commit.url}`.red);
-        console.log(`${i} date = ${repos[i].commit.author.date}`.white);
-        console.log(`${i} name = ${repos[i].commit.author.name}`.red);
-    }
-});
-
-
-
-const nct = (data) => {
-    // data
+const nct = (username, repo) => {
+    fetch(`https://api.github.com/repos/${username}/${repo}/commits`,{
+        data: {
+            client_id: '08ecc2f68d922f18800e',
+            client_secret: '5846d428b5340812b76c9637eceaee979340b922'
+        }
+    })
+    .then((response) => response.json())
+    .then((json)=> {
+        // console.log(`json = ${json}`);
+        return repos = json;
+    })
+    .then((repos)=>{
+        // console.log(`repos = ${repos}`);
+        // console.log(`repos = ${repos.length}`);
+        // console.log(`********************************************************\n\n\n`);
+        // for (let i = 0; i < repos.length; i++) {
+        //     console.log(`\n\nrepos${i}\n`);
+        //     console.log(`${i} sha = ${repos[i].sha}`.red);
+        //     console.log(`${i} url = ${repos[i].url}`.white);
+        //     console.log(`${i} login = ${repos[i].author.login}`.white);
+        //     console.log(`${i} avatar_url = ${repos[i].author.avatar_url}`.rainbow);
+        //     console.log(`${i} commit.message = ${repos[i].commit.message}`.white);
+        //     console.log(`${i} url = ${repos[i].commit.url}`.red);
+        //     console.log(`${i} date = ${repos[i].commit.author.date}`.white);
+        //     console.log(`${i} name = ${repos[i].commit.author.name}`.red);
+        // }
+        showdata(repos);
+    });
 };
 
-
+nct(username, repo);
 
 
 module.exports = nct;
