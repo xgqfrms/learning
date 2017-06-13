@@ -38,10 +38,10 @@ http://timelessrepo.com/json-isnt-a-javascript-subset
 https://stackoverflow.com/questions/16005091/node-js-javascript-stringify
 
 
+https://stackoverflow.com/questions/5612787/converting-an-object-to-a-string
 
 
-
-
+https://stackoverflow.com/questions/10729276/how-can-i-get-the-full-object-in-node-jss-console-log-rather-than-object
 
 
 
@@ -93,9 +93,21 @@ console.log(`\n\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n\n`);
 console.log(`\nprocess.config = \n`, process.config);
 
 
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+
+console.log(JSON.stringify(process.config, null, 4));
+
+// https://stackoverflow.com/a/10729284/5934465
 
 
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+
+console.log(`\nprocess.argv = \n`.rainbow, typeof(process.argv));
+// array object & JSON.stringify() 
 
 
+console.log(`\nprocess.argv = \n`, process.argv);
+
+console.log(JSON.stringify(process.argv, null, 4));
 
 
