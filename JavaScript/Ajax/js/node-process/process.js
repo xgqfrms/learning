@@ -86,6 +86,11 @@ console.log(`\nprocess.env = \n`.white, typeof(process.env));
 
 console.log(`\nprocess.env = \n`, process.env);
 
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+
+console.log(`\nprocess.env = \n`, JSON.stringify(process.env, null, 4));
+// object object ???
+
 console.log(`\n\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n\n`);
 
 
@@ -95,9 +100,10 @@ console.log(`\nprocess.config = \n`, process.config);
 
 console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
 
-console.log(JSON.stringify(process.config, null, 4));
+console.log(`\nprocess.config = \n`, JSON.stringify(process.config, null, 4));
 
 // https://stackoverflow.com/a/10729284/5934465
+// array object ???
 
 
 console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
