@@ -64,6 +64,28 @@ console.log(`\nprocess = \n`.red, typeof(process));
 
 console.log(`\nprocess = \n`.rainbow, process);
 
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+
+
+console.log(`\nprocess = \n`.rainbow, JSON.stringify(process, null, 4));
+// TypeError: Converting circular structure to JSON
+
+// https://gist.github.com/xgqfrms-GitHub/92aa2b00249f15084d24aa2e0a5d0300#gistcomment-2122041
+/*
+
+TypeError：将循环结构转换为JSON
+
+1. 这意味着你在请求中传递的对象有一个循环引用
+
+2. 使用 JSON.stringify与自定义 replacer。
+
+*/
+
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
+
+
 
 console.log(`\n\n\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\n\n\n`);
 
@@ -89,7 +111,7 @@ console.log(`\nprocess.env = \n`, process.env);
 console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
 
 console.log(`\nprocess.env = \n`, JSON.stringify(process.env, null, 4));
-// object object ???
+// object object ??? OK
 
 console.log(`\n\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n\n`);
 
@@ -103,7 +125,7 @@ console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
 console.log(`\nprocess.config = \n`, JSON.stringify(process.config, null, 4));
 
 // https://stackoverflow.com/a/10729284/5934465
-// array object ???
+// array object ??? OK
 
 
 console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
