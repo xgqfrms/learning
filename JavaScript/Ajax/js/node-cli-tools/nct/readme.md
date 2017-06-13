@@ -153,7 +153,27 @@ https://www.npmjs.com/package/colors
 
 
 
-# npm link error ???
+# npm link error ??? 
+
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/wiki/npm-link
+
+> `#!/usr/bin/env node`
+
+
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/2
+
+
+https://node-cli-tools.xgqfrms.xyz/
+
+
+# npm link lost `#!/usr/bin/env node`
+
+
+```sh
+#!/usr/bin/env node
+
+```
 
 
 
@@ -174,6 +194,6 @@ https://www.cloudflare.com/a/dns/xgqfrms.xyz
 
 
 
-https://xgqfrms-github.github.io/Node-CLI-Tools
+https://github.com/xgqfrms-GitHub/Node-CLI-Tools/issues/2
 
 

@@ -1,0 +1,27 @@
+{
+    "name": "node-cli-process",
+    "version": "1.1.1",
+    "description": "node cli process",
+    "keywords": [
+        "webpack2",
+        "es6",
+        "react",
+        "angular2",
+        "node cli",
+        "node process"
+    ],
+    "author": "xgqfrms",
+    "license": "MIT",
+    "private": true,
+    "bin": {
+        "ncp": "ncpcli"
+    },
+    "scripts": {
+        "ncp": "node ncpcli",
+        "start": "node ncpcli"
+    },
+    "dependencies": {
+        "colors": "^1.1.2",
+        "node-fetch": "^1.7.1"
+    }
+}
