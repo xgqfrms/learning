@@ -68,7 +68,7 @@ console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
 console.log(`\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n`);
 
 
-console.log(`\nprocess = \n`.rainbow, JSON.stringify(process, null, 4));
+// console.log(`\nprocess = \n`.rainbow, JSON.stringify(process, null, 4));
 // TypeError: Converting circular structure to JSON
 
 // https://gist.github.com/xgqfrms-GitHub/92aa2b00249f15084d24aa2e0a5d0300#gistcomment-2122041
