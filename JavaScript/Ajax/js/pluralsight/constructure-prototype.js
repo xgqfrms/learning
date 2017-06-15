@@ -10,7 +10,7 @@ var Calculator = function(id) {
 
 
 Calculator.prototype = {
-    add: function(x.y){
+    add: function(x, y){
         var val = x + y;
         this.selector.innerHTML = val;
         // maybe this caller bugs!
