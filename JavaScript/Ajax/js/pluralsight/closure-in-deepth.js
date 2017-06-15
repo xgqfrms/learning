@@ -77,11 +77,16 @@ function ClosureDate(){
 
 var closureDate = new ClosureDate();
 
+
 closureDate.jsonClosure();
+// OK, return it
+
+closureDate.closure();
+// local var / function, function call error, because without return!
 
 
 
-// local var function, function call error, without return!
+
 // VM2163:1 Uncaught TypeError: closureDate.closure is not a function
 
 

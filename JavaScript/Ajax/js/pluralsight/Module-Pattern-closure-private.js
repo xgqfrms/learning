@@ -3,6 +3,8 @@
 
 
 
+/*
+
 var Calculator = function(id) {
     var private_var;
     //private var
@@ -17,37 +19,37 @@ var Calculator = function(id) {
 
 
 
-
-
-
+*/
 
 
 var Calculator = function(id) {
-    this.selector = document.querrySelector(id);
+    var selector = document.querrySelector(id);
+    // private var
+    var private_func = function(){
+        // private function
+    };
+    return {
+        // expose public members
+        add: function(x, y){
+            var val = x + y;
+            selector.innerHTML = val;
+            // maybe this caller bugs!
+        }
+    };
 };
 
 
 
-
-X_NS.Calculator.prototype = {
-    var that = this;
-    add: function(x, y){
-        var val = x + y;
-        that.selector.innerHTML = val;
-        // maybe this caller bugs!
-    }
-};
+// private var / func , because it isn't returned;
 
 
 
 
 
+??? dd app
 
 
-
-
-
-
+https://app.pluralsight.com/player?course=structuring-javascript&author=dan-wahlin&name=structuring-javascript-module3&clip=3&mode=live
 
 
 
