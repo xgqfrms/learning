@@ -107,6 +107,9 @@ https://github.com/DanWahlin/NodeJSEndToEndCourseCode
 
 
 
+global & namespace
+
+
 
 
 
