@@ -24,7 +24,7 @@ var Calculator = function(id) {
 
 var Calculator = function(id) {
     var selector = document.querySelector(id);
-    console.log(`selector = n ${selector}`);
+    console.log(`selector = \n ${selector}`);
     // private var
     var private_func = function(){
         // private function

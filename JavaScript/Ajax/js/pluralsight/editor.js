@@ -1,6 +1,9 @@
-//Copyright 2014 Wahlin Consulting - All Rights Reserved
+/*
 
-//This code may not be used in any application without expression approval of Wahlin Consulting
+https://github.com/DanWahlin/MasteringJavaScriptCourseCode/blob/master/Mastering%20JavaScript/js/editor.js
+
+
+*/
 
 var editor = function () {
     var jsEditor, htmlEditor, cssEditor,

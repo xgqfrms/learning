@@ -114,10 +114,16 @@ global & namespace
 
 
 
+Revealing Module Pattern
+
+显示模块模式
 
 
+Revealing
 
+揭示
 
+揭示, 透露, 表明
 
 
 
