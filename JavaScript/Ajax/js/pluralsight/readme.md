@@ -94,11 +94,13 @@ https://github.com/DanWahlin/MasteringJavaScriptCourseCode/blob/master/Mastering
 
 
 
+https://github.com/DanWahlin/AngularIn20JavaScript
 
 
+https://github.com/DanWahlin/AngularIn20TypeScript
 
 
-
+https://github.com/DanWahlin/NodeJSEndToEndCourseCode
 
 
 
