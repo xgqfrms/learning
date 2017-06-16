@@ -5,7 +5,7 @@
 
 
 var Calculator = function(id) {
-    this.selector = document.querrySelector(id);
+    this.selector = document.querySelector(id);
 };
 
 
