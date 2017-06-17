@@ -133,6 +133,7 @@ Revealing
 
 
 
+Revealing Prototype Pattern
 
 
 
