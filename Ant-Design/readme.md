@@ -1,6 +1,6 @@
 # Ant-Design
 
-
+> Ant Design 的 React 实现，开发和服务于企业级后台产品。
 
 https://ant.design/index-cn
 
@@ -30,9 +30,11 @@ Apache Ant是一个Java库和命令行工具，其任务是将构建文件中描
 
 
 
+https://emojipedia.org/ant/
 
 
 
+https://www.collinsdictionary.com/
 
 
 
