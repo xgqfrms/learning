@@ -97,7 +97,26 @@ https://www.w3schools.com/html/html_urlencode.asp
 https://www.w3schools.com/tags/ref_urlencode.asp
 
 
+仅QR Code码制支持二维码美化
+PDF417：广泛应用在证件上，保密、防伪性能好
+
+
+
+http://cli.im/text?cd31d76a09dc1c34e9526033013cd376
+
+
+
+159x59
+
+
+条形码生成器
 
 */
+
+
+
+
+
+
 
 
