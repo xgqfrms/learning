@@ -14,6 +14,54 @@ https://github.com/ant-design
 
 
 
+
+https://ant.design/docs/react/introduce-cn
+
+
+https://ant.design/docs/spec/introduce-cn
+
+https://ant.design/docs/spec/cases-cn
+
+
+https://ant.design/docs/resource/download-cn
+
+
+
+https://ant.design/docs/pattern/navigation-cn
+
+
+
+
+https://ant.design/docs/react/introduce-cn#特性
+
+
+提炼自企业级中后台产品的交互语言和视觉风格。
+开箱即用的高质量 React 组件。
+使用 TypeScript 构建，提供完整的类型定义文件。
+基于 npm + webpack + babel 的工作流，支持 ES2015 和 TypeScript。
+
+
+
+
+
+https://ant-tool.github.io/
+
+
+
+https://ant.design/docs/react/getting-started-cn#兼容性
+
+
+https://github.com/paulmillr/es6-shim
+
+https://github.com/es-shims/es5-shim
+
+
+
+https://github.com/ant-design/babel-plugin-import
+
+
+
+
 # Apache Ant™
 
 
