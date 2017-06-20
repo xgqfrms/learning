@@ -107,13 +107,100 @@ vscode-babel-format-error
 After I change the ** language mode** from ** Javascript (babel)** to ** Javascript React** , everything is OK!
 
 
+
+
+
+
+
+# old setting.json
+
+```json
+
+// Place your settings in this file to overwrite the default settings
+{
+    "typescript.tsdk": "./ng2-app/node_modules/typescript/lib",
+    "typescript.check.tscVersion": false,
+    "typescript.check.workspaceVersion": false,
+    "editor.tabCompletion": true,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": false,
+    "html.format.wrapLineLength": 80,
+    "editor.wrappingColumn": 100,
+    "html.format.enable": false,
+    "html.format.extraLiners": "/body",
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all"
+}
+
+```
+
+
+# new setting.json
+
+
 https://github.com/Microsoft/vscode/issues/18781#issuecomment-274265204
 
 
 
+# VS code setting.json & React JS
 
 
+https://gist.github.com/xgqfrms-gildata/d8b3cb0246d881dcf580df4745ad7920
 
+
+将设置放入此文件中以覆盖默认设置
+
+
+https://code.visualstudio.com/docs/languages/overview
+
+https://code.visualstudio.com/docs/languages/javascript
+
+https://code.visualstudio.com/docs/getstarted/settings
+
+```js 
+
+
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "jspm_packages": true,
+        "node_modules": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "all",
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.multiCursorModifier": "alt",
+    "editor.wordWrap": "on",
+    "editor.insertSpaces": true,
+    "files.encoding": "utf8",
+    "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "files.associations": {
+        "*.jsx": "JavaScript React",
+        "*.js": "javascriptreact"
+    }
+}
+
+```
 
 
 
