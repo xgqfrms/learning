@@ -121,6 +121,32 @@ calculator.add(3, 4);
 
 
 
+const calculator = (id) => {
+    console.log(`\nselector = ${id}`);
+    // private var
+    let Add = (x, y) => {
+        let sum = x + y;
+        console.log(`sum = ${sum}\n `);
+        // maybe this caller bugs!
+    };
+    // private function
+    return {
+        // expose public members
+        addAlias: Add
+    };
+}(`#id`);
+
+
+// sum = 7
+
+window.onload = ()=>{
+    // no needs new Object , singleton 单例模式
+    calculator.add(3, 4);
+}
+
+
+
+
 var calculator = (function(id) {
     console.log(`\nselector = ${id}`);
     // private var
@@ -137,7 +163,6 @@ var calculator = (function(id) {
 }(`#id`));
 
 
-// sum = 7
 
 
 
