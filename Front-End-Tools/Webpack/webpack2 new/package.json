@@ -28,6 +28,7 @@
         "webpack": "^3.0.0"
     },
     "devDependencies": {
+        "eslint": "^4.1.0",
         "extract-text-webpack-plugin": "^2.1.2",
         "html-webpack-plugin": "^2.29.0",
         "webpack-dev-server": "^2.5.0"

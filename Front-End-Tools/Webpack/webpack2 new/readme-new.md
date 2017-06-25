@@ -435,7 +435,51 @@ devtool: "inline-source-map"
 
 
 
-webpack-dev-middleware
+# webpack-dev-middleware
+
+```sh
+$ npm install --save-dev express webpack-dev-middleware
+
+```
+
+```js
+
+var express = require("express");
+var webpackDevMiddleware = require("webpack-dev-middleware");
+var webpack = require("webpack");
+var webpackConfig = require("./webpack.config");
+
+var app = express();
+var compiler = webpack(webpackConfig);
+
+app.use(webpackDevMiddleware(compiler, {
+    publicPath: "/" 
+    // Same as `output.publicPath` in most cases.
+}));
+
+app.listen(3000, function () {
+    console.log("Listening on port 3000!");
+});
+
+
+
+
+app.use(webpackDevMiddleware(compiler, {
+    lazy: true,
+    filename: "bundle.js" 
+    // Same as `output.filename` in most cases.
+}));
+
+
+```
+
+
+
+
+
+
+
+
 
 
 ```sh
@@ -445,6 +489,7 @@ $ webpack --progress --watch
 
 $ webpack-dev-server --open
 
+$ node_modules/.bin/webpack-dev-server
 
 
 # https://github.com/zeit/serve
@@ -461,7 +506,54 @@ $ `npm bin`/serve
     "start": "serve"
 }
 
+
+"scripts": {
+    "start": "webpack-dev-server"
+}
+
 ```
+
+
+
+
+
+# ESLint 
+
+
+http://eslint.org/
+
+
+```sh
+
+$ npm i -D eslint
+
+$ npm install eslint --save-dev
+
+$ ./node_modules/.bin/eslint --init
+
+$ ./node_modules/.bin/eslint yourfile.js
+
+
+
+
+$ npm install eslint --save-dev
+
+
+
+```
+
+
+```js
+{
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
+    }
+}
+
+```
+
+
 
 
 
