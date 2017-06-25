@@ -147,7 +147,9 @@ devServer: {
 devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
+    https: true,
     hot: true,
+    hotOnly: true,
     host: "127.0.0.1",
     port: 8888,
     allowedHosts: [
@@ -161,10 +163,47 @@ devServer: {
     },
     historyApiFallback: true,
     lazy: true,
+    overlay: {
+        warnings: true,
+        errors: true
+    },
+    proxy: {
+        "/api": {
+            target: "http://localhost:3000",
+            pathRewrite: {
+                "^/api" : ""
+            },
+            secure: false,
+            bypass: function(req, res, proxyOptions) {
+                if (req.headers.accept.indexOf("html") !== -1) {
+                    console.log("Skipping proxy for browser request.");
+                    return "/index.html";
+                }
+            }
+        }
+    },
+    devServer.progress: true,
+    publicPath: "http://localhost:8080/assets/",
+    setup(app){
+        app.get('/some/path', function(req, res) {
+            res.json({ custom: 'response' });
+        });
+    },
+    watchContentBase: true,
+    watchOptions: {
+        poll: true
+    },
     filename: "bundle.js",
-    clientLogLevel: "none" 
-    // none, error, warning or info (default)
+    clientLogLevel: "none"
 }
+
+
+devServer: {
+    host: process.env.HOST, // Defaults to `localhost`
+    port: 80, // Defaults to 8080
+},
+
+
 
 
 ```
@@ -192,6 +231,13 @@ If you want your server to be accessible externally, specify it like this:
 linux & mac: export NODE_ENV=production
 
 windows: set NODE_ENV=production
+
+
+# https
+
+https://nodejs.org/api/https.html
+
+https://webpack.js.org/configuration/dev-server/#devserver-https
 
 
 
@@ -248,6 +294,9 @@ $ node_modules/.bin/webpack-dev-server
     "start": "webpack-dev-server --env -d",
     "build": "webpack --env -p"
 }
+
+
+
 
 // process.env.NODE_ENV="production"
 
@@ -368,9 +417,51 @@ shortcut for --optimize-minimize --define process.env.NODE_ENV="production"
 
 
 
+# devtool
+
+
+https://webpack.js.org/guides/development/
 
 
 
+```js
+
+devtool: "cheap-eval-source-map"
+
+devtool: "inline-source-map"
+
+
+```
+
+
+
+webpack-dev-middleware
+
+
+```sh
+
+$ webpack --progress --watch
+
+
+$ webpack-dev-server --open
+
+
+
+# https://github.com/zeit/serve
+
+$ npm install --save-dev serve
+
+$ `npm bin`/serve
+
+```
+
+```js
+
+"scripts": {
+    "start": "serve"
+}
+
+```
 
 
 
