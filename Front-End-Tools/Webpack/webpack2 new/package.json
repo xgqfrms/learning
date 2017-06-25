@@ -1,0 +1,35 @@
+{
+    "name": "webpack2-demo",
+    "version": "2.2.1",
+    "description": "webpack 2 demo",
+    "main": "webpack.config.js",
+    "scripts": {
+        "test": "webpack",
+        "build": "webpack",
+        "start": "webpack-dev-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xgqfrms/webpack2.git"
+    },
+    "keywords": [
+        "webpack2",
+        "es6",
+        "react",
+        "angular2"
+    ],
+    "author": "xgqfrms",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xgqfrms/webpack2/issues"
+    },
+    "homepage": "https://github.com/xgqfrms/webpack2#readme",
+    "dependencies": {
+        "webpack": "^3.0.0"
+    },
+    "devDependencies": {
+        "extract-text-webpack-plugin": "^2.1.2",
+        "html-webpack-plugin": "^2.29.0",
+        "webpack-dev-server": "^2.5.0"
+    }
+}

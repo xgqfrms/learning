@@ -11,7 +11,7 @@ https://gist.github.com/xgqfrms-GitHub/f71453cff397181ad927c5217ec9b7e4
 
 
 
-
+```html
 
 <script>
     {
@@ -36,7 +36,7 @@ https://gist.github.com/xgqfrms-GitHub/f71453cff397181ad927c5217ec9b7e4
     }
 </script>
 
-
+```
 
 
 
@@ -86,15 +86,17 @@ https://github.com/zpao/qrcode.react
 
 https://github.com/facebook/draft-js
 
-
+```jsx
 
 <QRCode
-  value={"https://www.xgqfrms.xyz/"}
-  size={320}
-  bgColor={"#00ff80"}
-  fgColor={"#ff00ff"}
-  level={"L"}
+    value={"https://www.xgqfrms.xyz/"}
+    size={320}
+    bgColor={"#00ff80"}
+    fgColor={"#ff00ff"}
+    level={"L"}
 />
+
+```
 
 https://zpao.github.io/qrcode.react/
 
@@ -116,6 +118,16 @@ React进阶——使用高阶组件（Higher-Order Components）优化代码
 
 
 http://tools.zhaishidan.cn/
+
+
+
+
+
+
+
+
+
+
 
 
 
