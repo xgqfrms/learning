@@ -115,10 +115,8 @@ module.exports = {
                 },
                 // options for the loader
             },
-
             {
                 test: "\.html$",
-
                 use: [
                     // apply multiple loaders and options
                     "htmllint-loader", {
@@ -129,7 +127,6 @@ module.exports = {
                     }
                 ]
             },
-
             { oneOf: [ /* rules */ ] },
             // only use one of these nested rules
 
