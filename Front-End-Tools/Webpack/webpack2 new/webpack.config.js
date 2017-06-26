@@ -11,7 +11,11 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
-        port: 8888
+        port: 8888,
+        overlay: {
+            errors: true,
+            warnings: true
+        }
     },
     entry: {
         app: PATHS.app,
@@ -20,6 +24,7 @@ module.exports = {
         path: PATHS.build,
         filename: '[name].js',
     },
+    module
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Webpack 2/3 & HtmlWebpackPlugin',
