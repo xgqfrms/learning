@@ -177,16 +177,56 @@ devServer: {
 ```
 
 
-https://www.bilibili.com/video/av11128844/index_10.html
-
-1:39
 
 
+https://www.bilibili.com/video/av11128844/index_11.html
+
+
+https://facebook.github.io/react/docs/components-and-props.html#extracting-components
+
+
+<APP name={this.props.author.name}/>
+
+<A user={props.author}>
+
+<B name={props.user}>
 
 
 
 
 
+
+
+https://github.com/gildata/RAIO/issues/4
+
+
+
+
+
+
+# Lifecycle Methods
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class
+
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#using-state-correctly
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
+
+
+```jsx
+// Wrong
+this.setState({
+    counter: this.state.counter + this.props.increment,
+});
+
+
+// Correct
+this.setState((prevState, props) => ({
+    counter: prevState.counter + props.increment
+}));
+
+```
 
 
 

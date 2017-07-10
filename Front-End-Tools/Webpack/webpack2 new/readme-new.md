@@ -554,10 +554,10 @@ $ npm install eslint --save-dev
 ```
 
 
+webpack.config.prod.js
 
 
-
-
+https://github.com/coryhouse/react-slingshot/blob/master/webpack.config.prod.js
 
 
 
