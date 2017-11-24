@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mutil_Group_H5DnD</title>
+    <style>
+        .layer {
+            float: left;
+        }
+        
+        .tile__list {
+            box-sizing: border-box;
+            border: 1px solid red;
+            width: 102px;
+            /* width: calc(300px + 8px); */
+            /* width: calc(102px * 3 + 8px); */
+            height: 402px;
+            margin: 10px;
+            /* overflow-y: scroll; */
+        }
+        
+        img {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #0f0;
+            float: left;
+        }
+        
+        .tile__list>img:nth-of-type(1) {
+            background: red;
+        }
+        
+        .tile__list>img:nth-of-type(2) {
+            background: #f0f;
+        }
+        
+        .tile__list>img:nth-of-type(3) {
+            background: #0f0;
+        }
+        
+        .tile__list>img:nth-of-type(4) {
+            background: rgb(255, 72, 0);
+        }
+        /* delete-uid */
+        
+        .delete-uid {
+            position: absolute;
+            z-index: 99999;
+            box-sizing: border-box;
+            width: 50px;
+            height: 20px;
+            background-color: #fff;
+            /* content: "delete"; */
+            color: red;
+        }
+        
+        [data-div*="0"] {
+            position: relative;
+            width: 102px;
+            height: 102px;
+            background-color: #f0f;
+        }
+        
+        [data-delete="delete-uid"] {
+            position: absolute;
+        }
+        
+        [data-delete="delete-img-uid"]:nth-of-type(n) {
+            top: 0px;
+            font-size: 12px;
+        }
+        
+        [data-btn*="delete-btn"]:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div id="multi" https://rubaxa.github.io/Sortable/style="margin-left: 30px">
+                <div>
+                    <div data-force="5" class="title title_xl">
+                        <h1>Multi</h1>
+                    </div>
+                </div>
+                <div class="layer tile" data-force="30">
+                    <div class="tile__name">Group A</div>
+                    <div class="tile__list">
+                        <div data-div="01">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-01.jpg" data-uid="01">
+                        </div>
+                        <div data-div="02">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-02.jpg" data-uid="02">
+                        </div>
+                        <div data-div="03">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-03.jpg" data-uid="03">
+                        </div>
+                        <div data-div="04">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-04.jpg" data-uid="04">
+                        </div>
+                    </div>
+                </div>
+                <div class="layer tile" data-force="25">
+                    <div class="tile__name">Group B</div>
+                    <div class="tile__list">
+                        <div data-div="05">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-05.jpg" data-uid="05">
+                        </div>
+                        <div data-div="06">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-06.jpg" data-uid="06">
+                        </div>
+                        <div data-div="07">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-07.jpg" data-uid="07">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- js:libs -->
+    <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
+    <script>
+        // Multi groups
+        var byId = function(id) {
+            return document.getElementById(id);
+        };
+        Sortable.create(byId('multi'), {
+            animation: 150,
+            draggable: '.tile',
+            handle: '.tile__name'
+        });
+        [].forEach.call(byId('multi').getElementsByClassName('tile__list'), function(el) {
+            Sortable.create(el, {
+                group: 'photo',
+                animation: 150
+            });
+        });
+    </script>
+    <script>
+        window.onload = () => {
+            // **Must be using like this way**, `data-key*="partly-value"`!
+            let imgs = document.querySelectorAll(`[data-uid*="0"]`);
+            let divs = document.querySelectorAll(`[data-div*="0"]`);
+            // console.log(`divs.children = \n`, divs.children);
+            // data-key*="partly-value"
+            // imgs = document.querySelectorAll(`[data-uid*="0"]`);// OK
+            // imgs = document.querySelectorAll(`[data-uid*=""]`);// Error
+            // imgs = document.querySelectorAll(`[data-*="0"]`);// Error
+            // imgs = document.querySelectorAll(`[data*=""]`);// Error
+            // Virtual DOM
+            /*  let vd_delete = document.createDocumentFragment(),
+                div = document.createElement(`div`);
+            div.setAttribute(`class`, `delete-uid`);
+            div.setAttribute(`data-delete`, `delete-img-uid`);
+            // document.querySelectorAll(`[data-delete="delete-img-uid"]`);
+            vd_delete.appendChild(div); */
+            // d.childNodes[0].childNodes[0].nodeValue = "Milk";
+            // document.getElementsByTagName("UL")[0]
+            for (let i = 0; i < imgs.length; i++) {
+                // inner is OK, maybe one `div` can only be used once!
+                let div = document.createElement(`div`);
+                div.setAttribute(`class`, `delete-uid`);
+                div.setAttribute(`data-delete`, `delete-img-uid`);
+                div.innerHTML = `<span data-btn="delete-btn0${i+1}">delete0${i+1}</span>`;
+                // div.innerText = "delete";
+                // document.querySelectorAll(`[data-delete="delete-img-uid"]`);
+                // document.querySelectorAll(`[data-btn="delete-btn"]`);
+                divs[i].insertAdjacentElement(`afterbegin`, div);
+                // OK ??? only last OK
+                // imgs[i].insertAdjacentElement(`afterbegin`, vd_delete);
+                // Uncaught TypeError: Failed to execute 'insertAdjacentElement' on 'Element': parameter 2 is not of type 'Element'.
+                // console.log(`typeof document.createDocumentFragment() = \n`, typeof(vd_delete));
+                // object
+                // imgs[i].insertAdjacentHTML(`afterbegin`, vd_delete);
+                // "[object DocumentFragment]"
+                // imgs[i].appendChild(vd_delete);
+                // OK ??? only first OK
+                imgs[i].addEventListener(`click`, (e) => {
+                    let uid = e.target.dataset.uid;
+                    console.log(`e.target.dataset.uid = \n`, uid);
+                });
+                // console.log(`imgs[i].firstChild = \n`, divs[i].firstChild);
+                // <div class="delete-uid" data-delete="delete-img-uid"><span data-btn="delete-btn0">delete0</span></div>
+                // console.log(`imgs[i].firstElementChild= \n`, divs[i].firstElementChild);
+                // <div class="delete-uid" data-delete="delete-img-uid"><span data-btn="delete-btn0">delete0</span></div>
+                setTimeout(() => {
+                    let btns = document.querySelectorAll(`[data-btn*="delete-btn"]`);
+                    for (let i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener(`click`, (e) => {
+                            let btn = e.target.dataset.btn;
+                            console.log(`btn & e.target.dataset.btn = \n`, btn, i);
+                            // delete-btn01 0
+                            let div = document.querySelector(`[data-div="0${i+1}"]`);
+                            // "delete-btn00".substr(10);
+                            // "01"
+                            if (div !== null) {
+                                if (i === 0) {
+                                    console.log(`div = \n`, div, i);
+                                    console.log(`div.parentNode = \n`, div.parentNode, i);
+                                }
+                                // delete child DOM
+                                let parent = div.parentNode;
+                                // Uncaught TypeError: Cannot read property 'parentNode' of null
+                                parent.removeChild(div);
+                            }
+                            // btns[i].removeEventListener ???
+                        });
+                    }
+                }, 0);
+            }
+        };
+    </script>
+</body>
+
+</html>
