@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mutil_Group_H5DnD</title>
+    <title>Mutil Group H5 DnD</title>
     <style>
         .layer {
             float: left;
@@ -28,6 +28,28 @@
             margin: 0;
             border: 1px solid #0f0;
             float: left;
+        }
+        
+        .tile__name {
+            color: #0f0;
+            box-sizing: border-box;
+            background: #ccc;
+            margin: 10px;
+            width: 102px;
+            text-align: center;
+            /* fallback */
+            cursor: move;
+            /* overwrite */
+            cursor: -webkit-grab;
+            cursor: -webkit-grabbing;
+            cursor: grab;
+            cursor: grabbing;
+            /* cursor: url(cursor1.png) 4 12, auto;*/
+            /* cursor: url(one.svg), url(two.svg) 5 5, progress; */
+            /* cursor: url("hyper.cur"), auto; */
+            /* cursor: -moz-grab;
+            cursor: -webkit-grab;
+            cursor: grab; */
         }
         
         .tile__list>img:nth-of-type(1) {
@@ -84,7 +106,7 @@
 <body>
     <section>
         <div class="container">
-            <div id="multi" https://rubaxa.github.io/Sortable/style="margin-left: 30px">
+            <div id="multi" style="margin-left: 30px">
                 <div>
                     <div data-force="5" class="title title_xl">
                         <h1>Mutil Group H5 DnD</h1>
@@ -121,6 +143,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="layer tile" data-force="20">
+                    <div class="tile__name">Group C</div>
+                    <div class="tile__list">
+                        <div data-div="08">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-08.jpg" data-uid="08">
+                        </div>
+                        <div data-div="09">
+                            <img src="https://rubaxa.github.io/Sortable/st/face-09.jpg" data-uid="09">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -132,11 +165,13 @@
             return document.getElementById(id);
         };
         Sortable.create(byId('multi'), {
+            // container
             animation: 150,
-            draggable: '.tile',
-            handle: '.tile__name'
+            draggable: '.tile', // sub-container
+            handle: '.tile__name' // sub-sub-container-title
         });
         [].forEach.call(byId('multi').getElementsByClassName('tile__list'), function(el) {
+            // sub-sub-container-list
             Sortable.create(el, {
                 group: 'photo',
                 animation: 150
@@ -149,20 +184,6 @@
             let imgs = document.querySelectorAll(`[data-uid*="0"]`);
             let divs = document.querySelectorAll(`[data-div*="0"]`);
             // console.log(`divs.children = \n`, divs.children);
-            // data-key*="partly-value"
-            // imgs = document.querySelectorAll(`[data-uid*="0"]`);// OK
-            // imgs = document.querySelectorAll(`[data-uid*=""]`);// Error
-            // imgs = document.querySelectorAll(`[data-*="0"]`);// Error
-            // imgs = document.querySelectorAll(`[data*=""]`);// Error
-            // Virtual DOM
-            /*  let vd_delete = document.createDocumentFragment(),
-                div = document.createElement(`div`);
-            div.setAttribute(`class`, `delete-uid`);
-            div.setAttribute(`data-delete`, `delete-img-uid`);
-            // document.querySelectorAll(`[data-delete="delete-img-uid"]`);
-            vd_delete.appendChild(div); */
-            // d.childNodes[0].childNodes[0].nodeValue = "Milk";
-            // document.getElementsByTagName("UL")[0]
             for (let i = 0; i < imgs.length; i++) {
                 // inner is OK, maybe one `div` can only be used once!
                 let div = document.createElement(`div`);
@@ -216,6 +237,27 @@
                 }, 0);
             }
         };
+    </script>
+    <script>
+        /*
+                    // data-key*="partly-value"
+                    imgs = document.querySelectorAll(`[data-uid*="0"]`);// OK
+                    imgs = document.querySelectorAll(`[data-uid*=""]`);// Error
+                    imgs = document.querySelectorAll(`[data-*="0"]`);// Error
+                    imgs = document.querySelectorAll(`[data*=""]`);// Error
+                */
+        // shit auto format
+        /*
+            // Virtual DOM
+            let vd_delete = document.createDocumentFragment(),
+            div = document.createElement(`div`);
+            div.setAttribute(`class`, `delete-uid`);
+            div.setAttribute(`data-delete`, `delete-img-uid`);
+            // document.querySelectorAll(`[data-delete="delete-img-uid"]`);
+            vd_delete.appendChild(div);
+            // d.childNodes[0].childNodes[0].nodeValue = "Milk";
+            // document.getElementsByTagName("UL")[0]
+        */
     </script>
 </body>
 
