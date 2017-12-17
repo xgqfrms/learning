@@ -15,7 +15,7 @@
 
 ## Runtime
 
-1. Scheme
+1. Schema
 
 
 
