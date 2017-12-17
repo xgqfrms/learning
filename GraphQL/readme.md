@@ -102,3 +102,6 @@ https://app.pluralsight.com/library/courses/graphql-scalable-apis/table-of-conte
 
 https://www.graphqlhub.com/
 
+## `.env`
+
+https://github.com/clayallsopp/graphqlhub#quick-start
