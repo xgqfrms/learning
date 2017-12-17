@@ -142,6 +142,8 @@ https://stackoverflow.com/questions/22312671/node-js-setting-environment-variabl
 
 https://stackoverflow.com/questions/9198310/how-to-set-node-env-to-production-development-in-os-x
 
+https://stackoverflow.com/questions/18864677/what-is-process-env-port-in-node-js
+
 https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
 
 ![](https://www.twilio.com/blog/wp-content/uploads/2017/08/h6p92574BnyPzrK_d-MEH0rJ7nVcFBfbPfOXlnf5tWFT12Y74mxqvutrSBRw3ntDM4es5ThipSUtWr3SafnUd27s1-gcRU1JURKJxbNfPrvbQDCDr8Uri4OP4rNNf5fcWJSs6w3k.png)
@@ -156,4 +158,17 @@ https://davidwalsh.name/node-environment-variables
 
 
 
+
+## wiki
+
+https://en.wikipedia.org/wiki/Shell_script
+
+### Hashbang === Shebang
+
+https://en.wikipedia.org/wiki/Shebang_(Unix)
+https://en.wikipedia.org/w/index.php?title=Hashbang&redirect=no
+
+>In computing, a shebang is the character sequence consisting of the characters number sign and exclamation mark (#!) at the beginning of a script.
+
+> 在计算中，shebang 是由脚本开始处的字符数字符号和感叹号 (#!) 组成的字符序列。
 
