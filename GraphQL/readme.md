@@ -105,3 +105,55 @@ https://www.graphqlhub.com/
 ## `.env`
 
 https://github.com/clayallsopp/graphqlhub#quick-start
+
+> `env` is a shell command for Unix and Unix-like operating systems.
+
+
+https://en.wikipedia.org/wiki/Env
+
+
+# node.js & `process.env`
+
+> `process.env`
+
+https://nodejs.org/api/process.html#process_process_env
+
+```sh
+
+{
+    TERM: 'xterm-256color',
+    SHELL: '/usr/local/bin/bash',
+    USER: 'maciej',
+    PATH: '~/.bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin',
+    PWD: '/Users/maciej',
+    EDITOR: 'vim',
+    SHLVL: '1',
+    HOME: '/Users/maciej',
+    LOGNAME: 'maciej',
+    _: '/usr/local/bin/node'
+}
+
+
+```
+
+***
+
+https://stackoverflow.com/questions/22312671/node-js-setting-environment-variables
+
+https://stackoverflow.com/questions/9198310/how-to-set-node-env-to-production-development-in-os-x
+
+https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html
+
+![](https://www.twilio.com/blog/wp-content/uploads/2017/08/h6p92574BnyPzrK_d-MEH0rJ7nVcFBfbPfOXlnf5tWFT12Y74mxqvutrSBRw3ntDM4es5ThipSUtWr3SafnUd27s1-gcRU1JURKJxbNfPrvbQDCDr8Uri4OP4rNNf5fcWJSs6w3k.png)
+
+
+![image](https://user-images.githubusercontent.com/17099059/34080528-70632f4c-e37a-11e7-9078-195cc48dd915.png)
+
+
+https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm
+
+https://davidwalsh.name/node-environment-variables
+
+
+
+
