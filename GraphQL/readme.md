@@ -23,19 +23,19 @@ http://graphql.org/learn/queries/
 
 http://graphql.org/learn/schema/
 
-> 
+>
 
 http://graphql.org/learn/execution/
 
-> 
+>
 
 http://graphql.org/learn/validation/
 
-> 
+>
 
 http://graphql.org/learn/introspection/
 
-> 
+>
 
 http://graphql.org/learn/best-practices/
 
@@ -80,6 +80,8 @@ https://facebook.github.io/graphql/October2016/#sec-Field-Alias
 > The Fullstack Tutorial for GraphQL
 
 https://www.howtographql.com
+
+https://github.com/howtographql/howtographql
 
 ## react-relay
 
