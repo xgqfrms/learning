@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS & CSS 实现网页换肤功能</title>
+    <link href="http://www.webdm.cn/images/20100831/style.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <div id="select" class="select">
+        <a href="javascript:styleChange(1);" class="zi"></a>
+        <a href="javascript:styleChange(2);" class="lv"></a>
+        <a href="javascript:styleChange(3);" class="lan"></a>
+        <a href="javascript:styleChange(4);" class="f60"></a>
+        <a href="javascript:styleChange(5);" class="f50"></a>
+        <p>请挑选我的颜色：</p>
+        <div class="clear"></div>
+    </div>
+    <div id="text">
+        首先、AJAX是一种很酷的技术，一旦采用了AJAX，就能让你的Web页面，你的网站，甚至连同你们公司，都变得很酷。在Web2.0的时代里，不使用一点 AJAX技术的网站，就会显得很老土，很落伍。但是，这样的理解，其实是很肤浅的。仅仅是从一个外行，从一个使用者的角度出发，来理解AJAX，就像我在本书的第一章AJAX我也行中那样，开发出很愚蠢，甚至都没有资格被称之为AJAX应用的纯IE、XMLHTTP应用。 AJAX更酷的一点在于，对于传统的Web开发人员来说，AJAX所运用的，是更加先进的，更加标准化的，更加和谐高效的，完整的Web开发技术体系。遵循这样的体系开发Web应用，能让你的开发过程变得更加轻松，也能使你们的开发团队，显得很酷。在Web2.0 的时代里，还在采用过时的技术来开发 Web，会显得很老土，很落伍。 AJAX的相关组成技术，每一个都已经出现了N年以上了，对这些技术的组合运用，也远远早于AJAX这个名词出现之前。所以，我真正敬佩的，并非提出
+        AJAX这个缩写的Jesse James Garrett。而是那些早在N年以前，就已经在探索、实践的先行者，他们始终在追求的：是更好的用户体验，以及更好的开发体验。这样的精神，才是最可宝贵的，也是最值得我们学习的。许多年过去以后，当我们再回头来看当年的这些热门技术，也许早已经变得老土，变得落伍了。在这样的历程中，哪些人会成长为高手？会成长为大师呢？就是那些永不满足，永远在追求更好的用户体验，永远在追求更好的开发体验的人！
+    </div>
+   <!-- js -->
+    <script>
+        // const cssPath = "https://cdn.xgqfrms/css/skin/style_switch";
+        const cssPath = "./skin/style_switch";
+        var styleID=1;
+        document.write('<link rel="stylesheet" type="text\/css" id="cssLink" href="'+cssPath+styleID+'.css" \/>');
+        var cssLink=document.getElementById("cssLink");
+        function styleChange(n) {
+            if(n === 5){
+                document.getElementById("select").style.background="#7b0003";
+            }
+            else{
+                document.getElementById("select").style.background="#e8e8e8";
+            }
+            cssLink.href = cssPath+n+".css";
+        }
+    </script>
+</body>
+</html>
+
