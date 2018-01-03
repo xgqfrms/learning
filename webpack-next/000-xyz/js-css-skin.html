@@ -25,18 +25,20 @@
     <script>
         // const cssPath = "https://cdn.xgqfrms/css/skin/style_switch";
         const cssPath = "./skin/style_switch";
-        var styleID=1;
-        document.write('<link rel="stylesheet" type="text\/css" id="cssLink" href="'+cssPath+styleID+'.css" \/>');
-        var cssLink=document.getElementById("cssLink");
-        function styleChange(n) {
+        let styleID = 1;
+        // document.write('<link rel="stylesheet" type="text\/css" id="cssLink" href="'+cssPath+styleID+'.css" \/>');
+        document.write(`<link rel="stylesheet" id="cssLink" href="${cssPath}${styleID}.css"/>`);
+        const cssLink = document.querySelector(`#cssLink`);
+        const styleChange = (n = 1) => {
             if(n === 5){
                 document.getElementById("select").style.background="#7b0003";
             }
             else{
                 document.getElementById("select").style.background="#e8e8e8";
             }
+            // change href
             cssLink.href = cssPath+n+".css";
-        }
+        };
     </script>
 </body>
 </html>
