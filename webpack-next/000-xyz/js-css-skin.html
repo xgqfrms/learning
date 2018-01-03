@@ -28,6 +28,8 @@
         let styleID = 1;
         // document.write('<link rel="stylesheet" type="text\/css" id="cssLink" href="'+cssPath+styleID+'.css" \/>');
         document.write(`<link rel="stylesheet" id="cssLink" href="${cssPath}${styleID}.css"/>`);
+        // document.insertAdjacentHTML();
+        // document.insertAdjacentElement();
         const cssLink = document.querySelector(`#cssLink`);
         const styleChange = (n = 1) => {
             if(n === 5){

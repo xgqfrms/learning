@@ -35,6 +35,11 @@
         "editor.renderWhitespace": "all",
         "editor.acceptSuggestionOnEnter": "off"
     },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    },
     "files.associations": {
         "*.jsx": "javascriptreact",
         "*.js": "javascriptreact"
