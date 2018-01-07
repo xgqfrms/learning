@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./modal.css">
+    <style>
+        div{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        [data-modal="modal-header"]>p{
+            background: #ccc;
+            color: #fff;
+            font-family: Sumsun, 'Times New Roman', Times, serif;
+            font-size: 23px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button id="trigger1" class="trigger-button" type="button" data-url="news-url">Launch Modal</button>
+        <button id="trigger2" class="trigger-button" type="button" data-url="news-url">Launch Modal</button>
+        <button id="trigger3" class="trigger-button" type="button" data-url="news-url">Launch Modal</button>
+        <div id="content">
+            <header data-modal="modal-header">
+                <p>this is header!</p>
+            </header>
+            <main>
+                <div>
+                    this is body!
+                </div>
+            </main>
+            <footer>
+                <p>this is footer!</p>
+            </footer>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="./modal.js"></script>
+</body>
+</html>

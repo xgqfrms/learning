@@ -1,0 +1,228 @@
+@charset "UFT-8";
+@import url("./css/module.css");
+/* company-news.css */
+
+
+/* @import url("./common/reset.css"); */
+
+/* @import url("../common/module.css"); */
+
+
+/* module title*/
+
+.fv-company-news-title-box {
+    /* width: 100%; */
+}
+
+.fv-company-news-title {
+    position: relative;
+    color: #000;
+    text-indent: 15px;
+    margin-left: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fv-company-news-title::before {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    content: "";
+    display: inline-block;
+    border: 2px solid #f79530;
+    width: 0;
+    height: 16px;
+    /* line-height: 22px; */
+}
+
+
+/* table */
+
+.fv-company-news-table {
+    width: 100%;
+    /* 去除table每行之间的空白间隙 */
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* border-collapse: separate; */
+    /* border-spacing: 1px */
+    /* border-color: #c5d2db; */
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.fv-company-news-table tr td::selection {
+    color: #0f0;
+    background: #000;
+}
+
+
+/* CSS transform & transition*/
+
+
+/*
+.fv-company-news-table tr td:hover {
+    font-size: 16px;
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    overflow: scroll;
+}
+*/
+
+.fv-company-news-table-thead {
+    /* display: none; */
+}
+
+.fv-company-news-table-thead>.fv-company-news-table-tr>td.fv-company-news-table-td-title {
+    background: #e8eefa;
+    border: 1px solid #c5d2db;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fv-company-news-table-thead>.fv-company-news-table-tr>td.fv-company-news-table-td-title:nth-child(1) {
+    min-width: 80px;
+}
+
+.fv-company-news-table-thead>.fv-company-news-table-tr>td.fv-company-news-table-td-title:nth-child(2) {
+    /* min-width: 510px; */
+    width: 450px;
+}
+
+.fv-company-news-table-tfoot {
+    display: none;
+}
+
+.fv-company-news-table-tr {
+    box-sizing: border-box;
+    /* border: 1px solid #e9e9e9; */
+    border: 1px solid #c5d2db;
+    /* border-left: 0; */
+    /* border-right: 0; */
+    padding-left: 6px;
+    height: 23px;
+    line-height: 23px;
+    max-height: 23px;
+}
+
+
+/* date no need `:` */
+
+
+/*
+
+.fv-company-news-table-td-key::after {
+    content: ":"
+}
+
+.fv-company-news-table-td-key {
+    box-sizing: border-box;
+    min-width: 120px;
+    background: #e8eefa;
+    padding-left: 6px;
+    border-right: 1px solid #c5d2db;
+}
+
+*/
+
+.fv-company-news-table-td-value {
+    box-sizing: border-box;
+    /* min-width: 205px; */
+    min-width: 80px;
+    padding-left: 6px;
+}
+
+
+/* CSS3 :nth-of-type & nth-type & nth-child & :first-child & last-child*/
+
+
+/*
+.fv-company-news-table-tbody>tr:nth-of-type(2n)>td:last-child {
+    background-color: #f5f5f5;
+}
+*/
+
+.fv-company-news-table-tbody>tr:nth-of-type(2n) {
+    background-color: #f5f5f5;
+}
+
+.fv-company-news-table-tbody>tr:nth-of-type(n)>td {
+    line-height: 23px;
+    height: 23px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fv-company-news-table-tbody>tr:nth-of-type(n)>td:last-child {
+    border-left: 1px solid #d7dbe0;
+    max-width: 70px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.fv-company-news-table-tbody>tr:nth-of-type(n)>td:nth-child(2) {
+    /* min-width: 150px; */
+    /* max-width: 510px; */
+    width: 400px;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* color: red; */
+    border-left: 1px solid #d7dbe0;
+    box-sizing: border-box;
+}
+
+
+/* https://css-tricks.com/almanac/properties/t/text-overflow/ */
+
+.fv-company-news-table-tbody>tr:nth-of-type(n)>td:first-child {
+    /* max-width: 80px; */
+    /* width: 120px; */
+    min-width: 80px;
+    max-width: 80px;
+}
+
+[data-more="data-link-more"] {
+    text-decoration: none;
+    color: #3385ff;
+    cursor: pointer;
+}
+
+.fv-company-news-table-tbody {
+    /* max-width: 70%; */
+    /* max-height: 50px; */
+    /* max-width: 760px; */
+    width: 400px;
+}
+
+.link-more {
+    margin-right: 10px;
+    line-height: 23px;
+    height: 23px;
+    float: right;
+    font-size: 12px;
+}
+
+.link-more>a,
+.link-more>a:hover {
+    text-decoration: none;
+    color: #3385ff;
+    cursor: pointer;
+}
+
+
+/* links */
+
+[data-link="fv-company-news-link"] {
+    text-decoration: none;
+    color: #000;
+}
+
+[data-link="fv-company-news-link"]:hover {
+    color: #f0f;
+}

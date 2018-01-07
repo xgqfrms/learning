@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公司新闻</title>
+    <link rel="stylesheet" href="./company-news.css">
+    <!-- modal css -->
+    <link rel="stylesheet" data-css="data-css-uid" href="./css/modal.css">
+</head>
+
+<body>
+    <section class="fv-module-box-5">
+        <div class="fv-company-news-title-box">
+            <p class="fv-company-news-title" data-more="company-news-title">公司新闻</p>
+            <!-- <fieldset disabled="disabled"></fieldset> -->
+        </div>
+        <table class="fv-company-news-table">
+            <thead class="fv-company-news-table-thead">
+                <tr class="fv-company-news-table-tr">
+                    <td class="fv-company-news-table-td-title">日期</td>
+                    <td class="fv-company-news-table-td-title">标题</td>
+                </tr>
+            </thead>
+            <tbody class="fv-company-news-table-tbody" id="fv-company-news-tbody">
+                <!--
+                    <tr class="fv-company-news-table-tr">
+                        <td class="fv-company-news-table-td-key">涉及概念</td>
+                        <td class="fv-company-news-table-td-value" data-value="data-fv-events">
+                            <div class="css-data-loading" data-loading="pure-css-data-loading">
+                                CSS Loading...
+                            </div>
+                        </td>
+                    </tr>
+                -->
+            </tbody>
+            <tfoot class="fv-company-news-table-tfoot">
+                <tr class="fv-company-news-table-tr">
+                    <td class="fv-company-news-table-td-value" data-value="data-fv-company-news"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <!-- modal -->
+    <div class="fade in" id="zxdtModal">
+        <!-- shit modal css -->
+    </div>
+    <!-- modal libs -->
+    <script src="./libs/jquery1.4.0.min.js"></script>
+    <script src="./libs/BouncedModal.js"></script>
+    <!-- js -->
+    <script src="./company-news.js"></script>
+</body>
+
+</html>
