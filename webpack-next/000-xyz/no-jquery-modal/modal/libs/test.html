@@ -31,13 +31,14 @@
                     // Window
                     console.log(`e.target.dataset = `, e.target.dataset);
                     console.log(`e.target.dataset.uid = `, e.target.dataset.uid);
-                    console.log(`e.target.dataset.modal = `, e.target.dataset.modal);
+                    // console.log(`e.target.dataset.modal = `, e.target.dataset.modal);
                     let option = {
                         datas: {data: e.target.dataset.modal},
                         title: `${e.target.dataset.uid}`,
                     };
                     let datas = Object.assign({}, option);
                     let modal = new BouncedModal(datas);
+                    console.log(`i = `, i);
                     // show modal
                     modal.init();
                 });

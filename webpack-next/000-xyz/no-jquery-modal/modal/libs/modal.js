@@ -21,6 +21,7 @@ STOCK_F9_FV.Modal.Public = STOCK_F9_FV.Modal.Public  || ((debug = false) => {
         view: () => {
             const w = document.documentElement.clientWidth;
             const h = document.documentElement.clientHeight;
+            console.log(`clientWidth = ${w} & clientHeight = ${h}`);
             return {
                 w,
                 h
@@ -206,6 +207,7 @@ BouncedModal.prototype = {
             $(".layerBox").css("width", $(window).width()-60+"px");
             $(".layerBox").css("height", $(window).height()-80+"px");
             $(".modal-body").css("height", UDP.Public.view().h - 200);
+            // bug ??? UDP_wh
         });
 
         $(".close_btn").click(function (){
