@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal Test</title>
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <div>
+        <section>
+            <a href="#" data-uid="001" data-link="modal-a-link" data-modal="{title: 'this is modal title',datas: 'more datas 专题统计原型  专题统计原型 专题统计原型 专题统计原型 专题统计原型'}">show modal 1</a>
+            <br>
+            <a href="#" data-uid="002" data-link="modal-a-link" data-modal="{title: 'this is modal title',datas: '设置滚动的属性(overflow-y: 竖向  overflow-x: 横向) 设置滚动的属性(overflow-y: 竖向  overflow-x: 横向) 设置滚动的属性(overflow-y: 竖向  overflow-x: 横向)'}">show modal 2</a>
+            <br>
+            <a href="#" data-uid="002" data-link="modal-a-link" data-modal="{title: 'this is modal title',datas: '设置滚动的属性(overflow-y: 竖向  overflow-x: 横向) 专题统计原型 设置滚动的属性(overflow-y: 竖向  overflow-x: 横向) 设置滚动的属性(overflow-y: 竖向  overflow-x: 横向) 专题统计原型   '}">show modal 3</a>
+            <br>
+        </section>
+        <!-- libs -->
+        <script src="./jquery1.4.0.min.js"></script>
+        <script src="./modal.js"></script>
+        <!-- modal -->
+        <div id="zxdtModal"></div>
+        <!-- js -->
+        <script>
+            let a_links = document.querySelectorAll(`[data-link="modal-a-link"]`);
+            for (let i = 0; i < a_links.length; i++) {
+                a_links[i].addEventListener(`click`, (e) => {
+                    console.log(`this = `, this);
+                    // Window
+                    console.log(`e.target.dataset = `, e.target.dataset);
+                    console.log(`e.target.dataset.uid = `, e.target.dataset.uid);
+                    console.log(`e.target.dataset.modal = `, e.target.dataset.modal);
+                    let option = {
+                        datas: {data: e.target.dataset.modal},
+                        title: `${e.target.dataset.uid}`,
+                    };
+                    let datas = Object.assign({}, option);
+                    let modal = new BouncedModal(datas);
+                    // show modal
+                    modal.init();
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>

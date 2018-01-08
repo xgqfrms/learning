@@ -28,6 +28,9 @@ STOCK_F9_FV.Modal.Public = STOCK_F9_FV.Modal.Public  || ((debug = false) => {
         },
     }
 });
+// no constructor function
+// STOCK_F9_FV.Modal.Public().view();
+// {w: 1349, h: 365}
 
 
 STOCK_F9_FV.Modal.getClientWidthHeight = STOCK_F9_FV.Modal.getClientWidthHeight  || ((debug = false) => {
@@ -56,6 +59,8 @@ STOCK_F9_FV.Modal.getClientWidthHeight = STOCK_F9_FV.Modal.getClientWidthHeight 
     };
 });
 
+// STOCK_F9_FV.Modal.getClientWidthHeight();
+// {w: 1349, h: 365}
 
 /**
  * @description BouncedModal & $.extend
@@ -63,12 +68,14 @@ STOCK_F9_FV.Modal.getClientWidthHeight = STOCK_F9_FV.Modal.getClientWidthHeight 
  * @param {* Object} options
  * @param {* Boolean} debug
  *
- * @example BouncedModal({width: 300, height: 200, title:"信息", datas: {}}, true)
+ * @example new BouncedModal({width: 300, height: 200, title:"信息", datas: {}}, true)
  *
  * @augments $.extend === Object.assign
  */
-// new instance
+// new instance & constructor function
 function BouncedModal(options){
+    // console.log(`this = \n`, this);
+    // this === BouncedModal {}
     this.config = {
         layerBoxClass : "layerBox",
         layerclass:"",
@@ -86,8 +93,11 @@ function BouncedModal(options){
     };
     // $.extend(this.config, options);
     Object.assign(this.config, options);
+    // target, source
 };
 
+// prototype & Object
+// public methods
 BouncedModal.prototype = {
     /*创建弹出框*/
     _createDialog: function(state, debug = false){
@@ -185,7 +195,11 @@ BouncedModal.prototype = {
         `;
         const UDP_wh = UDP.getClientWidthHeight;
         // UDP_wh.h
-        $("#zxdtModal").empty().html(str);
+        // $("#zxdtModal").empty().html(str);
+        let modal_box = document.querySelector(`#zxdtModal`);
+        modal_box.innerHTML = ``;// empty
+        modal_box.insertAdjacentHTML(`beforeend`, str);
+        // modal bug ???
         $(".modal-body").css("height", UDP.Public.view().h - 200);
         // resize bug
         $(window).resize(function() {
@@ -293,6 +307,8 @@ BouncedModal.prototype = {
     }
 };
 
+
+// namespace & IIFE
 
 (function (win, func) {
     // factory function
