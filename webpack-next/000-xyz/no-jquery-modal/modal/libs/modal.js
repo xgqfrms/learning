@@ -80,8 +80,8 @@ function BouncedModal(options){
     this.config = {
         layerBoxClass : "layerBox",
         layerclass:"",
-        width: 300,// UDP.getClientWidth()-60
-        height: 200,// UDP.getClientWidth()-60
+        width: 400,// UDP.getClientWidth()-60
+        height: 300,// UDP.getClientWidth()-60
         // min & max ???
         zIndex: 1000,
         title: "信息",
@@ -201,7 +201,12 @@ BouncedModal.prototype = {
         modal_box.innerHTML = ``;// empty
         modal_box.insertAdjacentHTML(`beforeend`, str);
         // modal bug ???
-        $(".modal-body").css("height", UDP.Public.view().h - 200);
+        let modal_body = document.querySelector(`.modal-body`);
+        console.log(`UDP.Public.view().h = `, UDP.Public.view().h);
+        modal_body.style.height = `${UDP.Public.view().h - 200}`;
+        // $(".modal-body").css("height", UDP.Public.view().h - 200);
+        // ??? dynamic heiht
+        // $(".modal-body").css("height", UDP.Public.view().h - 200);
         // resize bug
         $(window).resize(function() {
             $(".layerBox").css("width", $(window).width()-60+"px");
@@ -209,10 +214,18 @@ BouncedModal.prototype = {
             $(".modal-body").css("height", UDP.Public.view().h - 200);
             // bug ??? UDP_wh
         });
-
-        $(".close_btn").click(function (){
-            that.delDialog($(this));
+        // close
+        let modal_close_btn = document.querySelector(`.close_btn`);
+        modal_close_btn.addEventListener(`click`, (e) => {
+            console.log(`e `, e);
+            console.log(`e.target `, e.target);
+            that.delDialog(e.target);
         });
+        // $(".close_btn").click(function (){
+        //     console.log(`$(this) = `, $(this));
+        //     // init [a.close_btn, context: a.close_btn]
+        //     that.delDialog($(this));
+        // });
         $("."+that.config.layerBoxClass).eq($(".overlay").size()-1).css({
             left: `${(s.w - this.config.width)/2}px`,
             top: `${(s.h - this.config.height)/2}px`

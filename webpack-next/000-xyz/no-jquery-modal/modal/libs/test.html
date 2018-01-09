@@ -35,6 +35,8 @@
                     let option = {
                         datas: {data: e.target.dataset.modal},
                         title: `${e.target.dataset.uid}`,
+                        width: 600,
+                        height: 500,
                     };
                     let datas = Object.assign({}, option);
                     let modal = new BouncedModal(datas);
