@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Notifications</title>
+</head>
+
+<body>
+    <script>
+        const MyNotification = () => {
+            if ("Notification" in window) {
+                let ask = Notification.requestPermission();
+                console.log(`ask = ${ask}`);
+                ask.then(permission => {
+                    let msg = new Notification(
+                        "title", {
+                            body: "Hello, Notifications!",
+                            icon: "url"
+                        }
+                    );
+                    msg.addEventListener("click", (event) => {
+                        alert("close this Notification!");
+                    })
+                });
+            }
+        }
+        window.onload = MyNotification();
+    </script>
+</body>
+
+</html>

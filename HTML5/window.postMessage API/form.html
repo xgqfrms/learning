@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>get all Form data</title>
+</head>
+
+<body>
+    <section>
+        <h1></h1>
+        <a href="https://feiqa.xgqfrms.xyz/index.html"></a>
+    </section>
+    <section>
+        <form action="" method="get">
+            <input type="checkbox" name="abc" id="">
+            <input type="checkbox" name="xyz" id="">
+            <input type="text">
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    <!-- js -->
+    <script>
+        setTimeout(() => {
+            let data = new FormData(document.querySelector('form'));
+            console.log(`form data =`, data);
+            // document.querySelector('.messageCheckbox').checked;
+        }, 3000);
+    </script>
+</body>
+
+</html>
