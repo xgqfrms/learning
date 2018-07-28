@@ -1,6 +1,6 @@
 # webpack 4.x 
 
-https://github.com/gildata/WCAIO
+https://github.com/xgqfrms/webpack-4.x-best-practical
 
 # webpack 3.x 
 
