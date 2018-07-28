@@ -23,14 +23,10 @@ back-end
 tools  
 
 
-
-
-
-
 ## JavaScript   
 
 
-http://es6.xgqfrms.xyz/   
+https://es6.xgqfrms.xyz/   
 
 https://javascript.xgqfrms.xyz/  
 
