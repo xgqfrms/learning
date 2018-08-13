@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 animation background-image</title>
+    <!-- http://stackoverflow.com/questions/29943770/how-animate-the-height-of-the-background-image/29944470#29944470 -->
+    <style>
+        .box{
+            width: 300px;
+            float: left;
+        }
+        .bg {
+          background: url(https://raw.githubusercontent.com/xgqfrms-GitHub/webgeeker/gh-pages/CSS3/bg-images-animation/bg1.png) no-repeat center;
+          height: 250px;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          border: 1px solid red;
+        }
+        span {
+          background: url("https://raw.githubusercontent.com/xgqfrms-GitHub/webgeeker/gh-pages/CSS3/bg-images-animation/bg2.png") no-repeat;
+          height: 150px;
+          bottom: -150px;
+          right: 0;
+          left: 0;
+          position: absolute;
+          /*background-position: center bottom;*/
+        }
+        .bg:hover span {
+          transform: translateY(-150px);
+          transition: all .5s ease 0s;
+        }
+        .span {
+          background: url(https://raw.githubusercontent.com/xgqfrms-GitHub/webgeeker/gh-pages/CSS3/bg-images-animation/bg2.png) no-repeat;
+          height: 150px;
+          bottom: -150px;
+          right: 0;
+          left: 0;
+          position: absolute;
+          background-position: center bottom;
+        }
+    </style>
+</head>
+<body>
+    <section><h1>css3 animation background-image</h1></section>
+    <div class="box">
+        <div class="bg">
+            <span></span>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bg">
+            <span class="span"></span>
+        </div>
+    </div>
+</body>
+</html>
