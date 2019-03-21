@@ -1,10 +1,10 @@
 # Pro Angular Second Edition  
 
 
- 2017
+> 2017
 
 
-
+```js
 
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
@@ -20,7 +20,7 @@ import { PaAttrDirective } from "./attr.directive";
 
 export class AppModule { }
 
-
+```
 
 
 ## ES6 : import & export  
