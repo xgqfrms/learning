@@ -2,7 +2,7 @@
 
 
 
-
+```js
 
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
@@ -18,3 +18,5 @@ import { PaAttrDirective } from "./attr.directive";
 
 export class AppModule { }
 
+
+```
