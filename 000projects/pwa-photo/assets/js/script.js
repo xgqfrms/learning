@@ -31,19 +31,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 video: true
             },
             // Success Callback
-            function(stream) {
-
-                // Create an object URL for the video stream and
-                // set it as src of our HTLM video element.
-                video.src = window.URL.createObjectURL(stream);
-
-                // Play the video element to start the stream.
-                video.play();
-                video.onplay = function() {
-                    showVideo();
-                };
-         
-            },
+      // Success Callback
+      async function (stream) {
+        const mediaStream = await navigator.mediaDevices.getUserMedia({video: true});
+        log(`stream`, typeof stream, stream);
+        // const mediaStream = new MediaStream();
+        // video.src = URL.createObjectURL(mediaStream);
+        // Uncaught (in promise) DOMException: Failed to load because no supported source was found.
+        // video.src = stream;
+        // const mediaStream = new MediaStream(stream);
+        // const mediaStream = new MediaStream();
+        video.srcObject = mediaStream;
+        // video.srcObject = stream;
+        // Create an object URL for the video stream and set it as src of our HTLM video element.
+        // video.src = URL.createObjectURL(stream);
+        // Play the video element to start the stream.
+        video.play();
+        video.onplay = function () {
+          showVideo();
+        };
+      },
             // Error Callback
             function(err) {
                 displayErrorMessage("There was an error with accessing the camera stream: " + err.name, err);
