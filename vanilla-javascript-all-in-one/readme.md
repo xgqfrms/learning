@@ -5,7 +5,26 @@
 
 > denounce & throttle,
 
-```sh
+```js
+
+"use strict";
+
+/**
+ * 
+ * @author xgqfrms
+ * @license MIT
+ * @copyright xgqfrms
+ * @created 2021-04-29
+ * 
+ * @description debounce & throttle
+ * @augments 
+ * @example 
+ * @link https://www.cnblogs.com/xgqfrms/p/13849487.html
+ * @link https://www.cnblogs.com/xgqfrms/p/13849482.html
+ * 
+ */
+
+// const log = console.log;
 
 function debounce (callback, timer = 1000) {
     if(typeof cb === 'function') {
@@ -14,7 +33,7 @@ function debounce (callback, timer = 1000) {
             clearTimeout(timerId);
             id = setTimeout(() => {
                 callback();
-            }, timerId);
+            }, timer);
         };
     } else {
         throw new Error('请传入 function 作为回调函数!');
@@ -52,5 +71,7 @@ export {
 };
 
 export default miniLodash;
+
+
 
 ```
